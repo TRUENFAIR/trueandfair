@@ -87,7 +87,7 @@ export default function About() {
         </div>       
       </section>
 
-      <section className="pt-12 pb-24 text-zinc-900 bg-yellow-50">
+      <section className="pt-12 pb-24 text-zinc-900 bg-slate-100">
         <div className='container mx-auto'>
         <h1 className="text-4xl tracking-wide font-light text-green-900">SUCCESS STORIES</h1>
         <div className="grid grid-cols-2 gap-24 pt-12">
