@@ -9,7 +9,8 @@ export default function Layout({ children }) {
         <title>Madhur Pharma</title>
       </Head>
       
-      <header className="container mx-auto flex justify-between items-center text-zinc-900 font-sans py-2">
+      <header className=" border-zinc-100 border-b">
+        <div className='container mx-auto flex justify-between items-center text-zinc-900 font-sans py-2'>
         <Link href="/">
           <a className="flex">
             <Image src="/mp-logo-320-c.png" alt="logo" width={100} height={100} />
@@ -29,7 +30,8 @@ export default function Layout({ children }) {
           <a href="/strengths" className="mx-4 transition-all hover:text-green-800">Strengths</a>
           <a href="/facilities" className="mx-4 transition-all hover:text-green-800">Facilities</a>
           <a href="/contact" className="mx-4 transition-all hover:text-green-800">Contact</a>
-        </nav>
+          </nav>
+          </div>
       </header>
 
       <main className="text-zinc-900 font-sans">{children}</main>
