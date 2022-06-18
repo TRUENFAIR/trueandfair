@@ -84,76 +84,48 @@ export default function About() {
               <p className="text-base">Extensive investments in R&D resulting in formulations that are safe and compliant</p>
             </div>
           </div>
-        </div>
-        {/* <div className='w-full pt-8'>
-          <div className='flex justify-center items-center'>
-            <div className='h-72 w-64 bg-zinc-200 relative'>
-              <Image className='absolute inset-0 object-cover' layout='fill' alt="" src="/values1.jpg" />
-              <div className='absolute inset-0 bg-black opacity-50'></div>
-              <div className='absolute inset-0 text-white p-8'>
-                <p className="font-semibold text-2xl text-emerald-500">Innovation</p>
-                <p className="pt-8 text-xl">Driven by changing consumer needs, environment and sustainability aspects</p>
-              </div>
-            </div>
-            <div className='h-72 w-64 bg-zinc-200 relative mx-4'>
-              <Image className='absolute inset-0 object-cover' layout='fill' alt="" src="/values2.jpg" />
-                <div className='absolute inset-0 bg-black opacity-50'></div>
-                <div className='absolute inset-0 text-white p-8'>
-                  <p className="font-semibold text-2xl text-indigo-900">Expertise</p>
-                  <p className="pt-8 text-xl">40 years of expertise in ayurveda and modern medicine. The best of both worlds</p>
-                </div>
-              </div>
-            <div className='h-72 w-64 bg-zinc-200 relative'>
-              <Image className='absolute inset-0 object-cover' layout='fill' alt="" src="/values3.jpg" />
-                <div className='absolute inset-0 bg-black opacity-50'></div>
-                <div className='absolute inset-0 text-white p-8'>
-                  <p className="font-semibold text-2xl text-red-400">Honesty</p>
-                  <p className="pt-8 text-xl">Provide the right solutions for each customer by placing their interests first</p>
-                </div>
-            </div>
-          </div>
-          <div className='flex justify-center items-center mt-4'>
-            <div className='h-72 w-64 bg-zinc-200 relative'>
-              <Image className='absolute inset-0 object-cover' layout='fill' alt="" src="/values4.jpg" />
-                <div className='absolute inset-0 bg-black opacity-50'></div>
-                <div className='absolute inset-0 text-white p-8'>
-                  <p className="font-semibold text-2xl text-cyan-300">Integrity</p>
-                  <p className="pt-8 text-xl">Uncompromised product quality and manufacturing standards at all times</p>
-                </div>
-            </div>
-            <div className='h-72 w-64 bg-zinc-200 relative mx-4'>
-              <Image className='absolute inset-0 object-cover' layout='fill' alt="" src="/values5.jpg" />
-                <div className='absolute inset-0 bg-black opacity-50'></div>
-                <div className='absolute inset-0 text-white p-8'>
-                  <p className="font-semibold text-2xl text-yellow">Safety</p>
-                  <p className="pt-8 text-xl">Extensive investments in R&D resulting in formulations that are safe and compliant</p>
-                </div>
-            </div>
-          </div>
-        </div> */}
+        </div>       
+      </section>
 
-        {/* <div className="grid grid-cols-5 gap-6 pt-12">
-          <div className="w-auto bg-green-700 p-6">
-            <p className="font-semibold text-lg">Innovation</p>
-            <p className="pt-4">Driven by changing consumer needs, environment and sustainability aspects</p>
+      <section className="pt-12 pb-24 text-zinc-900 bg-yellow-50">
+        <div className='container mx-auto'>
+        <h1 className="text-4xl tracking-wide font-light text-green-900">SUCCESS STORIES</h1>
+        <div className="grid grid-cols-2 gap-24 pt-12">
+          <div className="w-auto relative">
+            <Image layout='fill' className="absolute h-full w-full object-cover" alt="" src="/section2-image1.jpeg"/>
           </div>
-          <div className="w-auto bg-blue-700 p-6">
-            <p className="font-semibold text-lg">Expertise</p>
-            <p className="pt-4">40 years of expertise in ayurveda and modern medicine. The best of both worlds</p>
+          
+          <div className="w-auto">
+            <h2 className="text-xl font-semibold">Covid Relief</h2>
+            <p className="prose pt-8">Madhur Pharma led the fight against COVID right from the beginning of 2020. Recognizing the need for personal hygiene products by insitutions and communities on a large scale, Madhur Pharma took the initiative and prioritised manufacturing hand sanitizers, surface cleaners, multi-purpose disinfectants, vegetable & food cleansers, leveraging their expertise and production infrastructure.</p>
+              
+            <p className="prose pt-8">The team at Madhur Pharma responded to the cause and pledged their commitment to make this happen despite the operational challenges imposed by the nation-wide lockdown, while complying with all the safety precautions and quality standards. Madhur continues to make these products under the Safe-O-Clean brand, and delivers them to hospitals, essential service providers and residential societies. The Government of India has recognized Madhur Pharma as a “Champion Partner in the Fight against COVID-19</p>
           </div>
-          <div className="w-auto bg-orange-700 p-6">
-            <p className="font-semibold text-lg">Honesty</p>
-            <p className="pt-4">Provide the right solutions for each customer by placing their interests first</p>
+          
+          <div className="w-auto">
+            <h2 className="text-xl font-semibold">Enabling Start-ups to Scale</h2>
+            <p className="prose pt-8">Madhur Pharma has been providing the best-in-class ecosystem for start-ups to flourish in the cosmetics and personal wellness space. Recognizing the growing need for a wide range of good quality products, Madhur team have consistently invested their core strengths in helping start-ups launch innovative products, without any emphasis on order volume or commercial value. </p>
+              
+            <p className="prose pt-8">Over the last few years, more than 25 start-ups have recognized and beneficed from Madhur’s expertise in fomulations, best manufacturing practices, and integrity and confidentiality in protecting their intellectual properties. It is no surprise that some of the products formulated by Madhur for such start-ups have gone on to become hugely successful brands in India and abroad.</p>
           </div>
-          <div className="w-auto bg-indigo-700 p-6">
-            <p className="font-semibold text-lg">Integrity</p>
-            <p className="pt-4">Uncompromised product quality and manufacturing standards at all times</p>
+
+          <div className="w-auto relative">
+            <Image layout='fill' className="absolute h-full w-full object-cover" alt="" src="/section2-image2.jpeg"/>
           </div>
-          <div className="w-auto bg-red-700 p-6">
-            <p className="font-semibold text-lg">Safety</p>
-            <p className="pt-4">Extensive investments in R&D resulting in formulations that are safe and compliant</p>
+
+          <div className="w-auto relative">
+            <Image layout='fill' className="absolute h-full w-full object-cover" alt="" src="/section2-image3.jpeg"/>
           </div>
-        </div> */}
+          
+          <div className="w-auto">
+            <h2 className="text-xl font-semibold">Pioneers in Innovation</h2>
+            <p className="prose pt-8">Madhur Pharma has an extraordinary pordolio of over 155 licenses in cosmetics products, 221 licenses for AYUSH products, 12 products for FOSCOS (FSSAI), and a diverse set of trademarks and awards conferred upon by the industry. Madhur is one of the very few companies who not only manufactures but, formulates a majority of their clients’ products through intense research and innovaBon. </p>
+              
+            <p className="prose pt-8">A quick glance at how Madhur’s product pordolio has evolved and diversified over the years reveals the trust and respect Madhur Pharma commands in new product formulations and licensing. This includes formulations for educational insti in cosmetics as well as classical ayurveda formulations, and stem-cell-research based formulations that require storage at very low temperatures. Madhur continues to be a very well respected and trusted brand even among the government stakeholders.</p>
+          </div>
+          
+          </div>
+          </div>
       </section>
     </>
   )
