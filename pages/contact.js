@@ -14,8 +14,8 @@ export default function Contact() {
               <div className="w-2/5 ">
                 <p className="text-2xl font-semibold upper">Madhur Pharma &<br/> Research Laboratories Pvt Ltd</p>
                   
-                <div className="text-lg pt-8 text-zinc-800">
-                  <p>Address</p>
+                <div className="text-base pt-8 text-zinc-600">
+                  <p className="text-zinc-500">Address</p>
                   <p>292 & 294, 4th Phase,</p>
                   <p>Peenya Industrial Area,</p>
                   <p>Bangalore - 560 058.</p>
@@ -30,20 +30,20 @@ export default function Contact() {
                   <div className="mt-8">
                     <div className="grid grid-cols-2 gap-6">
                       <label className="block">
-                        <span className="">Name</span>
+                        <span className="text-zinc-500">Name</span>
                         <input type="text" className="mt-1 block w-full rounded-sm border-zinc-200 focus:border-green-700 focus:ring focus:ring-green-100 focus:ring-opacity-50" placeholder=""/>
                       </label>
                       <label className="block">
-                        <span className="">Email</span>
+                        <span className="text-zinc-500">Email</span>
                         <input type="email" className="mt-1 block w-full rounded-sm border-zinc-200 focus:border-green-700 focus:ring focus:ring-green-100 focus:ring-opacity-50" placeholder=""/>
                       </label>
                       <label className="block">
-                        <span className="">Phone</span>
+                        <span className="text-zinc-500">Phone</span>
                         <input type="email" className="mt-1 block w-full rounded-sm border-zinc-200 focus:border-green-700 focus:ring focus:ring-green-100 focus:ring-opacity-50" placeholder=""/>
                       </label>
                       
                       <label className="block">
-                        <span className="">What are you looking for?</span>
+                        <span className="text-zinc-500">What are you looking for?</span>
                         <select className=" block w-full mt-1 rounded-sm border-zinc-200 focus:border-green-700 focus:ring focus:ring-green-100 focus:ring-opacity-50">
                           <option>Contract Manufacturing</option>
                           <option>Turnkey Projects</option>
@@ -53,7 +53,7 @@ export default function Contact() {
                       </label>
                     </div>
                     <label className="block mt-6">
-                      <span className="">Additional details</span>
+                      <span className="text-zinc-500">Additional details</span>
                       <textarea className="mt-1 block w-full rounded-sm border-zinc-200 focus:border-green-700 focus:ring focus:ring-green-100 focus:ring-opacity-50" rows="3"></textarea>
                     </label>
                     <div className="w-full flex justify-center items-center">
