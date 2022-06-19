@@ -21,9 +21,9 @@ export default function Home() {
       <main className="">
         <Slider />
         
-        <section className="container mx-auto py-32 text-zinc-900 ">
-          <div className="grid grid-cols-2 gap-16">
-            <div className="w-auto  pb-24">
+        <section className="md:container p-4 mx-auto md:py-32 text-zinc-900 ">
+          <div className="grid grid-col-1 md:grid-cols-2 md:gap-16 gap-4">
+            <div className="w-auto">
               <h1 className="text-4xl tracking-wide font-light text-green-900">THE COMPANY</h1>
               <p className="prose pt-8">Madhur Pharma&apos;s roots are half-century old, originating from a family-owned enterprise of Ayurvedic practitioners serving India’s healthcare industry with various high-quality products and services. </p>
                 
@@ -31,16 +31,16 @@ export default function Home() {
 
               <button className="mt-8 bg-yellow text-black font-bold text-xs hover:text-zinc-700 hover:bg-yellow-800 p-3 rounded-sm transition-all">READ MORE</button>
             </div>
-            <div className="w-auto relative">
+            <div className="w-auto h-48 md:h-auto relative">
               <Image className="absolute inset-0 object-cover" layout="fill" alt="" src="/ourvision.jpeg"/>
             </div>
           </div>
         </section>
 
-        <section className="pt-24 pb-32 text-zinc-900 bg-yellow-50">
-          <div className="container mx-auto">
+        <section className="md:pt-24 md:pb-32 text-zinc-900 bg-yellow-50">
+          <div className="md:container p-4 mx-auto">
             <h1 className="text-4xl tracking-wide font-light text-green-900">SERVICES</h1>
-            <div className="grid grid-cols-3 gap-12 pt-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 md:gap-12 gap-4 pt-4 md:pt-8">
               
               <div className="w-auto relative">
                 <div className="relative w-full h-96 flex justify-start items-end shadow-sm hover:scale-[1.02] transition-all cursor-pointer">
@@ -79,36 +79,36 @@ export default function Home() {
         </section>
 
         <section className="">
-          <div className='py-24 text-zinc-900 relative container mx-auto'>
+          <div className='p-4 md:py-24 text-zinc-900 relative md:container mx-auto'>
             <h1 className="text-4xl tracking-wide font-light text-green-900">AWARDS</h1>
-            <div className='w-full flex justify-start items-center pt-8'>
+            <div className='inline-grid grid-cols-3 md:grid-cols-5 gap-2 pt-8'>
               {awards.map((x, index) => (
-                <div key={index} className='mr-8'>
-                  <Image width={120} height={120} className='' alt="" src={x} />
+                <div key={index} className='shrink-0 md:mr-4 mr-2 md:w-32 md:h-32 w-28 h-28 relative border-2'>
+                  <Image layout='fill' className='absolute inset-0 object-fill' alt="" src={x} />
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        <section className="py-12 text-zinc-900 container mx-auto relative ">
+        <section className="md:py-12 text-zinc-900 md:container p-4 mx-auto relative ">
           <h1 className="text-4xl tracking-wide font-light text-green-900">OUR CLIENTS</h1>
           <p className="py-4">Madhur Pharma is trusted by some of the world&apos;s biggest brands in cosmetics, pharma and herbal products</p>
 
           <div className="w-full flex overflow-x-auto snap-mandatory snap-x scrollbar-hide mt-12">
             <div className='w-full snap-start snap-always relative shrink-0 pr-6'>
-              <div className='grid grid-cols-5 gap-6'>
-                {[...Array(5).keys()].map((x, index) => <div key={index} className='bg-zinc-100 w-auto h-48'></div>)}
+              <div className='grid grid-cols-3 md:grid-cols-5 md:gap-6 gap-2'>
+                {[...Array(5).keys()].map((x, index) => <div key={index} className='bg-zinc-100 w-32 h-32 md:w-48 md:h-48'></div>)}
               </div>
             </div>
             <div className='w-full snap-start snap-always relative shrink-0 pr-6'>
-              <div className='grid grid-cols-5 gap-6'>
-                {[...Array(5).keys()].map((x, index) => <div key={index} className='bg-zinc-100 w-auto h-48'></div>)}
+            <div className='grid grid-cols-3 md:grid-cols-5 md:gap-6 gap-2'>
+                {[...Array(5).keys()].map((x, index) => <div key={index} className='bg-zinc-100 w-32 h-32 md:w-48 md:h-48'></div>)}
               </div>
             </div>
             <div className='w-full snap-start snap-always relative shrink-0 pr-6'>
-              <div className='grid grid-cols-5 gap-6'>
-                {[...Array(5).keys()].map((x, index) => <div key={index} className='bg-zinc-100 w-auto h-48'></div>)}
+            <div className='grid grid-cols-3 md:grid-cols-5 md:gap-6 gap-2'>
+                {[...Array(5).keys()].map((x, index) => <div key={index} className='bg-zinc-100 w-32 h-32 md:w-48 md:h-48'></div>)}
               </div>
             </div>
           </div>

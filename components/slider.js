@@ -11,7 +11,7 @@ export default function Slider() {
 
   const slides = [
     {
-      text1: "World class manufacturer of personal wellness products",
+      text1: "World class manufacturer of wellness products",
       text2: "Pioneers in research, innovation and best practices",
       image: "/slider1.jpg",
       id: "slide1"
@@ -29,7 +29,7 @@ export default function Slider() {
       id: "slide3"
     },
     {
-      text1: "Transforming new-age start-ups",
+      text1: "Transforming new-age startups",
       text2: "With formulations, licensing, and state-of-the-art manufacturing",
       image: "/slider4.jpg",
       id: "slide4"
@@ -44,11 +44,12 @@ export default function Slider() {
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           slidesPerView={1}
-          navigation
+          navigation={false}
           autoplay={true}
           loop={true}
           speed={500}
           pagination={{ clickable: true }}
+
           // onSlideChange={() => console.log('slide change')}
           // onSwiper={(swiper) => console.log(swiper)}
         >
@@ -57,7 +58,10 @@ export default function Slider() {
             <div className='h-[60vh] w-screen relative flex justify-center items-center'>
               <Image className="object-cover w-full h-full" layout="fill" src={image} alt=""/>
               <div className="absolute inset-0 bg-green opacity-20"></div>
-              <h1 className="container text-center text-6xl font-bold text-white drop-shadow-md z-50">{text1} <br /> <span className="text-xl">{text2}</span></h1>  
+                <div className='px-4 md:container text-center z-50'>
+                  <h1 className="text-4xl md:text-6xl font-bold text-white drop-shadow-md py-4">{text1}</h1>  
+                  <h2 className="text-white leading-snug font-semibold text-2xl md:text-3xl drop-shadow-md">{text2}</h2>
+                </div>
             </div>
           </SwiperSlide>
         ))}
