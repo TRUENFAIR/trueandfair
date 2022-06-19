@@ -30,7 +30,8 @@ export default function Layout({ children }) {
           <Link href="/products"><a className={`${asPath === '/products' && 'font-bold underline decoration-yellow decoration-2 underline-offset-4'} mx-4 transition-all hover:text-zinc-500`}>Products</a></Link>
           <Link href="/team"><a className={`${asPath === '/team' && 'font-bold underline decoration-yellow decoration-2 underline-offset-4'} mx-4 transition-all hover:text-zinc-500`}>Team</a></Link>
           <Link href="/strengths"><a className={`${asPath === '/strengths' && 'font-bold underline decoration-yellow decoration-2 underline-offset-4'} mx-4 transition-all hover:text-zinc-500`}>Strengths</a></Link>
-          <Link href="/facilities"><a className={`${asPath === '/facilities' && 'font-bold underline decoration-yellow decoration-2 underline-offset-4'} mx-4 transition-all hover:text-zinc-500`}>Facilities</a></Link>
+            <Link href="/facilities"><a className={`${asPath === '/facilities' && 'font-bold underline decoration-yellow decoration-2 underline-offset-4'} mx-4 transition-all hover:text-zinc-500`}>Facilities</a></Link>
+            <Link href="/clients"><a className={`${asPath === '/clients' && 'font-bold underline decoration-yellow decoration-2 underline-offset-4'} mx-4 transition-all hover:text-zinc-500`}>Clients</a></Link>
           <Link href="/contact"><a className={`${asPath === '/contact' && 'font-bold underline decoration-yellow decoration-2 underline-offset-4'} mx-4 transition-all hover:text-zinc-500`}>Contact</a></Link>
           </nav>
           </div>

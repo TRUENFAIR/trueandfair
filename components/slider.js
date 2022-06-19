@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { useRef, useState, useEffect } from 'react'
 
 export default function Slider() {
 
@@ -30,12 +31,18 @@ export default function Slider() {
     }
   ]
 
+  const carousel = useRef(null)
+
+  useEffect(() => {
+    console.log(carousel)
+  })
+
   return (
     <div className="relative w-auto">
       <div className="w-screen h-[60vh] flex overflow-x-auto snap-mandatory snap-x scrollbar-hide">
         
         {slides.map(({text1, text2, image, id}) => (
-          <div key={id} className="w-screen h-full shrink-0 snap-center snap-always relative flex justify-center items-center">
+          <div key={id} className="w-screen h-full shrink-0 snap-center snap-always relative flex justify-center items-center" ref={carousel}>
             <Image className="object-cover w-full h-full" layout="fill" src={image} alt=""/>
             <div className="absolute inset-0 bg-green opacity-20"></div>
             <h1 className="container text-center text-6xl font-bold text-white drop-shadow-md z-50">{text1} <br /> <span className="text-xl">{text2}</span></h1>
