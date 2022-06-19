@@ -1,6 +1,11 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { useRef, useState, useEffect } from 'react'
+import { Navigation, Pagination, Autoplay} from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react'
+import 'swiper/css'
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/autoplay';
 
 export default function Slider() {
 
@@ -31,29 +36,32 @@ export default function Slider() {
     }
   ]
 
-  const carousel = useRef(null)
-
-  useEffect(() => {
-    console.log(carousel)
-  })
-
   return (
     <div className="relative w-auto">
-      <div className="w-screen h-[60vh] flex overflow-x-auto snap-mandatory snap-x scrollbar-hide">
+      {/* <div className="w-screen h-[60vh] flex overflow-x-auto snap-mandatory snap-x scrollbar-hide"> */}
+      <div className="w-screen">
         
-        {slides.map(({text1, text2, image, id}) => (
-          <div key={id} className="w-screen h-full shrink-0 snap-center snap-always relative flex justify-center items-center" ref={carousel}>
-            <Image className="object-cover w-full h-full" layout="fill" src={image} alt=""/>
-            <div className="absolute inset-0 bg-green opacity-20"></div>
-            <h1 className="container text-center text-6xl font-bold text-white drop-shadow-md z-50">{text1} <br /> <span className="text-xl">{text2}</span></h1>
-          </div>
+        <Swiper
+          modules={[Navigation, Pagination, Autoplay]}
+          slidesPerView={1}
+          navigation
+          autoplay={true}
+          loop={true}
+          speed={500}
+          pagination={{ clickable: true }}
+          // onSlideChange={() => console.log('slide change')}
+          // onSwiper={(swiper) => console.log(swiper)}
+        >
+          {slides.map(({text1, text2, image, id}) => (
+          <SwiperSlide key={id}>
+            <div className='h-[60vh] w-screen relative flex justify-center items-center'>
+              <Image className="object-cover w-full h-full" layout="fill" src={image} alt=""/>
+              <div className="absolute inset-0 bg-green opacity-20"></div>
+              <h1 className="container text-center text-6xl font-bold text-white drop-shadow-md z-50">{text1} <br /> <span className="text-xl">{text2}</span></h1>  
+            </div>
+          </SwiperSlide>
         ))}
-        
-      </div>
-      <div className="absolute w-full bottom-4 text-8xl text-white flex justify-center items-center">
-        <div className='w-6 h-6 cursor-pointer border-1 rounded-full flex justify-center items-center'><div className='w-3 h-3 rounded-full border-2 border-white bg-white shadow-sm'></div></div>
-        <div className='w-6 h-6 cursor-pointer border-1 rounded-full flex justify-center items-center'><div className='w-3 h-3 rounded-full border-2 border-white shadow-sm'></div></div>
-        <div className='w-6 h-6 cursor-pointer border-1 rounded-full flex justify-center items-center'><div className='w-3 h-3 rounded-full border-2 border-white shadow-sm'></div></div>
+        </Swiper>
       </div>
   </div>
   )

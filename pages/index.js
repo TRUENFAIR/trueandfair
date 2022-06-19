@@ -7,6 +7,8 @@ const rightIcon = <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 t
   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clipRule="evenodd" />
 </svg>
 
+const awards = ["/aw1.png", "/aw2.png", "/aw3.png", "/aw4.png", "/aw5.png"]
+
 export default function Home() {
   return (
     <div className="">
@@ -76,7 +78,20 @@ export default function Home() {
             </div>
         </section>
 
-        <section className="pt-24 pb-32 text-zinc-900 container mx-auto relative ">
+        <section className="">
+          <div className='py-24 text-zinc-900 relative container mx-auto'>
+            <h1 className="text-4xl tracking-wide font-light text-green-900">AWARDS</h1>
+            <div className='w-full flex justify-start items-center pt-8'>
+              {awards.map((x, index) => (
+                <div key={index} className='mr-8'>
+                  <Image width={120} height={120} className='' alt="" src={x} />
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="py-12 text-zinc-900 container mx-auto relative ">
           <h1 className="text-4xl tracking-wide font-light text-green-900">OUR CLIENTS</h1>
           <p className="py-4">Madhur Pharma is trusted by some of the world&apos;s biggest brands in cosmetics, pharma and herbal products</p>
 

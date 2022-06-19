@@ -6,7 +6,7 @@ export default function Clients() {
 
   return (
     <>
-      <section className="pt-12 pb-24 text-zinc-900">
+      <section className="pt-12 pb-24 text-zinc-900 bg-zinc-50">
         <div className='container mx-auto'>
           <h1 className="text-4xl tracking-wide font-light text-green-900">CLIENTS</h1>
 
