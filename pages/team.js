@@ -55,7 +55,7 @@ export default function Teams() {
               </div>
               
               <p className="text-lg pt-2">{name}</p>
-              <p className="text-sm text-zinc-500">{role}</p>
+              <p className="text-md text-zinc-500 leading-tight">{role}</p>
             </div>
           ))}
         </div>

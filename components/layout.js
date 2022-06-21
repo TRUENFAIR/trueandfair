@@ -26,7 +26,22 @@ export default function Layout({ children }) {
             </a>
           </Link>
           <nav className="text-xs uppercase tracking-tight hidden md:block">
-            <Link href="/about"><a className={`${asPath === '/about' && 'font-bold underline decoration-yellow decoration-2 underline-offset-4'} hover:underline hover:decoration-yellow hover:decoration-2 underline-offset-4 mx-4 transition-all hover:text-zinc-500`}>About</a></Link>
+            <div className='group relative inline-flex'>
+              <Link href="/about"><a  className={`${asPath === '/about' && 'font-bold underline decoration-yellow decoration-2 underline-offset-4'}  hover:underline hover:decoration-yellow hover:decoration-2 underline-offset-4 mx-4 transition-all`}>About</a></Link>
+
+              <div className='bg-transparent w-auto absolute top-4 left-0 flex-col z-50 rounded-sm invisible group-hover:visible'>
+                <div className='pt-4 w-auto'>
+                  <div className='w-full shadow-md'>
+                    <Link href="#"><a className="w-full hover:font-bold px-4 bg-white inline-flex p-2 normal-case text-sm font-semibold whitespace-nowrap">The Company</a></Link>
+                    <Link href="#"><a className="w-full px-4 bg-white inline-flex p-2 normal-case text-sm font-semibold whitespace-nowrap">Our Mission</a></Link>
+                    <Link href="#"><a className="w-full px-4 bg-white inline-flex p-2 normal-case text-sm font-semibold whitespace-nowrap">Core Values</a></Link>
+                    <Link href="#"><a className="w-full px-4 bg-white inline-flex p-2 normal-case text-sm font-semibold whitespace-nowrap">Success Stories</a></Link>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
             <Link href="/services"><a className={`${asPath === '/services' && 'font-bold underline decoration-yellow decoration-2 underline-offset-4'} hover:underline hover:decoration-yellow hover:decoration-2 underline-offset-4 mx-4 transition-all hover:text-zinc-500`}>Services</a></Link>
             <Link href="/products"><a className={`${asPath === '/products' && 'font-bold underline decoration-yellow decoration-2 underline-offset-4'} hover:underline hover:decoration-yellow hover:decoration-2 underline-offset-4 mx-4 transition-all hover:text-zinc-500`}>Products</a></Link>
             <Link href="/team"><a className={`${asPath === '/team' && 'font-bold underline decoration-yellow decoration-2 underline-offset-4'} hover:underline hover:decoration-yellow hover:decoration-2 underline-offset-4 mx-4 transition-all hover:text-zinc-500`}>Team</a></Link>
