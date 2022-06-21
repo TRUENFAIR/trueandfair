@@ -20,6 +20,14 @@ export default function About() {
       </section>
 
       <section className="p-4 md:container mx-auto md:pt-12 text-zinc-900">
+        <h1 className="text-4xl tracking-wide font-light text-green-900">OUR MISSION</h1>
+        <div className='w-full h-48 bg-gray-100 mt-8 relative flex justify-start items-center pl-12'>
+          <Image layout='fill' alt='' src='/ourvision2.jpeg' className='absolute inset-0 object-cover' />
+          <p className='text-white z-10 text-2xl prose w-1/2 leading-relaxed'>To be a world-class manufacturer of personal wellness products that are a hallmark of trust for our customers and consumers globally</p>
+        </div>
+      </section>
+
+      <section className="p-4 md:container mx-auto md:pt-12 text-zinc-900">
         <h1 className="text-4xl tracking-wide font-light text-green-900">CORE VALUES</h1>
         <p className="md:pt-8 pt-4">At Madhur Pharma, we have always practised a strong ethos of innovation, expertise, honesty, integrity, and safety. These guiding principles along with a customer-first approach have established Madhur Pharma as one of the leading personal wellness product manufacturers for multiple decades.</p>
 
@@ -122,6 +130,17 @@ export default function About() {
             <p className="prose pt-8">Madhur Pharma has an extraordinary pordolio of over 155 licenses in cosmetics products, 221 licenses for AYUSH products, 12 products for FOSCOS (FSSAI), and a diverse set of trademarks and awards conferred upon by the industry. Madhur is one of the very few companies who not only manufactures but, formulates a majority of their clients’ products through intense research and innovaBon. </p>
               
             <p className="prose pt-8">A quick glance at how Madhur’s product pordolio has evolved and diversified over the years reveals the trust and respect Madhur Pharma commands in new product formulations and licensing. This includes formulations for educational insti in cosmetics as well as classical ayurveda formulations, and stem-cell-research based formulations that require storage at very low temperatures. Madhur continues to be a very well respected and trusted brand even among the government stakeholders.</p>
+          </div>
+            
+          <div className="w-auto">
+            <h2 className="text-xl font-semibold">Campus Connect</h2>
+            <p className="prose pt-8">Madhur Pharma invests in strong partnerships with academia, not just businesses all over the world. A strong culture of knowledge sharing is hard-wired into Madhur’s DNA, and it is extended to educational and research institutes besides their clientele.</p>
+              
+            <p className="prose pt-8">Madhur&apos;s team hosts a series of tours and workshops at their facility for students of pharma and cosmetics in order to provide exposure and industry connect, besides their classroom curriculum. Additionally, Madhur offers internships in several areas for students in need, who learn and gain hands-on experience into product formulations, manufacturing techniques and best practices.</p>
+          </div>
+
+          <div className="w-auto h-48 md:h-auto relative">
+            <Image layout='fill' className="absolute h-full w-full object-cover" alt="" src="/section2-image2.jpeg"/>
           </div>
           
           </div>

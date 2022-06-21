@@ -81,12 +81,17 @@ export default function Home() {
         <section className="">
           <div className='p-4 md:py-24 text-zinc-900 relative md:container mx-auto'>
             <h1 className="text-4xl tracking-wide font-light text-green-900">AWARDS</h1>
-            <div className='inline-grid grid-cols-3 md:grid-cols-6 gap-2 pt-8'>
-              {awards.map((x, index) => (
-                <div key={index} className='shrink-0 md:mr-4 mr-2 md:w-40 md:h-40 w-28 h-28 relative border-2'>
-                  <Image layout='fill' className='absolute inset-0 object-fill' alt="" src={x} />
-                </div>
-              ))}
+
+            <div className='mt-8 w-full h-48 bg-gray-50 relative flex justify-center items-center'>
+              <Image layout='fill' alt='' src='/awards.jpg' className='absolute inset-0 object-cover' />
+              <div className='absolute inset-0 bg-black opacity-50'></div>
+                <div className='inline-grid grid-cols-3 md:grid-cols-6 gap-2'>
+                {awards.map((x, index) => (
+                  <div key={index} className='shrink-0 md:mr-4 mr-2 md:w-40 md:h-40 w-28 h-28 relative border-2'>
+                    <Image layout='fill' className='absolute inset-0 object-fill' alt="" src={x} />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </section>

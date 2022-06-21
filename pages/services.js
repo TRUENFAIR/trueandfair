@@ -9,7 +9,7 @@ export default function Services() {
         <h1 className="text-4xl tracking-wide font-light text-green-900">OUR SERVICES</h1>
         <div className="grid md:grid-cols-2 grid-cols-1 md:gap-24 gap-4 pt-12">
           <div className="w-auto relative h-48 md:h-auto">
-            <Image layout='fill' className="absolute h-full w-full object-cover" alt="" src="/section2-image1.jpeg"/>
+            <Image layout='fill' className="absolute h-full w-full object-cover" alt="" src="/turnkeyprojects.jpeg"/>
           </div>
           
           <div className="w-auto">
@@ -25,11 +25,11 @@ export default function Services() {
           </div>
 
           <div className="w-auto relative h-48 md:h-auto">
-            <Image layout='fill' className="absolute h-full w-full object-cover" alt="" src="/section2-image2.jpeg"/>
+            <Image layout='fill' className="absolute h-full w-full object-cover" alt="" src="/productdevelopment.jpeg"/>
           </div>
 
           <div className="w-auto relative h-48 md:h-auto">
-            <Image layout='fill' className="absolute h-full w-full object-cover" alt="" src="/section2-image3.jpeg"/>
+            <Image layout='fill' className="absolute h-full w-full object-cover" alt="" src="/contractmanufacturing.jpeg"/>
           </div>
           
           <div className="w-auto">

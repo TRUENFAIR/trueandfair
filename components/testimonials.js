@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { Navigation, Pagination, Autoplay} from 'swiper';
+import {Pagination, Autoplay} from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/navigation';
@@ -38,12 +38,11 @@ export default function Testimonials() {
 
   return (
     <section className="p-4 md:pt-12 bg-emerald-50 relative">
-      <h1 className="container mx-auto pb-12 text-4xl font-light tracking-wide text-green-900">WHAT PEOPLE SAY</h1>
+      <h1 className="md:container mx-auto pb-12 text-4xl font-light tracking-wide text-green-900">WHAT PEOPLE SAY</h1>
 
       <Swiper
-          modules={[Navigation, Pagination, Autoplay]}
+          modules={[Pagination, Autoplay]}
           slidesPerView={1}
-          navigation
           autoplay={true}
           loop={true}
           speed={500}
@@ -52,12 +51,13 @@ export default function Testimonials() {
           // onSwiper={(swiper) => console.log(swiper)}
       >
         {stuff.map(({ text, name, position, company, logo, id }) => (
-          <SwiperSlide key={id}><div className="w-screen relative flex justify-center items-center">
-            <div className="container mx-auto px-24 flex flex-col justify-center items-center h-[50vh]">
-              <p className="max-w-prose text-lg leading-10 text-center italic">&ldquo;{text}&rdquo;</p>
-              <p className="text-lg pt-12 text-zinc-500 font-semibold">{name},&nbsp;<span className="font-light">{position}</span></p>
-              <p className="pt-1 text-md text-zinc-500">{company}</p>
-              <Image alt="" width={120} height={60} src={logo} className="mt-2 object-contain" />
+          <SwiperSlide key={id}>
+            <div className="w-screen relative flex justify-center items-center">
+              <div className="md:container mx-auto md:px-24 flex flex-col justify-center items-center h-[50vh]">
+                <p className="md:max-w-prose md:text-lg text-sm md:leading-10 text-center italic">&ldquo;{text}&rdquo;</p>
+                <p className="text-lg pt-12 text-zinc-500 font-semibold">{name},&nbsp;<span className="font-light">{position}</span></p>
+                <p className="pt-1 text-md text-zinc-500">{company}</p>
+                <Image alt="" width={120} height={60} src={logo} className="mt-2 object-contain" />
             </div>
           </div>
           </SwiperSlide>

@@ -15,7 +15,11 @@ export default function Facilities() {
     {image: "/f9.jpeg", text: "Some content here. Some content here. Some content here."},
     {image: "/f10.jpeg", text: "Some content here. Some content here. Some content here."},
     {image: "/f11.jpeg", text: "Some content here. Some content here. Some content here."},
-    {image: "/f12.jpeg", text: "Some content here. Some content here. Some content here."},
+    { image: "/f12.jpeg", text: "Some content here. Some content here. Some content here." },
+    { image: "/f13.jpeg", text: "Some content here. Some content here. Some content here." },
+    { image: "/f14.jpeg", text: "Some content here. Some content here. Some content here." },
+    { image: "/f15.jpeg", text: "Some content here. Some content here. Some content here." },
+    {image: "/f16.jpeg", text: "Some content here. Some content here. Some content here."},
   ]
 
   return (
