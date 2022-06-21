@@ -6,6 +6,16 @@ export default function Teams() {
   const team = [
     {
       name: "Dr. Deepak Joshi",
+      image: "/deepakjoshi.jpeg",
+      role: "Chief Man"
+    },
+    {
+      name: "Dr. Deepak Joshi",
+      image: "/person6.jpg",
+      role: "Chief Man"
+    },
+    {
+      name: "Dr. Deepak Joshi",
       image: "/person1.jpg",
       role: "Chief Man"
     },
@@ -29,20 +39,15 @@ export default function Teams() {
       image: "/person5.jpg",
       role: "Chief Man"
     },
-    {
-      name: "Dr. Deepak Joshi",
-      image: "/person6.jpg",
-      role: "Chief Man"
-    },
   ]
 
   return (
     <>
       <section className="pt-12 pb-24 text-zinc-900 bg-zinc-50">
-      <div className='container mx-auto'>
+      <div className='md:container p-4 mx-auto'>
         <h1 className="text-4xl tracking-wide font-light text-green-900">MEET THE TEAM</h1>
         
-        <div className="grid grid-cols-6 gap-6 py-12">
+        <div className="grid md:grid-cols-7 grid-cols-3 gap-2 py-12">
             {team.map(({name, image, role}, index) => (
             <div key={index} className="flex flex-col justify-center items-start rounded-sm">
               <div className="w-full h-52 bg-zinc-100 shadow-sm relative">

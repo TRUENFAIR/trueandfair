@@ -82,12 +82,12 @@ export default function Products() {
   return (
     <>
       <section className="pt-12 pb-24 text-zinc-900 bg-zinc-50">
-        <div className="container mx-auto">
+        <div className="md:container p-4 mx-auto">
           <h1 className="text-4xl tracking-wide font-light text-green-900">
             OUR PRODUCTS
           </h1>
 
-          <div className="grid grid-cols-8 gap-4 pt-12">
+          <div className="grid md:grid-cols-8 grid-cols-4 md:gap-4 gap-2 pt-12">
             {buttons.map((button, index) => (
               <div key={index} onClick={() => { buttonClick(index) }} className={`${index === buttonIndex ? 'bg-yellow text-zinc-900' : 'bg-zinc-100'} w-full h-16 hover:scale-105 cursor-pointer transition rounded-sm flex items-center justify-center p-4 relative`}>
                 <span className="text-xs tracking-tight font-medium text-center whitespace-wrap leading-4 uppercase">{button.name}</span>
@@ -95,7 +95,7 @@ export default function Products() {
             ))}
           </div>
 
-          <div className="grid grid-cols-4 gap-12 pt-12">            
+          <div className="grid md:grid-cols-4 grid-cols-2 md:gap-12 gap-4 md:pt-12 pt-4">            
             {buttons[buttonIndex].products.map((product, index) => (
               <div key={index} className="w-full h-72 shadow-md shadow-slate-200 hover:scale-105 transition-all text-white font-bold uppercase relative cursor-pointer">
                 <Image layout="fill" alt="" src={product.image} className="w-full h-full object-cover absolute inset-0 hover:grayscale" />

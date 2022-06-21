@@ -5,13 +5,13 @@ export default function Contact() {
   return (
     <>
       <section className="pt-12 pb-24 text-zinc-900 bg-zinc-50">
-        <div className="container mx-auto">
+        <div className="md:container p-4 mx-auto">
           <h1 className="text-4xl tracking-wide font-light text-green-900">
             CONTACT
           </h1>
 
-          <div className="flex justify-start items-start bg-zinc-50 rounded pt-8 ">
-              <div className="w-2/5 ">
+          <div className="flex flex-col md:flex-row justify-start items-start bg-zinc-50 rounded pt-8 ">
+              <div className="md:w-2/5 w-full">
                 <p className="text-2xl font-semibold upper">Madhur Pharma &<br/> Research Laboratories Pvt Ltd</p>
                   
                 <div className="text-base pt-8 text-zinc-600">
@@ -24,8 +24,8 @@ export default function Contact() {
                 </div>
 
               </div>
-              <div className="w-3/5 ">
-                <div className="pl-12">
+              <div className="md:w-3/5 w-full">
+                <div className="md:pl-12 md:pt-0 pt-12">
                   <h2 className="text-2xl font-light">Write to us</h2>
                   <div className="mt-8">
                     <div className="grid grid-cols-2 gap-6">

@@ -5,10 +5,10 @@ export default function Services() {
   return (
     <>
       <section className="pt-12 pb-24 text-zinc-900 bg-zinc-50">
-      <div className='container mx-auto'>
+      <div className='md:container p-4 mx-auto'>
         <h1 className="text-4xl tracking-wide font-light text-green-900">OUR SERVICES</h1>
-        <div className="grid grid-cols-2 gap-24 pt-12">
-          <div className="w-auto relative">
+        <div className="grid md:grid-cols-2 grid-cols-1 md:gap-24 gap-4 pt-12">
+          <div className="w-auto relative h-48 md:h-auto">
             <Image layout='fill' className="absolute h-full w-full object-cover" alt="" src="/section2-image1.jpeg"/>
           </div>
           
@@ -24,11 +24,11 @@ export default function Services() {
             <p className="pt-6 prose">We have stood by several of our customers every step of the way and helped them launch new products, many of which have gone on to become their flag-ship brands. Get in touch to know more.</p>
           </div>
 
-          <div className="w-auto relative">
+          <div className="w-auto relative h-48 md:h-auto">
             <Image layout='fill' className="absolute h-full w-full object-cover" alt="" src="/section2-image2.jpeg"/>
           </div>
 
-          <div className="w-auto relative">
+          <div className="w-auto relative h-48 md:h-auto">
             <Image layout='fill' className="absolute h-full w-full object-cover" alt="" src="/section2-image3.jpeg"/>
           </div>
           

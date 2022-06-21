@@ -26,14 +26,14 @@ export default function Layout({ children }) {
             </a>
           </Link>
           <nav className="text-xs uppercase tracking-tight hidden md:block">
-            <Link href="/about"><a className={`${asPath === '/about' && 'font-bold underline decoration-yellow decoration-2 underline-offset-4'} mx-4 transition-all hover:text-zinc-500`}>About</a></Link>
-            <Link href="/services"><a className={`${asPath === '/services' && 'font-bold underline decoration-yellow decoration-2 underline-offset-4'} mx-4 transition-all hover:text-zinc-500`}>Services</a></Link>
-            <Link href="/products"><a className={`${asPath === '/products' && 'font-bold underline decoration-yellow decoration-2 underline-offset-4'} mx-4 transition-all hover:text-zinc-500`}>Products</a></Link>
-            <Link href="/team"><a className={`${asPath === '/team' && 'font-bold underline decoration-yellow decoration-2 underline-offset-4'} mx-4 transition-all hover:text-zinc-500`}>Team</a></Link>
-            <Link href="/strengths"><a className={`${asPath === '/strengths' && 'font-bold underline decoration-yellow decoration-2 underline-offset-4'} mx-4 transition-all hover:text-zinc-500`}>Strengths</a></Link>
-            <Link href="/facilities"><a className={`${asPath === '/facilities' && 'font-bold underline decoration-yellow decoration-2 underline-offset-4'} mx-4 transition-all hover:text-zinc-500`}>Facilities</a></Link>
-            <Link href="/clients"><a className={`${asPath === '/clients' && 'font-bold underline decoration-yellow decoration-2 underline-offset-4'} mx-4 transition-all hover:text-zinc-500`}>Clients</a></Link>
-            <Link href="/contact"><a className={`${asPath === '/contact' && 'font-bold underline decoration-yellow decoration-2 underline-offset-4'} mx-4 transition-all hover:text-zinc-500`}>Contact</a></Link>
+            <Link href="/about"><a className={`${asPath === '/about' && 'font-bold underline decoration-yellow decoration-2 underline-offset-4'} hover:underline hover:decoration-yellow hover:decoration-2 underline-offset-4 mx-4 transition-all hover:text-zinc-500`}>About</a></Link>
+            <Link href="/services"><a className={`${asPath === '/services' && 'font-bold underline decoration-yellow decoration-2 underline-offset-4'} hover:underline hover:decoration-yellow hover:decoration-2 underline-offset-4 mx-4 transition-all hover:text-zinc-500`}>Services</a></Link>
+            <Link href="/products"><a className={`${asPath === '/products' && 'font-bold underline decoration-yellow decoration-2 underline-offset-4'} hover:underline hover:decoration-yellow hover:decoration-2 underline-offset-4 mx-4 transition-all hover:text-zinc-500`}>Products</a></Link>
+            <Link href="/team"><a className={`${asPath === '/team' && 'font-bold underline decoration-yellow decoration-2 underline-offset-4'} hover:underline hover:decoration-yellow hover:decoration-2 underline-offset-4 mx-4 transition-all hover:text-zinc-500`}>Team</a></Link>
+            <Link href="/strengths"><a className={`${asPath === '/strengths' && 'font-bold underline decoration-yellow decoration-2 underline-offset-4'} hover:underline hover:decoration-yellow hover:decoration-2 underline-offset-4 mx-4 transition-all hover:text-zinc-500`}>Strengths</a></Link>
+            <Link href="/facilities"><a className={`${asPath === '/facilities' && 'font-bold underline decoration-yellow decoration-2 underline-offset-4'} hover:underline hover:decoration-yellow hover:decoration-2 underline-offset-4 mx-4 transition-all hover:text-zinc-500`}>Facilities</a></Link>
+            <Link href="/clients"><a className={`${asPath === '/clients' && 'font-bold underline decoration-yellow decoration-2 underline-offset-4'} hover:underline hover:decoration-yellow hover:decoration-2 underline-offset-4 mx-4 transition-all hover:text-zinc-500`}>Clients</a></Link>
+            <Link href="/contact"><a className={`${asPath === '/contact' && 'font-bold underline decoration-yellow decoration-2 underline-offset-4'} hover:underline hover:decoration-yellow hover:decoration-2 underline-offset-4 mx-4 transition-all hover:text-zinc-500`}>Contact</a></Link>
           </nav>
           <nav className='block md:hidden mr-2 p-2'>
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">

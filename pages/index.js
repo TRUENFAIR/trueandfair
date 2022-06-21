@@ -7,7 +7,7 @@ const rightIcon = <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 t
   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clipRule="evenodd" />
 </svg>
 
-const awards = ["/aw1.png", "/aw2.png", "/aw3.png", "/aw4.png", "/aw5.png"]
+const awards = ["/aw1.png", "/aw2.png", "/aw3.png", "/aw4.png", "/aw5.png", "/aw6.png"]
 
 export default function Home() {
   return (
@@ -21,7 +21,7 @@ export default function Home() {
       <main className="">
         <Slider />
         
-        <section className="md:container p-4 mx-auto md:py-32 text-zinc-900 ">
+        <section className="md:container p-4 mx-auto md:py-32 text-zinc-900">
           <div className="grid grid-col-1 md:grid-cols-2 md:gap-16 gap-4">
             <div className="w-auto">
               <h1 className="text-4xl tracking-wide font-light text-green-900">THE COMPANY</h1>
@@ -81,9 +81,9 @@ export default function Home() {
         <section className="">
           <div className='p-4 md:py-24 text-zinc-900 relative md:container mx-auto'>
             <h1 className="text-4xl tracking-wide font-light text-green-900">AWARDS</h1>
-            <div className='inline-grid grid-cols-3 md:grid-cols-5 gap-2 pt-8'>
+            <div className='inline-grid grid-cols-3 md:grid-cols-6 gap-2 pt-8'>
               {awards.map((x, index) => (
-                <div key={index} className='shrink-0 md:mr-4 mr-2 md:w-32 md:h-32 w-28 h-28 relative border-2'>
+                <div key={index} className='shrink-0 md:mr-4 mr-2 md:w-40 md:h-40 w-28 h-28 relative border-2'>
                   <Image layout='fill' className='absolute inset-0 object-fill' alt="" src={x} />
                 </div>
               ))}

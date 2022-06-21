@@ -21,10 +21,10 @@ export default function Facilities() {
   return (
     <>
       <section className="pt-12 pb-24 text-zinc-900 bg-zinc-50">
-        <div className='container mx-auto'>
+        <div className='md:container p-4 mx-auto'>
           <h1 className="text-4xl tracking-wide font-light text-green-900">FACILITIES</h1>
 
-          <div className="grid grid-cols-4 gap-9 pt-12">
+          <div className="grid md:grid-cols-4 grid-cols-2 md:gap-9 gap-4 pt-12">
             {stuff.map(({image, text}, index) => (
               <div key={index} className="flex flex-col justify-center items-start rounded-sm">
                 <div className="w-full h-52 bg-zinc-100 shadow-sm relative">

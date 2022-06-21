@@ -59,7 +59,7 @@ export default function Slider() {
               <Image className="object-cover w-full h-full" layout="fill" src={image} alt=""/>
               <div className="absolute inset-0 bg-green opacity-20"></div>
                 <div className='px-4 md:container text-center z-50'>
-                  <h1 className="text-4xl md:text-6xl font-bold text-white drop-shadow-md py-4">{text1}</h1>  
+                  <h1 className="text-4xl md:text-5xl font-bold text-white drop-shadow-md py-4">{text1}</h1>  
                   <h2 className="text-white leading-snug font-semibold text-2xl md:text-3xl drop-shadow-md">{text2}</h2>
                 </div>
             </div>
