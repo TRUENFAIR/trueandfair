@@ -37,8 +37,8 @@ export default function Testimonials() {
   ]
 
   return (
-    <section className="p-4 md:pt-12 bg-emerald-50 relative">
-      <h1 className="md:container mx-auto pb-12 text-4xl font-light tracking-wide text-green-900">WHAT PEOPLE SAY</h1>
+    <section className="p-4 md:pt-12  bg-slate-100 relative">
+      <h1 className="md:container mx-auto pb-12 text-4xl font-light tracking-wide text-green-900">WHAT OUR CUSTOMERS SAY</h1>
 
       <Swiper
           modules={[Pagination, Autoplay]}

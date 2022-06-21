@@ -1,10 +1,19 @@
-import Head from "next/head";
-import Image from "next/image";
-import { useState, useEffect } from "react";
+import Head from "next/head"
+import Image from "next/image"
+import { useState, useEffect } from "react"
+import { useRouter } from 'next/router'
 
 export default function Products() {
+  const {asPath} = useRouter()
   const [buttonIndex, setButtonIndex] = useState(0);
   const buttonClick = (x) => {setButtonIndex(x)}
+  
+  useEffect(() => {
+    const hashes = ["skin", "hair", "oral", "nutraceuticals", "baby", "mens", "hygiene", "herbal"]
+    const whichButton = hashes.indexOf(asPath.split('#')[1])
+    setButtonIndex(whichButton === -1 ? 0 : whichButton)
+  }, [asPath])
+  
   const buttons = [
     {
       name: "Skin Care",
@@ -84,7 +93,7 @@ export default function Products() {
       <section className="pt-12 pb-24 text-zinc-900 bg-zinc-50">
         <div className="md:container p-4 mx-auto">
           <h1 className="text-4xl tracking-wide font-light text-green-900">
-            OUR PRODUCTS
+            OUR PORTFOLIO
           </h1>
 
           <div className="grid md:grid-cols-8 grid-cols-4 md:gap-4 gap-2 pt-12">

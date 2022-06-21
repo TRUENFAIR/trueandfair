@@ -4,7 +4,7 @@ import Image from 'next/image'
 export default function About() { 
   return (
     <>
-      <section className="md:py-12 text-zinc-900 bg-emerald-50">
+      <section className="md:py-12 text-zinc-900 bg-emerald-50" id="the-company">
         <div className='p-4 md:container mx-auto'>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-16">
           <div className="w-auto pb-8">
@@ -23,11 +23,13 @@ export default function About() {
         <h1 className="text-4xl tracking-wide font-light text-green-900">OUR MISSION</h1>
         <div className='w-full h-48 bg-gray-100 mt-8 relative flex justify-start items-center pl-12'>
           <Image layout='fill' alt='' src='/ourvision2.jpeg' className='absolute inset-0 object-cover' />
-          <p className='text-white z-10 text-2xl prose w-1/2 leading-relaxed'>To be a world-class manufacturer of personal wellness products that are a hallmark of trust for our customers and consumers globally</p>
+          <p className='text-white z-10 text-2xl prose w-1/2 leading-relaxed'>
+            To be a world-class manufacturer of personal wellness products that are a hallmark of trust for our customers and consumers
+          </p>
         </div>
       </section>
 
-      <section className="p-4 md:container mx-auto md:pt-12 text-zinc-900">
+      <section className="p-4 md:container mx-auto md:pt-12 text-zinc-900" id="core-values">
         <h1 className="text-4xl tracking-wide font-light text-green-900">CORE VALUES</h1>
         <p className="md:pt-8 pt-4">At Madhur Pharma, we have always practised a strong ethos of innovation, expertise, honesty, integrity, and safety. These guiding principles along with a customer-first approach have established Madhur Pharma as one of the leading personal wellness product manufacturers for multiple decades.</p>
 
@@ -95,12 +97,12 @@ export default function About() {
         </div>       
       </section>
 
-      <section className="md:pt-12 pb-24 text-zinc-900 bg-slate-100">
+      <section className="md:pt-12 pb-24 text-zinc-900 bg-slate-100" id="success-stories">
         <div className='md:container p-4 mx-auto'>
         <h1 className="text-4xl tracking-wide font-light text-green-900">SUCCESS STORIES</h1>
         <div className="grid md:grid-cols-2 grid-cols-1 md:gap-24 gap-4 md:pt-12 pt-4">
           <div className="w-auto h-48 md:h-auto relative">
-            <Image layout='fill' className="absolute h-full w-full object-cover" alt="" src="/section2-image1.jpeg"/>
+            <Image layout='fill' className="absolute h-full w-full object-cover" alt="" src="/covidrelief.jpeg"/>
           </div>
           
           <div className="w-auto">
@@ -118,11 +120,11 @@ export default function About() {
           </div>
 
           <div className="w-auto h-48 md:h-auto relative">
-            <Image layout='fill' className="absolute h-full w-full object-cover" alt="" src="/section2-image2.jpeg"/>
+            <Image layout='fill' className="absolute h-full w-full object-cover" alt="" src="/startupscale.jpeg"/>
           </div>
 
           <div className="w-auto h-48 md:h-auto relative">
-            <Image layout='fill' className="absolute h-full w-full object-cover" alt="" src="/section2-image3.jpeg"/>
+            <Image layout='fill' className="absolute h-full w-full object-cover" alt="" src="/pioneersinnovation.jpeg"/>
           </div>
           
           <div className="w-auto">
@@ -140,7 +142,7 @@ export default function About() {
           </div>
 
           <div className="w-auto h-48 md:h-auto relative">
-            <Image layout='fill' className="absolute h-full w-full object-cover" alt="" src="/section2-image2.jpeg"/>
+            <Image layout='fill' className="absolute h-full w-full object-cover" alt="" src="/campusconnect.jpeg"/>
           </div>
           
           </div>

@@ -66,7 +66,7 @@ export default function Teams() {
           
         <div className='grid md:grid-cols-2 grid-cols-1 gap-4 pt-12'>
             <div className='w-auto h-72 bg-gray-100 relative'>
-              <Image layout='fill' className="absolute inset-0 object-cover" alt="" src="/team2.jpeg"/>
+              <Image layout='fill' className="absolute inset-0 object-cover" alt="" src="/team2.jpg"/>
             </div>  
             <div className='w-auto h-72 bg-gray-100 relative'>
               <Image layout='fill' className="absolute inset-0 object-cover" alt="" src="/team3.jpeg"/>

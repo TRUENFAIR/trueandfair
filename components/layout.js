@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { useRouter } from 'next/router'
 
 export default function Layout({ children }) {
-  const {asPath} = useRouter()
+  const {pathname} = useRouter()
   return (
     <>
       <Head>
@@ -25,30 +25,59 @@ export default function Layout({ children }) {
               </div>
             </a>
           </Link>
-          <nav className="text-xs uppercase tracking-tight hidden md:block">
+
+          <nav className="text-sm uppercase tracking-tight hidden md:block">
             <div className='group relative inline-flex'>
-              <Link href="/about"><a  className={`${asPath === '/about' && 'font-bold underline decoration-yellow decoration-2 underline-offset-4'}  hover:underline hover:decoration-yellow hover:decoration-2 underline-offset-4 mx-4 transition-all`}>About</a></Link>
+              <Link href="/about"><a  className={`${pathname === '/about' && 'underline decoration-yellow decoration-2 underline-offset-4 font-bold'} hover:font-bold mx-4 transition-all`}>About</a></Link>
 
               <div className='bg-transparent w-auto absolute top-4 left-0 flex-col z-50 rounded-sm invisible group-hover:visible'>
                 <div className='pt-4 w-auto'>
                   <div className='w-full shadow-md'>
-                    <Link href="#"><a className="w-full hover:font-bold px-4 bg-white inline-flex p-2 normal-case text-sm font-semibold whitespace-nowrap">The Company</a></Link>
-                    <Link href="#"><a className="w-full px-4 bg-white inline-flex p-2 normal-case text-sm font-semibold whitespace-nowrap">Our Mission</a></Link>
-                    <Link href="#"><a className="w-full px-4 bg-white inline-flex p-2 normal-case text-sm font-semibold whitespace-nowrap">Core Values</a></Link>
-                    <Link href="#"><a className="w-full px-4 bg-white inline-flex p-2 normal-case text-sm font-semibold whitespace-nowrap">Success Stories</a></Link>
+                    <Link href="/about#the-company"><a className="w-36 hover:font-bold px-4 bg-white inline-flex p-2 normal-case text-sm whitespace-nowrap border-b border-t border-zinc-100">The Company</a></Link>
+                    <Link href="/about#core-values"><a className="w-36 hover:font-bold px-4 bg-white inline-flex p-2 normal-case text-sm whitespace-nowrap border-b border-zinc-100">Core Values</a></Link>
+                    <Link href="/about#success-stories"><a className="w-36 hover:font-bold px-4 bg-white inline-flex p-2 normal-case text-sm whitespace-nowrap border-b border-zinc-100">Success Stories</a></Link>
                   </div>
                 </div>
-
               </div>
 
             </div>
-            <Link href="/services"><a className={`${asPath === '/services' && 'font-bold underline decoration-yellow decoration-2 underline-offset-4'} hover:underline hover:decoration-yellow hover:decoration-2 underline-offset-4 mx-4 transition-all hover:text-zinc-500`}>Services</a></Link>
-            <Link href="/products"><a className={`${asPath === '/products' && 'font-bold underline decoration-yellow decoration-2 underline-offset-4'} hover:underline hover:decoration-yellow hover:decoration-2 underline-offset-4 mx-4 transition-all hover:text-zinc-500`}>Products</a></Link>
-            <Link href="/team"><a className={`${asPath === '/team' && 'font-bold underline decoration-yellow decoration-2 underline-offset-4'} hover:underline hover:decoration-yellow hover:decoration-2 underline-offset-4 mx-4 transition-all hover:text-zinc-500`}>Team</a></Link>
-            <Link href="/strengths"><a className={`${asPath === '/strengths' && 'font-bold underline decoration-yellow decoration-2 underline-offset-4'} hover:underline hover:decoration-yellow hover:decoration-2 underline-offset-4 mx-4 transition-all hover:text-zinc-500`}>Strengths</a></Link>
-            <Link href="/facilities"><a className={`${asPath === '/facilities' && 'font-bold underline decoration-yellow decoration-2 underline-offset-4'} hover:underline hover:decoration-yellow hover:decoration-2 underline-offset-4 mx-4 transition-all hover:text-zinc-500`}>Facilities</a></Link>
-            <Link href="/clients"><a className={`${asPath === '/clients' && 'font-bold underline decoration-yellow decoration-2 underline-offset-4'} hover:underline hover:decoration-yellow hover:decoration-2 underline-offset-4 mx-4 transition-all hover:text-zinc-500`}>Clients</a></Link>
-            <Link href="/contact"><a className={`${asPath === '/contact' && 'font-bold underline decoration-yellow decoration-2 underline-offset-4'} hover:underline hover:decoration-yellow hover:decoration-2 underline-offset-4 mx-4 transition-all hover:text-zinc-500`}>Contact</a></Link>
+            <div className='group relative inline-flex'>
+              <Link href="/services"><a className={`${pathname === '/services' && 'underline decoration-yellow decoration-2 underline-offset-4 font-bold'} hover:font-bold mx-4 transition-all`}>Services</a></Link>
+
+              <div className='bg-transparent w-auto absolute top-4 left-0 flex-col z-50 rounded-sm invisible group-hover:visible'>
+                <div className='pt-4 w-auto'>
+                  <div className='w-full shadow-md'>
+                    <Link href="/services#turnkey-projects"><a className="w-48 hover:font-bold px-4 bg-white inline-flex p-2 normal-case text-sm whitespace-nowrap border-b border-t border-zinc-100">Turnkey Projects</a></Link>
+                    <Link href="/services#product-development"><a className="w-48 hover:font-bold px-4 bg-white inline-flex p-2 normal-case text-sm whitespace-nowrap border-b border-zinc-100">Product Development</a></Link>
+                    <Link href="/services#contract-manufacturing"><a className="w-48 hover:font-bold px-4 bg-white inline-flex p-2 normal-case text-sm whitespace-nowrap border-b border-zinc-100">Contract Manufacturing</a></Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+              
+            <div className='group relative inline-flex'>
+              <Link href="/products"><a className={`${pathname === '/products' && 'underline decoration-yellow decoration-2 underline-offset-4 font-bold'} hover:font-bold mx-4 transition-all`}>Products</a></Link>
+              
+              <div className='bg-transparent w-auto absolute top-4 left-0 flex-col z-50 rounded-sm invisible group-hover:visible'>
+                <div className='pt-4 w-auto'>
+                  <div className='w-full shadow-md'>
+                    <Link href="/products#skin"><a className="w-36 hover:font-bold px-4 bg-white inline-flex p-2 normal-case text-sm whitespace-nowrap border-b border-t border-zinc-100">Skin Care</a></Link>
+                    <Link href="/products#hair"><a className="w-36 hover:font-bold px-4 bg-white inline-flex p-2 normal-case text-sm whitespace-nowrap border-b border-zinc-100">Hair Care</a></Link>
+                    <Link href="/products#oral"><a className="w-36 hover:font-bold px-4 bg-white inline-flex p-2 normal-case text-sm whitespace-nowrap border-b border-zinc-100">Oral Care</a></Link>
+                    <Link href="/products#nutraceuticals"><a className="w-36 hover:font-bold px-4 bg-white inline-flex p-2 normal-case text-sm whitespace-nowrap border-b border-t border-zinc-100">Nutraceuticals</a></Link>
+                    <Link href="/products#baby"><a className="w-36 hover:font-bold px-4 bg-white inline-flex p-2 normal-case text-sm whitespace-nowrap border-b border-zinc-100">Baby Care</a></Link>
+                    <Link href="/products#mens"><a className="w-36 hover:font-bold px-4 bg-white inline-flex p-2 normal-case text-sm whitespace-nowrap border-b border-zinc-100">Mens Care</a></Link>
+                    <Link href="/products#hygiene"><a className="w-36 hover:font-bold px-4 bg-white inline-flex p-2 normal-case text-sm whitespace-nowrap border-b border-zinc-100">Hygiene</a></Link>
+                    <Link href="/products#herbal"><a className="w-36 hover:font-bold px-4 bg-white inline-flex p-2 normal-case text-sm whitespace-nowrap border-b border-zinc-100">Herbal</a></Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <Link href="/team"><a className={`${pathname === '/team' && 'underline decoration-yellow decoration-2 underline-offset-4 font-bold'} hover:font-bold mx-4 transition-all`}>Team</a></Link>
+            <Link href="/strengths"><a className={`${pathname === '/strengths' && 'underline decoration-yellow decoration-2 underline-offset-4 font-bold'} hover:font-bold mx-4 transition-all`}>Strengths</a></Link>
+            <Link href="/facilities"><a className={`${pathname === '/facilities' && 'underline decoration-yellow decoration-2 underline-offset-4 font-bold'} hover:font-bold mx-4 transition-all`}>Facilities</a></Link>
+            <Link href="/customers"><a className={`${pathname === '/customers' && 'underline decoration-yellow decoration-2 underline-offset-4 font-bold'} hover:font-bold mx-4 transition-all`}>Customers</a></Link>
+            <Link href="/contact"><a className={`${pathname === '/contact' && 'underline decoration-yellow decoration-2 underline-offset-4 font-bold'} hover:font-bold mx-4 transition-all`}>Contact</a></Link>
           </nav>
           <nav className='block md:hidden mr-2 p-2'>
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">

@@ -4,22 +4,22 @@ import Image from 'next/image'
 export default function Facilities() {
   
   const stuff = [
-    {image: "/f1.jpeg", text: "Some content here. Some content here. Some content here."},
-    {image: "/f2.jpeg", text: "Some content here. Some content here. Some content here."},
-    {image: "/f3.jpeg", text: "Some content here. Some content here. Some content here."},
-    {image: "/f4.jpeg", text: "Some content here. Some content here. Some content here."},
-    {image: "/f5.jpeg", text: "Some content here. Some content here. Some content here."},
-    {image: "/f6.jpeg", text: "Some content here. Some content here. Some content here."},
-    {image: "/f7.jpeg", text: "Some content here. Some content here. Some content here."},
-    {image: "/f8.jpeg", text: "Some content here. Some content here. Some content here."},
-    {image: "/f9.jpeg", text: "Some content here. Some content here. Some content here."},
-    {image: "/f10.jpeg", text: "Some content here. Some content here. Some content here."},
-    {image: "/f11.jpeg", text: "Some content here. Some content here. Some content here."},
-    { image: "/f12.jpeg", text: "Some content here. Some content here. Some content here." },
-    { image: "/f13.jpeg", text: "Some content here. Some content here. Some content here." },
-    { image: "/f14.jpeg", text: "Some content here. Some content here. Some content here." },
-    { image: "/f15.jpeg", text: "Some content here. Some content here. Some content here." },
-    {image: "/f16.jpeg", text: "Some content here. Some content here. Some content here."},
+    {image: "/f1.jpeg", text: "Caption"},
+    {image: "/f2.jpeg", text: "Caption"},
+    {image: "/f3.jpeg", text: "Caption"},
+    {image: "/f4.jpeg", text: "Caption"},
+    {image: "/f5.jpeg", text: "Caption"},
+    {image: "/f6.jpeg", text: "Caption"},
+    {image: "/f7.jpeg", text: "Caption"},
+    {image: "/f8.jpeg", text: "Caption"},
+    {image: "/f9.jpeg", text: "Caption"},
+    {image: "/f10.jpeg", text: "Caption"},
+    {image: "/f11.jpeg", text: "Caption"},
+    { image: "/f12.jpeg", text: "Caption" },
+    { image: "/f13.jpeg", text: "Caption" },
+    { image: "/f14.jpeg", text: "Caption" },
+    { image: "/f15.jpeg", text: "Caption" },
+    {image: "/f16.jpeg", text: "Caption"},
   ]
 
   return (
