@@ -42,9 +42,9 @@ export default function Home() {
           <div className='w-screen h-80 relative'>
             <Image layout="fill" alt="" src="/ourvision3.jpeg" className='absolute inset-0 object-cover' />
             {/* <div className='bg-white opacity-0 absolute inset-0'></div> */}
-            <div className='md:container mx-auto relative pt-12'>
+            <div className='md:container mx-auto relative md:pt-12 p-4'>
               <h1 className="text-4xl tracking-wide font-light text-white">OUR VISION</h1>
-              <p className='text-white z-10 text-2xl prose w-1/2 pt-8 leading-relaxed'>
+              <p className='text-white z-10 text-2xl prose md:w-1/2 pt-8 leading-relaxed'>
                 To be a world-class manufacturer of personal wellness products that are a hallmark of trust for our customers and consumers
               </p>
             </div>
@@ -95,11 +95,11 @@ export default function Home() {
         <section>
           <div className='w-screen relative'>
             <Image layout="fill" alt="" src="/awards.jpg" className='absolute inset-0 object-cover' />
-            <div className='bg-emerald-50 opacity-70 absolute inset-0'></div>
+            <div className='bg-emerald-50 opacity-20 absolute inset-0'></div>
             <div className='md:container mx-auto relative py-12'>
               <div className='inline-grid grid-cols-3 md:grid-cols-6 gap-2'>
                 {awards.map((x, index) => (
-                  <div key={index} className='shrink-0 md:mr-4 mr-2 md:w-40 md:h-40 relative'>
+                  <div key={index} className='shrink-0 md:mr-4 mr-2 w-32 h-32 md:w-40 md:h-40 relative'>
                     <Image layout='fill' className='absolute inset-0 object-fill' alt="" src={x} />
                   </div>
                 ))}

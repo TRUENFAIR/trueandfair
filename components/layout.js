@@ -30,7 +30,7 @@ export default function Layout({ children }) {
             <div className='group relative inline-flex'>
               <Link href="/about"><a  className={`${pathname === '/about' && 'underline decoration-yellow decoration-2 underline-offset-4 font-bold'} hover:font-bold mx-4 transition-all`}>About</a></Link>
 
-              <div className='bg-transparent w-auto absolute top-4 left-0 flex-col z-50 rounded-sm invisible group-hover:visible'>
+              <div className='bg-transparent w-auto absolute top-4 left-0 flex-col z-50 rounded-sm invisible group-hover:visible transition-all'>
                 <div className='pt-4 w-auto'>
                   <div className='w-full shadow-md'>
                     <Link href="/about#the-company"><a className="w-36 hover:font-bold px-4 bg-white inline-flex p-2 normal-case text-sm whitespace-nowrap border-b border-t border-zinc-100">The Company</a></Link>
@@ -44,7 +44,7 @@ export default function Layout({ children }) {
             <div className='group relative inline-flex'>
               <Link href="/services"><a className={`${pathname === '/services' && 'underline decoration-yellow decoration-2 underline-offset-4 font-bold'} hover:font-bold mx-4 transition-all`}>Services</a></Link>
 
-              <div className='bg-transparent w-auto absolute top-4 left-0 flex-col z-50 rounded-sm invisible group-hover:visible'>
+              <div className='bg-transparent w-auto absolute top-4 left-0 flex-col z-50 rounded-sm invisible group-hover:visible transition-all'>
                 <div className='pt-4 w-auto'>
                   <div className='w-full shadow-md'>
                     <Link href="/services#turnkey-projects"><a className="w-48 hover:font-bold px-4 bg-white inline-flex p-2 normal-case text-sm whitespace-nowrap border-b border-t border-zinc-100">Turnkey Projects</a></Link>
@@ -58,7 +58,7 @@ export default function Layout({ children }) {
             <div className='group relative inline-flex'>
               <Link href="/products"><a className={`${pathname === '/products' && 'underline decoration-yellow decoration-2 underline-offset-4 font-bold'} hover:font-bold mx-4 transition-all`}>Products</a></Link>
               
-              <div className='bg-transparent w-auto absolute top-4 left-0 flex-col z-50 rounded-sm invisible group-hover:visible'>
+              <div className='bg-transparent w-auto absolute top-4 left-0 flex-col z-50 rounded-sm invisible group-hover:visible transition-all'>
                 <div className='pt-4 w-auto'>
                   <div className='w-full shadow-md'>
                     <Link href="/products#skin"><a className="w-36 hover:font-bold px-4 bg-white inline-flex p-2 normal-case text-sm whitespace-nowrap border-b border-t border-zinc-100">Skin Care</a></Link>

@@ -19,16 +19,6 @@ export default function About() {
           </div>
       </section>
 
-      <section className="p-4 md:container mx-auto md:pt-12 text-zinc-900">
-        <h1 className="text-4xl tracking-wide font-light text-green-900">OUR VISION</h1>
-        <div className='w-full h-48 bg-gray-100 mt-8 relative flex justify-start items-center pl-12'>
-          <Image layout='fill' alt='' src='/ourvision2.jpeg' className='absolute inset-0 object-cover' />
-          <p className='text-white z-10 text-2xl prose w-1/2 leading-relaxed'>
-            To be a world-class manufacturer of personal wellness products that are a hallmark of trust for our customers and consumers
-          </p>
-        </div>
-      </section>
-
       <section className="p-4 md:container mx-auto md:pt-12 text-zinc-900" id="core-values">
         <h1 className="text-4xl tracking-wide font-light text-green-900">CORE VALUES</h1>
         <p className="md:pt-8 pt-4">At Madhur Pharma, we have always practised a strong ethos of innovation, expertise, honesty, integrity, and safety. These guiding principles along with a customer-first approach have established Madhur Pharma as one of the leading personal wellness product manufacturers for multiple decades.</p>
