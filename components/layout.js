@@ -4,7 +4,36 @@ import Image from 'next/image'
 import { useRouter } from 'next/router'
 
 export default function Layout({ children }) {
-  const {pathname} = useRouter()
+  const { pathname } = useRouter()
+  
+  const menu = [
+    { name: "About", path: "/about", sub: [
+      { name: "The Company", path: "/about#the-company" },
+      { name: "Core Values", path: "/about#core-values" },
+      { name: "Success Stories", path: "/about#success-stories" },
+    ]},
+    { name: "Services", path: "/services", sub: [
+      { name: "Turnkey Projects", path: "/services#turnkey-projects" },
+      { name: "Product Development", path: "/services#product-development" },
+      { name: "Contract Manufacturing", path: "/services#contract-manufacturing" },
+    ]},
+    { name: "Products", path: "/products", sub: [
+      {name: "Skin Care", path: "/products#skin"},
+      {name: "Hair Care", path: "/products#hair"},
+      {name: "Oral Care", path: "/products#oral"},
+      {name: "Nutraceuticals", path: "/products#nutraceuticals"},
+      {name: "Baby Care", path: "/products#baby"},
+      {name: "Mens Care", path: "/products#mens"},
+      {name: "Hygiene", path: "/products#hygiene"},
+      {name: "Herbal", path: "/products#herbal"}
+    ]},
+    { name: "Team", path: "/team" },
+    { name: "Strengths", path: "/strengths" },
+    { name: "Facilities", path: "/facilities" },
+    { name: "Customers", path: "/customers" },
+    { name: "Contact", path: "/contact" },
+  ]
+
   return (
     <>
       <Head>
@@ -27,57 +56,28 @@ export default function Layout({ children }) {
           </Link>
 
           <nav className="text-sm uppercase tracking-tight hidden md:block">
-            <div className='group relative inline-flex'>
-              <Link href="/about"><a  className={`${pathname === '/about' && 'underline decoration-yellow decoration-2 underline-offset-4 font-bold'} hover:font-bold mx-4 transition-all`}>About</a></Link>
+            {menu.map(({name, path, sub}, index) => (
+              <div key={index} className='group relative inline-flex'>
+                <Link href={path}>
+                  <a className={`${pathname === path && 'underline decoration-yellow decoration-2 underline-offset-4 font-bold'} hover:font-bold mx-4 transition-all`}>{name}</a>
+                </Link>
 
-              <div className='bg-transparent w-auto absolute top-4 left-0 flex-col z-50 rounded-sm invisible group-hover:visible transition-all'>
-                <div className='pt-4 w-auto'>
-                  <div className='w-full shadow-md'>
-                    <Link href="/about#the-company"><a className="w-36 hover:font-bold px-4 bg-white inline-flex p-2 normal-case text-sm whitespace-nowrap border-b border-t border-zinc-100">The Company</a></Link>
-                    <Link href="/about#core-values"><a className="w-36 hover:font-bold px-4 bg-white inline-flex p-2 normal-case text-sm whitespace-nowrap border-b border-zinc-100">Core Values</a></Link>
-                    <Link href="/about#success-stories"><a className="w-36 hover:font-bold px-4 bg-white inline-flex p-2 normal-case text-sm whitespace-nowrap border-b border-zinc-100">Success Stories</a></Link>
+                {sub && (
+                  <div className='bg-transparent w-auto absolute top-4 left-0 flex-col z-50 rounded-sm invisible group-hover:visible transition-all'>
+                  <div className='pt-4 w-auto'>
+                      <div className='w-full shadow-md'>
+                        {sub.map(({name, path}, index) => (
+                          <Link key={index} href={path}>
+                            <a className="w-52 hover:font-bold px-4 bg-white inline-flex p-2 normal-case text-sm whitespace-nowrap border-b border-t border-zinc-100">{name}</a>
+                          </Link>
+                        ))}
+                    </div>
                   </div>
                 </div>
-              </div>
+                )}
 
-            </div>
-            <div className='group relative inline-flex'>
-              <Link href="/services"><a className={`${pathname === '/services' && 'underline decoration-yellow decoration-2 underline-offset-4 font-bold'} hover:font-bold mx-4 transition-all`}>Services</a></Link>
-
-              <div className='bg-transparent w-auto absolute top-4 left-0 flex-col z-50 rounded-sm invisible group-hover:visible transition-all'>
-                <div className='pt-4 w-auto'>
-                  <div className='w-full shadow-md'>
-                    <Link href="/services#turnkey-projects"><a className="w-48 hover:font-bold px-4 bg-white inline-flex p-2 normal-case text-sm whitespace-nowrap border-b border-t border-zinc-100">Turnkey Projects</a></Link>
-                    <Link href="/services#product-development"><a className="w-48 hover:font-bold px-4 bg-white inline-flex p-2 normal-case text-sm whitespace-nowrap border-b border-zinc-100">Product Development</a></Link>
-                    <Link href="/services#contract-manufacturing"><a className="w-48 hover:font-bold px-4 bg-white inline-flex p-2 normal-case text-sm whitespace-nowrap border-b border-zinc-100">Contract Manufacturing</a></Link>
-                  </div>
-                </div>
               </div>
-            </div>
-              
-            <div className='group relative inline-flex'>
-              <Link href="/products"><a className={`${pathname === '/products' && 'underline decoration-yellow decoration-2 underline-offset-4 font-bold'} hover:font-bold mx-4 transition-all`}>Products</a></Link>
-              
-              <div className='bg-transparent w-auto absolute top-4 left-0 flex-col z-50 rounded-sm invisible group-hover:visible transition-all'>
-                <div className='pt-4 w-auto'>
-                  <div className='w-full shadow-md'>
-                    <Link href="/products#skin"><a className="w-36 hover:font-bold px-4 bg-white inline-flex p-2 normal-case text-sm whitespace-nowrap border-b border-t border-zinc-100">Skin Care</a></Link>
-                    <Link href="/products#hair"><a className="w-36 hover:font-bold px-4 bg-white inline-flex p-2 normal-case text-sm whitespace-nowrap border-b border-zinc-100">Hair Care</a></Link>
-                    <Link href="/products#oral"><a className="w-36 hover:font-bold px-4 bg-white inline-flex p-2 normal-case text-sm whitespace-nowrap border-b border-zinc-100">Oral Care</a></Link>
-                    <Link href="/products#nutraceuticals"><a className="w-36 hover:font-bold px-4 bg-white inline-flex p-2 normal-case text-sm whitespace-nowrap border-b border-t border-zinc-100">Nutraceuticals</a></Link>
-                    <Link href="/products#baby"><a className="w-36 hover:font-bold px-4 bg-white inline-flex p-2 normal-case text-sm whitespace-nowrap border-b border-zinc-100">Baby Care</a></Link>
-                    <Link href="/products#mens"><a className="w-36 hover:font-bold px-4 bg-white inline-flex p-2 normal-case text-sm whitespace-nowrap border-b border-zinc-100">Mens Care</a></Link>
-                    <Link href="/products#hygiene"><a className="w-36 hover:font-bold px-4 bg-white inline-flex p-2 normal-case text-sm whitespace-nowrap border-b border-zinc-100">Hygiene</a></Link>
-                    <Link href="/products#herbal"><a className="w-36 hover:font-bold px-4 bg-white inline-flex p-2 normal-case text-sm whitespace-nowrap border-b border-zinc-100">Herbal</a></Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <Link href="/team"><a className={`${pathname === '/team' && 'underline decoration-yellow decoration-2 underline-offset-4 font-bold'} hover:font-bold mx-4 transition-all`}>Team</a></Link>
-            <Link href="/strengths"><a className={`${pathname === '/strengths' && 'underline decoration-yellow decoration-2 underline-offset-4 font-bold'} hover:font-bold mx-4 transition-all`}>Strengths</a></Link>
-            <Link href="/facilities"><a className={`${pathname === '/facilities' && 'underline decoration-yellow decoration-2 underline-offset-4 font-bold'} hover:font-bold mx-4 transition-all`}>Facilities</a></Link>
-            <Link href="/customers"><a className={`${pathname === '/customers' && 'underline decoration-yellow decoration-2 underline-offset-4 font-bold'} hover:font-bold mx-4 transition-all`}>Customers</a></Link>
-            <Link href="/contact"><a className={`${pathname === '/contact' && 'underline decoration-yellow decoration-2 underline-offset-4 font-bold'} hover:font-bold mx-4 transition-all`}>Contact</a></Link>
+            ))}
           </nav>
           
           <nav className='block md:hidden mr-2 p-2 relative group'>
@@ -85,12 +85,14 @@ export default function Layout({ children }) {
               <path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
             </svg>
 
-            <div className='bg-transparent w-auto absolute top-4 right-0 flex-col z-50 rounded-sm invisible group-hover:visible group-active:visible transition-all'>
+            <div className='bg-transparent w-auto absolute top-6 right-0 flex-col z-50 rounded-sm invisible group-hover:visible group-active:visible transition-all'>
                 <div className='pt-4 w-auto'>
                   <div className='w-full shadow-md'>
-                    <Link href="/services#turnkey-projects"><a className="w-48 hover:font-bold px-4 bg-white inline-flex p-2 normal-case text-sm whitespace-nowrap border-b border-t border-zinc-100">Turnkey Projects</a></Link>
-                    <Link href="/services#product-development"><a className="w-48 hover:font-bold px-4 bg-white inline-flex p-2 normal-case text-sm whitespace-nowrap border-b border-zinc-100">Product Development</a></Link>
-                    <Link href="/services#contract-manufacturing"><a className="w-48 hover:font-bold px-4 bg-white inline-flex p-2 normal-case text-sm whitespace-nowrap border-b border-zinc-100">Contract Manufacturing</a></Link>
+                    {menu.map(({name, path}, index) => (
+                      <Link key={index} href={path}>
+                        <a className="w-48 hover:font-bold px-4 bg-white inline-flex p-2 normal-case text-md whitespace-nowrap border-b border-t border-zinc-100">{name}</a>
+                      </Link>
+                    ))}
                   </div>
                 </div>
               </div>
@@ -101,7 +103,7 @@ export default function Layout({ children }) {
       <main className="text-zinc-900 font-sans">{children}</main>
         
       <footer className='border-zinc-100 border-t'>
-      <div className="container mx-auto pb-12 pt-24 flex justify-center items-center text-gray-400 text-sm flex-col">
+      <div className="container mx-auto pb-12 pt-24 flex justify-center items-center text-gray-400 text-md flex-col">
         <div className="grid grid-cols-4 gap-12">
           <div className="">
             <p className="font-semibold text-base">Office</p>
