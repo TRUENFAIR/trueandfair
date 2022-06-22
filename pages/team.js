@@ -61,7 +61,7 @@ export default function Teams() {
         </div>
           
         <p className=" text-zinc-900">
-        Madhur owes its success to a strong team culture driven by technical expertise, continuous innovation, commitment to quality and a customer-first approach. Our people are the very foundation on which we continue to deliver success to our growing customer base worldwide. Each member of the Madhur family is special and add a unique blend of expertise and experience, which makes it great place to learn and innovate, not just work.
+        Madhur owes its success to a strong team culture driven by technical expertise, continuous innovation, commitment to quality and a customer-first approach. Our people are the very foundation on which we continue to deliver success to our growing customer base worldwide. Each member of the Madhur family is special and adds a unique blend of expertise and experience, which makes it great place to learn and innovate, not just work.
         </p>
           
         <div className='grid md:grid-cols-2 grid-cols-1 gap-4 pt-12'>

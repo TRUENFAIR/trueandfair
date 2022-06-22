@@ -62,7 +62,7 @@ export default function Home() {
               
             <Link href="/services#turnkey-projects">
               <div className="w-auto relative">
-                <div className="relative w-full h-96 flex justify-start items-end shadow-sm hover:scale-[1.02] transition-all cursor-pointer">
+                <div className="relative w-full md:h-96 h-72 flex justify-start items-end shadow-sm hover:scale-[1.02] transition-all cursor-pointer">
                   <Image layout="fill" alt="" src="/turnkeyprojects.jpeg" className="absolute inset-0 object-cover"/>
                   <div className="w-full h-1/2 absolute bottom-0 left-0 right-0 from-transparent bg-gradient-to-b to-black opacity-60"></div>
                   
@@ -76,8 +76,8 @@ export default function Home() {
               
               <Link href="/services#product-development">
               <div className="w-auto relative">
-                <div className="relative w-full h-96 flex justify-start items-end shadow-sm hover:scale-[1.02] transition-all cursor-pointer">
-                  <Image layout="fill" alt="" src="/productdevelopment.jpeg" className="h-96 w-full object-cover absolute inset-0"/>
+                <div className="relative w-full md:h-96 h-72 flex justify-start items-end shadow-sm hover:scale-[1.02] transition-all cursor-pointer">
+                  <Image layout="fill" alt="" src="/productdevelopment.jpeg" className="absolute inset-0 object-cover"/>
                   <div className="w-full h-1/2 absolute bottom-0 left-0 right-0 from-transparent bg-gradient-to-b to-black opacity-60"></div>
                   
                   <div className="flex items-center justify-between z-50 w-full p-4">
@@ -90,8 +90,8 @@ export default function Home() {
               
               <Link href="/services#contract-manufacturing">
               <div className="w-auto relative">
-                <div className="relative w-full h-96 flex justify-start items-end shadow-sm hover:scale-[1.02] transition-all cursor-pointer">
-                  <Image layout="fill" alt="" src="/contractmanufacturing.jpeg" className="h-96 w-full object-cover absolute inset-0"/>
+                <div className="relative w-full md:h-96 h-72 flex justify-start items-end shadow-sm hover:scale-[1.02] transition-all cursor-pointer">
+                  <Image layout="fill" alt="" src="/contractmanufacturing.jpeg" className="absolute inset-0 object-cover"/>
                   <div className="w-full h-1/2 absolute bottom-0 left-0 right-0 from-transparent bg-gradient-to-b to-black opacity-60"></div>
                   
                   <div className="flex items-center justify-between z-50 w-full p-4">
@@ -109,11 +109,11 @@ export default function Home() {
           <div className='w-screen relative'>
             <Image layout="fill" alt="" src="/awards.jpg" className='absolute inset-0 object-cover' />
             <div className='bg-emerald-50 opacity-20 absolute inset-0'></div>
-            <div className='md:container mx-auto relative py-12'>
-              <div className='inline-grid grid-cols-3 md:grid-cols-6 gap-2'>
+            <div className='md:container mx-auto relative py-12 p-4'>
+              <div className='inline-grid grid-cols-3 md:grid-cols-6 gap-2 w-full'>
                 {awards.map((x, index) => (
-                  <div key={index} className='shrink-0 md:mr-4 mr-2 w-32 h-32 md:w-40 md:h-40 relative'>
-                    <Image layout='fill' className='absolute inset-0 object-fill' alt="" src={x} />
+                  <div key={index} className='shrink-0 w-auto md:h-60 h-28 relative'>
+                    <Image layout='fill' className='absolute inset-0 object-contain' alt="" src={x} />
                   </div>
                 ))}
               </div>
@@ -121,33 +121,15 @@ export default function Home() {
           </div>
         </section>
 
-        {/* <section className="">
-          <div className='p-4 md:py-24 text-zinc-900 relative md:container mx-auto'>
-            <h1 className="text-4xl tracking-wide font-light text-green-900">AWARDS</h1>
-
-            <div className='mt-8 w-full h-48 bg-gray-50 relative flex justify-center items-center'>
-              <Image layout='fill' alt='' src='/awards.jpg' className='absolute inset-0 object-cover' />
-              <div className='absolute inset-0 bg-black opacity-50'></div>
-                <div className='inline-grid grid-cols-3 md:grid-cols-6 gap-2'>
-                {awards.map((x, index) => (
-                  <div key={index} className='shrink-0 md:mr-4 mr-2 md:w-40 md:h-40 w-28 h-28 relative border-2'>
-                    <Image layout='fill' className='absolute inset-0 object-fill' alt="" src={x} />
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section> */}
-
         <section className="md:py-12 text-zinc-900 md:container p-4 mx-auto relative ">
           <h1 className="text-4xl tracking-wide font-light text-green-900">OUR CUSTOMERS</h1>
           {/* <p className="py-4">Madhur Pharma is trusted by some of the world&apos;s biggest brands in cosmetics, pharma and herbal products</p> */}
 
           <div className="w-full flex overflow-x-auto snap-mandatory snap-x scrollbar-hide mt-12">
-            <div className='w-full snap-start snap-always relative shrink-0 pr-6'>
-              <div className='grid grid-cols-4 md:grid-cols-8 md:gap-6 gap-2'>
-                {[...Array(8).keys()].map((x, index) => <div key={index} className='w-16 h-16 md:w-24 md:h-24 relative cursor-pointer'>
-                  <Image layout='fill' alt="" src="/wipro.png" className='absolute inset-0 object-fill'/>
+            <div className='w-full snap-start snap-always relative shrink-0'>
+              <div className='inline-grid grid-cols-4 md:grid-cols-8 md:gap-6 gap-2 w-full'>
+                {[...Array(8).keys()].map((x, index) => <div key={index} className='w-auto h-24 md:h-40 relative cursor-pointer'>
+                  <Image layout='fill' alt="" src="/wipro.png" className='absolute inset-0 object-contain'/>
                 </div>)}
               </div>
             </div>

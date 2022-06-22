@@ -85,7 +85,7 @@ export default function Layout({ children }) {
               <path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
             </svg>
 
-            <div className='bg-transparent w-auto absolute top-6 right-0 flex-col z-50 rounded-sm invisible group-active:visible transition-all'>
+            <div className='bg-transparent w-auto absolute top-6 right-0 flex-col z-50 rounded-sm invisible group-active:visible group-hover:visible transition-all'>
                 <div className='pt-4 w-auto'>
                   <div className='w-full shadow-md'>
                     {menu.map(({name, path}, index) => (
