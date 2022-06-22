@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import Image from 'next/image'
 import Slider from '/components/slider'
 import Testimonials from '/components/testimonials'
@@ -12,14 +11,7 @@ const awards = ["/aw1.png", "/aw2.png", "/aw3.png", "/aw4.png", "/aw5.png", "/aw
 
 export default function Home() {
   return (
-    <div className="">
-      <Head>
-        <title>Madhur Pharma & Research Laboratories</title>
-        <meta name="description" content="Official website of Madhur Pharma" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className="">
+      <main>
         <Slider />
         
         <section className="md:container p-4 mx-auto md:py-32 text-zinc-900">
@@ -50,10 +42,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-        {/* <Link href="/services#turnkey-projects">
-<Link href="/services#product-development">
-<Link href="/services#contract-manufacturing"> */}
 
         <section className="md:pt-24 md:pb-32 text-zinc-90">
           <div className="md:container p-4 mx-auto">
@@ -145,9 +133,6 @@ export default function Home() {
 
         <Testimonials/>
 
-
       </main>
-
-    </div>
   )
 }
