@@ -79,10 +79,21 @@ export default function Layout({ children }) {
             <Link href="/customers"><a className={`${pathname === '/customers' && 'underline decoration-yellow decoration-2 underline-offset-4 font-bold'} hover:font-bold mx-4 transition-all`}>Customers</a></Link>
             <Link href="/contact"><a className={`${pathname === '/contact' && 'underline decoration-yellow decoration-2 underline-offset-4 font-bold'} hover:font-bold mx-4 transition-all`}>Contact</a></Link>
           </nav>
-          <nav className='block md:hidden mr-2 p-2'>
+          
+          <nav className='block md:hidden mr-2 p-2 relative group'>
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
               <path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
             </svg>
+
+            <div className='bg-transparent w-auto absolute top-4 right-0 flex-col z-50 rounded-sm invisible group-hover:visible group-active:visible transition-all'>
+                <div className='pt-4 w-auto'>
+                  <div className='w-full shadow-md'>
+                    <Link href="/services#turnkey-projects"><a className="w-48 hover:font-bold px-4 bg-white inline-flex p-2 normal-case text-sm whitespace-nowrap border-b border-t border-zinc-100">Turnkey Projects</a></Link>
+                    <Link href="/services#product-development"><a className="w-48 hover:font-bold px-4 bg-white inline-flex p-2 normal-case text-sm whitespace-nowrap border-b border-zinc-100">Product Development</a></Link>
+                    <Link href="/services#contract-manufacturing"><a className="w-48 hover:font-bold px-4 bg-white inline-flex p-2 normal-case text-sm whitespace-nowrap border-b border-zinc-100">Contract Manufacturing</a></Link>
+                  </div>
+                </div>
+              </div>
           </nav>
         </div>
       </header>
