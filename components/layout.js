@@ -85,7 +85,7 @@ export default function Layout({ children }) {
               <path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
             </svg>
 
-            <div className='bg-transparent w-auto absolute top-6 right-0 flex-col z-50 rounded-sm invisible group-hover:visible group-active:visible transition-all'>
+            <div className='bg-transparent w-auto absolute top-6 right-0 flex-col z-50 rounded-sm invisible group-active:visible transition-all'>
                 <div className='pt-4 w-auto'>
                   <div className='w-full shadow-md'>
                     {menu.map(({name, path}, index) => (
@@ -103,9 +103,9 @@ export default function Layout({ children }) {
       <main className="text-zinc-900 font-sans">{children}</main>
         
       <footer className='border-zinc-100 border-t'>
-      <div className="container mx-auto pb-12 pt-24 flex justify-center items-center text-gray-400 text-md flex-col">
-        <div className="grid grid-cols-4 gap-12">
-          <div className="">
+      <div className="p-4 md:container mx-auto pb-12 pt-24 flex justify-center items-center text-gray-400 text-md flex-col">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-12">
+          <div className="text-center md:text-left">
             <p className="font-semibold text-base">Office</p>
               <p>292 & 294, 4th Phase,</p>
               <p>Peenya Industrial Area,</p>
@@ -113,21 +113,21 @@ export default function Layout({ children }) {
               <p>+91-80-23720510</p>
               <p>88616 99880</p>
           </div>
-          <div className="">
+          <div className="text-center md:text-left">
             <p className="font-semibold">Links</p>
               <p>About</p>
               <p>Products</p>
               <p>Services</p>
               <p>Facilities</p>
           </div>
-          <div className="">
+          <div className="text-center md:text-left">
             <p className="font-semibold">Links</p>
               <p>About</p>
               <p>Products</p>
               <p>Services</p>
               <p>Facilities</p>
           </div>
-          <div className="">
+          <div className="text-center md:text-left">
             <p className="font-semibold">Find us on</p>
               <p>Social links</p>
               <p>Social links</p>

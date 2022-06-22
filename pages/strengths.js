@@ -8,7 +8,7 @@ export default function Strengths() {
       <div className='md:container p-4 mx-auto'>
         <h1 className="text-4xl tracking-wide font-light text-green-900">STRENGTHS</h1>
 
-        <div className="grid grid-cols-2 md:gap-16 gap-4 pt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 md:gap-16 gap-4 pt-12">
 		
           <div className="w-auto relative">
             <div className="relative w-[95%] h-64 flex justify-start items-end shadow-sm hover:scale-[1.02] transition-all cursor-pointer">
