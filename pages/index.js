@@ -33,7 +33,7 @@ export default function Home() {
               <button className="mt-8 bg-yellow text-black font-bold text-xs hover:text-zinc-700 hover:bg-yellow-800 p-3 rounded-sm transition-all">READ MORE</button>
             </div>
             <div className="w-auto h-48 md:h-auto relative">
-              <Image className="absolute inset-0 object-cover" layout="fill" alt="" src="/ourvision.jpeg"/>
+              <Image className="absolute inset-0 object-cover" layout="fill" alt="" src="/thecompanyhome.jpg"/>
             </div>
           </div>
         </section>
@@ -41,10 +41,10 @@ export default function Home() {
         <section>
           <div className='w-screen h-80 relative'>
             <Image layout="fill" alt="" src="/ourvision3.jpeg" className='absolute inset-0 object-cover' />
-            <div className='bg-white opacity-60 absolute inset-0'></div>
+            {/* <div className='bg-white opacity-0 absolute inset-0'></div> */}
             <div className='md:container mx-auto relative pt-12'>
-              <h1 className="text-4xl tracking-wide font-light text-green-900">OUR MISSION</h1>
-              <p className='text-zinc-900 z-10 text-2xl prose w-1/2 pt-8 leading-relaxed'>
+              <h1 className="text-4xl tracking-wide font-light text-white">OUR VISION</h1>
+              <p className='text-white z-10 text-2xl prose w-1/2 pt-8 leading-relaxed'>
                 To be a world-class manufacturer of personal wellness products that are a hallmark of trust for our customers and consumers
               </p>
             </div>

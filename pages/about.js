@@ -13,14 +13,14 @@ export default function About() {
             <p className="prose pt-8">Dr. Deepak Joshi, who&apos;s a renowned Radiologist and Pulmonologist with avid interest in Herbal medicine, had established Madhur Pharma & Research Laboratories in 1986 along with a dedicated team of doctors to revive the Ayurvedic traditions and create high-quality health supplements and personal care products.</p>
           </div>
           <div className="w-auto h-48 md:h-auto relative">
-            <Image className="absolute inset-0 object-cover" layout="fill" alt="" src="/ourvision.jpeg"/>
+            <Image className="absolute inset-0 object-cover" layout="fill" alt="" src="/thecompanyhome.jpg"/>
           </div>
           </div>
           </div>
       </section>
 
       <section className="p-4 md:container mx-auto md:pt-12 text-zinc-900">
-        <h1 className="text-4xl tracking-wide font-light text-green-900">OUR MISSION</h1>
+        <h1 className="text-4xl tracking-wide font-light text-green-900">OUR VISION</h1>
         <div className='w-full h-48 bg-gray-100 mt-8 relative flex justify-start items-center pl-12'>
           <Image layout='fill' alt='' src='/ourvision2.jpeg' className='absolute inset-0 object-cover' />
           <p className='text-white z-10 text-2xl prose w-1/2 leading-relaxed'>
