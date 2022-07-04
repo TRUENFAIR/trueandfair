@@ -1,4 +1,3 @@
-import Head from "next/head"
 import Image from "next/image"
 import { useState, useEffect } from "react"
 import { useRouter } from 'next/router'
@@ -9,84 +8,126 @@ export default function Products() {
   const buttonClick = (x) => {setButtonIndex(x)}
   
   useEffect(() => {
-    const hashes = ["skin", "hair", "oral", "nutraceuticals", "baby", "mens", "hygiene", "herbal"]
+    const hashes = ["skin", "hair", "mens", "baby", "body", "hygiene", "nutraceuticals", "oral"]
     const whichButton = hashes.indexOf(asPath.split('#')[1])
     setButtonIndex(whichButton === -1 ? 0 : whichButton)
   }, [asPath])
   
   const buttons = [
-    {
-      name: "Skin Care",
-      products: [
-        {
-          image: "/product1-image1.jpg",
-          logo: "/product1-logo1.jpg",
-          text: false,
-        },
-        {
-          image: "/product1-image2.jpg",
-          logo: "/product1-logo2.jpg",
-          text: false,
-        },
-        {
-          image: "/product1-image3.jpeg",
-          logo: "/product1-logo3.png",
-          text: false,
-        },
-        {
-          image: "/product1-image4.jpg",
-          logo: "/product1-logo4.png",
-          text: false,
-        },
-      ],
-    },
-    {
-      name: "Hair Care",
-      products: [
-        { image: "/product4-image1.jpg", logo: false, text: "Iluvia Pro" },
-        { image: "/product4-image2.jpeg", logo: false, text: "Let&apos;s Curl up" },
-      ],
-    },
-    {
-      name: "Oral Care",
-      products: [
-        { image: "/product2-image1.jpg", logo: false, text: "BlueMist" },
-        { image: "/product2-image2.jpg", logo: false, text: "Amrita Life" },
-        { image: "/product2-image3.jpg", logo: false, text: "Herbodent" },
-      ],
-    },
-    {
-      name: "Nutraceuticals",
-      products: [
-        { image: "/product3-image1.png", logo: false, text: "Fibre Fit" },
-        { image: "/product3-image2.jpg", logo: false, text: "Quiver Care" },
-        { image: "/product3-image3.jpeg", logo: false, text: "Soukya" },
-      ],
-    },
-    {
-      name: "Baby Care",
-      products: [
-        { image: "/product5-image1.jpg", logo: false, text: "Mee Mee" },
-      ],
-    },
-    {
-      name: "Men's Care",
-      products: [
-        { image: "/product6-image1.jpg", logo: false, text: "Aramusk" },
-        { image: "/product6-image2.jpeg", logo: false, text: "Misters" },
-      ],
-    },
-    {
-      name: "Hygiene",
-      products: [
-        { image: "/product7-image1.jpeg", logo: false, text: "Safe O Clean" },
-      ],
-    },
-    {
-      name: "Herbal",
-      products: [{ image: "/product8-image1.jpg", logo: false, text: "Roar" }],
-    },
-  ];
+  {
+    name: "Skin Care",
+    products: [
+      {image: "/products/skincare01.jpg", logo: false, text: "Deconstruct"},
+      {image: "/products/skincare02.jpg", logo: false, text: "Deconstruct"},
+      {image: "/products/skincare03.jpg", logo: false, text: "Deconstruct"},
+      {image: "/products/skincare04.jpg", logo: false, text: "Deconstruct"},
+      {image: "/products/skincare05.jpg", logo: false, text: "Deconstruct"},
+      {image: "/products/skincare06.jpg", logo: false, text: "KWEH"},
+      {image: "/products/skincare07.jpg", logo: false, text: "KWEH"},
+      {image: "/products/skincare08.jpg", logo: false, text: "Madhur"},
+      {image: "/products/skincare09.jpg", logo: false, text: "Madhur"},
+      {image: "/products/skincare10.jpg", logo: false, text: "Madhur"},
+      {image: "/products/skincare11.jpg", logo: false, text: "Madhur"},
+      {image: "/products/skincare12.jpg", logo: false, text: "Madhur"},
+      {image: "/products/skincare13.jpg", logo: false, text: "Madhur"},
+      {image: "/products/skincare14.jpg", logo: false, text: "Madhur"},
+      {image: "/products/skincare15.jpg", logo: false, text: "Madhur"},
+      {image: "/products/skincare16.jpg", logo: false, text: "Madhur"},
+      {image: "/products/skincare17.jpg", logo: false, text: "Vedaearth"},
+      {image: "/products/skincare18.jpg", logo: false, text: "Vedaearth"},
+    ]
+  },
+  {
+    name: "Hair Care",
+    products: [
+      {image: "/products/haircare01.jpg", logo: false, text: "Curl Up"},
+      {image: "/products/haircare02.jpg", logo: false, text: "Curl Up"},
+      {image: "/products/haircare03.jpg", logo: false, text: "Curl Up"},
+      {image: "/products/haircare04.jpg", logo: false, text: "Curl Up"},
+      {image: "/products/haircare05.jpg", logo: false, text: "Curl Up"},
+      {image: "/products/haircare06.jpg", logo: false, text: "Curl Up"},
+      {image: "/products/haircare07.jpg", logo: false, text: "Iluvia"},
+      {image: "/products/haircare08.jpg", logo: false, text: "Iluvia"},
+      {image: "/products/haircare09.jpg", logo: false, text: "Iluvia"},
+      {image: "/products/haircare10.jpg", logo: false, text: "Iluvia"},
+      {image: "/products/haircare11.jpg", logo: false, text: "Iluvia"},
+      {image: "/products/haircare12.jpg", logo: false, text: "Iluvia"},
+    ]
+  },
+  {
+    name: "Men's Care",
+    products: [
+      {image: "/products/menswellness01.jpg", logo: false, text: "Aramusk"},
+      {image: "/products/menswellness02.jpg", logo: false, text: "Aramusk"},
+      {image: "/products/menswellness03.jpg", logo: false, text: "Misters"},
+      {image: "/products/menswellness04.jpg", logo: false, text: "Misters"},
+      {image: "/products/menswellness05.jpg", logo: false, text: "Misters"},
+      {image: "/products/menswellness06.jpg", logo: false, text: "Misters"},
+      {image: "/products/menswellness07.jpg", logo: false, text: "Misters"},
+      {image: "/products/menswellness08.jpg", logo: false, text: "Misters"},
+    ]
+  },
+  {
+    name: "Baby Care",
+    products: [
+      {image: "/products/babycare01.jpg", logo: false, text: "Mee Mee"},
+      {image: "/products/babycare02.jpg", logo: false, text: "Mee Mee"},
+      {image: "/products/babycare03.jpg", logo: false, text: "Mee Mee"},
+      {image: "/products/babycare04.jpg", logo: false, text: "Mee Mee"},
+    ]
+  },
+  {
+    name: "Body Care",
+    products: [
+      {image: "/products/bodycare01.jpg", logo: false, text: "Aramusk"},
+      {image: "/products/bodycare02.jpg", logo: false, text: "Aramusk"},
+      {image: "/products/bodycare03.jpg", logo: false, text: "Santoor"},
+      {image: "/products/bodycare04.jpg", logo: false, text: "Santoor"},
+    ]
+  },
+  {
+    name: "Hygiene",
+    products: [
+      {image: "/products/hygiene01.jpg", logo: false, text: "Madhur"},
+      {image: "/products/hygiene02.jpg", logo: false, text: "Madhur"},
+      {image: "/products/hygiene03.jpg", logo: false, text: "Madhur"},
+      {image: "/products/hygiene04.jpg", logo: false, text: "Madhur"},
+      {image: "/products/hygiene05.jpg", logo: false, text: "Madhur"},
+      {image: "/products/hygiene06.jpg", logo: false, text: "Madhur"},
+    ]
+  },
+  {
+    name: "Nutraceuticals",
+    products: [
+      {image: "/products/nutraceuticals01.jpg", logo: false, text: "Nutriplus"},
+      {image: "/products/nutraceuticals02.jpg", logo: false, text: "Nutriplus"},
+      {image: "/products/nutraceuticals03.jpg", logo: false, text: "Roar"},
+      {image: "/products/nutraceuticals04.jpg", logo: false, text: "Roar"},
+      {image: "/products/nutraceuticals05.jpg", logo: false, text: "Roar"},
+      {image: "/products/nutraceuticals06.jpg", logo: false, text: "Roar"},
+      {image: "/products/nutraceuticals07.jpg", logo: false, text: "Roar"},
+      {image: "/products/nutraceuticals08.jpg", logo: false, text: "Roar"},
+      {image: "/products/nutraceuticals09.jpg", logo: false, text: "Roar"},
+      {image: "/products/nutraceuticals10.jpg", logo: false, text: "Roar"},
+      {image: "/products/nutraceuticals11.jpg", logo: false, text: "Roar"},
+      {image: "/products/nutraceuticals12.jpg", logo: false, text: "Roar"},
+      {image: "/products/nutraceuticals13.jpg", logo: false, text: "Roar"},
+      {image: "/products/nutraceuticals14.jpg", logo: false, text: "Roar"},
+      {image: "/products/nutraceuticals15.jpg", logo: false, text: "Roar"},
+      {image: "/products/nutraceuticals16.jpg", logo: false, text: "Roar"},
+      {image: "/products/nutraceuticals17.jpg", logo: false, text: "Roar"},
+      {image: "/products/nutraceuticals18.jpg", logo: false, text: "Roar"},
+      {image: "/products/nutraceuticals19.jpg", logo: false, text: "Roar"},
+    ]
+  },
+  {
+    name: "Oral Care",
+    products: [
+      {image: "/products/oralcare01.jpg", logo: false, text: "Amrita"},
+      {image: "/products/oralcare02.jpg", logo: false, text: "BluMist"},
+    ]
+  },
+]
 
   return (
     <>

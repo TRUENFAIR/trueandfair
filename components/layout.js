@@ -7,6 +7,7 @@ export default function Layout({ children }) {
   const { pathname } = useRouter()
   
   const menu = [
+    { name: "Home", path: "/" },
     { name: "About", path: "/about", sub: [
       { name: "The Company", path: "/about#the-company" },
       { name: "Core Values", path: "/about#core-values" },
@@ -19,13 +20,13 @@ export default function Layout({ children }) {
     ]},
     { name: "Products", path: "/products", sub: [
       {name: "Skin Care", path: "/products#skin"},
-      {name: "Hair Care", path: "/products#hair"},
-      {name: "Oral Care", path: "/products#oral"},
-      {name: "Nutraceuticals", path: "/products#nutraceuticals"},
-      {name: "Baby Care", path: "/products#baby"},
-      {name: "Mens Care", path: "/products#mens"},
+      { name: "Hair Care", path: "/products#hair" },
+      { name: "Men's Wellness", path: "/products#mens" },
+      { name: "Baby Care", path: "/products#baby" },
+      { name: "Body Care", path: "/products#body" },
       {name: "Hygiene", path: "/products#hygiene"},
-      {name: "Herbal", path: "/products#herbal"}
+      { name: "Nutraceuticals", path: "/products#nutraceuticals" },
+      { name: "Oral Care", path: "/products#oral" }
     ]},
     { name: "Team", path: "/team" },
     { name: "Strengths", path: "/strengths" },
@@ -59,7 +60,7 @@ export default function Layout({ children }) {
             {menu.map(({name, path, sub}, index) => (
               <div key={index} className='group relative inline-flex'>
                 <Link href={path}>
-                  <a className={`${pathname === path && 'underline decoration-yellow decoration-2 underline-offset-4 font-bold'} hover:font-bold mx-4 transition-all`}>{name}</a>
+                  <a className={`${pathname === path && 'underline decoration-yellow decoration-2 underline-offset-4 font-bold'} text-xs hover:font-bold mx-2 transition-all`}>{name}</a>
                 </Link>
 
                 {sub && (
