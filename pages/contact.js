@@ -68,7 +68,7 @@ export default function Contact() {
       </section>
 
       <section className="w-screen">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.190648063656!2d77.51135731509562!3d13.023528217259742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3cf61aaaaaab%3A0xa5490ec7bf74d8f6!2sMadhur%20Pharma%20%26%20Research%20Laboratories%20Private%20Limited!5e0!3m2!1sen!2sin!4v1656776970215!5m2!1sen!2sin" width="100%" height="600" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.190648063656!2d77.51135731509562!3d13.023528217259742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3cf61aaaaaab%3A0xa5490ec7bf74d8f6!2sMadhur%20Pharma%20%26%20Research%20Laboratories%20Private%20Limited!5e0!3m2!1sen!2sin!4v1656776970215!5m2!1sen!2sin" width="100%" height="600" allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
     </>
   );
