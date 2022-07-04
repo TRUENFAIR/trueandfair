@@ -47,8 +47,6 @@ export default function Testimonials() {
           loop={true}
           speed={1000}
           pagination={{ clickable: true }}
-          // onSlideChange={() => console.log('slide change')}
-          // onSwiper={(swiper) => console.log(swiper)}
       >
         {stuff.map(({ text, name, position, company, logo, id }) => (
           <SwiperSlide key={id}>

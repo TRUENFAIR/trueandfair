@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Slider from '/components/slider'
 import Testimonials from '/components/testimonials'
-import Clients from '/components/Clients'
+import Clients from '/components/clients'
 import Link from 'next/link'
 
 const rightIcon = <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-white" viewBox="0 0 20 20" fill="currentColor">

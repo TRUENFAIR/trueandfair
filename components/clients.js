@@ -65,14 +65,10 @@ export default function Clients() {
             spaceBetween={40}
             slidesPerGroup={4}
             breakpoints={{
-              // 640: {
-              //   slidesPerView: 2,
-              //   spaceBetween: 20,
-              // },
-              // 768: {
-              //   slidesPerView: 4,
-              //   spaceBetween: 40,
-              // },
+              768: {
+                slidesPerView: 4,
+                spaceBetween: 40,
+              },
               1024: {
                 slidesPerView: 6,
                 spaceBetween: 60,
@@ -86,7 +82,7 @@ export default function Clients() {
         >
           {logos.map((x, index) => (
             <SwiperSlide key={index}>
-              <div key={index} className='h-24 w-auto relative cursor-pointer'>
+              <div className='h-24 w-auto relative cursor-pointer'>
                 <Image layout='fill' alt="" src={x} className='absolute inset-0 object-contain'/>
               </div>
             </SwiperSlide>
