@@ -32,7 +32,7 @@ export default function Home() {
         </section>
 
         <section>
-          <div className='w-screen h-80 relative'>
+          <div className='w-full h-80 relative'>
             <Image layout="fill" alt="" src="/ourvision3.jpeg" className='absolute inset-0 object-cover' />
             {/* <div className='bg-white opacity-0 absolute inset-0'></div> */}
             <div className='md:container mx-auto relative md:pt-12 p-4'>
@@ -95,7 +95,7 @@ export default function Home() {
         </section>
 
         <section>
-          <div className='w-screen relative'>
+          <div className='w-full relative'>
             <Image layout="fill" alt="" src="/awards.jpg" className='absolute inset-0 object-cover' />
             <div className='bg-emerald-50 opacity-60 absolute inset-0'></div>
             <div className='md:container mx-auto relative py-12 p-4'>

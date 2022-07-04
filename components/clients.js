@@ -81,7 +81,7 @@ export default function Clients() {
         >
           {logos.map((x, index) => (
             <SwiperSlide key={index}>
-              <div className='h-24 w-auto relative cursor-pointer'>
+              <div className='h-36 w-auto relative cursor-pointer'>
                 <Image layout='fill' alt="" src={x} className='absolute inset-0 object-contain'/>
               </div>
             </SwiperSlide>

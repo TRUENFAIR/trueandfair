@@ -60,7 +60,7 @@ export default function Layout({ children }) {
             {menu.map(({name, path, sub}, index) => (
               <div key={index} className='group relative inline-flex'>
                 <Link href={path}>
-                  <a className={`${pathname === path && 'underline decoration-yellow decoration-2 underline-offset-4 font-bold'} text-xs hover:font-bold mx-2 transition-all`}>{name}</a>
+                  <a className={`${pathname === path && 'underline decoration-yellow decoration-2 underline-offset-4 font-bold'} hover:font-bold mx-4 transition-all`}>{name}</a>
                 </Link>
 
                 {sub && (

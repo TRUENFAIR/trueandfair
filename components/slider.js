@@ -38,8 +38,8 @@ export default function Slider() {
 
   return (
     <div className="relative w-auto">
-      {/* <div className="w-screen h-[60vh] flex overflow-x-auto snap-mandatory snap-x scrollbar-hide"> */}
-      <div className="w-screen">
+      {/* <div className="w-full h-[60vh] flex overflow-x-auto snap-mandatory snap-x scrollbar-hide"> */}
+      <div className="w-full">
         
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
@@ -55,7 +55,7 @@ export default function Slider() {
         >
           {slides.map(({text1, text2, image, id}) => (
           <SwiperSlide key={id}>
-            <div className='h-[60vh] w-screen relative flex justify-center items-center'>
+            <div className='h-[60vh] w-full relative flex justify-center items-center'>
               <Image className="object-cover w-full h-full" layout="fill" src={image} alt=""/>
               <div className="absolute inset-0 bg-green opacity-20"></div>
                 <div className='px-4 md:container text-center z-50'>

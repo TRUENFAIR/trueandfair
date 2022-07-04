@@ -50,7 +50,7 @@ export default function Testimonials() {
       >
         {stuff.map(({ text, name, position, company, logo, id }) => (
           <SwiperSlide key={id}>
-            <div className="w-screen relative flex justify-center items-center">
+            <div className="w-full relative flex justify-center items-center">
               <div className="md:container mx-auto md:px-24 flex flex-col justify-center items-center h-[50vh]">
                 <p className="md:max-w-prose md:text-lg text-sm md:leading-10 text-center italic">&ldquo;{text}&rdquo;</p>
                 <p className="text-lg pt-12 text-zinc-500 font-semibold">{name},&nbsp;<span className="font-light">{position}</span></p>
