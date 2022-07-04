@@ -77,7 +77,6 @@ export default function Clients() {
             }}
             autoplay={true}
             loop={true}
-            loopFillGroupWithBlank={true}
             speed={800}
         >
           {logos.map((x, index) => (
