@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Slider from '/components/slider'
 import Testimonials from '/components/testimonials'
+import Clients from '/components/Clients'
 import Link from 'next/link'
 
 const rightIcon = <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-white" viewBox="0 0 20 20" fill="currentColor">
@@ -96,7 +97,7 @@ export default function Home() {
         <section>
           <div className='w-screen relative'>
             <Image layout="fill" alt="" src="/awards.jpg" className='absolute inset-0 object-cover' />
-            <div className='bg-emerald-50 opacity-20 absolute inset-0'></div>
+            <div className='bg-emerald-50 opacity-60 absolute inset-0'></div>
             <div className='md:container mx-auto relative py-12 p-4'>
               <div className='inline-grid grid-cols-3 md:grid-cols-6 gap-2 w-full'>
                 {awards.map((x, index) => (
@@ -109,27 +110,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="md:py-12 text-zinc-900 md:container p-4 mx-auto relative ">
-          <h1 className="text-4xl tracking-wide font-light text-green-900">OUR CUSTOMERS</h1>
-          {/* <p className="py-4">Madhur Pharma is trusted by some of the world&apos;s biggest brands in cosmetics, pharma and herbal products</p> */}
-
-          <div className="w-full flex overflow-x-auto snap-mandatory snap-x scrollbar-hide mt-12">
-            <div className='w-full snap-start snap-always relative shrink-0'>
-              <div className='inline-grid grid-cols-4 md:grid-cols-8 md:gap-6 gap-2 w-full'>
-                {[...Array(8).keys()].map((x, index) => <div key={index} className='w-auto h-24 md:h-40 relative cursor-pointer'>
-                  <Image layout='fill' alt="" src="/wipro.png" className='absolute inset-0 object-contain'/>
-                </div>)}
-              </div>
-            </div>
-          </div>
-
-          <div className="flex justify-center items-center mt-8">
-            <div className='w-6 h-6 cursor-pointer border-1 rounded-full flex justify-center items-center'><div className='w-3 h-3 rounded-full border-2 border-zinc-400 bg-zinc-400 shadow-sm'></div></div>
-            <div className='w-6 h-6 cursor-pointer border-1 rounded-full flex justify-center items-center'><div className='w-3 h-3 rounded-full border-2 border-zinc-400 shadow-sm'></div></div>
-            <div className='w-6 h-6 cursor-pointer border-1 rounded-full flex justify-center items-center'><div className='w-3 h-3 rounded-full border-2 border-zinc-400 shadow-sm'></div></div>
-          </div>
-
-        </section>
+        <Clients/>
 
         <Testimonials/>
 

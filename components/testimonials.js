@@ -45,7 +45,7 @@ export default function Testimonials() {
           slidesPerView={1}
           autoplay={true}
           loop={true}
-          speed={500}
+          speed={1000}
           pagination={{ clickable: true }}
           // onSlideChange={() => console.log('slide change')}
           // onSwiper={(swiper) => console.log(swiper)}
