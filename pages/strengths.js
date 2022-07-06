@@ -16,7 +16,7 @@ export default function Strengths() {
               <div className="absolute inset-0 bg-black opacity-20"></div>
               <h1 className="md:text-3xl text-xl tracking-wide drop-shadow-lg font-semibold  text-white z-10 w-full p-4">R&D</h1>
             </div>
-            <p className="pt-8 prose">Innovation is key to changing market needs and research is a core strength of our team at Madhur Pharma. Our founding team led by Dr. Deepak Joshi and Dr. Chitra Phadnis had laid a strong foundation for research and development back in the 1980s, which continues to be a strong pillar behind the company’s growth even today, covering a wide range of product categories that have revolutionised the Indian pharma and cosmetics industry.</p>
+            <p className="pt-8 prose">Innovation is key to changing market needs and research is a core strength of our team at Madhur Pharma. Our founding team led by Dr. Deepak Joshi had laid a strong foundation for research and development back in the 1980s, which continues to be a strong pillar behind the company’s growth even today, covering a wide range of product categories that have revolutionised the Indian pharma and cosmetics industry.</p>
           </div>
           <div className="w-auto relative">
             <div className="relative w-[95%] h-64 flex justify-start items-end shadow-sm hover:scale-[1.02] transition-all cursor-pointer">
