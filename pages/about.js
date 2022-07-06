@@ -32,12 +32,12 @@ export default function About() {
                 <p className="font-semibold text-3xl text-white">Innovation</p>
               </div>
             </div>
-            <div className='md:h-64 w-full text-zinc-900 pt-4 flex items-start justify-center'>
+            <div className='md:h-64 w-full text-zinc-900 pt-4 pb-2 flex items-start justify-center'>
               <p className="text-base">Driven by changing consumer needs, environment and sustainability aspects</p>
             </div>
           </div>
           <div className='flex md:flex-col flex-col-reverse'>
-            <div className='md:h-40 w-full text-zinc-900 pb-4 flex items-end justify-center'>
+            <div className='md:h-40 w-full text-zinc-900 pt-4 pb-2 md:pb-4 flex items-end justify-center'>
               <p className="text-base">40 years of expertise in ayurveda and modern medicine. The best of both worlds</p>
             </div>
             <div className='h-64 w-full bg-zinc-200 relative'>
@@ -56,12 +56,12 @@ export default function About() {
                 <p className="font-semibold text-3xl text-white">Honesty</p>
               </div>
             </div>
-            <div className='md:h-64 w-full text-zinc-900 pt-4 flex items-start justify-center'>
+            <div className='md:h-64 w-full text-zinc-900 pt-4 pb-2 md:pb-4 flex items-start justify-center'>
               <p className="text-base">Provide the right solutions for each customer by placing their interests first</p>
             </div>
           </div>
           <div className='flex md:flex-col flex-col-reverse'>
-            <div className='md:h-40 w-full text-zinc-900 pb-4 flex items-end justify-center'>
+            <div className='md:h-40 w-full text-zinc-900 pt-4 pb-2 md:pb-4 flex items-end justify-center'>
               <p className="text-base">Uncompromised product quality and manufacturing standards at all times</p>
             </div>
             <div className='h-64 w-full bg-zinc-200 relative'>
@@ -80,7 +80,7 @@ export default function About() {
                 <p className="font-semibold text-3xl text-white">Safety</p>
               </div>
             </div>
-            <div className='md:h-64 w-full text-zinc-900 pt-4 flex items-start justify-center'>
+            <div className='md:h-64 w-full text-zinc-900 pt-4 pb-2 flex items-start justify-center'>
               <p className="text-base">Extensive investments in R&D resulting in formulations that are safe and compliant</p>
             </div>
           </div>
