@@ -13,3 +13,9 @@
 .swiper-pagination-bullet {
   background-color: white !important;
 }
+
+.debug * {
+  box-sizing: border-box;
+  background: rgb(0 100 0/0.1) !important;
+  /* outline: 1px solid yellow !important; */
+}

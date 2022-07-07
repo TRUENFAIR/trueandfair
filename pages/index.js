@@ -110,7 +110,7 @@ export default function Home() {
           </div>
         </section>
 
-        <Clients/>
+        {/* <Clients/> */}
 
         <Testimonials/>
 
