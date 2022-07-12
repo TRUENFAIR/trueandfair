@@ -17,7 +17,7 @@ export default function Teams() {
     {
       name: "KS Chauhan",
       image: "/person1.jpg",
-      role: "Head of Manufacturing"
+      role: "General Manager"
     },
     {
       name: "Naveen Kumar",

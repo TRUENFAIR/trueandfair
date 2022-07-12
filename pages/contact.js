@@ -7,14 +7,21 @@ export default function Contact() {
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [phone, setPhone] = useState("")
-  const [interest, setInterest] = useState("")
+  const [interest, setInterest] = useState("Contract Manufacturing")
   const [info, setInfo] = useState("")
   const [message, setMessage] = useState(false)
 
   const sendMessage = async (e) => {
     e.preventDefault()
+    console.log("working")
 
-    if (!!name || !!email || !phone || !info) {
+    console.log("name", name)
+    console.log("email", email)
+    console.log("phone", phone)
+    console.log("interest", interest)
+    console.log("info", info)
+
+    if (!name || !email || !phone || !info) {
       return;
     }
 
@@ -23,6 +30,8 @@ export default function Contact() {
       headers: {},
       body: JSON.stringify({name, email, phone, info, interest})
     })
+    
+    console.log("response", response)
 
     if (response.status === 200) {
       setName("")
@@ -40,7 +49,7 @@ export default function Contact() {
   const changeEmail = (e) => { setEmail(e.target.value) }
   const changePhone = (e) => { setPhone(e.target.value) }
   const changeInfo = (e) => { setInfo(e.target.value) }
-  
+  const changeInterest = (e) => {setInterest(e.target.value)}
 
   return (
     <>
@@ -85,7 +94,7 @@ export default function Contact() {
                       
                       <label className="block">
                         <span className="text-zinc-500">What are you looking for?</span>
-                        <select className=" block w-full mt-1 rounded-sm border-zinc-200 focus:border-green-700 focus:ring focus:ring-green-100 focus:ring-opacity-50">
+                      <select onChange={changeInterest} className=" block w-full mt-1 rounded-sm border-zinc-200 focus:border-green-700 focus:ring focus:ring-green-100 focus:ring-opacity-50">
                           <option>Contract Manufacturing</option>
                           <option>Turnkey Projects</option>
                           <option>Product Manufacturing</option>

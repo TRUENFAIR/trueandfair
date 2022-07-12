@@ -27,9 +27,9 @@ export default function Home() {
             </div>
             <div className="w-auto h-96  md:h-auto relative">
               <Image className="absolute inset-0 object-cover" layout="fill" alt="" src="/vision.jpeg" />
-                <div className='absolute left-0 top-0 bottom-0 w-full lg:w-2/3 p-12'>
-                  <p className='text-3xl py-4'>OUR VISION</p>
-                  <p className='text-xl pt-4 italic leading-loose'>To be a world-class manufacturer of personal wellness products that are a hallmark of trust for our customers and consumers</p>
+                <div className='absolute left-0 top-0 bottom-0 w-full lg:w-2/3 p-12 flex justify-center items-start flex-col'>
+                  <p className='text-3xl pb-4'>OUR VISION</p>
+                  <p className='pt-4 leading-loose'>To be a world-class manufacturer of personal wellness products that are a hallmark of trust for our customers and consumers</p>
                 </div>
             </div>
           </div>
