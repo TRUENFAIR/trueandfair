@@ -25,16 +25,19 @@ export default function Home() {
 
               <Link href="/about"><button className="mt-8 bg-yellow text-black font-bold text-xs hover:text-zinc-700 hover:bg-yellow-800 p-3 rounded-sm transition-all">READ MORE</button></Link>
             </div>
-            <div className="w-auto h-48 md:h-auto relative">
-              <Image className="absolute inset-0 object-cover" layout="fill" alt="" src="/thecompanyhome.jpg"/>
+            <div className="w-auto h-96  md:h-auto relative">
+              <Image className="absolute inset-0 object-cover" layout="fill" alt="" src="/vision.jpeg" />
+                <div className='absolute left-0 top-0 bottom-0 w-full lg:w-2/3 p-12'>
+                  <p className='text-3xl py-4'>OUR VISION</p>
+                  <p className='text-xl pt-4 italic leading-loose'>To be a world-class manufacturer of personal wellness products that are a hallmark of trust for our customers and consumers</p>
+                </div>
             </div>
           </div>
         </section>
 
-        <section>
+        {/* <section>
           <div className='w-full h-80 relative'>
             <Image layout="fill" alt="" src="/ourvision3.jpeg" className='absolute inset-0 object-cover' />
-            {/* <div className='bg-white opacity-0 absolute inset-0'></div> */}
             <div className='md:container mx-auto relative md:pt-12 p-4'>
               <h1 className="text-4xl tracking-wide font-light text-white">OUR VISION</h1>
               <p className='text-white z-10 text-2xl prose md:w-1/2 pt-8 leading-relaxed'>
@@ -42,9 +45,9 @@ export default function Home() {
               </p>
             </div>
           </div>
-        </section>
+        </section> */}
 
-        <section className="md:pt-24 md:pb-32 text-zinc-90">
+        <section className="md:pt-24 md:pb-32 text-zinc-90 bg-emerald-50">
           <div className="md:container p-4 mx-auto">
             <h1 className="text-4xl tracking-wide font-light text-green-900">WHAT WE OFFER</h1>
             <div className="grid grid-cols-1 md:grid-cols-3 md:gap-12 gap-4 pt-4 md:pt-8">
@@ -110,7 +113,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* <Clients/> */}
+        <Clients/>
 
         <Testimonials/>
 
