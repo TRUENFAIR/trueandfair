@@ -189,7 +189,7 @@ export default function Layout({ children }) {
                         <div className="w-full shadow-md">
                           {sub.map(({ name, path }, index) => (
                             <Link key={index} href={path}>
-                              <a className="w-52 hover:font-bold px-4 bg-white inline-flex p-2 normal-case text-sm whitespace-nowrap border-b border-t border-zinc-100 hover:bg-yellow">
+                              <a className="w-52 hover:font-bold px-4 bg-white inline-flex p-2 normal-case text-sm whitespace-nowrap border-b border-t border-zinc-100 hover:bg-yellow-300">
                                 {name}
                               </a>
                             </Link>
@@ -288,19 +288,19 @@ export default function Layout({ children }) {
             <Link href="/about">
               <a>About</a>
             </Link>
-            <Link href="/services">
+            <Link href="/">
               <a>Services</a>
             </Link>
-            <Link href="/products">
+            <Link href="/">
               <a>Audot</a>
             </Link>
           </div>
 
           <div className="text-sm flex flex-col  lg:p-0  text-center">
-            <Link href="/team">
+            <Link href="/">
               <a>Library</a>
             </Link>
-            <Link href="/strengths">
+            <Link href="/">
               <a>Resources</a>
             </Link>
 
