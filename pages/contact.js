@@ -79,7 +79,7 @@ export default function Contact() {
 
               <div className="text-base pt-8 font-bah text-black">
                 <p className="text-black font-bah">Address</p>
-               
+
                 <p>Akshaya Redstone,</p>
                 <p> Whitefield Hosakote Main Road,</p>
                 <p>Kannamangala Post,</p>
@@ -92,7 +92,7 @@ export default function Contact() {
                 <form className="mt-8" onSubmit={sendMessage}>
                   <div className="grid grid-cols-2 gap-6">
                     <label className="block">
-                      <span className="text-zinc-500 font-bah">Name</span>
+                      <span className="text-black font-bah">Name</span>
                       <input
                         type="text"
                         className="mt-1 font-bah block w-full rounded-sm border-zinc-200 focus:border-green-700 focus:ring focus:ring-blue focus:ring-opacity-50"
@@ -102,7 +102,7 @@ export default function Contact() {
                       />
                     </label>
                     <label className="block">
-                      <span className="text-zinc-500 font-bah">Email</span>
+                      <span className="text-black font-bah">Email</span>
                       <input
                         type="email"
                         className="mt-1 font-bah block w-full rounded-sm border-zinc-200 focus:border-green-700 focus:ring focus:ring-blue focus:ring-opacity-50"
@@ -112,7 +112,7 @@ export default function Contact() {
                       />
                     </label>
                     <label className="block">
-                      <span className="text-zinc-500 font-bah">Phone</span>
+                      <span className="text-black font-bah">Phone</span>
                       <input
                         type="tel"
                         className="mt-1 font-bah block w-full rounded-sm border-zinc-200 focus:border-green-700 focus:ring focus:ring-blue focus:ring-opacity-50"
@@ -123,7 +123,7 @@ export default function Contact() {
                     </label>
 
                     <label className="block">
-                      <span className="text-zinc-500 font-bah">
+                      <span className="text-black font-bah">
                         What are you looking for?
                       </span>
                       <select
