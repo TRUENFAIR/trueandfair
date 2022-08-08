@@ -176,7 +176,7 @@ export default function Layout({ children }) {
                     <a
                       className={`${
                         pathname === path &&
-                        "underline decoration-yellow  decoration-2 font-extrabold underline-offset-4 "
+                        "underline decoration-yellow-300  decoration-2 font-extrabold underline-offset-4 "
                       } hover:font-bold mx-3  2xl:mx-4 transition-all`}
                     >
                       {name}
