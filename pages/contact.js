@@ -1,5 +1,4 @@
-import Head from "next/head";
-import Image from "next/image";
+
 import React, { useState } from 'react'
 
 export default function Contact() {
@@ -61,7 +60,7 @@ export default function Contact() {
 
           <div className="flex flex-col md:flex-row justify-start items-start bg-zinc-50 rounded pt-8 ">
               <div className="md:w-2/5 w-full">
-                <p className="text-2xl font-semibold upper">Madhur Pharma &<br/> Research Laboratories Pvt Ltd</p>
+                <p className="text-2xl font-bah font-semibold upper">TRUE AND FAIR Pvt Ltd</p>
                   
                 <div className="text-base pt-8 text-zinc-600">
                   <p className="text-zinc-500">Address</p>
@@ -95,10 +94,10 @@ export default function Contact() {
                       <label className="block">
                         <span className="text-zinc-500">What are you looking for?</span>
                       <select onChange={changeInterest} className=" block w-full mt-1 rounded-sm border-zinc-200 focus:border-green-700 focus:ring focus:ring-green-100 focus:ring-opacity-50">
-                          <option>Contract Manufacturing</option>
-                          <option>Turnkey Projects</option>
-                          <option>Product Manufacturing</option>
-                          <option>Others</option>
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
                         </select>
                       </label>
                     </div>

@@ -11,34 +11,52 @@ export default function Testimonials() {
 
   const stuff = [
     {
-      text: "Madhur Pharma comes highly recommended in the industry & their expertise and efficiency make them one of the best manufacturing facilities. Their consistently good manufacturing practices and flexibility in terms of testing new products is what sets them apart. Madhur Pharma has been with ILLUVIA on our journey from the beginning and has supported us in all our endeavours as a start-up.",
-      name: "Palash Pandey",
-      position: "Co-Founder",
-      company: "Renaura Wellness Pvt Ltd",
+      text: "Standard setting by True & Fair will be completely independent from the practice as an auditor since True & Fair will not be in the practice of audit and therefore the standards set by True & Fair will not have the bias of an auditee client",
+      name: "",
+      position: "",
+      company: "",
       logo: "/testimonial1.png",
       id: 1
     },
     {
-      text: "All products, services, and quality are as expected. Madhur Pharma has been an excellent partner for us since many years. We look forward for same level of service and support in the forthcoming years.",
-      name: "Megha Kapur",
-      position: "President",
-      company: "Prima USA, LLC",
+      text: "True & Fair will not participate in the operations of the CA Firms. The revenue model of True & Fair will be a fixed fee model and not based on the revenues or profits of the CA Firms.",
+      name: "",
+      position: "",
+      company: "",
       logo: "/testimonial2.png",
       id: 2
     },
     {
-      text: "We have been working with Madhur Pharma since our inception and are very happy with the support received from them. They are a very seasoned team with a wealth of experience in best manufacturing practices, and their willingness to take small batches really helps start-ups launch new products and scale quickly.",
-      name: "Mangesh Gawande",
-      position: "Founder & CEO",
-      company: "EarthyBlend Pvt Ltd",
+      text: "True & Fair will bring in international best practices and exceed them where ever possible. ",
+      name: "",
+      position: "",
+      company: "",
       logo: "/testimonial3.png",
       id: 3
     },
+    {
+      
+      text: "Audit documentation tool will emphasise on a thinking audit and not an inking audit. ",
+      name: "",
+      position: "",
+      company: "",
+      logo: "/testimonial3.png",
+      id: 4
+    },
+    {
+      
+      text: "Information security and confidentiality is key to the vision envisaged by True & Fair. It will deploy best in class tools in respect of these matters which will also be subject to an independent audit, which report will be shared with all the participating CA Firms.  ",
+      name: "",
+      position: "",
+      company: "",
+      logo: "/testimonial3.png",
+      id: 5
+    }
   ]
 
   return (
     <section className="p-4 md:pt-12  bg-slate-100 relative">
-      <h1 className="md:container mx-auto pb-12 text-4xl font-light tracking-wide text-green-900">WHAT OUR CUSTOMERS SAY</h1>
+      <h1 className="md:container mx-auto pb-12 text-4xl font-light tracking-wide text-green-900">Core Values</h1>
 
       <Swiper
           modules={[Pagination, Autoplay]}

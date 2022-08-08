@@ -77,7 +77,7 @@ export default function Clients() {
             }}
             autoplay={true}
             loop={true}
-            speed={800}
+            speed={500}
         >
           {logos.map((x, index) => (
             <SwiperSlide key={index}>

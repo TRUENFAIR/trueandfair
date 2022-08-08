@@ -6,9 +6,9 @@ function MyApp({ Component, pageProps }) {
   return (
     <Layout>
       <Head>
-        <title>Madhur Pharma & Research Laboratories</title>
-        <meta name="description" content="Official website of Madhur Pharma" />
-        <link rel="icon" href="/favicon.ico" />
+        <title>True And Fair</title>
+        <meta name="description" content="Official website of True&Fair" />
+        <link rel="icon" href="/homeicon/tnf6.png" />
       </Head>
       <Component {...pageProps} />
     </Layout>

@@ -11,8 +11,8 @@ export default function Slider() {
 
   const slides = [
     {
-      text1: "World class manufacturer of wellness products",
-      text2: "Pioneers in research, innovation and best practices",
+      text1: "Corporates ",
+      text2: " in providing guidance on accounting and financial reporting, Environmental, Social and Governance (ESG), Risk Management practices and Board Governance.",
       image: "/slider3.jpg",
       id: "slide1"
     },
