@@ -47,7 +47,7 @@ export default function Layout({ children }) {
       ],
     },
     {
-      name: "AUDOT",
+      name: "AUDOT®️",
       path: "",
 
       sub: [
@@ -151,8 +151,9 @@ export default function Layout({ children }) {
                   <Image
                     src="/homeicon/TNFmain22.png"
                     alt="logo"
-                    width={300}
-                    height={90}
+                    width={389}
+                    height={95}
+                    objectFit="cover"
                   />
                 </div>
                 <div className="block   md:hidden">
@@ -176,7 +177,7 @@ export default function Layout({ children }) {
                     <a
                       className={`${
                         pathname === path &&
-                        "underline decoration-yellow-300  decoration-2 font-extrabold underline-offset-4 "
+                        "underline decoration-blue  decoration-2 font-extrabold underline-offset-4 "
                       } hover:font-bold mx-3  2xl:mx-4 transition-all`}
                     >
                       {name}
@@ -189,7 +190,7 @@ export default function Layout({ children }) {
                         <div className="w-full shadow-md">
                           {sub.map(({ name, path }, index) => (
                             <Link key={index} href={path}>
-                              <a className="w-52 hover:font-bold px-4 bg-white inline-flex p-2 normal-case text-sm whitespace-nowrap border-b border-t border-zinc-100 hover:bg-yellow-300">
+                              <a className="w-52 hover:font-bold px-4 bg-white inline-flex p-2 normal-case text-sm whitespace-nowrap border-b border-t border-zinc-100 hover:bg-">
                                 {name}
                               </a>
                             </Link>
@@ -243,22 +244,23 @@ export default function Layout({ children }) {
               <a className="flex flex-col justify-start items-center pl-6 lg:pl-0">
                 <div className="">
                   <Image
-                    src="/homeicon/tnf.png"
+                    src="/homeicon/TNF_Main.png"
                     alt="logo"
-                    width={80}
-                    height={80}
+                    width={140}
+                    height={140}
+                    objectFit="cover"
                   />
                 </div>
                 <div className="pl-2 flex flex-col justify-center">
-                  <span className="leading-4 font-bah text-black text-xl">
+                  {/* <span className="leading-4 font-bah text-black text-xl">
                     TRUE AND FAIR
-                  </span>
+                  </span> */}
                 </div>
               </a>
             </Link>
           </div>
 
-          <div className="text-sm p-4 lg:p-0 pl-6  text-left">
+          <div className="text-sm p-4 lg:p-0 pl-6 font-bah text-left">
             <p className="font-semibold">INDIA - HEAD OFFICE</p>
             <p>address 1,</p>
             <p>address 2,</p>
@@ -278,13 +280,13 @@ export default function Layout({ children }) {
               Fax : +971 43 425126
             </p>
           </div> */}
-          <div className="text-sm lg:p-0  p-4  text-center">
+          <div className="text-sm lg:p-0 font-bah  p-4  text-center">
             <p className="font-semibold">CONTACT</p>
             <p className="">+91 000000000</p>
             <p className="">email@.com</p>
           </div>
 
-          <div className="text-sm flex flex-col  pl-6 lg:p-0   text-center ">
+          <div className="text-sm flex flex-col font-bah  pl-6 lg:p-0   text-center ">
             <Link href="/about">
               <a>About</a>
             </Link>
@@ -296,7 +298,7 @@ export default function Layout({ children }) {
             </Link>
           </div>
 
-          <div className="text-sm flex flex-col  lg:p-0  text-center">
+          <div className="text-sm flex flex-col font-bah lg:p-0  text-center">
             <Link href="/">
               <a>Library</a>
             </Link>
@@ -310,7 +312,7 @@ export default function Layout({ children }) {
           </div>
 
           <div className="col-span-2 p-4 lg:p-0 pl-6 mr-6 ">
-            <p className="font-semibold text-sm pb-2 text-black text-center">
+            <p className="font-semibold text-sm pb-2 font-bah text-black text-center">
               FIND US ON
             </p>
             <div className="lg:grid-cols-2 flex justify-center gap-2 lg:inline-grid  ">
@@ -424,7 +426,7 @@ export default function Layout({ children }) {
         </div>
 
         <div className="mx-auto  text-center font-bah  text-sm text-zinc-400 pt-4 lg:pt-8 lg:p-0 p-4 pl-6">
-          <p>TRUE AND FAIR</p>
+          <p>True & Fair Professionals Network </p>
           <p>
             Copyright © 2022. All Rights Reserved. Designed by Deedbee Social
             Ventures.
