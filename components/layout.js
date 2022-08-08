@@ -82,7 +82,7 @@ export default function Layout({ children }) {
     },
 
     {
-      name: "contact us",
+      name: "Contact",
       path: "/contact",
     },
   ];
@@ -151,7 +151,7 @@ export default function Layout({ children }) {
                   <Image
                     src="/homeicon/TNFmain22.png"
                     alt="logo"
-                    width={250}
+                    width={300}
                     height={90}
                   />
                 </div>
@@ -260,10 +260,10 @@ export default function Layout({ children }) {
 
           <div className="text-sm p-4 lg:p-0 pl-6  text-left">
             <p className="font-semibold">INDIA - HEAD OFFICE</p>
-            <p>Uma Sree Dream World, Unit -2,</p>
-            <p>B-Block, 4th Floor, Kudlu Gate,</p>
-            <p>Hosur Main Road,</p>
-            <p>Bangalore – 560068. Karnataka, INDIA</p>
+            <p>address 1,</p>
+            <p>address 2,</p>
+            <p>address 3,</p>
+            <p>INDIA</p>
           </div>
           {/* <div className="text-sm p-4 lg:p-0 pl-6  text-left">
             <p className="font-semibold">SFJ Computers Consulting</p>
@@ -280,8 +280,8 @@ export default function Layout({ children }) {
           </div> */}
           <div className="text-sm lg:p-0  p-4  text-center">
             <p className="font-semibold">CONTACT</p>
-            <p className="">+91 80 4158333</p>
-            <p className="">sales@sfjbs.com</p>
+            <p className="">+91 000000000</p>
+            <p className="">email@.com</p>
           </div>
 
           <div className="text-sm flex flex-col  pl-6 lg:p-0   text-center ">
@@ -305,7 +305,7 @@ export default function Layout({ children }) {
             </Link>
 
             <Link href="/customers">
-              <a>Contact Us</a>
+              <a>Contact </a>
             </Link>
           </div>
 
