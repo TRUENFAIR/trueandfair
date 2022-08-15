@@ -142,7 +142,7 @@ export default function Home() {
                   />
                   <div className="w-full h-1/2 absolute bottom-0 left-0 right-0 from-transparent bg-gradient-to-b to-black opacity-60"></div>
 
-                  <div className="flex items-center justify-between z-50 w-full p-4">
+                  <div className="flex items-center justify-between z-40 w-full p-4">
                     <h1 className="text-4xl tracking-wide drop-shadow-md font-semibold  text-white z-10 w-full">
                       Lorem <br /> ipsum
                     </h1>
@@ -163,7 +163,7 @@ export default function Home() {
                   />
                   <div className="w-full h-1/2 absolute bottom-0 left-0 right-0 from-transparent bg-gradient-to-b to-black opacity-60"></div>
 
-                  <div className="flex items-center justify-between z-50 w-full p-4">
+                  <div className="flex items-center justify-between z-40 w-full p-4">
                     <h1 className="text-4xl tracking-wide drop-shadow-md font-semibold  text-white z-10 w-full">
                       lorem <br />
                       ipsum
@@ -185,7 +185,7 @@ export default function Home() {
                   />
                   <div className="w-full h-1/2 absolute bottom-0 left-0 right-0 from-transparent bg-gradient-to-b to-black opacity-60"></div>
 
-                  <div className="flex items-center justify-between z-50 w-full p-4">
+                  <div className="flex items-center justify-between z-40 w-full p-4">
                     <h1 className="text-4xl tracking-wide drop-shadow-md font-semibold  text-white z-10 w-full">
                       lorem <br />
                     ipsum

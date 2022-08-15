@@ -37,7 +37,7 @@ export default function Layout({ children }) {
 
     {
       name: "Services",
-      path: "",
+      path: "/services",
       sub: [
         { name: "Auditing Firms ", path: "" },
         { name: "Chartered Accountants", path: "" },
@@ -136,7 +136,7 @@ export default function Layout({ children }) {
       <Head>
         <title>TRUE & FAIR</title>
       </Head>
-      <div className="w-full lg:h-[95px]">
+      <div className="w-full lg:h-[82px]">
         <header
           className={`${
             navbr
@@ -144,24 +144,27 @@ export default function Layout({ children }) {
               : "w-full border-zinc-100 z-50 border-b font-bah   ease-in duration-700 "
           }`}
         >
-          <div className="md:container mx-auto flex justify-between  items-center text-zinc-900 font-sans">
+          <div className="md:container mx-auto  flex justify-between  items-center text-zinc-900 font-sans">
             <Link href="/">
               <a className="flex  justify-between lg:justify-start items-center ">
-                <div className="hidden md:block">
+                <div className="w-full h-[80px]">
+                  <div className="hidden relative w-[250px]  h-16 md:flex items-center flex-col">
+                    <Image
+                      src="/homeicon/TNFmain22.png"
+                      layout="fill"
+                      alt="logo"
+                      objectFit="cover"
+                    />
+                  </div>
+                </div>
+                <div className="block relative w-[250px] h-16  md:hidden">
                   <Image
                     src="/homeicon/TNFmain22.png"
+                   
+                    layout="fill"
                     alt="logo"
-                    width={389}
-                    height={95}
                     objectFit="cover"
-                  />
-                </div>
-                <div className="block   md:hidden">
-                  <Image
-                    src="/header.png"
-                    alt="logo"
-                    width={100}
-                    height={100}
+                    
                   />
                 </div>
               </a>
@@ -170,7 +173,7 @@ export default function Layout({ children }) {
               <span className="text-sm font-bold text-black capitalize"></span>
             </div>
 
-            <nav className="text-sm uppercase  tracking-tight hidden  lg:flex justify-end flex-1">
+            <nav className="text-sm uppercase  font-bah tracking-tight hidden  lg:flex justify-end flex-1">
               {menu.map(({ name, path, sub }, index) => (
                 <div key={index} className="group relative inline-flex ">
                   <Link href={path}>
@@ -178,7 +181,7 @@ export default function Layout({ children }) {
                       className={`${
                         pathname === path &&
                         "underline decoration-blue  decoration-2 font-extrabold underline-offset-4 "
-                      } hover:font-bold mx-3  2xl:mx-4 transition-all`}
+                      } hover:font-bold mx-3  2xl:mx-4 font-bah transition-all`}
                     >
                       {name}
                     </a>
@@ -237,12 +240,12 @@ export default function Layout({ children }) {
 
       <main className="text-zinc-900 font-sans  ">{children}</main>
 
-      <footer className="border font-bah bg-white border-t mx-auto  py-6 lg:py-8">
+      <footer className="border font-bah bg-blue border-t mx-auto  py-6 lg:py-8">
         <div className="grid grid-cols-2 lg:flex lg:flex-row justify-around items-start">
           <div className="col-span-2 pb-4 md:pb-0 ">
             <Link href="/">
               <a className="flex flex-col justify-start items-center pl-6 lg:pl-0">
-                <div className="">
+                <div className=" bg-white">
                   <Image
                     src="/homeicon/TNF_Main.png"
                     alt="logo"
@@ -260,7 +263,7 @@ export default function Layout({ children }) {
             </Link>
           </div>
 
-          <div className="text-sm p-4 lg:p-0 pl-6 font-bah text-left">
+          <div className="text-sm p-4 lg:p-0 pl-6 text-white font-bah text-left">
             <p className="font-semibold">INDIA - HEAD OFFICE</p>
             <p>address 1,</p>
             <p>address 2,</p>
@@ -280,13 +283,13 @@ export default function Layout({ children }) {
               Fax : +971 43 425126
             </p>
           </div> */}
-          <div className="text-sm lg:p-0 font-bah  p-4  text-center">
+          <div className="text-sm lg:p-0 font-bah  p-4 text-white text-center">
             <p className="font-semibold">CONTACT</p>
             <p className="">+91 000000000</p>
             <p className="">email@.com</p>
           </div>
 
-          <div className="text-sm flex flex-col font-bah  pl-6 lg:p-0   text-center ">
+          <div className="text-sm flex flex-col font-bah text-white  pl-6 lg:p-0   text-center ">
             <Link href="/about">
               <a>About</a>
             </Link>
@@ -298,7 +301,7 @@ export default function Layout({ children }) {
             </Link>
           </div>
 
-          <div className="text-sm flex flex-col font-bah lg:p-0  text-center">
+          <div className="text-sm flex flex-col font-bah text-white lg:p-0  text-center">
             <Link href="/">
               <a>Library</a>
             </Link>
@@ -311,8 +314,8 @@ export default function Layout({ children }) {
             </Link>
           </div>
 
-          <div className="col-span-2 p-4 lg:p-0 pl-6 mr-6 ">
-            <p className="font-semibold text-sm pb-2 font-bah text-black text-center">
+          <div className="col-span-2 p-4 lg:p-0 pl-6 mr-6 text-white ">
+            <p className="font-semibold text-sm pb-2 font-bah text-white text-center">
               FIND US ON
             </p>
             <div className="lg:grid-cols-2 flex justify-center gap-2 lg:inline-grid  ">

@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Clients from "../components/clients";
 
 export default function About() {
   const team = [
@@ -67,7 +68,7 @@ export default function About() {
           }}
         >
 
-              <div className="h-28 w-1/2 flex justify-center items-center text-2xl text-white bg-slate-800">
+              <div className="h-28 w-1/2 flex justify-center items-center font-bah text-2xl text-white bg-slate-800">
               <p>Internal audit modernization</p>
               </div>
 
@@ -75,7 +76,7 @@ export default function About() {
       </section>
 
       <section
-        className="md:py-12 text-zinc-900 bg-emerald-50"
+        className="md:py-12 text-zinc-900 bg-coustom1"
         id="the-company"
       >
         <div className="p-4 md:container mx-auto">
@@ -84,7 +85,7 @@ export default function About() {
               <h1 className="text-4xl tracking-wide font-light text-green-900">
                About T&F
               </h1>
-              <p className="prose pt-8">
+              <p className="prose font-bah pt-8">
               True & Fair is a newly established Non-CA Firm incorporated with a vision to enhance the financial reporting eco-system. True & Fair will initially work with CA Firms and provide them with Quality and Ethical Standards, Technical Guidance, Audit Documentation Tools and access to Information Technology audit specialists to enable those firms to meet the current expectations of stakeholders from the auditors. 
               </p>
               <p className="prose pt-8">
@@ -108,7 +109,7 @@ export default function About() {
         id="core-values"
       >
         <h1 className="text-4xl tracking-wide font-light text-green-900">
-          CORE VALUES
+        Philosophy
         </h1>
         <p className="md:pt-8 pt-4">
          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste maiores pariatur eveniet dicta delectus amet itaque, quae quaerat facilis recusandae voluptatum laudantium est unde quod iure. Officiis vel explicabo fuga?
@@ -357,7 +358,7 @@ export default function About() {
       <section className="bg-coustom1 md:pt-24 md:pb-10 ">
         <div className="container px-6  mx-auto">
           <h1 className="text-3xl text-center text-black capitalize lg:text-4xl ">
-            Meet Our Team
+         Leadership
           </h1>
 
           <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-3">
@@ -388,7 +389,9 @@ export default function About() {
             })}
           </div>
         </div>
+       
       </section>
+      <Clients/>
     </>
   );
 }
