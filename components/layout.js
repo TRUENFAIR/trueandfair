@@ -48,7 +48,7 @@ export default function Layout({ children }) {
     },
     {
       name: "AUDOT®️",
-      path: "",
+      path: "/audot",
 
       sub: [
         { name: "Product Overview", path: "" },
