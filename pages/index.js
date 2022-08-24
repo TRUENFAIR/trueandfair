@@ -45,22 +45,22 @@ export default function Home() {
               <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
             </svg>
             <p className="leading-relaxed font-bah text-lg">
-            CA firms in India are extremely diverse with a significantly fragmented
-        professional practices, barring the handful of large firms. There is
-        currently no umbrella under which these CA Firms can come together,
-        collaborate and work formally. Further, many of the CA Firms may not
-        have formalized quality standards, technical literature, documentation
-        practices and information technology audit skill sets. True & Fair aims
-        to bridge this gap by providing a common platform of quality and ethical
-        standards, technical guidance, audit documentation tool and access to
-        Information Technology Audit specialists with a common culture
-        emphasising quality such that the CA Firms which choose to follow this
-        platform can form one audit network, collaborate and work together for
-        their collective success and growth, delivering world class audit
-        services.
+              CA firms in India are extremely diverse with a significantly
+              fragmented professional practices, barring the handful of large
+              firms. There is currently no umbrella under which these CA Firms
+              can come together, collaborate and work formally. Further, many of
+              the CA Firms may not have formalized quality standards, technical
+              literature, documentation practices and information technology
+              audit skill sets. True & Fair aims to bridge this gap by providing
+              a common platform of quality and ethical standards, technical
+              guidance, audit documentation tool and access to Information
+              Technology Audit specialists with a common culture emphasising
+              quality such that the CA Firms which choose to follow this
+              platform can form one audit network, collaborate and work together
+              for their collective success and growth, delivering world class
+              audit services.
             </p>
             <span className="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
-            
           </div>
         </div>
       </section>
@@ -110,8 +110,6 @@ export default function Home() {
           </div>
         </div>
       </section> */}
-
-   
 
       {/* <section>
           <div className='w-full h-80 relative'>
@@ -188,7 +186,7 @@ export default function Home() {
                   <div className="flex items-center justify-between z-40 w-full p-4">
                     <h1 className="text-4xl tracking-wide drop-shadow-md font-semibold  text-white z-10 w-full">
                       lorem <br />
-                    ipsum
+                      ipsum
                     </h1>
                     {rightIcon}
                   </div>
@@ -199,7 +197,7 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <ProjectCard/>
+        <ProjectCard />
       </section>
 
       <section>
