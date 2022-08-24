@@ -60,7 +60,7 @@ export default function Layout({ children }) {
     },
     {
       name: " Library",
-      path: "",
+      path: "/library",
       sub: [
         { name: "Ebooks", path: "" },
         { name: " Videos", path: "" },
@@ -71,7 +71,7 @@ export default function Layout({ children }) {
 
     {
       name: "Resources",
-      path: "",
+      path: "/resources",
       sub: [
         { name: "Best Practices", path: "" },
         { name: "Case Studies", path: "" },

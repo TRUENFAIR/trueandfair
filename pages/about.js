@@ -6,28 +6,28 @@ export default function About() {
   const team = [
     {
       name: "tom",
-      image: "/about/team1.jpg",
+      image: "/default.jpeg",
       role: "Founder & Managing Director",
       description:
         "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
     },
     {
       name: "jerry",
-      image: "/about/team2.jpg",
+      image: "/default.jpeg",
       role: "CEO",
       description:
         "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
     },
     {
       name: "james",
-      image: "/about/team3.jpg",
+      image: "/default.jpeg",
       role: "General Manager",
       description:
         "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
     },
     {
       name: "james",
-      image: "/about/team4.jpg",
+      image: "/default.jpeg",
       role: "Head of Sourcing",
 
       description:
@@ -35,21 +35,21 @@ export default function About() {
     },
     {
       name: "james",
-      image: "/about/team5.jpg",
+      image: "/default.jpeg",
       role: "Head of Quality",
       description:
         "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
     },
     {
       name: "james",
-      image: "/about/team6.jpg",
+      image: "/default.jpeg",
       role: "Head of Research",
       description:
         "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
     },
     {
       name: "james",
-      image: "/about/team7.jpg",
+      image: "/default.jpeg",
       role: "Head of Research",
       description:
         "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
@@ -61,43 +61,42 @@ export default function About() {
         <div
           className="h-96 flex flex-col justify-end "
           style={{
-            backgroundImage:"url('/about/abt1.jpg')",
+            backgroundImage: "url('/about/abt1.jpg')",
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
           }}
         >
-
-              <div className="h-28 w-1/2 flex justify-center items-center font-bah text-2xl text-white bg-slate-800">
-              <p>Internal audit modernization</p>
-              </div>
-
+          <div className="h-28 w-1/2 flex justify-center items-center font-bah text-2xl text-white bg-slate-800">
+            <p>Internal audit modernization</p>
+          </div>
         </div>
       </section>
 
-      <section
-        className="md:py-12 text-zinc-900 bg-coustom1"
-        id="the-company"
-      >
+      <section className="md:py-12 text-zinc-900 bg-coustom1" id="the-company">
         <div className="p-4 md:container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-16">
             <div className="w-auto pb-8">
-              <h1 className="text-4xl tracking-wide font-light text-green-900">
-               About T&F
+              <h1 className="text-4xl tracking-wide font-bah  font-light text-green-900">
+                About T&F
               </h1>
               <p className="prose font-bah pt-8">
-              True & Fair is a newly established Non-CA Firm incorporated with a vision to enhance the financial reporting eco-system. True & Fair will initially work with CA Firms and provide them with Quality and Ethical Standards, Technical Guidance, Audit Documentation Tools and access to Information Technology audit specialists to enable those firms to meet the current expectations of stakeholders from the auditors. 
+                True & Fair is a newly established Non-CA Firm incorporated with
+                a vision to enhance the financial reporting eco-system. True &
+                Fair will initially work with CA Firms and provide them with
+                Quality and Ethical Standards, Technical Guidance, Audit
+                Documentation Tools and access to Information Technology audit
+                specialists to enable those firms to meet the current
+                expectations of stakeholders from the auditors.
               </p>
-              <p className="prose pt-8">
-                
-              </p>
+              <p className="prose pt-8"></p>
             </div>
             <div className="w-auto h-48 md:h-auto relative">
               <Image
                 className="absolute inset-0 object-cover"
                 layout="fill"
                 alt=""
-                src="/thecompanyhome.jpg"
+                src="/about/dummy1.jpg"
               />
             </div>
           </div>
@@ -108,11 +107,14 @@ export default function About() {
         className="p-4 md:container mx-auto md:pt-12 text-zinc-900"
         id="core-values"
       >
-        <h1 className="text-4xl tracking-wide font-light text-green-900">
-        Philosophy
+        <h1 className="text-4xl font-bah  tracking-wide font-light text-green-900">
+          Philosophy
         </h1>
-        <p className="md:pt-8 pt-4">
-         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste maiores pariatur eveniet dicta delectus amet itaque, quae quaerat facilis recusandae voluptatum laudantium est unde quod iure. Officiis vel explicabo fuga?
+        <p className="md:pt-8 font-bah  pt-4">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste maiores
+          pariatur eveniet dicta delectus amet itaque, quae quaerat facilis
+          recusandae voluptatum laudantium est unde quod iure. Officiis vel
+          explicabo fuga?
         </p>
 
         <div className="md:pt-8 pt-4 grid md:grid-cols-5 grid-cols-1 md:gap-8 gap-4">
@@ -122,7 +124,7 @@ export default function About() {
                 className="absolute inset-0 object-cover"
                 layout="fill"
                 alt=""
-                src="/values1.jpg"
+                src="/about/dummy2.jpg"
               />
               <div className="absolute inset-0 bg-black opacity-20"></div>
               <div className="absolute inset-0 text-white p-8 flex items-center justify-center">
@@ -130,15 +132,17 @@ export default function About() {
               </div>
             </div>
             <div className="md:h-64 w-full text-zinc-900 pt-4 pb-2 flex items-start justify-center">
-              <p className="text-base">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, doloribus.
+              <p className="text-base font-bah ">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+                doloribus.
               </p>
             </div>
           </div>
           <div className="flex md:flex-col flex-col-reverse">
             <div className="md:h-40 w-full text-zinc-900 pt-4 pb-2 md:pb-4 flex items-end justify-center">
-              <p className="text-base">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, quo.
+              <p className="text-base font-bah ">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptatum, quo.
               </p>
             </div>
             <div className="h-64 w-full bg-zinc-200 relative">
@@ -146,11 +150,13 @@ export default function About() {
                 className="absolute inset-0 object-cover"
                 layout="fill"
                 alt=""
-                src="/values2.jpg"
+                src="/about/dummy3.jpg"
               />
               <div className="absolute inset-0 bg-black opacity-20"></div>
               <div className="absolute inset-0 text-white p-8 flex items-center justify-center">
-                <p className="font-semibold text-3xl text-white">Expertise</p>
+                <p className="font-semibold text-3xl text-white font-bah ">
+                  Expertise
+                </p>
               </div>
             </div>
           </div>
@@ -160,23 +166,27 @@ export default function About() {
                 className="absolute inset-0 object-cover"
                 layout="fill"
                 alt=""
-                src="/values3.jpg"
+                src="/about/dummy1.jpg"
               />
               <div className="absolute inset-0 bg-black opacity-20"></div>
               <div className="absolute inset-0 text-white p-8 flex items-center justify-center">
-                <p className="font-semibold text-3xl text-white">Honesty</p>
+                <p className="font-semibold text-3xl text-white font-bah ">
+                  Honesty
+                </p>
               </div>
             </div>
             <div className="md:h-64 w-full text-zinc-900 pt-4 pb-2 md:pb-4 flex items-start justify-center">
-              <p className="text-base">
-               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, quidem!
+              <p className="text-base font-bah ">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Pariatur, quidem!
               </p>
             </div>
           </div>
           <div className="flex md:flex-col flex-col-reverse">
             <div className="md:h-40 w-full text-zinc-900 pt-4 pb-2 md:pb-4 flex items-end justify-center">
               <p className="text-base">
-               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias, ipsam?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Molestias, ipsam?
               </p>
             </div>
             <div className="h-64 w-full bg-zinc-200 relative">
@@ -184,11 +194,13 @@ export default function About() {
                 className="absolute inset-0 object-cover"
                 layout="fill"
                 alt=""
-                src="/values4.jpg"
+                src="/about/dummy2.jpg"
               />
               <div className="absolute inset-0 bg-black opacity-20"></div>
               <div className="absolute inset-0 text-white p-8 flex items-center justify-center">
-                <p className="font-semibold text-3xl text-white">Integrity</p>
+                <p className="font-semibold text-3xl text-white font-bah ">
+                  Integrity
+                </p>
               </div>
             </div>
           </div>
@@ -202,12 +214,15 @@ export default function About() {
               />
               <div className="absolute inset-0 bg-black opacity-20"></div>
               <div className="absolute inset-0 text-white p-8 flex items-center justify-center">
-                <p className="font-semibold text-3xl text-white">Safety</p>
+                <p className="font-semibold text-3xl text-white font-bah ">
+                  Safety
+                </p>
               </div>
             </div>
             <div className="md:h-64 w-full text-zinc-900 pt-4 pb-2 flex items-start justify-center">
-              <p className="text-base">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ducimus!
+              <p className="text-base font-bah ">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+                ducimus!
               </p>
             </div>
           </div>
@@ -357,8 +372,8 @@ export default function About() {
       </section> */}
       <section className="bg-coustom1 md:pt-24 md:pb-10 ">
         <div className="container px-6  mx-auto">
-          <h1 className="text-3xl text-center text-black capitalize lg:text-4xl ">
-         Leadership
+          <h1 className="text-3xl text-center text-black capitalize lg:text-4xl font-bah ">
+            Leadership
           </h1>
 
           <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-3">
@@ -374,24 +389,23 @@ export default function About() {
                       layout="fill"
                     />
                   </div>
-                  <h1 className="mt-4 text-2xl  text-black capitalize font-bold ">
+                  <h1 className="mt-4 text-2xl font-bah   text-black capitalize font-bold ">
                     {name}
                   </h1>
                   <div className="flex flex-col gap-5 justify-center">
-                    <p className=" text-black capitalize text-center  ">
+                    <p className=" text-black font-bah  capitalize text-center  ">
                       {role}
                     </p>
                     <h1 className="md:w-[255px] h-[2px]  bg-blue mb-5"></h1>
                   </div>
-                  <p className="text-center">{description}</p>
+                  <p className="text-center font-bah ">{description}</p>
                 </div>
               );
             })}
           </div>
         </div>
-       
       </section>
-      <Clients/>
+      <Clients />
     </>
   );
 }
