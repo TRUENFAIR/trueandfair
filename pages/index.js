@@ -137,7 +137,7 @@ export default function Home() {
                   <Image
                     layout="fill"
                     alt=""
-                    src="/turnkeyprojects.jpeg"
+                    src="/default.jpeg"
                     className="absolute inset-0 object-cover"
                   />
                   <div className="w-full h-1/2 absolute bottom-0 left-0 right-0 from-transparent bg-gradient-to-b to-black opacity-60"></div>
@@ -158,7 +158,7 @@ export default function Home() {
                   <Image
                     layout="fill"
                     alt=""
-                    src="/productdevelopment.jpeg"
+                    src="/default.jpeg"
                     className="absolute inset-0 object-cover"
                   />
                   <div className="w-full h-1/2 absolute bottom-0 left-0 right-0 from-transparent bg-gradient-to-b to-black opacity-60"></div>
@@ -180,7 +180,7 @@ export default function Home() {
                   <Image
                     layout="fill"
                     alt=""
-                    src="/contractmanufacturing.jpeg"
+                    src="/default.jpeg"
                     className="absolute inset-0 object-cover"
                   />
                   <div className="w-full h-1/2 absolute bottom-0 left-0 right-0 from-transparent bg-gradient-to-b to-black opacity-60"></div>
