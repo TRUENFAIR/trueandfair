@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Clients from "../components/clients";
+import Link from "next/link";
 
 export default function About() {
   const team = [
@@ -72,304 +73,248 @@ export default function About() {
           </div>
         </div>
       </section>
-
-      <section className="md:py-12 text-zinc-900 bg-coustom1" id="the-company">
-        <div className="p-4 md:container mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-16">
-            <div className="w-auto pb-8">
-              <h1 className="text-4xl tracking-wide font-bah  font-light text-green-900">
-                About T&F
-              </h1>
-              <p className="prose font-bah pt-8">
-                True & Fair is a newly established Non-CA Firm incorporated with
-                a vision to enhance the financial reporting eco-system. True &
-                Fair will initially work with CA Firms and provide them with
-                Quality and Ethical Standards, Technical Guidance, Audit
-                Documentation Tools and access to Information Technology audit
-                specialists to enable those firms to meet the current
-                expectations of stakeholders from the auditors.
-              </p>
-              <p className="prose pt-8"></p>
-            </div>
-            <div className="w-auto h-48 md:h-auto relative">
-              <Image
-                className="absolute inset-0 object-cover"
-                layout="fill"
-                alt=""
-                src="/about/dummy1.jpg"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
+     
       <section
-        className="p-4 md:container mx-auto md:pt-12 text-zinc-900"
-        id="core-values"
+        className="pt-12 pb-10 text-zinc-900 bg-coustom1"
+        id="capabilities"
       >
-        <h1 className="text-4xl font-bah  tracking-wide font-light text-green-900">
-          Philosophy
-        </h1>
-        <p className="md:pt-8 font-bah  pt-4">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste maiores
-          pariatur eveniet dicta delectus amet itaque, quae quaerat facilis
-          recusandae voluptatum laudantium est unde quod iure. Officiis vel
-          explicabo fuga?
-        </p>
+        <div className="md:container p-4 mx-auto" >
+          <div className="grid lg:grid-cols-2 grid-cols-1 md:gap-x-20 gap-4 md:pt- pt-4">
+            <div
+              className="w-full md:block hidden h-[100px] lg:col-span-2  col-span-1 "
+              id="Analytics"
+            ></div>
+            <div className="w-auto">
+              <h2 className="text-xl">Analytics</h2>
+              <p className="prose pt-8">
+                In today&apos;s digital business ecosystem where customers call
+                the shots, organizations have to scramble through every data
+                input available to acquire and retain customers. The advent of
+                low cost storage and digital convergence have drastically
+                impacted the way data and analytics are used by businesses. The
+                role played by data sciences in solving business problems is
+                fast gaining momentum and helping business improve efficiencies,
+                business growth and move into newer territories. Our team of
+                experts can help you in analytics discovery, roadmap definition,
+                and transition into a data-driven organization through advanced
+                data visualization and recommendation engines powered by BigData
+                and Machine Learning.
+              </p>
 
-        <div className="md:pt-8 pt-4 grid md:grid-cols-5 grid-cols-1 md:gap-8 gap-4">
-          <div className="flex flex-col">
-            <div className="h-64 w-full bg-zinc-200 relative">
-              <Image
-                className="absolute inset-0 object-cover"
-                layout="fill"
-                alt=""
-                src="/about/dummy2.jpg"
-              />
-              <div className="absolute inset-0 bg-black opacity-20"></div>
-              <div className="absolute inset-0 text-white p-8 flex items-center justify-center">
-                <p className="font-semibold text-3xl text-white">Innovation</p>
-              </div>
-            </div>
-            <div className="md:h-64 w-full text-zinc-900 pt-4 pb-2 flex items-start justify-center">
-              <p className="text-base font-bah ">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
-                doloribus.
+              <p className="prose lg:mb-0 mb-5 pt-8">
+                <Link href="/contact">
+                  <a className="active:text-red underline font-bold hover:text-orange decoration-emerald-600 text-emerald-600">
+                    Get in touch
+                  </a>
+                </Link>
+                to know more.
               </p>
             </div>
-          </div>
-          <div className="flex md:flex-col flex-col-reverse">
-            <div className="md:h-40 w-full text-zinc-900 pt-4 pb-2 md:pb-4 flex items-end justify-center">
-              <p className="text-base font-bah ">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Voluptatum, quo.
+
+            <div className="w-auto h-48 lg:h-auto relative">
+              <Image
+                layout="fill"
+                className="absolute h-full w-full object-cover"
+                alt=""
+                src="/capabi/analytics.png"
+              />
+            </div>
+           
+            <div
+              className="w-full md:block hidden h-[100px] lg:col-span-2  col-span-1 "
+              id="Consulting"
+            ></div>
+            <div className="w-auto h-48 lg:h-auto relative">
+              <Image
+                layout="fill"
+                className="absolute h-full w-full object-cover"
+                alt=""
+                src="/capabi/consulting.png"
+              />
+            </div>
+            
+            <div className="w-auto">
+              <h2 className="text-xl ">Consulting</h2>
+              <p className="prose pt-8">
+                Business leaders are investing in next generation digital 
+                technologies to their strategic advantage, optimizing business
+                operations and driving new products and services. We have more
+                than a decade of experience in working with Fortune 500
+                companies, small and mid-sized enterprises in digital
+                transformations focused on revenue optimization, cost reduction,
+                process enhancements, while ensuring business continuity for our
+                clients. Our consultants possess a deep expertise in BFSI,
+                Manufacturing, Healthcare, Retail, Logistics, and other domains.
+                SFJ is a partner of Automation Anywhere, Microsoft and is a
+                trusted partner in defining your IT strategy and achieving your
+                business goals.
+              </p>
+
+              <p className="prose lg:mb-0 mb-5 pt-8">
+                <Link href="/contact">
+                  <a className="active:text-red font-bold underline hover:text-orange decoration-emerald-600 text-emerald-600">
+                    Get in touch
+                  </a>
+                </Link>{" "}
+                to know more.
               </p>
             </div>
-            <div className="h-64 w-full bg-zinc-200 relative">
-              <Image
-                className="absolute inset-0 object-cover"
-                layout="fill"
-                alt=""
-                src="/about/dummy3.jpg"
-              />
-              <div className="absolute inset-0 bg-black opacity-20"></div>
-              <div className="absolute inset-0 text-white p-8 flex items-center justify-center">
-                <p className="font-semibold text-3xl text-white font-bah ">
-                  Expertise
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col">
-            <div className="h-64 w-full bg-zinc-200 relative">
-              <Image
-                className="absolute inset-0 object-cover"
-                layout="fill"
-                alt=""
-                src="/about/dummy1.jpg"
-              />
-              <div className="absolute inset-0 bg-black opacity-20"></div>
-              <div className="absolute inset-0 text-white p-8 flex items-center justify-center">
-                <p className="font-semibold text-3xl text-white font-bah ">
-                  Honesty
-                </p>
-              </div>
-            </div>
-            <div className="md:h-64 w-full text-zinc-900 pt-4 pb-2 md:pb-4 flex items-start justify-center">
-              <p className="text-base font-bah ">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Pariatur, quidem!
+            <div
+              className="w-full md:block hidden  h-[100px] lg:col-span-2  col-span-1 "
+              id="Mobility"
+            ></div>
+            <div className="w-auto">
+              <h2 className="text-xl ">Mobility</h2>
+              <p className="prose pt-8">
+                With more than 25 billion connected devices all over the world,
+                we are at the cusp of a digital revolution, and reimagining new
+                ways of work is an integral part of this shift. The big question
+                many organizations face is how to harness this proliferation of
+                mobiles to effectively engage with a smarter workforce. We can
+                help you define an overall Mobility strategy, identify and
+                evaluate processes that can be mobilized with enhanced business
+                impact, and adopting the right solution architecture and choice
+                of platforms, technologies that can cater to the identified
+                needs while ensuring data security, scalability and usability.
+              </p>
+
+              <p className="prose lg:mb-0 mb-5 pt-8">
+                <Link href="/contact">
+                  <a className="active:text-red font-bold underline hover:text-orange decoration-emerald-600 text-emerald-600">
+                    Get in touch
+                  </a>
+                </Link>{" "}
+                to know more.
               </p>
             </div>
-          </div>
-          <div className="flex md:flex-col flex-col-reverse">
-            <div className="md:h-40 w-full text-zinc-900 pt-4 pb-2 md:pb-4 flex items-end justify-center">
-              <p className="text-base">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Molestias, ipsam?
+            <div className="w-auto h-48 lg:h-auto relative">
+              <Image
+                layout="fill"
+                className="absolute h-full w-full object-cover"
+                alt=""
+                src="/capabi/mobility.png"
+              />
+            </div>
+
+            <div
+              className="w-full md:block hidden  h-[100px] lg:col-span-2  col-span-1 "
+              id="Outsourcing"
+            ></div>
+
+            <div className="w-auto h-48 lg:h-auto relative">
+              <Image
+                layout="fill"
+                className="absolute h-full w-full object-cover"
+                alt=""
+                src="/capabi/outsourcing.png"
+              />
+            </div>
+            <div className="w-auto">
+              <h2 className="text-xl ">Outsourcing</h2>
+              <p className="prose pt-8">
+                In this age of technology disruption, organizations are
+                constantly riddled with the challenge of wheels on-the-go to
+                remain competitive. This requires a clear vision and strategy
+                for agility and scale. SFJ has an exceptional track record in
+                managed IT services, and a customer retention ratio of over 90%
+                over the past decade is a testimony to the disproportionate
+                value we added to our customers businesses. We offer application
+                development, maintenance and support services to help stabilize
+                and scale your business operations. Through our just-in-time and
+                cost-effective sourcing, skilling, staffing strategies, we have
+                helped several organizations achieve their objectives with
+                minimal disruptions to ongoing business operations.
+              </p>
+
+              <p className="prose lg:mb-0 mb-5 pt-8">
+                <Link href="/contact">
+                  <a className="active:text-red font-bold underline hover:text-orange decoration-emerald-600 text-emerald-600">
+                    Get in touch
+                  </a>
+                </Link>{" "}
+                to know more.
               </p>
             </div>
-            <div className="h-64 w-full bg-zinc-200 relative">
-              <Image
-                className="absolute inset-0 object-cover"
-                layout="fill"
-                alt=""
-                src="/about/dummy2.jpg"
-              />
-              <div className="absolute inset-0 bg-black opacity-20"></div>
-              <div className="absolute inset-0 text-white p-8 flex items-center justify-center">
-                <p className="font-semibold text-3xl text-white font-bah ">
-                  Integrity
-                </p>
-              </div>
+
+            <div
+              className="w-full h-[100px] md:block hidden  lg:col-span-2  col-span-1 "
+              id="Staffing"
+            ></div>
+
+            <div className="w-auto">
+              <h2 className="text-xl ">Staffing</h2>
+              <p className="prose pt-8">
+                People are the key ingredient to the success of any project or
+                initiative. Getting people on-boarded on-time within the budget
+                is always a challenge. This is where our expertise can help you.
+                We have a strong network of skilled professionals who can be
+                staffed quickly across multiple roles, and many of our customers
+                have realized enhanced productivity, reduced staffing and
+                recruitment costs by partnering with us. We deploy talent with
+                not just the right skills, but also the right attitude and
+                experience needed for your projects. We also specialize in
+                deploying SAP, Oracle professionals and senior executive hiring.
+              </p>
+
+              <p className="prose lg:mb-0 mb-5 pt-8">
+                <Link href="/contact">
+                  <a className="active:text-red font-bold underline hover:text-orange decoration-emerald-600 text-emerald-600">
+                    Get in touch
+                  </a>
+                </Link>{" "}
+                to know more.
+              </p>
             </div>
-          </div>
-          <div className="flex flex-col">
-            <div className="h-64 w-full bg-zinc-200 relative">
+            <div className="w-auto h-48 md:h-auto relative">
               <Image
-                className="absolute inset-0 object-cover"
                 layout="fill"
+                className="absolute h-full w-full object-cover"
                 alt=""
-                src="/values5.jpg"
+                src="/capabi/staffing.png"
               />
-              <div className="absolute inset-0 bg-black opacity-20"></div>
-              <div className="absolute inset-0 text-white p-8 flex items-center justify-center">
-                <p className="font-semibold text-3xl text-white font-bah ">
-                  Safety
-                </p>
-              </div>
             </div>
-            <div className="md:h-64 w-full text-zinc-900 pt-4 pb-2 flex items-start justify-center">
-              <p className="text-base font-bah ">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
-                ducimus!
+            <div
+              className="w-full md:block hidden  h-[100px] lg:col-span-2  col-span-1 "
+              id="Upskilling"
+            ></div>
+
+            <div className="w-auto h-48 lg:h-auto relative">
+              <Image
+                layout="fill"
+                className="absolute h-full w-full object-cover"
+                alt=""
+                src="/capabi/upskilling.png"
+              />
+            </div>
+            <div className="w-auto">
+              <h2 className="text-xl ">Upskilling</h2>
+              <p className="prose pt-8">
+                The digital services eco-system as we know it is undergoing a
+                paradigm shift. New stacks and standards are emerging faster
+                than ever, and every organization with a digital footprint is
+                under serious pressure to quickly build and maintain a
+                future-ready workforce. It is no secret that even large
+                corporations with immense resources at their disposal are
+                struggling to cope with this challenge. Empowering workforce on
+                the go requires deep expertise that can be brought within the
+                time and cost allocated. Our knowledge services ecosystem is
+                constantly connected/updated with experts who can deliver
+                online/offline trainings on several in-demand technology skills
+                for your project teams and campus recruits.
+              </p>
+
+              <p className="prose lg:mb-0 mb-5 pt-8">
+                <Link href="/contact">
+                  <a className="active:text-red font-bold underline hover:text-orange decoration-emerald-600 text-emerald-600">
+                    Get in touch
+                  </a>
+                </Link>{" "}
+                to know more.
               </p>
             </div>
           </div>
         </div>
       </section>
-
-      {/* <section
-        className="md:pt-12 pb-24 text-zinc-900 bg-slate-100"
-        id="success-stories"
-      >
-        <div className="md:container p-4 mx-auto">
-          <h1 className="text-4xl tracking-wide font-light text-green-900">
-            SUCCESS STORIES
-          </h1>
-          <div className="grid md:grid-cols-2 grid-cols-1 md:gap-24 gap-4 md:pt-12 pt-4">
-            <div className="w-auto h-48 md:h-auto relative">
-              <Image
-                layout="fill"
-                className="absolute h-full w-full object-cover"
-                alt=""
-                src="/covidrelief.jpeg"
-              />
-            </div>
-
-            <div className="w-auto">
-              <h2 className="text-xl font-semibold">Covid Relief</h2>
-              <p className="prose pt-8">
-                Madhur Pharma led the fight against COVID right from the
-                beginning of 2020. Recognizing the need for personal hygiene
-                products by insitutions and communities on a large scale, Madhur
-                Pharma took the initiative and prioritised manufacturing hand
-                sanitizers, surface cleaners, multi-purpose disinfectants,
-                vegetable & food cleansers, leveraging their expertise and
-                production infrastructure.
-              </p>
-
-              <p className="prose pt-8">
-                The team at Madhur Pharma responded to the cause and pledged
-                their commitment to make this happen despite the operational
-                challenges imposed by the nation-wide lockdown, while complying
-                with all the safety precautions and quality standards. Madhur
-                continues to make these products under the Safe-O-Clean brand,
-                and delivers them to hospitals, essential service providers and
-                residential societies. The Government of India has recognized
-                Madhur Pharma as a “Champion Partner in the Fight against
-                COVID-19
-              </p>
-            </div>
-
-            <div className="w-auto">
-              <h2 className="text-xl font-semibold">
-                Enabling Start-ups to Scale
-              </h2>
-              <p className="prose pt-8">
-                Madhur Pharma has been providing the best-in-class ecosystem for
-                start-ups to flourish in the cosmetics and personal wellness
-                space. Recognizing the growing need for a wide range of good
-                quality products, Madhur team have consistently invested their
-                core strengths in helping start-ups launch innovative products,
-                without any emphasis on order volume or commercial value.{" "}
-              </p>
-
-              <p className="prose pt-8">
-                Over the last few years, more than 25 start-ups have recognized
-                and beneficed from Madhur’s expertise in fomulations, best
-                manufacturing practices, and integrity and confidentiality in
-                protecting their intellectual properties. It is no surprise that
-                some of the products formulated by Madhur for such start-ups
-                have gone on to become hugely successful brands in India and
-                abroad.
-              </p>
-            </div>
-
-            <div className="w-auto h-48 md:h-auto relative">
-              <Image
-                layout="fill"
-                className="absolute h-full w-full object-cover"
-                alt=""
-                src="/startupscale.jpeg"
-              />
-            </div>
-
-            <div className="w-auto h-48 md:h-auto relative">
-              <Image
-                layout="fill"
-                className="absolute h-full w-full object-cover"
-                alt=""
-                src="/pioneersinnovation.jpeg"
-              />
-            </div>
-
-            <div className="w-auto">
-              <h2 className="text-xl font-semibold">Pioneers in Innovation</h2>
-              <p className="prose pt-8">
-                Madhur Pharma has an extraordinary pordolio of over 155 licenses
-                in cosmetics products, 221 licenses for AYUSH products, 12
-                products for FOSCOS (FSSAI), and a diverse set of trademarks and
-                awards conferred upon by the industry. Madhur is one of the very
-                few companies who not only manufactures but, formulates a
-                majority of their clients’ products through intense research and
-                innovaBon.{" "}
-              </p>
-
-              <p className="prose pt-8">
-                A quick glance at how Madhur’s product pordolio has evolved and
-                diversified over the years reveals the trust and respect Madhur
-                Pharma commands in new product formulations and licensing. This
-                includes formulations for educational insti in cosmetics as well
-                as classical ayurveda formulations, and stem-cell-research based
-                formulations that require storage at very low temperatures.
-                Madhur continues to be a very well respected and trusted brand
-                even among the government stakeholders.
-              </p>
-            </div>
-
-            <div className="w-auto">
-              <h2 className="text-xl font-semibold">Campus Connect</h2>
-              <p className="prose pt-8">
-                Madhur Pharma invests in strong partnerships with academia, not
-                just businesses all over the world. A strong culture of
-                knowledge sharing is hard-wired into Madhur’s DNA, and it is
-                extended to educational and research institutes besides their
-                clientele.
-              </p>
-
-              <p className="prose pt-8">
-                Madhur&apos;s team hosts a series of tours and workshops at
-                their facility for students of pharma and cosmetics in order to
-                provide exposure and industry connect, besides their classroom
-                curriculum. Additionally, Madhur offers internships in several
-                areas for students in need, who learn and gain hands-on
-                experience into product formulations, manufacturing techniques
-                and best practices.
-              </p>
-            </div>
-
-            <div className="w-auto h-48 md:h-auto relative">
-              <Image
-                layout="fill"
-                className="absolute h-full w-full object-cover"
-                alt=""
-                src="/campusconnect.jpeg"
-              />
-            </div>
-          </div>
-        </div>
-      </section> */}
       <section className="bg-coustom1 md:pt-24 md:pb-10 ">
         <div className="container px-6  mx-auto">
           <h1 className="text-3xl text-center text-black capitalize lg:text-4xl font-bah ">
@@ -405,7 +350,6 @@ export default function About() {
           </div>
         </div>
       </section>
-      <Clients />
     </>
   );
 }

@@ -5,14 +5,14 @@ function Projectscard() {
   return (
     <>
      
-        <div  className="container  pt-10 pb-24 mx-auto">
+        <div  className="md:container  pt-10 pb-24 md:mx-auto">
           <div className="text-center mb-20">
             <h1 className="text-3xl   title-font text-black   mb-4">
             Our Services
             </h1>
           </div>
           <div className="flex flex-col lg:flex-row    gap-6">
-            <div className="w-full  flex flex-col bg-white  justify-around h-[550px]   shadow-xl">
+            <div className="w-full  flex flex-col bg-white  justify-around h-[550px]   ">
               <div className=" rounded-lg ">
                 <div className="h-48 w-full relative mt-2 cursor-pointer">
                   <Image
@@ -24,8 +24,8 @@ function Projectscard() {
                 </div>
 
                 <div>
-                  <p className="text-2xl text-center  mt-4">For Auditing Firms</p>
-                  <p className="text-black text-center p-4 mt-4 ">
+                  <p className="text-2xl text-center font-bah  mt-4">For Auditing Firms</p>
+                  <p className="text-black font-bah text-center p-4 mt-4 ">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Exercitationem adipisci beatae delectus quo, deleniti atque,
                     corrupti aliquid nam quis magni ipsum id facilis quia
@@ -41,7 +41,7 @@ function Projectscard() {
               </div>
             </div>
 
-            <div className="w-full  flex flex-col bg-white  justify-around h-[550px]   shadow-xl">
+            <div className="w-full  flex flex-col bg-white  justify-around h-[550px]   ">
               <div className=" rounded-lg ">
                 <div className="h-48 w-full  mt-2 relative cursor-pointer">
                   <Image
@@ -53,8 +53,8 @@ function Projectscard() {
                 </div>
 
                 <div>
-                  <p className="text-2xl text-center mt-4"> For Corporations</p>
-                  <p className="text-black text-center p-4  mt-4 ">
+                  <p className="text-2xl text-center font-bah mt-4"> For Corporations</p>
+                  <p className="text-black font-bah text-center p-4  mt-4 ">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Exercitationem adipisci beatae delectus quo, deleniti atque,
                     corrupti aliquid nam quis magni ipsum id facilis quia
@@ -70,7 +70,7 @@ function Projectscard() {
               </div>
             </div>
 
-            <div className="w-full  flex flex-col bg-white  justify-around h-[550px]   shadow-xl ">
+            <div className="w-full  flex flex-col bg-white  justify-around h-[550px]    ">
               <div className=" rounded-lg ">
                 <div className="h-48 w-full  mt-2 relative cursor-pointer">
                   <Image
@@ -82,8 +82,8 @@ function Projectscard() {
                 </div>
 
                 <div>
-                  <p className="text-2xl text-center mt-4">For Regulators</p>
-                  <p className="text-black text-center p-4  mt-4 ">
+                  <p className="text-2xl text-center font-bah mt-4">For Regulators</p>
+                  <p className="text-black font-bah text-center p-4  mt-4 ">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Exercitationem adipisci beatae delectus quo, deleniti atque,
                     corrupti aliquid nam quis magni ipsum id facilis quia
