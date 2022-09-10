@@ -165,7 +165,7 @@ export default function abouthome() {
             <SwiperSlide>
               <div>
                 <p className="text-center text-2xl font-bah font-extrabold mb-5 tracking-widest text-black">
-                  PAUSE
+                Meet The Team
                 </p>
               </div>
               <div className="grid gap-10  sm:grid-cols-2 lg:grid-cols-4 ">
@@ -210,7 +210,7 @@ export default function abouthome() {
             <SwiperSlide>
               <div>
                 <p className="text-center text-2xl font-bah font-extrabold mb-5 tracking-widest text-black">
-                  PAUSE
+                Meet The Team
                 </p>
               </div>
               <div className="grid gap-10  sm:grid-cols-2 lg:grid-cols-4 ">
