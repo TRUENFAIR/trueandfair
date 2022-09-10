@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-function AUDOT() {
+function Audoc() {
   const prod = [
     {
       title: "title1",
@@ -163,4 +163,4 @@ function AUDOT() {
     </>
   );
 }
-export default AUDOT;
+export default Audoc;

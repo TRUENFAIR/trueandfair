@@ -4,105 +4,105 @@ import Link from "next/link";
 function Projectscard() {
   return (
     <>
-      <section className="text-black bg-gray-400 ">
-        <div className="container px-5 pt-10 pb-24 mx-auto">
+     
+        <div  className="container  pt-10 pb-24 mx-auto">
           <div className="text-center mb-20">
             <h1 className="text-3xl   title-font text-black   mb-4">
-            Services Offered By TRUE&FAIR 
+            Our Services
             </h1>
           </div>
           <div className="flex flex-col lg:flex-row    gap-6">
             <div className="w-full  flex flex-col bg-white  justify-around h-[550px]   shadow-xl">
               <div className=" rounded-lg ">
-                <div className="h-48 w-full relative cursor-pointer">
+                <div className="h-48 w-full relative mt-2 cursor-pointer">
                   <Image
                     layout="fill"
                     alt=""
-                    src="/proj/1.png"
+                    src="/services/4.jpg"
                     className="absolute inset-0 object-contain"
                   />
                 </div>
 
                 <div>
-                  <p className="text-2xl text-center mt-4">Title</p>
-                  <p className="text-black text-center mt-4 ">
+                  <p className="text-2xl text-center  mt-4">For Auditing Firms</p>
+                  <p className="text-black text-center p-4 mt-4 ">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Exercitationem adipisci beatae delectus quo, deleniti atque,
                     corrupti aliquid nam quis magni ipsum id facilis quia
                   </p>
                 </div>
               </div>
-              <div className="flex justify-center mt-4">
-                <Link href={""}>
-                  <p className="text-black  p-2 font-bold ease-in duration-300 rounded-md  hover:bg-orange1   flex justify-center items-center text-left hover:cursor-pointer">
-                    Read More
-                  </p>
-                </Link>
+              <div className="flex justify-center my-4">
+              <Link href="/about">
+              <button className="mt-8 font-bah  bg-yellow border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
+                READ MORE
+              </button>
+            </Link>
               </div>
             </div>
 
             <div className="w-full  flex flex-col bg-white  justify-around h-[550px]   shadow-xl">
               <div className=" rounded-lg ">
-                <div className="h-48 w-full relative cursor-pointer">
+                <div className="h-48 w-full  mt-2 relative cursor-pointer">
                   <Image
                     layout="fill"
                     alt=""
-                    src="/proj/2.png"
+                    src="/services/2.jpg"
                     className="absolute inset-0 object-contain"
                   />
                 </div>
 
                 <div>
-                  <p className="text-2xl text-center mt-4">Title</p>
-                  <p className="text-black text-center mt-4 ">
+                  <p className="text-2xl text-center mt-4"> For Corporations</p>
+                  <p className="text-black text-center p-4  mt-4 ">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Exercitationem adipisci beatae delectus quo, deleniti atque,
                     corrupti aliquid nam quis magni ipsum id facilis quia
                   </p>
                 </div>
               </div>
-              <div className="flex justify-center mt-4">
-                <Link href={""}>
-                  <p className="text-black  p-2 font-bold ease-in duration-300 rounded-md  hover:bg-orange1   flex justify-center items-center text-left hover:cursor-pointer">
-                    Read More
-                  </p>
-                </Link>
+              <div className="flex justify-center my-4">
+              <Link href="/about">
+              <button className="mt-8 font-bah  bg-yellow border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
+                READ MORE
+              </button>
+            </Link>
               </div>
             </div>
 
             <div className="w-full  flex flex-col bg-white  justify-around h-[550px]   shadow-xl ">
               <div className=" rounded-lg ">
-                <div className="h-48 w-full relative cursor-pointer">
+                <div className="h-48 w-full  mt-2 relative cursor-pointer">
                   <Image
                     layout="fill"
                     alt=""
-                    src="/proj/3.png"
+                    src="/services/4.jpg"
                     className="absolute inset-0 object-contain"
                   />
                 </div>
 
                 <div>
-                  <p className="text-2xl text-center mt-4">Title</p>
-                  <p className="text-black text-center mt-4 ">
+                  <p className="text-2xl text-center mt-4">For Regulators</p>
+                  <p className="text-black text-center p-4  mt-4 ">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Exercitationem adipisci beatae delectus quo, deleniti atque,
                     corrupti aliquid nam quis magni ipsum id facilis quia
                   </p>
                 </div>
               </div>
-              <div className="flex justify-center mt-4">
-                <Link href={""}>
-                  <p className="text-black  p-2 font-bold ease-in duration-300 rounded-md  hover:bg-orange1   flex justify-center items-center text-left hover:cursor-pointer">
-                    Read More
-                  </p>
-                </Link>
+              <div className="flex justify-center my-4 ">
+              <Link href="/about">
+              <button className="mt-8 font-bah  bg-yellow border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
+                READ MORE
+              </button>
+            </Link>
               </div>
             </div>
 
             
           </div>
         </div>
-      </section>
+    
     </>
   );
 }

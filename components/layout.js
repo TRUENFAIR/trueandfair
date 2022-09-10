@@ -31,7 +31,7 @@ export default function Layout({ children }) {
         { name: "About T&F", path: "/about#WhoWe-Are" },
         { name: " Philosophy", path: "/about#Core-values" },
         { name: " Leadership", path: "/about#MeetOur-Team" },
-        { name: " Partners", path: "/about#Contact" },
+        { name: "Advisors", path: "/about#Contact" },
       ],
     },
 
@@ -40,15 +40,15 @@ export default function Layout({ children }) {
       path: "/services",
       sub: [
         { name: "Auditing Firms ", path: "" },
-        { name: "Chartered Accountants", path: "" },
+        
 
         { name: "Corporations", path: "" },
         { name: " Regulators", path: "" },
       ],
     },
     {
-      name: "AUDOT®️",
-      path: "/audot",
+      name: "AUDOC®️",
+      path: "/audoc",
 
       sub: [
         { name: "Product Overview", path: "" },
@@ -240,7 +240,7 @@ export default function Layout({ children }) {
 
       <main className="text-zinc-900 font-sans  ">{children}</main>
 
-      <footer className="border font-bah bg-blue border-t mx-auto  py-6 lg:py-8">
+      <footer className="border font-bah bg-white border-t mx-auto  py-6 lg:py-8">
         <div className="grid grid-cols-2 lg:flex lg:flex-row justify-around items-start">
           <div className="col-span-2 pb-4 md:pb-0 ">
             <Link href="/">
@@ -263,7 +263,7 @@ export default function Layout({ children }) {
             </Link>
           </div>
 
-          <div className="text-sm p-4 lg:p-0 pl-6 text-white font-bah text-left">
+          <div className="text-sm p-4 lg:p-0 pl-6 text-black font-bah text-left">
             <p className="font-semibold">INDIA - HEAD OFFICE</p>
             <p>address 1,</p>
             <p>address 2,</p>
@@ -283,13 +283,13 @@ export default function Layout({ children }) {
               Fax : +971 43 425126
             </p>
           </div> */}
-          <div className="text-sm lg:p-0 font-bah  p-4 text-white text-center">
+          <div className="text-sm lg:p-0 font-bah  p-4 text-black text-center">
             <p className="font-semibold">CONTACT</p>
             <p className="">+91 000000000</p>
             <p className="">email@.com</p>
           </div>
 
-          <div className="text-sm flex flex-col font-bah text-white  pl-6 lg:p-0   text-center ">
+          <div className="text-sm flex flex-col font-bah text-black  pl-6 lg:p-0   text-center ">
             <Link href="/about">
               <a>About</a>
             </Link>
@@ -297,11 +297,11 @@ export default function Layout({ children }) {
               <a>Services</a>
             </Link>
             <Link href="/">
-              <a>Audot</a>
+              <a>Audoc</a>
             </Link>
           </div>
 
-          <div className="text-sm flex flex-col font-bah text-white lg:p-0  text-center">
+          <div className="text-sm flex flex-col font-bah text-black lg:p-0  text-center">
             <Link href="/">
               <a>Library</a>
             </Link>
@@ -314,8 +314,8 @@ export default function Layout({ children }) {
             </Link>
           </div>
 
-          <div className="col-span-2 p-4 lg:p-0 pl-6 mr-6 text-white ">
-            <p className="font-semibold text-sm pb-2 font-bah text-white text-center">
+          <div className="col-span-2 p-4 lg:p-0 pl-6 mr-6 text-black ">
+            <p className="font-semibold text-sm pb-2 font-bah text-black text-center">
               FIND US ON
             </p>
             <div className="lg:grid-cols-2 flex justify-center gap-2 lg:inline-grid  ">
@@ -434,7 +434,7 @@ export default function Layout({ children }) {
             Copyright © 2022. All Rights Reserved. Designed by Deedbee Social
             Ventures.
           </p>
-          <p>Image Courtesy | unsplash.com | freepik.com</p>
+          
         </div>
       </footer>
     </>

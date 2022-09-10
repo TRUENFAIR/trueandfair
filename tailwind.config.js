@@ -9,11 +9,11 @@ module.exports = {
     },
     extend: {
       colors: {
+        lightgray: "#e9e9e9",
         blue: "#0a3877",
         green: "#486c05",
         coustom1: "#f7f5f0",
       },
-     
     },
     fontFamily: {
       bah: ["Bahnschrift"],

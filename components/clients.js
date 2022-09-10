@@ -56,7 +56,7 @@ export default function Clients() {
 
   return (
     <section className="p-4 md:pt-12 border relative bg-white ">
-      <h1 className="md:container mx-auto pb-12 text-4xl font-light tracking-wide text-green-900">OUR PARTNERS</h1>
+      <h1 className="md:container mx-auto pb-12 text-4xl font-light tracking-wide text-green-900">OUR  ADVISORS</h1>
 
       <div className="md:container mx-auto pt-12 pb-24">
         <Swiper
