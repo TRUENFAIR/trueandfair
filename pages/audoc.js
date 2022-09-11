@@ -1,7 +1,19 @@
 import Image from "next/image";
 import Link from 'next/link'
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function Audoc() {
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      duration: 1000,
+      startEvent: "DOMContentLoaded",
+      initClassName: "aos-init",
+      animatedClassName: "aos-animate",
+    });
+  }, []);
   const prod = [
     {
       title: "title1",
@@ -48,6 +60,22 @@ function Audoc() {
   ];
   return (
     <>
+     <section>
+        <div
+          className="h-96 flex flex-col justify-end "
+          style={{
+            backgroundImage: "url('/about/abt1.jpg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
+          <div  data-aos="fade-down"
+            data-aos-once="true" className="h-28 w-1/2 flex justify-center  items-center font-bah text-2xl text-white bg-slate-800">
+            <p>Audit Documentation Tool</p>
+          </div>
+        </div>
+      </section>
      
       <section
         className="pt-12 pb-10 text-zinc-900 bg-coustom1"
@@ -59,26 +87,16 @@ function Audoc() {
               className="w-full md:block hidden h-[100px] lg:col-span-2  col-span-1 "
               id="Analytics"
             ></div>
-            <div className="w-auto">
-              <h2 className="text-xl">Analytics</h2>
-              <p className="prose pt-8">
-                In today&apos;s digital business ecosystem where customers call
-                the shots, organizations have to scramble through every data
-                input available to acquire and retain customers. The advent of
-                low cost storage and digital convergence have drastically
-                impacted the way data and analytics are used by businesses. The
-                role played by data sciences in solving business problems is
-                fast gaining momentum and helping business improve efficiencies,
-                business growth and move into newer territories. Our team of
-                experts can help you in analytics discovery, roadmap definition,
-                and transition into a data-driven organization through advanced
-                data visualization and recommendation engines powered by BigData
-                and Machine Learning.
+            <div  data-aos="fade-up"
+            data-aos-once="true" className="w-auto">
+              <h2 className="text-xl  font-bah">Product Overview</h2>
+              <p className="prose  font-bah pt-8">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, rerum? Expedita impedit reiciendis laborum accusamus, ut ab, fugit deleniti quibusdam in, magnam rem veritatis perspiciatis magni. Exercitationem ratione necessitatibus totam blanditiis perspiciatis, illo ex architecto alias, voluptate doloribus rerum impedit veniam fugiat aperiam et quo inventore recusandae officia, quod repellendus aliquam quos nemo? Placeat veritatis eaque reiciendis vel dolore recusandae!
               </p>
 
-              <p className="prose lg:mb-0 mb-5 pt-8">
+              <p className="prose  font-bah lg:mb-0 mb-5 pt-8">
                 <Link href="/contact">
-                  <a className="active:text-red underline font-bold hover:text-orange decoration-emerald-600 text-emerald-600">
+                  <a className="active:text-red  font-bah underline font-bold hover:text-orange decoration-emerald-600 text-emerald-600">
                     Get in touch
                   </a>
                 </Link>
@@ -86,12 +104,13 @@ function Audoc() {
               </p>
             </div>
 
-            <div className="w-auto h-48 lg:h-auto relative">
+            <div  data-aos="fade-down"
+            data-aos-once="true" className="w-auto h-48 lg:h-auto relative">
               <Image
                 layout="fill"
                 className="absolute h-full w-full object-cover"
                 alt=""
-                src="/capabi/analytics.png"
+                src="/services/2.jpg"
               />
             </div>
            
@@ -99,35 +118,26 @@ function Audoc() {
               className="w-full md:block hidden h-[100px] lg:col-span-2  col-span-1 "
               id="Consulting"
             ></div>
-            <div className="w-auto h-48 lg:h-auto relative">
+            <div  data-aos="fade-up"
+            data-aos-once="true" className="w-auto h-48 lg:h-auto relative">
               <Image
                 layout="fill"
                 className="absolute h-full w-full object-cover"
                 alt=""
-                src="/capabi/consulting.png"
+                src="/services/4.jpg"
               />
             </div>
             
-            <div className="w-auto">
-              <h2 className="text-xl ">Consulting</h2>
-              <p className="prose pt-8">
-                Business leaders are investing in next generation digital 
-                technologies to their strategic advantage, optimizing business
-                operations and driving new products and services. We have more
-                than a decade of experience in working with Fortune 500
-                companies, small and mid-sized enterprises in digital
-                transformations focused on revenue optimization, cost reduction,
-                process enhancements, while ensuring business continuity for our
-                clients. Our consultants possess a deep expertise in BFSI,
-                Manufacturing, Healthcare, Retail, Logistics, and other domains.
-                SFJ is a partner of Automation Anywhere, Microsoft and is a
-                trusted partner in defining your IT strategy and achieving your
-                business goals.
+            <div  data-aos="fade-down"
+            data-aos-once="true" className="w-auto">
+              <h2 className="text-xl  font-bah ">Use Cases</h2>
+              <p className="prose  font-bah pt-8">
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis consectetur eius quidem quia, vero aspernatur modi a neque ad? Accusantium quae voluptates nemo maxime iste nam magni aut laudantium, rem fugiat esse praesentium, blanditiis nisi quisquam delectus ut natus possimus nesciunt fuga necessitatibus aspernatur hic, tempora ratione. Natus, corrupti aperiam?
               </p>
 
-              <p className="prose lg:mb-0 mb-5 pt-8">
+              <p className="prose  font-bah lg:mb-0 mb-5 pt-8">
                 <Link href="/contact">
-                  <a className="active:text-red font-bold underline hover:text-orange decoration-emerald-600 text-emerald-600">
+                  <a className="active:text-red  font-bah font-bold underline hover:text-orange decoration-emerald-600 text-emerald-600">
                     Get in touch
                   </a>
                 </Link>{" "}
@@ -138,36 +148,29 @@ function Audoc() {
               className="w-full md:block hidden  h-[100px] lg:col-span-2  col-span-1 "
               id="Mobility"
             ></div>
-            <div className="w-auto">
-              <h2 className="text-xl ">Mobility</h2>
-              <p className="prose pt-8">
-                With more than 25 billion connected devices all over the world,
-                we are at the cusp of a digital revolution, and reimagining new
-                ways of work is an integral part of this shift. The big question
-                many organizations face is how to harness this proliferation of
-                mobiles to effectively engage with a smarter workforce. We can
-                help you define an overall Mobility strategy, identify and
-                evaluate processes that can be mobilized with enhanced business
-                impact, and adopting the right solution architecture and choice
-                of platforms, technologies that can cater to the identified
-                needs while ensuring data security, scalability and usability.
+            <div  data-aos="fade-up"
+            data-aos-once="true" className="w-auto">
+              <h2 className="text-xl  font-bah">Advantages</h2>
+              <p className="prose  font-bah pt-8">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit minima laborum nisi cum. Aut pariatur assumenda id eos excepturi nemo quaerat nihil unde quis iusto amet, ut recusandae animi, consequuntur voluptatem. Temporibus commodi aut impedit nemo dicta. Ratione, libero error est pariatur aspernatur eos? Architecto esse excepturi quae voluptatum consequatur id dolorem obcaecati, nihil rem ex, vel, beatae nobis voluptatem.
               </p>
 
-              <p className="prose lg:mb-0 mb-5 pt-8">
+              <p className="prose font-bah lg:mb-0 mb-5 pt-8">
                 <Link href="/contact">
-                  <a className="active:text-red font-bold underline hover:text-orange decoration-emerald-600 text-emerald-600">
+                  <a className="active:text-red   font-bah font-bold underline hover:text-orange decoration-emerald-600 text-emerald-600">
                     Get in touch
                   </a>
                 </Link>{" "}
                 to know more.
               </p>
             </div>
-            <div className="w-auto h-48 lg:h-auto relative">
+            <div  data-aos="fade-down"
+            data-aos-once="true" className="w-auto h-48 lg:h-auto relative">
               <Image
                 layout="fill"
                 className="absolute h-full w-full object-cover"
                 alt=""
-                src="/capabi/mobility.png"
+                src="/services/3.jpg"
               />
             </div>
 
@@ -176,34 +179,25 @@ function Audoc() {
               id="Outsourcing"
             ></div>
 
-            <div className="w-auto h-48 lg:h-auto relative">
+            <div   data-aos="fade-down"
+            data-aos-once="true" className="w-auto h-48 lg:h-auto relative">
               <Image
                 layout="fill"
                 className="absolute h-full w-full object-cover"
                 alt=""
-                src="/capabi/outsourcing.png"
+                src="/services/2.jpg"
               />
             </div>
-            <div className="w-auto">
-              <h2 className="text-xl ">Outsourcing</h2>
-              <p className="prose pt-8">
-                In this age of technology disruption, organizations are
-                constantly riddled with the challenge of wheels on-the-go to
-                remain competitive. This requires a clear vision and strategy
-                for agility and scale. SFJ has an exceptional track record in
-                managed IT services, and a customer retention ratio of over 90%
-                over the past decade is a testimony to the disproportionate
-                value we added to our customers businesses. We offer application
-                development, maintenance and support services to help stabilize
-                and scale your business operations. Through our just-in-time and
-                cost-effective sourcing, skilling, staffing strategies, we have
-                helped several organizations achieve their objectives with
-                minimal disruptions to ongoing business operations.
+            <div   data-aos="fade-up"
+            data-aos-once="true" className="w-auto">
+              <h2 className="text-xl  font-bah ">Technology</h2>
+              <p className="prose  font-bah pt-8">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque earum, doloremque libero possimus optio deleniti in quia illo dignissimos aliquid veniam repellat incidunt magnam dolore adipisci hic voluptatem ipsum exercitationem cum. Error cumque optio eum minus? Quos fuga molestiae voluptatem. Labore assumenda quis sapiente facere dicta itaque dignissimos similique nisi id culpa commodi atque, pariatur blanditiis, quia amet fuga rem?
               </p>
 
-              <p className="prose lg:mb-0 mb-5 pt-8">
+              <p className="prose   font-bah lg:mb-0 mb-5 pt-8">
                 <Link href="/contact">
-                  <a className="active:text-red font-bold underline hover:text-orange decoration-emerald-600 text-emerald-600">
+                  <a className="active:text-red  font-bah font-bold underline hover:text-orange decoration-emerald-600 text-emerald-600">
                     Get in touch
                   </a>
                 </Link>{" "}
@@ -211,7 +205,7 @@ function Audoc() {
               </p>
             </div>
 
-            <div
+            {/* <div
               className="w-full h-[100px] md:block hidden  lg:col-span-2  col-span-1 "
               id="Staffing"
             ></div>
@@ -247,8 +241,8 @@ function Audoc() {
                 alt=""
                 src="/capabi/staffing.png"
               />
-            </div>
-            <div
+            </div> */}
+            {/* <div
               className="w-full md:block hidden  h-[100px] lg:col-span-2  col-span-1 "
               id="Upskilling"
             ></div>
@@ -286,7 +280,7 @@ function Audoc() {
                 </Link>{" "}
                 to know more.
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

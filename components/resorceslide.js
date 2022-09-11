@@ -114,8 +114,8 @@ export default function Resourceslide() {
           >
             <SwiperSlide>
               <div>
-                <p className="text-center text-2xl font-bah font-extrabold mb-5 tracking-widest text-black">
-                RESOURCES
+                <p className="text-center text-3xl font-bah  title-font text-black   mb-4">
+                Best Practices
                 </p>
               </div>
               <div className="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
@@ -149,20 +149,20 @@ export default function Resourceslide() {
                         >
                           Title
                         </a>
-                        <p className="mb-2 text-gray-700 font-bah">
+                        <p className="mb-2 text-black font-bah">
                           Lorem ipsum dolor sit amet, consectetur adipisicing
                           elit. Dignissimos a eveniet sequi similique expedita
                           id obcaecati velit suscipit consequuntur excepturi
                           repellendus iste illo blanditiis possimus fugit
                           doloribus, numquam, maxime ratione!
                         </p>
-                        <a
-                          href="/"
-                          aria-label=""
-                          className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-blue hover:scale-110"
-                        >
-                          Learn more
-                        </a>
+                        <div className="flex justify-center">
+            <Link href=" ">
+              <button className="mt-8 font-bah  bg-white border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
+                READ MORE
+              </button>
+            </Link>
+            </div>
                       </div>
                     </div>
                   );
@@ -172,8 +172,8 @@ export default function Resourceslide() {
 
             <SwiperSlide>
               <div>
-                <p className="text-center text-2xl font-bah font-extrabold mb-5 tracking-widest text-black">
-                RESOURCES
+                <p className="text-3xl font-bah text-center title-font text-black   mb-4">
+              Case Study
                 </p>
               </div>
               <div className="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
@@ -214,13 +214,13 @@ export default function Resourceslide() {
                           repellendus iste illo blanditiis possimus fugit
                           doloribus, numquam, maxime ratione!
                         </p>
-                        <a
-                          href="/"
-                          aria-label=""
-                          className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-blue hover:scale-110"
-                        >
-                          Learn more
-                        </a>
+                        <div className="flex justify-center">
+            <Link href=" ">
+              <button className="mt-8 font-bah  bg-white border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
+                READ MORE
+              </button>
+            </Link>
+            </div>
                       </div>
                     </div>
                   );
@@ -230,8 +230,8 @@ export default function Resourceslide() {
 
             <SwiperSlide>
               <div>
-                <p className="text-center text-2xl font-bah font-extrabold mb-5 tracking-widest text-black">
-                RESOURCES
+                <p className="text-3xl font-bah text-center title-font text-black   mb-4">
+                Expert Opinions
                 </p>
               </div>
               <div className="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
@@ -272,13 +272,13 @@ export default function Resourceslide() {
                           repellendus iste illo blanditiis possimus fugit
                           doloribus, numquam, maxime ratione!
                         </p>
-                        <a
-                          href="/"
-                          aria-label=""
-                          className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-blue hover:scale-110"
-                        >
-                          Learn more
-                        </a>
+                        <div className="flex justify-center">
+            <Link href=" ">
+              <button className="mt-8 font-bah  bg-white border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
+                READ MORE
+              </button>
+            </Link>
+            </div>
                       </div>
                     </div>
                   );

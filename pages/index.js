@@ -153,7 +153,7 @@ export default function Home() {
       >
         <div className="flex flex-col lg:flex-row">
           <div className="md:w-full lg:w-1/2">
-            <h1 className="text-3xl   title-font text-black   mb-4">
+            <h1 className="text-3xl font-bah  title-font text-black   mb-4">
               Focus Areas
             </h1>
             <div className="flex gap-1 mt-4 text-black flex-row">

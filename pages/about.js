@@ -2,8 +2,20 @@ import Head from "next/head";
 import Image from "next/image";
 import Clients from "../components/clients";
 import Link from "next/link";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function About() {
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      duration: 1000,
+      startEvent: "DOMContentLoaded",
+      initClassName: "aos-init",
+      animatedClassName: "aos-animate",
+    });
+  }, []);
   const team = [
     {
       name: "tom",
@@ -68,42 +80,43 @@ export default function About() {
             backgroundRepeat: "no-repeat",
           }}
         >
-          <div className="h-28 w-1/2 flex justify-center items-center font-bah text-2xl text-white bg-slate-800">
+          <div
+            data-aos="fade-left"
+            data-aos-once="true"
+            className="h-28 w-1/2 flex justify-center  items-center font-bah text-2xl text-white bg-slate-800"
+          >
             <p>Internal audit modernization</p>
           </div>
         </div>
       </section>
-     
+
       <section
         className="pt-12 pb-10 text-zinc-900 bg-coustom1"
         id="capabilities"
       >
-        <div className="md:container p-4 mx-auto" >
+        <div className="md:container p-4 mx-auto">
           <div className="grid lg:grid-cols-2 grid-cols-1 md:gap-x-20 gap-4 md:pt- pt-4">
             <div
               className="w-full md:block hidden h-[100px] lg:col-span-2  col-span-1 "
               id="Analytics"
             ></div>
-            <div className="w-auto">
-              <h2 className="text-xl">Analytics</h2>
-              <p className="prose pt-8">
-                In today&apos;s digital business ecosystem where customers call
-                the shots, organizations have to scramble through every data
-                input available to acquire and retain customers. The advent of
-                low cost storage and digital convergence have drastically
-                impacted the way data and analytics are used by businesses. The
-                role played by data sciences in solving business problems is
-                fast gaining momentum and helping business improve efficiencies,
-                business growth and move into newer territories. Our team of
-                experts can help you in analytics discovery, roadmap definition,
-                and transition into a data-driven organization through advanced
-                data visualization and recommendation engines powered by BigData
-                and Machine Learning.
+            <div data-aos="fade-up" data-aos-once="true" className="w-auto">
+              <h2 className="font-bah text-xl">About Tf</h2>
+              <p className="prose font-bah pt-8">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptate sequi provident reprehenderit minus vero inventore
+                odio veritatis quam sapiente iste voluptatibus reiciendis in
+                voluptas corporis necessitatibus dignissimos ad, a quibusdam
+                neque exercitationem unde ut est nulla! Facere cupiditate quas
+                commodi quisquam iusto. Iste eaque deleniti consequuntur eum
+                aliquam tempora rem at voluptates voluptas esse, eligendi
+                repudiandae facere corporis, voluptate non. Praesentium alias
+                optio ab cumque quo deleniti dicta eaque ipsa.
               </p>
 
-              <p className="prose lg:mb-0 mb-5 pt-8">
+              <p className="prose  font-bah lg:mb-0 mb-5 pt-8">
                 <Link href="/contact">
-                  <a className="active:text-red underline font-bold hover:text-orange decoration-emerald-600 text-emerald-600">
+                  <a className="active:text-red  font-bah underline font-bold hover:text-orange decoration-emerald-600 text-emerald-600">
                     Get in touch
                   </a>
                 </Link>
@@ -111,15 +124,19 @@ export default function About() {
               </p>
             </div>
 
-            <div className="w-auto h-48 lg:h-auto relative">
+            <div
+              data-aos="fade-up"
+              data-aos-once="true"
+              className="w-auto h-48 lg:h-auto relative"
+            >
               <Image
                 layout="fill"
                 className="absolute h-full w-full object-cover"
                 alt=""
-                src="/capabi/analytics.png"
+                src="/about/dummy1.jpg"
               />
             </div>
-           
+
             <div
               className="w-full md:block hidden h-[100px] lg:col-span-2  col-span-1 "
               id="Consulting"
@@ -129,28 +146,24 @@ export default function About() {
                 layout="fill"
                 className="absolute h-full w-full object-cover"
                 alt=""
-                src="/capabi/consulting.png"
+                src="/about/dummy2.jpg"
               />
             </div>
-            
-            <div className="w-auto">
-              <h2 className="text-xl ">Consulting</h2>
-              <p className="prose pt-8">
-                Business leaders are investing in next generation digital 
-                technologies to their strategic advantage, optimizing business
-                operations and driving new products and services. We have more
-                than a decade of experience in working with Fortune 500
-                companies, small and mid-sized enterprises in digital
-                transformations focused on revenue optimization, cost reduction,
-                process enhancements, while ensuring business continuity for our
-                clients. Our consultants possess a deep expertise in BFSI,
-                Manufacturing, Healthcare, Retail, Logistics, and other domains.
-                SFJ is a partner of Automation Anywhere, Microsoft and is a
-                trusted partner in defining your IT strategy and achieving your
-                business goals.
+
+            <div data-aos="fade-up" data-aos-once="true" className="w-auto">
+              <h2 className="text-xl font-bah ">Philosophy</h2>
+              <p className="prose font-bah pt-8">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas
+                perspiciatis beatae dicta iste odit doloribus inventore saepe
+                id. Vitae, quas repellendus! Voluptate, iste nisi perferendis
+                pariatur vero distinctio expedita a voluptatibus odit inventore
+                quia, eius assumenda, delectus numquam dignissimos eaque totam.
+                Delectus, rerum quae provident, tempora amet ipsam vitae magnam
+                molestias ratione est illum nihil. Aliquid reprehenderit
+                deserunt perferendis rem?
               </p>
 
-              <p className="prose lg:mb-0 mb-5 pt-8">
+              <p className="prose  font-bah lg:mb-0 mb-5 pt-8">
                 <Link href="/contact">
                   <a className="active:text-red font-bold underline hover:text-orange decoration-emerald-600 text-emerald-600">
                     Get in touch
@@ -164,39 +177,44 @@ export default function About() {
               id="Mobility"
             ></div>
             <div className="w-auto">
-              <h2 className="text-xl ">Mobility</h2>
-              <p className="prose pt-8">
-                With more than 25 billion connected devices all over the world,
-                we are at the cusp of a digital revolution, and reimagining new
-                ways of work is an integral part of this shift. The big question
-                many organizations face is how to harness this proliferation of
-                mobiles to effectively engage with a smarter workforce. We can
-                help you define an overall Mobility strategy, identify and
-                evaluate processes that can be mobilized with enhanced business
-                impact, and adopting the right solution architecture and choice
-                of platforms, technologies that can cater to the identified
-                needs while ensuring data security, scalability and usability.
+              <h2 className="text-xl font-bah ">Leadership</h2>
+              <p className="prose font-bah pt-8">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                maxime fuga exercitationem nostrum perspiciatis magnam
+                obcaecati! Assumenda incidunt quis doloremque animi.
+                Perspiciatis repellat, quos necessitatibus laboriosam enim
+                repudiandae obcaecati inventore! Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Atque in ducimus, illum reiciendis
+                dolorem maiores impedit tenetur, beatae voluptates aliquid sit
+                ipsa aperiam ab itaque adipisci. Dolore excepturi aliquid non
+                reprehenderit, voluptates corrupti repellendus, ullam, eum
+                cumque placeat soluta hic molestias sit vel? Dicta, esse sunt
+                error quo reiciendis repudiandae.
               </p>
 
-              <p className="prose lg:mb-0 mb-5 pt-8">
+              <p className="prose  font-bah lg:mb-0 mb-5 pt-8">
                 <Link href="/contact">
-                  <a className="active:text-red font-bold underline hover:text-orange decoration-emerald-600 text-emerald-600">
+                  <a className="active:text-red  font-bah font-bold underline hover:text-orange decoration-emerald-600 text-emerald-600">
                     Get in touch
                   </a>
                 </Link>{" "}
                 to know more.
               </p>
             </div>
-            <div className="w-auto h-48 lg:h-auto relative">
+            <div
+              data-aos="fade-up"
+              data-aos-once="true"
+              className="w-auto h-48 lg:h-auto relative"
+            >
               <Image
                 layout="fill"
                 className="absolute h-full w-full object-cover"
                 alt=""
-                src="/capabi/mobility.png"
+                src="/about/dummy3.jpg"
               />
             </div>
 
-            <div
+            {/* <div
               className="w-full md:block hidden  h-[100px] lg:col-span-2  col-span-1 "
               id="Outsourcing"
             ></div>
@@ -311,7 +329,7 @@ export default function About() {
                 </Link>{" "}
                 to know more.
               </p>
-            </div>
+            </div>*/}
           </div>
         </div>
       </section>
@@ -324,7 +342,12 @@ export default function About() {
           <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-3">
             {team.map(({ name, image, role, description, id }) => {
               return (
-                <div key={id} className="flex flex-col items-center p-5">
+                <div
+                  key={id}
+                  data-aos="fade-up"
+                  data-aos-once="true"
+                  className="flex flex-col items-center p-5"
+                >
                   <div className="relative lg:w-[300px] lg:h-[300px]  md:w-[300px] md:h-[300px] w-[200px]  h-[200px]  rounded-full">
                     <Image
                       className="rounded-full"

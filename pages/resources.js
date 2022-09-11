@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { useState } from "react";
-
+import Link from "next/link";
 export default function resources() {
   const [buttonIndex, setButtonIndex] = useState(0);
   const buttonClick = (x) => {
@@ -213,9 +213,9 @@ export default function resources() {
 
        
         <section className="">
-          <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-            <p className="text-center mb-6 text-2xl font-bah">Case Study</p>
-            <div className="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
+          <div className=" md:container md:mx-auto m-7">
+         
+            <div className="grid gap-8  lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
               {discover[buttonIndex].blogsdata.map(({name, imgs, desc, small,title,ser }, index) => {
                 return (
                   <div
@@ -253,13 +253,13 @@ export default function resources() {
                         repellendus iste illo blanditiis possimus fugit
                         doloribus, numquam, maxime ratione!
                       </p>
-                      <a
-                        href="/"
-                        aria-label=""
-                        className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-blue hover:scale-110"
-                      >
-                        Learn more
-                      </a>
+                      <div className="flex justify-center">
+            <Link href=" ">
+              <button className="mt-8 font-bah  bg-white border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
+                READ MORE
+              </button>
+            </Link>
+            </div>
                     </div>
                   </div>
                 );

@@ -130,7 +130,7 @@ export default function Libraryslide() {
             >
               <SwiperSlide>
               <div>
-            <p className="text-center text-2xl font-bah font-extrabold mb-5 tracking-widest text-black">
+            <p className="text-3xl text-center font-bah  title-font text-black   mb-4">
            Ebook
             </p>
             
@@ -173,13 +173,14 @@ export default function Libraryslide() {
                     repellendus iste illo blanditiis possimus fugit
                     doloribus, numquam, maxime ratione!
                   </p>
-                  <a
-                    href="/"
-                    aria-label=""
-                    className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-blue hover:scale-110"
-                  >
-                    Learn more
-                  </a>
+                
+                  <div className="flex justify-center">
+            <Link href=" ">
+              <button className="mt-8 font-bah  bg-white border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
+                READ MORE
+              </button>
+            </Link>
+            </div>
                 </div>
               </div>
               );
@@ -191,7 +192,7 @@ export default function Libraryslide() {
 
               <SwiperSlide>
               <div>
-            <p className="text-center text-2xl font-bah font-extrabold mb-5 tracking-widest text-black">
+            <p className="text-3xl font-bah text-center   title-font text-black   mb-4">
            Certification
             </p>
             
@@ -227,20 +228,21 @@ export default function Libraryslide() {
                   >
                     Title
                   </a>
-                  <p className="mb-2 text-gray-700 font-bah">
+                  <p className="mb-2 text-black font-bah">
                     Lorem ipsum dolor sit amet, consectetur adipisicing
                     elit. Dignissimos a eveniet sequi similique expedita id
                     obcaecati velit suscipit consequuntur excepturi
                     repellendus iste illo blanditiis possimus fugit
                     doloribus, numquam, maxime ratione!
                   </p>
-                  <a
-                    href="/"
-                    aria-label=""
-                    className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-blue hover:scale-110"
-                  >
-                    Learn more
-                  </a>
+                 
+                  <div className="flex justify-center">
+            <Link href=" ">
+              <button className="mt-8 font-bah  bg-white border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
+                READ MORE
+              </button>
+            </Link>
+            </div>
                 </div>
               </div>
               );
@@ -250,64 +252,8 @@ export default function Libraryslide() {
 
 
 
-              <SwiperSlide>
-              <div>
-            <p className="text-center text-2xl font-bah font-extrabold mb-5 tracking-widest text-black">
-           
-            </p>
-            
-          </div>
-          <div className="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
-                {blog.map(({ name, imgs, desc,small }, index) => {
-              return (
-                <div
-                key={index}
-                className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm"
-              >
-                <img
-                  src="https://images.pexels.com/photos/2408666/pexels-photo-2408666.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
-                  className="object-cover w-full h-64"
-                  alt=""
-                />
-                <div className="p-5 border border-t-0">
-                  <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
-                    <a
-                      href="/"
-                      className="transition-colors duration-200 text-blue-gray-900 hover:text-deep-purple-accent-700"
-                      aria-label="Category"
-                      title="traveling"
-                    >
-                    {/* {name} */}Title
-                    </a>
-                  </p>
-                  <a
-                    href="/"
-                    aria-label="Category"
-                    title="Visit the East"
-                    className="inline-block mb-3 font-bah text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700"
-                  >
-                    Title
-                  </a>
-                  <p className="mb-2 text-gray-700 font-bah">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing
-                    elit. Dignissimos a eveniet sequi similique expedita id
-                    obcaecati velit suscipit consequuntur excepturi
-                    repellendus iste illo blanditiis possimus fugit
-                    doloribus, numquam, maxime ratione!
-                  </p>
-                  <a
-                    href="/"
-                    aria-label=""
-                    className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-blue hover:scale-110"
-                  >
-                    Learn more
-                  </a>
-                </div>
-              </div>
-              );
-            })}
-                </div>
-              </SwiperSlide>
+              
+  
 
 
 

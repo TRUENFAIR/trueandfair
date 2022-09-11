@@ -240,7 +240,7 @@ export default function Layout({ children }) {
 
       <main className="text-zinc-900 font-sans  ">{children}</main>
 
-      <footer className="border font-bah bg-white border-t mx-auto  py-6 lg:py-8">
+      <footer className="border font-bah bg-white border-t mx-auto  py-6 lg:py-2">
         <div className="grid grid-cols-2 lg:flex lg:flex-row justify-around items-start">
           <div className="col-span-2 pb-4 md:pb-0 ">
             <Link href="/">
@@ -428,7 +428,7 @@ export default function Layout({ children }) {
           </div>
         </div>
 
-        <div className="mx-auto  text-center font-bah  text-sm text-zinc-400 pt-4 lg:pt-8 lg:p-0 p-4 pl-6">
+        <div className="mx-auto  text-center font-bah  text-sm text-zinc-400 pt-4 lg:pt-0 lg:p-0 p-4 pl-6">
           <p>True & Fair Professionals Network </p>
           <p>
             Copyright © 2022. All Rights Reserved. Designed by Deedbee Social

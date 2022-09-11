@@ -1,41 +1,68 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link'
+import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function Services() {
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      duration: 1000,
+      startEvent: "DOMContentLoaded",
+      initClassName: "aos-init",
+      animatedClassName: "aos-animate",
+    });
+  }, []);
   return (
     <>
-   
+      <section>
+        <div
+          className="h-96 flex flex-col justify-end "
+          style={{
+            backgroundImage: "url('/about/abt1.jpg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
+          <div
+            data-aos="fade-down"
+            data-aos-once="true"
+            className="h-28 w-1/2 flex justify-center  items-center font-bah text-2xl text-white bg-slate-800"
+          >
+            <p>Our Services</p>
+          </div>
+        </div>
+      </section>
       <section
         className="pt-12 pb-10 text-zinc-900 bg-coustom1"
         id="capabilities"
       >
-        <div className="md:container p-4 mx-auto" >
+        <div className="md:container p-4 mx-auto">
           <div className="grid lg:grid-cols-2 grid-cols-1 md:gap-x-20 gap-4 md:pt- pt-4">
             <div
               className="w-full md:block hidden h-[100px] lg:col-span-2  col-span-1 "
               id="Analytics"
             ></div>
             <div className="w-auto">
-              <h2 className="text-xl">Analytics</h2>
-              <p className="prose pt-8">
-                In today&apos;s digital business ecosystem where customers call
-                the shots, organizations have to scramble through every data
-                input available to acquire and retain customers. The advent of
-                low cost storage and digital convergence have drastically
-                impacted the way data and analytics are used by businesses. The
-                role played by data sciences in solving business problems is
-                fast gaining momentum and helping business improve efficiencies,
-                business growth and move into newer territories. Our team of
-                experts can help you in analytics discovery, roadmap definition,
-                and transition into a data-driven organization through advanced
-                data visualization and recommendation engines powered by BigData
-                and Machine Learning.
+              <h2 className="text-xl  font-bah">Auditing Firms</h2>
+              <p className="prose  font-bah pt-8">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quos
+                veniam aliquid soluta accusantium aut magnam culpa, accusamus
+                sapiente veritatis nostrum recusandae quidem vitae earum velit
+                assumenda doloribus aspernatur quae. Error maxime debitis
+                asperiores molestias? Possimus ducimus cupiditate dolorum. A
+                nesciunt commodi ut, fuga delectus adipisci, assumenda nostrum
+                neque voluptatem placeat, ab praesentium sint ad libero! Dolorem
+                molestiae quae sint inventore esse aut nostrum dicta temporibus
+                labore facilis? Cumque, sed!
               </p>
 
-              <p className="prose lg:mb-0 mb-5 pt-8">
+              <p className="prose  font-bah lg:mb-0 mb-5 pt-8">
                 <Link href="/contact">
-                  <a className="active:text-red underline font-bold hover:text-orange decoration-emerald-600 text-emerald-600">
+                  <a className="active:text-red underline   font-bah font-bold hover:text-orange decoration-emerald-600 text-emerald-600">
                     Get in touch
                   </a>
                 </Link>
@@ -43,48 +70,52 @@ export default function Services() {
               </p>
             </div>
 
-            <div className="w-auto h-48 lg:h-auto relative">
+            <div
+              data-aos="fade-up"
+              data-aos-once="true"
+              className="w-auto h-48 lg:h-auto relative"
+            >
               <Image
                 layout="fill"
                 className="absolute h-full w-full object-cover"
                 alt=""
-                src="/capabi/analytics.png"
+                src="/services/2.jpg"
               />
             </div>
-           
+
             <div
               className="w-full md:block hidden h-[100px] lg:col-span-2  col-span-1 "
               id="Consulting"
             ></div>
-            <div className="w-auto h-48 lg:h-auto relative">
+            <div
+              data-aos="fade-up"
+              data-aos-once="true"
+              className="w-auto h-48 lg:h-auto relative"
+            >
               <Image
                 layout="fill"
                 className="absolute h-full w-full object-cover"
                 alt=""
-                src="/capabi/consulting.png"
+                src="/services/3.jpg"
               />
             </div>
-            
+
             <div className="w-auto">
-              <h2 className="text-xl ">Consulting</h2>
-              <p className="prose pt-8">
-                Business leaders are investing in next generation digital 
-                technologies to their strategic advantage, optimizing business
-                operations and driving new products and services. We have more
-                than a decade of experience in working with Fortune 500
-                companies, small and mid-sized enterprises in digital
-                transformations focused on revenue optimization, cost reduction,
-                process enhancements, while ensuring business continuity for our
-                clients. Our consultants possess a deep expertise in BFSI,
-                Manufacturing, Healthcare, Retail, Logistics, and other domains.
-                SFJ is a partner of Automation Anywhere, Microsoft and is a
-                trusted partner in defining your IT strategy and achieving your
-                business goals.
+              <h2 className="text-xl  font-bah ">Corporations</h2>
+              <p className="prose  font-bah pt-8">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+                aliquid architecto eligendi perspiciatis quod labore laboriosam
+                alias earum! Autem quisquam sapiente animi! Fugiat ex nemo
+                asperiores architecto nihil voluptatem eligendi, pariatur
+                consequatur incidunt. Temporibus aut fugit, quia tempora
+                distinctio minima hic aspernatur porro? Doloribus natus,
+                veritatis possimus similique vero, soluta perferendis ex unde
+                modi asperiores reprehenderit explicabo placeat! Id, a!
               </p>
 
-              <p className="prose lg:mb-0 mb-5 pt-8">
+              <p className="prose font-bah lg:mb-0 mb-5 pt-8">
                 <Link href="/contact">
-                  <a className="active:text-red font-bold underline hover:text-orange decoration-emerald-600 text-emerald-600">
+                  <a className="active:text-red  font-bah font-bold underline hover:text-orange decoration-emerald-600 text-emerald-600">
                     Get in touch
                   </a>
                 </Link>{" "}
@@ -92,12 +123,12 @@ export default function Services() {
               </p>
             </div>
             <div
-              className="w-full md:block hidden  h-[100px] lg:col-span-2  col-span-1 "
+              className="w-full font-bah md:block hidden  h-[100px] lg:col-span-2  col-span-1 "
               id="Mobility"
             ></div>
-            <div className="w-auto">
-              <h2 className="text-xl ">Mobility</h2>
-              <p className="prose pt-8">
+            <div data-aos="fade-up" data-aos-once="true" className="w-auto">
+              <h2 className="text-xl  font-bah">Regulators</h2>
+              <p className="prose  font-bah pt-8">
                 With more than 25 billion connected devices all over the world,
                 we are at the cusp of a digital revolution, and reimagining new
                 ways of work is an integral part of this shift. The big question
@@ -110,25 +141,29 @@ export default function Services() {
                 needs while ensuring data security, scalability and usability.
               </p>
 
-              <p className="prose lg:mb-0 mb-5 pt-8">
+              <p className="prose  font-bah lg:mb-0 mb-5 pt-8">
                 <Link href="/contact">
-                  <a className="active:text-red font-bold underline hover:text-orange decoration-emerald-600 text-emerald-600">
+                  <a className="active:text-red  font-bah font-bold underline hover:text-orange decoration-emerald-600 text-emerald-600">
                     Get in touch
                   </a>
                 </Link>{" "}
                 to know more.
               </p>
             </div>
-            <div className="w-auto h-48 lg:h-auto relative">
+            <div
+              data-aos="fade-up"
+              data-aos-once="true"
+              className="w-auto h-48 lg:h-auto relative"
+            >
               <Image
                 layout="fill"
                 className="absolute h-full w-full object-cover"
                 alt=""
-                src="/capabi/mobility.png"
+                src="/services/4.jpg"
               />
             </div>
 
-            <div
+            {/* <div
               className="w-full md:block hidden  h-[100px] lg:col-span-2  col-span-1 "
               id="Outsourcing"
             ></div>
@@ -144,18 +179,7 @@ export default function Services() {
             <div className="w-auto">
               <h2 className="text-xl ">Outsourcing</h2>
               <p className="prose pt-8">
-                In this age of technology disruption, organizations are
-                constantly riddled with the challenge of wheels on-the-go to
-                remain competitive. This requires a clear vision and strategy
-                for agility and scale. SFJ has an exceptional track record in
-                managed IT services, and a customer retention ratio of over 90%
-                over the past decade is a testimony to the disproportionate
-                value we added to our customers businesses. We offer application
-                development, maintenance and support services to help stabilize
-                and scale your business operations. Through our just-in-time and
-                cost-effective sourcing, skilling, staffing strategies, we have
-                helped several organizations achieve their objectives with
-                minimal disruptions to ongoing business operations.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolores corporis magnam esse perspiciatis odit asperiores corrupti dicta atque reprehenderit eaque aspernatur nam praesentium, quod natus cum provident voluptatem architecto. Explicabo, impedit ad quibusdam dolorum adipisci ipsa sequi rerum, voluptatem ipsam quo est consequatur officiis nobis accusamus neque sint. Saepe repellat ipsa sunt, adipisci veniam praesentium impedit asperiores unde? Similique.
               </p>
 
               <p className="prose lg:mb-0 mb-5 pt-8">
@@ -166,9 +190,9 @@ export default function Services() {
                 </Link>{" "}
                 to know more.
               </p>
-            </div>
+            </div> */}
 
-            <div
+            {/* <div
               className="w-full h-[100px] md:block hidden  lg:col-span-2  col-span-1 "
               id="Staffing"
             ></div>
@@ -243,10 +267,10 @@ export default function Services() {
                 </Link>{" "}
                 to know more.
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
     </>
-  )
+  );
 }

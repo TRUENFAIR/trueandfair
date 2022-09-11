@@ -3,6 +3,10 @@ import React from "react";
 import Image from "next/image";
 import { useState } from "react";
 import { FontAwesomeIcon, FaPlay } from "react-icons/fa";
+import Link from "next/link";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 
 export default function library() {
@@ -14,6 +18,15 @@ export default function library() {
   const videoclick = (video) => {
     setVideoss(video);
   };
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      duration: 1000,
+      startEvent: "DOMContentLoaded",
+      initClassName: "aos-init",
+      animatedClassName: "aos-animate",
+    });
+  }, []);
   const discover = [
     {
       name: "Ebooks",
@@ -121,7 +134,7 @@ export default function library() {
 
   return (
     <>
-      <section className="text-black md:container md:mx-auto  ">
+      <section  className="text-black md:container md:mx-auto  ">
       <div className="">
            
 
@@ -192,13 +205,13 @@ export default function library() {
                        repellendus iste illo blanditiis possimus fugit
                        doloribus, numquam, maxime ratione!
                      </p>
-                     <a
-                       href="/"
-                       aria-label=""
-                       className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-blue hover:scale-110"
-                     >
-                       Learn more
-                     </a>
+                     <div className="flex justify-center">
+            <Link href=" ">
+              <button className="mt-8 font-bah  bg-white border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
+                READ MORE
+              </button>
+            </Link>
+            </div>
                    </div>
                  </div>
                );
@@ -220,7 +233,7 @@ export default function library() {
           <div className="grid gap-6 row-gap-5 mb-8 lg:grid-cols-3 sm:row-gap-6 sm:grid-cols-2">
             {yogatv.map(({ name, imgs, desc, vidoes }, index) => {
               return (
-                <div
+                <div 
                   key={index}
                   onClick={()=>videoclick(vidoes)}
                   href="/"
@@ -262,11 +275,11 @@ export default function library() {
                     </div>
                   )}
 
-          <div className="text-center flex justify-center">
+          {/* <div className="text-center flex justify-center">
             <button className="px-6 font-bah py-2 font-medium tracking-wide text-black bg-white border-2 border-black hover:bg-black hover:border-white mb-5     rounded-md  hover:text-white ">
               Watch More
             </button>
-          </div>
+          </div> */}
         </div>
       </section>
     </>
