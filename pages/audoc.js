@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from 'next/link'
+import Link from "next/link";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -60,148 +60,192 @@ function Audoc() {
   ];
   return (
     <>
-     <section>
+      <section>
         <div
-          className="h-96 flex flex-col justify-end "
+          className="h-72 flex flex-col justify-end "
           style={{
-            backgroundImage: "url('/about/abt1.jpg')",
+            backgroundImage: "url('/about/abt1.png')",
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
           }}
         >
-          <div  data-aos="fade-down"
-            data-aos-once="true" className="h-28 w-1/2 flex justify-center  items-center font-bah text-2xl text-white bg-slate-800">
-            <p>Audit Documentation Tool</p>
+          <div
+            data-aos="fade-down"
+            data-aos-once="true"
+            className="h-28  w-[80%] md:w-1/2 flex justify-center  items-center font-bah text-2xl text-white bg-slate-800"
+          >
+            <p className="font-bah">AUDOC®️-Audit Documentation Tool</p>
           </div>
         </div>
       </section>
-     
-      <section
-        className="pt-12 pb-10 text-zinc-900 bg-coustom1"
-        id="capabilities"
-      >
-        <div className="md:container p-4 mx-auto" >
+
+      <section className=" pb-10 text-zinc-900 bg-coustom1" id="capabilities">
+        <div className="md:container  mx-auto">
           <div className="grid lg:grid-cols-2 grid-cols-1 md:gap-x-20 gap-4 md:pt- pt-4">
             <div
-              className="w-full md:block hidden h-[100px] lg:col-span-2  col-span-1 "
+              className="w-full md:block hidden h-[80px] lg:col-span-2  col-span-1 "
               id="Analytics"
             ></div>
-            <div  data-aos="fade-up"
-            data-aos-once="true" className="w-auto">
-              <h2 className="text-xl  font-bah">Product Overview</h2>
+            <div data-aos="fade-up" data-aos-once="true" className="w-auto">
+              <h2 className="text-3xl font-bah  title-font text-black   mb-4">Product Overview</h2>
               <p className="prose  font-bah pt-8">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, rerum? Expedita impedit reiciendis laborum accusamus, ut ab, fugit deleniti quibusdam in, magnam rem veritatis perspiciatis magni. Exercitationem ratione necessitatibus totam blanditiis perspiciatis, illo ex architecto alias, voluptate doloribus rerum impedit veniam fugiat aperiam et quo inventore recusandae officia, quod repellendus aliquam quos nemo? Placeat veritatis eaque reiciendis vel dolore recusandae!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptate sequi provident reprehenderit minus vero inventore
+                odio veritatis quam sapiente iste voluptatibus reiciendis in
+                voluptas corporis necessitatibus dignissimos ad, a quibusdam
+                neque exercitationem unde ut est nulla! Facere cupiditate quas
+                commodi quisquam iusto. Iste eaque deleniti consequuntur eum
+                aliquam tempora rem at voluptates voluptas esse, eligendi
+                repudiandae facere corporis, voluptate non. Praesentium alias
+                optio ab cumque quo deleniti dicta eaque ipsa. Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Magnam, cum.
               </p>
 
               <p className="prose  font-bah lg:mb-0 mb-5 pt-8">
                 <Link href="/contact">
-                  <a className="active:text-red  font-bah underline font-bold hover:text-orange decoration-emerald-600 text-emerald-600">
-                    Get in touch
+                  <a className="active:text-red  font-bah font-bold underline hover:text-orange decoration-blue text-blue">
+                    Click here
                   </a>
-                </Link>
-                to know more.
+                </Link>{" "}
+                to request a demo.
               </p>
             </div>
 
-            <div  data-aos="fade-down"
-            data-aos-once="true" className="w-auto h-48 lg:h-auto relative">
+            <div
+              data-aos="fade-down"
+              data-aos-once="true"
+              className="w-auto h-48 lg:h-auto relative"
+            >
               <Image
                 layout="fill"
                 className="absolute h-full w-full object-cover"
                 alt=""
-                src="/services/2.jpg"
+                src="/about/dummy3.jpg"
               />
             </div>
-           
+
             <div
-              className="w-full md:block hidden h-[100px] lg:col-span-2  col-span-1 "
+              className="w-full md:block hidden h-[80px] lg:col-span-2  col-span-1 "
               id="Consulting"
             ></div>
-            <div  data-aos="fade-up"
-            data-aos-once="true" className="w-auto h-48 lg:h-auto relative">
+            <div
+              data-aos="fade-up"
+              data-aos-once="true"
+              className="w-auto h-48 lg:h-auto relative"
+            >
               <Image
                 layout="fill"
                 className="absolute h-full w-full object-cover"
                 alt=""
-                src="/services/4.jpg"
+                src="/about/dummy3.jpg"
               />
             </div>
-            
-            <div  data-aos="fade-down"
-            data-aos-once="true" className="w-auto">
-              <h2 className="text-xl  font-bah ">Use Cases</h2>
+
+            <div data-aos="fade-down" data-aos-once="true" className="w-auto">
+              <h2 className="text-3xl font-bah  title-font text-black   mb-4">Use Cases</h2>
               <p className="prose  font-bah pt-8">
-               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis consectetur eius quidem quia, vero aspernatur modi a neque ad? Accusantium quae voluptates nemo maxime iste nam magni aut laudantium, rem fugiat esse praesentium, blanditiis nisi quisquam delectus ut natus possimus nesciunt fuga necessitatibus aspernatur hic, tempora ratione. Natus, corrupti aperiam?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptate sequi provident reprehenderit minus vero inventore
+                odio veritatis quam sapiente iste voluptatibus reiciendis in
+                voluptas corporis necessitatibus dignissimos ad, a quibusdam
+                neque exercitationem unde ut est nulla! Facere cupiditate quas
+                commodi quisquam iusto. Iste eaque deleniti consequuntur eum
+                aliquam tempora rem at voluptates voluptas esse, eligendi
+                repudiandae facere corporis, voluptate non. Praesentium alias
+                optio ab cumque quo deleniti dicta eaque ipsa. Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Magnam, cum.
               </p>
 
               <p className="prose  font-bah lg:mb-0 mb-5 pt-8">
                 <Link href="/contact">
-                  <a className="active:text-red  font-bah font-bold underline hover:text-orange decoration-emerald-600 text-emerald-600">
-                    Get in touch
+                  <a className="active:text-red  font-bah font-bold underline hover:text-orange decoration-blue text-blue">
+                    Click here
                   </a>
                 </Link>{" "}
-                to know more.
+                to request a demo.
               </p>
             </div>
             <div
-              className="w-full md:block hidden  h-[100px] lg:col-span-2  col-span-1 "
+              className="w-full md:block hidden  h-[80px] lg:col-span-2  col-span-1 "
               id="Mobility"
             ></div>
-            <div  data-aos="fade-up"
-            data-aos-once="true" className="w-auto">
-              <h2 className="text-xl  font-bah">Advantages</h2>
+            <div data-aos="fade-up" data-aos-once="true" className="w-auto">
+              <h2 className="text-3xl font-bah  title-font text-black   mb-4">Advantages</h2>
               <p className="prose  font-bah pt-8">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit minima laborum nisi cum. Aut pariatur assumenda id eos excepturi nemo quaerat nihil unde quis iusto amet, ut recusandae animi, consequuntur voluptatem. Temporibus commodi aut impedit nemo dicta. Ratione, libero error est pariatur aspernatur eos? Architecto esse excepturi quae voluptatum consequatur id dolorem obcaecati, nihil rem ex, vel, beatae nobis voluptatem.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptate sequi provident reprehenderit minus vero inventore
+                odio veritatis quam sapiente iste voluptatibus reiciendis in
+                voluptas corporis necessitatibus dignissimos ad, a quibusdam
+                neque exercitationem unde ut est nulla! Facere cupiditate quas
+                commodi quisquam iusto. Iste eaque deleniti consequuntur eum
+                aliquam tempora rem at voluptates voluptas esse, eligendi
+                repudiandae facere corporis, voluptate non. Praesentium alias
+                optio ab cumque quo deleniti dicta eaque ipsa. Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Magnam, .
               </p>
 
-              <p className="prose font-bah lg:mb-0 mb-5 pt-8">
+              <p className="prose  font-bah lg:mb-0 mb-5 pt-8">
                 <Link href="/contact">
-                  <a className="active:text-red   font-bah font-bold underline hover:text-orange decoration-emerald-600 text-emerald-600">
-                    Get in touch
+                  <a className="active:text-red  font-bah font-bold underline hover:text-orange decoration-blue text-blue">
+                    Click here
                   </a>
                 </Link>{" "}
-                to know more.
+                to request a demo.
               </p>
             </div>
-            <div  data-aos="fade-down"
-            data-aos-once="true" className="w-auto h-48 lg:h-auto relative">
+            <div
+              data-aos="fade-down"
+              data-aos-once="true"
+              className="w-auto h-48 lg:h-auto relative"
+            >
               <Image
                 layout="fill"
                 className="absolute h-full w-full object-cover"
                 alt=""
-                src="/services/3.jpg"
+                src="/about/dummy3.jpg"
               />
             </div>
 
             <div
-              className="w-full md:block hidden  h-[100px] lg:col-span-2  col-span-1 "
+              className="w-full md:block hidden  h-[80px] lg:col-span-2  col-span-1 "
               id="Outsourcing"
             ></div>
 
-            <div   data-aos="fade-down"
-            data-aos-once="true" className="w-auto h-48 lg:h-auto relative">
+            <div
+              data-aos="fade-down"
+              data-aos-once="true"
+              className="w-auto h-48 lg:h-auto relative"
+            >
               <Image
                 layout="fill"
                 className="absolute h-full w-full object-cover"
                 alt=""
-                src="/services/2.jpg"
+                src="/about/dummy3.jpg"
               />
             </div>
-            <div   data-aos="fade-up"
-            data-aos-once="true" className="w-auto">
-              <h2 className="text-xl  font-bah ">Technology</h2>
+            <div data-aos="fade-up" data-aos-once="true" className="w-auto">
+              <h2 className="text-3xl font-bah  title-font text-black   mb-4">Technology</h2>
               <p className="prose  font-bah pt-8">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque earum, doloremque libero possimus optio deleniti in quia illo dignissimos aliquid veniam repellat incidunt magnam dolore adipisci hic voluptatem ipsum exercitationem cum. Error cumque optio eum minus? Quos fuga molestiae voluptatem. Labore assumenda quis sapiente facere dicta itaque dignissimos similique nisi id culpa commodi atque, pariatur blanditiis, quia amet fuga rem?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptate sequi provident reprehenderit minus vero inventore
+                odio veritatis quam sapiente iste voluptatibus reiciendis in
+                voluptas corporis necessitatibus dignissimos ad, a quibusdam
+                neque exercitationem unde ut est nulla! Facere cupiditate quas
+                commodi quisquam iusto. Iste eaque deleniti consequuntur eum
+                aliquam tempora rem at voluptates voluptas esse, eligendi
+                repudiandae facere corporis, voluptate non. Praesentium alias
+                optio ab cumque quo deleniti dicta eaque ipsa. Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Magnam, cum.
               </p>
 
-              <p className="prose   font-bah lg:mb-0 mb-5 pt-8">
+              <p className="prose  font-bah lg:mb-0 mb-5 pt-8">
                 <Link href="/contact">
-                  <a className="active:text-red  font-bah font-bold underline hover:text-orange decoration-emerald-600 text-emerald-600">
-                    Get in touch
+                  <a className="active:text-red  font-bah font-bold underline hover:text-orange decoration-blue text-blue">
+                    Click here
                   </a>
                 </Link>{" "}
-                to know more.
+                to request a demo.
               </p>
             </div>
 

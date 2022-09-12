@@ -11,6 +11,11 @@ import { useEffect } from "react";
 
 export default function library() {
   const [videoss, setVideoss] = useState(null);
+  const [loadmore, setLoadmore] = useState("hi");
+  const [fullblog, setFullblog] = useState(null);
+  const loadclick = () => {
+    setFullblog(1);
+  };
   const [buttonIndex, setButtonIndex] = useState(0);
   const buttonClick = (x) => {
     setButtonIndex(x);
@@ -54,11 +59,60 @@ export default function library() {
           desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos a eveniet sequi similique expedita id obcaecati velit suscipit consequuntur excepturi repellendus iste illo blanditiis possimus fugit dol",
           imgs: "/pause/PAUSE3.PNG",
         },
+        {
+          ser:"/blogs/blog1",
+          name: "title",
+          small: "title",
+          desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos a eveniet sequi similique expedita id obcaecati velit suscipit consequuntur excepturi repellendus iste illo blanditiis possimus fugit dol",
+          imgs: "/pause/PAUSE3.PNG",
+        },
+        
+      ],
+      blogsdatafull: [
+        {
+          ser:"/blogs/blog4",
+          name: "YOG ON THE MAT",
+          small: "How to get started with Yoga and grow with your practice",
+          desc: "Remember, you control your breath, don't let your breath control you! 🧘🏻‍♀️- 🤷🏽‍♀️ - ⬇️",
+          imgs: "/pause/PAUSE3.PNG",
+        },
+        {
+          ser:"/blogs/blog5",
+          name: "YOG ON THE MAT",
+          small: "How to get started with Yoga and grow with your practice",
+          desc: "Don't ever look back, unless it's from a different point of view 🙃 ⬇️",
+          imgs: "/pause/PAUSE2.PNG",
+        },
+        {
+          ser:"/blogs/blog6",
+          name: "YOG ON THE MAT",
+          small: "How to get started with Yoga and grow with your practice",
+          desc: "Hips don't lie 🙇🏻‍♀️👇🏼",
+          imgs: "/pause/PAUSE1.PNG",
+        },
+        {
+          name: "YOG ON THE MAT",
+          small: "How to get started with Yoga and grow with your practice",
+          desc: "Remember, you control your breath, don't let your breath control you! 🧘🏻‍♀️- 🤷🏽‍♀️ - ⬇️",
+          imgs: "/pause/PAUSE1.PNG",
+        },
+        {
+          name: "YOG ON THE MAT",
+          small: "How to get started with Yoga and grow with your practice",
+          desc: "Don't ever look back, unless it's from a different point of view 🙃 ⬇️",
+          imgs: "/pause/PAUSE2.PNG",
+        },
+        {
+          name: "YOG ON THE MAT",
+          small: "How to get started with Yoga and grow with your practice",
+          desc: "Hips don't lie 🙇🏻‍♀️👇🏼",
+          imgs: "/pause/PAUSE3.PNG",
+        },
       ],
         
     },
     {
-      name: "Certifications",
+      name: "Videos",
       img: "/discover/discover2.jpg",
       desc: "From Ashtanga to Vinyasa, make mindful movement a daily ritual.",
       blogsdata: [
@@ -81,6 +135,132 @@ export default function library() {
           name: "title",
           small: "title",
           desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos a eveniet sequi similique expedita id obcaecati velit suscipit consequuntur excepturi repellendus iste illo blanditiis possimus fugit dol",
+          imgs: "/pause/PAUSE3.PNG",
+        },
+        {
+          ser:"/blogs/blog1",
+          name: "title",
+          small: "title",
+          desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos a eveniet sequi similique expedita id obcaecati velit suscipit consequuntur excepturi repellendus iste illo blanditiis possimus fugit dol",
+          imgs: "/pause/PAUSE3.PNG",
+        },
+      ],
+      blogsdatafull: [
+        {
+          ser:"/blogs/blog4",
+          name: "YOG ON THE MAT",
+          small: "How to get started with Yoga and grow with your practice",
+          desc: "Remember, you control your breath, don't let your breath control you! 🧘🏻‍♀️- 🤷🏽‍♀️ - ⬇️",
+          imgs: "/pause/PAUSE3.PNG",
+        },
+        {
+          ser:"/blogs/blog5",
+          name: "YOG ON THE MAT",
+          small: "How to get started with Yoga and grow with your practice",
+          desc: "Don't ever look back, unless it's from a different point of view 🙃 ⬇️",
+          imgs: "/pause/PAUSE2.PNG",
+        },
+        {
+          ser:"/blogs/blog6",
+          name: "YOG ON THE MAT",
+          small: "How to get started with Yoga and grow with your practice",
+          desc: "Hips don't lie 🙇🏻‍♀️👇🏼",
+          imgs: "/pause/PAUSE1.PNG",
+        },
+        {
+          name: "YOG ON THE MAT",
+          small: "How to get started with Yoga and grow with your practice",
+          desc: "Remember, you control your breath, don't let your breath control you! 🧘🏻‍♀️- 🤷🏽‍♀️ - ⬇️",
+          imgs: "/pause/PAUSE1.PNG",
+        },
+        {
+          name: "YOG ON THE MAT",
+          small: "How to get started with Yoga and grow with your practice",
+          desc: "Don't ever look back, unless it's from a different point of view 🙃 ⬇️",
+          imgs: "/pause/PAUSE2.PNG",
+        },
+        {
+          name: "YOG ON THE MAT",
+          small: "How to get started with Yoga and grow with your practice",
+          desc: "Hips don't lie 🙇🏻‍♀️👇🏼",
+          imgs: "/pause/PAUSE3.PNG",
+        },
+      ],
+    },
+    
+    
+    {
+      name: "Certifications",
+      img: "/discover/discover2.jpg",
+      desc: "From Ashtanga to Vinyasa, make mindful movement a daily ritual.",
+      blogsdata: [
+        {
+          ser:"/blogs/blog1",
+          name: "Case Studies",
+          small: "title",
+          desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos a eveniet sequi similique expedita id obcaecati velit suscipit consequuntur excepturi repellendus iste illo blanditiis possimus fugit dol",
+          imgs: "/pause/PAUSE3.PNG",
+        },
+        {
+          ser:"/blogs/blog1",
+          name: "Case Studies",
+          small: "title",
+          desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos a eveniet sequi similique expedita id obcaecati velit suscipit consequuntur excepturi repellendus iste illo blanditiis possimus fugit dol",
+          imgs: "/pause/PAUSE3.PNG",
+        },
+        {
+          ser:"/blogs/blog1",
+          name: "Case Studies",
+          small: "title",
+          desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos a eveniet sequi similique expedita id obcaecati velit suscipit consequuntur excepturi repellendus iste illo blanditiis possimus fugit dol",
+          imgs: "/pause/PAUSE3.PNG",
+        },
+        {
+          ser:"/blogs/blog1",
+          name: "title",
+          small: "title",
+          desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos a eveniet sequi similique expedita id obcaecati velit suscipit consequuntur excepturi repellendus iste illo blanditiis possimus fugit dol",
+          imgs: "/pause/PAUSE3.PNG",
+        },
+      ],
+      blogsdatafull: [
+        {
+          ser:"/blogs/blog4",
+          name: "YOG ON THE MAT",
+          small: "How to get started with Yoga and grow with your practice",
+          desc: "Remember, you control your breath, don't let your breath control you! 🧘🏻‍♀️- 🤷🏽‍♀️ - ⬇️",
+          imgs: "/pause/PAUSE3.PNG",
+        },
+        {
+          ser:"/blogs/blog5",
+          name: "YOG ON THE MAT",
+          small: "How to get started with Yoga and grow with your practice",
+          desc: "Don't ever look back, unless it's from a different point of view 🙃 ⬇️",
+          imgs: "/pause/PAUSE2.PNG",
+        },
+        {
+          ser:"/blogs/blog6",
+          name: "YOG ON THE MAT",
+          small: "How to get started with Yoga and grow with your practice",
+          desc: "Hips don't lie 🙇🏻‍♀️👇🏼",
+          imgs: "/pause/PAUSE1.PNG",
+        },
+        {
+          name: "YOG ON THE MAT",
+          small: "How to get started with Yoga and grow with your practice",
+          desc: "Remember, you control your breath, don't let your breath control you! 🧘🏻‍♀️- 🤷🏽‍♀️ - ⬇️",
+          imgs: "/pause/PAUSE1.PNG",
+        },
+        {
+          name: "YOG ON THE MAT",
+          small: "How to get started with Yoga and grow with your practice",
+          desc: "Don't ever look back, unless it's from a different point of view 🙃 ⬇️",
+          imgs: "/pause/PAUSE2.PNG",
+        },
+        {
+          name: "YOG ON THE MAT",
+          small: "How to get started with Yoga and grow with your practice",
+          desc: "Hips don't lie 🙇🏻‍♀️👇🏼",
           imgs: "/pause/PAUSE3.PNG",
         },
       ],
@@ -150,9 +330,9 @@ export default function library() {
                <p
                  className={`${
                    index === buttonIndex
-                     ? " text-black font-bold  border-black border-b-4"
+                     ? " text-blue text-xl font-bold font-bah border-blue border-b-4"
                      : "bg-white"
-                 } flex justify-center font-bah  bg-white  text-black py-4 hover:cursor-pointer`}
+                 } flex justify-center text-xl font-bah  title-font text-black   mb-4 hover:cursor-pointer`}
                >
                  {name}
                </p>
@@ -166,8 +346,8 @@ export default function library() {
       
        <section className="text-black md:container md:mx-auto">
          <div className="py-20">
-           <p className="text-center mb-6 text-2xl font-bah">Case Study</p>
-           <div className="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
+         
+           <div className="grid gap-10 lg:grid-cols-4 sm:max-w-sm sm:mx-auto lg:max-w-full">
              {discover[buttonIndex].blogsdata.map(({name, imgs, desc, small,title,ser }, index) => {
                return (
                  <div
@@ -179,7 +359,7 @@ export default function library() {
                      className="object-cover w-full h-64"
                      alt=""
                    />
-                   <div className="p-5 border border-t-0">
+                   <div className="p-2  border-t-0">
                      <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
                        <a
                          href="/"
@@ -206,7 +386,7 @@ export default function library() {
                        doloribus, numquam, maxime ratione!
                      </p>
                      <div className="flex justify-center">
-            <Link href=" ">
+            <Link href=" /reso/reso1">
               <button className="mt-8 font-bah  bg-white border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
                 READ MORE
               </button>
@@ -218,17 +398,105 @@ export default function library() {
              })}
            </div>
          </div>
+         {loadmore && (
+          <div className="w-full flex mb-5  justify-center">
+            <button
+              onClick={() => (loadclick(), setLoadmore(null))}
+              className="mt-8 font-bah  bg-white border-2 border-blue text-blue font-bold t hover:text-white hover:bg-blue p-2 rounded-lg transition-all"
+            >
+              Load More
+            </button>
+          </div>
+        )}
       </section>
-      <section className="md:container mx-auto">
+      {
+        <div className={`${fullblog ? "py-16  md:container md:mx-auto" : "mb-5 "}`}>
+           <div className="grid gap-10  lg:grid-cols-4  lg:max-w-full">
+            {fullblog &&
+              discover[buttonIndex].blogsdatafull.map(
+                ({ name, imgs, desc, small }, index) => {
+                  return (
+                    <div
+                    key={index}
+                    className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm"
+                  >
+                    <img
+                      src="https://images.pexels.com/photos/2408666/pexels-photo-2408666.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
+                      className="object-cover w-full h-64"
+                      alt=""
+                    />
+                    <div className="p-2  border-t-0">
+                      <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
+                        <a
+                          href="/"
+                          className="transition-colors duration-200 text-blue-gray-900 hover:text-deep-purple-accent-700"
+                          aria-label="Category"
+                          title="traveling"
+                        >
+                        {name}
+                        </a>
+                      </p>
+                      <a
+                        href="/"
+                        aria-label="Category"
+                        title="Visit the East"
+                        className="inline-block mb-3 font-bah text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700"
+                      >
+                        Title
+                      </a>
+                      <p className="mb-2 text-gray-700 font-bah">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Dignissimos a eveniet sequi similique expedita id
+                        obcaecati velit suscipit consequuntur excepturi
+                        repellendus iste illo blanditiis possimus fugit
+                        doloribus, numquam, maxime ratione!
+                      </p>
+                      <div className="flex justify-center">
+            <Link href="/reso/reso1">
+              <button className="mt-8 font-bah  bg-white border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
+                READ MORE
+              </button>
+            </Link>
+            </div>
+                    </div>
+                  </div>
+                  );
+                }
+              )}
+          </div>
+        </div>
+      }
+       {fullblog && (
+        <div className="w-full flex m-5 justify-center">
+          <button
+            onClick={() => (setFullblog(null), setLoadmore(1))}
+            className="mt-8 font-bah  bg-white border-2 border-blue text-blue font-bold t hover:text-white hover:bg-blue p-2 rounded-lg transition-all "
+          >
+            Show Less
+          </button>
+        </div>
+      )}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      {/* <section className="md:container mx-auto">
         <div className="py-5  md:py-16">
           <p className="text-center text-2xl tracking-widest mb-10 font-bah font-extrabold">
           Videos
           </p>
-          {/* <p className="text-black text-xl font-bah text-center p-8">
-            "Sed ut perspiciatis unde omnis iste natus error sit iste voluptatem
-            accusantium doloremque rem aperiam, ipsa eaque quae. Sed ut
-            perspiciatis unde omnis iste."
-          </p> */}
+          
 
           <div className="grid gap-6 row-gap-5 mb-8 lg:grid-cols-3 sm:row-gap-6 sm:grid-cols-2">
             {yogatv.map(({ name, imgs, desc, vidoes }, index) => {
@@ -273,15 +541,15 @@ export default function library() {
                         </div>
                       </div>
                     </div>
-                  )}
+                  )} */}
 
           {/* <div className="text-center flex justify-center">
             <button className="px-6 font-bah py-2 font-medium tracking-wide text-black bg-white border-2 border-black hover:bg-black hover:border-white mb-5     rounded-md  hover:text-white ">
               Watch More
             </button>
           </div> */}
-        </div>
-      </section>
+        {/* </div>
+      </section> */}
     </>
   );
 }

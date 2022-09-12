@@ -19,9 +19,9 @@ export default function Services() {
     <>
       <section>
         <div
-          className="h-96 flex flex-col justify-end "
+          className="h-72 flex flex-col justify-end "
           style={{
-            backgroundImage: "url('/about/abt1.jpg')",
+            backgroundImage: "url('/about/abt1.png')",
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
@@ -36,36 +36,36 @@ export default function Services() {
           </div>
         </div>
       </section>
-      <section
-        className="pt-12 pb-10 text-zinc-900 bg-coustom1"
-        id="capabilities"
-      >
-        <div className="md:container p-4 mx-auto">
+      <section className=" pb-10 text-zinc-9 bg-lightgray" id="capabilities">
+        <div className="md:container  mx-auto">
           <div className="grid lg:grid-cols-2 grid-cols-1 md:gap-x-20 gap-4 md:pt- pt-4">
             <div
-              className="w-full md:block hidden h-[100px] lg:col-span-2  col-span-1 "
+              className="w-full md:block hidden h-[80px] lg:col-span-2  col-span-1 "
               id="Analytics"
             ></div>
             <div className="w-auto">
-              <h2 className="text-xl  font-bah">Auditing Firms</h2>
+              <h2 className="text-3xl font-bah  title-font text-black   mb-4">
+                Auditing Firms
+              </h2>
               <p className="prose  font-bah pt-8">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quos
-                veniam aliquid soluta accusantium aut magnam culpa, accusamus
-                sapiente veritatis nostrum recusandae quidem vitae earum velit
-                assumenda doloribus aspernatur quae. Error maxime debitis
-                asperiores molestias? Possimus ducimus cupiditate dolorum. A
-                nesciunt commodi ut, fuga delectus adipisci, assumenda nostrum
-                neque voluptatem placeat, ab praesentium sint ad libero! Dolorem
-                molestiae quae sint inventore esse aut nostrum dicta temporibus
-                labore facilis? Cumque, sed!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptate sequi provident reprehenderit minus vero inventore
+                odio veritatis quam sapiente iste voluptatibus reiciendis in
+                voluptas corporis necessitatibus dignissimos ad, a quibusdam
+                neque exercitationem unde ut est nulla! Facere cupiditate quas
+                commodi quisquam iusto. Iste eaque deleniti consequuntur eum
+                aliquam tempora rem at voluptates voluptas esse, eligendi
+                repudiandae facere corporis, voluptate non. Praesentium alias
+                optio ab cumque quo deleniti dicta eaque ipsa. Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Magnam, cum.
               </p>
 
               <p className="prose  font-bah lg:mb-0 mb-5 pt-8">
                 <Link href="/contact">
-                  <a className="active:text-red underline   font-bah font-bold hover:text-orange decoration-emerald-600 text-emerald-600">
+                  <a className="active:text-red underline   font-bah font-bold hover:text-orange decoration-blue text-blue">
                     Get in touch
                   </a>
-                </Link>
+                </Link>{" "}
                 to know more.
               </p>
             </div>
@@ -79,12 +79,12 @@ export default function Services() {
                 layout="fill"
                 className="absolute h-full w-full object-cover"
                 alt=""
-                src="/services/2.jpg"
+                src="/about/dummy3.jpg"
               />
             </div>
 
             <div
-              className="w-full md:block hidden h-[100px] lg:col-span-2  col-span-1 "
+              className="w-full md:block hidden h-[80px] lg:col-span-2  col-span-1 "
               id="Consulting"
             ></div>
             <div
@@ -96,26 +96,30 @@ export default function Services() {
                 layout="fill"
                 className="absolute h-full w-full object-cover"
                 alt=""
-                src="/services/3.jpg"
+                src="/about/dummy3.jpg"
               />
             </div>
 
             <div className="w-auto">
-              <h2 className="text-xl  font-bah ">Corporations</h2>
+              <h2 className="text-3xl font-bah  title-font text-black   mb-4">
+                Corporations
+              </h2>
               <p className="prose  font-bah pt-8">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-                aliquid architecto eligendi perspiciatis quod labore laboriosam
-                alias earum! Autem quisquam sapiente animi! Fugiat ex nemo
-                asperiores architecto nihil voluptatem eligendi, pariatur
-                consequatur incidunt. Temporibus aut fugit, quia tempora
-                distinctio minima hic aspernatur porro? Doloribus natus,
-                veritatis possimus similique vero, soluta perferendis ex unde
-                modi asperiores reprehenderit explicabo placeat! Id, a!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptate sequi provident reprehenderit minus vero inventore
+                odio veritatis quam sapiente iste voluptatibus reiciendis in
+                voluptas corporis necessitatibus dignissimos ad, a quibusdam
+                neque exercitationem unde ut est nulla! Facere cupiditate quas
+                commodi quisquam iusto. Iste eaque deleniti consequuntur eum
+                aliquam tempora rem at voluptates voluptas esse, eligendi
+                repudiandae facere corporis, voluptate non. Praesentium alias
+                optio ab cumque quo deleniti dicta eaque ipsa. Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Magnam, cum.
               </p>
 
               <p className="prose font-bah lg:mb-0 mb-5 pt-8">
                 <Link href="/contact">
-                  <a className="active:text-red  font-bah font-bold underline hover:text-orange decoration-emerald-600 text-emerald-600">
+                  <a className="active:text-red  font-bah font-bold underline hover:text-orange decoration-blue text-blue">
                     Get in touch
                   </a>
                 </Link>{" "}
@@ -123,27 +127,29 @@ export default function Services() {
               </p>
             </div>
             <div
-              className="w-full font-bah md:block hidden  h-[100px] lg:col-span-2  col-span-1 "
+              className="w-full font-bah md:block hidden  h-[80px] lg:col-span-2  col-span-1 "
               id="Mobility"
             ></div>
             <div data-aos="fade-up" data-aos-once="true" className="w-auto">
-              <h2 className="text-xl  font-bah">Regulators</h2>
+              <h2 className="text-3xl font-bah  title-font text-black   mb-4">
+                Regulators
+              </h2>
               <p className="prose  font-bah pt-8">
-                With more than 25 billion connected devices all over the world,
-                we are at the cusp of a digital revolution, and reimagining new
-                ways of work is an integral part of this shift. The big question
-                many organizations face is how to harness this proliferation of
-                mobiles to effectively engage with a smarter workforce. We can
-                help you define an overall Mobility strategy, identify and
-                evaluate processes that can be mobilized with enhanced business
-                impact, and adopting the right solution architecture and choice
-                of platforms, technologies that can cater to the identified
-                needs while ensuring data security, scalability and usability.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptate sequi provident reprehenderit minus vero inventore
+                odio veritatis quam sapiente iste voluptatibus reiciendis in
+                voluptas corporis necessitatibus dignissimos ad, a quibusdam
+                neque exercitationem unde ut est nulla! Facere cupiditate quas
+                commodi quisquam iusto. Iste eaque deleniti consequuntur eum
+                aliquam tempora rem at voluptates voluptas esse, eligendi
+                repudiandae facere corporis, voluptate non. Praesentium alias
+                optio ab cumque quo deleniti dicta eaque ipsa. Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Magnam, cum.
               </p>
 
               <p className="prose  font-bah lg:mb-0 mb-5 pt-8">
                 <Link href="/contact">
-                  <a className="active:text-red  font-bah font-bold underline hover:text-orange decoration-emerald-600 text-emerald-600">
+                  <a className="active:text-red  font-bah font-bold underline hover:text-orange decoration-blue text-blue">
                     Get in touch
                   </a>
                 </Link>{" "}
@@ -159,7 +165,7 @@ export default function Services() {
                 layout="fill"
                 className="absolute h-full w-full object-cover"
                 alt=""
-                src="/services/4.jpg"
+                src="/about/dummy3.jpg"
               />
             </div>
 

@@ -54,7 +54,7 @@ export default function Home() {
     {
       id: 3,
       title:"Review Mechanisms",
-      text: "Workflows for approvals, reviews with comments and version control, and in-tool communication channels for all the parties",
+      text: "Workflows for approvals, reviews with comments and version control, and in-tool communication channels for all ",
     },
     {
       id: 4,
@@ -72,14 +72,14 @@ export default function Home() {
       <section
         className=" lg:h-screen   "
         style={{
-          backgroundImage: `url(${"/indexpage/audit1.jpg"})`,
+          backgroundImage: `url(${"/indexpage/audit.png"})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="md:container md:mx-auto flex  h-[500px] justify-start items-center">
-          <div className="text-white text-4xl font-bah">
+        <div className="md:container md:mx-auto flex h-[500px] md:h-[700px] lg:h-full md:justify-start items-center">
+          <div className="text-white md:w-[70%] w-[100%]  h-[200px] md:h-[200px] leading-none text-2xl md:text-5xl font-bah">
             {/* <TypeAnimation
               className="text-white font-bah "
               sequence={[
@@ -107,12 +107,14 @@ export default function Home() {
             /> */}
            <Typewriter className="text-white text-2xl"
   options={{
-    strings: ['Improve audit quality and productivity through our robust standards and best practices', 'Explore technical resources, case studies, connect with experts and get auditing insights','Connect, learn, collaborate with the Auditing ecosystem and deliver world-class services'],
+    strings: ['Improve audit quality and productivity through our robust standards and best practices', 'Explore technical resources, case studies, connect with experts and get auditing insights','Connect, learn, collaborate with the auditing ecosystem and deliver world-class services'],
     autoStart: true,
     loop: true,
-    delay:50,
+    delay:25,
+    
     deleteSpeed:0,
-    pauseFor:0,
+    pauseFor:2000,
+    
     
 
   }}
@@ -124,10 +126,10 @@ export default function Home() {
       <section className=" body-font bg-lightgray pt-14 pb-4">
         <div className="md:container px-5 md:mx-auto">
           <div className="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
-            <p className="text-3xl   title-font text-black   mb-4">
+            <p className="text-3xl font-bah  title-font text-black   mb-4">
               True & Fair Professionals Network
             </p>
-            <p className="leading-loose  font-bah text-black ">
+            <p className="leading-loose   font-bah text-black ">
               We are a group of professionals with several decades of Auditing
               and Accounting experience across multiple sectors. True & Fair is
               a digital platform built to connect stakeholders of the financial
@@ -158,52 +160,52 @@ export default function Home() {
             </h1>
             <div className="flex gap-1 mt-4 text-black flex-row">
               <span className="w-fit ">✔️</span>{" "}
-              <p className="prose font-bah ">
+              <p className="prose  text-black font-bah ">
                 {`Work with small accounting firms and provide them access to quality standards, best practices, tools and technical guidance.
               `}
               </p>
             </div>
             <div className="flex mt-4 gap-1 flex-row">
               <span className="w-fit">✔️</span>{" "}
-              <p className="prose font-bah ">
+              <p className="prose text-black font-bah ">
                 {`Provide guidance to corporations on Accounting & Financial Reporting, ESG, Risk Management practices and Board Governance.
               `}
               </p>
             </div>
             <div className="flex mt-4 gap-1 flex-row">
               <span className="w-fit ">✔️</span>{" "}
-              <p className="prose font-bah ">
+              <p className="prose text-black   font-bah ">
                 {`Collaborate with regulators on standard setting & regulatory developments, inspection policies and disciplinary mechanisms.
               `}
               </p>
             </div>
             <div className="flex mt-4 gap-1 flex-row">
               <span className="w-fit ">✔️</span>{" "}
-              <p className="prose font-bah ">
+              <p className="prose text-black font-bah ">
                 {`Strategic investments in data analytics, artificial intelligence and documentation tools to improve audit quality and productivity.
               `}
               </p>
             </div>
 
             <Link href="/about">
-              <button className="mt-8 font-bah  bg-yellow border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
+              <button className="m-8 font-bah  bg-yellow border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
                 READ MORE
               </button>
             </Link>
           </div>
 
           <div
-            className="md:w-full bg-contain md:bg-center   bg-no-repeat  lg:w-1/2  h-fit   "
+            className="md:w-full  bg-contain md:bg-center   bg-no-repeat  lg:w-1/2  h-fit   "
             style={{
               backgroundImage: `url(${"/indexpage/vision2.png"})`,
              
             }}
           >
-            <div className=" bottom-0  p-10  lg:w-full flex justify-center  md:p-28 items-center flex-col">
+            <div className=" bottom-0  p-8  lg:w-full flex justify-center  md:p-28 items-center flex-col">
               <p className="text-3xl text-white  text-center w-full  font-bah pb-4">
                 Our Vision
               </p>
-              <p className=" text-white text-base md:text-xl text-center w-full   font-bah leading-loose">
+              <p className=" text-white text-base md:text-xl text-center lg:p-7 p-5     font-bah leading-loose">
                 {`To strengthen the financial reporting ecosystem of India, through thought leadership and capacity building`}
               </p>
             </div>
@@ -315,23 +317,23 @@ export default function Home() {
           <div className="lg:w-full mx-auto flex flex-col lg:flex-col ">
             <div className="lg:w-full w-full lg:mr-9  mt-6 lg:mt-0 ">
               <div className="w-full flex gap-4 lg:justify-center ">
-                <h1 className=" text-3xl   title-font text-white  mb-4 ">
-                  AUDOC
+                <h1 className="w-full text-center  text-3xl font-bah  title-font text-white   mb-4 ">
+                  AUDOC®️
                 </h1>
               </div>
-              <p className="text-center text-xl text-white">
+              <p className="text-center text-xl font-bah text-white">
                 Audit Documentation Tool
               </p>
             </div>
-            <div className="p-10">
-              <ul className="grid lg:grid-cols-3 grid-cols-1 lg:p-5 lg:gap-14 ">
-                {whyworkwithus.map(({ text, id,title }) => {
+            <div className="mt-10">
+              <ul className="grid lg:grid-cols-5 grid-cols-1 lg:gap-10">
+                {whyworkwithus.map(({ text, id,title },index) => {
                   return (
-                    <div>
-                      <p className="font-bah text-center text-white">{title}</p>
+                    <div key={index}>
+                      <p className="font-bah text-center tex-bold text-lg text-white">{title}</p>
                     <li
                       key={id}
-                      className="mt-4 text-lg text-center font-bah lg:p-0 p-5 leading-relaxed text-white "
+                      className="mt-4  text-center font-bah lg:p-0 p-5 leading-relaxed text-white "
                     >
                       {text}
                     </li>
@@ -341,8 +343,8 @@ export default function Home() {
               </ul>
             </div>
             <div className="flex justify-center">
-            <Link href=" ">
-              <button className="mt-8 font-bah  bg-white border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
+            <Link href="/audoc">
+              <button className="mt-8 font-bah   border-2 border-white text-white font-bold text-xs hover:text-blue hover:bg-white p-3 rounded-lg transition-all">
                 READ MORE
               </button>
             </Link>

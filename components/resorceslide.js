@@ -27,6 +27,12 @@ export default function Resourceslide() {
       desc: "Hips don't lie 🙇🏻‍♀️👇🏼",
       imgs: "/pause/PAUSE1.png",
     },
+    {
+      name: "YOG ON THE MAT",
+      small: "How to get started with Yoga and grow with your practice",
+      desc: "Hips don't lie 🙇🏻‍♀️👇🏼",
+      imgs: "/pause/PAUSE1.png",
+    },
   ];
   const blog1 = [
     {
@@ -77,8 +83,8 @@ export default function Resourceslide() {
 
   return (
     <>
-      <section className="md:container md:mx-auto">
-        <div className=" py-11 w-full  h-fit  lg:py-16">
+      <section className="bg-lightgray ">
+        <div className="md:container md:mx-auto py-11 w-full  h-fit  lg:py-16">
           <Swiper
             modules={[Pagination, Autoplay]}
             slidesPerView={1}
@@ -86,8 +92,8 @@ export default function Resourceslide() {
             slidesPerGroup={1}
             breakpoints={{
               769: {
-                slidesPerView: 4,
-                slidesPerGroup: 4,
+                slidesPerView: 2,
+                slidesPerGroup: 2,
                 spaceBetween: 20,
                 Autoplay: true,
                 loop: true,
@@ -118,19 +124,19 @@ export default function Resourceslide() {
                 Best Practices
                 </p>
               </div>
-              <div className="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
+              <div className="grid  gap-10 lg:grid-cols-4 sm:max-w-sm sm:mx-auto lg:max-w-full">
                 {blog.map(({ name, imgs, desc, small }, index) => {
                   return (
                     <div
                       key={index}
-                      className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm"
+                      className="overflow-hidden transition-shadow duration-300  rounded shadow-sm"
                     >
                       <img
                         src="https://images.pexels.com/photos/2408666/pexels-photo-2408666.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
                         className="object-cover w-full h-64"
                         alt=""
                       />
-                      <div className="p-5 border border-t-0">
+                      <div className="p-2  border-t-0">
                         <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
                           <a
                             href="/"
@@ -157,8 +163,8 @@ export default function Resourceslide() {
                           doloribus, numquam, maxime ratione!
                         </p>
                         <div className="flex justify-center">
-            <Link href=" ">
-              <button className="mt-8 font-bah  bg-white border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
+            <Link href="/resources">
+              <button className="mt-8 font-bah  border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg ">
                 READ MORE
               </button>
             </Link>
@@ -173,22 +179,22 @@ export default function Resourceslide() {
             <SwiperSlide>
               <div>
                 <p className="text-3xl font-bah text-center title-font text-black   mb-4">
-              Case Study
+              Case Studies
                 </p>
               </div>
-              <div className="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
+              <div className="grid  gap-10 lg:grid-cols-4 lg:max-w-full">
                 {blog.map(({ name, imgs, desc, small }, index) => {
                   return (
                     <div
                       key={index}
-                      className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm"
+                      className="overflow-hidden transition-shadow duration-300  rounded shadow-sm"
                     >
                       <img
                         src="https://images.pexels.com/photos/2408666/pexels-photo-2408666.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
                         className="object-cover w-full h-64"
                         alt=""
                       />
-                      <div className="p-5 border border-t-0">
+                      <div className="p-2 border border-t-0">
                         <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
                           <a
                             href="/"
@@ -207,16 +213,16 @@ export default function Resourceslide() {
                         >
                           Title
                         </a>
-                        <p className="mb-2 text-gray-700 font-bah">
+                        <p className="mb-2 text-black font-bah">
                           Lorem ipsum dolor sit amet, consectetur adipisicing
                           elit. Dignissimos a eveniet sequi similique expedita
                           id obcaecati velit suscipit consequuntur excepturi
                           repellendus iste illo blanditiis possimus fugit
                           doloribus, numquam, maxime ratione!
                         </p>
-                        <div className="flex justify-center">
-            <Link href=" ">
-              <button className="mt-8 font-bah  bg-white border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
+                        <div className="flex b justify-center">
+            <Link href="/resources">
+              <button className="mt-5 font-bah  border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg ">
                 READ MORE
               </button>
             </Link>
@@ -234,19 +240,80 @@ export default function Resourceslide() {
                 Expert Opinions
                 </p>
               </div>
-              <div className="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
+              <div className="grid  gap-10 lg:grid-cols-4 sm:max-w-sm sm:mx-auto lg:max-w-full">
                 {blog.map(({ name, imgs, desc, small }, index) => {
                   return (
                     <div
                       key={index}
-                      className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm"
+                      className="overflow-hidden transition-shadow duration-300  rounded shadow-sm"
                     >
                       <img
                         src="https://images.pexels.com/photos/2408666/pexels-photo-2408666.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
                         className="object-cover w-full h-64"
                         alt=""
                       />
-                      <div className="p-5 border border-t-0">
+                      <div className="p-2  border-t-0">
+                        <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
+                          <a
+                            href="/"
+                            className="transition-colors duration-200 text-blue-gray-900 hover:text-deep-purple-accent-700"
+                            aria-label="Category"
+                            title="traveling"
+                          >
+                            {/* {name} */}
+                          </a>
+                        </p>
+                        <a
+                          href="/"
+                          aria-label="Category"
+                          title="Visit the East"
+                          className="inline-block mb-3 font-bah text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700"
+                        >
+                          Title
+                        </a>
+                        <p className="mb-2 text-black font-bah">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit. Dignissimos a eveniet sequi similique expedita
+                          id obcaecati velit suscipit consequuntur excepturi
+                          repellendus iste illo blanditiis possimus fugit
+                          doloribus, numquam, maxime ratione!
+                        </p>
+                        <div className="flex justify-center">
+            <Link href="/resources">
+              <button className="mt-8 font-bah  border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg ">
+                READ MORE
+              </button>
+            </Link>
+            </div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </SwiperSlide>
+
+
+
+
+            <SwiperSlide>
+              <div>
+                <p className="text-3xl font-bah text-center title-font text-black   mb-4">
+             News Updates
+                </p>
+              </div>
+              <div className="grid  gap-10 lg:grid-cols-4 sm:max-w-sm sm:mx-auto lg:max-w-full">
+                {blog.map(({ name, imgs, desc, small }, index) => {
+                  return (
+                    <div
+                      key={index}
+                      className="overflow-hidden transition-shadow duration-300  rounded shadow-sm"
+                    >
+                      <img
+                        src="https://images.pexels.com/photos/2408666/pexels-photo-2408666.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
+                        className="object-cover w-full h-64"
+                        alt=""
+                      />
+                      <div className="p-2  border-t-0">
                         <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
                           <a
                             href="/"
@@ -274,7 +341,7 @@ export default function Resourceslide() {
                         </p>
                         <div className="flex justify-center">
             <Link href=" ">
-              <button className="mt-8 font-bah  bg-white border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
+              <button className="mt-8 font-bah   border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg ">
                 READ MORE
               </button>
             </Link>

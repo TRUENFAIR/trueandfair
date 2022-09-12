@@ -148,7 +148,7 @@ export default function Layout({ children }) {
             <Link href="/">
               <a className="flex  justify-between lg:justify-start items-center ">
                 <div className="w-full h-[80px]">
-                  <div className="hidden relative w-[250px]  h-16 md:flex items-center flex-col">
+                  <div className="hidden  relative w-[250px] mt-2 h-16 md:flex items-center flex-col">
                     <Image
                       src="/homeicon/TNFmain22.png"
                       layout="fill"
@@ -223,10 +223,10 @@ export default function Layout({ children }) {
               <div className="bg-transparent w-auto absolute top-6 right-0 flex-col z-50 rounded-sm invisible group-active:visible group-hover:visible transition-all">
                 <div className="pt-4 w-auto">
                   <div className="w-full shadow-md">
-                    {menu2.map(({ name2, path2 }, index) => (
-                      <Link key={index} href={path2}>
+                    {menu.map(({ name, path }, index) => (
+                      <Link key={index} href={path}>
                         <a className="w-48 hover:bg-green-100 px-4 bg-white inline-flex p-2 normal-case text-md whitespace-nowrap border-b border-t border-black-100">
-                          {name2}
+                          {name}
                         </a>
                       </Link>
                     ))}
@@ -240,7 +240,7 @@ export default function Layout({ children }) {
 
       <main className="text-zinc-900 font-sans  ">{children}</main>
 
-      <footer className="border font-bah bg-white border-t mx-auto  py-6 lg:py-2">
+      <footer className="border font-bah bg-white border-t mx-auto  py-6 lg:py-7">
         <div className="grid grid-cols-2 lg:flex lg:flex-row justify-around items-start">
           <div className="col-span-2 pb-4 md:pb-0 ">
             <Link href="/">
@@ -309,7 +309,7 @@ export default function Layout({ children }) {
               <a>Resources</a>
             </Link>
 
-            <Link href="/customers">
+            <Link href="/contact">
               <a>Contact </a>
             </Link>
           </div>
