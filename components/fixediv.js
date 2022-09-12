@@ -29,7 +29,7 @@ export default function Fixediv({ clicked,contact }) {
             <div className="flex justify-center">
               <Link href={contact}>
                 <button className="m-4 font-bah   border-2 border-blue text-black font-bold  hover:text-blue hover:bg-white p-3 rounded-lg transition-all">
-                  Request a Demo
+                  Request a demo
                 </button>
               </Link>
             </div>
