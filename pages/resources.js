@@ -94,7 +94,7 @@ export default function resources() {
         
     },
     {
-      name: "Expert Opinions",
+      name: "Case Studies",
       img: "/discover/discover2.jpg",
       desc: "From Ashtanga to Vinyasa, make mindful movement a daily ritual.",
       blogsdata: [
@@ -172,7 +172,7 @@ export default function resources() {
     
     
     {
-      name: "Case Studies",
+      name: "Expert Opinions",
       img: "/discover/discover2.jpg",
       desc: "From Ashtanga to Vinyasa, make mindful movement a daily ritual.",
       blogsdata: [

@@ -525,9 +525,9 @@ export default function library() {
                 ({ name, imgs, desc, small }, index) => {
                   if (name === "Videos") {
                     return (
-                      <div className="">
+                      <div key={index} className="">
                         <div
-                          key={index}
+                         
                           onClick={() => videoclick(1)}
                           href="/"
                           aria-label="View Item"

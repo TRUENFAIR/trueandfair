@@ -7,6 +7,9 @@ export default function Contact() {
   const [phone, setPhone] = useState("");
   const [interest, setInterest] = useState("Contract Manufacturing");
   const [info, setInfo] = useState("");
+  const [location,setLocation]=useState("")
+  const [organization,setOrganiztion]=useState("")
+  
   const [message, setMessage] = useState(false);
 
   const sendMessage = async (e) => {
@@ -59,6 +62,12 @@ export default function Contact() {
   };
   const changeInterest = (e) => {
     setInterest(e.target.value);
+  };
+  const changeLocation = (e) => {
+    setLocation(e.target.value);
+  };
+  const changeOrganization = (e) => {
+    setOrganiztion(e.target.value);
   };
 
   useEffect(() => {
@@ -198,8 +207,8 @@ export default function Contact() {
                         type="email"
                         className="mt-1 font-bah block w-full rounded-sm border-zinc-200 focus:border-green-700 focus:ring focus:ring-blue focus:ring-opacity-50"
                         placeholder=""
-                        value={email}
-                        onChange={changeEmail}
+                        value={organization}
+                        onChange={changeOrganization}
                       />
                     </label>
                     <label className="block">
@@ -208,8 +217,8 @@ export default function Contact() {
                         type="tel"
                         className="mt-1 font-bah block w-full rounded-sm border-zinc-200 focus:border-green-700 focus:ring focus:ring-blue focus:ring-opacity-50"
                         placeholder=""
-                        value={phone}
-                        onChange={changePhone}
+                        value={email}
+                        onChange={changeEmail}
                       />
                     </label>
 
@@ -224,7 +233,7 @@ export default function Contact() {
                         <option className="hidden"></option>
                         <option>Search Engine(Google,yahoo,etc)</option>
                         <option>Recommended by friend or Colleague</option>
-                        <option>Soical medaia</option>
+                        <option>Social media</option>
                         <option>Other</option>
                       </select>
                     </label>
@@ -235,8 +244,8 @@ export default function Contact() {
                         type="text"
                         className="mt-1 font-bah block w-full rounded-sm border-zinc-200 focus:border-green-700 focus:ring focus:ring-blue focus:ring-opacity-50"
                         placeholder=""
-                        value={name}
-                        onChange={changeName}
+                        value={phone}
+                        onChange={changePhone}
                       />
                     </label>
                     <label className="block">
@@ -245,8 +254,8 @@ export default function Contact() {
                         type="email"
                         className="mt-1 font-bah block w-full rounded-sm border-zinc-200 focus:border-green-700 focus:ring focus:ring-blue focus:ring-opacity-50"
                         placeholder=""
-                        value={email}
-                        onChange={changeEmail}
+                        value={location}
+                        onChange={changeLocation}
                       />
                     </label>
                   </div>

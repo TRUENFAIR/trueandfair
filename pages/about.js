@@ -244,7 +244,7 @@ export default function About() {
         </section>
 
         <section
-          className="pt-12 pb-10 text-zinc-900 bg-lightgray"
+          className="pt-8 pb-10 text-zinc-900 bg-lightgray"
           id="capabilities"
         >
           <div className="md:container  mx-auto">
@@ -255,7 +255,7 @@ export default function About() {
               ></div>
               <div data-aos="fade-up" data-aos-once="true" className="w-auto">
                 <h2 className="text-3xl font-bah  title-font text-black   mb-4">
-                  About T&f
+                  About T&F
                 </h2>
                 <p className="prose font-bah pt-8">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -434,9 +434,12 @@ export default function About() {
             </div>
           </div>
         </section>
-
-        <section className="bg-lightgray m-6">
-        <p className="text-3xl font-bah  title-font text-black text-center  border mb-4">Meet The Team</p>
+        <div
+                className="w-full md:block hidden h-[80px] lg:col-span-2  col-span-1 "
+                id="Consulting"
+              ></div>
+        <section className="bg-lightgray mt-1">
+        <p className="text-3xl font-bah  title-font text-black text-center  border  mb-2">Meet The Team</p>
           <div className="md:container flex justify-center md:mx-auto">
           
             <ul className="grid grid-flow-col gap-1  w-1/2 mt-5 text-center  text-black  rounded-full p-1">
@@ -464,7 +467,7 @@ export default function About() {
           </div>
         </section>
 
-        <section className="bg-lightgray md:pt-5 md:pb-10 ">
+        <section className="bg-lightgray md:pt-1 md:pb-10 ">
           <div className="container px-6  mx-auto">
             <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-3">
               {team.map(({ name, image, role, description, id },index) => {
