@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }) {
     let timeId = null;
     console.log(route.pathname)
 
-    if (route.pathname !== "/contact" && route.pathname !== "/contact2" ) {
+    if (route.pathname !== "/contact" && route.pathname !== "/contact2"  && route.pathname !== "/about"  && route.pathname !== "/services"  && route.pathname !== "/library"  && route.pathname !== "/resources"  ) {
       
       timeId = setTimeout(() => setSocialmedia(true), 6000);
 
@@ -37,7 +37,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <Layout>
       <Head>
-        <title>True&Fair</title>
+        <title>{`True & Fair`}</title>
         <meta name="description" content="Official website of True&Fair" />
         <link rel="icon" href="/homeicon/tnf.png" />
       </Head>

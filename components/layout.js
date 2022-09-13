@@ -134,7 +134,7 @@ export default function Layout({ children }) {
   return (
     <>
       <Head>
-        <title>TRUE & FAIR</title>
+        <title>{`TRUE & FAIR`}</title>
       </Head>
       <div className="w-full lg:h-[82px]">
         <header

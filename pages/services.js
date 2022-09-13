@@ -30,9 +30,9 @@ export default function Services() {
           <div
             data-aos="fade-down"
             data-aos-once="true"
-            className="h-28 w-1/2 flex justify-center  items-center font-bah text-2xl text-white bg-slate-800"
+            className="h-[90px] w-1/2 flex justify-center  items-center font-bah text-2xl text-white bg-slate-800"
           >
-            <p>Our Services</p>
+            <p className="text-3xl font-bah  title-font text-white ">Our Services</p>
           </div>
         </div>
       </section>

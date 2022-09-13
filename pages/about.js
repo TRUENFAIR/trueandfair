@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import Clients from "../components/clients";
+
 import Link from "next/link";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -236,9 +236,9 @@ export default function About() {
             <div
               data-aos="fade-left"
               data-aos-once="true"
-              className="h-28 w-1/2 flex justify-center  items-center font-bah text-2xl text-white bg-slate-800"
+              className="h-[90px] w-1/2 flex justify-center  items-center font-bah text-2xl text-white bg-slate-800"
             >
-              <p>About Us</p>
+              <p className="text-3xl font-bah  title-font text-white">About Us</p>
             </div>
           </div>
         </section>
@@ -467,10 +467,10 @@ export default function About() {
         <section className="bg-lightgray md:pt-5 md:pb-10 ">
           <div className="container px-6  mx-auto">
             <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-3">
-              {team.map(({ name, image, role, description, id }) => {
+              {team.map(({ name, image, role, description, id },index) => {
                 return (
                   <div
-                    key={id}
+                    key={index}
                     data-aos="fade-up"
                     data-aos-once="true"
                     className="flex flex-col items-center p-5"

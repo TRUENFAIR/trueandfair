@@ -2,9 +2,33 @@ import Image from "next/image";
 import Link from "next/link";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
+import Fixediv from "../components/fixediv";
 
 function Audoc() {
+  const route = useRouter();
+  const [soicalmedia, setSocialmedia] = useState(false);
+  // useEffect(() => {
+  //   let timeId = null;
+  //   console.log(route.pathname);
+
+  //   if (route.pathname === "/audoc") {
+  //     timeId = setTimeout(() => setSocialmedia(true), 8000);
+  //   } else {
+  //     setSocialmedia(false);
+  //   }
+
+  //   return () => {
+  //     if (timeId) {
+  //       clearTimeout(timeId);
+  //     }
+  //   };
+  // }, [route.pathname]);
+  // const clicked = () => {
+  //   setSocialmedia(false);
+  // };
+
   useEffect(() => {
     AOS.init({
       once: true,
@@ -60,6 +84,7 @@ function Audoc() {
   ];
   return (
     <>
+      {/* {soicalmedia && <Fixediv clicked={clicked} />} */}
       <section>
         <div
           className="h-72 flex flex-col justify-end "
@@ -73,9 +98,11 @@ function Audoc() {
           <div
             data-aos="fade-down"
             data-aos-once="true"
-            className="h-28  w-[80%] md:w-1/2 flex justify-center  items-center font-bah text-2xl text-white bg-slate-800"
+            className="h-[90px]  w-[80%] md:w-1/2 flex justify-center  items-center font-bah text-2xl text-white bg-slate-800"
           >
-            <p className="font-bah">AUDOC®️-Audit Documentation Tool</p>
+            <p className=" text-3xl font-bah  title-font text-white">
+              AUDOC®️-Audit Documentation Tool
+            </p>
           </div>
         </div>
       </section>
@@ -88,7 +115,9 @@ function Audoc() {
               id="Analytics"
             ></div>
             <div data-aos="fade-up" data-aos-once="true" className="w-auto">
-              <h2 className="text-3xl font-bah  title-font text-black   mb-4">Product Overview</h2>
+              <h2 className="text-3xl font-bah  title-font text-black   mb-4">
+                Product Overview
+              </h2>
               <p className="prose  font-bah pt-8">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Voluptate sequi provident reprehenderit minus vero inventore
@@ -143,7 +172,9 @@ function Audoc() {
             </div>
 
             <div data-aos="fade-down" data-aos-once="true" className="w-auto">
-              <h2 className="text-3xl font-bah  title-font text-black   mb-4">Use Cases</h2>
+              <h2 className="text-3xl font-bah  title-font text-black   mb-4">
+                Use Cases
+              </h2>
               <p className="prose  font-bah pt-8">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Voluptate sequi provident reprehenderit minus vero inventore
@@ -171,7 +202,9 @@ function Audoc() {
               id="Mobility"
             ></div>
             <div data-aos="fade-up" data-aos-once="true" className="w-auto">
-              <h2 className="text-3xl font-bah  title-font text-black   mb-4">Advantages</h2>
+              <h2 className="text-3xl font-bah  title-font text-black   mb-4">
+                Advantages
+              </h2>
               <p className="prose  font-bah pt-8">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Voluptate sequi provident reprehenderit minus vero inventore
@@ -225,7 +258,9 @@ function Audoc() {
               />
             </div>
             <div data-aos="fade-up" data-aos-once="true" className="w-auto">
-              <h2 className="text-3xl font-bah  title-font text-black   mb-4">Technology</h2>
+              <h2 className="text-3xl font-bah  title-font text-black   mb-4">
+                Technology
+              </h2>
               <p className="prose  font-bah pt-8">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Voluptate sequi provident reprehenderit minus vero inventore

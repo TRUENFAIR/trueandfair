@@ -1,17 +1,16 @@
 import Image from "next/image";
-import Slider from "/components/slider";
-import Testimonials from "/components/testimonials";
-import Clients from "/components/clients";
+
 import Link from "next/link";
-import ProjectCard from "/components/projectscard";
+
 import { TypeAnimation } from "react-type-animation";
-import Typewriter from 'typewriter-effect';
+import Typewriter from "typewriter-effect";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Libraryslide from "../components/libraryslide";
 import Resourceslide from "../components/resorceslide";
-import  Abouthome from "../components/abouthome";
+import Abouthome from "../components/abouthome";
+import Fixediv from "../components/fixediv";
 
 const rightIcon = (
   <svg
@@ -29,7 +28,13 @@ const rightIcon = (
 );
 
 export default function Home() {
- 
+  // const [showModal, setShowModal] = useState(false);
+  // useEffect(() => {
+  //   const timeId = setTimeout(() => setShowModal(true), 8000);
+
+  //   return () => clearTimeout(timeId);
+  // }, []);
+
   useEffect(() => {
     AOS.init({
       once: true,
@@ -39,31 +44,33 @@ export default function Home() {
       animatedClassName: "aos-animate",
     });
   }, []);
-
+  // const clicked = () => {
+  //   setShowModal(false);
+  // };
   const whyworkwithus = [
     {
       id: 1,
-      title:"Templatized Audits",
+      title: "Templatized Audits",
       text: "Predefined folders and templates for each auditor to choose from, based on the audit engagement model and sector",
     },
     {
       id: 2,
-      title:"Secure Environment",
+      title: "Secure Environment",
       text: "Controlled work space to upload and work on all the audit files without conflicts, and establish required documentation",
     },
     {
       id: 3,
-      title:"Review Mechanisms",
+      title: "Review Mechanisms",
       text: "Workflows for approvals, reviews with comments and version control, and in-tool communication channels for all ",
     },
     {
       id: 4,
-      title:"Data Archival",
+      title: "Data Archival",
       text: "Encrypted and archived audit data with timely backups. Reuse of prefilled documents for consistency and productivity.",
     },
     {
       id: 5,
-      title:"Reports & Analytics",
+      title: "Reports & Analytics",
       text: "Pre-built and custom library of reports and data analytics for comprehensive insights, as per the audit requirements.",
     },
   ];
@@ -105,20 +112,22 @@ export default function Home() {
               repeat={Infinity}
               style={{ fontSize: "2em" }}
             /> */}
-           <Typewriter className="text-white text-2xl"
-  options={{
-    strings: ['Improve audit quality and productivity through our robust standards and best practices', 'Explore technical resources, case studies, connect with experts and get auditing insights','Connect, learn, collaborate with the auditing ecosystem and deliver world-class services'],
-    autoStart: true,
-    loop: true,
-    delay:25,
-    
-    deleteSpeed:0,
-    pauseFor:2000,
-    
-    
+            <Typewriter
+              className="text-white text-2xl"
+              options={{
+                strings: [
+                  "Improve audit quality and productivity through our robust standards and best practices",
+                  "Explore technical resources, case studies, connect with experts and get auditing insights",
+                  "Connect, learn, collaborate with the auditing ecosystem and deliver world-class services",
+                ],
+                autoStart: true,
+                loop: true,
+                delay: 25,
 
-  }}
-/>
+                deleteSpeed: 0,
+                pauseFor: 2000,
+              }}
+            />
           </div>
         </div>
       </section>
@@ -198,7 +207,6 @@ export default function Home() {
             className="md:w-full  bg-contain md:bg-center   bg-no-repeat  lg:w-1/2  h-fit   "
             style={{
               backgroundImage: `url(${"/indexpage/vision2.png"})`,
-             
             }}
           >
             <div className=" bottom-0  p-8  lg:w-full flex justify-center  md:p-28 items-center flex-col">
@@ -213,11 +221,6 @@ export default function Home() {
         </div>
       </section>
 
-
-
-    
-
-      
       {/* <section>
           <div className='w-full h-80 relative'>
             <Image layout="fill" alt="" src="/ourvision3.jpeg" className='absolute inset-0 object-cover' />
@@ -327,33 +330,35 @@ export default function Home() {
             </div>
             <div className="mt-10">
               <ul className="grid lg:grid-cols-5 grid-cols-1 lg:gap-10">
-                {whyworkwithus.map(({ text, id,title },index) => {
+                {whyworkwithus.map(({ text, id, title }, index) => {
                   return (
                     <div key={index}>
-                      <p className="font-bah text-center tex-bold text-lg text-white">{title}</p>
-                    <li
-                      key={id}
-                      className="mt-4  text-center font-bah lg:p-0 p-5 leading-relaxed text-white "
-                    >
-                      {text}
-                    </li>
+                      <p className="font-bah text-center tex-bold text-lg text-white">
+                        {title}
+                      </p>
+                      <li
+                        key={id}
+                        className="mt-4  text-center font-bah lg:p-0 p-5 leading-relaxed text-white "
+                      >
+                        {text}
+                      </li>
                     </div>
                   );
                 })}
               </ul>
             </div>
             <div className="flex justify-center">
-            <Link href="/audoc">
-              <button className="mt-8 font-bah   border-2 border-white text-white font-bold text-xs hover:text-blue hover:bg-white p-3 rounded-lg transition-all">
-                READ MORE
-              </button>
-            </Link>
+              <Link href="/audoc">
+                <button className="mt-8 font-bah   border-2 border-white text-white font-bold text-xs hover:text-blue hover:bg-white p-3 rounded-lg transition-all">
+                  READ MORE
+                </button>
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
-<Abouthome />
+      <Abouthome />
       {/* <section
         data-aos="fade-up"
         data-aos-easing="ease-in-out"
@@ -363,8 +368,10 @@ export default function Home() {
       </section> */}
 
       {/* <Clients /> */}
-      <Libraryslide/>
-      <Resourceslide/>
+      <Libraryslide />
+      <Resourceslide />
+
+      {/* {showModal && <Fixediv clicked={clicked} />} */}
     </main>
   );
 }

@@ -8,9 +8,9 @@ export default function Fixediv({ clicked,contact }) {
         {/* <div className="bg-white">
             <p>close</p>
         </div> */}
-        <div className="flex flex-col gap-6  bg-blue    shadow mt-4 w-[250px]  ">
-          <div className="flex flex-row  text-white">
-            <div className="flex-1 my-5   w-fit ">
+        <div className="flex flex-col   bg-blue    shadow mt-4 w-[250px]  ">
+          <div className="flex flex-row  h-fit text-white">
+            <div className="flex-1 my-1   w-fit ">
               <p className="text-center font-bah">AUDOC®️</p>
               <p className="text-center text-sm font-bah">
                 Audit Documentation Tool
@@ -18,7 +18,7 @@ export default function Fixediv({ clicked,contact }) {
             </div>
             <div
               onClick={clicked}
-              className="text-white flex flex-col justify-center items-center"
+              className="text-white flex flex-col justify-center w-fit  items-center"
             >
               <p className="text-center flex flex-col mx-3  cursor-pointer font-extrabold">
                 x
@@ -27,9 +27,9 @@ export default function Fixediv({ clicked,contact }) {
           </div>
           <div className="bg-white">
             <div className="flex justify-center">
-              <Link href={contact}>
+              <Link href="/contact2">
                 <button className="m-4 font-bah   border-2 border-blue text-black font-bold  hover:text-blue hover:bg-white p-3 rounded-lg transition-all">
-                  Request a demo
+                Request Demo
                 </button>
               </Link>
             </div>
