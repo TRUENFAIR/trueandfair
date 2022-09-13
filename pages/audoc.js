@@ -6,29 +6,12 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Fixediv from "../components/fixediv";
 
+
 function Audoc() {
   const route = useRouter();
-  const [soicalmedia, setSocialmedia] = useState(false);
-  // useEffect(() => {
-  //   let timeId = null;
-  //   console.log(route.pathname);
-
-  //   if (route.pathname === "/audoc") {
-  //     timeId = setTimeout(() => setSocialmedia(true), 8000);
-  //   } else {
-  //     setSocialmedia(false);
-  //   }
-
-  //   return () => {
-  //     if (timeId) {
-  //       clearTimeout(timeId);
-  //     }
-  //   };
-  // }, [route.pathname]);
-  // const clicked = () => {
-  //   setSocialmedia(false);
-  // };
-
+  
+  
+ 
   useEffect(() => {
     AOS.init({
       once: true,
@@ -84,7 +67,7 @@ function Audoc() {
   ];
   return (
     <>
-      {/* {soicalmedia && <Fixediv clicked={clicked} />} */}
+     
       <section>
         <div
           className="h-72 flex flex-col justify-end "

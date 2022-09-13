@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 
 export default function Contact() {
@@ -60,6 +60,17 @@ export default function Contact() {
   const changeInterest = (e) => {
     setInterest(e.target.value);
   };
+
+  useEffect(() => {
+    const isDemo = localStorage.getItem("isDemo");
+    if (isDemo === "yes") {
+      setInfo(
+        "Hi. I would like to request for a demo of the audit documentation tool."
+      );
+      localStorage.setItem("isDemo",null)
+    }
+    
+  }, []);
 
   return (
     <>
@@ -210,7 +221,7 @@ export default function Contact() {
                         onChange={changeInterest}
                         className=" block w-full font-bah mt-1 rounded-sm border-zinc-200 focus:border-green-700 focus:ring focus:ring-blue focus:ring-opacity-50"
                       >
-                          <option className="hidden"></option>
+                        <option className="hidden"></option>
                         <option>Search Engine(Google,yahoo,etc)</option>
                         <option>Recommended by friend or Colleague</option>
                         <option>Soical medaia</option>

@@ -1,7 +1,15 @@
 import React from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
-export default function Fixediv({ clicked,contact }) {
+export default function Fixediv({ clicked, contact }) {
+  const router = useRouter();
+  const gotoContact = () => {
+    
+    localStorage.setItem("isDemo", "yes");
+    router.push("/contact");
+  
+  };
   return (
     <>
       <div className="flex fixed right-0 bottom-[1%] borer  z-50  flex-col">
@@ -27,11 +35,12 @@ export default function Fixediv({ clicked,contact }) {
           </div>
           <div className="bg-white">
             <div className="flex justify-center">
-              <Link href="/contact2">
-                <button className="m-4 font-bah   border-2 border-blue text-black font-bold  hover:text-blue hover:bg-white p-3 rounded-lg transition-all">
+              <button
+                onClick={gotoContact}
+                className="m-4 font-bah   border-2 border-blue text-black font-bold  hover:text-blue hover:bg-white p-3 rounded-lg transition-all"
+              >
                 Request Demo
-                </button>
-              </Link>
+              </button>
             </div>
           </div>
         </div>

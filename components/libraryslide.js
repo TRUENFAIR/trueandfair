@@ -198,46 +198,7 @@ export default function Libraryslide() {
             })}
                 </div>
               </SwiperSlide>
-              <SwiperSlide>
-              <div>
-            <p className="text-3xl text-center font-bah  title-font text-black   mb-4">
-          Videos
-            </p>
-            
-          </div>
-          <div className="grid  gap-10 lg:grid-cols-4  lg:max-w-full">
-                {blog.map(({ name, imgs, desc,small }, index) => {
-              return (
-                <div className="">
-                    
-                      <div
-                        key={index}
-                        onClick={() => videoclick(1)}
-                        href="/"
-                        aria-label="View Item"
-                      >
-                        <div className="relative rounded shadow-lg  hover:shadow-2xl">
-                          <img
-                            className="object-cover w-full h-56 md:h-64 xl:h-80"
-                            src="/library/videos1.jpg"
-                            alt=""
-                          />
-                          <div className="absolute top-[40%] left-[40%] animate-pulse duration-100 ">
-                            <FaPlay color="white" size={80} />
-                          </div>
-                          <div className="absolute inset-x-0 bottom-0 px-6 py-4 bg-black bg-opacity-75">
-                            <p className="text-sm font-medium font-bah tracking-wide text-white">
-                              Sed ut perspiciatis unde omnis iste natus error
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-              );
-            })}
-                </div>
-              </SwiperSlide>
-
+              
 
               <SwiperSlide>
               <div>
@@ -300,6 +261,45 @@ export default function Libraryslide() {
               </SwiperSlide>
 
 
+              <SwiperSlide>
+              <div>
+            <p className="text-3xl text-center font-bah  title-font text-black   mb-4">
+          Videos
+            </p>
+            
+          </div>
+          <div className="grid  gap-10 lg:grid-cols-4  lg:max-w-full">
+                {blog.map(({ name, imgs, desc,small }, index) => {
+              return (
+                <div className="">
+                    
+                      <div
+                        key={index}
+                        onClick={() => videoclick(1)}
+                        href="/"
+                        aria-label="View Item"
+                      >
+                        <div className="relative rounded shadow-lg  hover:shadow-2xl">
+                          <img
+                            className="object-cover w-full h-56 md:h-64 xl:h-80"
+                            src="/library/videos1.jpg"
+                            alt=""
+                          />
+                          <div className="absolute top-[40%] left-[40%] animate-pulse duration-100 ">
+                            <FaPlay color="white" size={80} />
+                          </div>
+                          <div className="absolute inset-x-0 bottom-0 px-6 py-4 bg-black bg-opacity-75">
+                            <p className="text-sm font-medium font-bah tracking-wide text-white">
+                              Sed ut perspiciatis unde omnis iste natus error
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              );
+            })}
+                </div>
+              </SwiperSlide>
 
               
   
