@@ -508,9 +508,9 @@ export default function library() {
           <div className="w-full flex mb-5  justify-center">
             <button
               onClick={() => (loadclick(), setLoadmore(null))}
-              className="mt-8 font-bah  bg-white border-2 border-blue text-blue font-bold t hover:text-white hover:bg-blue p-2 rounded-lg transition-all"
+              className="mt-8 font-bah  bg-white border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg transition-all"
             >
-              Load More
+              LOAD MORE
             </button>
           </div>
         )}
@@ -627,9 +627,9 @@ export default function library() {
         <div className="w-full flex m-5 justify-center">
           <button
             onClick={() => (setFullblog(null), setLoadmore(1))}
-            className="mt-8 font-bah  bg-white border-2 border-blue text-blue font-bold t hover:text-white hover:bg-blue p-2 rounded-lg transition-all "
+            className="mt-8 font-bah  bg-white border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg transition-all "
           >
-            Show Less
+          SHOW LESS
           </button>
         </div>
       )}
