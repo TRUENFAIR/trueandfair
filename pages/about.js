@@ -23,28 +23,28 @@ export default function About() {
   const team = [
     {
       name: "tom",
-      image: "/default.jpeg",
+      image: "/defult1.jpeg",
       role: "Founder & Managing Director",
       description:
         "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
     },
     {
       name: "jerry",
-      image: "/default.jpeg",
+      image: "/defult1.jpeg",
       role: "CEO",
       description:
         "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
     },
     {
       name: "james",
-      image: "/default.jpeg",
+      image: "/defult1.jpeg",
       role: "General Manager",
       description:
         "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
     },
     {
       name: "james",
-      image: "/default.jpeg",
+      image: "/defult1.jpeg",
       role: "Head of Sourcing",
 
       description:
@@ -52,14 +52,14 @@ export default function About() {
     },
     {
       name: "james",
-      image: "/default.jpeg",
+      image: "/defult1.jpeg",
       role: "Head of Quality",
       description:
         "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
     },
     {
       name: "james",
-      image: "/default.jpeg",
+      image: "/defult1.jpeg",
       role: "Head of Research",
       description:
         "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",

@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }) {
   const [soicalmedia, setSocialmedia] = useState(false);
   useEffect(() => {
     let timeId = null;
-    console.log(route.pathname)
+  
 
     if (route.pathname !== "/contact" && route.pathname !== "/contact2"  && route.pathname !== "/about"  && route.pathname !== "/services"  && route.pathname !== "/library"  && route.pathname !== "/resources"  ) {
       
@@ -38,7 +38,7 @@ function MyApp({ Component, pageProps }) {
     <Layout>
       <Head>
         <title>{`True & Fair`}</title>
-        <meta name="description" content="Official website of True&Fair" />
+        <meta  name="description" content={`Official website of True&Fair`} />
         <link rel="icon" href="/homeicon/tnf.png" />
       </Head>
       <Component {...pageProps} />
