@@ -1,14 +1,33 @@
 import React from "react";
 import Image from "next/image";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import Link from "next/link";
+import { useRouter } from 'next/router'
 export default function resources() {
+
+  const {asPath} = useRouter()
+  useEffect(() => {
+    
+    const hashes = ["BestPractices", "CaseStudies", "ExpertOpinions","NewsUpdates" ]
+    const whichButton = hashes.indexOf(asPath.split('#')[1])
+   
+    setButtonIndex(whichButton === -1 ? 0 : whichButton)
+  }, [asPath])
+
+
+
+
   const [buttonIndex, setButtonIndex] = useState(0);
   const [loadmore, setLoadmore] = useState("hi");
   const [fullblog, setFullblog] = useState(null);
   const loadclick = () => {
     setFullblog(1);
   };
+
+
+
+
+
   const buttonClick = (x) => {
     setButtonIndex(x);
   };

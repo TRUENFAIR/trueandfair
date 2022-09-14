@@ -234,6 +234,7 @@ export default function About() {
             }}
           >
             <div
+           
               data-aos="fade-left"
               data-aos-once="true"
               className="h-[90px] w-1/2 flex justify-center  items-center font-bah text-2xl text-white bg-slate-800"
@@ -251,7 +252,7 @@ export default function About() {
             <div className="grid lg:grid-cols-2 grid-cols-1 md:gap-x-20 gap-4 md:pt- pt-4">
               <div
                 className="w-full md:block hidden h-[80px] lg:col-span-2  col-span-1 "
-                id="Analytics"
+                id="abttf"
               ></div>
               <div data-aos="fade-up" data-aos-once="true" className="w-auto">
                 <h2 className="text-3xl font-bah  title-font text-black   mb-4">
@@ -286,7 +287,7 @@ export default function About() {
 
               <div
                 className="w-full md:block hidden h-[80px] lg:col-span-2  col-span-1 "
-                id="Consulting"
+                id="Philosophy"
               ></div>
               <div className="w-auto h-48 lg:h-auto relative">
                 <Image
@@ -436,7 +437,7 @@ export default function About() {
         </section>
         <div
                 className="w-full md:block hidden h-[80px] lg:col-span-2  col-span-1 "
-                id="Consulting"
+                id="meettheteam"
               ></div>
         <section className="bg-lightgray mt-1">
         <p className="text-3xl font-bah  title-font text-black text-center  border  mb-2">Meet The Team</p>

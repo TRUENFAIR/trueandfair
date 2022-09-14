@@ -95,7 +95,7 @@ function Audoc() {
           <div className="grid lg:grid-cols-2 grid-cols-1 md:gap-x-20 gap-4 md:pt- pt-4">
             <div
               className="w-full md:block hidden h-[80px] lg:col-span-2  col-span-1 "
-              id="Analytics"
+              id="ProductOverview"
             ></div>
             <div data-aos="fade-up" data-aos-once="true" className="w-auto">
               <h2 className="text-3xl font-bah  title-font text-black   mb-4">
@@ -139,7 +139,7 @@ function Audoc() {
 
             <div
               className="w-full md:block hidden h-[80px] lg:col-span-2  col-span-1 "
-              id="Consulting"
+              id="UseCases"
             ></div>
             <div
               data-aos="fade-up"
@@ -182,7 +182,7 @@ function Audoc() {
             </div>
             <div
               className="w-full md:block hidden  h-[80px] lg:col-span-2  col-span-1 "
-              id="Mobility"
+              id="Advantages"
             ></div>
             <div data-aos="fade-up" data-aos-once="true" className="w-auto">
               <h2 className="text-3xl font-bah  title-font text-black   mb-4">
@@ -225,7 +225,7 @@ function Audoc() {
 
             <div
               className="w-full md:block hidden  h-[80px] lg:col-span-2  col-span-1 "
-              id="Outsourcing"
+              id="Technology"
             ></div>
 
             <div

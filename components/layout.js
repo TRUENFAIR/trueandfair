@@ -28,10 +28,10 @@ export default function Layout({ children }) {
       name: "About",
       path: "/about",
       sub: [
-        { name: "About T&F", path: "/about#WhoWe-Are" },
-        { name: " Philosophy", path: "/about#Core-values" },
-        { name: " Leadership", path: "/about#MeetOur-Team" },
-        { name: "Advisors", path: "/about#Contact" },
+        { name: "About T&F", path: "/about#abttf" },
+        { name: " Philosophy", path: "/about#Philosophy" },
+        { name: " Leadership", path: "/about#meettheteam" },
+        { name: "Advisors", path: "/about#meettheteam" },
       ],
     },
 
@@ -39,11 +39,11 @@ export default function Layout({ children }) {
       name: "Services",
       path: "/services",
       sub: [
-        { name: "Auditing Firms ", path: "" },
+        { name: "Auditing Firms ", path: "/services#AuditingFirms" },
         
 
-        { name: "Corporations", path: "" },
-        { name: " Regulators", path: "" },
+        { name: "Corporations", path: "/services#Corporations" },
+        { name: " Regulators", path: "/services#Regulators" },
       ],
     },
     {
@@ -51,21 +51,21 @@ export default function Layout({ children }) {
       path: "/audoc",
 
       sub: [
-        { name: "Product Overview", path: "" },
-        { name: "Use Cases", path: "" },
-        { name: "Advantages", path: "" },
+        { name: "Product Overview", path: "/audoc#ProductOverview" },
+        { name: "Use Cases", path: "/audoc#UseCases" },
+        { name: "Advantages", path: "/audoc#Advantages" },
 
-        { name: "Technology ", path: "" },
+        { name: "Technology ", path: "/audoc#Technology" },
       ],
     },
     {
       name: " Library",
       path: "/library",
       sub: [
-        { name: "Ebooks", path: "" },
-        { name: " Videos", path: "" },
+        { name: "Ebooks", path: "/library#Ebooks" },
+        { name: " Videos", path: "/library#videos" },
 
-        { name: " Certifications", path: "" },
+        { name: " Certifications", path: "/library#Certifications" },
       ],
     },
 
@@ -73,11 +73,11 @@ export default function Layout({ children }) {
       name: "Resources",
       path: "/resources",
       sub: [
-        { name: "Best Practices", path: "" },
-        { name: "Case Studies", path: "" },
+        { name: "Best Practices", path: "/resources#BestPractices" },
+        { name: "Case Studies", path: "/resources#CaseStudies" },
 
-        { name: "Expert Opinions", path: "" },
-        { name: "News Updates", path: "" },
+        { name: "Expert Opinions", path: "/resources#ExpertOpinions" },
+        { name: "News Updates", path: "/resources#NewsUpdates" },
       ],
     },
 

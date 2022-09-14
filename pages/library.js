@@ -7,6 +7,7 @@ import Link from "next/link";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { useRouter } from 'next/router'
 
 export default function library() {
   const [videoss, setVideoss] = useState(null);
@@ -15,6 +16,16 @@ export default function library() {
   const loadclick = () => {
     setFullblog(1);
   };
+
+  const {asPath} = useRouter()
+  useEffect(() => {
+    
+    const hashes = ["Ebooks", "videos", "Certifications", ]
+    const whichButton = hashes.indexOf(asPath.split('#')[1])
+   
+    setButtonIndex(whichButton === -1 ? 0 : whichButton)
+  }, [asPath])
+
   const [buttonIndex, setButtonIndex] = useState(0);
   const buttonClick = (x) => {
     setButtonIndex(x);
@@ -469,13 +480,7 @@ export default function library() {
                               blanditiis possimus fugit doloribus, numquam,
                               maxime ratione!
                             </p>
-                            <div className="flex justify-center">
-                              <Link href="">
-                                <button className="mt-8 font-bah  bg-white border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
-                                  WATCH MORE
-                                </button>
-                              </Link>
-                            </div>
+                          
                           </div>
                         </div>
                       </div>
@@ -596,13 +601,7 @@ export default function library() {
                               blanditiis possimus fugit doloribus, numquam,
                               maxime ratione!
                             </p>
-                            <div className="flex justify-center">
-                              <Link href="">
-                                <button className="mt-8 font-bah  bg-white border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
-                                  WATCH MORE
-                                </button>
-                              </Link>
-                            </div>
+                            
                           </div>
                         </div>
                       </div>
