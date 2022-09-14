@@ -272,19 +272,54 @@ export default function Libraryslide() {
                         href="/"
                         aria-label="View Item"
                       >
-                        <div className="relative rounded shadow-lg  hover:shadow-2xl">
-                          <img
+                        <div className="relative rounded">
+                          {/* <img
                             className="object-cover w-full h-56 md:h-64 xl:h-80"
                             src="/library/videos1.jpg"
                             alt=""
-                          />
-                          <div className="absolute top-[40%] left-[40%] animate-pulse duration-100 ">
+                          /> */}
+                           <img
+                        src="https://images.pexels.com/photos/2408666/pexels-photo-2408666.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
+                        className="object-cover w-full h-64"
+                        alt=""
+                      />
+                          <div className="absolute top-[20%] left-[40%] animate-pulse duration-100 ">
                             <FaPlay color="white" size={80} />
                           </div>
-                          <div className="absolute inset-x-0 bottom-0 px-6 py-4 bg-black bg-opacity-75">
-                            <p className="text-sm font-medium font-bah tracking-wide text-white">
-                              Sed ut perspiciatis unde omnis iste natus error
+                          <div className="p-2  border-t-0">
+                            <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
+                              <a
+                                href="/"
+                                className="transition-colors duration-200 text-blue-gray-900 hover:text-deep-purple-accent-700"
+                                aria-label="Category"
+                                title="traveling"
+                              >
+                                {/* {name} */}
+                              </a>
                             </p>
+                            <a
+                              href="/"
+                              aria-label="Category"
+                              title="Visit the East"
+                              className="inline-block mb-3 font-bah text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700"
+                            >
+                              Title
+                            </a>
+                            <p className="mb-2 text-black font-bah">
+                              Lorem ipsum dolor sit amet, consectetur
+                              adipisicing elit. Dignissimos a eveniet sequi
+                              similique expedita id obcaecati velit suscipit
+                              consequuntur excepturi repellendus iste illo
+                              blanditiis possimus fugit doloribus, numquam,
+                              maxime ratione!
+                            </p>
+                            <div className="flex justify-center">
+                              <Link href="">
+                                <button className="mt-8 font-bah  bg-white border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
+                                WATCH MORE
+                                </button>
+                              </Link>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -292,13 +327,7 @@ export default function Libraryslide() {
                   );
                 })}
               </div>
-              <div className="flex justify-center">
-            <Link href="/library">
-              <button className="mt-8 font-bah  bg-white border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
-                WATCH MORE
-              </button>
-            </Link>
-            </div>
+             
             </SwiperSlide>
           </Swiper>
         </div>

@@ -320,15 +320,16 @@ export default function Layout({ children }) {
             </p>
             <div className="lg:grid-cols-2 flex justify-center gap-2 lg:inline-grid  ">
               <a
-                className="hover:scale-105 transition-all"
+                className="hover:scale-105  transition-all"
                 href=""
+                
                 target="_blank"
                 rel="noreferrer"
               >
                 <svg
-                  className="w-8 h-8 facebook"
-                  width="100"
-                  height="100"
+                  className="w-10 h-10 facebook"
+                  width="200"
+                  height="200"
                   viewBox="0 0 187 187"
                 >
                   <rect
@@ -351,7 +352,7 @@ export default function Layout({ children }) {
                 rel="noreferrer"
               >
                 <svg
-                  className="w-8 h-8 twitter"
+                  className="w-10 h-10 twitter"
                   width="100"
                   height="100"
                   viewBox="0 0 384 384"
@@ -376,7 +377,7 @@ export default function Layout({ children }) {
                 rel="noreferrer"
               >
                 <svg
-                  className="w-8 h-8 linkedin"
+                  className="w-10 h-10 linkedin"
                   width="100"
                   height="100"
                   viewBox="0 0 201 201"
@@ -406,7 +407,7 @@ export default function Layout({ children }) {
                 rel="noreferrer"
               >
                 <svg
-                  className="w-8 h-8 youtube"
+                  className="w-10 h-10 youtube"
                   width="100"
                   height="100"
                   viewBox="0 0 5067 5067"

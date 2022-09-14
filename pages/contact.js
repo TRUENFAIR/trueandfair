@@ -221,23 +221,6 @@ export default function Contact() {
                         onChange={changeEmail}
                       />
                     </label>
-
-                    <label className="block">
-                      <span className="text-black font-bah">
-                        How did you hear about us?
-                      </span>
-                      <select
-                        onChange={changeInterest}
-                        className=" block w-full font-bah mt-1 rounded-sm border-zinc-200 focus:border-green-700 focus:ring focus:ring-blue focus:ring-opacity-50"
-                      >
-                        <option className="hidden"></option>
-                        <option>Search Engine(Google,yahoo,etc)</option>
-                        <option>Recommended by friend or Colleague</option>
-                        <option>Social media</option>
-                        <option>Other</option>
-                      </select>
-                    </label>
-
                     <label className="block">
                       <span className="text-black font-bah">Phone</span>
                       <input
@@ -258,6 +241,25 @@ export default function Contact() {
                         onChange={changeLocation}
                       />
                     </label>
+                   
+
+                    <label className="block">
+                      <span className="text-black font-bah">
+                        How did you hear about us?
+                      </span>
+                      <select
+                        onChange={changeInterest}
+                        className=" block w-full font-bah mt-1 rounded-sm border-zinc-200 focus:border-green-700 focus:ring focus:ring-blue focus:ring-opacity-50"
+                      >
+                        <option className="hidden"></option>
+                        <option>Search Engine(Google,yahoo,etc)</option>
+                        <option>Recommended by friend or Colleague</option>
+                        <option>Social media</option>
+                        <option>Other</option>
+                      </select>
+                    </label>
+                  
+                    
                   </div>
                   <label className="block mt-6">
                     <span className="text-black font-bah">Message</span>

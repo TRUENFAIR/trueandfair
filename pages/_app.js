@@ -12,24 +12,20 @@ function MyApp({ Component, pageProps }) {
   const [soicalmedia, setSocialmedia] = useState(false);
   const [homeShown, setHomeShown] = useState(false);
   const [audocshown, setAudocshown] = useState(false);
-  
+
   useEffect(() => {
     let timeId = null;
 
     if (route.pathname === "/" && !homeShown) {
       timeId = setTimeout(() => setSocialmedia(true), 8000);
       setHomeShown(true);
-    }
-    else if (route.pathname === "/audoc" && !audocshown){
+    } else if (route.pathname === "/audoc" && !audocshown) {
       timeId = setTimeout(() => setSocialmedia(true), 8000);
       setAudocshown(true);
-    }
-    else{
+    } else {
       setSocialmedia(false);
     }
-    
 
-    
     return () => {
       if (timeId) {
         clearTimeout(timeId);
