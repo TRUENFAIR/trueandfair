@@ -429,7 +429,7 @@ export default function library() {
                   return (
                     <div key={index} className="">
                       <div
-                        onClick={() => videoclick(1)}
+                       
                         href="/"
                         aria-label="View Item"
                       >
@@ -440,7 +440,7 @@ export default function library() {
                             alt=""
                           />
                           <div className="absolute top-[20%] left-[40%] animate-pulse duration-100 ">
-                            <FaPlay color="white" size={80} />
+                            <FaPlay  onClick={() => videoclick(1)} color="white" size={80} />
                           </div>
                           <div className="p-2  border-t-0">
                             <p className="mb-3 text-xs font-semibold tracking-wide uppercase">

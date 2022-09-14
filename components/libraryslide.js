@@ -268,11 +268,11 @@ export default function Libraryslide() {
                   return (
                     <div key={index} className="">
                       <div
-                        onClick={() => videoclick(1)}
+                       
                         href="/"
                         aria-label="View Item"
                       >
-                        <div className="relative rounded">
+                        <div   className="relative rounded">
                           {/* <img
                             className="object-cover w-full h-56 md:h-64 xl:h-80"
                             src="/library/videos1.jpg"
@@ -283,13 +283,13 @@ export default function Libraryslide() {
                         className="object-cover w-full h-64"
                         alt=""
                       />
-                          <div className="absolute top-[20%] left-[40%] animate-pulse duration-100 ">
+                          <div onClick={() => videoclick(1)} className="absolute top-[20%] left-[40%] animate-pulse duration-100 ">
                             <FaPlay color="white" size={80} />
                           </div>
                           <div className="p-2  border-t-0">
                             <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
                               <a
-                                href="/"
+                                href=""
                                 className="transition-colors duration-200 text-blue-gray-900 hover:text-deep-purple-accent-700"
                                 aria-label="Category"
                                 title="traveling"
@@ -314,7 +314,7 @@ export default function Libraryslide() {
                               maxime ratione!
                             </p>
                             <div className="flex justify-center">
-                              <Link href="">
+                              <Link href="/library">
                                 <button className="mt-8 font-bah  bg-white border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
                                 WATCH MORE
                                 </button>
