@@ -7,7 +7,7 @@ import { useRouter } from "next/router";
 import Fixediv from "../components/fixediv";
 
 
-function Audoc() {
+function Adat() {
   const route = useRouter();
   
   
@@ -84,7 +84,7 @@ function Audoc() {
             className="h-[90px]  w-[80%] md:w-1/2 flex justify-center  items-center font-bah text-2xl text-white bg-slate-800"
           >
             <p className=" text-3xl font-bah  title-font text-white">
-              AUDOC®️-Audit Documentation Tool
+              ADAT®️(Audit Documentation and  Archival Tool)
             </p>
           </div>
         </div>
@@ -349,4 +349,4 @@ function Audoc() {
     </>
   );
 }
-export default Audoc;
+export default Adat;

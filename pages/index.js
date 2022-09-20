@@ -51,12 +51,12 @@ export default function Home() {
     {
       id: 1,
       title: "Templatized Audits",
-      text: "Predefined folders and templates for each auditor to choose from, based on the audit engagement model and sector",
+      text: "Predefined folders and customisable templates for each auditor to choose from, based on the audit engagement model and sector",
     },
     {
       id: 2,
       title: "Secure Environment",
-      text: "Controlled work space to upload and work on all the audit files without conflicts, and establish required documentation",
+      text: "Controlled and secure work space to upload and work on all the audit files without conflicts, and establish required documentation along with access to clients to upload their information & track the documents",
     },
     {
       id: 3,
@@ -87,31 +87,6 @@ export default function Home() {
       >
         <div className="md:container md:mx-auto flex h-[500px] md:h-[700px] lg:h-full md:justify-start items-center">
           <div className="text-white md:w-[70%] w-[100%]  h-[200px] md:h-[200px] leading-none text-2xl md:text-5xl font-bah">
-            {/* <TypeAnimation
-              className="text-white font-bah "
-              sequence={[
-                "Improve audit quality and productivity through our robust standards and best practices", // Types 'One'
-                1000,
-                "",
-                ,
-                "Explore technical resources, case studies, connect with experts and get auditing insights",
-                1000,
-                "Boost your practice with AUDOC, a comprehensive documentation tool for auditing firms",
-                1000,
-                "Connect, learn, collaborate with the Auditing ecosystem and deliver world-class services", // Deletes 'One' and types 'Two'
-                1000, // Waits 2s
-                // Types 'Three' without deleting 'Two'
-                () => {
-                  console.log("Done typing!"); // Place optional callbacks anywhere in the array
-                },
-              ]}
-              wrapper="p"
-              speed={70}
-              
-              cursor={true}
-              repeat={Infinity}
-              style={{ fontSize: "2em" }}
-            /> */}
             <Typewriter
               className="text-white text-2xl"
               options={{
@@ -122,7 +97,7 @@ export default function Home() {
                 ],
                 autoStart: true,
                 loop: true,
-                delay: 25,
+                delay: 60,
 
                 deleteSpeed: 0,
                 pauseFor: 2000,
@@ -134,23 +109,23 @@ export default function Home() {
 
       <section className=" body-font bg-lightgray pt-14 pb-4">
         <div className="md:container px-5 md:mx-auto">
-          <div className="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+          <div className="xl:w-full lg:w-full  w-full mx-auto text-center">
             <p className="text-3xl font-bah  title-font text-black   mb-4">
               True & Fair Professionals Network
             </p>
-            <p className="leading-loose   font-bah text-black ">
-              We are a group of professionals with several decades of Auditing
-              and Accounting experience across multiple sectors. True & Fair is
-              a digital platform built to connect stakeholders of the financial
-              reporting ecosystem and enable knowledge-sharing and
-              collaboration, strengthening the overall ecosystem. A majority of
-              the accounting firms in India are highly diverse, with fragmented
-              professional practices. True & Fair aims to bridge this gap by
-              providing a common platform for quality, best practices, ethical
-              standards, technical guidance, documentation tools and access to
-              audit specialists, so that the CA firms can network and
-              collaborate for their collective success and growth, delivering
-              world class audit services.
+            <p className="leading-loose   text-justify  font-bah text-black ">
+              We are a group of professionals with several decades of Auditing,
+              Advisory and Accounting experience across multiple sectors. True
+              and & Fair aims to enhance the audit quality of CA firms by
+              providing is a digital platform containing built to professional
+              standards, audit best practices and guidances, an audit
+              documentation and archival tool, collaboration platform with the
+              audit clients of audit firm for sharing information on a secure
+              basis and also for the auditors to carry out the analysis of the
+              audit client information in a secure environment. connect
+              stakeholders of the financial reporting ecosystem and enable
+              knowledge-sharing and collaboration, strengthening the overall
+              financial ecosystem.
             </p>
             <span className="inline-block h-1 w-10 rounded bg-blue mt-8 mb-6"></span>
           </div>
@@ -170,14 +145,14 @@ export default function Home() {
             <div className="flex gap-1 mt-4 text-black flex-row">
               <span className="w-fit ">✔️</span>{" "}
               <p className="prose  text-black font-bah ">
-                {`Work with small accounting firms and provide them access to quality standards, best practices, tools and technical guidance.
+                {`Work with small auditing and CA firms and provide them access to quality & ethical standards, best practices, tools and technical guidance and access to audit specialists.
               `}
               </p>
             </div>
             <div className="flex mt-4 gap-1 flex-row">
               <span className="w-fit">✔️</span>{" "}
               <p className="prose text-black font-bah ">
-                {`Provide guidance to corporations on Accounting & Financial Reporting, ESG, Risk Management practices and Board Governance.
+                {`Provide guidance to corporations on Accounting & Financial Reporting & Advisory, ESG, Risk Management practices and Board Governance.
               `}
               </p>
             </div>
@@ -195,8 +170,22 @@ export default function Home() {
               `}
               </p>
             </div>
+            <div className="flex mt-4 gap-1 flex-row">
+              <span className="w-fit ">✔️</span>{" "}
+              <p className="prose text-black font-bah ">
+                {`Enhanced application of principles specified in the professional standards when performing audits
+              `}
+              </p>
+            </div>
+            <div className="flex mt-4 gap-1 flex-row">
+              <span className="w-fit ">✔️</span>{" "}
+              <p className="prose text-black font-bah ">
+                {`Comprehensive content in the ADAT with library of risks and possible audit responses, audit programmes and checklists
+              `}
+              </p>
+            </div>
 
-            <Link href="/about">
+            <Link href="/about#focusarea">
               <button className="m-8 font-bah  bg-yellow border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
                 READ MORE
               </button>
@@ -321,11 +310,11 @@ export default function Home() {
             <div className="lg:w-full w-full lg:mr-9  mt-6 lg:mt-0 ">
               <div className="w-full flex gap-4 lg:justify-center ">
                 <h1 className="w-full text-center  text-3xl font-bah  title-font text-white   mb-4 ">
-                  AUDOC®️
+                  ADAT®️
                 </h1>
               </div>
               <p className="text-center text-xl font-bah text-white">
-                Audit Documentation Tool
+                Audit Documentation and Archival Tool
               </p>
             </div>
             <div className="mt-10">
@@ -348,7 +337,7 @@ export default function Home() {
               </ul>
             </div>
             <div className="flex justify-center">
-              <Link href="/audoc">
+              <Link href="/adat">
                 <button className="mt-8 font-bah   border-2 border-white text-white font-bold text-xs hover:text-blue hover:bg-white p-3 rounded-lg transition-all">
                   READ MORE
                 </button>

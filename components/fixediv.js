@@ -19,9 +19,9 @@ export default function Fixediv({ clicked, contact }) {
         <div className="flex flex-col   bg-blue    shadow mt-4 w-[250px]  ">
           <div className="flex flex-row  h-fit text-white">
             <div className="flex-1 my-1   w-fit ">
-              <p className="text-center font-bah">AUDOC®️</p>
+              <p className="text-center font-bah">ADAT®️</p>
               <p className="text-center text-sm font-bah">
-                Audit Documentation Tool
+              Audit Documentation and Archival Tool
               </p>
             </div>
             <div
@@ -48,10 +48,3 @@ export default function Fixediv({ clicked, contact }) {
     </>
   );
 }
-{/* <div className="flex justify-center">
-<Link href="/audoc">
-  <button className="mt-8 font-bah   border-2 border-white text-white font-bold text-xs hover:text-blue hover:bg-white p-3 rounded-lg transition-all">
-    READ MORE
-  </button>
-</Link>
-</div> */}

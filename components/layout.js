@@ -30,8 +30,8 @@ export default function Layout({ children }) {
       sub: [
         { name: "About T&F", path: "/about#abttf" },
         { name: " Philosophy", path: "/about#Philosophy" },
-        { name: " Leadership", path: "/about#meettheteam" },
-        { name: "Advisors", path: "/about#meettheteam" },
+        { name: " Focus Areas", path: "/about#focusarea" },
+        { name: "Meet the team", path: "/about#meettheteam" },
       ],
     },
 
@@ -47,15 +47,15 @@ export default function Layout({ children }) {
       ],
     },
     {
-      name: "AUDOC®️",
-      path: "/audoc",
+      name: "ADAT®️",
+      path: "/adat",
 
       sub: [
-        { name: "Product Overview", path: "/audoc#ProductOverview" },
-        { name: "Use Cases", path: "/audoc#UseCases" },
-        { name: "Advantages", path: "/audoc#Advantages" },
+        { name: "Product Overview", path: "/adat#ProductOverview" },
+        { name: "Use Cases", path: "/adat#UseCases" },
+        { name: "Advantages", path: "/adat#Advantages" },
 
-        { name: "Technology ", path: "/audoc#Technology" },
+        { name: "Technology ", path: "/adat#Technology" },
       ],
     },
     {
@@ -86,51 +86,7 @@ export default function Layout({ children }) {
       path: "/contact",
     },
   ];
-  const menu2 = [
-    {
-      name2: "Home",
-      path2: "/",
-    },
-
-    {
-      name2: "About",
-      path2: "/about",
-    },
-    {
-      name2: "Knowledge As A Service",
-      path2: "/solutions/knowledge",
-    },
-    {
-      name2: "Talent As A Service",
-      path2: "/solutions/talent",
-    },
-    {
-      name2: "IT Services",
-      path2: "/solutions/itservices",
-    },
-    {
-      name2: "Capabilities",
-      path2: "/capabilities",
-    },
-
-    {
-      name2: "Education",
-      path2: "/education",
-    },
-    {
-      name2: "Careers",
-      path2: "/career",
-    },
-    {
-      name2: "Blogs",
-      path2: "/blog/blogs",
-    },
-    {
-      name2: "Contact Us",
-      path2: "/contact",
-    },
-  ];
-
+  
   return (
     <>
       <Head>
@@ -148,25 +104,17 @@ export default function Layout({ children }) {
             <Link href="/">
               <a className="flex  justify-between lg:justify-start items-center ">
                 <div className="w-full h-[80px]">
-                  <div className="hidden  relative w-[250px] mt-2 h-16 md:flex items-center flex-col">
-                    <Image
-                      src="/homeicon/TNFmain22.png"
-                      layout="fill"
+                  <div className="  relative w-fit  h-fit md:flex items-center flex-col">
+                    <img
+                      src="/homeicon/newlogohead.png"
+                      
                       alt="logo"
+                      className="md:w-[350px]  w-[320px] h-[75px] md:h-[75px]"
                       objectFit="cover"
                     />
                   </div>
                 </div>
-                <div className="block relative w-[250px] h-16  md:hidden">
-                  <Image
-                    src="/homeicon/TNFmain22.png"
-                   
-                    layout="fill"
-                    alt="logo"
-                    objectFit="cover"
-                    
-                  />
-                </div>
+                
               </a>
             </Link>
             <div className="lg:pl-2 lg:flex  text-center  py-3 flex-col justify-center ">
@@ -246,12 +194,12 @@ export default function Layout({ children }) {
             <Link href="/">
               <a className="flex flex-col justify-start items-center pl-6 lg:pl-0">
                 <div className=" bg-white">
-                  <Image
-                    src="/homeicon/TNF_Main.png"
+                  <img
+                    src="/homeicon/newlogohome.png"
                     alt="logo"
-                    width={140}
-                    height={140}
-                    objectFit="cover"
+                    className="w-[145px] object-fill h-[145px]"
+                   
+                    objectFit=""
                   />
                 </div>
                 <div className="pl-2 flex flex-col justify-center">
@@ -296,8 +244,8 @@ export default function Layout({ children }) {
             <Link href="/services">
               <a>Services</a>
             </Link>
-            <Link href="/audoc">
-              <a>Audoc</a>
+            <Link href="/adat">
+              <a>Adat</a>
             </Link>
           </div>
 

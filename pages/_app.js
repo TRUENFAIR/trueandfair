@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }) {
     if (route.pathname === "/" && !homeShown) {
       timeId = setTimeout(() => setSocialmedia(true), 8000);
       setHomeShown(true);
-    } else if (route.pathname === "/audoc" && !audocshown) {
+    } else if (route.pathname === "/adat" && !audocshown) {
       timeId = setTimeout(() => setSocialmedia(true), 8000);
       setAudocshown(true);
     } else {
