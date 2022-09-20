@@ -268,7 +268,7 @@ export default function About() {
               information in a secure environment. A majority of the audit firms
               are highly diverse, with fragmented professional practices. True
               and Fair aims to bridge this gap by providing a common platform
-              for quality , best practices, ethical standards, technical
+              for quality, best practices, ethical standards, technical
               guidance, documentation tools and access to audit specialists, so
               that the CA firms can network and collaborate for their collective
               success and growth, delivering world class audit services.
