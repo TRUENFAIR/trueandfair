@@ -104,12 +104,12 @@ export default function Layout({ children }) {
             <Link href="/">
               <a className="flex  justify-between lg:justify-start items-center ">
                 <div className="w-full h-[80px]">
-                  <div className="  relative w-fit  h-fit md:flex items-center flex-col">
+                  <div className="  relative mt-2 w-fit  h-fit md:flex items-center flex-col">
                     <img
                       src="/homeicon/newlogohead.png"
                       
                       alt="logo"
-                      className="md:w-[350px]  w-[320px] h-[75px] md:h-[75px]"
+                      className="md:w-[300px] lg:object-cover  w-[320px] h-[75px] md:h-[62px]"
                       objectFit="cover"
                     />
                   </div>
@@ -212,11 +212,11 @@ export default function Layout({ children }) {
           </div>
 
           <div className="text-sm p-4 lg:p-0 pl-6 text-black font-bah text-left">
-            <p className="font-semibold">INDIA - HEAD OFFICE</p>
-            <p>address 1,</p>
-            <p>address 2,</p>
-            <p>address 3,</p>
-            <p>INDIA</p>
+            <p className="font-semibold">Office</p>
+            <p>Akshaya Redstone,</p>
+            <p>Whitefield Hosakote Main Road,</p>
+            <p>Kannamangala Post,</p>
+            <p>Bangalore 560067</p>
           </div>
           {/* <div className="text-sm p-4 lg:p-0 pl-6  text-left">
             <p className="font-semibold">SFJ Computers Consulting</p>
@@ -260,6 +260,16 @@ export default function Layout({ children }) {
             <Link href="/contact">
               <a>Contact </a>
             </Link>
+          </div>
+          <div className="text-sm flex flex-col font-bah text-black lg:p-0  text-center">
+            <Link href="/privacy">
+              <a>Privacy Policy</a>
+            </Link>
+            <Link href="/terms">
+              <a>Terms and Conditions</a>
+            </Link>
+
+            
           </div>
 
           <div className="col-span-2 p-4 lg:p-0 pl-6 mr-6 text-black ">

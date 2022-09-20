@@ -51,17 +51,17 @@ export default function Home() {
     {
       id: 1,
       title: "Templatized Audits",
-      text: "Predefined folders and customisable templates for each auditor to choose from, based on the audit engagement model and sector",
+      text: "Predefined folders and customisable templates for each auditor to choose from, based on the audit engagement model and sector.",
     },
     {
       id: 2,
       title: "Secure Environment",
-      text: "Controlled and secure work space to upload and work on all the audit files without conflicts, and establish required documentation along with access to clients to upload their information & track the documents",
+      text: "Controlled and secure workspace to collaborate with clients, upload and work on audit files without conflicts, track and establish required documentation.",
     },
     {
       id: 3,
       title: "Review Mechanisms",
-      text: "Workflows for approvals, reviews with comments and version control, and in-tool communication channels for all ",
+      text: "Workflows for approvals, reviews with comments and version control, and in-tool communication channels for all. ",
     },
     {
       id: 4,
@@ -114,18 +114,13 @@ export default function Home() {
               True & Fair Professionals Network
             </p>
             <p className="leading-loose   text-justify  font-bah text-black ">
-              We are a group of professionals with several decades of Auditing,
-              Advisory and Accounting experience across multiple sectors. True
-              and & Fair aims to enhance the audit quality of CA firms by
-              providing is a digital platform containing built to professional
-              standards, audit best practices and guidances, an audit
-              documentation and archival tool, collaboration platform with the
-              audit clients of audit firm for sharing information on a secure
-              basis and also for the auditors to carry out the analysis of the
-              audit client information in a secure environment. connect
-              stakeholders of the financial reporting ecosystem and enable
-              knowledge-sharing and collaboration, strengthening the overall
-              financial ecosystem.
+              True and Fair aims to enhance the audit quality of CA firms by
+              providing is a digital platform containing professional standards,
+              audit best practices and guidances, an audit documentation and
+              archival tool, collaboration platform with the audit clients of
+              audit firm for sharing information on a secure basis and also for
+              the auditors to carry out the analysis of the audit client
+              information in a secure environment
             </p>
             <span className="inline-block h-1 w-10 rounded bg-blue mt-8 mb-6"></span>
           </div>
@@ -145,7 +140,7 @@ export default function Home() {
             <div className="flex gap-1 mt-4 text-black flex-row">
               <span className="w-fit ">✔️</span>{" "}
               <p className="prose  text-black font-bah ">
-                {`Work with small auditing and CA firms and provide them access to quality & ethical standards, best practices, tools and technical guidance and access to audit specialists.
+                {`Work with auditing and CA firms and provide them access to quality & ethical standards, best practices, tools and technical guidance and access to audit specialists.
               `}
               </p>
             </div>

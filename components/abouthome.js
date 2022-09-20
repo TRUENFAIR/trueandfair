@@ -276,7 +276,7 @@ export default function abouthome() {
             </SwiperSlide>
           </Swiper>
           <div className="flex justify-center">
-            <Link href="/about">
+            <Link href="/about#meettheteam">
               <button className="mt-8 font-bah   border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
                 READ MORE
               </button>

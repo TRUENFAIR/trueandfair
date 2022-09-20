@@ -259,18 +259,14 @@ export default function About() {
                   About T&F
                 </h2>
                 <p className="prose font-bah pt-8">
-                  We are a group of professionals with several decades of
-                  Auditing, Advisory and Accounting experience across multiple
-                  sectors. True and & Fair aims to enhance the audit quality of
-                  CA firms by providing is a digital platform containing built
-                  to professional standards, audit best practices and guidances,
-                  an audit documentation and archival tool, collaboration
-                  platform with the audit clients of audit firm for sharing
-                  information on a secure basis and also for the auditors to
-                  carry out the analysis of the audit client information in a
-                  secure environment. connect stakeholders of the financial
-                  reporting ecosystem and enable knowledge-sharing and
-                  collaboration, strengthening the overall financial ecosystem.
+                  True and Fair aims to enhance the audit quality of CA firms by
+                  providing is a digital platform containing professional
+                  standards, audit best practices and guidances, an audit
+                  documentation and archival tool, collaboration platform with
+                  the audit clients of audit firm for sharing information on a
+                  secure basis and also for the auditors to carry out the
+                  analysis of the audit client information in a secure
+                  environment
                 </p>
               </div>
 
@@ -305,23 +301,31 @@ export default function About() {
                   Philosophy
                 </h2>
                 <p className="prose font-bah pt-8">
-                 <span className="font-bold"> Unify a divergent practice -</span> A majority of the audit accounting
-                  firms in India are highly diverse, with fragmented
-                  professional practices. True and &amp; Fair aims to bridge this
-                  gap by providing a common platform for quality , best
-                  practices, ethical standards, technical guidance,
+                  <span className="font-bold">
+                    {" "}
+                    Unify a divergent practice -
+                  </span>{" "}
+                  A majority of the audit firms in India are highly diverse,
+                  with fragmented professional practices. True and Fair aims to
+                  bridge this gap by providing a common platform for quality ,
+                  best practices, ethical standards, technical guidance,
                   documentation tools and access to audit specialists, so that
                   the CA firms can network and collaborate for their collective
                   success and growth, delivering world class audit services.
                 </p>
                 <p className="prose font-bah pt-8">
-                 <span className="font-bold">Increased regulatory scrutiny of audit quality – </span> 
-                 The expectation of joint audits becoming mandatory – If joint audits are made mandatory in India, as
-reported in the media recently, large audit firms and corporates that need joint audits will look out
-for audit firms that can meet quality expectation and carry the necessary expertise to perform large
-audits. The professional standards that will be laid out by True and Fair and the audit guidances that
-are being developed are scalable keeping such scenario in mind. The ADAT is also scalable for large
-audits.
+                  <span className="font-bold">
+                    Increased regulatory scrutiny of audit quality –{" "}
+                  </span>
+                  The expectation of joint audits becoming mandatory – If joint
+                  audits are made mandatory in India, as reported in the media
+                  recently, large audit firms and corporates that need joint
+                  audits will look out for audit firms that can meet quality
+                  expectation and carry the necessary expertise to perform large
+                  audits. The professional standards that will be laid out by
+                  True and Fair and the audit guidances that are being developed
+                  are scalable keeping such scenario in mind. The ADAT is also
+                  scalable for large audits.
                 </p>
               </div>
 
@@ -461,7 +465,7 @@ audits.
               <div className="flex gap-1 mt-4 text-black flex-row">
                 <span className="w-fit ">✔️</span>{" "}
                 <p className="prose  text-black font-bah ">
-                  {`Work with small auditing and CA firms and provide them access to quality & ethical standards, best practices, tools and technical guidance and access to audit specialists.
+                  {`Work with auditing and CA firms and provide them access to quality & ethical standards, best practices, tools and technical guidance and access to audit specialists.
               `}
                 </p>
               </div>
