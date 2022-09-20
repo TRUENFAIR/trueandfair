@@ -31,7 +31,7 @@ export default function Layout({ children }) {
         { name: "About T&F", path: "/about#abttf" },
         { name: " Philosophy", path: "/about#Philosophy" },
         { name: " Focus Areas", path: "/about#focusarea" },
-        { name: "Meet the team", path: "/about#meettheteam" },
+        { name: "Meet the Team", path: "/about#meettheteam" },
       ],
     },
 

@@ -259,14 +259,19 @@ export default function About() {
                   About T&F
                 </h2>
                 <p className="prose font-bah pt-8">
-                  True and Fair aims to enhance the audit quality of CA firms by
-                  providing is a digital platform containing professional
-                  standards, audit best practices and guidances, an audit
-                  documentation and archival tool, collaboration platform with
-                  the audit clients of audit firm for sharing information on a
-                  secure basis and also for the auditors to carry out the
-                  analysis of the audit client information in a secure
-                  environment
+                True and Fair aims to enhance the audit quality of CA firms by
+              providing is a digital platform containing professional standards,
+              audit best practices and guidances, an audit documentation and
+              archival tool, collaboration platform with the audit clients of
+              audit firm for sharing information on a secure basis and also for
+              the auditors to carry out the analysis of the audit client
+              information in a secure environment. A majority of the audit firms
+              are highly diverse, with fragmented professional practices. True
+              and Fair aims to bridge this gap by providing a common platform
+              for quality , best practices, ethical standards, technical
+              guidance, documentation tools and access to audit specialists, so
+              that the CA firms can network and collaborate for their collective
+              success and growth, delivering world class audit services.
                 </p>
               </div>
 
