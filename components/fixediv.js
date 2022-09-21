@@ -20,7 +20,7 @@ export default function Fixediv({ clicked, contact }) {
           <div className="flex flex-row  h-fit text-white">
             <div className="flex-1 my-1   w-fit ">
               <p className="text-center font-bah">ADAT®️</p>
-              <p className="text-center text-sm font-bah">
+              <p className="text-center  text-xs font-bah">
               Audit Documentation and Archival Tool
               </p>
             </div>
@@ -28,7 +28,7 @@ export default function Fixediv({ clicked, contact }) {
               onClick={clicked}
               className="text-white flex flex-col justify-center w-fit  items-center"
             >
-              <p className="text-center flex flex-col mx-3  cursor-pointer font-extrabold">
+              <p className="text-center flex flex-col mx-2  cursor-pointer font-extrabold">
                 x
               </p>
             </div>
