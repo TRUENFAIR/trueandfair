@@ -11,7 +11,7 @@ export default function Testimonials() {
 
   const stuff = [
     {
-      text: "Standard setting by True & Fair will be completely independent from the practice as an auditor since True & Fair will not be in the practice of audit and therefore the standards set by True & Fair will not have the bias of an auditee client",
+      text: "Standard setting by True And Fair will be completely independent from the practice as an auditor since True And Fair will not be in the practice of audit and therefore the standards set by True AndFair will not have the bias of an auditee client",
       name: "",
       position: "",
       company: "",
@@ -19,7 +19,7 @@ export default function Testimonials() {
       id: 1
     },
     {
-      text: "True & Fair will not participate in the operations of the CA Firms. The revenue model of True & Fair will be a fixed fee model and not based on the revenues or profits of the CA Firms.",
+      text: "True And Fair will not participate in the operations of the CA Firms. The revenue model of True And Fair will be a fixed fee model and not based on the revenues or profits of the CA Firms.",
       name: "",
       position: "",
       company: "",
@@ -27,7 +27,7 @@ export default function Testimonials() {
       id: 2
     },
     {
-      text: "True & Fair will bring in international best practices and exceed them where ever possible. ",
+      text: "True And Fair will bring in international best practices and exceed them where ever possible. ",
       name: "",
       position: "",
       company: "",
@@ -45,7 +45,7 @@ export default function Testimonials() {
     },
     {
       
-      text: "Information security and confidentiality is key to the vision envisaged by True & Fair. It will deploy best in class tools in respect of these matters which will also be subject to an independent audit, which report will be shared with all the participating CA Firms.  ",
+      text: "Information security and confidentiality is key to the vision envisaged by True And Fair. It will deploy best in class tools in respect of these matters which will also be subject to an independent audit, which report will be shared with all the participating CA Firms.  ",
       name: "",
       position: "",
       company: "",

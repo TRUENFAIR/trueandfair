@@ -388,7 +388,7 @@ export default function Layout({ children }) {
         </div>
 
         <div className="mx-auto  text-center font-bah  text-sm text-zinc-400 pt-4 lg:pt-0 lg:p-0 p-4 pl-6">
-          <p>True & Fair Professionals Network </p>
+          <p>True And Fair Professionals Network </p>
           <p>
             Copyright © 2022. All Rights Reserved. Designed by Deedbee Social
             Ventures.
