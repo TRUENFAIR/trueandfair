@@ -92,7 +92,7 @@ export default function Contact() {
           <div className="flex flex-col md:flex-row justify-start items-start  rounded pt-8 ">
             <div className="md:w-2/5 w-full">
               <p className="text-2xl font-bah  upper">
-                True And Fair Professionals Network{" "}
+                True and Fair Professionals Network{" "}
               </p>
 
               <div className="text-base pt-8 font-bah text-black">

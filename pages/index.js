@@ -111,7 +111,7 @@ export default function Home() {
         <div className="md:container px-5 md:mx-auto">
           <div className="xl:w-full lg:w-full  w-full mx-auto text-center">
             <p className="text-3xl font-bah  title-font text-black   mb-4">
-              True And Fair Professionals Network
+              True and Fair Professionals Network
             </p>
             <p className="leading-loose   text-justify  font-bah text-black ">
               True and Fair aims to enhance the audit quality of CA firms by
