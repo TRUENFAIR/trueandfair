@@ -28,7 +28,7 @@ export default function Layout({ children }) {
       name: "About",
       path: "/about",
       sub: [
-        { name: "About T&F", path: "/about#abttf" },
+        { name: "About True and Fair", path: "/about#abttf" },
         { name: " Philosophy", path: "/about#Philosophy" },
         { name: " Focus Areas", path: "/about#focusarea" },
         { name: "Meet the Team", path: "/about#meettheteam" },

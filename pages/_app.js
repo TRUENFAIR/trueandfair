@@ -40,7 +40,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <Layout>
       <Head>
-        <title>{`True And Fair`}</title>
+        <title>{`True and Fair`}</title>
         <meta name="description" content={`Official website of True And Fair`} />
         <link rel="icon" href="/homeicon/tnf.png" />
       </Head>

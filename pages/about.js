@@ -256,7 +256,7 @@ export default function About() {
               ></div>
               <div data-aos="fade-up" data-aos-once="true" className="w-auto">
                 <h2 className="text-3xl font-bah  title-font text-black   mb-4">
-                  About T&F
+                  About True and Fair
                 </h2>
                 <p className="prose font-bah pt-8">
                 True and Fair aims to enhance the audit quality of CA firms by
