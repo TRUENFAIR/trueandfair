@@ -29,8 +29,8 @@ export default function Layout({ children }) {
       path: "/about",
       sub: [
         { name: "About True and Fair", path: "/about#abttf" },
-        { name: " Philosophy", path: "/about#Philosophy" },
-        { name: " Focus Areas", path: "/about#focusarea" },
+
+        // { name: " Focus Areas", path: "/about#focusarea" },
         { name: "Meet the Team", path: "/about#meettheteam" },
       ],
     },
@@ -40,7 +40,6 @@ export default function Layout({ children }) {
       path: "/services",
       sub: [
         { name: "Auditing Firms ", path: "/services#AuditingFirms" },
-        
 
         { name: "Corporations", path: "/services#Corporations" },
         { name: " Regulators", path: "/services#Regulators" },
@@ -86,7 +85,7 @@ export default function Layout({ children }) {
       path: "/contact",
     },
   ];
-  
+
   return (
     <>
       <Head>
@@ -107,14 +106,11 @@ export default function Layout({ children }) {
                   <div className=" mt-4 relative  w-fit  h-fit md:flex items-center flex-col">
                     <img
                       src="/homeicon/TNF_H22.png"
-                      
                       alt="logo"
                       className="md:w-[252px] object-contain  w-[252px] h-[50px] md:h-[50px]"
-                     
                     />
                   </div>
                 </div>
-                
               </a>
             </Link>
             <div className="lg:pl-2 lg:flex  text-center  py-3 flex-col justify-center ">
@@ -198,8 +194,6 @@ export default function Layout({ children }) {
                     src="/homeicon/TNF_H1.png"
                     alt="logo"
                     className="w-[145px] object-cover h-[145px]"
-                   
-                
                   />
                 </div>
                 <div className="pl-2 flex flex-col justify-center">
@@ -268,8 +262,6 @@ export default function Layout({ children }) {
             <Link href="/terms">
               <a>Terms and Conditions</a>
             </Link>
-
-            
           </div>
 
           <div className="col-span-2 p-4 lg:p-0 pl-6 mr-6 text-black ">
@@ -280,7 +272,6 @@ export default function Layout({ children }) {
               <a
                 className="hover:scale-105  transition-all"
                 href=""
-                
                 target="_blank"
                 rel="noreferrer"
               >
@@ -393,7 +384,6 @@ export default function Layout({ children }) {
             Copyright © 2022. All Rights Reserved. Designed by Deedbee Social
             Ventures.
           </p>
-          
         </div>
       </footer>
     </>

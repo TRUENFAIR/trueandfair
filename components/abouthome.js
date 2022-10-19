@@ -23,53 +23,45 @@ export default function abouthome() {
 
   const blog = [
     {
-      name: "YOG ON THE MAT",
-      small: "How to get started with Yoga and grow with your practice",
+      name: "Balaji V",
+      small: "Founder and Managing Partner",
       desc: "Remember, you control your breath, don't let your breath control you! 🧘🏻‍♀️- 🤷🏽‍♀️ - ⬇️",
       imgs: "/pause/PAUSE3.png",
     },
     {
-      name: "YOG ON THE MAT",
-      small: "How to get started with Yoga and grow with your practice",
+      name: "Brindasri K",
+      small: "Partner",
       desc: "Don't ever look back, unless it's from a different point of view 🙃 ⬇️",
       imgs: "/pause/PAUSE2.png",
-    },
-    {
-      name: "YOG ON THE MAT",
-      small: "How to get started with Yoga and grow with your practice",
-      desc: "Hips don't lie 🙇🏻‍♀️👇🏼",
-      imgs: "/pause/PAUSE1.png",
-    },
-    {
-      name: "YOG ON THE MAT",
-      small: "How to get started with Yoga and grow with your practice",
-      desc: "Hips don't lie 🙇🏻‍♀️👇🏼",
-      imgs: "/pause/PAUSE1.png",
     },
   ];
   const blog1 = [
     {
-      name: " YOG OFF THE MAT",
-      small:
-        "Taking the 'on the mat' practice and applying it within our every day routine - at work, at home, all over the world",
-      desc: "Sins of lockdown (lockdowns) that I'm sure we've all encountered at some point! 🚫❓",
-      imgs: "/pause/PAUSE1.png",
-    },
-    {
-      name: " YOG OFF THE MAT",
-      small:
-        "Taking the 'on the mat' practice and applying it within our every day routine - at work, at home, all over the world",
-      desc: "Is today looking bleak😑? overwhelming😲 ? crazy🤯? Quick fix - 🤫 ⤵️",
+      name: "Balaji V",
+      small: "Founder and Managing Partner",
+      desc: "Remember, you control your breath, don't let your breath control you! 🧘🏻‍♀️- 🤷🏽‍♀️ - ⬇️",
       imgs: "/pause/PAUSE3.png",
     },
     {
-      name: " YOG OFF THE MAT",
-      small:
-        "Taking the 'on the mat' practice and applying it within our every day routine - at work, at home, all over the world",
-      desc: "Stay true to your roots👇🏼",
+      name: "Brindasri K",
+      small: "Partner",
+      desc: "Don't ever look back, unless it's from a different point of view 🙃 ⬇️",
+      imgs: "/pause/PAUSE2.png",
+    },
+    {
+      name: "Balaji V",
+      small: "Founder and Managing Partner",
+      desc: "Remember, you control your breath, don't let your breath control you! 🧘🏻‍♀️- 🤷🏽‍♀️ - ⬇️",
+      imgs: "/pause/PAUSE3.png",
+    },
+    {
+      name: "Brindasri K",
+      small: "Partner",
+      desc: "Don't ever look back, unless it's from a different point of view 🙃 ⬇️",
       imgs: "/pause/PAUSE2.png",
     },
   ];
+
   return (
     <>
       <section></section>
@@ -167,50 +159,32 @@ export default function abouthome() {
                   Meet The Team
                 </p>
               </div>
-              <div className="grid gap-10  sm:grid-cols-2 lg:grid-cols-4 ">
+              <div className="grid gap-10  sm:grid-cols-2 lg:grid-cols-2 ">
                 {blog.map(({ name, imgs, desc, small }, index) => {
                   return (
-                    <div key={index}>
-                      <div className="relative pb-56 mb-4 rounded shadow lg:pb-64">
-                        <img
-                          className="absolute object-cover w-full h-full rounded"
-                          src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
-                          alt="Person"
+                    <div
+                      key={index}
+                      data-aos="fade-up"
+                      data-aos-once="true"
+                      className="flex flex-col items-center p-5"
+                    >
+                      <div className="relative lg:w-[300px] lg:h-[300px]  md:w-[300px] md:h-[300px] w-[200px]  h-[200px]  rounded-full">
+                        <Image
+                          className="rounded-full"
+                          alt="profle"
+                          src={"/defult1.jpeg"}
+                          objectFit="cover"
+                          layout="fill"
                         />
                       </div>
-                      <div className="flex flex-col sm:text-center">
-                        <p className="text-lg font-bah font-bold">
-                          Oliver Aguilerra
+                      <h1 className="mt-4 text-xl font-bah   text-black capitalize font-bold ">
+                        {name}
+                      </h1>
+                      <div className="flex flex-col gap-5 justify-center">
+                        <p className=" text-black font-bah  capitalize text-center  ">
+                          {small}
                         </p>
-                        <p className="mb-5 text-xs font-bah text-black">
-                          Product Manager
-                        </p>
-                        <div className="flex items-center space-x-3 sm:justify-center">
-                        <a
-                      className="mx-1.5 text-black  transition-colors duration-300 transform hover:text-blue-500"
-                      href="#"
-                    >
-                      <svg
-                        className="w-8 h-8"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M15.2 8.80005C16.4731 8.80005 17.694 9.30576 18.5941 10.2059C19.4943 11.1061 20 12.327 20 13.6V19.2H16.8V13.6C16.8 13.1757 16.6315 12.7687 16.3314 12.4687C16.0313 12.1686 15.6244 12 15.2 12C14.7757 12 14.3687 12.1686 14.0687 12.4687C13.7686 12.7687 13.6 13.1757 13.6 13.6V19.2H10.4V13.6C10.4 12.327 10.9057 11.1061 11.8059 10.2059C12.7061 9.30576 13.927 8.80005 15.2 8.80005Z"
-                          fill="currentColor"
-                        />
-                        <path
-                          d="M7.2 9.6001H4V19.2001H7.2V9.6001Z"
-                          fill="currentColor"
-                        />
-                        <path
-                          d="M5.6 7.2C6.48366 7.2 7.2 6.48366 7.2 5.6C7.2 4.71634 6.48366 4 5.6 4C4.71634 4 4 4.71634 4 5.6C4 6.48366 4.71634 7.2 5.6 7.2Z"
-                          fill="currentColor"
-                        />
-                      </svg>
-                    </a>
-                        </div>
+                        <h1 className="md:w-[255px] h-[2px]  bg-blue mb-5"></h1>
                       </div>
                     </div>
                   );
@@ -221,11 +195,11 @@ export default function abouthome() {
             <SwiperSlide>
               <div>
                 <p className="text-3xl font-bah text-center   title-font text-black   mb-4">
-                 Our Advisors
+                  Meet The Team
                 </p>
               </div>
               <div className="grid gap-10  sm:grid-cols-2 lg:grid-cols-4 ">
-                {blog.map(({ name, imgs, desc, small }, index) => {
+                {blog1.map(({ name, imgs, desc, small }, index) => {
                   return (
                     <div key={index}>
                       <div className="relative pb-56 mb-4 rounded shadow lg:pb-64">
@@ -243,30 +217,30 @@ export default function abouthome() {
                           Product Manager
                         </p>
                         <div className="flex items-center space-x-3 sm:justify-center">
-                        <a
-                      className="mx-1.5 text-black  transition-colors duration-300 transform hover:text-blue-500"
-                      href="#"
-                    >
-                      <svg
-                        className="w-8 h-8"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M15.2 8.80005C16.4731 8.80005 17.694 9.30576 18.5941 10.2059C19.4943 11.1061 20 12.327 20 13.6V19.2H16.8V13.6C16.8 13.1757 16.6315 12.7687 16.3314 12.4687C16.0313 12.1686 15.6244 12 15.2 12C14.7757 12 14.3687 12.1686 14.0687 12.4687C13.7686 12.7687 13.6 13.1757 13.6 13.6V19.2H10.4V13.6C10.4 12.327 10.9057 11.1061 11.8059 10.2059C12.7061 9.30576 13.927 8.80005 15.2 8.80005Z"
-                          fill="currentColor"
-                        />
-                        <path
-                          d="M7.2 9.6001H4V19.2001H7.2V9.6001Z"
-                          fill="currentColor"
-                        />
-                        <path
-                          d="M5.6 7.2C6.48366 7.2 7.2 6.48366 7.2 5.6C7.2 4.71634 6.48366 4 5.6 4C4.71634 4 4 4.71634 4 5.6C4 6.48366 4.71634 7.2 5.6 7.2Z"
-                          fill="currentColor"
-                        />
-                      </svg>
-                    </a>
+                          <a
+                            className="mx-1.5 text-black  transition-colors duration-300 transform hover:text-blue-500"
+                            href="#"
+                          >
+                            <svg
+                              className="w-8 h-8"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M15.2 8.80005C16.4731 8.80005 17.694 9.30576 18.5941 10.2059C19.4943 11.1061 20 12.327 20 13.6V19.2H16.8V13.6C16.8 13.1757 16.6315 12.7687 16.3314 12.4687C16.0313 12.1686 15.6244 12 15.2 12C14.7757 12 14.3687 12.1686 14.0687 12.4687C13.7686 12.7687 13.6 13.1757 13.6 13.6V19.2H10.4V13.6C10.4 12.327 10.9057 11.1061 11.8059 10.2059C12.7061 9.30576 13.927 8.80005 15.2 8.80005Z"
+                                fill="currentColor"
+                              />
+                              <path
+                                d="M7.2 9.6001H4V19.2001H7.2V9.6001Z"
+                                fill="currentColor"
+                              />
+                              <path
+                                d="M5.6 7.2C6.48366 7.2 7.2 6.48366 7.2 5.6C7.2 4.71634 6.48366 4 5.6 4C4.71634 4 4 4.71634 4 5.6C4 6.48366 4.71634 7.2 5.6 7.2Z"
+                                fill="currentColor"
+                              />
+                            </svg>
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -281,9 +255,8 @@ export default function abouthome() {
                 READ MORE
               </button>
             </Link>
-            </div>
+          </div>
         </div>
-        
       </section>
     </>
   );

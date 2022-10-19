@@ -11,6 +11,7 @@ import Libraryslide from "../components/libraryslide";
 import Resourceslide from "../components/resorceslide";
 import Abouthome from "../components/abouthome";
 import Fixediv from "../components/fixediv";
+import Focusareaslide from "../components/focusareaslide";
 
 const rightIcon = (
   <svg
@@ -47,6 +48,24 @@ export default function Home() {
   // const clicked = () => {
   //   setShowModal(false);
   // };
+  const whytf = [
+    {
+      id: 1,
+      title:
+        "Increased stakeholder expectations from auditors and regulatory scrutiny of audit quality ",
+      text: " lorem d scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    },
+    {
+      id: 2,
+      title: "The expectation of joint audits ",
+      text: "Corporates that need joint audits and their current sole auditors will expect the other audit firm to meet audit quality expectations and carry the necessary expertise to perform large audits. Not withstanding whether joint audits are mandatory or not, the policies and guidance provided by T&F are aimed at enhancing the quality of audits by audit firms. The audit quality policies and procedures that will be laid out by T&F and the audit guidance and the Audit Documentation and Archival Tool (ADAT) that is being developed by T&F is scalable for large audit requirements.",
+    },
+    {
+      id: 3,
+      title: "Unify a divergent practice ",
+      text: "Most of the audit firms in India are highly diverse, with fragmented professional practices. T&F aims to build capacity and enhance the capabilities of audit firms by providing a common platform for audit quality, best practices and policies, technical guidance, documentation tools and access to audit specialists, so that the audit firms can network and collaborate for their collective success and growth, delivering high quality audit services.",
+    },
+  ];
   const whyworkwithus = [
     {
       id: 1,
@@ -74,6 +93,15 @@ export default function Home() {
       text: "Pre-built and custom library of reports and data analytics for comprehensive insights, as per the audit requirements.",
     },
   ];
+  const  missvis= [
+    {
+      id: 1,
+      title: " OUR VISION AND MISSION",
+      text: "Our overarching vision is to be recognised as the STANDARD SETTER in the financial reporting ecosystem regarding quality of audits undertaken and performed. To achieve our vision, our mission is to build capacity and enhance the professional capability and quality of audits performed by audit firms.",
+    },
+    
+    
+  ];
   return (
     <main>
       <section
@@ -91,9 +119,10 @@ export default function Home() {
               className="text-white text-2xl"
               options={{
                 strings: [
-                  "Improve audit quality and productivity through our robust standards and best practices",
-                  "Explore technical resources, case studies, connect with experts and get auditing insights",
-                  "Connect, learn, collaborate with the auditing ecosystem and deliver world-class services",
+                  "Connect. Learn. Collaborate.",
+                  // "Improve audit quality and productivity through our robust standards and best practices",
+                  // "Explore technical resources, case studies, connect with experts and get auditing insights",
+                  // "Connect, learn, collaborate with the auditing ecosystem and deliver world-class services",
                 ],
                 autoStart: true,
                 loop: true,
@@ -107,13 +136,20 @@ export default function Home() {
         </div>
       </section>
 
-      <section className=" body-font bg-lightgray pt-14 pb-4">
+      <section className=" body-font pt-14 pb-4">
         <div className="md:container px-5 md:mx-auto">
           <div className="xl:w-full lg:w-full  w-full mx-auto text-center">
             <p className="text-3xl font-bah  title-font text-black   mb-4">
               True and Fair Professionals Network
             </p>
-            <p className="leading-loose   text-justify  font-bah text-black ">
+            <p
+              p
+              className="leading-loose text-lg    text-center  font-bah text-black font-semibold"
+            >
+              Strengthen the performance of auditors in the financial reporting
+              ecosystem.
+            </p>
+            {/* <p className="leading-loose   text-justify  font-bah text-black ">
               True and Fair aims to enhance the audit quality of CA firms by
               providing is a digital platform containing professional standards,
               audit best practices and guidances, an audit documentation and
@@ -127,13 +163,133 @@ export default function Home() {
               guidance, documentation tools and access to audit specialists, so
               that the CA firms can network and collaborate for their collective
               success and growth, delivering world class audit services.
+            </p> */}
+            <p className="leading-loose   text-justify  font-bah text-black ">
+              We will work with audit firms to enable them to deliver high
+              quality financial audits. Our well-developed and robust audit
+              quality policies, procedures, guidance and tools will help
+              auditors improve the quality of their professional services. Our
+              service offering also include Audit Documentation and Archival
+              Tool(s), access to experts, trainings, and insights on best
+              practices in the financial reporting ecosystem.
             </p>
+            <p className="text-center leading-loose text-lg    font-bah text-black font-semibold">
+              {`What’s more?`}
+            </p>
+            <p className="leading-loose   text-justify  font-bah text-black ">
+              We will provide real life case studies and practical training to
+              aspiring and qualified Chartered Accountants (CA) and other
+              eligible professionals who intend to make a career in financial
+              auditing.
+            </p>
+            <p className="leading-loose   text-justify  font-bah text-black ">
+              We will provide advice to corporates on complex accounting
+              matters, best practices in financial reporting, enhanced Internal
+              Financial Controls over Financial Reporting (IFCoFR), advice on
+              Governance and Environmental, Social and Governance (ESG) related
+              topics.
+            </p>
+            <p className="leading-loose   text-justify  font-bah text-black ">
+              We will work with Audit Regulators on standard setting, monitoring
+              and inspection process and setting up a robust disciplinary
+              mechanism.
+            </p>
+
             <span className="inline-block h-1 w-10 rounded bg-blue mt-8 mb-6"></span>
           </div>
         </div>
       </section>
-
       <section
+        data-aos="fade-up"
+        className="text-black  body-font   bg-lightgray  lg:py-12"
+      >
+        <div className=" md:container md:mx-auto  lg:rounded-lg text-left">
+          <div className="lg:w-full mx-auto flex flex-col lg:flex-col ">
+            <div className="lg:w-full w-full lg:mr-9  mt-6 lg:mt-0 ">
+              <div className="w-full flex gap-4 lg:justify-center ">
+                <h1 className="w-full text-center  text-3xl font-bah  title-font text-black   mb-4 ">
+                  {`Why True and Fair (T&F)?`}
+                </h1>
+              </div>
+            </div>
+            <div className="mt-10">
+              <ul className="grid lg:grid-cols-3 grid-cols-1 lg:gap-5">
+                {whytf.map(({ text, id, title }, index) => {
+                  return (
+                    <div key={index}>
+                      <p className="font-bah h-18 text-center tex-bold text-lg text-black">
+                        {title}
+                      </p>
+                      <li
+                        key={id}
+                        className="mt-4  text- font-bah lg:p-0 p-5 leading-relaxed text-black "
+                      >
+                        {text}
+                      </li>
+                    </div>
+                  );
+                })}
+              </ul>
+            </div>
+            {/* <div className="flex justify-center">
+              <Link href="/adat">
+                <button className="mt-8 font-bah   border-2 border-white text-black font-bold text-xs hover:text-blue hover:bg-white p-3 rounded-lg transition-all">
+                  READ MORE
+                </button>
+              </Link>
+            </div> */}
+          </div>
+        </div>
+      </section>
+      <section
+        data-aos="fade-up"
+        className="text-black  body-font   lg:py-12"
+        style={{
+          backgroundImage: `url(${"/about/abt2.png"})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <div className=" md:container md:mx-auto  lg:rounded-lg text-left">
+          <div className="lg:w-full mx-auto lg:h-52 flex flex-col lg:flex-col ">
+            <div className="lg:w-full w-full lg:mr-9  mt-6 lg:mt-0 ">
+              <div className="w-full flex gap-4 lg:justify-center ">
+                <h1 className="w-full text-center  text-3xl font-bah  title-font text-white   mb-4 ">
+                OUR VISION AND MISSION
+                </h1>
+              </div>
+             
+            </div>
+            <div className="mt-10">
+              <ul className="grid lg:grid-cols-1 grid-cols-1 lg:gap-10">
+                {missvis.map(({ text, id, title }, index) => {
+                  return (
+                    <div key={index}>
+                      
+                      <li
+                        key={id}
+                        className="mt-4  text-center font-bah lg:p-0 p-12 leading-relaxed text-white "
+                      >
+                        {text}
+                      </li>
+                    </div>
+                  );
+                })}
+              </ul>
+            </div>
+            {/* <div className="flex justify-center">
+              <Link href="/adat">
+                <button className="mt-8 font-bah   border-2 border-white text-white font-bold text-xs hover:text-blue hover:bg-white p-3 rounded-lg transition-all">
+                  READ MORE
+                </button>
+              </Link>
+            </div> */}
+          </div>
+        </div>
+      </section>
+            <Focusareaslide/>
+      {/* <section
         data-aos="fade-up"
         data-aos-once="true"
         className="md:container p-4 md:mx-auto md:py-14 text-black"
@@ -209,7 +365,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* <section>
           <div className='w-full h-80 relative'>

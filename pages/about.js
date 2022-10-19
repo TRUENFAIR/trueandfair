@@ -20,203 +20,130 @@ export default function About() {
       animatedClassName: "aos-animate",
     });
   }, []);
-  const team = [
-    {
-      name: "tom",
-      image: "/defult1.jpeg",
-      role: "Founder & Managing Director",
-      description:
-        "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
-    },
-    {
-      name: "jerry",
-      image: "/defult1.jpeg",
-      role: "CEO",
-      description:
-        "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
-    },
-    {
-      name: "james",
-      image: "/defult1.jpeg",
-      role: "General Manager",
-      description:
-        "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
-    },
-    {
-      name: "james",
-      image: "/defult1.jpeg",
-      role: "Head of Sourcing",
 
-      description:
-        "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
-    },
-    {
-      name: "james",
-      image: "/defult1.jpeg",
-      role: "Head of Quality",
-      description:
-        "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
-    },
-    {
-      name: "james",
-      image: "/defult1.jpeg",
-      role: "Head of Research",
-      description:
-        "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
-    },
-  ];
   const discover = [
     {
       name: "Leadership",
       img: "/discover/discover1.png",
+      para: "",
       desc: "From Ashtanga to Vinyasa, make mindful movement a daily ritual.",
       blogsdata: [
         {
-          ser: "/blogs/blog1",
-          name: "title",
-          small: "title",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos a eveniet sequi similique expedita id obcaecati velit suscipit consequuntur excepturi repellendus iste illo blanditiis possimus fugit dol",
-          imgs: "/pause/PAUSE3.PNG",
+          name: "Balaji V",
+          image: "/defult1.jpeg",
+          role: "Founder and Managing Partner",
+          description:
+            "Balaji V. brings over 28 years’ experience in financial accounting and auditing, working across various industries, including, agriculture, automobile, healthcare, information  technology, information technology enabled services, manufacturing, real estate, retail and infrastructure. Over the course of his professional career, he has held leadership positions in one of  India’s largest audit firms in roles spanning Audit Inspections, Audit Risk, Audit Quality  and Regulatory.  Balaji has been a member of the Audit and Assurance Standards Board, the Expert Advisory Committee and the Ind AS Transition Facilitation Group of the Institute of Chartered Accountants of India (ICAI). He has also been a member of various study groups constituted by the ICAI to evaluate and address issues considered for amendments by the ICAI. Balaji has co-authored various publications of the ICAI including the ‘Guidance Note on Audit of Internal Financial Controls over Financial Reporting’ and the ‘Guidance Note on  Reporting on Fraud’ under sections 143(3)(i) and 143(12), respectively, of the Companies Act, 2013; ‘Technical Guidance on Reporting under Rule 11(e) and 11(f) of the Companies (Audit and Auditors) Rules’ among others.",
         },
         {
-          ser: "/blogs/blog1",
-          name: "title",
-          small: "title",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos a eveniet sequi similique expedita id obcaecati velit suscipit consequuntur excepturi repellendus iste illo blanditiis possimus fugit dol",
-          imgs: "/pause/PAUSE3.PNG",
-        },
-        {
-          ser: "/blogs/blog1",
-          name: "title",
-          small: "title",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos a eveniet sequi similique expedita id obcaecati velit suscipit consequuntur excepturi repellendus iste illo blanditiis possimus fugit dol",
-          imgs: "/pause/PAUSE3.PNG",
-        },
-        {
-          ser: "/blogs/blog1",
-          name: "title",
-          small: "title",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos a eveniet sequi similique expedita id obcaecati velit suscipit consequuntur excepturi repellendus iste illo blanditiis possimus fugit dol",
-          imgs: "/pause/PAUSE3.PNG",
+          name: "Brindasri K",
+          image: "/defult1.jpeg",
+          role: "Partner",
+          description:
+            "Brindasri K. comes with over 27 years of professional experience in the information technology services sector and has worked with India’s largest IT company. Her area of expertise includes sales and delivery in the banking and financial services industry, professional services and life sciences. Brindasri has also worked with one of the largest multinational audit firms where her role involved automating operations.",
         },
       ],
-      blogsdatafull: [
+      blogsdatafull: [],
+    },
+    {
+      name: "Professionals",
+      para: "The activities of T&F are supported by a team of five (and growing) young and energetic professionals with over 10 years of work experience each in auditing, accounting and advisory and have served a diverse set of industries. Each member has held senior professional positions in one of India’s largest audit firms including positions in the firm’s technical, quality and learning teams.",
+      img: "/discover/discover1.png",
+      desc: "From Ashtanga to Vinyasa, make mindful movement a daily ritual.",
+      blogsdata: [
         {
-          ser: "/blogs/blog4",
-          name: "YOG ON THE MAT",
-          small: "How to get started with Yoga and grow with your practice",
-          desc: "Remember, you control your breath, don't let your breath control you! 🧘🏻‍♀️- 🤷🏽‍♀️ - ⬇️",
-          imgs: "/pause/PAUSE3.PNG",
+          name: "Archana Ashok",
+          image: "/defult1.jpeg",
+          role: "Founder & Managing Director",
+          description:
+            "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
         },
         {
-          ser: "/blogs/blog5",
-          name: "YOG ON THE MAT",
-          small: "How to get started with Yoga and grow with your practice",
-          desc: "Don't ever look back, unless it's from a different point of view 🙃 ⬇️",
-          imgs: "/pause/PAUSE2.PNG",
+          name: "Shristi Sarayan",
+          image: "/defult1.jpeg",
+          role: "Founder & Managing Director",
+          description:
+            "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
         },
         {
-          ser: "/blogs/blog6",
-          name: "YOG ON THE MAT",
-          small: "How to get started with Yoga and grow with your practice",
-          desc: "Hips don't lie 🙇🏻‍♀️👇🏼",
-          imgs: "/pause/PAUSE1.PNG",
+          name: "Kirti Kumar Kotian",
+          image: "/defult1.jpeg",
+          role: "Founder & Managing Director",
+          description:
+            "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
         },
         {
-          name: "YOG ON THE MAT",
-          small: "How to get started with Yoga and grow with your practice",
-          desc: "Remember, you control your breath, don't let your breath control you! 🧘🏻‍♀️- 🤷🏽‍♀️ - ⬇️",
-          imgs: "/pause/PAUSE1.PNG",
+          name: "Rakesh Jain",
+          image: "/defult1.jpeg",
+          role: "Founder & Managing Director",
+          description:
+            "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
         },
         {
-          name: "YOG ON THE MAT",
-          small: "How to get started with Yoga and grow with your practice",
-          desc: "Don't ever look back, unless it's from a different point of view 🙃 ⬇️",
-          imgs: "/pause/PAUSE2.PNG",
+          name: "Krishna R P",
+          image: "/defult1.jpeg",
+          role: "CEO",
+          description:
+            "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
+        },
+      ],
+      blogsdatafull: [],
+    },
+    {
+      name: "Advisory Boards",
+      img: "/discover/discover2.jpg",
+
+      desc: "From Ashtanga to Vinyasa, make mindful movement a daily ritual.",
+      blogsdata: [
+        {
+          para: "T&F has constituted two advisory boards to advise the firm on:",
+          para2:
+            "(a) Strategy to evolve T&F as a reputed firm in the financial reporting ecosystem; and",
+          para3:
+            "(b) Technical matters related to financial accounting and auditing",
+          para4:
+            "The vision, policies, practices and guidance of T&F have been critically reviewed and approved by our Advisory Boards whose members are eminent Audit & Finance professionals.",
+          name: "A. STRATEGIC ADVISORY BOARD (SAB)",
+          point1:
+            "1. Advice on the Vision and Mission statements of T&F and evaluate compliance with the same.",
+          point2: "2. Evaluate and advice on:",
+          point1sub:
+            "a. The business model (including the planned scope of services) and the pricing plan for services that are intended to be offered by T&F.",
+          point1sub2: "b. Investment decisions, including in talent",
+          point1sub3:
+            "c. Geographies and markets which can be addressed for the services offered by T&F and the manner of accessing such geographies/markets.",
+          point1sub4:
+            "d. Potential new areas of focus for T&F in the financial reporting eco-system.",
+          point1sub5:
+            "e. Stakeholder expectations and T&F’s response to address them.",
+          point3:
+            "3. Enable outreach/ represent the views of T&F on regulatory matters with the Regulators, including communicating best practices which can be translated into law/r regulations.",
+          point4:
+            "4. Recommend steps for “True and Fair” being recognized as the premier respected brand in its niche in the financial reporting eco-system.",
         },
         {
-          name: "YOG ON THE MAT",
-          small: "How to get started with Yoga and grow with your practice",
-          desc: "Hips don't lie 🙇🏻‍♀️👇🏼",
-          imgs: "/pause/PAUSE3.PNG",
+          name: "TECHNICAL ADVISORY BOARD (TAB)",
+          image: "/defult1.jpeg",
+          role: "CEO",
+          description:
+            "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
+          point1:
+            "1. Review and approve (with suitable modifications, if required) the proposed audit quality policies, principles, procedures, guidance, and tools considering the principles/provisions laid down in the applicable professional standards, the relevant regulatory requirements, GAAP and GAAS and suggest other areas where the quality services of T&F can be enhanced.",
+          point2:
+            "2. Review and approve (with suitable modifications, if required) the recommendations and suggestions that T&F would like to make to the Regulators.",
+          point3:
+            "3. Advise T&F on financial accounting and auditing matters that are brought to the notice of this Board.",
+          point4:
+            "4. Get updates from T&F in the financial reporting eco-system and stakeholder expectations and T&F response in updating the audit quality policies, principles, guidance, and tools for such developments.",
         },
       ],
     },
+  ];
+  const missvis = [
     {
-      name: "Advisors",
-      img: "/discover/discover2.jpg",
-      desc: "From Ashtanga to Vinyasa, make mindful movement a daily ritual.",
-      blogsdata: [
-        {
-          ser: "/blogs/blog1",
-          name: "title",
-          small: "title",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos a eveniet sequi similique expedita id obcaecati velit suscipit consequuntur excepturi repellendus iste illo blanditiis possimus fugit dol",
-          imgs: "/pause/PAUSE3.PNG",
-        },
-        {
-          ser: "/blogs/blog1",
-          name: "title",
-          small: "title",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos a eveniet sequi similique expedita id obcaecati velit suscipit consequuntur excepturi repellendus iste illo blanditiis possimus fugit dol",
-          imgs: "/pause/PAUSE3.PNG",
-        },
-        {
-          ser: "/blogs/blog1",
-          name: "title",
-          small: "title",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos a eveniet sequi similique expedita id obcaecati velit suscipit consequuntur excepturi repellendus iste illo blanditiis possimus fugit dol",
-          imgs: "/pause/PAUSE3.PNG",
-        },
-        {
-          ser: "/blogs/blog1",
-          name: "title",
-          small: "title",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos a eveniet sequi similique expedita id obcaecati velit suscipit consequuntur excepturi repellendus iste illo blanditiis possimus fugit dol",
-          imgs: "/pause/PAUSE3.PNG",
-        },
-      ],
-      blogsdatafull: [
-        {
-          ser: "/blogs/blog4",
-          name: "YOG ON THE MAT",
-          small: "How to get started with Yoga and grow with your practice",
-          desc: "Remember, you control your breath, don't let your breath control you! 🧘🏻‍♀️- 🤷🏽‍♀️ - ⬇️",
-          imgs: "/pause/PAUSE3.PNG",
-        },
-        {
-          ser: "/blogs/blog5",
-          name: "YOG ON THE MAT",
-          small: "How to get started with Yoga and grow with your practice",
-          desc: "Don't ever look back, unless it's from a different point of view 🙃 ⬇️",
-          imgs: "/pause/PAUSE2.PNG",
-        },
-        {
-          ser: "/blogs/blog6",
-          name: "YOG ON THE MAT",
-          small: "How to get started with Yoga and grow with your practice",
-          desc: "Hips don't lie 🙇🏻‍♀️👇🏼",
-          imgs: "/pause/PAUSE1.PNG",
-        },
-        {
-          name: "YOG ON THE MAT",
-          small: "How to get started with Yoga and grow with your practice",
-          desc: "Remember, you control your breath, don't let your breath control you! 🧘🏻‍♀️- 🤷🏽‍♀️ - ⬇️",
-          imgs: "/pause/PAUSE1.PNG",
-        },
-        {
-          name: "YOG ON THE MAT",
-          small: "How to get started with Yoga and grow with your practice",
-          desc: "Don't ever look back, unless it's from a different point of view 🙃 ⬇️",
-          imgs: "/pause/PAUSE2.PNG",
-        },
-        {
-          name: "YOG ON THE MAT",
-          small: "How to get started with Yoga and grow with your practice",
-          desc: "Hips don't lie 🙇🏻‍♀️👇🏼",
-          imgs: "/pause/PAUSE3.PNG",
-        },
-      ],
+      id: 1,
+      title: " OUR VISION AND MISSION",
+      text: "Our overarching vision is to be recognised as the STANDARD SETTER in the financial reporting ecosystem regarding quality of audits undertaken and performed. To achieve our vision, our mission is to build capacity and enhance the professional capability and quality of audits performed by audit firms.",
     },
   ];
   return (
@@ -259,19 +186,18 @@ export default function About() {
                   About True and Fair
                 </h2>
                 <p className="prose font-bah pt-8">
-                True and Fair aims to enhance the audit quality of CA firms by
-              providing is a digital platform containing professional standards,
-              audit best practices and guidances, an audit documentation and
-              archival tool, collaboration platform with the audit clients of
-              audit firm for sharing information on a secure basis and also for
-              the auditors to carry out the analysis of the audit client
-              information in a secure environment. A majority of the audit firms
-              are highly diverse, with fragmented professional practices. True
-              and Fair aims to bridge this gap by providing a common platform
-              for quality, best practices, ethical standards, technical
-              guidance, documentation tools and access to audit specialists, so
-              that the CA firms can network and collaborate for their collective
-              success and growth, delivering world class audit services.
+                  T&amp;F is a start-up firm formed with a vision to enable
+                  capacity building and capability enhancement of audit firms.
+                  Founded by a team of seasoned CA professionals, we bring
+                  together a collective experience of more than 100 years in
+                  audits and accounting. Leveraging on our experience we have
+                  designed a set of policies and practices to help our clients
+                  benefit from our technical expertise. We have the skills and
+                  scale to serve audit firms (both established and formative),
+                  upcoming chartered accountants, Regulators, and corporates -
+                  while remaining agile and personal in our approach. T &amp; F
+                  is one-of-a-kind firm and aspires to be the benchmark STANDARD
+                  SETTER in the auditing ecosystem.
                 </p>
               </div>
 
@@ -286,52 +212,6 @@ export default function About() {
                   alt=""
                   src="/about/dummy3.jpg"
                 />
-              </div>
-
-              <div
-                className="w-full md:block hidden h-[80px] lg:col-span-2  col-span-1 "
-                id="Philosophy"
-              ></div>
-              <div className="w-auto h-48 lg:h-auto relative">
-                <Image
-                  layout="fill"
-                  className="absolute h-full w-full object-cover"
-                  alt=""
-                  src="/about/dummy3.jpg"
-                />
-              </div>
-
-              <div data-aos="fade-up" data-aos-once="true" className="w-auto">
-                <h2 className="text-3xl font-bah  title-font text-black   mb-4 ">
-                  Philosophy
-                </h2>
-                <p className="prose font-bah pt-8">
-                  <span className="font-bold">
-                    {" "}
-                    Unify a divergent practice -
-                  </span>{" "}
-                  A majority of the audit firms in India are highly diverse,
-                  with fragmented professional practices. True and Fair aims to
-                  bridge this gap by providing a common platform for quality ,
-                  best practices, ethical standards, technical guidance,
-                  documentation tools and access to audit specialists, so that
-                  the CA firms can network and collaborate for their collective
-                  success and growth, delivering world class audit services.
-                </p>
-                <p className="prose font-bah pt-8">
-                  <span className="font-bold">
-                    Increased regulatory scrutiny of audit quality –{" "}
-                  </span>
-                  The expectation of joint audits becoming mandatory – If joint
-                  audits are made mandatory in India, as reported in the media
-                  recently, large audit firms and corporates that need joint
-                  audits will look out for audit firms that can meet quality
-                  expectation and carry the necessary expertise to perform large
-                  audits. The professional standards that will be laid out by
-                  True and Fair and the audit guidances that are being developed
-                  are scalable keeping such scenario in mind. The ADAT is also
-                  scalable for large audits.
-                </p>
               </div>
 
               {/* <div
@@ -453,91 +333,66 @@ export default function About() {
             </div>
           </div>
         </section>
-        <div
-          className="w-full md:block hidden h-[80px] lg:col-span-2  col-span-1 "
-          id="focusarea"
-        ></div>
         <section
           data-aos="fade-up"
-          data-aos-once="true"
-          className="md:container p-4 md:mx-auto  text-black"
+          className="text-black  body-font   lg:py-12"
+          style={{
+            backgroundImage: `url(${"/about/abt2.png"})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+          }}
         >
-          <div className="flex flex-col lg:flex-row">
-            <div className="md:w-full lg:w-1/2">
-              <h1 className="text-3xl font-bah  title-font text-black   mb-4">
-                Focus Areas
-              </h1>
-              <div className="flex gap-1 mt-4 text-black flex-row">
-                <span className="w-fit ">✔️</span>{" "}
-                <p className="prose  text-black font-bah ">
-                  {`Work with auditing and CA firms and provide them access to quality & ethical standards, best practices, tools and technical guidance and access to audit specialists.
-              `}
-                </p>
+          <div className=" md:container md:mx-auto  lg:rounded-lg text-left">
+            <div className="lg:w-full mx-auto lg:h-52 flex flex-col lg:flex-col ">
+              <div className="lg:w-full w-full lg:mr-9  mt-6 lg:mt-0 ">
+                <div className="w-full flex gap-4 lg:justify-center ">
+                  <h1 className="w-full text-center  text-3xl font-bah  title-font text-white   mb-4 ">
+                    OUR VISION AND MISSION
+                  </h1>
+                </div>
               </div>
-              <div className="flex mt-4 gap-1 flex-row">
-                <span className="w-fit">✔️</span>{" "}
-                <p className="prose text-black font-bah ">
-                  {`Provide guidance to corporations on Accounting & Financial Reporting & Advisory, ESG, Risk Management practices and Board Governance.
-              `}
-                </p>
+              <div className="mt-10">
+                <ul className="grid lg:grid-cols-1 grid-cols-1 lg:gap-10">
+                  {missvis.map(({ text, id, title }, index) => {
+                    return (
+                      <div key={index}>
+                        <li
+                          key={id}
+                          className="mt-4  text-center font-bah lg:p-0 p-12 leading-relaxed text-white "
+                        >
+                          {text}
+                        </li>
+                      </div>
+                    );
+                  })}
+                </ul>
               </div>
-              <div className="flex mt-4 gap-1 flex-row">
-                <span className="w-fit ">✔️</span>{" "}
-                <p className="prose text-black   font-bah ">
-                  {`Collaborate with regulators on standard setting & regulatory developments, inspection policies and disciplinary mechanisms.
-              `}
-                </p>
-              </div>
-              <div className="flex mt-4 gap-1 flex-row">
-                <span className="w-fit ">✔️</span>{" "}
-                <p className="prose text-black font-bah ">
-                  {`Strategic investments in data analytics, artificial intelligence and documentation tools to improve audit quality and productivity.
-              `}
-                </p>
-              </div>
-              <div className="flex mt-4 gap-1 flex-row">
-                <span className="w-fit ">✔️</span>{" "}
-                <p className="prose text-black font-bah ">
-                  {`Enhanced application of principles specified in the professional standards when performing audits
-              `}
-                </p>
-              </div>
-              <div className="flex mt-4 gap-1 flex-row">
-                <span className="w-fit ">✔️</span>{" "}
-                <p className="prose text-black font-bah ">
-                  {`Comprehensive content in the ADAT with library of risks and possible audit responses, audit programmes and checklists
-              `}
-                </p>
-              </div>
-            </div>
-
-            <div
-              className="md:w-full  bg-contain md:bg-center   bg-no-repeat  lg:w-1/2  h-fit   "
-              style={{
-                backgroundImage: `url(${"/indexpage/vision2.png"})`,
-              }}
-            >
-              <div className=" bottom-0  p-8  lg:w-full flex justify-center  md:p-28 items-center flex-col">
-                <p className="text-3xl text-white  text-center w-full  font-bah pb-4">
-                  Our Vision
-                </p>
-                <p className=" text-white text-base md:text-xl text-center lg:p-7 p-5     font-bah leading-loose">
-                  {`To strengthen the financial reporting ecosystem of India, through thought leadership and capacity building`}
-                </p>
-              </div>
+              {/* <div className="flex justify-center">
+              <Link href="/adat">
+                <button className="mt-8 font-bah   border-2 border-white text-white font-bold text-xs hover:text-blue hover:bg-white p-3 rounded-lg transition-all">
+                  READ MORE
+                </button>
+              </Link>
+            </div> */}
             </div>
           </div>
         </section>
         <div
           className="w-full md:block hidden h-[80px] lg:col-span-2  col-span-1 "
+          id="focusarea"
+        ></div>
+
+        <div
+          className="w-full md:block hidden h-[50px] lg:col-span-2  col-span-1 "
           id="meettheteam"
         ></div>
-        <section className="bg-lightgray mt-1">
+        <section className="bg-lightgray ">
           <p className="text-3xl font-bah  title-font text-black text-center  border  mb-2">
             Meet The Team
           </p>
           <div className="md:container flex justify-center md:mx-auto">
-            <ul className="grid grid-flow-col gap-1  w-1/2 mt-5 text-center  text-black  rounded-full p-1">
+            <ul className="grid grid-flow-col gap-4 w-full md:w-1/2 mt-5 text-center  text-black  rounded-full p-1">
               {discover.map(({ name }, index) => {
                 return (
                   <li
@@ -564,37 +419,181 @@ export default function About() {
 
         <section className="bg-lightgray md:pt-1 md:pb-10 ">
           <div className="container px-6  mx-auto">
-            <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-3">
-              {team.map(({ name, image, role, description, id }, index) => {
-                return (
-                  <div
-                    key={index}
-                    data-aos="fade-up"
-                    data-aos-once="true"
-                    className="flex flex-col items-center p-5"
-                  >
-                    <div className="relative lg:w-[300px] lg:h-[300px]  md:w-[300px] md:h-[300px] w-[200px]  h-[200px]  rounded-full">
-                      <Image
-                        className="rounded-full"
-                        alt="profle"
-                        src={image}
-                        objectFit="cover"
-                        layout="fill"
-                      />
-                    </div>
-                    <h1 className="mt-4 text-2xl font-bah   text-black capitalize font-bold ">
-                      {name}
-                    </h1>
-                    <div className="flex flex-col gap-5 justify-center">
-                      <p className=" text-black font-bah  capitalize text-center  ">
-                        {role}
-                      </p>
-                      <h1 className="md:w-[255px] h-[2px]  bg-blue mb-5"></h1>
-                    </div>
-                    <p className="text-center font-bah ">{description}</p>
-                  </div>
-                );
+            <div
+              className={`${buttonIndex === 1 ? "block font-bah" : "hidden"}`}
+            >
+              {discover.map(({ para }, index) => {
+                return <p className="font-bah">{para}</p>;
               })}
+            </div>
+            <div
+              className={`${buttonIndex === 2 ? "block font-bah" : "hidden"}`}
+            >
+              {discover[buttonIndex].blogsdata.map(
+                ({ para, para2, para3, para4 }, index) => {
+                  return (
+                    <div>
+                      <p className="font-bah">{para}</p>
+                      <p className="font-bah">{para2}</p>
+                      <p className="font-bah">{para3}</p>
+                      <p className="font-bah">{para4}</p>
+                    </div>
+                  );
+                }
+              )}
+            </div>
+            <div
+              className={`${
+                buttonIndex === 0 || buttonIndex === 2
+                  ? "grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-2"
+                  : "grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-5"
+              }`}
+            >
+              {discover[buttonIndex].blogsdata.map(
+                (
+                  {
+                    name,
+                    image,
+                    role,
+                    description,
+                    id,
+                    para,
+                    point1,
+                    point2,
+                    point3,
+                    point1sub4,
+                    point4,
+                    point1sub,
+                    point1sub2,
+                    point1sub3,
+                    point1sub5,
+                  },
+                  index
+                ) => {
+                  if (buttonIndex === 2) {
+                    return (
+                      <div>
+                        <p className="text-center text-xl font-semibold font-bah">
+                          {name}
+                        </p>
+                        <div
+                          key={index}
+                          className="flex gap-1 mt-4 text-black flex-row"
+                        >
+                          <p className="prose  text-black font-bah ">
+                            {point1}
+                          </p>
+                        </div>
+                        <div
+                          key={index}
+                          className="flex gap-1 mt-4 text-black flex-col"
+                        >
+                          <p className="prose   text-black font-bah ">
+                            {point2}
+                          </p>
+                          <p
+                            className={`${
+                              point1sub
+                                ? "prose p-2 text-black font-bah block"
+                                : "hidden"
+                            }`}
+                          >
+                            {point1sub}
+                          </p>
+                          <p
+                            className={`${
+                              point1sub2
+                                ? "prose p-2 text-black font-bah block"
+                                : "hidden"
+                            }`}
+                          >
+                            {point1sub2}
+                          </p>
+                          <p
+                            className={`${
+                              point1sub3
+                                ? "prose p-2 text-black font-bah block"
+                                : "hidden"
+                            }`}
+                          >
+                            {point1sub3}
+                          </p>
+                          <p
+                            className={`${
+                              point1sub4
+                                ? "prose p-2 text-black font-bah block"
+                                : "hidden"
+                            }`}
+                          >
+                            {point1sub4}
+                          </p>
+
+                          <p
+                            className={`${
+                              point1sub5
+                                ? "prose p-2 text-black font-bah block"
+                                : "hidden"
+                            }`}
+                          >
+                            {point1sub5}
+                          </p>
+                        </div>
+                        <div
+                          key={index}
+                          className="flex gap-1 mt-4 text-black flex-row"
+                        >
+                          <p className="prose  text-black font-bah ">
+                            {point3}
+                          </p>
+                        </div>
+                        <div
+                          key={index}
+                          className="flex gap-1 mt-4 text-black flex-row"
+                        >
+                          <p className="prose  text-black font-bah ">
+                            {point4}
+                          </p>
+                        </div>
+                        <div
+                          key={index}
+                          className="flex gap-1 mt-4 text-black flex-row"
+                        >
+                          <p className="prose  text-black font-bah ">{}</p>
+                        </div>
+                      </div>
+                    );
+                  } else {
+                    return (
+                      <div
+                        key={index}
+                        data-aos="fade-up"
+                        data-aos-once="true"
+                        className="flex flex-col items-center p-5"
+                      >
+                        <div className="relative lg:w-[300px] lg:h-[300px]  md:w-[300px] md:h-[300px] w-[200px]  h-[200px]  rounded-full">
+                          <Image
+                            className="rounded-full"
+                            alt="profle"
+                            src={image}
+                            objectFit="cover"
+                            layout="fill"
+                          />
+                        </div>
+                        <h1 className="mt-4 text-xl font-bah   text-black capitalize font-bold ">
+                          {name}
+                        </h1>
+                        <div className="flex flex-col gap-5 justify-center">
+                          <p className=" text-black font-bah  capitalize text-center  ">
+                            {role}
+                          </p>
+                          <h1 className="md:w-[255px] h-[2px]  bg-blue mb-5"></h1>
+                        </div>
+                        <p className="text-center font-bah ">{description}</p>
+                      </div>
+                    );
+                  }
+                }
+              )}
             </div>
           </div>
         </section>
