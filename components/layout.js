@@ -40,8 +40,9 @@ export default function Layout({ children }) {
       path: "/services",
       sub: [
         { name: "Auditing Firms ", path: "/services#AuditingFirms" },
-
-        { name: "Corporations", path: "/services#Corporations" },
+        
+        { name: "Chartered Account", path: "/services#CharteredAccount" },
+        { name: " Corporates", path: "/services#Corporations" },
         { name: " Regulators", path: "/services#Regulators" },
       ],
     },
@@ -51,7 +52,7 @@ export default function Layout({ children }) {
 
       sub: [
         { name: "Product Overview", path: "/adat#ProductOverview" },
-        { name: "Use Cases", path: "/adat#UseCases" },
+       
         { name: "Advantages", path: "/adat#Advantages" },
 
         { name: "Technology ", path: "/adat#Technology" },

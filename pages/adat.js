@@ -6,12 +6,9 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Fixediv from "../components/fixediv";
 
-
 function Adat() {
   const route = useRouter();
-  
-  
- 
+
   useEffect(() => {
     AOS.init({
       once: true,
@@ -67,7 +64,6 @@ function Adat() {
   ];
   return (
     <>
-     
       <section>
         <div
           className="h-72 flex flex-col justify-end "
@@ -81,10 +77,10 @@ function Adat() {
           <div
             data-aos="fade-down"
             data-aos-once="true"
-            className="h-[90px]  w-[80%] md:w-1/2 flex justify-center  items-center font-bah text-2xl text-white bg-slate-800"
+            className="lg:h-[90px] h-[200px]  w-[80%] md:w-1/2 flex justify-center  items-center font-bah text-2xl text-white bg-slate-800"
           >
             <p className=" text-3xl font-bah  title-font text-white">
-              ADAT®️(Audit Documentation and  Archival Tool)
+              ADAT®️(Audit Documentation and Archival Tool)
             </p>
           </div>
         </div>
@@ -102,16 +98,22 @@ function Adat() {
                 Product Overview
               </h2>
               <p className="prose  font-bah pt-8">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Voluptate sequi provident reprehenderit minus vero inventore
-                odio veritatis quam sapiente iste voluptatibus reiciendis in
-                voluptas corporis necessitatibus dignissimos ad, a quibusdam
-                neque exercitationem unde ut est nulla! Facere cupiditate quas
-                commodi quisquam iusto. Iste eaque deleniti consequuntur eum
-                aliquam tempora rem at voluptates voluptas esse, eligendi
-                repudiandae facere corporis, voluptate non. Praesentium alias
-                optio ab cumque quo deleniti dicta eaque ipsa. Lorem ipsum dolor
-                sit amet consectetur adipisicing elit. Magnam, cum.
+                The Audit Documentation and Archival Tool (ADAT) facilitates
+                auditors to document their audit work securely ensuring
+                compliance with auditing standards as set by Regulators and to
+                meet their expectations for monitoring and inspection. ADAT
+                comprises work paper templates, an exhaustive library of risks
+                linked to possible audit responses, reference audit programs,
+                checklists, and more - all of which can be customised to the
+                specific auditing needs. ADAT also gives an online review of
+                audit documentation, recordings of review notes, tracks
+                resolution and sign-offs on all audit work papers. All audit
+                files can be archived for the statutory retention period, and
+                with a feature to roll forward audit files contents of the
+                previous year to the current year audit cycle. ADAT has been
+                developed with advanced technology to ensure 100% security of
+                confidential data / information. An audit file saved on ADAT can
+                only be accessed by the authorised users of the audit firm.
               </p>
 
               <p className="prose  font-bah lg:mb-0 mb-5 pt-8">
@@ -137,69 +139,56 @@ function Adat() {
               />
             </div>
 
-            <div
-              className="w-full md:block hidden h-[80px] lg:col-span-2  col-span-1 "
-              id="UseCases"
-            ></div>
-            <div
-              data-aos="fade-up"
-              data-aos-once="true"
-              className="w-auto h-48 lg:h-auto relative"
-            >
-              <Image
-                layout="fill"
-                className="absolute h-full w-full object-cover"
-                alt=""
-                src="/about/dummy3.jpg"
-              />
-            </div>
-
-            <div data-aos="fade-down" data-aos-once="true" className="w-auto">
-              <h2 className="text-3xl font-bah  title-font text-black   mb-4">
-                Use Cases
-              </h2>
-              <p className="prose  font-bah pt-8">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Voluptate sequi provident reprehenderit minus vero inventore
-                odio veritatis quam sapiente iste voluptatibus reiciendis in
-                voluptas corporis necessitatibus dignissimos ad, a quibusdam
-                neque exercitationem unde ut est nulla! Facere cupiditate quas
-                commodi quisquam iusto. Iste eaque deleniti consequuntur eum
-                aliquam tempora rem at voluptates voluptas esse, eligendi
-                repudiandae facere corporis, voluptate non. Praesentium alias
-                optio ab cumque quo deleniti dicta eaque ipsa. Lorem ipsum dolor
-                sit amet consectetur adipisicing elit. Magnam, cum.
-              </p>
-
-              <p className="prose  font-bah lg:mb-0 mb-5 pt-8">
-                <Link href="/contact">
-                  <a className="active:text-red  font-bah font-bold underline hover:text-orange decoration-blue text-blue">
-                    Click here
-                  </a>
-                </Link>{" "}
-                to request a demo.
-              </p>
-            </div>
             <div
               className="w-full md:block hidden  h-[80px] lg:col-span-2  col-span-1 "
               id="Advantages"
             ></div>
+
             <div data-aos="fade-up" data-aos-once="true" className="w-auto">
               <h2 className="text-3xl font-bah  title-font text-black   mb-4">
-                Advantages
+                The ADAT Advantage
               </h2>
-              <p className="prose  font-bah pt-8">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Voluptate sequi provident reprehenderit minus vero inventore
-                odio veritatis quam sapiente iste voluptatibus reiciendis in
-                voluptas corporis necessitatibus dignissimos ad, a quibusdam
-                neque exercitationem unde ut est nulla! Facere cupiditate quas
-                commodi quisquam iusto. Iste eaque deleniti consequuntur eum
-                aliquam tempora rem at voluptates voluptas esse, eligendi
-                repudiandae facere corporis, voluptate non. Praesentium alias
-                optio ab cumque quo deleniti dicta eaque ipsa. Lorem ipsum dolor
-                sit amet consectetur adipisicing elit. Magnam, .
-              </p>
+              <div className="w-auto mt-16">
+                <div className="flex gap-1 mt-4 text-black flex-row">
+                  <span className="w-fit ">✔️</span>{" "}
+                  <p className="prose  text-black font-bah ">
+                    {`Developed using word and excel which are familiar applications to auditors
+              `}
+                  </p>
+                </div>
+                <div className="flex gap-1 mt-4 text-black flex-row">
+                  <span className="w-fit ">✔️</span>{" "}
+                  <p className="prose  text-black font-bah ">
+                    {`A trial balance feature to highlight line items in financial statements to be
+considered for audit in the work paper
+              `}
+                  </p>
+                </div>{" "}
+                <div className="flex gap-1 mt-4 text-black flex-row">
+                  <span className="w-fit ">✔️</span>{" "}
+                  <p className="prose  text-black font-bah ">
+                    {`Exhaustive library of risks linked to possible audit responses, reference audit
+programs, checklists, etc.
+              `}
+                  </p>
+                </div>
+                <div className="flex gap-1 mt-4 text-black flex-row">
+                  <span className="w-fit ">✔️</span>{" "}
+                  <p className="prose  text-black font-bah ">
+                    {`Audit work paper templates with reference links to practices and guidance
+              `}
+                  </p>
+                </div>
+                <div className="flex gap-1 mt-4 text-black flex-row">
+                  <span className="w-fit ">✔️</span>{" "}
+                  <p className="prose  text-black font-bah ">
+                    {`Changes to work papers between audit report date and date of archival can be
+identified enhancing the integrity of the audit file at the time of report issuance
+and at the time of archival
+              `}
+                  </p>
+                </div>
+              </div>
 
               <p className="prose  font-bah lg:mb-0 mb-5 pt-8">
                 <Link href="/contact">
@@ -213,14 +202,47 @@ function Adat() {
             <div
               data-aos="fade-down"
               data-aos-once="true"
-              className="w-auto h-48 lg:h-auto relative"
+              className="w-auto h-auto  lg:h-auto relative"
             >
-              <Image
-                layout="fill"
-                className="absolute h-full w-full object-cover"
-                alt=""
-                src="/about/dummy3.jpg"
-              />
+              <div className="flex gap-1 mt-24 text-black flex-row">
+                <span className="w-fit ">✔️</span>{" "}
+                <p className="prose  text-black font-bah ">
+                  {`A file check feature to check the quality and completeness of work papers before
+archiving them as per professional standards
+              `}
+                </p>
+              </div>
+              <div className="flex gap-1 mt-4 text-black flex-row">
+                <span className="w-fit ">✔️</span>{" "}
+                <p className="prose  text-black font-bah ">
+                  {`ADAT also provides a secure environment to the clients of the audit firm to share
+their information with the auditor
+              `}
+                </p>
+              </div>
+              <div className="flex gap-1 mt-4 text-black flex-row">
+                <span className="w-fit ">✔️</span>{" "}
+                <p className="prose  text-black font-bah ">
+                  {`Dashboards to partners and managers on the status of their respective audits
+              `}
+                </p>
+              </div>
+              <div className="flex gap-1 mt-4 text-black flex-row">
+                <span className="w-fit ">✔️</span>{" "}
+                <p className="prose  text-black font-bah ">
+                  {`A secure platform that does not enable information to be copied, cut, pasted,
+printed outside of the ADAT
+              `}
+                </p>
+              </div>
+              <div className="flex gap-1 mt-4 text-black flex-row">
+                <span className="w-fit ">✔️</span>{" "}
+                <p className="prose  text-black font-bah ">
+                  {`Roll-forward feature reduces the documentation effort in the subsequent year's
+audit
+              `}
+                </p>
+              </div>
             </div>
 
             <div
@@ -245,16 +267,24 @@ function Adat() {
                 Technology
               </h2>
               <p className="prose  font-bah pt-8">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Voluptate sequi provident reprehenderit minus vero inventore
-                odio veritatis quam sapiente iste voluptatibus reiciendis in
-                voluptas corporis necessitatibus dignissimos ad, a quibusdam
-                neque exercitationem unde ut est nulla! Facere cupiditate quas
-                commodi quisquam iusto. Iste eaque deleniti consequuntur eum
-                aliquam tempora rem at voluptates voluptas esse, eligendi
-                repudiandae facere corporis, voluptate non. Praesentium alias
-                optio ab cumque quo deleniti dicta eaque ipsa. Lorem ipsum dolor
-                sit amet consectetur adipisicing elit. Magnam, cum.
+                ADAT is a Microsoft Azure cloud-based platform leveraging
+                share-point security and features offered by Microsoft and it
+                enhances the capability and efficiency in performing audit
+                engagements. The rich guidance content, audit automation tools
+                to track reviews, maintain documentation and process make it a
+                unique solution to ensure end to end quality in audits. Deep
+                integration of the capabilities of the Audit Documentation Tool
+                with traditional office automation tools you are familiar with
+                means that there is no new software to learn!.
+                <br />
+                The platform is agnostic of your legacy systems, works directly
+                from the web and offers robust enterprise grade security, high
+                scalability and unlimited storage for large volumes of
+                documents. The platform offers a worry free environment to
+                perform a quality audit work and deliver great results. A well
+                thought user management allows audit firms to manage client
+                data, users including client users in a transparent, efficient
+                and secure manner.
               </p>
 
               <p className="prose  font-bah lg:mb-0 mb-5 pt-8">

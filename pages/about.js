@@ -206,7 +206,7 @@ export default function About() {
           </h1>
           <div className=" md:container md:mx-auto  grid grid-cols-2">
             <div>
-              <h1 className="text-xl text-center font-bah  title-font text-black   mb-4">
+              <h1 className="font-bah h-18 text-center font-semibold text-lg text-black">
                 Audit Firms
               </h1>
               <div className="md:w-full flex flex-col items-center  lg:w-full">
@@ -252,7 +252,7 @@ the quality of audits and productivity
 
             <div>
               <div className="md:w-full flex flex-col items-center  lg:w-full">
-                <h1 className="text-xl   font-bah  title-font text-black   mb-4">
+                <h1 className="font-bah h-18 text-center font-semibold text-lg text-black">
                   Practical Training &amp; Development
                 </h1>
                 <div className="flex gap-1 mt-4 text-black flex-row">
@@ -263,7 +263,7 @@ Chartered Accountants and other eligible professionals looking to make a career
 in financial accounting and auditing.`}
                   </p>
                 </div>
-                <h1 className="text-xl  font-bah  title-font text-black   mt-4">
+                <h1 className="font-bah h-18 text-center font-semibold text-lg text-black">
                   Corporates
                 </h1>
                 <div className="flex mt-4 gap-1 flex-row">
@@ -274,7 +274,7 @@ practices and Board Governance.
               `}
                   </p>
                 </div>
-                <h1 className="text-xl   font-bah  title-font text-black   mt-4">
+                <h1 className="font-bah h-18 text-center font-semibold text-lg text-black">
                   Regulators
                 </h1>
                 <div className="flex mt-4 gap-1 flex-row">
@@ -539,13 +539,14 @@ monitoring and inspection policies and disciplinary mechanisms.
                         <h1 className="mt-4 text-xl font-bah   text-black capitalize font-bold ">
                           {name}
                         </h1>
-                        <div className="flex flex-col gap-5 justify-center">
+                        {/* <div className="flex flex-col gap-5 justify-center">
                           <p className=" text-black font-bah  capitalize text-center  ">
                             {role}
                           </p>
-                          <h1 className="md:w-[255px] h-[2px]  bg-blue mb-5"></h1>
-                        </div>
-                        <p className="text-center font-bah ">{description}</p>
+                       
+                        </div> */}
+                        <h1 className="md:w-[255px] h-[2px]  bg-blue mb-5"></h1>
+                        
                       </div>
                     );
                   }

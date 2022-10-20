@@ -170,16 +170,16 @@ export default function abouthome() {
                   Meet The Team
                 </p>
               </div>
-              <div className="grid gap-10  sm:grid-cols-2 lg:grid-cols-2 ">
+              <div className="grid gap-10 lg:flex  sm:grid-cols-2 lg:justify-center ">
                 {blog.map(({ name, imgs, desc, small }, index) => {
                   return (
                     <div
                       key={index}
                       data-aos="fade-up"
                       data-aos-once="true"
-                      className="flex flex-col items-center p-5"
+                      className="flex flex-col w-[400px] h-[400px] items-center p-5"
                     >
-                      <div className="relative lg:w-[300px] lg:h-[300px]  md:w-[300px] md:h-[300px] w-[200px]  h-[200px]  rounded-full">
+                      <div className="relative lg:w-[200px] lg:h-[200px]  md:w-[300px] md:h-[300px] w-[200px]  h-[200px]  rounded-full">
                         <Image
                           className="rounded-full"
                           alt="profle"
@@ -213,12 +213,15 @@ export default function abouthome() {
                 {blog1.map(({ name, imgs, desc, small,image }, index) => {
                   return (
                     <div key={index}>
-                      <div className="relative pb-56 mb-4 rounded shadow lg:pb-64">
-                        <img
-                          className="absolute object-cover w-full h-full rounded"
-                          src={image}
-                        />
-                      </div>
+                      <div className="relative lg:w-[200px] lg:h-[200px]  md:w-[200px] md:h-[200px] w-[200px]  h-[200px]  rounded-full">
+                          <Image
+                            className="rounded-full"
+                            alt="profle"
+                            src={image}
+                            objectFit="cover"
+                            layout="fill"
+                          />
+                        </div>
                       <div className="flex flex-col sm:text-center">
                         <p className="text-lg font-bah font-bold">
                         {name}
@@ -234,7 +237,7 @@ export default function abouthome() {
           </Swiper>
           <div className="flex justify-center">
             <Link href="/about#meettheteam">
-              <button className="mt-8 font-bah   border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
+              <button className="mt-4 font-bah   border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
                 READ MORE
               </button>
             </Link>

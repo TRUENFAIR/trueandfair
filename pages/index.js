@@ -106,7 +106,7 @@ export default function Home() {
   return (
     <main>
       <section
-        className=" lg:h-[700px]   "
+        className=" lg:h-[550px]   "
         style={{
           backgroundImage: `url(${"/indexpage/audit.png"})`,
           backgroundSize: "cover",
@@ -115,7 +115,7 @@ export default function Home() {
         }}
       >
         <div className="md:container md:mx-auto flex h-[500px] md:h-[700px] lg:h-full md:justify-center  items-center">
-          <div className="text-white md:w-[70%] w-[100%]  text-center h-[200px] md:h-[200px] leading-none text-2xl md:text-5xl font-bah">
+          <div className="text-white md:w-[70%] w-[100%] mt-10 text-center h-[200px] md:h-[200px] leading-none text-2xl md:text-5xl font-bah">
             <Typewriter
               className="text-white text-2xl"
               options={{
@@ -169,15 +169,15 @@ export default function Home() {
               service offering also include Audit Documentation and Archival
               Tool(s), access to experts, trainings, and insights on best
               practices in the financial reporting ecosystem.
-            </p>
+          
             
-            <p className="leading-loose   text-justify  font-bah text-black ">
+           
               We will provide real life case studies and practical training to
               aspiring and qualified Chartered Accountants (CA) and other
               eligible professionals who intend to make a career in financial
               auditing.
             </p>
-            <p className="leading-loose   text-justify  font-bah text-black ">
+            <p className="leading-loose  mt-4 text-justify  font-bah text-black ">
               <span className="text-center leading-loose text-lg    font-bah text-black font-semibold">What’s more?</span>
              {" "} We will provide advice to corporates on complex accounting
               matters, best practices in financial reporting, enhanced Internal
@@ -250,7 +250,7 @@ export default function Home() {
             <div className="lg:w-full w-full lg:mr-9  mt-6 lg:mt-0 ">
               <div className="w-full flex gap-4 lg:justify-center ">
                 <h1 className="w-full text-center  text-3xl font-bah  title-font text-black   mb-4 ">
-                  {`Why True and Fair`}
+                  {`Why True and Fair?`}
                 </h1>
               </div>
             </div>
