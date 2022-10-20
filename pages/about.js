@@ -5,6 +5,7 @@ import Link from "next/link";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
+import Focusarea from "../components/focusarea";
 
 export default function About() {
   const [buttonIndex, setButtonIndex] = useState(0);
@@ -30,14 +31,14 @@ export default function About() {
       blogsdata: [
         {
           name: "Balaji V",
-          image: "/defult1.jpeg",
+          image: "/default.jpeg",
           role: "Founder and Managing Partner",
           description:
             "Balaji V. brings over 28 years’ experience in financial accounting and auditing, working across various industries, including, agriculture, automobile, healthcare, information  technology, information technology enabled services, manufacturing, real estate, retail and infrastructure. Over the course of his professional career, he has held leadership positions in one of  India’s largest audit firms in roles spanning Audit Inspections, Audit Risk, Audit Quality  and Regulatory.  Balaji has been a member of the Audit and Assurance Standards Board, the Expert Advisory Committee and the Ind AS Transition Facilitation Group of the Institute of Chartered Accountants of India (ICAI). He has also been a member of various study groups constituted by the ICAI to evaluate and address issues considered for amendments by the ICAI. Balaji has co-authored various publications of the ICAI including the ‘Guidance Note on Audit of Internal Financial Controls over Financial Reporting’ and the ‘Guidance Note on  Reporting on Fraud’ under sections 143(3)(i) and 143(12), respectively, of the Companies Act, 2013; ‘Technical Guidance on Reporting under Rule 11(e) and 11(f) of the Companies (Audit and Auditors) Rules’ among others.",
         },
         {
           name: "Brindasri K",
-          image: "/defult1.jpeg",
+          image: "/default.jpeg",
           role: "Partner",
           description:
             "Brindasri K. comes with over 27 years of professional experience in the information technology services sector and has worked with India’s largest IT company. Her area of expertise includes sales and delivery in the banking and financial services industry, professional services and life sciences. Brindasri has also worked with one of the largest multinational audit firms where her role involved automating operations.",
@@ -53,35 +54,35 @@ export default function About() {
       blogsdata: [
         {
           name: "Archana Ashok",
-          image: "/defult1.jpeg",
+          image: "/team/Archana.png",
           role: "Founder & Managing Director",
           description:
             "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
         },
         {
           name: "Shristi Sarayan",
-          image: "/defult1.jpeg",
+          image: "/team/sriti.png",
           role: "Founder & Managing Director",
           description:
             "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
         },
         {
           name: "Kirti Kumar Kotian",
-          image: "/defult1.jpeg",
+          image: "/team/kirti.png",
           role: "Founder & Managing Director",
           description:
             "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
         },
         {
           name: "Rakesh Jain",
-          image: "/defult1.jpeg",
+          image: "/team/rakesh.png",
           role: "Founder & Managing Director",
           description:
             "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
         },
         {
           name: "Krishna R P",
-          image: "/defult1.jpeg",
+          image: "/team/krishna.png",
           role: "CEO",
           description:
             "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
@@ -103,7 +104,7 @@ export default function About() {
             "(b) Technical matters related to financial accounting and auditing",
           para4:
             "The vision, policies, practices and guidance of T&F have been critically reviewed and approved by our Advisory Boards whose members are eminent Audit & Finance professionals.",
-          name: "A. STRATEGIC ADVISORY BOARD (SAB)",
+          name: "STRATEGIC ADVISORY BOARD (SAB)",
           point1:
             "1. Advice on the Vision and Mission statements of T&F and evaluate compliance with the same.",
           point2: "2. Evaluate and advice on:",
@@ -123,7 +124,7 @@ export default function About() {
         },
         {
           name: "TECHNICAL ADVISORY BOARD (TAB)",
-          image: "/defult1.jpeg",
+          image: "/default.jpeg",
           role: "CEO",
           description:
             "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
@@ -169,167 +170,122 @@ export default function About() {
               </p>
             </div>
           </div>
+        </section>{" "}
+        <div
+          className="w-full md:block hidden h-[60px] lg:col-span-2  col-span-1 "
+          id="abttf"
+        ></div>
+        <section className="md:container md:mx-auto py-11 w-full  h-fit  lg:py-5">
+          <h2 className="text-3xl font-bah text-center  title-font text-black   mb-4">
+            About True and Fair
+          </h2>
+          <div className=" ">
+            <p className="leading-loose   text-justify  font-bah text-black ">
+              {" "}
+              T&amp;F is a start-up firm formed with a vision to enable capacity
+              building and capability enhancement of audit firms. Founded by a
+              team of seasoned CA professionals, we bring together a collective
+              experience of more than 100 years in audits and accounting.
+              Leveraging on our experience we have designed a set of policies
+              and practices to help our clients benefit from our technical
+              expertise. We have the skills and scale to serve audit firms (both
+              established and formative), upcoming chartered accountants,
+              Regulators, and corporates - while remaining agile and personal in
+              our approach. T &amp; F is one-of-a-kind firm and aspires to be
+              the benchmark STANDARD SETTER in the auditing ecosystem.
+            </p>
+          </div>
         </section>
+        <div
+          className="w-full md:block hidden h-[60px] lg:col-span-2  col-span-1 "
+          id="focusarea"
+        ></div>
+        <section className=" bg-white py-11 w-full  h-fit  lg:py-16">
+          <h1 className="text-3xl font-bah  text-center title-font text-black   mb-8">
+            Focus Areas
+          </h1>
+          <div className=" md:container md:mx-auto  grid grid-cols-2">
+            <div>
+              <h1 className="text-xl text-center font-bah  title-font text-black   mb-4">
+                Audit Firms
+              </h1>
+              <div className="md:w-full flex flex-col items-center  lg:w-full">
+                <div className="flex gap-1 md:p-0 p-1 mt-4 text-black flex-row">
+                  <p className="prose text-justify text-black font-bah ">
+                    {`Empowering the auditors with an ecosystem of actionable policies, best
+                                            practices, tools, technical guidance, and access to audit specialists such as
+                                                Information Technology Audit, Forensic Audit and Valuation Specialists.
+              `}
+                  </p>
+                </div>
+                <div className="flex  md:p-0 p-1  mt-4 gap-1 flex-row">
+                  <p className="prose text-black text-justify font-bah ">
+                    {`Improving the efficacy of implementing the principles specified in the
+professional standards during audits.
+              `}
+                  </p>
+                </div>
+                <div className="flex mt-4  md:p-0 p-1  gap-1 flex-row">
+                  <p className="prose text-black text-justify  font-bah ">
+                    {`Develop an exhaustive library of audit-related material in the Audit
+Documentation and Archival Tool (ADAT) including content on risks and
+possible responses, scalable work paper templates, audit programmes
+and checklists.
+              `}
+                  </p>
+                </div>
+                <div className="flex  md:p-0 p-1  mt-4 gap-1 flex-row">
+                  <p className="prose text-black text-justify font-bah ">
+                    {`Significantly invest in data analytics and artificial intelligence to improve
+the quality of audits and productivity
+              `}
+                  </p>
+                </div>
 
-        <section
-          className="pt-8 pb-10 text-zinc-900 bg-lightgray"
-          id="capabilities"
-        >
-          <div className="md:container  mx-auto">
-            <div className="grid lg:grid-cols-2 grid-cols-1 md:gap-x-20 gap-4 md:pt- pt-4">
-              <div
-                className="w-full md:block hidden h-[80px] lg:col-span-2  col-span-1 "
-                id="abttf"
-              ></div>
-              <div data-aos="fade-up" data-aos-once="true" className="w-auto">
-                <h2 className="text-3xl font-bah  title-font text-black   mb-4">
-                  About True and Fair
-                </h2>
-                <p className="prose font-bah pt-8">
-                  T&amp;F is a start-up firm formed with a vision to enable
-                  capacity building and capability enhancement of audit firms.
-                  Founded by a team of seasoned CA professionals, we bring
-                  together a collective experience of more than 100 years in
-                  audits and accounting. Leveraging on our experience we have
-                  designed a set of policies and practices to help our clients
-                  benefit from our technical expertise. We have the skills and
-                  scale to serve audit firms (both established and formative),
-                  upcoming chartered accountants, Regulators, and corporates -
-                  while remaining agile and personal in our approach. T &amp; F
-                  is one-of-a-kind firm and aspires to be the benchmark STANDARD
-                  SETTER in the auditing ecosystem.
-                </p>
+                {/* <Link href="/about#focusarea">
+                        <button className="m-8 font-bah  bg-yellow border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
+                          READ MORE
+                        </button>
+                      </Link> */}
               </div>
+            </div>
 
-              <div
-                data-aos="fade-up"
-                data-aos-once="true"
-                className="w-auto h-48 lg:h-auto relative"
-              >
-                <Image
-                  layout="fill"
-                  className="absolute h-full w-full object-cover"
-                  alt=""
-                  src="/about/dummy3.jpg"
-                />
+            <div>
+              <div className="md:w-full flex flex-col items-center  lg:w-full">
+                <h1 className="text-xl   font-bah  title-font text-black   mb-4">
+                  Practical Training &amp; Development
+                </h1>
+                <div className="flex gap-1 mt-4 text-black flex-row">
+                  <p className="prose text-justify  text-black font-bah ">
+                    {`Developing and imparting a robust training curriculum with industry specific
+real life case studies and simulated work environment for aspiring and qualified
+Chartered Accountants and other eligible professionals looking to make a career
+in financial accounting and auditing.`}
+                  </p>
+                </div>
+                <h1 className="text-xl  font-bah  title-font text-black   mt-4">
+                  Corporates
+                </h1>
+                <div className="flex mt-4 gap-1 flex-row">
+                  <p className="prose text-justify text-black font-bah ">
+                    {`Guide corporates on complex Accounting & Financial Reporting matters,
+Environmental, Social and Governance (ESG) strategy, Risk Management
+practices and Board Governance.
+              `}
+                  </p>
+                </div>
+                <h1 className="text-xl   font-bah  title-font text-black   mt-4">
+                  Regulators
+                </h1>
+                <div className="flex mt-4 gap-1 flex-row">
+                  <p className="prose text-justify text-black   font-bah ">
+                    {`Collaborate with Regulators on standard setting, regulatory developments,
+monitoring and inspection policies and disciplinary mechanisms.
+              `}
+                  </p>
+                </div>
+                <div className="flex mt-4 gap-1 flex-row"></div>
               </div>
-
-              {/* <div
-              className="w-full md:block hidden  h-[100px] lg:col-span-2  col-span-1 "
-              id="Outsourcing"
-            ></div>
-
-            <div className="w-auto h-48 lg:h-auto relative">
-              <Image
-                layout="fill"
-                className="absolute h-full w-full object-cover"
-                alt=""
-                src="/capabi/outsourcing.png"
-              />
-            </div>
-            <div className="w-auto">
-              <h2 className="text-xl ">Outsourcing</h2>
-              <p className="prose pt-8">
-                In this age of technology disruption, organizations are
-                constantly riddled with the challenge of wheels on-the-go to
-                remain competitive. This requires a clear vision and strategy
-                for agility and scale. SFJ has an exceptional track record in
-                managed IT services, and a customer retention ratio of over 90%
-                over the past decade is a testimony to the disproportionate
-                value we added to our customers businesses. We offer application
-                development, maintenance and support services to help stabilize
-                and scale your business operations. Through our just-in-time and
-                cost-effective sourcing, skilling, staffing strategies, we have
-                helped several organizations achieve their objectives with
-                minimal disruptions to ongoing business operations.
-              </p>
-
-              <p className="prose lg:mb-0 mb-5 pt-8">
-                <Link href="/contact">
-                  <a className="active:text-red font-bold underline hover:text-orange decoration-emerald-600 text-emerald-600">
-                    Get in touch
-                  </a>
-                </Link>{" "}
-                to know more.
-              </p>
-            </div>
-
-            <div
-              className="w-full h-[100px] md:block hidden  lg:col-span-2  col-span-1 "
-              id="Staffing"
-            ></div>
-
-            <div className="w-auto">
-              <h2 className="text-xl ">Staffing</h2>
-              <p className="prose pt-8">
-                People are the key ingredient to the success of any project or
-                initiative. Getting people on-boarded on-time within the budget
-                is always a challenge. This is where our expertise can help you.
-                We have a strong network of skilled professionals who can be
-                staffed quickly across multiple roles, and many of our customers
-                have realized enhanced productivity, reduced staffing and
-                recruitment costs by partnering with us. We deploy talent with
-                not just the right skills, but also the right attitude and
-                experience needed for your projects. We also specialize in
-                deploying SAP, Oracle professionals and senior executive hiring.
-              </p>
-
-              <p className="prose lg:mb-0 mb-5 pt-8">
-                <Link href="/contact">
-                  <a className="active:text-red font-bold underline hover:text-orange decoration-emerald-600 text-emerald-600">
-                    Get in touch
-                  </a>
-                </Link>{" "}
-                to know more.
-              </p>
-            </div>
-            <div className="w-auto h-48 md:h-auto relative">
-              <Image
-                layout="fill"
-                className="absolute h-full w-full object-cover"
-                alt=""
-                src="/capabi/staffing.png"
-              />
-            </div>
-            <div
-              className="w-full md:block hidden  h-[100px] lg:col-span-2  col-span-1 "
-              id="Upskilling"
-            ></div>
-
-            <div className="w-auto h-48 lg:h-auto relative">
-              <Image
-                layout="fill"
-                className="absolute h-full w-full object-cover"
-                alt=""
-                src="/capabi/upskilling.png"
-              />
-            </div>
-            <div className="w-auto">
-              <h2 className="text-xl ">Upskilling</h2>
-              <p className="prose pt-8">
-                The digital services eco-system as we know it is undergoing a
-                paradigm shift. New stacks and standards are emerging faster
-                than ever, and every organization with a digital footprint is
-                under serious pressure to quickly build and maintain a
-                future-ready workforce. It is no secret that even large
-                corporations with immense resources at their disposal are
-                struggling to cope with this challenge. Empowering workforce on
-                the go requires deep expertise that can be brought within the
-                time and cost allocated. Our knowledge services ecosystem is
-                constantly connected/updated with experts who can deliver
-                online/offline trainings on several in-demand technology skills
-                for your project teams and campus recruits.
-              </p>
-
-              <p className="prose lg:mb-0 mb-5 pt-8">
-                <Link href="/contact">
-                  <a className="active:text-red font-bold underline hover:text-orange decoration-emerald-600 text-emerald-600">
-                    Get in touch
-                  </a>
-                </Link>{" "}
-                to know more.
-              </p>
-            </div>*/}
             </div>
           </div>
         </section>
@@ -348,7 +304,7 @@ export default function About() {
               <div className="lg:w-full w-full lg:mr-9  mt-6 lg:mt-0 ">
                 <div className="w-full flex gap-4 lg:justify-center ">
                   <h1 className="w-full text-center  text-3xl font-bah  title-font text-white   mb-4 ">
-                    OUR VISION AND MISSION
+                    Our Vision And Mission
                   </h1>
                 </div>
               </div>
@@ -359,7 +315,7 @@ export default function About() {
                       <div key={index}>
                         <li
                           key={id}
-                          className="mt-4  text-center font-bah lg:p-0 p-12 leading-relaxed text-white "
+                          className="mt-4 text-lg text-center font-bah lg:p-0 p-12 leading-relaxed text-white "
                         >
                           {text}
                         </li>
@@ -382,7 +338,6 @@ export default function About() {
           className="w-full md:block hidden h-[80px] lg:col-span-2  col-span-1 "
           id="focusarea"
         ></div>
-
         <div
           className="w-full md:block hidden h-[50px] lg:col-span-2  col-span-1 "
           id="meettheteam"
@@ -416,27 +371,29 @@ export default function About() {
             </ul>
           </div>
         </section>
-
         <section className="bg-lightgray md:pt-1 md:pb-10 ">
-          <div className="container px-6  mx-auto">
+          <div className="md:container px-6  md:mx-auto">
             <div
-              className={`${buttonIndex === 1 ? "block font-bah" : "hidden"}`}
+              className={`${
+                buttonIndex === 1 ? "block font-bah mt-8" : "hidden"
+              }`}
             >
               {discover.map(({ para }, index) => {
                 return <p className="font-bah">{para}</p>;
               })}
             </div>
             <div
-              className={`${buttonIndex === 2 ? "block font-bah" : "hidden"}`}
+              className={`${
+                buttonIndex === 2 ? "block font-bah mt-8" : "hidden"
+              }`}
             >
               {discover[buttonIndex].blogsdata.map(
                 ({ para, para2, para3, para4 }, index) => {
                   return (
                     <div>
-                      <p className="font-bah">{para}</p>
-                      <p className="font-bah">{para2}</p>
-                      <p className="font-bah">{para3}</p>
-                      <p className="font-bah">{para4}</p>
+                      <p className="font-bah">
+                        {para} {para2} {para3} {para4}
+                      </p>
                     </div>
                   );
                 }
@@ -473,7 +430,7 @@ export default function About() {
                   if (buttonIndex === 2) {
                     return (
                       <div>
-                        <p className="text-center text-xl font-semibold font-bah">
+                        <p className="text-left text-xl font-semibold font-bah">
                           {name}
                         </p>
                         <div
@@ -570,7 +527,7 @@ export default function About() {
                         data-aos-once="true"
                         className="flex flex-col items-center p-5"
                       >
-                        <div className="relative lg:w-[300px] lg:h-[300px]  md:w-[300px] md:h-[300px] w-[200px]  h-[200px]  rounded-full">
+                        <div className="relative lg:w-[250px] lg:h-[250px]  md:w-[200px] md:h-[200px] w-[200px]  h-[200px]  rounded-full">
                           <Image
                             className="rounded-full"
                             alt="profle"

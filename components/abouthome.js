@@ -37,28 +37,39 @@ export default function abouthome() {
   ];
   const blog1 = [
     {
-      name: "Balaji V",
-      small: "Founder and Managing Partner",
-      desc: "Remember, you control your breath, don't let your breath control you! 🧘🏻‍♀️- 🤷🏽‍♀️ - ⬇️",
-      imgs: "/pause/PAUSE3.png",
+      name: "Archana Ashok",
+      image: "/team/Archana.png",
+      role: "Founder & Managing Director",
+      description:
+        "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
     },
     {
-      name: "Brindasri K",
-      small: "Partner",
-      desc: "Don't ever look back, unless it's from a different point of view 🙃 ⬇️",
-      imgs: "/pause/PAUSE2.png",
+      name: "Shristi Sarayan",
+      image: "/team/sriti.png",
+      role: "Founder & Managing Director",
+      description:
+        "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
     },
     {
-      name: "Balaji V",
-      small: "Founder and Managing Partner",
-      desc: "Remember, you control your breath, don't let your breath control you! 🧘🏻‍♀️- 🤷🏽‍♀️ - ⬇️",
-      imgs: "/pause/PAUSE3.png",
+      name: "Kirti Kumar Kotian",
+      image: "/team/kirti.png",
+      role: "Founder & Managing Director",
+      description:
+        "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
     },
     {
-      name: "Brindasri K",
-      small: "Partner",
-      desc: "Don't ever look back, unless it's from a different point of view 🙃 ⬇️",
-      imgs: "/pause/PAUSE2.png",
+      name: "Rakesh Jain",
+      image: "/team/rakesh.png",
+      role: "Founder & Managing Director",
+      description:
+        "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
+    },
+    {
+      name: "Krishna R P",
+      image: "/team/krishna.png",
+      role: "CEO",
+      description:
+        "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
     },
   ];
 
@@ -172,7 +183,7 @@ export default function abouthome() {
                         <Image
                           className="rounded-full"
                           alt="profle"
-                          src={"/defult1.jpeg"}
+                          src={"/default.jpeg"}
                           objectFit="cover"
                           layout="fill"
                         />
@@ -184,7 +195,7 @@ export default function abouthome() {
                         <p className=" text-black font-bah  capitalize text-center  ">
                           {small}
                         </p>
-                        <h1 className="md:w-[255px] h-[2px]  bg-blue mb-5"></h1>
+                        
                       </div>
                     </div>
                   );
@@ -198,50 +209,22 @@ export default function abouthome() {
                   Meet The Team
                 </p>
               </div>
-              <div className="grid gap-10  sm:grid-cols-2 lg:grid-cols-4 ">
-                {blog1.map(({ name, imgs, desc, small }, index) => {
+              <div className="grid gap-10  sm:grid-cols-2 lg:grid-cols-5 ">
+                {blog1.map(({ name, imgs, desc, small,image }, index) => {
                   return (
                     <div key={index}>
                       <div className="relative pb-56 mb-4 rounded shadow lg:pb-64">
                         <img
                           className="absolute object-cover w-full h-full rounded"
-                          src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
-                          alt="Person"
+                          src={image}
                         />
                       </div>
                       <div className="flex flex-col sm:text-center">
                         <p className="text-lg font-bah font-bold">
-                          Oliver Aguilerra
+                        {name}
                         </p>
-                        <p className="mb-5 text-xs font-bah text-black">
-                          Product Manager
-                        </p>
-                        <div className="flex items-center space-x-3 sm:justify-center">
-                          <a
-                            className="mx-1.5 text-black  transition-colors duration-300 transform hover:text-blue-500"
-                            href="#"
-                          >
-                            <svg
-                              className="w-8 h-8"
-                              viewBox="0 0 24 24"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M15.2 8.80005C16.4731 8.80005 17.694 9.30576 18.5941 10.2059C19.4943 11.1061 20 12.327 20 13.6V19.2H16.8V13.6C16.8 13.1757 16.6315 12.7687 16.3314 12.4687C16.0313 12.1686 15.6244 12 15.2 12C14.7757 12 14.3687 12.1686 14.0687 12.4687C13.7686 12.7687 13.6 13.1757 13.6 13.6V19.2H10.4V13.6C10.4 12.327 10.9057 11.1061 11.8059 10.2059C12.7061 9.30576 13.927 8.80005 15.2 8.80005Z"
-                                fill="currentColor"
-                              />
-                              <path
-                                d="M7.2 9.6001H4V19.2001H7.2V9.6001Z"
-                                fill="currentColor"
-                              />
-                              <path
-                                d="M5.6 7.2C6.48366 7.2 7.2 6.48366 7.2 5.6C7.2 4.71634 6.48366 4 5.6 4C4.71634 4 4 4.71634 4 5.6C4 6.48366 4.71634 7.2 5.6 7.2Z"
-                                fill="currentColor"
-                              />
-                            </svg>
-                          </a>
-                        </div>
+                        
+                        
                       </div>
                     </div>
                   );

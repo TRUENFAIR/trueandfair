@@ -12,6 +12,7 @@ import Resourceslide from "../components/resorceslide";
 import Abouthome from "../components/abouthome";
 import Fixediv from "../components/fixediv";
 import Focusareaslide from "../components/focusareaslide";
+import Focusarea from "../components/focusarea";
 
 const rightIcon = (
   <svg
@@ -53,7 +54,7 @@ export default function Home() {
       id: 1,
       title:
         "Increased stakeholder expectations from auditors and regulatory scrutiny of audit quality ",
-      text: " lorem d scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      text: "NFRA has concluded in this AQRR that the appointment of BSR as the statutory auditors of IFIN was ab initio illegal and void, & the release said. Further, NFRA found that the IT processes/platform used by BSR have deficiencies that are systemic and structural in nature.",
     },
     {
       id: 2,
@@ -105,7 +106,7 @@ export default function Home() {
   return (
     <main>
       <section
-        className=" lg:h-screen   "
+        className=" lg:h-[700px]   "
         style={{
           backgroundImage: `url(${"/indexpage/audit.png"})`,
           backgroundSize: "cover",
@@ -113,8 +114,8 @@ export default function Home() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="md:container md:mx-auto flex h-[500px] md:h-[700px] lg:h-full md:justify-start items-center">
-          <div className="text-white md:w-[70%] w-[100%]  h-[200px] md:h-[200px] leading-none text-2xl md:text-5xl font-bah">
+        <div className="md:container md:mx-auto flex h-[500px] md:h-[700px] lg:h-full md:justify-center  items-center">
+          <div className="text-white md:w-[70%] w-[100%]  text-center h-[200px] md:h-[200px] leading-none text-2xl md:text-5xl font-bah">
             <Typewriter
               className="text-white text-2xl"
               options={{
@@ -139,16 +140,10 @@ export default function Home() {
       <section className=" body-font pt-14 pb-4">
         <div className="md:container px-5 md:mx-auto">
           <div className="xl:w-full lg:w-full  w-full mx-auto text-center">
-            <p className="text-3xl font-bah  title-font text-black   mb-4">
+            <p className="text-3xl font-bah  title-font text-black   mb-6">
               True and Fair Professionals Network
             </p>
-            <p
-              p
-              className="leading-loose text-lg    text-center  font-bah text-black font-semibold"
-            >
-              Strengthen the performance of auditors in the financial reporting
-              ecosystem.
-            </p>
+            
             {/* <p className="leading-loose   text-justify  font-bah text-black ">
               True and Fair aims to enhance the audit quality of CA firms by
               providing is a digital platform containing professional standards,
@@ -165,7 +160,9 @@ export default function Home() {
               success and growth, delivering world class audit services.
             </p> */}
             <p className="leading-loose   text-justify  font-bah text-black ">
-              We will work with audit firms to enable them to deliver high
+              <span className="leading-loose text-lg    text-center  font-bah text-black font-semibold">Strengthen the performance of auditors in the financial reporting
+              ecosystem.</span>
+              {" "}We will work with audit firms to enable them to deliver high
               quality financial audits. Our well-developed and robust audit
               quality policies, procedures, guidance and tools will help
               auditors improve the quality of their professional services. Our
@@ -173,9 +170,7 @@ export default function Home() {
               Tool(s), access to experts, trainings, and insights on best
               practices in the financial reporting ecosystem.
             </p>
-            <p className="text-center leading-loose text-lg    font-bah text-black font-semibold">
-              {`What’s more?`}
-            </p>
+            
             <p className="leading-loose   text-justify  font-bah text-black ">
               We will provide real life case studies and practical training to
               aspiring and qualified Chartered Accountants (CA) and other
@@ -183,61 +178,19 @@ export default function Home() {
               auditing.
             </p>
             <p className="leading-loose   text-justify  font-bah text-black ">
-              We will provide advice to corporates on complex accounting
+              <span className="text-center leading-loose text-lg    font-bah text-black font-semibold">What’s more?</span>
+             {" "} We will provide advice to corporates on complex accounting
               matters, best practices in financial reporting, enhanced Internal
               Financial Controls over Financial Reporting (IFCoFR), advice on
               Governance and Environmental, Social and Governance (ESG) related
               topics.
-            </p>
-            <p className="leading-loose   text-justify  font-bah text-black ">
+           
               We will work with Audit Regulators on standard setting, monitoring
               and inspection process and setting up a robust disciplinary
               mechanism.
             </p>
 
             <span className="inline-block h-1 w-10 rounded bg-blue mt-8 mb-6"></span>
-          </div>
-        </div>
-      </section>
-      <section
-        data-aos="fade-up"
-        className="text-black  body-font   bg-lightgray  lg:py-12"
-      >
-        <div className=" md:container md:mx-auto  lg:rounded-lg text-left">
-          <div className="lg:w-full mx-auto flex flex-col lg:flex-col ">
-            <div className="lg:w-full w-full lg:mr-9  mt-6 lg:mt-0 ">
-              <div className="w-full flex gap-4 lg:justify-center ">
-                <h1 className="w-full text-center  text-3xl font-bah  title-font text-black   mb-4 ">
-                  {`Why True and Fair (T&F)?`}
-                </h1>
-              </div>
-            </div>
-            <div className="mt-10">
-              <ul className="grid lg:grid-cols-3 grid-cols-1 lg:gap-5">
-                {whytf.map(({ text, id, title }, index) => {
-                  return (
-                    <div key={index}>
-                      <p className="font-bah h-18 text-center tex-bold text-lg text-black">
-                        {title}
-                      </p>
-                      <li
-                        key={id}
-                        className="mt-4  text- font-bah lg:p-0 p-5 leading-relaxed text-black "
-                      >
-                        {text}
-                      </li>
-                    </div>
-                  );
-                })}
-              </ul>
-            </div>
-            {/* <div className="flex justify-center">
-              <Link href="/adat">
-                <button className="mt-8 font-bah   border-2 border-white text-black font-bold text-xs hover:text-blue hover:bg-white p-3 rounded-lg transition-all">
-                  READ MORE
-                </button>
-              </Link>
-            </div> */}
           </div>
         </div>
       </section>
@@ -256,7 +209,7 @@ export default function Home() {
             <div className="lg:w-full w-full lg:mr-9  mt-6 lg:mt-0 ">
               <div className="w-full flex gap-4 lg:justify-center ">
                 <h1 className="w-full text-center  text-3xl font-bah  title-font text-white   mb-4 ">
-                OUR VISION AND MISSION
+                Our Vision And Mission
                 </h1>
               </div>
              
@@ -269,7 +222,7 @@ export default function Home() {
                       
                       <li
                         key={id}
-                        className="mt-4  text-center font-bah lg:p-0 p-12 leading-relaxed text-white "
+                        className="mt-4 text-lg text-center font-bah lg:p-0 p-12 leading-relaxed text-white "
                       >
                         {text}
                       </li>
@@ -288,7 +241,51 @@ export default function Home() {
           </div>
         </div>
       </section>
-            <Focusareaslide/>
+      <section
+        data-aos="fade-up"
+        className="text-black  body-font   bg-lightgray  lg:py-12"
+      >
+        <div className=" md:container md:mx-auto  lg:rounded-lg text-left">
+          <div className="lg:w-full mx-auto flex flex-col lg:flex-col ">
+            <div className="lg:w-full w-full lg:mr-9  mt-6 lg:mt-0 ">
+              <div className="w-full flex gap-4 lg:justify-center ">
+                <h1 className="w-full text-center  text-3xl font-bah  title-font text-black   mb-4 ">
+                  {`Why True and Fair`}
+                </h1>
+              </div>
+            </div>
+            <div className="mt-10">
+              <ul className="grid lg:grid-cols-3 grid-cols-1 lg:gap-12">
+                {whytf.map(({ text, id, title }, index) => {
+                  return (
+                    <div key={index}>
+                      <p className="font-bah h-18 text-center font-semibold text-lg text-black">
+                        {title}
+                      </p>
+                      <li
+                        key={id}
+                        className="mt-4  text- font-bah lg:p-0 p-5 leading-loose text-black "
+                      >
+                        {text}
+                      </li>
+                    </div>
+                  );
+                })}
+              </ul>
+            </div>
+            {/* <div className="flex justify-center">
+              <Link href="/adat">
+                <button className="mt-8 font-bah   border-2 border-white text-black font-bold text-xs hover:text-blue hover:bg-white p-3 rounded-lg transition-all">
+                  READ MORE
+                </button>
+              </Link>
+            </div> */}
+          </div>
+        </div>
+      </section>
+      <Focusarea/>
+      
+          
       {/* <section
         data-aos="fade-up"
         data-aos-once="true"

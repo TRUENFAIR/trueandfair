@@ -30,7 +30,7 @@ export default function Layout({ children }) {
       sub: [
         { name: "About True and Fair", path: "/about#abttf" },
 
-        // { name: " Focus Areas", path: "/about#focusarea" },
+        { name: " Focus Areas", path: "/about#focusarea" },
         { name: "Meet the Team", path: "/about#meettheteam" },
       ],
     },
