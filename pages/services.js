@@ -109,7 +109,7 @@ responding to queries raised / findings / reports
                 </p>
               </div>
               <div className="flex gap-1  text-black flex-row">
-                <p className="prose  text-black font-bah ">
+                <p className="prose mt-2 text-black font-bah ">
                   {`We will also enable the audit firms to work with other CA firms to obtain Engagement
 Quality Control Reviews as required/permissible under the professional standards or
 engage with such other CA firms for consulting on complex accounting/auditing
@@ -302,6 +302,19 @@ policies
               className="w-full font-bah md:block hidden  h-[80px] lg:col-span-2  col-span-1 "
               id="Regulators"
             ></div>
+            <div
+              data-aos="fade-up"
+              data-aos-once="true"
+              className="w-auto h-48 lg:h-auto relative"
+            >
+              <Image
+                layout="fill"
+                className="absolute h-full w-full object-cover"
+                alt=""
+                src="/about/dummy3.jpg"
+              />
+            </div>
+
             <div data-aos="fade-up" data-aos-once="true" className="w-auto">
               <h2 className="text-3xl font-bah  title-font text-black   mb-4">
                 Regulators
@@ -361,19 +374,7 @@ including amendments or enhancements or withdrawal of the Standards
                 to know more.
               </p>
             </div>
-            <div
-              data-aos="fade-up"
-              data-aos-once="true"
-              className="w-auto h-48 lg:h-auto relative"
-            >
-              <Image
-                layout="fill"
-                className="absolute h-full w-full object-cover"
-                alt=""
-                src="/about/dummy3.jpg"
-              />
-            </div>
-
+            
             {/* <div
               className="w-full md:block hidden  h-[100px] lg:col-span-2  col-span-1 "
               id="Outsourcing"
