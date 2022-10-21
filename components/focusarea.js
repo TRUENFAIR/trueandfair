@@ -56,7 +56,7 @@ the quality of audits and productivity
           <div>
             <div className="md:w-full flex flex-col items-center  lg:w-full">
               <h1 className="font-bah h-18 text-center font-semibold text-lg text-black">
-                Practical Training &amp; Development
+              Chartered Accountants
               </h1>
               <div className="flex gap-1 mt-4 text-black flex-row">
                 <p className="prose text-justify  text-black font-bah ">

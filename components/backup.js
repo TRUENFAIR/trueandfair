@@ -137,5 +137,15 @@ export default function backup() {
                   scalable for large audits.
                 </p>
               </div>
+
+
+                         <button
+  class="p-4 border border-gray-200 rounded w-64 bg-white hover:bg-gray-50 hover:border-b-4 hover:border-b-blue-500 flex items-center active:bg-gray-100"
+>
+  <div class="flex justify-center items-center text-gray-500 mr-4">
+    <img src="/library/book.png" alt="" className="w-14 h-14" />
+  </div>
+  <h1 class="font-bold text-gray-700 text-sm">{small}</h1>
+</button>
   </>;
 }

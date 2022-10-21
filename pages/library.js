@@ -7,7 +7,7 @@ import Link from "next/link";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import { useRouter } from 'next/router'
+import { useRouter } from "next/router";
 
 export default function library() {
   const [videoss, setVideoss] = useState(null);
@@ -17,14 +17,13 @@ export default function library() {
     setFullblog(1);
   };
 
-  const {asPath} = useRouter()
+  const { asPath } = useRouter();
   useEffect(() => {
-    
-    const hashes = ["Ebooks", "videos", "Certifications", ]
-    const whichButton = hashes.indexOf(asPath.split('#')[1])
-   
-    setButtonIndex(whichButton === -1 ? 0 : whichButton)
-  }, [asPath])
+    const hashes = ["QualityStandards", "AuditApproach", "PracticeAids&Guidance","RegulatoryDevelopments","ProfessionalStandards&Regulations"];
+    const whichButton = hashes.indexOf(asPath.split("#")[1]);
+
+    setButtonIndex(whichButton === -1 ? 0 : whichButton);
+  }, [asPath]);
 
   const [buttonIndex, setButtonIndex] = useState(0);
   const buttonClick = (x) => {
@@ -44,372 +43,580 @@ export default function library() {
   }, []);
   const discover = [
     {
-      name: "Ebooks",
+      name: "Quality Standards",
       img: "/discover/discover1.png",
       desc: "From Ashtanga to Vinyasa, make mindful movement a daily ritual.",
       blogsdata: [
         {
-          ser: "/blogs/blog1",
-          name: "title",
-          small: "title",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos a eveniet sequi similique expedita id obcaecati velit suscipit consequuntur excepturi repellendus iste illo blanditiis possimus fugit dol",
-          imgs: "/pause/PAUSE3.PNG",
+         
+          name: "Independence",
+          links:""
         },
         {
-          ser: "/blogs/blog1",
-          name: "title",
-          small: "title",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos a eveniet sequi similique expedita id obcaecati velit suscipit consequuntur excepturi repellendus iste illo blanditiis possimus fugit dol",
-          imgs: "/pause/PAUSE3.PNG",
+         
+          name: "Conflicts",
+          links:""
         },
         {
-          ser: "/blogs/blog1",
-          name: "title",
-          small: "title",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos a eveniet sequi similique expedita id obcaecati velit suscipit consequuntur excepturi repellendus iste illo blanditiis possimus fugit dol",
-          imgs: "/pause/PAUSE3.PNG",
+         
+          name: "Client and Engagement acceptance",
+          links:""
         },
         {
-          ser: "/blogs/blog1",
-          name: "title",
-          small: "title",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos a eveniet sequi similique expedita id obcaecati velit suscipit consequuntur excepturi repellendus iste illo blanditiis possimus fugit dol",
-          imgs: "/pause/PAUSE3.PNG",
+         
+          name: "Contracting Engagements",
+          links:""
         },
+        {
+         
+          name: "Client confidentiality",
+          links:""
+        },
+        {
+         
+          name: "Client Exit / Resignation",
+          links:""
+        },
+        {
+         
+          name: "Anti-money laundering",
+          links:""
+        },
+        {
+         
+          name: "Anti-corruption",
+          links:""
+        },
+        {
+         
+          name: "NOCLAR",
+          links:""
+        },
+        {
+         
+          name: "Ethics and non-retaliation/ non-discrimination",
+          links:""
+        },
+        {
+         
+          name: "POSH",
+          links:""
+        },
+        {
+         
+          name: "Inclusivity",
+          links:""
+        },
+        {
+         
+          name: "Talent",
+          links:""
+        },
+        {
+         
+          name: "Audit proposals",
+          links:""
+        },
+        {
+         
+          name: "Audit approach",
+          links:""
+        },
+        
+       
       ],
       blogsdatafull: [
+       
         {
-          ser: "/blogs/blog4",
-          name: "YOG ON THE MAT",
-          small: "How to get started with Yoga and grow with your practice",
-          desc: "Remember, you control your breath, don't let your breath control you! 🧘🏻‍♀️- 🤷🏽‍♀️ - ⬇️",
-          imgs: "/pause/PAUSE3.PNG",
+         
+          name: "Assignment of partners and engagement teams",
+          link:""
         },
         {
-          ser: "/blogs/blog5",
-          name: "YOG ON THE MAT",
-          small: "How to get started with Yoga and grow with your practice",
-          desc: "Don't ever look back, unless it's from a different point of view 🙃 ⬇️",
-          imgs: "/pause/PAUSE2.PNG",
+         
+          name: "Long association of partners and professionals",
+          links:""
         },
         {
-          ser: "/blogs/blog6",
-          name: "YOG ON THE MAT",
-          small: "How to get started with Yoga and grow with your practice",
-          desc: "Hips don't lie 🙇🏻‍♀️👇🏼",
-          imgs: "/pause/PAUSE1.PNG",
+         
+          name: "Partner / manager and EQCR - time spend expectation",
+          links:""
         },
         {
-          name: "YOG ON THE MAT",
-          small: "How to get started with Yoga and grow with your practice",
-          desc: "Remember, you control your breath, don't let your breath control you! 🧘🏻‍♀️- 🤷🏽‍♀️ - ⬇️",
-          imgs: "/pause/PAUSE1.PNG",
+         
+          name: "Consultation",
+          links:""
         },
         {
-          name: "YOG ON THE MAT",
-          small: "How to get started with Yoga and grow with your practice",
-          desc: "Don't ever look back, unless it's from a different point of view 🙃 ⬇️",
-          imgs: "/pause/PAUSE2.PNG",
+         
+          name: "EQCR",
+          link:""
         },
         {
-          name: "YOG ON THE MAT",
-          small: "How to get started with Yoga and grow with your practice",
-          desc: "Hips don't lie 🙇🏻‍♀️👇🏼",
-          imgs: "/pause/PAUSE3.PNG",
+         
+          name: "Audit Documentation",
+          links:""
+        },
+        {
+         
+          name: "Archival",
+          links:""
+        },
+        {
+         
+          name: "Access to work papers",
+          link:""
+        },
+        {
+         
+          name: "Inspections - internal and external",
+          links:""
+        },
+        {
+         
+          name: "Annual self-certification",
+          links:""
+        },
+        {
+         
+          name: "Notifying regulatory events",
+          links:""
+        },
+        {
+         
+          name: "CPE and learning",
+          links:""
+        },
+        {
+         
+          name: "Using the work of external experts",
+          links:""
+        },
+        {
+         
+          name: "Remuneration of partners",
+          links:""
+        },
+        {
+         
+          name: "Succession planning",
+          links:""
         },
       ],
     },
     {
-      name: "Videos",
-      img: "/discover/discover2.jpg",
+      name: "Audit Approach",
+      img: "/discover/discover1.png",
       desc: "From Ashtanga to Vinyasa, make mindful movement a daily ritual.",
       blogsdata: [
         {
-          ser: "/blogs/blog1",
-          name: "Videos",
-          small: "title",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos a eveniet sequi similique expedita id obcaecati velit suscipit consequuntur excepturi repellendus iste illo blanditiis possimus fugit dol",
-          imgs: "/library/videos1.jpg",
-          vidoes: (
-            <iframe
-              width="100%"
-              height="100%"
-              src="https://www.youtube.com/embed/XSyyQQLW2IQ"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen="allowfullscreen"
-            ></iframe>
-          ),
+         
+          name: "Purpose and Definition of Audit",
+          links:""
+        }, {
+         
+          name: "Assess Engagement Risk",
+          links:""
+        }, {
+         
+          name: "Client Acceptance and Continuance",
+          links:""
+        }, {
+         
+          name: "Agreeing terms of the audit engagement",
+          links:""
+        }, {
+         
+          name: "Understanding the entity and its environment",
+          links:""
+        }, {
+         
+          name: "Enquiries regarding Fraud and Error",
+          links:""
+        }, {
+         
+          name: "Preliminary Analytical Procedures",
+          links:""
         },
         {
-          ser: "/blogs/blog1",
-          name: "Videos",
-          small: "title",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos a eveniet sequi similique expedita id obcaecati velit suscipit consequuntur excepturi repellendus iste illo blanditiis possimus fugit dol",
-          imgs: "/library/videos1.jpg",
-          vidoes: (
-            <iframe
-              width="100%"
-              height="100%"
-              src="https://www.youtube.com/embed/XSyyQQLW2IQ"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen="allowfullscreen"
-            ></iframe>
-          ),
+         
+          name: "Materiality ",
+          links:""
         },
         {
-          ser: "/blogs/blog1",
-          name: "Videos",
-          small: "title",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos a eveniet sequi similique expedita id obcaecati velit suscipit consequuntur excepturi repellendus iste illo blanditiis possimus fugit dol",
-          imgs: "/library/videos1.jpg",
-          vidoes: (
-            <iframe
-              width="100%"
-              height="100%"
-              src="https://www.youtube.com/embed/XSyyQQLW2IQ"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen="allowfullscreen"
-            ></iframe>
-          ),
+         
+          name: "Risk assessment and ROMM’s",
+          links:""
         },
         {
-          ser: "/blogs/blog1",
-          name: "Videos",
-          small: "title",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos a eveniet sequi similique expedita id obcaecati velit suscipit consequuntur excepturi repellendus iste illo blanditiis possimus fugit dol",
-          imgs: "/library/videos1.jpg",
-          vidoes: (
-            <iframe
-              width="100%"
-              height="100%"
-              src="https://www.youtube.com/embed/XSyyQQLW2IQ"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen="allowfullscreen"
-            ></iframe>
-          ),
+         
+          name: "Fraud Risk",
+          links:""
+        },
+        {
+         
+          name: "Identify material class of transactions",
+          links:""
+        },
+        {
+         
+          name: "Risk of Management Override of Controls",
+          links:""
+        },
+        {
+         
+          name: "Audit Planning Meeting and Discussions within the Engagement team along with EQCR and specialists",
+          links:""
+        },
+        {
+         
+          name: "Understanding the group and using the work of component auditors",
+          links:""
+        },
+        {
+         
+          name: "Joint Audits",
+          links:""
+        },
+       
+      ],
+      blogsdatafull: [
+        {
+         
+          name: "Audit Strategy and Audit Plan",
+          links:""
+        },
+        {
+         
+          name: "Using the work of Internal Auditors",
+          links:""
+        }, {
+         
+          name: "Audit in the environment of service organisations",
+          links:""
+        }, {
+         
+          name: "Using the work of Specialists – internal and external",
+          links:""
+        }, {
+         
+          name: "Initial audit – test of opening balances",
+          links:""
+        }, {
+         
+          name: "Testing of IPE and IUC",
+          links:""
+        }, {
+         
+          name: "Testing controls – including IT environment and controls",
+          links:""
+        }, {
+         
+          name: "Substantive Procedures – Test Of Details, Substantive Analytical Procedures",
+          links:""
+        }, {
+         
+          name: "External confirmations",
+          links:""
+        }, {
+         
+          name: "Auditing accounting estimates",
+          links:""
+        }, {
+         
+          name: "Audit sampling",
+          links:""
+        }, {
+         
+          name: "Concluding Analytical Procedures",
+          links:""
+        }, {
+         
+          name: "Evaluation of litigations and claims",
+          links:""
+        }, {
+         
+          name: "Consideration of compliance with laws and regulations",
+          links:""
+        }, {
+         
+          name: "Error evaluation",
+          links:""
+        }, {
+         
+          name: "Subsequent events",
+          links:""
+        }, {
+         
+          name: "Written representations",
+          links:""
+        }, {
+         
+          name: "Consultations",
+          links:""
+        }, {
+         
+          name: "Going Concern",
+          links:""
+        }, {
+         
+          name: "EQCR",
+          links:""
+        }, {
+         
+          name: "Communication with Those Charged with Governance",
+          links:""
+        }, {
+         
+          name: "Audit Documentation",
+          links:""
+        }, {
+         
+          name: "Key Audit Matters",
+          links:""
+        }, {
+         
+          name: "Modified Opinion",
+          links:""
+        }, {
+         
+          name: "Emphasis of Matter and Other Matters",
+          links:""
+        }, {
+         
+          name: "Reading other information accompanying the Financial Statements",
+          links:""
+        }, {
+         
+          name: "Audit Report",
+          links:""
+        }, {
+         
+          name: "Speaking Audit Report",
+          links:""
+        }, {
+         
+          name: "Reporting under 143 (12)",
+          links:""
+        }, {
+         
+          name: "Assembly",
+          links:""
+        }, {
+         
+          name: "Tracking of changes from Audit Report Date to Archival Date (audit file)",
+          links:""
+        }, {
+         
+          name: "Archival and Retrieval",
+          links:""
+        }, {
+         
+          name: "Limited Review Engagements",
+          links:""
+        }, {
+         
+          name: "Tax Audits",
+          links:""
+        }, {
+         
+          name: "Certifications and reporting under other laws and regulations",
+          links:""
+        }, {
+         
+          name: "",
+          links:""
+        }, {
+         
+          name: "",
+          links:""
+        }, {
+         
+          name: "",
+          links:""
+        }, {
+         
+          name: "",
+          links:""
+        }, {
+         
+          name: "",
+          links:""
+        },
+      ],
+    },
+    {
+      name: "Practice Aids & Guidance",
+      img: "/discover/discover1.png",
+      desc: "From Ashtanga to Vinyasa, make mindful movement a daily ritual.",
+      blogsdata: [
+        {
+         
+          name: "Section 143(1)",
+          links:""
+        }, {
+         
+          name: "Section 143(3)",
+          links:""
+        },
+        {
+         
+          name: "Companies Auditors Rules",
+          links:""
+        },{
+         
+          name: "CARO",
+          links:""
+        },{
+         
+          name: "Guidance on evaluating Design of Control",
+          links:""
+        },{
+         
+          name: "Guidance on Fraud  ",
+          links:""
+        },{
+         
+          name: "Guidance on ROMM",
+          links:""
+        },{
+         
+          name: "Guidance on Management Override of Controls",
+          links:""
+        },{
+         
+          name: "Guidance on Group Audits and Joint Audits",
+          links:""
+        },{
+         
+          name: "Guidance on Initial Audit Engagements",
+          links:""
+        },{
+         
+          name: "Guidance on providing access to workpapers",
+          links:""
+        },{
+         
+          name: "Indemnities and hold harmless",
+          links:""
+        },{
+         
+          name: "Regulatory events",
+          links:""
+        },{
+         
+          name: "Going Concern",
+          links:""
+        },{
+         
+          name: "Analytical Procedures – evaluating source data",
+          links:""
         },
       ],
       blogsdatafull: [
         {
-          ser: "/blogs/blog1",
-          name: "Videos",
-          small: "title",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos a eveniet sequi similique expedita id obcaecati velit suscipit consequuntur excepturi repellendus iste illo blanditiis possimus fugit dol",
-          imgs: "/library/videos1.jpg",
-          vidoes: (
-            <iframe
-              width="100%"
-              height="100%"
-              src="https://www.youtube.com/embed/XSyyQQLW2IQ"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen="allowfullscreen"
-            ></iframe>
-          ),
-        },
-        {
-          ser: "/blogs/blog1",
-          name: "Videos",
-          small: "title",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos a eveniet sequi similique expedita id obcaecati velit suscipit consequuntur excepturi repellendus iste illo blanditiis possimus fugit dol",
-          imgs: "/library/videos1.jpg",
-          vidoes: (
-            <iframe
-              width="100%"
-              height="100%"
-              src="https://www.youtube.com/embed/XSyyQQLW2IQ"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen="allowfullscreen"
-            ></iframe>
-          ),
-        },
-        {
-          ser: "/blogs/blog1",
-          name: "Videos",
-          small: "title",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos a eveniet sequi similique expedita id obcaecati velit suscipit consequuntur excepturi repellendus iste illo blanditiis possimus fugit dol",
-          imgs: "/library/videos1.jpg",
-          vidoes: (
-            <iframe
-              width="100%"
-              height="100%"
-              src="https://www.youtube.com/embed/XSyyQQLW2IQ"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen="allowfullscreen"
-            ></iframe>
-          ),
-        },
-        {
-          ser: "/blogs/blog1",
-          name: "Videos",
-          small: "title",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos a eveniet sequi similique expedita id obcaecati velit suscipit consequuntur excepturi repellendus iste illo blanditiis possimus fugit dol",
-          imgs: "/library/videos1.jpg",
-          vidoes: (
-            <iframe
-              width="100%"
-              height="100%"
-              src="https://www.youtube.com/embed/XSyyQQLW2IQ"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen="allowfullscreen"
-            ></iframe>
-          ),
+         
+          name: "Guidance note on audit of account balances – all account balances",
+          links:""
+        },{
+         
+          name: "Auditing accounting estimates",
+          links:""
+        },{
+         
+          name: "Consideration of contradictory information",
+          links:""
+        },{
+         
+          name: "Guidance on audit of IPE and IUC",
+          links:""
+        },{
+         
+          name: "Guidance on identification of relevant IT applications",
+          links:""
+        },{
+         
+          name: "Guidance on use of external confirmation and alternate procedures",
+          links:""
+        },{
+         
+          name: "Guidance on physical verification of inventory",
+          links:""
+        },{
+         
+          name: "Guidance on legal confirmations",
+          links:""
+        },{
+         
+          name: "Guidance on documentation of data analytics",
+          links:""
+        },{
+         
+          name: "Guidance on archiving working drafts which are not part of the audit file",
+          links:""
+        },{
+         
+          name: "Guidance on discussions with TCWG",
+          links:""
+        },{
+         
+          name: "Guidance on discussions with Component Auditors and Joint Auditors",
+          links:""
+        },{
+         
+          name: "Guidance on enquiry with predecessor Auditors",
+          links:""
+        },{
+         
+          name: "Guidance on role of Engagement Partner",
+          links:""
+        },{
+         
+          name: "Guidance on matters requiring mandatory consultation",
+          links:""
+        },{
+         
+          name: "Guidance on responsibility of the engagement team and the role of external specialist",
+          links:""
         },
       ],
     },
 
     {
-      name: "Certifications",
+      name: "Regulatory Developments",
       img: "/discover/discover2.jpg",
       desc: "From Ashtanga to Vinyasa, make mindful movement a daily ritual.",
       blogsdata: [
-        {
-          ser: "/blogs/blog1",
-          name: "Case Studies",
-          small: "title",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos a eveniet sequi similique expedita id obcaecati velit suscipit consequuntur excepturi repellendus iste illo blanditiis possimus fugit dol",
-          imgs: "/pause/PAUSE3.PNG",
-        },
-        {
-          ser: "/blogs/blog1",
-          name: "Case Studies",
-          small: "title",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos a eveniet sequi similique expedita id obcaecati velit suscipit consequuntur excepturi repellendus iste illo blanditiis possimus fugit dol",
-          imgs: "/pause/PAUSE3.PNG",
-        },
-        {
-          ser: "/blogs/blog1",
-          name: "Case Studies",
-          small: "title",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos a eveniet sequi similique expedita id obcaecati velit suscipit consequuntur excepturi repellendus iste illo blanditiis possimus fugit dol",
-          imgs: "/pause/PAUSE3.PNG",
-        },
-        {
-          ser: "/blogs/blog1",
-          name: "title",
-          small: "title",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos a eveniet sequi similique expedita id obcaecati velit suscipit consequuntur excepturi repellendus iste illo blanditiis possimus fugit dol",
-          imgs: "/pause/PAUSE3.PNG",
-        },
+       
+       
       ],
       blogsdatafull: [
-        {
-          ser: "/blogs/blog4",
-          name: "YOG ON THE MAT",
-          small: "How to get started with Yoga and grow with your practice",
-          desc: "Remember, you control your breath, don't let your breath control you! 🧘🏻‍♀️- 🤷🏽‍♀️ - ⬇️",
-          imgs: "/pause/PAUSE3.PNG",
-        },
-        {
-          ser: "/blogs/blog5",
-          name: "YOG ON THE MAT",
-          small: "How to get started with Yoga and grow with your practice",
-          desc: "Don't ever look back, unless it's from a different point of view 🙃 ⬇️",
-          imgs: "/pause/PAUSE2.PNG",
-        },
-        {
-          ser: "/blogs/blog6",
-          name: "YOG ON THE MAT",
-          small: "How to get started with Yoga and grow with your practice",
-          desc: "Hips don't lie 🙇🏻‍♀️👇🏼",
-          imgs: "/pause/PAUSE1.PNG",
-        },
-        {
-          name: "YOG ON THE MAT",
-          small: "How to get started with Yoga and grow with your practice",
-          desc: "Remember, you control your breath, don't let your breath control you! 🧘🏻‍♀️- 🤷🏽‍♀️ - ⬇️",
-          imgs: "/pause/PAUSE1.PNG",
-        },
-        {
-          name: "YOG ON THE MAT",
-          small: "How to get started with Yoga and grow with your practice",
-          desc: "Don't ever look back, unless it's from a different point of view 🙃 ⬇️",
-          imgs: "/pause/PAUSE2.PNG",
-        },
-        {
-          name: "YOG ON THE MAT",
-          small: "How to get started with Yoga and grow with your practice",
-          desc: "Hips don't lie 🙇🏻‍♀️👇🏼",
-          imgs: "/pause/PAUSE3.PNG",
-        },
+        
+      ],
+    },
+
+    {
+      name: "Professional Standards &  Regulations",
+      img: "/discover/discover2.jpg",
+      desc: "From Ashtanga to Vinyasa, make mindful movement a daily ritual.",
+      blogsdata: [
+        
+      ],
+      blogsdatafull: [
+        
       ],
     },
   ];
 
-  const yogatv = [
-    {
-      name: "3 Sins of lockdown (lockdowns) that I'm sure we've all encountered at some point! 🚫❓",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum cupiditate possimus dolore voluptatibus similique optioducimus provident,",
-      imgs: "/library/videos1.jpg",
-      vidoes: (
-        <iframe
-          width="100%"
-          height="100%"
-          src="https://www.youtube.com/embed/XSyyQQLW2IQ"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen="allowfullscreen"
-        ></iframe>
-      ),
-    },
-    {
-      name: "loremipsum",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum cupiditate possimus dolore voluptatibus similique optioducimus provident, ",
-      imgs: "/library/videos1.jpg",
-      vidoes: (
-        <iframe
-          width="100%"
-          height="100%"
-          src="https://www.youtube.com/embed/oanjg8uCAe4"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen="allowfullscreen"
-        ></iframe>
-      ),
-    },
-    {
-      name: "loremipsum",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum cupiditate possimus dolore voluptatibus similique optioducimus provident, ",
-      imgs: "/library/videos1.jpg",
-      vidoes: (
-        <iframe
-          width="100%"
-          height="100%"
-          src="https://www.youtube.com/embed/j__CYzXxL5E"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen="allowfullscreen"
-        ></iframe>
-      ),
-    },
-  ];
-
+ 
   return (
     <>
       <section className="text-black md:container md:mx-auto  ">
-        <div className="">
-          <ul className="grid grid-flow-col gap-1 mt-5 text-center  text-black bg-white rounded-full p-1">
+        <div className="mt-16">
+          <ul className="grid gap-4 grid-cols-2 lg:grid-flow-col gap-1 mt-5 text-center  text-black bg-white rounded-full p-1">
             {discover.map(({ name }, index) => {
               return (
-                <li
+                <li className=""
                   key={index}
                   onClick={() => {
                     buttonClick(index);
@@ -432,108 +639,29 @@ export default function library() {
       </section>
 
       <section className="text-black md:container md:mx-auto">
-        <div className="py-20">
-          <div className="grid gap-10 lg:grid-cols-4 sm:max-w-sm sm:mx-auto lg:max-w-full">
+        <div className="">
+          <div className="grid gap-4 grid-cols-2  lg:grid-cols-5 sm:max-w-sm sm:mx-auto lg:max-w-full">
             {discover[buttonIndex].blogsdata.map(
               ({ name, imgs, desc, small, title, ser, videos }, index) => {
-                if (name === "Videos") {
-                  return (
-                    <div key={index} className="">
-                      <div
+                return (
+                  <div key={index} class="p-2 mt-8 transition-all  hover:scale-110 border rounded-lg shadow-lg  ">
+                    
+                      <div class="w-full flex gap- flex-col">
+                        <h4 class="mb-2 font-semibold text-center"> {name}</h4>
                        
-                        href="/"
-                        aria-label="View Item"
-                      >
-                        <div className="relative rounded  ">
-                          <img
-                            src="https://images.pexels.com/photos/2408666/pexels-photo-2408666.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
-                            className="object-cover w-full h-64"
-                            alt=""
-                          />
-                          <div className="absolute top-[20%] left-[40%] animate-pulse duration-100 ">
-                            <FaPlay  onClick={() => videoclick(1)} color="white" size={80} />
-                          </div>
-                          <div className="p-2  border-t-0">
-                            <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
-                              <a
-                                href="/"
-                                className="transition-colors duration-200 text-blue-gray-900 hover:text-deep-purple-accent-700"
-                                aria-label="Category"
-                                title="traveling"
-                              >
-                                {name}
-                              </a>
-                            </p>
-                            <a
-                              href="/"
-                              aria-label="Category"
-                              title="Visit the East"
-                              className="inline-block mb-3 font-bah text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700"
-                            >
-                              Title
-                            </a>
-                            <p className="mb-2 text-gray-700 font-bah">
-                              Lorem ipsum dolor sit amet, consectetur
-                              adipisicing elit. Dignissimos a eveniet sequi
-                              similique expedita id obcaecati velit suscipit
-                              consequuntur excepturi repellendus iste illo
-                              blanditiis possimus fugit doloribus, numquam,
-                              maxime ratione!
-                            </p>
-                          
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  );
-                } else {
-                  return (
-                    <div
-                      key={index}
-                      className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm"
-                    >
-                      <img
-                        src="https://images.pexels.com/photos/2408666/pexels-photo-2408666.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
-                        className="object-cover w-full h-64"
-                        alt=""
-                      />
-                      <div className="p-2  border-t-0">
-                        <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
-                          <a
-                            href="/"
-                            className="transition-colors duration-200 text-blue-gray-900 hover:text-deep-purple-accent-700"
-                            aria-label="Category"
-                            title="traveling"
-                          >
-                            {name}
-                          </a>
-                        </p>
-                        <a
-                          href="/"
-                          aria-label="Category"
-                          title="Visit the East"
-                          className="inline-block mb-3 font-bah text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700"
-                        >
-                          Title
-                        </a>
-                        <p className="mb-2 text-gray-700 font-bah">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit. Dignissimos a eveniet sequi similique expedita
-                          id obcaecati velit suscipit consequuntur excepturi
-                          repellendus iste illo blanditiis possimus fugit
-                          doloribus, numquam, maxime ratione!
-                        </p>
                         <div className="flex justify-center">
-                          <Link href=" /reso/reso1">
-                            <button className="mt-8 font-bah  bg-white border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
-                              READ MORE
-                            </button>
-                          </Link>
-                        </div>
-                      </div>
+                    <Link href="/library">
+                  <a className="active:text-red text-sm  font-bah font-bold underline hover:text-orange decoration-blue text-blue">
+                   Read More
+                  </a>
+                </Link>{" "}              
                     </div>
-                  );
-                }
+                      </div>
+                      
+                  
+                   
+                  </div>
+                );
               }
             )}
           </div>
@@ -557,104 +685,28 @@ export default function library() {
             {fullblog &&
               discover[buttonIndex].blogsdatafull.map(
                 ({ name, imgs, desc, small }, index) => {
-                  if (name === "Videos") {
+                  
+                   
                     return (
-                      <div key={index} className="">
-                      <div
-                        onClick={() => videoclick(1)}
-                        href="/"
-                        aria-label="View Item"
-                      >
-                        <div className="relative rounded  ">
-                          <img
-                            src="https://images.pexels.com/photos/2408666/pexels-photo-2408666.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
-                            className="object-cover w-full h-64"
-                            alt=""
-                          />
-                          <div className="absolute top-[20%] left-[40%] animate-pulse duration-100 ">
-                            <FaPlay color="white" size={80} />
-                          </div>
-                          <div className="p-2  border-t-0">
-                            <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
-                              <a
-                                href="/"
-                                className="transition-colors duration-200 text-blue-gray-900 hover:text-deep-purple-accent-700"
-                                aria-label="Category"
-                                title="traveling"
-                              >
-                                {name}
-                              </a>
-                            </p>
-                            <a
-                              href="/"
-                              aria-label="Category"
-                              title="Visit the East"
-                              className="inline-block mb-3 font-bah text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700"
-                            >
-                              Title
-                            </a>
-                            <p className="mb-2 text-gray-700 font-bah">
-                              Lorem ipsum dolor sit amet, consectetur
-                              adipisicing elit. Dignissimos a eveniet sequi
-                              similique expedita id obcaecati velit suscipit
-                              consequuntur excepturi repellendus iste illo
-                              blanditiis possimus fugit doloribus, numquam,
-                              maxime ratione!
-                            </p>
-                            
-                          </div>
-                        </div>
-                      </div>
+                      <div key={index} class="p-2 transition-all hover:scale-110 border rounded-lg shadow-lg  ">
+                    
+                      <div class="w-full flex gap- flex-col">
+                        <h4 class="mb-2 font-semibold text-center"> {name}</h4>
+                       
+                        <div className="flex justify-center">
+                    <Link href="/library">
+                  <a className="active:text-red  text-sm font-bah font-bold underline hover:text-orange decoration-blue text-blue">
+                   Read More
+                  </a>
+                </Link>{" "}              
                     </div>
-                    );
-                  } else {
-                    return (
-                      <div
-                        key={index}
-                        className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm"
-                      >
-                        <img
-                          src="https://images.pexels.com/photos/2408666/pexels-photo-2408666.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
-                          className="object-cover w-full h-64"
-                          alt=""
-                        />
-                        <div className="p-2  border-t-0">
-                          <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
-                            <a
-                              href="/"
-                              className="transition-colors duration-200 text-blue-gray-900 hover:text-deep-purple-accent-700"
-                              aria-label="Category"
-                              title="traveling"
-                            >
-                              {name}
-                            </a>
-                          </p>
-                          <a
-                            href="/"
-                            aria-label="Category"
-                            title="Visit the East"
-                            className="inline-block mb-3 font-bah text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700"
-                          >
-                            Title
-                          </a>
-                          <p className="mb-2 text-gray-700 font-bah">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Dignissimos a eveniet sequi similique expedita
-                            id obcaecati velit suscipit consequuntur excepturi
-                            repellendus iste illo blanditiis possimus fugit
-                            doloribus, numquam, maxime ratione!
-                          </p>
-                          <div className="flex justify-center">
-                            <Link href=" /reso/reso1">
-                              <button className="mt-8 font-bah  bg-white border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
-                                READ MORE
-                              </button>
-                            </Link>
-                          </div>
-                        </div>
                       </div>
+                      
+                  
+                   
+                  </div>
                     );
-                  }
+                  
                 }
               )}
           </div>

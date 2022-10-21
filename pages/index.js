@@ -106,7 +106,7 @@ export default function Home() {
   return (
     <main>
       <section
-        className=" lg:h-[550px]   "
+        className=" lg:h-[480px]   "
         style={{
           backgroundImage: `url(${"/indexpage/audit.png"})`,
           backgroundSize: "cover",
@@ -115,7 +115,7 @@ export default function Home() {
         }}
       >
         <div className="md:container md:mx-auto flex h-[500px] md:h-[700px] lg:h-full md:justify-center  items-center">
-          <div className="text-white md:w-[70%] w-[100%] mt-10 text-center h-[200px] md:h-[200px] leading-none text-2xl md:text-5xl font-bah">
+          <div className="text-white md:w-[70%] w-[100%] mt-14 text-center h-[200px] md:h-[200px] leading-none text-2xl md:text-5xl font-bah">
             <Typewriter
               className="text-white text-2xl"
               options={{

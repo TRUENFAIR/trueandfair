@@ -55,37 +55,37 @@ export default function About() {
         {
           name: "Archana Ashok",
           image: "/team/Archana.png",
-          role: "Founder & Managing Director",
+          role: "",
           description:
-            "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
+            "",
         },
         {
           name: "Shristi Sarayan",
           image: "/team/sriti.png",
-          role: "Founder & Managing Director",
+          role: "",
           description:
-            "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
+            "",
         },
         {
           name: "Kirti Kumar Kotian",
           image: "/team/kirti.png",
-          role: "Founder & Managing Director",
+          role: "",
           description:
-            "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
+            "",
         },
         {
           name: "Rakesh Jain",
           image: "/team/rakesh.png",
-          role: "Founder & Managing Director",
+          role: "",
           description:
-            "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
+            "",
         },
         {
           name: "Krishna R P",
           image: "/team/krishna.png",
-          role: "CEO",
+          role: "",
           description:
-            "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
+            "",
         },
       ],
       blogsdatafull: [],
@@ -253,7 +253,7 @@ the quality of audits and productivity
             <div>
               <div className="md:w-full flex flex-col items-center  lg:w-full">
                 <h1 className="font-bah h-18 text-center font-semibold text-lg text-black">
-                  Practical Training &amp; Development
+                Chartered Accountants
                 </h1>
                 <div className="flex gap-1 mt-4 text-black flex-row">
                   <p className="prose text-justify  text-black font-bah ">
@@ -536,17 +536,17 @@ monitoring and inspection policies and disciplinary mechanisms.
                             layout="fill"
                           />
                         </div>
-                        <h1 className="mt-4 text-xl font-bah   text-black capitalize font-bold ">
+                        <h1 className="mt-8 text-xl font-bah   text-black capitalize font-bold ">
                           {name}
                         </h1>
-                        {/* <div className="flex flex-col gap-5 justify-center">
-                          <p className=" text-black font-bah  capitalize text-center  ">
+                        <div className="flex flex-col gap-5 justify-center">
+                          <p className=" text-black font-bah mt-4  capitalize text-center  ">
                             {role}
                           </p>
                        
-                        </div> */}
+                        </div>
                         <h1 className="md:w-[255px] h-[2px]  bg-blue mb-5"></h1>
-                        
+                        <p className="prose  text-black font-bah">{description}</p>
                       </div>
                     );
                   }

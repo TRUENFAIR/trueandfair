@@ -40,8 +40,8 @@ export default function Layout({ children }) {
       path: "/services",
       sub: [
         { name: "Auditing Firms ", path: "/services#AuditingFirms" },
-        
-        { name: "Chartered Account", path: "/services#CharteredAccount" },
+
+        { name: "Chartered Accountants", path: "/services#CharteredAccount" },
         { name: " Corporates", path: "/services#Corporations" },
         { name: " Regulators", path: "/services#Regulators" },
       ],
@@ -52,34 +52,43 @@ export default function Layout({ children }) {
 
       sub: [
         { name: "Product Overview", path: "/adat#ProductOverview" },
-       
-        { name: "Advantages", path: "/adat#Advantages" },
 
         { name: "Technology ", path: "/adat#Technology" },
+        { name: "Advantages", path: "/adat#Advantages" },
       ],
     },
     {
       name: " Library",
       path: "/library",
       sub: [
-        { name: "Ebooks", path: "/library#Ebooks" },
-        { name: " Videos", path: "/library#videos" },
-
-        { name: " Certifications", path: "/library#Certifications" },
+        { name: "Quality Standards", path: "/library#QualityStandards" },
+        { name: "Audit Approach", path: "/library#AuditApproach" },
+        {
+          name: "Practice Aids & Guidance",
+          path: "/library#PracticeAids&Guidance",
+        },
+        {
+          name: "Regulatory Developments",
+          path: "/library#RegulatoryDevelopments",
+        },
+        {
+          name: "Professional Standards ",
+          path: "/library#ProfessionalStandards&Regulations",
+        },
       ],
     },
 
-    {
-      name: "Resources",
-      path: "/resources",
-      sub: [
-        { name: "Best Practices", path: "/resources#BestPractices" },
-        { name: "Case Studies", path: "/resources#CaseStudies" },
+    // {
+    //   name: "Resources",
+    //   path: "/resources",
+    //   sub: [
+    //     { name: "Best Practices", path: "/resources#BestPractices" },
+    //     { name: "Case Studies", path: "/resources#CaseStudies" },
 
-        { name: "Expert Opinions", path: "/resources#ExpertOpinions" },
-        { name: "News Updates", path: "/resources#NewsUpdates" },
-      ],
-    },
+    //     { name: "Expert Opinions", path: "/resources#ExpertOpinions" },
+    //     { name: "News Updates", path: "/resources#NewsUpdates" },
+    //   ],
+    // },
 
     {
       name: "Contact",
@@ -248,9 +257,9 @@ export default function Layout({ children }) {
             <Link href="/library">
               <a>Library</a>
             </Link>
-            <Link href="/resources">
+            {/* <Link href="/resources">
               <a>Resources</a>
-            </Link>
+            </Link> */}
 
             <Link href="/contact">
               <a>Contact </a>

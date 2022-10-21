@@ -71,7 +71,7 @@ ADAT and an audit quality monitoring mechanism
               `}
                 </p>
               </div>
-              <div className="flex gap-1 mt-4 text-black flex-row">
+              <div className="flex gap-1  text-black flex-row">
                 <span className="w-fit ">✔️</span>{" "}
                 <p className="prose  text-black font-bah ">
                   {`An exhaustive suite of audit quality policies, procedures, technical guidance, and
@@ -79,21 +79,21 @@ ADAT without any audit quality monitoring mechanism
               `}
                 </p>
               </div>
-              <div className="flex gap-1 mt-4 text-black flex-row">
+              <div className="flex gap-1  text-black flex-row">
                 <span className="w-fit ">✔️</span>{" "}
                 <p className="prose  text-black font-bah ">
                   {`Technical guidance and/or ADAT
               `}
                 </p>
               </div>
-              <div className="flex gap-1 mt-4 text-black flex-row">
+              <div className="flex gap-1  text-black flex-row">
                 <span className="w-fit ">✔️</span>{" "}
                 <p className="prose  text-black font-bah ">
                   {`ADAT with or without monitoring
               `}
                 </p>
               </div>
-              <div className="flex gap-1 mt-4 text-black flex-row">
+              <div className="flex gap-1  text-black flex-row">
                 <span className="w-fit ">✔️</span>{" "}
                 <p className="prose  text-black font-bah ">
                   {`Practice protection: Helping you in external inspection processes including
@@ -101,14 +101,14 @@ responding to queries raised / findings / reports
               `}
                 </p>
               </div>{" "}
-              <div className="flex gap-1 mt-4 text-black flex-row">
+              <div className="flex gap-1  text-black flex-row">
                 <span className="w-fit ">✔️</span>{" "}
                 <p className="prose  text-black font-bah ">
                   {`Training and development
               `}
                 </p>
               </div>
-              <div className="flex gap-1 mt-4 text-black flex-row">
+              <div className="flex gap-1  text-black flex-row">
                 <p className="prose  text-black font-bah ">
                   {`We will also enable the audit firms to work with other CA firms to obtain Engagement
 Quality Control Reviews as required/permissible under the professional standards or
@@ -145,7 +145,7 @@ matters.
 
             <div
               className="w-full font-bah md:block hidden  h-[80px] lg:col-span-2  col-span-1 "
-              id=" CharteredAccount"
+              id="CharteredAccount"
             ></div>
             <div
               data-aos="fade-up"
@@ -161,7 +161,7 @@ matters.
             </div>
             <div data-aos="fade-up" data-aos-once="true" className="w-auto">
               <h2 className="text-3xl font-bah  title-font text-black   mb-4">
-              Chartered Account
+              Chartered Accountants
               </h2>
               <p className="prose text-black  font-bah pt-8">
               We will support aspiring and qualified Chartered Accountants and other eligible
@@ -210,19 +210,68 @@ the ground running as you embark on your professional journey as an auditor.
               `}
                 </p>
               </div>
-              <div className="flex gap-1 mt-4 text-black flex-row">
+              <div className="flex gap-1  text-black flex-row">
                 <span className="w-fit ">✔️</span>{" "}
                 <p className="prose  text-black font-bah ">
                   {`Advisory on complex accounting matters
               `}
                 </p>
               </div>
-              <div className="flex gap-1 mt-4 text-black flex-row">
+              <div className="flex gap-1  text-black flex-row">
                 <span className="w-fit ">✔️</span>{" "}
                 <p className="prose  text-black font-bah ">
                   {`Hosting risk control matrices in respect of Internal Financial Controls over
 Financial Reporting (IFCoFR)
               `}
+                </p>
+              </div>
+              <div className="flex gap-1  text-black flex-row">
+                <span className="w-fit ">✔️</span>{" "}
+                <p className="prose  text-black font-bah ">
+                  {`Enhancements in Financial MIS which reflects the business operations
+              `}
+                </p>
+              </div>
+              <div className="flex gap-1  text-black flex-row">
+                <span className="w-fit ">✔️</span>{" "}
+                <p className="prose  text-black font-bah ">
+                  {`Developing the right financial governance structure
+              `}
+                </p>
+              </div>{" "}
+              <div className="flex gap-1  text-black flex-row">
+                <span className="w-fit ">✔️</span>{" "}
+                <p className="prose  text-black font-bah ">
+                  {`Tracking implementation of Environmental, Social and Governance (ESG)
+policies
+              `}
+                </p>
+              </div>
+              <div className="flex gap-1  text-black flex-row">
+                <span className="w-fit ">✔️</span>{" "}
+                <p className="prose  text-black font-bah ">
+                  {`Prompt updates on regulatory developments
+              `}
+                </p>
+              </div>
+              <div className="flex gap-1  text-black flex-row">
+                <span className="w-fit ">✔️</span>{" "}
+                <p className="prose  text-black font-bah ">
+                  {`Best practices in financial reporting governance
+              `}
+                </p>
+              </div>
+              <div className="flex gap-1  text-black flex-row">
+                <span className="w-fit ">✔️</span>{" "}
+                <p className="prose  text-black font-bah ">
+                  {`Engaging with auditors
+              `}
+                </p>
+              </div>
+              <div className="flex gap-1  text-black flex-row">
+                <span className="w-fit ">✔️</span>{" "}
+                <p className="prose  text-black font-bah ">
+                  {`Training on financial reporting, IFCoFR and financial governance`}
                 </p>
               </div>
               <p className="prose font-bah lg:mb-0 mb-5 pt-8">
@@ -235,57 +284,20 @@ Financial Reporting (IFCoFR)
               </p>
             </div>
 
-            <div className="w-auto mt-16">
-              <div className="flex gap-1 mt-4 text-black flex-row">
-                <span className="w-fit ">✔️</span>{" "}
-                <p className="prose  text-black font-bah ">
-                  {`Enhancements in Financial MIS which reflects the business operations
-              `}
-                </p>
-              </div>
-              <div className="flex gap-1 mt-4 text-black flex-row">
-                <span className="w-fit ">✔️</span>{" "}
-                <p className="prose  text-black font-bah ">
-                  {`Developing the right financial governance structure
-              `}
-                </p>
-              </div>{" "}
-              <div className="flex gap-1 mt-4 text-black flex-row">
-                <span className="w-fit ">✔️</span>{" "}
-                <p className="prose  text-black font-bah ">
-                  {`Tracking implementation of Environmental, Social and Governance (ESG)
-policies
-              `}
-                </p>
-              </div>
-              <div className="flex gap-1 mt-4 text-black flex-row">
-                <span className="w-fit ">✔️</span>{" "}
-                <p className="prose  text-black font-bah ">
-                  {`Prompt updates on regulatory developments
-              `}
-                </p>
-              </div>
-              <div className="flex gap-1 mt-4 text-black flex-row">
-                <span className="w-fit ">✔️</span>{" "}
-                <p className="prose  text-black font-bah ">
-                  {`Best practices in financial reporting governance
-              `}
-                </p>
-              </div>
-              <div className="flex gap-1 mt-4 text-black flex-row">
-                <span className="w-fit ">✔️</span>{" "}
-                <p className="prose  text-black font-bah ">
-                  {`Engaging with auditors
-              `}
-                </p>
-              </div>
-              <div className="flex gap-1 mt-4 text-black flex-row">
-                <span className="w-fit ">✔️</span>{" "}
-                <p className="prose  text-black font-bah ">
-                  {`Training on financial reporting, IFCoFR and financial governance`}
-                </p>
-              </div>
+          
+            <div
+              data-aos="fade-up"
+              data-aos-once="true"
+              className="w-auto mt-24 h-48 lg:h-[700px] relative"
+            >
+              <Image
+                layout="fill"
+                className="absolute h-[500px] w-full object-cover"
+                alt=""
+                src="/about/dummy3.jpg"
+              />
             </div>
+            
             <div
               className="w-full font-bah md:block hidden  h-[80px] lg:col-span-2  col-span-1 "
               id="Regulators"
@@ -305,35 +317,35 @@ including amendments or enhancements or withdrawal of the Standards
               `}
                 </p>
               </div>
-              <div className="flex gap-1 mt-4 text-black flex-row">
+              <div className="flex gap-1  text-black flex-row">
                 <span className="w-fit ">✔️</span>{" "}
                 <p className="prose  text-black font-bah ">
                   {`Assessing a CA firm’s Standard on Quality Control (SQC)
               `}
                 </p>
               </div>{" "}
-              <div className="flex gap-1 mt-4 text-black flex-row">
+              <div className="flex gap-1  text-black flex-row">
                 <span className="w-fit ">✔️</span>{" "}
                 <p className="prose  text-black font-bah ">
                   {`Monitoring and Inspection including selection criteria
               `}
                 </p>
               </div>
-              <div className="flex gap-1 mt-4 text-black flex-row">
+              <div className="flex gap-1  text-black flex-row">
                 <span className="w-fit ">✔️</span>{" "}
                 <p className="prose  text-black font-bah ">
                   {`Inspection observations evaluation protocols
               `}
                 </p>
               </div>
-              <div className="flex gap-1 mt-4 text-black flex-row">
+              <div className="flex gap-1  text-black flex-row">
                 <span className="w-fit ">✔️</span>{" "}
                 <p className="prose  text-black font-bah ">
                   {`Setting up a robust Disciplinary mechanism
               `}
                 </p>
               </div>
-              <div className="flex gap-1 mt-4 text-black flex-row">
+              <div className="flex gap-1 text-black flex-row">
                 <span className="w-fit ">✔️</span>{" "}
                 <p className="prose  text-black font-bah ">
                   {`Training officers for inspections

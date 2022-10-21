@@ -177,7 +177,7 @@ export default function abouthome() {
                       key={index}
                       data-aos="fade-up"
                       data-aos-once="true"
-                      className="flex flex-col w-[400px] h-[400px] items-center p-5"
+                      className="flex flex-col w-[400px]  h-[400px] items-center p-5"
                     >
                       <div className="relative lg:w-[200px] lg:h-[200px]  md:w-[300px] md:h-[300px] w-[200px]  h-[200px]  rounded-full">
                         <Image
@@ -209,11 +209,11 @@ export default function abouthome() {
                   Meet The Team
                 </p>
               </div>
-              <div className="grid gap-10  sm:grid-cols-2 lg:grid-cols-5 ">
+              <div className="grid gap-10 mt-16 sm:grid-cols-2 lg:grid-cols-5 ">
                 {blog1.map(({ name, imgs, desc, small,image }, index) => {
                   return (
-                    <div key={index}>
-                      <div className="relative lg:w-[200px] lg:h-[200px]  md:w-[200px] md:h-[200px] w-[200px]  h-[200px]  rounded-full">
+                    <div className="k" key={index}>
+                      <div className="relative lg:w-[200px]  lg:h-[200px]  md:w-[200px] md:h-[200px] w-[200px]  h-[200px]  rounded-full">
                           <Image
                             className="rounded-full"
                             alt="profle"
@@ -223,7 +223,7 @@ export default function abouthome() {
                           />
                         </div>
                       <div className="flex flex-col sm:text-center">
-                        <p className="text-lg font-bah font-bold">
+                        <p className="text-lg mt-5 font-bah font-bold">
                         {name}
                         </p>
                         

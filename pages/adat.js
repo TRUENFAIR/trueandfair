@@ -139,6 +139,59 @@ function Adat() {
               />
             </div>
 
+          
+
+            <div
+              className="w-full md:block hidden  h-[80px] lg:col-span-2  col-span-1 "
+              id="Technology"
+            ></div>
+
+            <div
+              data-aos="fade-down"
+              data-aos-once="true"
+              className="w-auto h-48 lg:h-auto relative"
+            >
+              <Image
+                layout="fill"
+                className="absolute h-full w-full object-cover"
+                alt=""
+                src="/about/dummy3.jpg"
+              />
+            </div>
+            <div data-aos="fade-up" data-aos-once="true" className="w-auto">
+              <h2 className="text-3xl font-bah  title-font text-black   mb-4">
+                Technology
+              </h2>
+              <p className="prose  font-bah pt-8">
+                ADAT is a Microsoft Azure cloud-based platform leveraging
+                share-point security and features offered by Microsoft and it
+                enhances the capability and efficiency in performing audit
+                engagements. The rich guidance content, audit automation tools
+                to track reviews, maintain documentation and process make it a
+                unique solution to ensure end to end quality in audits. Deep
+                integration of the capabilities of the Audit Documentation Tool
+                with traditional office automation tools you are familiar with
+                means that there is no new software to learn!.
+                <br />
+                The platform is agnostic of your legacy systems, works directly
+                from the web and offers robust enterprise grade security, high
+                scalability and unlimited storage for large volumes of
+                documents. The platform offers a worry free environment to
+                perform a quality audit work and deliver great results. A well
+                thought user management allows audit firms to manage client
+                data, users including client users in a transparent, efficient
+                and secure manner.
+              </p>
+
+              <p className="prose  font-bah lg:mb-0 mb-5 pt-8">
+                <Link href="/contact">
+                  <a className="active:text-red  font-bah font-bold underline hover:text-orange decoration-blue text-blue">
+                    Click here
+                  </a>
+                </Link>{" "}
+                to request a demo.
+              </p>
+            </div>
             <div
               className="w-full md:block hidden  h-[80px] lg:col-span-2  col-span-1 "
               id="Advantages"
@@ -243,58 +296,6 @@ audit
               `}
                 </p>
               </div>
-            </div>
-
-            <div
-              className="w-full md:block hidden  h-[80px] lg:col-span-2  col-span-1 "
-              id="Technology"
-            ></div>
-
-            <div
-              data-aos="fade-down"
-              data-aos-once="true"
-              className="w-auto h-48 lg:h-auto relative"
-            >
-              <Image
-                layout="fill"
-                className="absolute h-full w-full object-cover"
-                alt=""
-                src="/about/dummy3.jpg"
-              />
-            </div>
-            <div data-aos="fade-up" data-aos-once="true" className="w-auto">
-              <h2 className="text-3xl font-bah  title-font text-black   mb-4">
-                Technology
-              </h2>
-              <p className="prose  font-bah pt-8">
-                ADAT is a Microsoft Azure cloud-based platform leveraging
-                share-point security and features offered by Microsoft and it
-                enhances the capability and efficiency in performing audit
-                engagements. The rich guidance content, audit automation tools
-                to track reviews, maintain documentation and process make it a
-                unique solution to ensure end to end quality in audits. Deep
-                integration of the capabilities of the Audit Documentation Tool
-                with traditional office automation tools you are familiar with
-                means that there is no new software to learn!.
-                <br />
-                The platform is agnostic of your legacy systems, works directly
-                from the web and offers robust enterprise grade security, high
-                scalability and unlimited storage for large volumes of
-                documents. The platform offers a worry free environment to
-                perform a quality audit work and deliver great results. A well
-                thought user management allows audit firms to manage client
-                data, users including client users in a transparent, efficient
-                and secure manner.
-              </p>
-
-              <p className="prose  font-bah lg:mb-0 mb-5 pt-8">
-                <Link href="/contact">
-                  <a className="active:text-red  font-bah font-bold underline hover:text-orange decoration-blue text-blue">
-                    Click here
-                  </a>
-                </Link>{" "}
-                to request a demo.
-              </p>
             </div>
 
             {/* <div
