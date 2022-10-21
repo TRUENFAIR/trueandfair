@@ -511,8 +511,8 @@ export default function Home() {
       </section> */}
 
       {/* <Clients /> */}
-      <Libraryslide />
-      <Resourceslide />
+      {/* <Libraryslide /> */}
+      {/* <Resourceslide /> */}
 
       {/* {showModal && <Fixediv clicked={clicked} />} */}
     </main>

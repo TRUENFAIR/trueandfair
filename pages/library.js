@@ -422,26 +422,6 @@ export default function library() {
          
           name: "Certifications and reporting under other laws and regulations",
           links:""
-        }, {
-         
-          name: "",
-          links:""
-        }, {
-         
-          name: "",
-          links:""
-        }, {
-         
-          name: "",
-          links:""
-        }, {
-         
-          name: "",
-          links:""
-        }, {
-         
-          name: "",
-          links:""
         },
       ],
     },
@@ -613,10 +593,10 @@ export default function library() {
     <>
       <section className="text-black md:container md:mx-auto  ">
         <div className="mt-16">
-          <ul className="grid gap-4 grid-cols-2 lg:grid-flow-col gap-1 mt-5 text-center  text-black bg-white rounded-full p-1">
+          <ul className="grid gap-1 grid-cols-2 lg:grid-cols-5  mt-5 text-center  text-black bg-white rounded-full p-1">
             {discover.map(({ name }, index) => {
               return (
-                <li className=""
+                <li className="w-full "
                   key={index}
                   onClick={() => {
                     buttonClick(index);
@@ -625,7 +605,7 @@ export default function library() {
                   <p
                     className={`${
                       index === buttonIndex
-                        ? " text-blue text-xl font-bold font-bah border-blue border-b-4"
+                        ? " text-blue  text-xl font-bold font-bah border-blue border-b-4"
                         : "bg-white"
                     } flex justify-center text-xl font-bah  title-font text-black   mb-4 hover:cursor-pointer`}
                   >
