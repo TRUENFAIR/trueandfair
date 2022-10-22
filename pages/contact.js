@@ -21,12 +21,11 @@ export default function Contact() {
     watch("skillsetreside") &&
     watch("fiveyeardetail") &&
     watch("othercredential") &&
-    watch("") &&
-    watch("") &&
-    watch("") &&
-    watch("") &&
-    watch("yearofformation") &&
-    watch("message");
+    watch("caexp") &&
+    watch("noofeligbleproffes") &&
+    watch("eligibleprofessionals2") &&
+    watch("Industryexperience") &&
+    watch("yearofformation");
 
   const submit = handleSubmit(async (data) => {
     const {
@@ -37,35 +36,65 @@ export default function Contact() {
       skillsetreside,
       fiveyeardetail,
       othercredential,
-      email,
-      phone,
-      message,
+      caexp,
+      noofeligbleproffes,
+      eligibleprofessionals2,
+      Industryexperience,
       location,
     } = data;
-
+    console.log(
+      name,
+      yearofformation,
+      partner,
+      otherskill,
+      skillsetreside,
+      fiveyeardetail,
+      othercredential,
+      caexp,
+      noofeligbleproffes,
+      eligibleprofessionals2,
+      Industryexperience,
+      location
+    );
     try {
       const response = await fetch(
         "",
-
+        
         {
           method: "POST",
           headers: {},
           body: JSON.stringify({
             type: "contact",
             name,
-            email,
-            phone,
-            message,
-            location,
+            yearofformation,
+            partner,
+            otherskill,
+            skillsetreside,
+            fiveyeardetail,
+            othercredential,
+            caexp,
+            noofeligbleproffes,
+            eligibleprofessionals2,
+            Industryexperience,
+            location
           }),
         }
       );
-      if (response.status === 200) {
+      
+    
+      if (response.status===200) {
         reset({
           name: "",
-          phone: "",
-          email: "",
-          message: "",
+          yearofformation: "",
+          partner: "",
+          otherskill: "",
+          skillsetreside: "",
+          fiveyeardetail: "",
+          othercredential: "",
+          caexp: "",
+          noofeligbleproffes: "",
+          eligibleprofessionals2: "",
+          Industryexperience: "",
           location: "",
         });
 
@@ -87,7 +116,6 @@ export default function Contact() {
     setDisabletext(false);
   };
 
-  
   useEffect(() => {
     const isDemo = localStorage.getItem("isDemo");
     if (isDemo === "yes") {
@@ -172,9 +200,11 @@ export default function Contact() {
             <div className="  items-start  rounded pt-8 ">
               <div className=" w-full">
                 <div className="md:pl-12 md:pt-0 pt-12">
-                  <h2 className="text-2xl text-center my-10 font-bah">Write to us</h2>
+                  <h2 className="text-2xl text-center my-10 font-bah">
+                    Write to us
+                  </h2>
                   <div className="mt-8">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="grid grid-cols-1 md:grid-cols-1 gap-6">
                       <label className="block">
                         <span className="text-black font-bah">
                           Name of the firm
@@ -187,7 +217,7 @@ export default function Contact() {
                           })}
                         />
                         <label
-                          className={`text-red-600   text-xs py-1 ${
+                          className={`text-red-600  h-2 border text-xs py-1 ${
                             errors.name ? "visible" : "invisible"
                           }`}
                         >
@@ -213,7 +243,7 @@ export default function Contact() {
                           This field is required
                         </label>
                       </label>
-                      <label className="block py-7">
+                      <label className="block py-2">
                         <div className="text-black  font-bah">
                           Location of the head office and branch locations (if
                           any)
@@ -226,7 +256,7 @@ export default function Contact() {
                           })}
                         />
                         <label
-                          className={`text-red-600   text-xs  ${
+                          className={`text-red-600 h-2   text-xs  ${
                             errors.location ? "visible" : "invisible"
                           }`}
                         >
@@ -261,8 +291,10 @@ export default function Contact() {
                           experience under the following categories:
                         </span>
                         <select
-                         
                           className=" block w-full font-bah mt-1 rounded-sm border-zinc-200 focus:border-green-700 focus:ring focus:ring-blue focus:ring-opacity-50"
+                          {...register("caexp", {
+                            required: true,
+                          })}
                         >
                           <option className="hidden"></option>
                           <option>0-3 years</option>
@@ -270,6 +302,13 @@ export default function Contact() {
                           <option>5-10 years</option>
                           <option>More than 10 years</option>
                         </select>
+                        <label
+                          className={`text-red-600   text-xs py-1 ${
+                            errors.caexp ? "visible" : "invisible"
+                          }`}
+                        >
+                          This field is required
+                        </label>
                       </label>
 
                       <label className="block">
@@ -294,7 +333,7 @@ export default function Contact() {
                           This field is required
                         </label>
                       </label>
-                      <label className="block py-7">
+                      <label className="block py-2">
                         <span className="text-black font-bah">
                           In which office do these skill sets reside?
                         </span>
@@ -322,8 +361,10 @@ export default function Contact() {
                           qualification:
                         </span>
                         <select
-                         
                           className=" block w-full font-bah mt-1 rounded-sm border-zinc-200 focus:border-green-700 focus:ring focus:ring-blue focus:ring-opacity-50"
+                          {...register("noofeligbleproffes", {
+                            required: true,
+                          })}
                         >
                           <option className="hidden"></option>
                           <option>0-3 years</option>
@@ -331,14 +372,23 @@ export default function Contact() {
                           <option>5-10 years</option>
                           <option>More than 10 years</option>
                         </select>
+                        <label
+                          className={`text-red-600   text-xs  ${
+                            errors.noofeligbleproffes ? "visible" : "invisible"
+                          }`}
+                        >
+                          This field required
+                        </label>
                       </label>
-                      <label className="block py-7">
+                      <label className="block py-2">
                         <span className="text-black font-bah">
                           Industry experience in audit:
                         </span>
                         <select
-                         
                           className=" block w-full font-bah mt-1 rounded-sm border-zinc-200 focus:border-green-700 focus:ring focus:ring-blue focus:ring-opacity-50"
+                          {...register("Industryexperience", {
+                            required: true,
+                          })}
                         >
                           <option className="hidden"></option>
                           <option>FMCG</option>
@@ -360,6 +410,13 @@ export default function Contact() {
                           <option>Electricity</option>
                           <option>Others</option>
                         </select>
+                        <label
+                          className={`text-red-600   text-xs  ${
+                            errors.Industryexperience ? "visible" : "invisible"
+                          }`}
+                        >
+                          This field required
+                        </label>
                       </label>
 
                       <label className="block">
@@ -372,13 +429,13 @@ export default function Contact() {
                           type="text"
                           className="mt-1 font-bah block w-full rounded-sm border-zinc-200 focus:border-green-700 focus:ring focus:ring-blue focus:ring-opacity-50"
                           placeholder=""
-                          {...register("fiveyear", {
+                          {...register("fiveyeardetail", {
                             required: true,
                           })}
                         />
                         <label
                           className={`text-red-600   text-xs  ${
-                            errors.fiveyear ? "visible" : "invisible"
+                            errors.fiveyeardetail ? "visible" : "invisible"
                           }`}
                         >
                           This field required
@@ -414,8 +471,10 @@ export default function Contact() {
                           qualification:
                         </span>
                         <select
-                         
                           className=" block w-full font-bah mt-1 rounded-sm border-zinc-200 focus:border-green-700 focus:ring focus:ring-blue focus:ring-opacity-50"
+                          {...register("eligibleprofessionals2", {
+                            required: true,
+                          })}
                         >
                           <option className="hidden"></option>
                           <option className="">
@@ -439,11 +498,22 @@ export default function Contact() {
                     </div>
 
                     <div className="flex justify-center">
-                      <Link href=" ">
-                        <button className="mt-8 font-bah h-[50px] w-[100px] border-2 border-black text-black font-bold text-xs hover:text-white hover:border-0 hover:bg-blue p-3 rounded-lg transition-all">
-                          SEND
-                        </button>
-                      </Link>
+                     
+                        {message ? (
+                          <p className="text-green text-md font-semibold pt-6 ">
+                            {`Your message is sent. We'll get back to you at the earliest`}
+                          </p>
+                        ) : (
+                          <button
+                            onClick={submit}
+                            disabled={!isButtonVisble}
+                            // className="mt-8 font-bah h-[50px] w-[100px] border-2 border-black text-black font-bold text-xs hover:text-white hover:border-0 hover:bg-blue p-3 rounded-lg transition-all"
+                            className={`w-32 mt-6 bg-orange border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg text-black  transition-all ${isButtonVisble ? "opacity-100":"opacity-50 "}`}
+                          >
+                            SEND
+                          </button>
+                        )}
+                      
                     </div>
                   </div>
                 </div>
