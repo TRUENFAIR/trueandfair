@@ -147,7 +147,7 @@ export default function Contact() {
               {" "}
               If you unequivocally subscribe to and endorse the below without
               any qualms or conditions, you can be one of the firms to be
-              guided, mentored, and monitored by True and Fair Professionals
+              guided, mentored, and monitored  by True and Fair Professionals
               Network. Our commitment to you is that our audit quality policies,
               procedures, guidance, and tools will redefine the method in which
               audits are conducted in the future!;{" "}
