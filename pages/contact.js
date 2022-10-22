@@ -1,65 +1,75 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { useForm } from "react-hook-form";
+import InputController from "../components/InputController";
 
 export default function Contact() {
   const {
     register,
+    control,
     handleSubmit,
     formState: { errors },
     reset,
     watch,
+    setValue,
   } = useForm({
     mode: "onChange",
   });
-
+  const intrestedInNetworking = watch("intrestedInNetworking");
   const isButtonVisble =
     watch("name") &&
-    watch("partner") &&
+    watch("YearofFormation") &&
     watch("location") &&
-    watch("otherskill") &&
-    watch("skillsetreside") &&
-    watch("fiveyeardetail") &&
+    watch("partners") &&
+    watch("noofCazeroToThree") &&
+    watch("noofCathreeToFive") &&
+    watch("noofCafiveToTen") &&
+    watch("noofCamoreThanTen") &&
+    watch("otherskillSets") &&
+    watch("officeSkillReside") &&
+    watch("noofProffzeroToThree") &&
+    watch("noofProffthreeToFive") &&
+    watch("noofProfffiveToTen") &&
+    watch("noofProffmoreThanTen") &&
+    watch("completedProceedings") &&
     watch("othercredential") &&
-    watch("caexp") &&
-    watch("noofeligbleproffes") &&
+    watch("eligibleprofessionals1") &&
     watch("eligibleprofessionals2") &&
-    watch("Industryexperience") &&
-    watch("yearofformation");
+    watch("eligibleprofessionals3") &&
+    watch("eligibleprofessionals4") &&
+    watch("eligibleprofessionals5") &&
+    watch("eligibleprofessionals6");
 
   const submit = handleSubmit(async (data) => {
     const {
       name,
-      yearofformation,
-      partner,
-      otherskill,
-      skillsetreside,
-      fiveyeardetail,
-      othercredential,
-      caexp,
-      noofeligbleproffes,
-      eligibleprofessionals2,
-      Industryexperience,
+      YearofFormation,
       location,
-    } = data;
-    console.log(
-      name,
-      yearofformation,
-      partner,
-      otherskill,
-      skillsetreside,
-      fiveyeardetail,
+      partners,
+      noofCazeroToThree,
+      noofCathreeToFive,
+      noofCafiveToTen,
+      noofCamoreThanTen,
+      otherskillSets,
+      officeSkillReside,
+      noofProffzeroToThree,
+      noofProffthreeToFive,
+      noofProfffiveToTen,
+      noofProffmoreThanTen,
+      completedProceedings,
       othercredential,
-      caexp,
-      noofeligbleproffes,
+      eligibleprofessionals1,
       eligibleprofessionals2,
-      Industryexperience,
-      location
-    );
+      eligibleprofessionals3,
+      eligibleprofessionals4,
+      eligibleprofessionals5,
+      eligibleprofessionals6,
+    } = data;
+
     try {
       const response = await fetch(
         "",
-        
+
         {
           method: "POST",
           headers: {},
@@ -76,13 +86,12 @@ export default function Contact() {
             noofeligbleproffes,
             eligibleprofessionals2,
             Industryexperience,
-            location
+            location,
           }),
         }
       );
-      
-    
-      if (response.status===200) {
+
+      if (response.status === 200) {
         reset({
           name: "",
           yearofformation: "",
@@ -141,47 +150,23 @@ export default function Contact() {
               guided, mentored, and monitored by True and Fair Professionals
               Network. Our commitment to you is that our audit quality policies,
               procedures, guidance, and tools will redefine the method in which
-              audits are conducted in the future!
+              audits are conducted in the future!;{" "}
+              <span className="font-bold">{` 1 ) `}</span>Uncompromisingly
+              focused on quality, integrity, and ethics ;
+              <span className="font-bold">{` 2 ) `}</span>Adopt and follow audit
+              policies, procedures and guidelines provided by True and Fair
+              Professionals Network ;
+              <span className="font-bold">{` 3 ) `}</span>Implement audit documentation in the Audit Documentation and Archival Tool
+(ADAT) developed by True and Fair Professionals Network ;
+              <span className="font-bold">{` 4 ) `}</span>Subscribe to the
+              principles of Diversity and Inclusion (D&amp;I) and Fairness when
+              hiring, retaining, promoting, and engaging with talent. ;
+              <span className="font-bold">{` 5 ) `}</span>Invest in people,
+              technology, and tools to promote audit quality, efficiency, and
+              effectiveness of audits.
             </p>
           </div>
-          <div className="grid grid-cols-1 w-full  ">
-            <div className="flex gap-1 border justify-center mt-4 lg:mr-5 text-black flex-row">
-              <span className="w-fit ">✔️</span>
-              {"                                            "}
-              <p className="prose text-justify text-black font-bah ">
-                {`Uncompromisingly focused on quality, integrity, and ethics
-              `}
-              </p>
-            </div>
-            <div className="flex gap-1 mt-4 justify-center text-black flex-row">
-              <span className="w-fit ">✔️</span>{" "}
-              <p className="prose  text-justify text-black font-bah ">
-                {`Adopt and follow audit policies, procedures and guidelines provided by True and Fair Professionals Network
-              `}
-              </p>
-            </div>
-            <div className="flex gap-1 mt-4 justify-center text-black flex-row">
-              <span className="w-fit ">✔️</span>{" "}
-              <p className="prose text-justify text-black font-bah ">
-                {`Implement audit documentation in the Audit Documentation and Archival Too (ADAT) developed by True and Fair Professionals Network
-              `}
-              </p>
-            </div>
-            <div className="flex gap-1 mt-4 justify-center  text-black flex-row">
-              <span className="w-fit ">✔️</span>{" "}
-              <p className="prose text-justify text-black font-bah ">
-                {`Subscribe to the principles of Diversity and Inclusion (D&amp;I) and Fairness when hiring, retaining, promoting, and engaging with talent.
-              `}
-              </p>
-            </div>
-            <div className="flex gap-1 mt-4 justify-center  text-black flex-row">
-              <span className="w-fit ">✔️</span>{" "}
-              <p className="prose text-justify text-black font-bah ">
-                {`Invest in people, technology, and tools to promote audit quality, efficiency, and effectiveness of audits.
-              `}
-              </p>
-            </div>
-          </div>
+
           {disableText && (
             <div className="flex gap-3 justify-center mt-12">
               <p className="prose text-center mt-2 text-black font-bah">
@@ -192,7 +177,7 @@ export default function Contact() {
                 onClick={enableforms}
                 className="md:w-[150px] font-bah  border-2 border-blue text-blue font-bold text-base hover:text-white hover:bg-blue p-1 rounded-lg "
               >
-                yes
+                YES
               </button>
             </div>
           )}
@@ -201,246 +186,270 @@ export default function Contact() {
               <div className=" w-full">
                 <div className="md:pl-12 md:pt-0 pt-12">
                   <h2 className="text-2xl text-center my-10 font-bah">
-                    Write to us
+                    Kindly fill out the below form
                   </h2>
                   <div className="mt-8">
                     <div className="grid grid-cols-1 md:grid-cols-1 gap-6">
-                      <label className="block">
-                        <span className="text-black font-bah">
-                          Name of the firm
-                        </span>
-                        <input
-                          type="text"
-                          className="mt-1 font-bah block w-full rounded-sm border-zinc-200 focus:border-green-700 focus:ring focus:ring-blue focus:ring-opacity-50"
-                          {...register("name", {
-                            required: true,
-                          })}
-                        />
-                        <label
-                          className={`text-red-600  h-2 border text-xs py-1 ${
-                            errors.name ? "visible" : "invisible"
-                          }`}
-                        >
-                          This field is required
-                        </label>
-                      </label>
-                      <label className="block">
-                        <span className="text-black font-bah">
-                          Year of formation
-                        </span>
-                        <input
-                          type="text"
-                          className="mt-1 font-bah block w-full rounded-sm border-zinc-200 focus:border-green-700 focus:ring focus:ring-blue focus:ring-opacity-50"
-                          {...register("yearofformation", {
-                            required: true,
-                          })}
-                        />
-                        <label
-                          className={`text-red-600   text-xs py-1 ${
-                            errors.yearofformation ? "visible" : "invisible"
-                          }`}
-                        >
-                          This field is required
-                        </label>
-                      </label>
-                      <label className="block py-2">
-                        <div className="text-black  font-bah">
-                          Location of the head office and branch locations (if
-                          any)
+                      <div className="border grid grid-cols-2 gap-2">
+                        <div className=" ">
+                          <InputController
+                            control={control}
+                            name="name"
+                            type="text"
+                            label="Name"
+                            rules={{
+                              required: {
+                                value: true,
+                                message: "This field is required",
+                              },
+                            }}
+                          />
                         </div>
-                        <input
-                          type="email"
-                          className="mt-1 font-bah block w-full rounded-sm border-zinc-200 focus:border-green-700 focus:ring focus:ring-blue focus:ring-opacity-50"
-                          {...register("location", {
-                            required: true,
-                          })}
-                        />
-                        <label
-                          className={`text-red-600 h-2   text-xs  ${
-                            errors.location ? "visible" : "invisible"
-                          }`}
-                        >
-                          This field is required
-                        </label>
-                      </label>
-                      <label className="block">
-                        <span className="text-black  font-bah">
-                          Number of partners along with names, membership number
-                          and professional experience (post qualification
-                          experience) of each partner
-                        </span>
-                        <input
-                          type="text"
-                          className="mt-1 font-bah block w-full rounded-sm border-zinc-200 focus:border-green-700 focus:ring focus:ring-blue focus:ring-opacity-50"
-                          placeholder=""
-                          {...register("partner", {
-                            required: true,
-                          })}
-                        />
-                        <label
-                          className={`text-red-600   text-xs  ${
-                            errors.partner ? "visible" : "invisible"
-                          }`}
-                        >
-                          This field is required
-                        </label>
-                      </label>
-                      <label className="block">
+                        <div className="">
+                          <InputController
+                            control={control}
+                            name="YearofFormation"
+                            type="text"
+                            label="Year of formation"
+                            rules={{
+                              required: {
+                                value: true,
+                                message: "This field is required",
+                              },
+                            }}
+                          />
+                        </div>
+                      </div>
+
+                      <InputController
+                        control={control}
+                        name="location"
+                        type="text"
+                        label="Location of the head office and branch locations (if any)"
+                        rules={{
+                          required: {
+                            value: true,
+                            message: "This field is required",
+                          },
+                        }}
+                      />
+                      <InputController
+                        control={control}
+                        name="partners"
+                        type="text"
+                        label="Number of partners along with names, membership number and professional
+                            experience (post qualification experience) of each partner"
+                        rules={{
+                          required: {
+                            value: true,
+                            message: "This field is required",
+                          },
+                        }}
+                      />
+
+                      <div className="">
                         <span className="text-black font-bah">
                           Number of qualified CAs (other than partners) with
                           experience under the following categories:
                         </span>
-                        <select
-                          className=" block w-full font-bah mt-1 rounded-sm border-zinc-200 focus:border-green-700 focus:ring focus:ring-blue focus:ring-opacity-50"
-                          {...register("caexp", {
-                            required: true,
-                          })}
-                        >
-                          <option className="hidden"></option>
-                          <option>0-3 years</option>
-                          <option>3-5 years</option>
-                          <option>5-10 years</option>
-                          <option>More than 10 years</option>
-                        </select>
-                        <label
-                          className={`text-red-600   text-xs py-1 ${
-                            errors.caexp ? "visible" : "invisible"
-                          }`}
-                        >
-                          This field is required
-                        </label>
-                      </label>
+                        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-4">
+                          <InputController
+                            control={control}
+                            name="noofCazeroToThree"
+                            type="number"
+                            label="0-3 years"
+                            rules={{
+                              required: {
+                                value: true,
+                                message: "This field is required",
+                              },
+                            }}
+                          />
+                          <InputController
+                            control={control}
+                            name="noofCathreeToFive"
+                            type="number"
+                            label="3-5 years"
+                            rules={{
+                              required: {
+                                value: true,
+                                message: "This field is required",
+                              },
+                            }}
+                          />
+                          <InputController
+                            control={control}
+                            name="noofCafiveToTen"
+                            type="number"
+                            label="5-10 years"
+                            rules={{
+                              required: {
+                                value: true,
+                                message: "This field is required",
+                              },
+                            }}
+                          />
+                          <InputController
+                            control={control}
+                            name="noofCamoreThanTen"
+                            type="number"
+                            label="More than 10 years"
+                            rules={{
+                              required: {
+                                value: true,
+                                message: "This field is required",
+                              },
+                            }}
+                          />
+                        </div>
+                      </div>
 
-                      <label className="block">
-                        <span className="text-black font-bah">
-                          Other skill sets within the firm (e.g Internal Audit /
-                          Controls, Tax, Information Technology Audit,
-                          Valuation, Forensic, etc.)
-                        </span>
-                        <input
-                          type="tel"
-                          className="mt-1 font-bah block w-full rounded-sm border-zinc-200 focus:border-green-700 focus:ring focus:ring-blue focus:ring-opacity-50"
-                          placeholder=""
-                          {...register("otherskill", {
-                            required: true,
-                          })}
-                        />
-                        <label
-                          className={`text-red-600   text-xs  ${
-                            errors.otherskill ? "visible" : "invisible"
-                          }`}
-                        >
-                          This field is required
-                        </label>
-                      </label>
-                      <label className="block py-2">
-                        <span className="text-black font-bah">
-                          In which office do these skill sets reside?
-                        </span>
-                        <input
+                      <div className=" grid grid-cols-2 gap-2">
+                        <InputController
+                          control={control}
+                          name="otherskillSets"
                           type="text"
-                          className="mt-1 font-bah block w-full rounded-sm border-zinc-200 focus:border-green-700 focus:ring focus:ring-blue focus:ring-opacity-50"
-                          placeholder=""
-                          {...register("skillsetreside", {
-                            required: true,
-                          })}
+                          label="Other skill sets within the firm (e.g Internal Audit / Controls, Tax, Information
+                            Technology Audit, Valuation, Forensic, etc.)"
+                          rules={{
+                            required: {
+                              value: true,
+                              message: "This field is required",
+                            },
+                          }}
                         />
-                        <label
-                          className={`text-red-600   text-xs  ${
-                            errors.skillsetreside ? "visible" : "invisible"
-                          }`}
-                        >
-                          This field is required
-                        </label>
-                      </label>
-                      <label className="block">
+
+                        <InputController
+                          control={control}
+                          name="officeSkillReside"
+                          type="text"
+                          className="mt-7"
+                          label=" In which office do these skill sets reside?"
+                          rules={{
+                            required: {
+                              value: true,
+                              message: "This field is required",
+                            },
+                          }}
+                        />
+                      </div>
+
+                      <div className="">
                         <span className="text-black font-bah">
                           Number of other eligible professionals (other than
                           partners) with experience under the following
                           categories together with the nature of their
                           qualification:
                         </span>
-                        <select
-                          className=" block w-full font-bah mt-1 rounded-sm border-zinc-200 focus:border-green-700 focus:ring focus:ring-blue focus:ring-opacity-50"
-                          {...register("noofeligbleproffes", {
-                            required: true,
-                          })}
-                        >
-                          <option className="hidden"></option>
-                          <option>0-3 years</option>
-                          <option>3-5 years</option>
-                          <option>5-10 years</option>
-                          <option>More than 10 years</option>
-                        </select>
-                        <label
-                          className={`text-red-600   text-xs  ${
-                            errors.noofeligbleproffes ? "visible" : "invisible"
-                          }`}
-                        >
-                          This field required
-                        </label>
-                      </label>
-                      <label className="block py-2">
-                        <span className="text-black font-bah">
-                          Industry experience in audit:
-                        </span>
-                        <select
-                          className=" block w-full font-bah mt-1 rounded-sm border-zinc-200 focus:border-green-700 focus:ring focus:ring-blue focus:ring-opacity-50"
-                          {...register("Industryexperience", {
-                            required: true,
-                          })}
-                        >
-                          <option className="hidden"></option>
-                          <option>FMCG</option>
-                          <option>Banking</option>
-                          <option>Financial Services</option>
-                          <option>Insurance</option>
-                          <option>Telecom</option>
-                          <option>Agriculture</option>
-                          <option>Healthcare</option>
-                          <option>Information Technology</option>
-                          <option>ITES / BPO / KPO</option>
-                          <option>Real Estate</option>
-                          <option>Automotive</option>
-                          <option>Manufacturing</option>
-                          <option>Retail</option>
-                          <option>Airlines</option>
-                          <option>Travel and Hospitality</option>
-                          <option>Electricity</option>
-                          <option>Electricity</option>
-                          <option>Others</option>
-                        </select>
-                        <label
-                          className={`text-red-600   text-xs  ${
-                            errors.Industryexperience ? "visible" : "invisible"
-                          }`}
-                        >
-                          This field required
-                        </label>
-                      </label>
+                        <div className="grid grid-cols-1 md:grid-cols-4  gap-3 mt-5">
+                          <InputController
+                            control={control}
+                            name="noofProffzeroToThree"
+                            type="number"
+                            label="0-3 years"
+                            rules={{
+                              required: {
+                                value: true,
+                                message: "This field is required",
+                              },
+                            }}
+                          />
+                          <InputController
+                            control={control}
+                            name="noofProffthreeToFive"
+                            type="number"
+                            label="3-5 years"
+                            rules={{
+                              required: {
+                                value: true,
+                                message: "This field is required",
+                              },
+                            }}
+                          />
+                          <InputController
+                            control={control}
+                            name="noofProfffiveToTen"
+                            type="number"
+                            label="5-10 years"
+                            rules={{
+                              required: {
+                                value: true,
+                                message: "This field is required",
+                              },
+                            }}
+                          />
+                          <InputController
+                            control={control}
+                            name="noofProffmoreThanTen"
+                            type="number"
+                            label="More than 10 years"
+                            rules={{
+                              required: {
+                                value: true,
+                                message: "This field is required",
+                              },
+                            }}
+                          />
+                        </div>
+                      </div>
 
-                      <label className="block">
-                        <span className="text-black font-bah">
-                          Details on any proceedings ongoing against the firm or
-                          its partners and completed proceedings in the last
-                          five years.
-                        </span>
-                        <input
-                          type="text"
-                          className="mt-1 font-bah block w-full rounded-sm border-zinc-200 focus:border-green-700 focus:ring focus:ring-blue focus:ring-opacity-50"
-                          placeholder=""
-                          {...register("fiveyeardetail", {
-                            required: true,
-                          })}
-                        />
-                        <label
-                          className={`text-red-600   text-xs  ${
-                            errors.fiveyeardetail ? "visible" : "invisible"
-                          }`}
-                        >
-                          This field required
+                      <div className="grid grid-cols-2 gap-16 mt-4">
+                        <label className=" py-">
+                          <span className="text-black font-bah">
+                            Industry experience in audit:
+                          </span>
+                          <select
+                            className=" block w-full font-bah mt-6 rounded-sm border-zinc-200 focus:border-green-700 focus:ring focus:ring-blue focus:ring-opacity-50"
+                            {...register("Industryexperience", {
+                              required: true,
+                            })}
+                          >
+                            <option className="hidden"></option>
+                            <option>FMCG</option>
+                            <option>Banking</option>
+                            <option>Financial Services</option>
+                            <option>Insurance</option>
+                            <option>Telecom</option>
+                            <option>Agriculture</option>
+                            <option>Healthcare</option>
+                            <option>Information Technology</option>
+                            <option>ITES / BPO / KPO</option>
+                            <option>Real Estate</option>
+                            <option>Automotive</option>
+                            <option>Manufacturing</option>
+                            <option>Retail</option>
+                            <option>Airlines</option>
+                            <option>Travel and Hospitality</option>
+                            <option>Electricity</option>
+                            <option>Electricity</option>
+                            <option>Others</option>
+                          </select>
+                          <label
+                            className={`text-red-600   text-xs  ${
+                              errors.Industryexperience
+                                ? "visible"
+                                : "invisible"
+                            }`}
+                          >
+                            This field required
+                          </label>
                         </label>
-                      </label>
+                        <InputController
+                          control={control}
+                          name="completedProceedings"
+                          type="text"
+                          label=" Details on any proceedings ongoing against the firm
+                            or its partners and completed proceedings in the
+                            last five years."
+                          rules={{
+                            required: {
+                              value: true,
+                              message: "This field is required",
+                            },
+                          }}
+                        />
+                      </div>
+
                       <label className="block">
                         <span className="text-black font-bah">
                           Any other credentials that are relevant to assessment
@@ -463,63 +472,179 @@ export default function Contact() {
                           This field required
                         </label>
                       </label>
-                      <label className="block">
-                        <span className="text-black font-bah">
+
+                      <div className="">
+                        <span className="text-black  font-bah">
                           Number of other eligible professionals (other than
                           partners) with experience under the following
                           categories together with the nature of their
                           qualification:
                         </span>
-                        <select
-                          className=" block w-full font-bah mt-1 rounded-sm border-zinc-200 focus:border-green-700 focus:ring focus:ring-blue focus:ring-opacity-50"
-                          {...register("eligibleprofessionals2", {
-                            required: true,
-                          })}
-                        >
-                          <option className="hidden"></option>
-                          <option className="">
-                            An exhaustive suite of policies, technical guidance,
-                            ADAT and a monitoring mechanism to assess compliance
-                            with policies, guidance and standards
-                          </option>
-                          <option>
-                            An exhaustive suite of policies, technical guidance,
-                            ADAT without monitoring mechanism
-                          </option>
-                          <option>Technical guidance and/or ADAT</option>
-                          <option>Access only to ADAT</option>
-                          <option>
-                            Practice protection: Helping you in external
-                            inspections
-                          </option>
-                          <option>Training and development</option>
-                        </select>
-                      </label>
+                        <div className="grid grid-cols-1 md:grid-cols-4  gap-5 mt-4">
+                          <InputController
+                            control={control}
+                            name="eligibleprofessionals1"
+                            type="text"
+                            label="An exhaustive suite of policies, technical
+                          guidance, ADAT and a monitoring mechanism to
+                          assess compliance with policies, guidance and
+                          standards"
+                            rules={{
+                              required: {
+                                value: true,
+                                message: "This field is required",
+                              },
+                            }}
+                          />
+                          <InputController
+                            control={control}
+                            name="eligibleprofessionals2"
+                            type="text"
+                            label=" An exhaustive suite of policies, technical
+                          guidance, ADAT without monitoring mechanism
+              "
+                            rules={{
+                              required: {
+                                value: true,
+                                message: "This field is required",
+                              },
+                            }}
+                          />
+                          <InputController
+                            control={control}
+                            name="eligibleprofessionals3"
+                            type="text"
+                            label=" Technical guidance and/or ADAT
+              "
+                            rules={{
+                              required: {
+                                value: true,
+                                message: "This field is required",
+                              },
+                            }}
+                          />
+
+                          <InputController
+                            control={control}
+                            name="eligibleprofessionals4"
+                            type="text"
+                            label="  Access only to ADAT
+              "
+                            rules={{
+                              required: {
+                                value: true,
+                                message: "This field is required",
+                              },
+                            }}
+                          />
+                          <InputController
+                            control={control}
+                            name="eligibleprofessionals5"
+                            type="text"
+                            label="Practice protection: Helping you in external
+                          inspections
+              "
+                            rules={{
+                              required: {
+                                value: true,
+                                message: "This field is required",
+                              },
+                            }}
+                          />
+
+                          <InputController
+                            control={control}
+                            name="eligibleprofessionals6"
+                            type="text"
+                            label="Training and development
+              "
+                            rules={{
+                              required: {
+                                value: true,
+                                message: "This field is required",
+                              },
+                            }}
+                          />
+                        </div>
+                      </div>
                     </div>
 
                     <div className="flex justify-center">
-                     
-                        {message ? (
-                          <p className="text-green text-md font-semibold pt-6 ">
-                            {`Your message is sent. We'll get back to you at the earliest`}
-                          </p>
-                        ) : (
-                          <button
-                            onClick={submit}
-                            disabled={!isButtonVisble}
-                            // className="mt-8 font-bah h-[50px] w-[100px] border-2 border-black text-black font-bold text-xs hover:text-white hover:border-0 hover:bg-blue p-3 rounded-lg transition-all"
-                            className={`w-32 mt-6 bg-orange border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg text-black  transition-all ${isButtonVisble ? "opacity-100":"opacity-50 "}`}
-                          >
-                            SEND
-                          </button>
-                        )}
-                      
+                      {message ? (
+                        <p className="text-green text-md font-semibold pt-6 ">
+                          {`Your message is sent. We'll get back to you at the earliest`}
+                        </p>
+                      ) : (
+                        <button
+                          onClick={submit}
+                          disabled={!isButtonVisble}
+                          // className="mt-8 font-bah h-[50px] w-[100px] border-2 border-black text-black font-bold text-xs hover:text-white hover:border-0 hover:bg-blue p-3 rounded-lg transition-all"
+                          className={`w-32 mt-6 bg-orange border-2 border-blue  font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lgH text-black  transition-all ${
+                            isButtonVisble ? "opacity-100" : "opacity-50 "
+                          }`}
+                        >
+                          SEND
+                        </button>
+                      )}
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           )}
+        </div>
+        <div className="md:container p-4 mx-auto">
+          <h1 className="text-4xl text-center font-bah tracking-wide  text-green-900">
+            Expression of Interest
+          </h1>
+          <div className=" ">
+            <p className="leading-loose mt-6  text-justify  font-bah text-black ">
+              {" "}
+              Interested in being part of a network of CA firms sharing similar
+              philosophy about audits and audit quality? If so, consider the
+              following:
+              <span className="font-bold">{` 1 ) `}</span>Willingness to be part
+              of and comply with the policies and procedures of a network of
+              chartered accountant firms (“Network”) conceived by True and Fair
+              Professionals Network ;
+              <span className="font-bold">{` 2 ) `}</span>Look beyond power,
+              position / designation, and authority and commit to working as an
+              equal stakeholder in matters of quality and related aspects as
+              practiced by the Network ;
+              <span className="font-bold">{` 3 ) `}</span>Intent to work
+              collaboratively and cohesively with other audit firms within the
+              Network for the collective growth of the Network ;
+              <span className="font-bold">{` 4 ) `}</span>Accept that the audit
+              practice will be subject to monitoring, development, improvement,
+              remedial actions by True and Fair Professionals Network ;
+              <span className="font-bold">{` 5 ) `}</span>Invest in people,
+              technology, and tools to promote audit quality, efficiency, and
+              effectiveness of audits of the firm and the Network. Network for
+              the collective growth of the Network;
+            </p>
+          </div>
+        </div>
+        <div className="flex gap-3 justify-center mt-12">
+          <p className="prose text-center mt-2 text-black font-bah">
+            INTERESTED IN NETWORKING:{" "}
+          </p>
+
+          <button
+            onClick={() => setValue("intrestedInNetworking", "yes")}
+            className={` md:w-[150px] font-bah  border-2 border-blue  font-bold text-base hover:text-white hover:bg-blue p-1 rounded-lg ${
+              intrestedInNetworking === "yes" ? "bg-blue text-white" : ""
+            } `}
+          >
+            YES
+          </button>
+          <button
+            onClick={() => setValue("intrestedInNetworking", "no")}
+            className={` md:w-[150px] font-bah  border-2 border-blue  font-bold text-base hover:text-white hover:bg-blue p-1 rounded-lg ${
+              intrestedInNetworking === "no" ? "bg-blue text-white" : ""
+            } `}
+          >
+            NO
+          </button>
         </div>
       </section>
 
