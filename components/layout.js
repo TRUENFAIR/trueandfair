@@ -238,7 +238,7 @@ export default function Layout({ children }) {
           <div className="text-sm lg:p-0 font-bah  p-4 text-black text-center">
             <p className="font-semibold">CONTACT</p>
             <p className="">+91 000000000</p>
-            <p className="">email@.com</p>
+            <p className="">contact@trueandfair.pro</p>
           </div>
 
           <div className="text-sm flex flex-col font-bah text-black  pl-6 lg:p-0   text-center ">
@@ -266,10 +266,10 @@ export default function Layout({ children }) {
             </Link>
           </div>
           <div className="text-sm flex flex-col font-bah text-black lg:p-0  text-center">
-            <Link href="/privacy">
+            <Link href="">
               <a>Privacy Policy</a>
             </Link>
-            <Link href="/terms">
+            <Link href="">
               <a>Terms and Conditions</a>
             </Link>
           </div>
@@ -282,7 +282,7 @@ export default function Layout({ children }) {
               <a
                 className="hover:scale-105  transition-all"
                 href=""
-                target="_blank"
+                // target="_blank"
                 rel="noreferrer"
               >
                 <svg
@@ -307,7 +307,7 @@ export default function Layout({ children }) {
               <a
                 className="hover:scale-105 transition-all"
                 href=""
-                target="_blank"
+                // target="_blank"
                 rel="noreferrer"
               >
                 <svg
@@ -332,7 +332,7 @@ export default function Layout({ children }) {
               <a
                 className="hover:scale-105 transition-all"
                 href=""
-                target="_blank"
+                // target="_blank"
                 rel="noreferrer"
               >
                 <svg
@@ -362,7 +362,7 @@ export default function Layout({ children }) {
               <a
                 className="hover:scale-105 transition-all"
                 href=""
-                target="_blank"
+                // target="_blank"
                 rel="noreferrer"
               >
                 <svg

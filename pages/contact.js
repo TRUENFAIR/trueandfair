@@ -2,8 +2,31 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { useForm } from "react-hook-form";
 import InputController from "../components/InputController";
-
+import Select from "react-select";
+import makeAnimated from "react-select/animated";
+import InputselectContoller from "../components/inputselectController";
 export default function Contact() {
+  const animatedComponents = makeAnimated();
+
+  const options = [
+    { value: "Agriculture", label: "Agriculture" },
+    { value: "Airlines", label: "Airlines" },
+    { value: "Automotive", label: "Automotive" },
+    { value: "Banking", label: "Banking" },
+    { value: "Electricity", label: "Electricity" },
+    { value: "Financial Services", label: "Financial Services" },
+    { value: "FMCG", label: "FMCG" },
+    { value: "Healthcare", label: "Healthcare" },
+    { value: "ITES / BPO / KPO", label: "ITES / BPO / KPO" },
+    { value: "Insurance", label: "Insurance" },
+    { value: "Information Technology", label: "Information Technology" },
+    { value: "Manufacturing", label: "Manufacturing" },
+    { value: "Real Estate", label: "Real Estate" },
+    { value: "Retail", label: "Retail" },
+    { value: "Telecom", label: "Telecom" },
+    { value: "Travel and Hospitality", label: "Travel and Hospitality" },
+    { value: "Others", label: "Others" },
+  ];
   const {
     register,
     control,
@@ -15,6 +38,9 @@ export default function Contact() {
   } = useForm({
     mode: "onChange",
   });
+
+  const [selectedOption, setSelectedOption] = useState(null);
+  console.log(selectedOption);
   const intrestedInNetworking = watch("intrestedInNetworking");
   const isButtonVisble =
     watch("name") &&
@@ -38,7 +64,9 @@ export default function Contact() {
     watch("eligibleprofessionals3") &&
     watch("eligibleprofessionals4") &&
     watch("eligibleprofessionals5") &&
-    watch("eligibleprofessionals6");
+    watch("eligibleprofessionals6") &&
+    watch("intrestedInNetworking") &&
+    selectedOption;
 
   const submit = handleSubmit(async (data) => {
     const {
@@ -64,7 +92,8 @@ export default function Contact() {
       eligibleprofessionals4,
       eligibleprofessionals5,
       eligibleprofessionals6,
-      intrestedInNetworking
+      intrestedInNetworking,
+      SelectedOption,
     } = data;
 
     try {
@@ -98,7 +127,8 @@ export default function Contact() {
             eligibleprofessionals4,
             eligibleprofessionals5,
             eligibleprofessionals6,
-            intrestedInNetworking
+            intrestedInNetworking,
+            SelectedOption,
           }),
         }
       );
@@ -107,28 +137,29 @@ export default function Contact() {
         reset({
           name: "",
           name,
-          YearofFormation:"",
-          location:"",
-          partners:"",
-          noofCazeroToThree:"",
-          noofCathreeToFive:"",
-          noofCafiveToTen:"",
-          noofCamoreThanTen:"",
-          otherskillSets:"",
-          officeSkillReside:"",
-          noofProffzeroToThree:"",
-          noofProffthreeToFive:"",
-          noofProfffiveToTen:"",
-          noofProffmoreThanTen:"",
-          completedProceedings:"",
-          othercredential:"",
-          eligibleprofessionals1:"",
-          eligibleprofessionals2:"",
-          eligibleprofessionals3:"",
-          eligibleprofessionals4:"",
-          eligibleprofessionals5:"",
-          eligibleprofessionals6:"",
-          intrestedInNetworking:"",
+          YearofFormation: "",
+          location: "",
+          partners: "",
+          noofCazeroToThree: "",
+          noofCathreeToFive: "",
+          noofCafiveToTen: "",
+          noofCamoreThanTen: "",
+          otherskillSets: "",
+          officeSkillReside: "",
+          noofProffzeroToThree: "",
+          noofProffthreeToFive: "",
+          noofProfffiveToTen: "",
+          noofProffmoreThanTen: "",
+          completedProceedings: "",
+          othercredential: "",
+          eligibleprofessionals1: "",
+          eligibleprofessionals2: "",
+          eligibleprofessionals3: "",
+          eligibleprofessionals4: "",
+          eligibleprofessionals5: "",
+          eligibleprofessionals6: "",
+          intrestedInNetworking: "",
+          SelectedOption,
         });
 
         setMessage(true);
@@ -171,7 +202,7 @@ export default function Contact() {
               {" "}
               If you unequivocally subscribe to and endorse the below without
               any qualms or conditions, you can be one of the firms to be
-              guided, mentored, and monitored  by True and Fair Professionals
+              guided, mentored, and monitored by True and Fair Professionals
               Network. Our commitment to you is that our audit quality policies,
               procedures, guidance, and tools will redefine the method in which
               audits are conducted in the future!;{" "}
@@ -180,8 +211,9 @@ export default function Contact() {
               <span className="font-bold">{` 2 ) `}</span>Adopt and follow audit
               policies, procedures and guidelines provided by True and Fair
               Professionals Network ;
-              <span className="font-bold">{` 3 ) `}</span>Implement audit documentation in the Audit Documentation and Archival Tool
-(ADAT) developed by True and Fair Professionals Network ;
+              <span className="font-bold">{` 3 ) `}</span>Implement audit
+              documentation in the Audit Documentation and Archival Tool (ADAT)
+              developed by True and Fair Professionals Network ;
               <span className="font-bold">{` 4 ) `}</span>Subscribe to the
               principles of Diversity and Inclusion (D&amp;I) and Fairness when
               hiring, retaining, promoting, and engaging with talent. ;
@@ -328,7 +360,7 @@ export default function Contact() {
                         </div>
                       </div>
 
-                      <div className=" grid grid-cols-2 gap-2">
+                      <div className=" grid grid-cols-1 gap-2">
                         <InputController
                           control={control}
                           name="otherskillSets"
@@ -419,83 +451,111 @@ export default function Contact() {
 
                       <div className="grid grid-cols-2 gap-16 mt-4">
                         <label className=" py-">
-                          <span className="text-black font-bah">
+                          <div>
+                            <span className="text-black font-bah">
+                              Industry experience in audit:
+                            </span>
+
+                            {/* note!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */}
+                            {/* this field comes as a array in selectedOption */}
+                            <Select
+                              className="mt-7"
+                              closeMenuOnSelect={false}
+                              components={animatedComponents}
+                              isMulti
+                              options={options}
+                              onChange={setSelectedOption}
+                            />
+                            <label
+                              className={`text-red-600   text-xs  ${
+                                selectedOption?.length < 1
+                                  ? "visible"
+                                  : "invisible"
+                              }`}
+                            >
+                              This field required
+                            </label>
+                            {/* <InputselectContoller
+                             control={control}
+                             type={Select}
+                             rules={{
+                              required: {
+                                value: true,
+                                message: "This field is required",
+                              },
+                            }}
+                             options={options}
+                            /> */}
+                          </div>
+
+                          {/* <span className="text-black font-bah">
                             Industry experience in audit:
                           </span>
                           <select
+                          multiple
+                          size="10"
                             className=" block w-full font-bah mt-6 rounded-sm border-zinc-200 focus:border-green-700 focus:ring focus:ring-blue focus:ring-opacity-50"
                             {...register("Industryexperience", {
                               required: true,
                             })}
                           >
                             <option className="hidden"></option>
-                            <option>FMCG</option>
-                            <option>Banking</option>
-                            <option>Financial Services</option>
-                            <option>Insurance</option>
-                            <option>Telecom</option>
                             <option>Agriculture</option>
-                            <option>Healthcare</option>
-                            <option>Information Technology</option>
-                            <option>ITES / BPO / KPO</option>
-                            <option>Real Estate</option>
-                            <option>Automotive</option>
-                            <option>Manufacturing</option>
-                            <option>Retail</option>
                             <option>Airlines</option>
+                            <option>Automotive</option>
+                            <option>Banking</option>
+                            <option>Electricity</option>
+                            <option>Financial Services</option>
+                            <option>FMCG</option>
+                            <option>Healthcare</option>
+                            <option>ITES / BPO / KPO</option>
+                            <option>Insurance</option>
+                            <option>Information Technology</option>
+                            <option>Manufacturing</option>
+                            <option>Real Estate</option>
+                            <option>Retail</option>
+                            <option>Telecom</option>
                             <option>Travel and Hospitality</option>
-                            <option>Electricity</option>
-                            <option>Electricity</option>
                             <option>Others</option>
-                          </select>
+                          </select> */}
+                        </label>
+                        <label className="block">
+                          <span className="text-black font-bah">
+                            Any other credentials that are relevant to
+                            assessment of the firm from a quality or market
+                            standing perspective.
+                          </span>
+                          <input
+                            type="text"
+                            className="mt-1 font-bah block w-full rounded-sm border-zinc-200 focus:border-green-700 focus:ring focus:ring-blue focus:ring-opacity-50"
+                            placeholder=""
+                            {...register("othercredential", {
+                              required: true,
+                            })}
+                          />
                           <label
                             className={`text-red-600   text-xs  ${
-                              errors.Industryexperience
-                                ? "visible"
-                                : "invisible"
+                              errors.othercredential ? "visible" : "invisible"
                             }`}
                           >
                             This field required
                           </label>
                         </label>
-                        <InputController
-                          control={control}
-                          name="completedProceedings"
-                          type="text"
-                          label=" Details on any proceedings ongoing against the firm
+                      </div>
+                      <InputController
+                        control={control}
+                        name="completedProceedings"
+                        type="text"
+                        label=" Details on any proceedings ongoing against the firm
                             or its partners and completed proceedings in the
                             last five years."
-                          rules={{
-                            required: {
-                              value: true,
-                              message: "This field is required",
-                            },
-                          }}
-                        />
-                      </div>
-
-                      <label className="block">
-                        <span className="text-black font-bah">
-                          Any other credentials that are relevant to assessment
-                          of the firm from a quality or market standing
-                          perspective.
-                        </span>
-                        <input
-                          type="text"
-                          className="mt-1 font-bah block w-full rounded-sm border-zinc-200 focus:border-green-700 focus:ring focus:ring-blue focus:ring-opacity-50"
-                          placeholder=""
-                          {...register("othercredential", {
-                            required: true,
-                          })}
-                        />
-                        <label
-                          className={`text-red-600   text-xs  ${
-                            errors.othercredential ? "visible" : "invisible"
-                          }`}
-                        >
-                          This field required
-                        </label>
-                      </label>
+                        rules={{
+                          required: {
+                            value: true,
+                            message: "This field is required",
+                          },
+                        }}
+                      />
 
                       <div className="">
                         <span className="text-black  font-bah">
@@ -504,7 +564,7 @@ export default function Contact() {
                           categories together with the nature of their
                           qualification:
                         </span>
-                        <div className="grid grid-cols-1 md:grid-cols-4  gap-5 mt-4">
+                        <div className="grid grid-cols-1 md:grid-cols-3  gap-2 mt-4">
                           <InputController
                             control={control}
                             name="eligibleprofessionals1"
@@ -527,6 +587,7 @@ export default function Contact() {
                             label=" An exhaustive suite of policies, technical
                           guidance, ADAT without monitoring mechanism
               "
+                            className="lg:mt-5"
                             rules={{
                               required: {
                                 value: true,
@@ -540,6 +601,7 @@ export default function Contact() {
                             type="text"
                             label=" Technical guidance and/or ADAT
               "
+                            className="lg:mt-11"
                             rules={{
                               required: {
                                 value: true,
@@ -554,6 +616,7 @@ export default function Contact() {
                             type="text"
                             label="  Access only to ADAT
               "
+                            className="lg:mt-11"
                             rules={{
                               required: {
                                 value: true,
@@ -568,6 +631,7 @@ export default function Contact() {
                             label="Practice protection: Helping you in external
                           inspections
               "
+                            className="lg:mt-5"
                             rules={{
                               required: {
                                 value: true,
@@ -580,8 +644,8 @@ export default function Contact() {
                             control={control}
                             name="eligibleprofessionals6"
                             type="text"
-                            label="Training and development
-              "
+                            label="Training and development"
+                            className="lg:mt-11"
                             rules={{
                               required: {
                                 value: true,
@@ -591,6 +655,65 @@ export default function Contact() {
                           />
                         </div>
                       </div>
+                    </div>
+                    <div className="md:container p-4 mx-auto">
+                      <div className=" ">
+                        <p className="leading-loose mt-6  text-justify  font-bah text-black ">
+                          {" "}
+                          Interested in being part of a network of CA firms
+                          sharing similar philosophy about audits and audit
+                          quality? If so, consider the following:
+                          <span className="font-bold">{` 1 ) `}</span>
+                          Willingness to be part of and comply with the policies
+                          and procedures of a network of chartered accountant
+                          firms (“Network”) conceived by True and Fair
+                          Professionals Network ;
+                          <span className="font-bold">{` 2 ) `}</span>Look
+                          beyond power, position / designation, and authority
+                          and commit to working as an equal stakeholder in
+                          matters of quality and related aspects as practiced by
+                          the Network ;
+                          <span className="font-bold">{` 3 ) `}</span>Intent to
+                          work collaboratively and cohesively with other audit
+                          firms within the Network for the collective growth of
+                          the Network ;
+                          <span className="font-bold">{` 4 ) `}</span>Accept
+                          that the audit practice will be subject to monitoring,
+                          development, improvement, remedial actions by True and
+                          Fair Professionals Network ;
+                          <span className="font-bold">{` 5 ) `}</span>Invest in
+                          people, technology, and tools to promote audit
+                          quality, efficiency, and effectiveness of audits of
+                          the firm and the Network. Network for the collective
+                          growth of the Network;
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex gap-3 justify-center my-12">
+                      <p className="prose text-center mt-2 text-black font-bah">
+                        INTERESTED IN NETWORKING:{" "}
+                      </p>
+
+                      <button
+                        onClick={() => setValue("intrestedInNetworking", "yes")}
+                        className={` md:w-[150px] font-bah  border-2 border-blue  font-bold text-base hover:text-white hover:bg-blue p-1 rounded-lg ${
+                          intrestedInNetworking === "yes"
+                            ? "bg-blue text-white"
+                            : ""
+                        } `}
+                      >
+                        YES
+                      </button>
+                      <button
+                        onClick={() => setValue("intrestedInNetworking", "no")}
+                        className={` md:w-[150px] font-bah   border-2 border-blue  font-bold text-base hover:text-white hover:bg-blue p-1 rounded-lg ${
+                          intrestedInNetworking === "no"
+                            ? "bg-blue text-white"
+                            : ""
+                        } `}
+                      >
+                        NO
+                      </button>
                     </div>
 
                     <div className="flex justify-center">
@@ -603,7 +726,7 @@ export default function Contact() {
                           onClick={submit}
                           disabled={!isButtonVisble}
                           // className="mt-8 font-bah h-[50px] w-[100px] border-2 border-black text-black font-bold text-xs hover:text-white hover:border-0 hover:bg-blue p-3 rounded-lg transition-all"
-                          className={`w-32 mt-6 bg-orange border-2 border-blue  font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lgH text-black  transition-all ${
+                          className={`w-32 mt-6 bg-orange border-2 border-blue  font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg text-black  transition-all ${
                             isButtonVisble ? "opacity-100" : "opacity-50 "
                           }`}
                         >
@@ -616,59 +739,6 @@ export default function Contact() {
               </div>
             </div>
           )}
-        </div>
-        <div className="md:container p-4 mx-auto">
-          <h1 className="text-4xl text-center font-bah tracking-wide  text-green-900">
-            Expression of Interest
-          </h1>
-          <div className=" ">
-            <p className="leading-loose mt-6  text-justify  font-bah text-black ">
-              {" "}
-              Interested in being part of a network of CA firms sharing similar
-              philosophy about audits and audit quality? If so, consider the
-              following:
-              <span className="font-bold">{` 1 ) `}</span>Willingness to be part
-              of and comply with the policies and procedures of a network of
-              chartered accountant firms (“Network”) conceived by True and Fair
-              Professionals Network ;
-              <span className="font-bold">{` 2 ) `}</span>Look beyond power,
-              position / designation, and authority and commit to working as an
-              equal stakeholder in matters of quality and related aspects as
-              practiced by the Network ;
-              <span className="font-bold">{` 3 ) `}</span>Intent to work
-              collaboratively and cohesively with other audit firms within the
-              Network for the collective growth of the Network ;
-              <span className="font-bold">{` 4 ) `}</span>Accept that the audit
-              practice will be subject to monitoring, development, improvement,
-              remedial actions by True and Fair Professionals Network ;
-              <span className="font-bold">{` 5 ) `}</span>Invest in people,
-              technology, and tools to promote audit quality, efficiency, and
-              effectiveness of audits of the firm and the Network. Network for
-              the collective growth of the Network;
-            </p>
-          </div>
-        </div>
-        <div className="flex gap-3 justify-center mt-12">
-          <p className="prose text-center mt-2 text-black font-bah">
-            INTERESTED IN NETWORKING:{" "}
-          </p>
-
-          <button
-            onClick={() => setValue("intrestedInNetworking", "yes")}
-            className={` md:w-[150px] font-bah  border-2 border-blue  font-bold text-base hover:text-white hover:bg-blue p-1 rounded-lg ${
-              intrestedInNetworking === "yes" ? "bg-blue text-white" : ""
-            } `}
-          >
-            YES
-          </button>
-          <button
-            onClick={() => setValue("intrestedInNetworking", "no")}
-            className={` md:w-[150px] font-bah  border-2 border-blue  font-bold text-base hover:text-white hover:bg-blue p-1 rounded-lg ${
-              intrestedInNetworking === "no" ? "bg-blue text-white" : ""
-            } `}
-          >
-            NO
-          </button>
         </div>
       </section>
 
