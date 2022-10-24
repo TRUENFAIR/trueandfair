@@ -240,7 +240,7 @@ export default function Contact() {
           {enableForm && (
             <div className="  items-start  rounded pt-8 ">
               <div className=" w-full">
-                <div className="md:pl-12 md:pt-0 pt-12">
+                <div className="md:pl-0 md:pt-0 pt-12">
                   <h2 className="text-2xl text-center my-10 font-bah">
                     Kindly fill out the below form
                   </h2>
@@ -656,7 +656,7 @@ export default function Contact() {
                         </div>
                       </div>
                     </div>
-                    <div className="md:container p-4 mx-auto">
+                    <div className="">
                       <div className=" ">
                         <p className="leading-loose mt-6  text-justify  font-bah text-black ">
                           {" "}
