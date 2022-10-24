@@ -10,7 +10,7 @@ import Link from "next/link";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-export default function abouthome() {
+export default function AboutHome() {
   useEffect(() => {
     AOS.init({
       once: true,

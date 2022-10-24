@@ -6,7 +6,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 
-export default function reso1() {
+export default function Reso1() {
   useEffect(() => {
     AOS.init({
       once: true,

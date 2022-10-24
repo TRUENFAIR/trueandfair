@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useState,useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from 'next/router'
-export default function resources() {
+export default function Resources() {
 
   const {asPath} = useRouter()
   useEffect(() => {
@@ -399,7 +399,7 @@ export default function resources() {
                     <div className="p-2  border-t-0">
                       <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
                         <a
-                          href="/"
+                          href=""
                           className="transition-colors duration-200 text-blue-gray-900 hover:text-deep-purple-accent-700"
                           aria-label="Category"
                           title="traveling"
@@ -408,7 +408,7 @@ export default function resources() {
                         </a>
                       </p>
                       <a
-                        href="/"
+                        href=""
                         aria-label="Category"
                         title="Visit the East"
                         className="inline-block mb-3 font-bah text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700"
@@ -465,7 +465,7 @@ export default function resources() {
                     <div className="p-2  border-t-0">
                       <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
                         <a
-                          href="/"
+                          href=""
                           className="transition-colors duration-200 text-blue-gray-900 hover:text-deep-purple-accent-700"
                           aria-label="Category"
                           title="traveling"
@@ -474,7 +474,7 @@ export default function resources() {
                         </a>
                       </p>
                       <a
-                        href="/"
+                        href=""
                         aria-label="Category"
                         title="Visit the East"
                         className="inline-block mb-3 font-bah text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700"

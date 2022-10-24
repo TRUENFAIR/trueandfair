@@ -9,7 +9,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
 
-export default function library() {
+export default function Library() {
   const [videoss, setVideoss] = useState(null);
   const [loadmore, setLoadmore] = useState("hi");
   const [fullblog, setFullblog] = useState(null);
@@ -624,10 +624,10 @@ export default function library() {
             {discover[buttonIndex].blogsdata.map(
               ({ name, imgs, desc, small, title, ser, videos }, index) => {
                 return (
-                  <div key={index} class="p-2 mt-8 transition-all  hover:scale-110 border rounded-lg shadow-lg  ">
+                  <div key={index} className="p-2 mt-8 transition-all  hover:scale-110 border rounded-lg shadow-lg  ">
                     
-                      <div class="w-full flex gap- flex-col">
-                        <h4 class="mb-2 font-semibold text-center"> {name}</h4>
+                      <div className="w-full flex gap- flex-col">
+                        <h4 className="mb-2 font-semibold text-center"> {name}</h4>
                        
                         <div className="flex justify-center">
                     <Link href="/library">
@@ -668,10 +668,10 @@ export default function library() {
                   
                    
                     return (
-                      <div key={index} class="p-2 transition-all hover:scale-110 border rounded-lg shadow-lg  ">
+                      <div key={index} className="p-2 transition-all hover:scale-110 border rounded-lg shadow-lg  ">
                     
-                      <div class="w-full flex gap- flex-col">
-                        <h4 class="mb-2 font-semibold text-center"> {name}</h4>
+                      <div className="w-full flex gap- flex-col">
+                        <h4 className="mb-2 font-semibold text-center"> {name}</h4>
                        
                         <div className="flex justify-center">
                     <Link href="/library">

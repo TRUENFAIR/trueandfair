@@ -11,7 +11,7 @@ import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 import { FontAwesomeIcon, FaPlay } from "react-icons/fa";
 
-export default function Libraryslide() {
+export default function LibrarySlide() {
   const [videoss, setVideoss] = useState(null);
   const videoclick = (video) => {
     setVideoss(video);
@@ -160,7 +160,7 @@ export default function Libraryslide() {
                       <div className="p-2  border-t-0">
                         <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
                           <a
-                            href="/"
+                            href=""
                             className="transition-colors duration-200 text-blue-gray-900 hover:text-deep-purple-accent-700"
                             aria-label="Category"
                             title="traveling"
@@ -169,7 +169,7 @@ export default function Libraryslide() {
                           </a>
                         </p>
                         <a
-                          href="/"
+                          href=""
                           aria-label="Category"
                           title="Visit the East"
                           className="inline-block mb-3 font-bah text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700"
@@ -219,7 +219,7 @@ export default function Libraryslide() {
                       <div className="p-2  border-t-0">
                         <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
                           <a
-                            href="/"
+                            href=""
                             className="transition-colors duration-200 text-blue-gray-900 hover:text-deep-purple-accent-700"
                             aria-label="Category"
                             title="traveling"
@@ -228,7 +228,7 @@ export default function Libraryslide() {
                           </a>
                         </p>
                         <a
-                          href="/"
+                          href=""
                           aria-label="Category"
                           title="Visit the East"
                           className="inline-block mb-3 font-bah text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700"
@@ -298,7 +298,7 @@ export default function Libraryslide() {
                               </a>
                             </p>
                             <a
-                              href="/"
+                              href=""
                               aria-label="Category"
                               title="Visit the East"
                               className="inline-block mb-3 font-bah text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700"

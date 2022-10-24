@@ -379,7 +379,7 @@ monitoring and inspection policies and disciplinary mechanisms.
               }`}
             >
               {discover.map(({ para }, index) => {
-                return <p className="font-bah">{para}</p>;
+                return <p key={index} className="font-bah">{para}</p>;
               })}
             </div>
             <div
@@ -390,7 +390,7 @@ monitoring and inspection policies and disciplinary mechanisms.
               {discover[buttonIndex].blogsdata.map(
                 ({ para, para2, para3, para4 }, index) => {
                   return (
-                    <div>
+                    <div key={index}>
                       <p className="font-bah">
                         {para} {para2} {para3} {para4}
                       </p>
