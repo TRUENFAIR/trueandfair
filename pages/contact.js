@@ -587,7 +587,7 @@ export default function Contact() {
                             label=" An exhaustive suite of policies, technical
                           guidance, ADAT without monitoring mechanism
               "
-                            className="2xl:mt-0"
+                            className="2xl:mt-6"
                             rules={{
                               required: {
                                 value: true,
