@@ -226,7 +226,7 @@ export default function Contact() {
           {disableText && (
             <div className="flex gap-3 justify-center mt-12">
               <p className="prose text-center mt-2 text-black font-bah">
-                Interested in building on quality consistent with the above:{" "}
+                Interested in building on quality consistent with the above? :{" "}
               </p>
 
               <button
@@ -564,7 +564,7 @@ export default function Contact() {
                           categories together with the nature of their
                           qualification:
                         </span>
-                        <div className="grid grid-cols-1 md:grid-cols-3  gap-2 mt-4">
+                        <div className="grid grid-cols-1 md:grid-cols-2  gap-2 mt-4">
                           <InputController
                             control={control}
                             name="eligibleprofessionals1"
@@ -587,7 +587,7 @@ export default function Contact() {
                             label=" An exhaustive suite of policies, technical
                           guidance, ADAT without monitoring mechanism
               "
-                            className="lg:mt-5"
+                            className="2xl:mt-0"
                             rules={{
                               required: {
                                 value: true,
@@ -601,7 +601,7 @@ export default function Contact() {
                             type="text"
                             label=" Technical guidance and/or ADAT
               "
-                            className="lg:mt-11"
+                            className=""
                             rules={{
                               required: {
                                 value: true,
@@ -616,7 +616,7 @@ export default function Contact() {
                             type="text"
                             label="  Access only to ADAT
               "
-                            className="lg:mt-11"
+                            className=""
                             rules={{
                               required: {
                                 value: true,
@@ -631,7 +631,7 @@ export default function Contact() {
                             label="Practice protection: Helping you in external
                           inspections
               "
-                            className="lg:mt-5"
+                            className=""
                             rules={{
                               required: {
                                 value: true,
@@ -645,7 +645,7 @@ export default function Contact() {
                             name="eligibleprofessionals6"
                             type="text"
                             label="Training and development"
-                            className="lg:mt-11"
+                            className=""
                             rules={{
                               required: {
                                 value: true,
@@ -726,7 +726,7 @@ export default function Contact() {
                           onClick={submit}
                           disabled={!isButtonVisble}
                           // className="mt-8 font-bah h-[50px] w-[100px] border-2 border-black text-black font-bold text-xs hover:text-white hover:border-0 hover:bg-blue p-3 rounded-lg transition-all"
-                          className={`w-32 mt-6 bg-orange border-2 border-blue  font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg text-black  transition-all ${
+                          className={`w-32 mt-6 bg-orange border-2 border-blue  font-bold text-base hover:text-white hover:bg-blue p-3 rounded-lg text-black  transition-all ${
                             isButtonVisble ? "opacity-100" : "opacity-50 "
                           }`}
                         >
