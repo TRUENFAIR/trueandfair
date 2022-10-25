@@ -118,11 +118,11 @@ function Adat() {
 
               <p className="prose  font-bah lg:mb-0 mb-5 pt-8">
                 <Link href="/contact">
-                  <a className="active:text-red  font-bah font-bold underline hover:text-orange decoration-blue text-blue">
-                    Click here
+                  <a className="active:text-red underline   font-bah font-bold hover:text-orange decoration-blue text-blue">
+                    Get in touch
                   </a>
                 </Link>{" "}
-                to request a demo.
+                to know more.
               </p>
             </div>
 
@@ -185,11 +185,11 @@ function Adat() {
 
               <p className="prose  font-bah lg:mb-0 mb-5 pt-8">
                 <Link href="/contact">
-                  <a className="active:text-red  font-bah font-bold underline hover:text-orange decoration-blue text-blue">
-                    Click here
+                  <a className="active:text-red underline   font-bah font-bold hover:text-orange decoration-blue text-blue">
+                    Get in touch
                   </a>
                 </Link>{" "}
-                to request a demo.
+                to know more.
               </p>
             </div>
             <div
@@ -245,11 +245,11 @@ and at the time of archival
 
               <p className="prose  font-bah lg:mb-0 mb-5 pt-8">
                 <Link href="/contact">
-                  <a className="active:text-red  font-bah font-bold underline hover:text-orange decoration-blue text-blue">
-                    Click here
+                  <a className="active:text-red underline   font-bah font-bold hover:text-orange decoration-blue text-blue">
+                    Get in touch
                   </a>
                 </Link>{" "}
-                to request a demo.
+                to know more.
               </p>
             </div>
             <div

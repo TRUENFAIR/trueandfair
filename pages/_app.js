@@ -48,7 +48,7 @@ function MyApp({ Component, pageProps }) {
         <link rel="icon" href="/homeicon/tnf.png" />
       </Head>
       <Component {...pageProps} />
-      {soicalmedia && <Fixediv contact={conpath} clicked={clicked} />}
+      {/* {soicalmedia && <Fixediv contact={conpath} clicked={clicked} />} */}
     </Layout>
   );
 }

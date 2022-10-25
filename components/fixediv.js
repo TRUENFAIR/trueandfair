@@ -35,12 +35,14 @@ export default function Fixediv({ clicked, contact }) {
           </div>
           <div className="bg-white">
             <div className="flex justify-center">
+              <Link href={"/contact"}>
               <button
-                onClick={gotoContact}
+              
                 className=" my-5 font-bah   border-2 border-blue text-black font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg transition-all"
               >
                 REQUEST DEMO
               </button>
+              </Link>
             </div>
           </div>
         </div>
