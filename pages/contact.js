@@ -356,7 +356,7 @@ export default function Contact() {
                       <div className=" grid grid-cols-1 gap-2">
                         <InputController
                           control={control}
-                          name="otherskillSets"
+                          name="otherSkillSets"
                           type="text"
                           label="Other skill sets within the firm (e.g Internal Audit / Controls, Tax, Information
                             Technology Audit, Valuation, Forensic, etc.)"
