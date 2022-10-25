@@ -2,13 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-  domains: ['assets.acme.com'],
+    domains: ["assets.acme.com"],
+    unoptimized: true,
   },
-  experimental: {
-  images: {
-  unoptimized: true,
-  },
-  },
-  }
-  
-  module.exports = nextConfig
+};
+
+module.exports = nextConfig;
