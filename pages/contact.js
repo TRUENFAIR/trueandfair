@@ -180,15 +180,7 @@ export default function Contact() {
     setDisabletext(false);
   };
 
-  useEffect(() => {
-    const isDemo = localStorage.getItem("isDemo");
-    if (isDemo === "yes") {
-      setInfo(
-        "Hi. I would like to request for a demo of the audit documentation tool."
-      );
-      localStorage.setItem("isDemo", null);
-    }
-  }, []);
+  
 
   return (
     <>
