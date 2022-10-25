@@ -27,6 +27,7 @@ export default function Contact() {
     { value: "Travel and Hospitality", label: "Travel and Hospitality" },
     { value: "Others", label: "Others" },
   ];
+
   const {
     register,
     control,
@@ -40,7 +41,8 @@ export default function Contact() {
   });
 
   const [selectedOption, setSelectedOption] = useState(null);
-  console.log(selectedOption);
+  
+  
   const intrestedInNetworking = watch("intrestedInNetworking");
   const isButtonVisble =
     watch("name") &&
@@ -97,8 +99,7 @@ export default function Contact() {
     } = data;
 
     try {
-      const response = await fetch(
-        "",
+      const response = await fetch(process.env.NEXT_PUBLIC_CONTACT_LAMBDA_URL,
 
         {
           method: "POST",
