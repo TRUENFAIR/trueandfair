@@ -26,13 +26,13 @@ export default function AboutHome() {
       name: "Balaji V",
       small: "Founder and Managing Partner",
       desc: "Remember, you control your breath, don't let your breath control you! 🧘🏻‍♀️- 🤷🏽‍♀️ - ⬇️",
-      imgs: "/pause/PAUSE3.png",
+      imgs: "/team/balaji.png",
     },
     {
       name: "Brindasri K",
       small: "Partner",
       desc: "Don't ever look back, unless it's from a different point of view 🙃 ⬇️",
-      imgs: "/pause/PAUSE2.png",
+      imgs: "/team/brindasri.png",
     },
   ];
   const blog1 = [
@@ -183,7 +183,7 @@ export default function AboutHome() {
                         <Image
                           className="rounded-full"
                           alt="profle"
-                          src={"/default.jpeg"}
+                          src={imgs}
                           objectFit="cover"
                           layout="fill"
                         />
