@@ -237,7 +237,7 @@ export default function Layout({ children }) {
           </div> */}
           <div className="text-sm lg:p-0 font-bah  p-4 text-black text-center">
             <p className="font-semibold">CONTACT</p>
-            <p className="">+91 000000000</p>
+
             <p className="">contact@trueandfair.pro</p>
           </div>
 
