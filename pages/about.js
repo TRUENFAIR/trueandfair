@@ -204,7 +204,7 @@ export default function About() {
           <h1 className="text-3xl font-bah  text-center title-font text-black   mb-8">
             Focus Areas
           </h1>
-          <div className=" md:container md:mx-auto  grid grid-cols-2">
+          <div className=" md:container md:mx-auto  grid grid-cols-1 md:grid-cols-2">
             <div>
               <h1 className="font-bah h-18 text-center font-semibold text-lg text-black">
                 Audit Firms

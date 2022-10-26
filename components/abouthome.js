@@ -209,7 +209,7 @@ export default function AboutHome() {
                   Meet The Team
                 </p>
               </div>
-              <div className="grid gap-10 mt-16 sm:grid-cols-2 lg:grid-cols-5 ">
+              <div className=" flex justify-center flex-col  items-center lg:grid gap-10 mt-16 sm:grid-cols-1 lg:grid-cols-5 ">
                 {blog1.map(({ name, imgs, desc, small,image }, index) => {
                   return (
                     <div className="k" key={index}>

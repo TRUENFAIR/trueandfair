@@ -113,11 +113,11 @@ export default function Layout({ children }) {
             <Link href="/">
               <a className="flex  justify-between lg:justify-start items-center ">
                 <div className="w-full h-[80px]">
-                  <div className=" mt-4 relative  w-fit  h-fit md:flex items-center flex-col">
+                  <div className=" md:mt-1 mt-4 relative  w-fit  h-fit md:flex items-center flex-col">
                     <img
-                      src="/homeicon/TNF_H22.png"
+                      src="/homeicontwo/header.png"
                       alt="logo"
-                      className="md:w-[252px] object-contain  w-[252px] h-[50px] md:h-[50px]"
+                      className="md:w-[398px] object-contain  w-[286px] h-[52px] md:h-[72px]"
                     />
                   </div>
                 </div>
@@ -201,9 +201,9 @@ export default function Layout({ children }) {
               <a className="flex flex-col justify-start items-center pl-6 lg:pl-0">
                 <div className=" bg-white">
                   <img
-                    src="/homeicon/TNF_H1.png"
+                    src="/homeicontwo/footer.png"
                     alt="logo"
-                    className="w-[145px] object-cover h-[145px]"
+                    className="w-[165px] object-cover h-[165px]"
                   />
                 </div>
                 <div className="pl-2 flex flex-col justify-center">
