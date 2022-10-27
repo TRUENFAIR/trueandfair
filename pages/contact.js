@@ -40,7 +40,7 @@ export default function Contact() {
     mode: "onChange",
   });
 
-  const [selectedOption, setSelectedOption] = useState(null);
+  const [selectedOption, setSelectedOption] = useState([]);
   
   
   const intrestedInNetworking = watch("intrestedInNetworking");
@@ -53,7 +53,7 @@ export default function Contact() {
     watch("noofCathreeToFive") &&
     watch("noofCafiveToTen") &&
     watch("noofCamoreThanTen") &&
-    watch("otherskillSets") &&
+    watch("otherSkillSets") &&
     watch("officeSkillReside") &&
     watch("noofProffzeroToThree") &&
     watch("noofProffthreeToFive") &&
@@ -80,7 +80,7 @@ export default function Contact() {
       noofCathreeToFive,
       noofCafiveToTen,
       noofCamoreThanTen,
-      otherskillSets,
+      otherSkillSets,
       officeSkillReside,
       noofProffzeroToThree,
       noofProffthreeToFive,
@@ -114,7 +114,7 @@ export default function Contact() {
             noofCathreeToFive,
             noofCafiveToTen,
             noofCamoreThanTen,
-            otherskillSets,
+            otherSkillSets,
             officeSkillReside,
             noofProffzeroToThree,
             noofProffthreeToFive,
@@ -145,7 +145,7 @@ export default function Contact() {
           noofCathreeToFive: "",
           noofCafiveToTen: "",
           noofCamoreThanTen: "",
-          otherskillSets: "",
+          otherSkillSets: "",
           officeSkillReside: "",
           noofProffzeroToThree: "",
           noofProffthreeToFive: "",
