@@ -41,8 +41,7 @@ export default function Contact() {
   });
 
   const [selectedOption, setSelectedOption] = useState([]);
-  
-  
+
   const intrestedInNetworking = watch("intrestedInNetworking");
   const isButtonVisble =
     watch("name") &&
@@ -69,7 +68,7 @@ export default function Contact() {
     watch("eligibleprofessionals6") &&
     watch("intrestedInNetworking") &&
     selectedOption;
-
+ 
   const submit = handleSubmit(async (data) => {
     const {
       name,
@@ -95,11 +94,11 @@ export default function Contact() {
       eligibleprofessionals5,
       eligibleprofessionals6,
       intrestedInNetworking,
-      SelectedOption,
     } = data;
-
+    console.log(selectedOption)
     try {
-      const response = await fetch(process.env.NEXT_PUBLIC_CONTACT_LAMBDA_URL,
+      const response = await fetch(
+        process.env.NEXT_PUBLIC_CONTACT_LAMBDA_URL,
 
         {
           method: "POST",
@@ -129,7 +128,7 @@ export default function Contact() {
             eligibleprofessionals5,
             eligibleprofessionals6,
             intrestedInNetworking,
-            SelectedOption,
+            selectedOption,
           }),
         }
       );
@@ -160,7 +159,7 @@ export default function Contact() {
           eligibleprofessionals5: "",
           eligibleprofessionals6: "",
           intrestedInNetworking: "",
-          SelectedOption,
+          selectedOption,
         });
 
         setMessage(true);
@@ -180,8 +179,6 @@ export default function Contact() {
     setenableForm(true);
     setDisabletext(false);
   };
-
-  
 
   return (
     <>
