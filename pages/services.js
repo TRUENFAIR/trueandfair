@@ -42,7 +42,7 @@ export default function Services() {
         <div className="md:container  mx-auto">
           <div className="grid lg:grid-cols-2 grid-cols-1 md:gap-x-20 gap-4 md:pt- pt-4">
             <div
-              className="w-full md:block hidden h-[80px] lg:col-span-2  col-span-1 "
+              className="w-full block h-[10px] md:h-[80px] lg:col-span-2  col-span-1 "
               id="AuditingFirms"
             ></div>
             <div className="w-auto">
@@ -130,7 +130,7 @@ matters.
             <div
               data-aos="fade-up"
               data-aos-once="true"
-              className="w-auto h-48 lg:h-[700px] mt-16 relative"
+              className="w-auto h-48 lg:h-[700px] md:mt-16 relative"
             >
               <Image
                 layout="fill"
@@ -144,14 +144,15 @@ matters.
 
 
             <div
-              className="w-full font-bah md:block hidden  h-[80px] lg:col-span-2  col-span-1 "
+              className="w-full font-bah block h-[10px] md:h-[80px] lg:col-span-2  col-span-1 "
               id="CharteredAccount"
             ></div>
             <div
               data-aos="fade-up"
               data-aos-once="true"
-              className="w-auto h-48 lg:h-auto relative"
+              className="w-auto h-48 mt-5 lg:h-auto relative"
             >
+              
               <Image
                 layout="fill"
                 className="absolute h-full w-full object-cover"
@@ -184,7 +185,7 @@ the ground running as you embark on your professional journey as an auditor.
             
 
             <div
-              className="w-full md:block hidden h-[80px] lg:col-span-2  col-span-1 "
+              className="w-full block h-[10px] md:h-[80px] lg:col-span-2  col-span-1 "
               id="Corporations"
             ></div>
             <div className="w-auto">
@@ -288,7 +289,7 @@ policies
             <div
               data-aos="fade-up"
               data-aos-once="true"
-              className="w-auto mt-24 h-48 lg:h-[700px] relative"
+              className="w-auto md:mt-24 h-48 lg:h-[700px] relative"
             >
               <Image
                 layout="fill"
@@ -299,7 +300,7 @@ policies
             </div>
             
             <div
-              className="w-full font-bah md:block hidden  h-[80px] lg:col-span-2  col-span-1 "
+              className="w-full font-bah block h-[10px] md:h-[80px] lg:col-span-2  col-span-1 "
               id="Regulators"
             ></div>
             <div

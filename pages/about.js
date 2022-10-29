@@ -197,7 +197,7 @@ export default function About() {
           </div>
         </section>
         <div
-          className="w-full md:block hidden h-[60px] lg:col-span-2  col-span-1 "
+          className="w-full block h-[10px] md:h-[60px] lg:col-span-2  col-span-1 "
           id="focusarea"
         ></div>
         <section className=" bg-white py-11 w-full  h-fit  lg:py-16">
@@ -252,10 +252,10 @@ the quality of audits and productivity
 
             <div>
               <div className="md:w-full flex flex-col items-center  lg:w-full">
-                <h1 className="font-bah h-18 text-center font-semibold text-lg text-black">
+                <h1 className="font-bah md:mt-0 mt-5 h-18 text-center font-semibold text-lg text-black">
                 Chartered Accountants
                 </h1>
-                <div className="flex gap-1 mt-4 text-black flex-row">
+                <div className="flex gap-1 mt-8 text-black flex-row">
                   <p className="prose text-justify  text-black font-bah ">
                     {`Developing and imparting a robust training curriculum with industry specific
 real life case studies and simulated work environment for aspiring and qualified
@@ -263,7 +263,7 @@ Chartered Accountants and other eligible professionals looking to make a career
 in financial accounting and auditing.`}
                   </p>
                 </div>
-                <h1 className="font-bah h-18 text-center font-semibold text-lg text-black">
+                <h1 className="font-bah  md:mt-0 mt-8 h-18 text-center font-semibold text-lg text-black">
                   Corporates
                 </h1>
                 <div className="flex mt-4 gap-1 flex-row">
@@ -274,7 +274,7 @@ practices and Board Governance.
               `}
                   </p>
                 </div>
-                <h1 className="font-bah h-18 text-center font-semibold text-lg text-black">
+                <h1 className="font-bah  md:mt-0 mt-8 h-18 text-center font-semibold text-lg text-black">
                   Regulators
                 </h1>
                 <div className="flex mt-4 gap-1 flex-row">
@@ -334,12 +334,9 @@ monitoring and inspection policies and disciplinary mechanisms.
             </div>
           </div>
         </section>
+        
         <div
-          className="w-full md:block hidden h-[80px] lg:col-span-2  col-span-1 "
-          id="focusarea"
-        ></div>
-        <div
-          className="w-full md:block hidden h-[50px] lg:col-span-2  col-span-1 "
+          className="w-full block h-[10px] md:h-[50px] lg:col-span-2  col-span-1 "
           id="meettheteam"
         ></div>
         <section className="bg-lightgray ">

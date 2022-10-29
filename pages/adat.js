@@ -90,7 +90,7 @@ function Adat() {
         <div className="md:container  mx-auto">
           <div className="grid lg:grid-cols-2 grid-cols-1 md:gap-x-20 gap-4 md:pt- pt-4">
             <div
-              className="w-full md:block hidden h-[80px] lg:col-span-2  col-span-1 "
+              className="w-full block h-[10px] md:h-[80px] lg:col-span-2  col-span-1 "
               id="ProductOverview"
             ></div>
             <div data-aos="fade-up" data-aos-once="true" className="w-auto">
@@ -142,7 +142,7 @@ function Adat() {
           
 
             <div
-              className="w-full md:block hidden  h-[80px] lg:col-span-2  col-span-1 "
+              className="w-full block h-[10px] md:h-[80px] lg:col-span-2  col-span-1 "
               id="Technology"
             ></div>
 
@@ -193,7 +193,7 @@ function Adat() {
               </p>
             </div>
             <div
-              className="w-full md:block hidden  h-[80px] lg:col-span-2  col-span-1 "
+              className="w-full block h-[10px] md:h-[80px]   lg:col-span-2  col-span-1 "
               id="Advantages"
             ></div>
 
@@ -257,7 +257,7 @@ and at the time of archival
               data-aos-once="true"
               className="w-auto h-auto  lg:h-auto relative"
             >
-              <div className="flex gap-1 mt-24 text-black flex-row">
+              <div className="flex gap-1 md:mt-24 text-black flex-row">
                 <span className="w-fit ">✔️</span>{" "}
                 <p className="prose  text-black font-bah ">
                   {`A file check feature to check the quality and completeness of work papers before

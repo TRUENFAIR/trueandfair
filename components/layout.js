@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 export default function Layout({ children }) {
   const { pathname } = useRouter();
   const [navbr, setNavbr] = useState(false);
+  const [view, setView] = useState(false);
   const changeBackground = () => {
     if (window.scrollY >= 300) {
       setNavbr(true);
@@ -162,6 +163,9 @@ export default function Layout({ children }) {
 
             <nav className=" lg:hidden mr-2 p-2 relative group  flex justify-end ">
               <svg
+               onClick={() => {
+                setView((prev) => !prev);
+              }}
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
                 viewBox="0 0 20 20"
@@ -173,20 +177,48 @@ export default function Layout({ children }) {
                   clipRule="evenodd"
                 />
               </svg>
-
-              <div className="bg-transparent w-auto absolute top-6 right-0 flex-col z-50 rounded-sm invisible group-active:visible group-hover:visible transition-all">
+              {view && (
+              <div className="bg-transparent w-auto absolute top-6 -right-2 flex-col z-50 rounded-sm transition-all">
                 <div className="pt-4 w-auto">
-                  <div className="w-full shadow-md">
-                    {menu.map(({ name, path }, index) => (
-                      <Link key={index} href={path}>
-                        <a className="w-48 hover:bg-green-100 px-4 bg-white inline-flex p-2 normal-case text-md whitespace-nowrap border-b border-t border-black-100">
-                          {name}
-                        </a>
-                      </Link>
+                  
+                    {menu.map(({ name, path,sub }, index) => (
+                       <div
+                       key={index}
+                       tabIndex={1}
+                       className="w-40 group top-4 px-4 bg-white relative inline-flex p-2 normal-case text-sm whitespace-nowrap border-b border-t border-zinc-100 "
+                     >
+                       {sub ? (
+                         name
+                       ) : (
+                         <div
+                           onClick={() => {
+                             setView(false);
+                           }}
+                         >
+                           <Link href={path}><a>{name}</a></Link>
+                         </div>
+                       )}
+                       <div className="bg-white right-[102%]  group-focus:visible invisible  shadow-md absolute z-[1000] flex flex-col">
+                         {sub?.map(({ name, path }, index) => (
+                           <div
+                             onClick={() => {
+                               setView((prev) => !prev);
+                             }}
+                             key={index}
+                             className="text-center border border-b border-zinc-100 text-sm  px-4 py-2"
+                           >
+                             <Link href={path}>
+                               <div className="">{name}</div>
+                             </Link>
+                           </div>
+                         ))}
+                       </div>
+                     </div>
                     ))}
-                  </div>
+                 
                 </div>
               </div>
+                )}
             </nav>
           </div>
         </header>
