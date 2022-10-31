@@ -163,9 +163,9 @@ export default function Layout({ children }) {
 
             <nav className=" lg:hidden mr-2 p-2 relative group  flex justify-end ">
               <svg
-               onClick={() => {
-                setView((prev) => !prev);
-              }}
+                onClick={() => {
+                  setView((prev) => !prev);
+                }}
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
                 viewBox="0 0 20 20"
@@ -178,53 +178,55 @@ export default function Layout({ children }) {
                 />
               </svg>
               {view && (
-              <div className="bg-transparent w-auto absolute top-6 -right-2 flex-col z-50 rounded-sm transition-all">
-                <div className="pt-4 w-auto">
-                  
-                    {menu.map(({ name, path,sub }, index) => (
-                       <div
-                       key={index}
-                       tabIndex={1}
-                       className="w-40 group top-4 px-4 bg-white relative inline-flex p-2 normal-case text-sm whitespace-nowrap border-b border-t border-zinc-100 "
-                     >
-                       {sub ? (
-                         name
-                       ) : (
-                         <div
-                           onClick={() => {
-                             setView(false);
-                           }}
-                         >
-                           <Link href={path}><a>{name}</a></Link>
-                         </div>
-                       )}
-                       <div className="bg-white right-[102%]  group-focus:visible invisible  shadow-md absolute z-[1000] flex flex-col">
-                         {sub?.map(({ name, path }, index) => (
-                           <div
-                             onClick={() => {
-                               setView((prev) => !prev);
-                             }}
-                             key={index}
-                             className="text-center border border-b border-zinc-100 text-sm  px-4 py-2"
-                           >
-                             <Link href={path}>
-                               <div className="">{name}</div>
-                             </Link>
-                           </div>
-                         ))}
-                       </div>
-                     </div>
+                <div className="bg-transparent w-auto absolute top-6 -right-2 flex-col z-50 rounded-sm transition-all">
+                  <div className="pt-4 w-auto">
+                    {menu.map(({ name, path, sub }, index) => (
+                      <div
+                        key={index}
+                        tabIndex={1}
+                        className="w-40 group top-4 px-4 bg-white relative inline-flex p-2 normal-case text-sm whitespace-nowrap border-b border-t border-zinc-100 "
+                      >
+                        {sub ? (
+                          name
+                        ) : (
+                          <div
+                            onClick={() => {
+                              setView(false);
+                            }}
+                          >
+                            <Link href={path}>
+                              <a>{name}</a>
+                            </Link>
+                          </div>
+                        )}
+                        <div className="bg-white right-[102%]  group-focus:visible invisible  shadow-md absolute z-[1000] flex flex-col">
+                          {sub?.map(({ name, path }, index) => (
+                            <div
+                              onClick={() => {
+                                setView((prev) => !prev);
+                              }}
+                              key={index}
+                              className="text-center border border-b border-zinc-100 text-sm  px-4 py-2"
+                            >
+                              <Link href={path}>
+                                <div className="">{name}</div>
+                              </Link>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
                     ))}
-                 
+                  </div>
                 </div>
-              </div>
-                )}
+              )}
             </nav>
           </div>
         </header>
       </div>
 
-      <main className="text-zinc-900 font-sans  ">{children}</main>
+      <main className="text-zinc-900 font-sans  " onClick={() => {
+                                setView(false);
+                              }} >{children}</main>
 
       <footer className="border font-bah bg-white border-t mx-auto  py-6 lg:py-7">
         <div className="grid grid-cols-2 lg:flex lg:flex-row justify-around items-start">
