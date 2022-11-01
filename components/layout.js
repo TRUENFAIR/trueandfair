@@ -128,7 +128,7 @@ export default function Layout({ children }) {
               <span className="text-sm font-bold text-black capitalize"></span>
             </div>
 
-            <nav className="text-sm uppercase  font-bah tracking-tight hidden  lg:flex justify-end flex-1">
+            <nav className="text-sm uppercase  font-bah tracking-tight hidden  lg:flex justify-end flex-1 lg:mr-8">
               {menu.map(({ name, path, sub }, index) => (
                 <div key={index} className="group relative inline-flex ">
                   <Link href={path}>
