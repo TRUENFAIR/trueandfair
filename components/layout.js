@@ -110,7 +110,7 @@ export default function Layout({ children }) {
               : "w-full border-zinc-100 z-50 border-b font-bah   ease-in duration-700 "
           }`}
         >
-          <div className="md:container mx-auto  flex justify-between  items-center text-zinc-900 font-sans">
+          <div className="lg:mx-14 flex justify-between  items-center text-zinc-900 font-sans">
             <Link href="/">
               <a className="flex  justify-between lg:justify-start items-center ">
                 <div className="w-full h-[80px]">
