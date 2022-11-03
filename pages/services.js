@@ -137,7 +137,7 @@ matters.
                 layout="fill"
                 className="absolute h-[700px] w-full object-cover"
                 alt=""
-                src="/about/dummy3.jpg"
+                src="/servadat/auditcomp.png"
               />
             </div>
 
@@ -154,7 +154,7 @@ matters.
                 layout="fill"
                 className="absolute h-full w-full object-cover"
                 alt=""
-                src="/about/dummy3.jpg"
+                src="/servadat/proftraining.png"
               />
             </div>
             <div data-aos="fade-up" data-aos-once="true" className="w-auto">
@@ -291,7 +291,7 @@ policies
                 layout="fill"
                 className="absolute h-[500px] w-full object-cover"
                 alt=""
-                src="/about/dummy3.jpg"
+                src="/servadat/corporates.png"
               />
             </div>
 
@@ -308,7 +308,7 @@ policies
                 layout="fill"
                 className="absolute h-full w-full object-cover"
                 alt=""
-                src="/about/dummy3.jpg"
+                src="/servadat/regulators.png"
               />
             </div>
 

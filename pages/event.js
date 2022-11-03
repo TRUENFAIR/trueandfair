@@ -19,7 +19,7 @@ export default function Events() {
 
   const discover = [
     {
-      name: "WCOA",
+      name: "World Congress of Accountants 2022",
       img: "/discover/discover1.png",
       para: "",
       desc: "From Ashtanga to Vinyasa, make mindful movement a daily ritual.",

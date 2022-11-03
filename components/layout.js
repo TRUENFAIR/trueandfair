@@ -354,6 +354,7 @@ export default function Layout({ children }) {
             Copyright © 2022. All Rights Reserved. Designed by Deedbee Social
             Ventures.
           </p>
+          <p> {`Image credits | freepik.com`}</p>
         </div>
       </footer>
     </>
