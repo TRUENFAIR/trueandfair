@@ -237,7 +237,7 @@ export default function Home() {
       
       <section
         data-aos="fade-up"
-        className="text-black  body-font   bg-lightgray  lg:py-12"
+        className="text-black  body-font    lg:py-12"
       >
         <div className=" md:container md:mx-auto  lg:rounded-lg text-left">
           <div className="lg:w-full mx-auto flex flex-col lg:flex-col ">
