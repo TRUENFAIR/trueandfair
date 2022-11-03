@@ -22,6 +22,24 @@ export default function About() {
     });
   }, []);
 
+  const whytf = [
+    {
+      id: 1,
+      title:
+        "Increased stakeholder expectations  ",
+      text: "NFRA has concluded in this AQRR that the appointment of BSR as the statutory auditors of IFIN was ab initio illegal and void, & the release said. Further, NFRA found that the IT processes/platform used by BSR have deficiencies that are systemic and structural in nature.",
+    },
+    {
+      id: 2,
+      title: "The expectation of joint audits ",
+      text: "Corporates that need joint audits and their current sole auditors will expect the other audit firm to meet audit quality expectations and carry the necessary expertise to perform large audits. Not withstanding whether joint audits are mandatory or not, the policies and guidance provided by True and Fair are aimed at enhancing the quality of audits by audit firms. The audit quality policies and procedures that will be laid out by True and Fair and the audit guidance and the Audit Documentation and Archival Tool (ADAT) that is being developed by True and Fair is scalable for large audit requirements.",
+    },
+    {
+      id: 3,
+      title: "Unify a divergent practice ",
+      text: "Most of the audit firms in India are highly diverse, with fragmented professional practices. True and Fair aims to build capacity and enhance the capabilities of audit firms by providing a common platform for audit quality, best practices and policies, technical guidance, documentation tools and access to audit specialists, so that the audit firms can network and collaborate for their collective success and growth, delivering high quality audit services.",
+    },
+  ];
   const discover = [
     {
       name: "Leadership",
@@ -34,7 +52,7 @@ export default function About() {
           image: "/team/balaji.png",
           role: "Founder and Managing Partner",
           description:
-            "Balaji V. brings over 28 years’ experience in financial accounting and auditing, working across various industries, including, agriculture, automobile, healthcare, information  technology, information technology enabled services, manufacturing, real estate, retail and infrastructure. Over the course of his professional career, he has held leadership positions in one of  India’s largest audit firms in roles spanning Audit Inspections, Audit Risk, Audit Quality  and Regulatory.  Balaji has been a member of the Audit and Assurance Standards Board, the Expert Advisory Committee and the Ind AS Transition Facilitation Group of the Institute of Chartered Accountants of India (ICAI). He has also been a member of various study groups constituted by the ICAI to evaluate and address issues considered for amendments by the ICAI. Balaji has co-authored various publications of the ICAI including the ‘Guidance Note on Audit of Internal Financial Controls over Financial Reporting’ and the ‘Guidance Note on  Reporting on Fraud’ under sections 143(3)(i) and 143(12), respectively, of the Companies Act, 2013; ‘Technical Guidance on Reporting under Rule 11(e) and 11(f) of the Companies (Audit and Auditors) Rules’ among others.",
+            "Balaji V. brings over 28 years’ experience in financial accounting and auditing, working across various industries, including, agriculture, automobile, healthcare, information  technology, information technology enabled services, manufacturing, real estate, retail and infrastructure. Over the course of his professional career, he has held leadership positions in one of  India’s largest audit firms in roles spanning Audit Inspections, Audit Risk, Audit Quality  and Regulatory.  Balaji has been a member of the Audit and Assurance Standards Board, the Expert Advisory Committee and the Ind AS Transition Facilitation Group of the Institute of Chartered Accountants of India (ICAI). He has also been a member of various study groups constituted by the ICAI to evaluate and address issues considered for amendments by the ICAI. Balaji has co-authored various publications of the ICAI including the ‘Guidance Note on Audit of Internal Financial Controls over Financial Reporting’ and the ‘Guidance Note on  Reporting on Fraud’ under sections 143(3)(i) and 143(12), respectively, of the Companies Act, 2013; ‘Technical Guidance on Reporting under Rule 11(e) and 11(f) of the Companies (Audit and Auditors) Rules’; among others.",
         },
         {
           name: "Brindasri K",
@@ -47,8 +65,8 @@ export default function About() {
       blogsdatafull: [],
     },
     {
-      name: "Professionals",
-      para: "The activities of T&F are supported by a team of five (and growing) young and energetic professionals with over 10 years of work experience each in auditing, accounting and advisory and have served a diverse set of industries. Each member has held senior professional positions in one of India’s largest audit firms including positions in the firm’s technical, quality and learning teams.",
+      name: "Partners",
+      para: "The activities of True and Fair are supported by a team of five (and growing) young and energetic professionals with over 10 years of work experience each in auditing, accounting and advisory and have served a diverse set of industries. Each member has held senior professional positions in one of India’s largest audit firms including positions in the firm’s technical, quality and learning teams.",
       img: "/discover/discover1.png",
       desc: "From Ashtanga to Vinyasa, make mindful movement a daily ritual.",
       blogsdata: [
@@ -56,36 +74,31 @@ export default function About() {
           name: "Archana Ashok",
           image: "/team/Archana.png",
           role: "",
-          description:
-            "",
+          description: "",
         },
         {
           name: "Shristi Sarayan",
           image: "/team/sriti.png",
           role: "",
-          description:
-            "",
+          description: "",
         },
         {
           name: "Kirti Kumar Kotian",
           image: "/team/kirti.png",
           role: "",
-          description:
-            "",
+          description: "",
         },
         {
           name: "Rakesh Jain",
           image: "/team/rakesh.png",
           role: "",
-          description:
-            "",
+          description: "",
         },
         {
           name: "Krishna R P",
           image: "/team/krishna.png",
           role: "",
-          description:
-            "",
+          description: "",
         },
       ],
       blogsdatafull: [],
@@ -97,28 +110,28 @@ export default function About() {
       desc: "From Ashtanga to Vinyasa, make mindful movement a daily ritual.",
       blogsdata: [
         {
-          para: "T&F has constituted two advisory boards to advise the firm on:",
+          para: "True and Fair has constituted two advisory boards to advise the firm on:",
           para2:
-            "(a) Strategy to evolve T&F as a reputed firm in the financial reporting ecosystem; and",
+            "✔️ Strategy to evolve True and Fair as a reputed firm in the financial reporting ecosystem; and",
           para3:
-            "(b) Technical matters related to financial accounting and auditing",
+            "✔️ Technical matters related to financial accounting and auditing",
           para4:
-            "The vision, policies, practices and guidance of T&F have been critically reviewed and approved by our Advisory Boards whose members are eminent Audit & Finance professionals.",
+            "The vision, policies, practices and guidance of True and Fair have been critically reviewed and approved by our Advisory Boards whose members are eminent Audit & Finance professionals.",
           name: "STRATEGIC ADVISORY BOARD (SAB)",
           point1:
-            "1. Advice on the Vision and Mission statements of T&F and evaluate compliance with the same.",
+            "1. Advice on the Vision and Mission statements of True and Fair and evaluate compliance with the same.",
           point2: "2. Evaluate and advice on:",
           point1sub:
-            "a. The business model (including the planned scope of services) and the pricing plan for services that are intended to be offered by T&F.",
+            "a. The business model (including the planned scope of services) and the pricing plan for services that are intended to be offered by True and Fair.",
           point1sub2: "b. Investment decisions, including in talent",
           point1sub3:
-            "c. Geographies and markets which can be addressed for the services offered by T&F and the manner of accessing such geographies/markets.",
+            "c. Geographies and markets which can be addressed for the services offered by True and Fair and the manner of accessing such geographies/markets.",
           point1sub4:
-            "d. Potential new areas of focus for T&F in the financial reporting eco-system.",
+            "d. Potential new areas of focus for True and Fair in the financial reporting eco-system.",
           point1sub5:
-            "e. Stakeholder expectations and T&F’s response to address them.",
+            "e. Stakeholder expectations and True and Fair response to address them.",
           point3:
-            "3. Enable outreach/ represent the views of T&F on regulatory matters with the Regulators, including communicating best practices which can be translated into law/r regulations.",
+            "3. Enable outreach/ represent the views of True and Fair on regulatory matters with the Regulators, including communicating best practices which can be translated into law/r regulations.",
           point4:
             "4. Recommend steps for “True and Fair” being recognized as the premier respected brand in its niche in the financial reporting eco-system.",
         },
@@ -129,13 +142,13 @@ export default function About() {
           description:
             "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
           point1:
-            "1. Review and approve (with suitable modifications, if required) the proposed audit quality policies, principles, procedures, guidance, and tools considering the principles/provisions laid down in the applicable professional standards, the relevant regulatory requirements, GAAP and GAAS and suggest other areas where the quality services of T&F can be enhanced.",
+            "1. Review and approve (with suitable modifications, if required) the proposed audit quality policies, principles, procedures, guidance, and tools considering the principles/provisions laid down in the applicable professional standards, the relevant regulatory requirements, GAAP and GAAS and suggest other areas where the quality services of True and Fair can be enhanced.",
           point2:
-            "2. Review and approve (with suitable modifications, if required) the recommendations and suggestions that T&F would like to make to the Regulators.",
+            "2. Review and approve (with suitable modifications, if required) the recommendations and suggestions that True and Fair would like to make to the Regulators.",
           point3:
-            "3. Advise T&F on financial accounting and auditing matters that are brought to the notice of this Board.",
+            "3. Advise True and Fair on financial accounting and auditing matters that are brought to the notice of this Board.",
           point4:
-            "4. Get updates from T&F in the financial reporting eco-system and stakeholder expectations and T&F response in updating the audit quality policies, principles, guidance, and tools for such developments.",
+            "4. Get updates from True and Fair in the financial reporting eco-system and stakeholder expectations and True and Fair response in updating the audit quality policies, principles, guidance, and tools for such developments.",
         },
       ],
     },
@@ -182,165 +195,30 @@ export default function About() {
           <div className=" ">
             <p className="leading-loose   text-justify  font-bah text-black ">
               {" "}
-              T&amp;F is a start-up firm formed with a vision to enable capacity
-              building and capability enhancement of audit firms. Founded by a
-              team of seasoned CA professionals, we bring together a collective
-              experience of more than 100 years in audits and accounting.
-              Leveraging on our experience we have designed a set of policies
-              and practices to help our clients benefit from our technical
-              expertise. We have the skills and scale to serve audit firms (both
-              established and formative), upcoming chartered accountants,
-              Regulators, and corporates - while remaining agile and personal in
-              our approach. T &amp; F is one-of-a-kind firm and aspires to be
-              the benchmark STANDARD SETTER in the auditing ecosystem.
+              True and Fair is a start-up firm formed with a vision to enable
+              capacity building and capability enhancement of audit firms.
+              Founded by a team of seasoned CA professionals, we bring together
+              a collective experience of more than 100 years in audits and
+              accounting. Leveraging on our experience we have designed a set of
+              policies and practices to help our clients benefit from our
+              technical expertise. We have the skills and scale to serve audit
+              firms (both established and formative), upcoming chartered
+              accountants, Regulators, and corporates - while remaining agile
+              and personal in our approach. True and Fair is one-of-a-kind firm and
+              aspires to be the benchmark STANDARD SETTER in the auditing
+              ecosystem.
             </p>
           </div>
         </section>
-        <div
-          className="w-full block h-[10px] md:h-[60px] lg:col-span-2  col-span-1 "
-          id="focusarea"
-        ></div>
-        <section className=" bg-white py-11 w-full  h-fit  lg:py-16">
-          <h1 className="text-3xl font-bah  text-center title-font text-black   mb-8">
-            Focus Areas
-          </h1>
-          <div className=" md:container md:mx-auto  grid grid-cols-1 md:grid-cols-2">
-            <div>
-              <h1 className="font-bah h-18 text-center font-semibold text-lg text-black">
-                Audit Firms
-              </h1>
-              <div className="md:w-full flex flex-col items-center  lg:w-full">
-                <div className="flex gap-1 md:p-0 p-1 mt-4 text-black flex-row">
-                  <p className="prose text-justify text-black font-bah ">
-                    {`Empowering the auditors with an ecosystem of actionable policies, best
-                                            practices, tools, technical guidance, and access to audit specialists such as
-                                                Information Technology Audit, Forensic Audit and Valuation Specialists.
-              `}
-                  </p>
-                </div>
-                <div className="flex  md:p-0 p-1  mt-4 gap-1 flex-row">
-                  <p className="prose text-black text-justify font-bah ">
-                    {`Improving the efficacy of implementing the principles specified in the
-professional standards during audits.
-              `}
-                  </p>
-                </div>
-                <div className="flex mt-4  md:p-0 p-1  gap-1 flex-row">
-                  <p className="prose text-black text-justify  font-bah ">
-                    {`Develop an exhaustive library of audit-related material in the Audit
-Documentation and Archival Tool (ADAT) including content on risks and
-possible responses, scalable work paper templates, audit programmes
-and checklists.
-              `}
-                  </p>
-                </div>
-                <div className="flex  md:p-0 p-1  mt-4 gap-1 flex-row">
-                  <p className="prose text-black text-justify font-bah ">
-                    {`Significantly invest in data analytics and artificial intelligence to improve
-the quality of audits and productivity
-              `}
-                  </p>
-                </div>
 
-                {/* <Link href="/about#focusarea">
-                        <button className="m-8 font-bah  bg-yellow border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
-                          READ MORE
-                        </button>
-                      </Link> */}
-              </div>
-            </div>
 
-            <div>
-              <div className="md:w-full flex flex-col items-center  lg:w-full">
-                <h1 className="font-bah md:mt-0 mt-5 h-18 text-center font-semibold text-lg text-black">
-                Chartered Accountants
-                </h1>
-                <div className="flex gap-1 mt-8 text-black flex-row">
-                  <p className="prose text-justify  text-black font-bah ">
-                    {`Developing and imparting a robust training curriculum with industry specific
-real life case studies and simulated work environment for aspiring and qualified
-Chartered Accountants and other eligible professionals looking to make a career
-in financial accounting and auditing.`}
-                  </p>
-                </div>
-                <h1 className="font-bah  md:mt-0 mt-8 h-18 text-center font-semibold text-lg text-black">
-                  Corporates
-                </h1>
-                <div className="flex mt-4 gap-1 flex-row">
-                  <p className="prose text-justify text-black font-bah ">
-                    {`Guide corporates on complex Accounting & Financial Reporting matters,
-Environmental, Social and Governance (ESG) strategy, Risk Management
-practices and Board Governance.
-              `}
-                  </p>
-                </div>
-                <h1 className="font-bah  md:mt-0 mt-8 h-18 text-center font-semibold text-lg text-black">
-                  Regulators
-                </h1>
-                <div className="flex mt-4 gap-1 flex-row">
-                  <p className="prose text-justify text-black   font-bah ">
-                    {`Collaborate with Regulators on standard setting, regulatory developments,
-monitoring and inspection policies and disciplinary mechanisms.
-              `}
-                  </p>
-                </div>
-                <div className="flex mt-4 gap-1 flex-row"></div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section
-          data-aos="fade-up"
-          className="text-black  body-font   lg:py-12"
-          style={{
-            backgroundImage: `url(${"/about/abt2.png"})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-          }}
-        >
-          <div className=" md:container md:mx-auto  lg:rounded-lg text-left">
-            <div className="lg:w-full mx-auto lg:h-52 flex flex-col lg:flex-col ">
-              <div className="lg:w-full w-full lg:mr-9  mt-6 lg:mt-0 ">
-                <div className="w-full flex gap-4 lg:justify-center ">
-                  <h1 className="w-full text-center  text-3xl font-bah  title-font text-white   mb-4 ">
-                    Our Vision And Mission
-                  </h1>
-                </div>
-              </div>
-              <div className="mt-10">
-                <ul className="grid lg:grid-cols-1 grid-cols-1 lg:gap-10">
-                  {missvis.map(({ text, id, title }, index) => {
-                    return (
-                      <div key={index}>
-                        <li
-                          key={id}
-                          className="mt-4 text-lg text-center font-bah lg:p-0 p-12 leading-relaxed text-white "
-                        >
-                          {text}
-                        </li>
-                      </div>
-                    );
-                  })}
-                </ul>
-              </div>
-              {/* <div className="flex justify-center">
-              <Link href="/adat">
-                <button className="mt-8 font-bah   border-2 border-white text-white font-bold text-xs hover:text-blue hover:bg-white p-3 rounded-lg transition-all">
-                  READ MORE
-                </button>
-              </Link>
-            </div> */}
-            </div>
-          </div>
-        </section>
-        
+
         <div
-          className="w-full block h-[10px] md:h-[50px] lg:col-span-2  col-span-1 "
+          className="w-full bg-white block h-[10px] md:h-[80px] lg:col-span-2  col-span-1 "
           id="meettheteam"
         ></div>
-        <section className="bg-lightgray ">
-          <p className="text-3xl font-bah  title-font text-black text-center  border  mb-2">
+        <section className="bg-white ">
+          <p className="text-3xl font-bah  title-font text-black text-center mb-2">
             Meet The Team
           </p>
           <div className="md:container flex justify-center md:mx-auto">
@@ -358,7 +236,7 @@ monitoring and inspection policies and disciplinary mechanisms.
                         index === buttonIndex
                           ? " text-blue text-2xl font-bold font-bah border-blue border-b-4"
                           : ""
-                      } flex justify-center text-xl font-bah  title-font text-black   mb-4 hover:cursor-pointer`}
+                      } flex justify-center text-xl  font-bah  title-font text-black   mb-4 hover:cursor-pointer`}
                     >
                       {name}
                     </p>
@@ -368,7 +246,7 @@ monitoring and inspection policies and disciplinary mechanisms.
             </ul>
           </div>
         </section>
-        <section className="bg-lightgray md:pt-1 md:pb-10 ">
+        <section className="bg-white md:pt-1 md:pb-10 ">
           <div className="md:container px-6  md:mx-auto">
             <div
               className={`${
@@ -376,7 +254,11 @@ monitoring and inspection policies and disciplinary mechanisms.
               }`}
             >
               {discover.map(({ para }, index) => {
-                return <p key={index} className="font-bah">{para}</p>;
+                return (
+                  <p key={index}  className=" text-justify font-bah">
+                    {para}
+                  </p>
+                );
               })}
             </div>
             <div
@@ -388,8 +270,17 @@ monitoring and inspection policies and disciplinary mechanisms.
                 ({ para, para2, para3, para4 }, index) => {
                   return (
                     <div key={index}>
-                      <p className="font-bah">
-                        {para} {para2} {para3} {para4}
+                      <p className="font-bah text-justify">
+                        {para} 
+                      </p>
+                      <p className="font-bah text-justify">
+                         {para2} 
+                      </p>
+                      <p className="font-bah text-justify">
+                         {para3} 
+                      </p>
+                      <p className="font-bah text-justify">
+                      {para4}
                       </p>
                     </div>
                   );
@@ -400,7 +291,7 @@ monitoring and inspection policies and disciplinary mechanisms.
               className={`${
                 buttonIndex === 0 || buttonIndex === 2
                   ? "grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-2"
-                  : "grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-5"
+                  : "grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-3"
               }`}
             >
               {discover[buttonIndex].blogsdata.map(
@@ -434,7 +325,7 @@ monitoring and inspection policies and disciplinary mechanisms.
                           key={index}
                           className="flex gap-1 mt-4 text-black flex-row"
                         >
-                          <p className="prose  text-black font-bah ">
+                          <p className="prose text-justify    text-black font-bah ">
                             {point1}
                           </p>
                         </div>
@@ -442,13 +333,13 @@ monitoring and inspection policies and disciplinary mechanisms.
                           key={index}
                           className="flex gap-1 mt-4 text-black flex-col"
                         >
-                          <p className="prose   text-black font-bah ">
+                          <p className="prose text-justify  text-black font-bah ">
                             {point2}
                           </p>
                           <p
                             className={`${
                               point1sub
-                                ? "prose p-2 text-black font-bah block"
+                                ? "prose p-2 text-black text-justify font-bah block"
                                 : "hidden"
                             }`}
                           >
@@ -457,7 +348,7 @@ monitoring and inspection policies and disciplinary mechanisms.
                           <p
                             className={`${
                               point1sub2
-                                ? "prose p-2 text-black font-bah block"
+                                ? "prose p-2 text-justify text-black font-bah block"
                                 : "hidden"
                             }`}
                           >
@@ -466,7 +357,7 @@ monitoring and inspection policies and disciplinary mechanisms.
                           <p
                             className={`${
                               point1sub3
-                                ? "prose p-2 text-black font-bah block"
+                                ? "prose p-2 text-justify text-black font-bah block"
                                 : "hidden"
                             }`}
                           >
@@ -475,7 +366,7 @@ monitoring and inspection policies and disciplinary mechanisms.
                           <p
                             className={`${
                               point1sub4
-                                ? "prose p-2 text-black font-bah block"
+                                ? "prose p-2 text-black text-justify font-bah block"
                                 : "hidden"
                             }`}
                           >
@@ -485,7 +376,7 @@ monitoring and inspection policies and disciplinary mechanisms.
                           <p
                             className={`${
                               point1sub5
-                                ? "prose p-2 text-black font-bah block"
+                                ? "prose p-2 text-black text-justify font-bah block"
                                 : "hidden"
                             }`}
                           >
@@ -496,7 +387,7 @@ monitoring and inspection policies and disciplinary mechanisms.
                           key={index}
                           className="flex gap-1 mt-4 text-black flex-row"
                         >
-                          <p className="prose  text-black font-bah ">
+                          <p className="prose text-justify  text-black font-bah ">
                             {point3}
                           </p>
                         </div>
@@ -504,7 +395,7 @@ monitoring and inspection policies and disciplinary mechanisms.
                           key={index}
                           className="flex gap-1 mt-4 text-black flex-row"
                         >
-                          <p className="prose  text-black font-bah ">
+                          <p className="prose  text-justify text-black font-bah ">
                             {point4}
                           </p>
                         </div>
@@ -540,10 +431,11 @@ monitoring and inspection policies and disciplinary mechanisms.
                           <p className=" text-black font-bah mt-4  capitalize text-center  ">
                             {role}
                           </p>
-                       
                         </div>
                         <h1 className="md:w-[255px] h-[2px]  bg-blue mb-5"></h1>
-                        <p className="prose  text-black font-bah">{description}</p>
+                        <p className="prose  text-black text-justify font-bah">
+                          {description}
+                        </p>
                       </div>
                     );
                   }
@@ -552,6 +444,66 @@ monitoring and inspection policies and disciplinary mechanisms.
             </div>
           </div>
         </section>
+
+
+
+
+
+
+
+
+
+
+        
+        <div
+          className="w-full md:block hidden h-[60px] lg:col-span-2  col-span-1 "
+          id="WhyTrueandFair"
+        ></div>
+        <section
+        data-aos="fade-up"
+        className="text-black  body-font   bg-lightgray  lg:py-12"
+      >
+        <div className=" md:container md:mx-auto  lg:rounded-lg text-left">
+          <div className="lg:w-full mx-auto flex flex-col lg:flex-col ">
+            <div className="lg:w-full w-full lg:mr-9  mt-6 lg:mt-0 ">
+              <div className="w-full flex gap-4 lg:justify-center ">
+                <h1 className="w-full text-center  text-3xl font-bah  title-font text-black   mb-4 ">
+                  {`Why True and Fair?`}
+                </h1>
+              </div>
+            </div>
+            <div className="mt-10">
+              <ul className="grid lg:grid-cols-3 grid-cols-1 lg:gap-12">
+                {whytf.map(({ text, id, title }, index) => {
+                  return (
+                    <div key={index}>
+                      <p className="font-bah h-18 text-center font-semibold text-lg text-black">
+                        {title}
+                      </p>
+                      <li
+                        key={id}
+                        className="mt-4  text-justify font-bah lg:p-0 p-5 leading-loose text-black "
+                      >
+                        {text}
+                      </li>
+                    </div>
+                  );
+                })}
+              </ul>
+            </div>
+            {/* <div className="flex justify-center">
+              <Link href="/adat">
+                <button className="mt-8 font-bah   border-2 border-white text-black font-bold text-xs hover:text-blue hover:bg-white p-3 rounded-lg transition-all">
+                  READ MORE
+                </button>
+              </Link>
+            </div> */}
+          </div>
+        </div>
+      </section>
+      
+      
+       
       </section>
     </>
   );

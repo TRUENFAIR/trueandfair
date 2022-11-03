@@ -52,19 +52,18 @@ export default function Home() {
   const whytf = [
     {
       id: 1,
-      title:
-        "Increased stakeholder expectations from auditors and regulatory scrutiny of audit quality ",
+      title: "Increased stakeholder expectations  ",
       text: "NFRA has concluded in this AQRR that the appointment of BSR as the statutory auditors of IFIN was ab initio illegal and void, & the release said. Further, NFRA found that the IT processes/platform used by BSR have deficiencies that are systemic and structural in nature.",
     },
     {
       id: 2,
       title: "The expectation of joint audits ",
-      text: "Corporates that need joint audits and their current sole auditors will expect the other audit firm to meet audit quality expectations and carry the necessary expertise to perform large audits. Not withstanding whether joint audits are mandatory or not, the policies and guidance provided by T&F are aimed at enhancing the quality of audits by audit firms. The audit quality policies and procedures that will be laid out by T&F and the audit guidance and the Audit Documentation and Archival Tool (ADAT) that is being developed by T&F is scalable for large audit requirements.",
+      text: "Corporates that need joint audits and their current sole auditors will expect the other audit firm to meet audit quality expectations and carry the necessary expertise to perform large audits. Not withstanding whether joint audits are mandatory or not, the policies and guidance provided by True and Fair are aimed at enhancing the quality of audits by audit firms. The audit quality policies and procedures that will be laid out by True and Fair and the audit guidance and the Audit Documentation and Archival Tool (ADAT) that is being developed by True and Fair is scalable for large audit requirements.",
     },
     {
       id: 3,
       title: "Unify a divergent practice ",
-      text: "Most of the audit firms in India are highly diverse, with fragmented professional practices. T&F aims to build capacity and enhance the capabilities of audit firms by providing a common platform for audit quality, best practices and policies, technical guidance, documentation tools and access to audit specialists, so that the audit firms can network and collaborate for their collective success and growth, delivering high quality audit services.",
+      text: "Most of the audit firms in India are highly diverse, with fragmented professional practices. True and Fair aims to build capacity and enhance the capabilities of audit firms by providing a common platform for audit quality, best practices and policies, technical guidance, documentation tools and access to audit specialists, so that the audit firms can network and collaborate for their collective success and growth, delivering high quality audit services.",
     },
   ];
   const whyworkwithus = [
@@ -94,14 +93,12 @@ export default function Home() {
       text: "Pre-built and custom library of reports and data analytics for comprehensive insights, as per the audit requirements.",
     },
   ];
-  const  missvis= [
+  const missvis = [
     {
       id: 1,
       title: " OUR VISION AND MISSION",
       text: "Our overarching vision is to be recognised as the STANDARD SETTER in the financial reporting ecosystem regarding quality of audits undertaken and performed. To achieve our vision, our mission is to build capacity and enhance the professional capability and quality of audits performed by audit firms.",
     },
-    
-    
   ];
   return (
     <main>
@@ -143,7 +140,7 @@ export default function Home() {
             <p className="text-3xl font-bah  title-font text-black   mb-6">
               True and Fair Professionals Network
             </p>
-            
+
             {/* <p className="leading-loose   text-justify  font-bah text-black ">
               True and Fair aims to enhance the audit quality of CA firms by
               providing is a digital platform containing professional standards,
@@ -160,34 +157,32 @@ export default function Home() {
               success and growth, delivering world class audit services.
             </p> */}
             <p className="leading-loose   text-justify  font-bah text-black ">
-              <span className="leading-loose text-lg    text-center  font-bah text-black font-semibold">Strengthen the performance of auditors in the financial reporting
-              ecosystem.</span>
-              {" "}We will work with audit firms to enable them to deliver high
+              <span className="leading-loose text-lg    text-center  font-bah text-black font-semibold">
+                Strengthen the performance of auditors in the financial
+                reporting ecosystem.
+              </span>{" "}
+              We will work with audit firms to enable them to deliver high
               quality financial audits. Our well-developed and robust audit
               quality policies, procedures, guidance and tools will help
               auditors improve the quality of their professional services. Our
               service offering also include Audit Documentation and Archival
               Tool(s), access to experts, trainings, and insights on best
               practices in the financial reporting ecosystem.
-          
-            
-           
+            </p>
+            <p className="leading-loose  mt-4 text-justify  font-bah text-black ">
+              <span className="text-center leading-loose text-lg    font-bah text-black font-semibold">
+                What’s more?
+              </span>{" "}
               We will provide real life case studies and practical training to
               aspiring and qualified Chartered Accountants (CA) and other
               eligible professionals who intend to make a career in financial
-              auditing.
-            </p>
-            <p className="leading-loose  mt-4 text-justify  font-bah text-black ">
-              <span className="text-center leading-loose text-lg    font-bah text-black font-semibold">What’s more?</span>
-             {" "} We will provide advice to corporates on complex accounting
-              matters, best practices in financial reporting, enhanced Internal
-              Financial Controls over Financial Reporting (IFCoFR), advice on
-              Governance and Environmental, Social and Governance (ESG) related
-              topics.
-           
-              We will work with Audit Regulators on standard setting, monitoring
-              and inspection process and setting up a robust disciplinary
-              mechanism.
+              auditing. We will provide advice to corporates on complex
+              accounting matters, best practices in financial reporting,
+              enhanced Internal Financial Controls over Financial Reporting
+              (IFCoFR), advice on Governance and Environmental, Social and
+              Governance (ESG) related topics. We will collaborate with Audit
+              Regulators on standard setting, monitoring and inspection process
+              and setting up a robust disciplinary mechanism.
             </p>
 
             <span className="inline-block h-1 w-10 rounded bg-blue mt-8 mb-6"></span>
@@ -209,20 +204,18 @@ export default function Home() {
             <div className="lg:w-full w-full lg:mr-9  mt-6 lg:mt-0 ">
               <div className="w-full flex gap-4 lg:justify-center ">
                 <h1 className="w-full text-center  text-3xl font-bah  title-font text-white   mb-4 ">
-                Our Vision And Mission
+                  Our Vision And Mission
                 </h1>
               </div>
-             
             </div>
             <div className="mt-10">
               <ul className="grid lg:grid-cols-1 grid-cols-1 lg:gap-10">
                 {missvis.map(({ text, id, title }, index) => {
                   return (
                     <div key={index}>
-                      
                       <li
                         key={id}
-                        className="mt-4 text-lg text-center font-bah lg:p-0 p-12 leading-relaxed text-white "
+                        className="mt-4 text-lg text-justify font-bah lg:p-0 p-12 leading-relaxed text-white "
                       >
                         {text}
                       </li>
@@ -262,31 +255,29 @@ export default function Home() {
                       <p className="font-bah h-18 text-center font-semibold text-lg text-black">
                         {title}
                       </p>
-                      <li
+                      {/* <li
                         key={id}
                         className="mt-4  text- font-bah lg:p-0 p-5 leading-loose text-black "
                       >
                         {text}
-                      </li>
+                      </li> */}
                     </div>
                   );
                 })}
               </ul>
             </div>
-            {/* <div className="flex justify-center">
-              <Link href="/adat">
-                <button className="mt-8 font-bah   border-2 border-white text-black font-bold text-xs hover:text-blue hover:bg-white p-3 rounded-lg transition-all">
+            <div className="flex mt-7 mb-5 md:mb-0 justify-center">
+              <Link href="/about#WhyTrueandFair">
+                <button className="mt-4 font-bah   border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
                   READ MORE
                 </button>
               </Link>
-            </div> */}
+            </div>
           </div>
         </div>
       </section>
-      <Focusarea/>
-      
-          
-     
+      <Focusarea />
+
       <section
         data-aos="fade-up"
         className="text-black  body-font   lg:py-12"
@@ -338,21 +329,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <Abouthome />
-      {/* <section
-        data-aos="fade-up"
-        data-aos-easing="ease-in-out"
-        className="text-black  bg-lightgray"
-      >
-        <ProjectCard />
-      </section> */}
-
-      {/* <Clients /> */}
-      {/* <Libraryslide /> */}
-      {/* <Resourceslide /> */}
-
-      {/* {showModal && <Fixediv clicked={clicked} />} */}
     </main>
   );
 }

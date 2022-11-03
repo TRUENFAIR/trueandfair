@@ -7,7 +7,7 @@ export default function Focusarea() {
         <h1 className="text-3xl font-bah  text-center title-font text-black   mb-8">
           Focus Areas
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2">
+        <div className="grid grid-cols-1 md:gap-6  md:grid-cols-2">
           <div>
             <h1 className="font-bah h-18 text-center font-semibold text-lg text-black">
               Audit Firms
@@ -56,7 +56,7 @@ the quality of audits and productivity
           <div>
             <div className="md:w-full flex flex-col items-center  lg:w-full">
               <h1 className="font-bah h-18 text-center font-semibold text-lg text-black">
-                Chartered Accountants
+              Practical Training and Development
               </h1>
               <div className="flex gap-1 mt-4 text-black flex-row">
                 <p className="prose text-justify  text-black font-bah ">

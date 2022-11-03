@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Link from "next/link";
-import Image from "next/image";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
@@ -31,8 +30,8 @@ export default function Layout({ children }) {
       sub: [
         { name: "About True and Fair", path: "/about#abttf" },
 
-        { name: " Focus Areas", path: "/about#focusarea" },
         { name: "Meet the Team", path: "/about#meettheteam" },
+        { name: "Why True and Fair", path: "/about#WhyTrueandFair" },
       ],
     },
 
@@ -40,11 +39,11 @@ export default function Layout({ children }) {
       name: "Services",
       path: "/services",
       sub: [
-        { name: "Auditing Firms ", path: "/services#AuditingFirms" },
+        { name: "To Auditing Firms ", path: "/services#AuditingFirms" },
 
-        { name: "Chartered Accountants", path: "/services#CharteredAccount" },
-        { name: " Corporates", path: "/services#Corporations" },
-        { name: " Regulators", path: "/services#Regulators" },
+        { name: "Practical Training and Development", path: "/services#CharteredAccount" },
+        { name: "To Corporates", path: "/services#Corporations" },
+        { name: "To Regulators", path: "/services#Regulators" },
       ],
     },
     {
@@ -79,17 +78,11 @@ export default function Layout({ children }) {
       ],
     },
 
-    // {
-    //   name: "Resources",
-    //   path: "/resources",
-    //   sub: [
-    //     { name: "Best Practices", path: "/resources#BestPractices" },
-    //     { name: "Case Studies", path: "/resources#CaseStudies" },
-
-    //     { name: "Expert Opinions", path: "/resources#ExpertOpinions" },
-    //     { name: "News Updates", path: "/resources#NewsUpdates" },
-    //   ],
-    // },
+    {
+      name: "Events",
+      path: "/event",
+      
+    },
 
     {
       name: "Contact",
@@ -148,7 +141,7 @@ export default function Layout({ children }) {
                         <div className="w-full shadow-md">
                           {sub.map(({ name, path }, index) => (
                             <Link key={index} href={path}>
-                              <a className="w-52 hover:font-bold px-4 bg-white inline-flex p-2 normal-case text-sm whitespace-nowrap border-b border-t border-zinc-100 hover:bg-">
+                              <a className="w-56 hover:font-bold   bg-white inline-flex p-2 normal-case text-sm whitespace-nowrap border-b border-t border-zinc-100 hover:bg-">
                                 {name}
                               </a>
                             </Link>
@@ -224,9 +217,14 @@ export default function Layout({ children }) {
         </header>
       </div>
 
-      <main className="text-zinc-900 font-sans  " onClick={() => {
-                                setView(false);
-                              }} >{children}</main>
+      <main
+        className="text-zinc-900 font-sans  "
+        onClick={() => {
+          setView(false);
+        }}
+      >
+        {children}
+      </main>
 
       <footer className="border font-bah bg-white border-t mx-auto  py-6 lg:py-7">
         <div className="grid grid-cols-2 lg:flex lg:flex-row justify-around items-start">
@@ -283,7 +281,7 @@ export default function Layout({ children }) {
               <a>Services</a>
             </Link>
             <Link href="/adat">
-              <a>Adat</a>
+              <a>ADAT</a>
             </Link>
           </div>
 
@@ -295,6 +293,10 @@ export default function Layout({ children }) {
               <a>Resources</a>
             </Link> */}
 
+            <Link href="/event">
+              <a> Events</a>
+            </Link>
+           
             <Link href="/contact">
               <a>Contact </a>
             </Link>
@@ -312,32 +314,8 @@ export default function Layout({ children }) {
             <p className="font-semibold text-sm pb-2 font-bah text-black text-center">
               FIND US ON
             </p>
-            <div className="lg:grid-cols-2 flex justify-center gap-2 lg:inline-grid  ">
-              <a
-                className="hover:scale-105  transition-all"
-                href=""
-                // target="_blank"
-                rel="noreferrer"
-              >
-                <svg
-                  className="w-10 h-10 facebook"
-                  width="200"
-                  height="200"
-                  viewBox="0 0 187 187"
-                >
-                  <rect
-                    width="187"
-                    height="187"
-                    fill="#3b5998"
-                    rx="18"
-                    ry="18"
-                  />
-                  <path
-                    fill="#fefefe"
-                    d="M131 79l0 -12c0,-6 4,-7 6,-7 3,0 18,0 18,0l0 -27 -24 0c-27,0 -33,20 -33,32l0 14 -15 0 0 19 0 12 16 0c0,35 0,77 0,77l30 0c0,0 0,-42 0,-77l23 0 1 -12 2 -19 -24 0z"
-                  />
-                </svg>
-              </a>
+            <div className="lg:grid-cols-3 flex justify-center gap-2 lg:inline-grid  ">
+             
               <a
                 className="hover:scale-105 transition-all"
                 href=""

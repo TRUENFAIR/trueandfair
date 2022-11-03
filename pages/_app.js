@@ -13,25 +13,25 @@ function MyApp({ Component, pageProps }) {
   const [homeShown, setHomeShown] = useState(false);
   const [audocshown, setAudocshown] = useState(false);
 
-  useEffect(() => {
-    let timeId = null;
+  // useEffect(() => {
+  //   let timeId = null;
 
-    if (route.pathname === "/" && !homeShown) {
-      timeId = setTimeout(() => setSocialmedia(true), 8000);
-      setHomeShown(true);
-    } else if (route.pathname === "/adat" && !audocshown) {
-      timeId = setTimeout(() => setSocialmedia(true), 8000);
-      setAudocshown(true);
-    } else {
-      setSocialmedia(false);
-    }
+  //   if (route.pathname === "/" && !homeShown) {
+  //     timeId = setTimeout(() => setSocialmedia(true), 8000);
+  //     setHomeShown(true);
+  //   } else if (route.pathname === "/adat" && !audocshown) {
+  //     timeId = setTimeout(() => setSocialmedia(true), 8000);
+  //     setAudocshown(true);
+  //   } else {
+  //     setSocialmedia(false);
+  //   }
 
-    return () => {
-      if (timeId) {
-        clearTimeout(timeId);
-      }
-    };
-  }, [route.pathname]);
+  //   return () => {
+  //     if (timeId) {
+  //       clearTimeout(timeId);
+  //     }
+  //   };
+  // }, []);
 
   const clicked = () => {
     setSocialmedia(false);

@@ -97,7 +97,7 @@ function Adat() {
               <h2 className="text-3xl font-bah  title-font text-black   mb-4">
                 Product Overview
               </h2>
-              <p className="prose  font-bah pt-8">
+              <p className="prose text-justify font-bah pt-8">
                 The Audit Documentation and Archival Tool (ADAT) facilitates
                 auditors to document their audit work securely ensuring
                 compliance with auditing standards as set by Regulators and to
@@ -162,7 +162,7 @@ function Adat() {
               <h2 className="text-3xl font-bah  title-font text-black   mb-4">
                 Technology
               </h2>
-              <p className="prose  font-bah pt-8">
+              <p className="prose text-justify font-bah pt-8">
                 ADAT is a Microsoft Azure cloud-based platform leveraging
                 share-point security and features offered by Microsoft and it
                 enhances the capability and efficiency in performing audit
@@ -171,7 +171,7 @@ function Adat() {
                 unique solution to ensure end to end quality in audits. Deep
                 integration of the capabilities of the Audit Documentation Tool
                 with traditional office automation tools you are familiar with
-                means that there is no new software to learn!.
+                means that there is no new software to learn.
                 <br />
                 The platform is agnostic of your legacy systems, works directly
                 from the web and offers robust enterprise grade security, high
@@ -204,14 +204,14 @@ function Adat() {
               <div className="w-auto mt-16">
                 <div className="flex gap-1 mt-4 text-black flex-row">
                   <span className="w-fit ">✔️</span>{" "}
-                  <p className="prose  text-black font-bah ">
+                  <p className="prose text-justify text-black font-bah ">
                     {`Developed using word and excel which are familiar applications to auditors
               `}
                   </p>
                 </div>
                 <div className="flex gap-1 mt-4 text-black flex-row">
                   <span className="w-fit ">✔️</span>{" "}
-                  <p className="prose  text-black font-bah ">
+                  <p className="prose text-justify  text-black font-bah ">
                     {`A trial balance feature to highlight line items in financial statements to be
 considered for audit in the work paper
               `}
@@ -219,7 +219,7 @@ considered for audit in the work paper
                 </div>{" "}
                 <div className="flex gap-1 mt-4 text-black flex-row">
                   <span className="w-fit ">✔️</span>{" "}
-                  <p className="prose  text-black font-bah ">
+                  <p className="prose text-justify  text-black font-bah ">
                     {`Exhaustive library of risks linked to possible audit responses, reference audit
 programs, checklists, etc.
               `}
@@ -227,14 +227,14 @@ programs, checklists, etc.
                 </div>
                 <div className="flex gap-1 mt-4 text-black flex-row">
                   <span className="w-fit ">✔️</span>{" "}
-                  <p className="prose  text-black font-bah ">
+                  <p className="prose text-justify text-black font-bah ">
                     {`Audit work paper templates with reference links to practices and guidance
               `}
                   </p>
                 </div>
                 <div className="flex gap-1 mt-4 text-black flex-row">
                   <span className="w-fit ">✔️</span>{" "}
-                  <p className="prose  text-black font-bah ">
+                  <p className="prose text-justify text-black font-bah ">
                     {`Changes to work papers between audit report date and date of archival can be
 identified enhancing the integrity of the audit file at the time of report issuance
 and at the time of archival
@@ -259,7 +259,7 @@ and at the time of archival
             >
               <div className="flex gap-1 md:mt-24 text-black flex-row">
                 <span className="w-fit ">✔️</span>{" "}
-                <p className="prose  text-black font-bah ">
+                <p className="prose text-justify text-black font-bah ">
                   {`A file check feature to check the quality and completeness of work papers before
 archiving them as per professional standards
               `}
@@ -267,7 +267,7 @@ archiving them as per professional standards
               </div>
               <div className="flex gap-1 mt-4 text-black flex-row">
                 <span className="w-fit ">✔️</span>{" "}
-                <p className="prose  text-black font-bah ">
+                <p className="prose text-justify text-black font-bah ">
                   {`ADAT also provides a secure environment to the clients of the audit firm to share
 their information with the auditor
               `}
@@ -275,14 +275,14 @@ their information with the auditor
               </div>
               <div className="flex gap-1 mt-4 text-black flex-row">
                 <span className="w-fit ">✔️</span>{" "}
-                <p className="prose  text-black font-bah ">
+                <p className="prose text-justify text-black font-bah ">
                   {`Dashboards to partners and managers on the status of their respective audits
               `}
                 </p>
               </div>
               <div className="flex gap-1 mt-4 text-black flex-row">
                 <span className="w-fit ">✔️</span>{" "}
-                <p className="prose  text-black font-bah ">
+                <p className="prose text-justify text-black font-bah ">
                   {`A secure platform that does not enable information to be copied, cut, pasted,
 printed outside of the ADAT
               `}
@@ -290,7 +290,7 @@ printed outside of the ADAT
               </div>
               <div className="flex gap-1 mt-4 text-black flex-row">
                 <span className="w-fit ">✔️</span>{" "}
-                <p className="prose  text-black font-bah ">
+                <p className="prose text-justify text-black font-bah ">
                   {`Roll-forward feature reduces the documentation effort in the subsequent year's
 audit
               `}
