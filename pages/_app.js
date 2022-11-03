@@ -4,15 +4,21 @@ import "../styles/globals.css";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import Fixediv from "../components/fixediv";
+
+import Fixeddiv from "../components/fixediv";
 
 function MyApp({ Component, pageProps }) {
   const route = useRouter();
-  const [conpath, setConpath] = useState("/contact2");
-  const [soicalmedia, setSocialmedia] = useState(false);
-  const [homeShown, setHomeShown] = useState(false);
-  const [audocshown, setAudocshown] = useState(false);
+  useEffect(() => {
+    let timeId = null;
+    timeId = setTimeout(() => setSocialmedia(true), 5000);
 
+    return () => clearTimeout(timeId);
+  }, []);
+  
+  
+  const [soicalmedia, setSocialmedia] = useState(false);
+  
   // useEffect(() => {
   //   let timeId = null;
 
@@ -48,7 +54,7 @@ function MyApp({ Component, pageProps }) {
         <link rel="icon" href="/homeicon/tnf.png" />
       </Head>
       <Component {...pageProps} />
-      {/* {soicalmedia && <Fixediv contact={conpath} clicked={clicked} />} */}
+      {soicalmedia && <Fixeddiv clicked={clicked} />}
     </Layout>
   );
 }

@@ -103,7 +103,7 @@ export default function Home() {
   return (
     <main>
       <section
-        className=" lg:h-[480px]   "
+        className=" lg:h-[800px]   "
         style={{
           backgroundImage: `url(${"/indexpage/audit.png"})`,
           backgroundSize: "cover",
