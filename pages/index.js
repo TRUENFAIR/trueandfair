@@ -53,17 +53,17 @@ export default function Home() {
     {
       id: 1,
       title: "Increased stakeholder expectations  ",
-      text: "NFRA has concluded in this AQRR that the appointment of BSR as the statutory auditors of IFIN was ab initio illegal and void, & the release said. Further, NFRA found that the IT processes/platform used by BSR have deficiencies that are systemic and structural in nature.",
+      text: "NFRA has concluded in this AQRR that the appointment of BSR as the statutory auditors of IFIN was ab initio illegal ....",
     },
     {
       id: 2,
       title: "The expectation of joint audits ",
-      text: "Corporates that need joint audits and their current sole auditors will expect the other audit firm to meet audit quality expectations and carry the necessary expertise to perform large audits. Not withstanding whether joint audits are mandatory or not, the policies and guidance provided by True and Fair are aimed at enhancing the quality of audits by audit firms. The audit quality policies and procedures that will be laid out by True and Fair and the audit guidance and the Audit Documentation and Archival Tool (ADAT) that is being developed by True and Fair is scalable for large audit requirements.",
+      text: "Corporates that need joint audits and their current sole auditors will expect the other audit firm to meet audit quality......",
     },
     {
       id: 3,
       title: "Unify a divergent practice ",
-      text: "Most of the audit firms in India are highly diverse, with fragmented professional practices. True and Fair aims to build capacity and enhance the capabilities of audit firms by providing a common platform for audit quality, best practices and policies, technical guidance, documentation tools and access to audit specialists, so that the audit firms can network and collaborate for their collective success and growth, delivering high quality audit services.",
+      text: "Most of the audit firms in India are highly diverse, with fragmented professional practices. True and Fair aims to build.......",
     },
   ];
   const whyworkwithus = [

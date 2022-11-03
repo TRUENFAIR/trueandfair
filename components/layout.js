@@ -325,7 +325,7 @@ export default function Layout({ children }) {
                 // target="_blank"
                 rel="noreferrer"
               >
-                <img src="/icons/linkidin.png" className="w-10 h-10" alt="" />
+                <img src="/icons/linkidin.gif" className="w-8 h-8" alt="" />
               </a>
               <a
                 className="hover:scale-105 transition-all"
@@ -333,7 +333,7 @@ export default function Layout({ children }) {
                 // target="_blank"
                 rel="noreferrer"
               >
-                <img src="/icons/twitter.png" className="w-10 h-10" alt="" />
+                <img src="/icons/twitter.gif" className="w-8 h-8" alt="" />
               </a>
 
               <a
@@ -342,7 +342,7 @@ export default function Layout({ children }) {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src="/icons/instagram.png" className="w-10 h-10" alt="" />
+                <img src="/icons/instagram.gif" className="w-8 h-8" alt="" />
               </a>
             </div>
           </div>
