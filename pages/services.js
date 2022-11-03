@@ -40,28 +40,29 @@ export default function Services() {
       </section>
       <section className=" pb-10 text-zinc-9 bg-lightgray" id="capabilities">
         <div className="md:container  mx-auto">
-          <div className="grid lg:grid-cols-2 grid-cols-1 md:gap-x-20 gap-4 md:pt- pt-4">
+          <div className="grid mb-14 lg:grid-cols-2 grid-cols-1 md:gap-x-20 gap-4 md:pt- pt-4">
             <div
               className="w-full block h-[10px] md:h-[80px] lg:col-span-2  col-span-1 "
               id="AuditingFirms"
             ></div>
             <div className="w-auto">
               <h2 className="text-3xl font-bah  title-font text-black   mb-4">
-                Auditing Firms
+                To Auditing Firms
               </h2>
               <p className="prose text-justify text-black font-bah pt-8">
                 We offer a wide range of services for audit firms to meet their
                 business objectives with clarity and confidence. Any individual/
                 firm/ organisation which promotes a culture of quality is a
-                potential stakeholder with True and Fair since they will be sharing a
-                common objective of promoting audit quality. We will enable
-                onboarding Information Technology auditors, forensic auditors
-                and valuation specialists to provide the necessary audit support
-                as experts to the audit firms. Our audit quality policies,
-                procedures and guidance will describe the nature, extent and
-                manner of involvement of these experts in an audit, including
-                reporting protocols. As an audit firm you can avail any of the
-                services listed below based on your needs by subscribing to:
+                potential stakeholder with True and Fair since they will be
+                sharing a common objective of promoting audit quality. We will
+                enable onboarding Information Technology auditors, forensic
+                auditors and valuation specialists to provide the necessary
+                audit support as experts to the audit firms. Our audit quality
+                policies, procedures and guidance will describe the nature,
+                extent and manner of involvement of these experts in an audit,
+                including reporting protocols. As an audit firm you can avail
+                any of the services listed below based on your needs by
+                subscribing to:
               </p>
               <div className="flex gap-1 mt-4 text-black flex-row">
                 <span className="w-fit ">✔️</span>{" "}
@@ -140,9 +141,6 @@ matters.
               />
             </div>
 
-
-
-
             <div
               className="w-full font-bah block h-[10px] md:h-[80px] lg:col-span-2  col-span-1 "
               id="CharteredAccount"
@@ -152,7 +150,6 @@ matters.
               data-aos-once="true"
               className="w-auto h-48 mt-5 lg:h-auto relative"
             >
-              
               <Image
                 layout="fill"
                 className="absolute h-full w-full object-cover"
@@ -162,16 +159,16 @@ matters.
             </div>
             <div data-aos="fade-up" data-aos-once="true" className="w-auto">
               <h2 className="text-3xl font-bah  title-font text-black   mb-4">
-              Practical Training and Development
+                Practical Training & Development
               </h2>
               <p className="prose text-black text-justify font-bah pt-8">
-              We will support aspiring and qualified Chartered Accountants and other eligible
-professionals with classroom training to set you up for employment in audit firms. Our
-curriculum is designed with industry specific real life case studies that will help you hit
-the ground running as you embark on your professional journey as an auditor.
+                We will support aspiring and qualified Chartered Accountants and
+                other eligible professionals with classroom training to set you
+                up for employment in audit firms. Our curriculum is designed
+                with industry specific real life case studies that will help you
+                hit the ground running as you embark on your professional
+                journey as an auditor.
               </p>
-             
-            
 
               <p className="prose  font-bah lg:mb-0 mb-5 pt-8">
                 <Link href="/contact">
@@ -182,7 +179,6 @@ the ground running as you embark on your professional journey as an auditor.
                 to know more.
               </p>
             </div>
-            
 
             <div
               className="w-full block h-[10px] md:h-[80px] lg:col-span-2  col-span-1 "
@@ -190,7 +186,7 @@ the ground running as you embark on your professional journey as an auditor.
             ></div>
             <div className="w-auto">
               <h2 className="text-3xl font-bah  title-font text-black   mb-4">
-                Corporates
+                To Corporates
               </h2>
               <p className="prose text-black  text-justify font-bah pt-8">
                 As a corporate - small, medium, or large - you will face
@@ -286,7 +282,6 @@ policies
               </p>
             </div>
 
-          
             <div
               data-aos="fade-up"
               data-aos-once="true"
@@ -299,7 +294,7 @@ policies
                 src="/about/dummy3.jpg"
               />
             </div>
-            
+
             <div
               className="w-full font-bah block h-[10px] md:h-[80px] lg:col-span-2  col-span-1 "
               id="Regulators"
@@ -307,7 +302,7 @@ policies
             <div
               data-aos="fade-up"
               data-aos-once="true"
-              className="w-auto h-48 lg:h-auto relative"
+              className="w-auto mt-5 h-48 lg:h-auto relative"
             >
               <Image
                 layout="fill"
@@ -319,7 +314,7 @@ policies
 
             <div data-aos="fade-up" data-aos-once="true" className="w-auto">
               <h2 className="text-3xl font-bah  title-font text-black   mb-4">
-                Regulators
+                To Regulators
               </h2>
               <p className="prose text-black text-justify  font-bah pt-8">
                 We intend to collaborate with Regulators in the following ways:
@@ -376,7 +371,7 @@ including amendments or enhancements or withdrawal of the Standards
                 to know more.
               </p>
             </div>
-            
+
             {/* <div
               className="w-full md:block hidden  h-[100px] lg:col-span-2  col-span-1 "
               id="Outsourcing"

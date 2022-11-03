@@ -49,14 +49,14 @@ export default function About() {
       blogsdata: [
         {
           name: "Balaji V",
-          image: "/team/balaji.png",
+          image: "/team/balaji.jpg",
           role: "Founder and Managing Partner",
           description:
             "Balaji V. brings over 28 years’ experience in financial accounting and auditing, working across various industries, including, agriculture, automobile, healthcare, information  technology, information technology enabled services, manufacturing, real estate, retail and infrastructure. Over the course of his professional career, he has held leadership positions in one of  India’s largest audit firms in roles spanning Audit Inspections, Audit Risk, Audit Quality  and Regulatory.  Balaji has been a member of the Audit and Assurance Standards Board, the Expert Advisory Committee and the Ind AS Transition Facilitation Group of the Institute of Chartered Accountants of India (ICAI). He has also been a member of various study groups constituted by the ICAI to evaluate and address issues considered for amendments by the ICAI. Balaji has co-authored various publications of the ICAI including the ‘Guidance Note on Audit of Internal Financial Controls over Financial Reporting’ and the ‘Guidance Note on  Reporting on Fraud’ under sections 143(3)(i) and 143(12), respectively, of the Companies Act, 2013; ‘Technical Guidance on Reporting under Rule 11(e) and 11(f) of the Companies (Audit and Auditors) Rules’; among others.",
         },
         {
           name: "Brindasri K",
-          image: "/team/brindasri.png",
+          image: "/team/brindasri.jpg",
           role: "Partner",
           description:
             "Brindasri K. comes with over 27 years of professional experience in the information technology services sector and has worked with India’s largest IT company. Her area of expertise includes sales and delivery in the banking and financial services industry, professional services and life sciences. Brindasri has also worked with one of the largest multinational audit firms where her role involved automating operations.",
@@ -192,7 +192,7 @@ export default function About() {
           <h2 className="text-3xl font-bah text-center  title-font text-black   mb-4">
             About True and Fair
           </h2>
-          <div className=" ">
+          <div className=" mb-12">
             <p className="leading-loose   text-justify  font-bah text-black ">
               {" "}
               True and Fair is a start-up firm formed with a vision to enable
@@ -247,7 +247,7 @@ export default function About() {
           </div>
         </section>
         <section className="bg-white md:pt-1 md:pb-10 ">
-          <div className="md:container px-6  md:mx-auto">
+          <div className="md:container px-6 mb-10  md:mx-auto">
             <div
               className={`${
                 buttonIndex === 1 ? "block font-bah mt-8" : "hidden"
@@ -273,13 +273,14 @@ export default function About() {
                       <p className="font-bah text-justify">
                         {para} 
                       </p>
-                      <p className="font-bah text-justify">
+                      
+                      <p className="font-bah mt-4 text-justify">
                          {para2} 
                       </p>
-                      <p className="font-bah text-justify">
+                      <p className="font-bah mt-1 text-justify">
                          {para3} 
                       </p>
-                      <p className="font-bah text-justify">
+                      <p className="font-bah mt-4 text-justify">
                       {para4}
                       </p>
                     </div>
@@ -463,7 +464,7 @@ export default function About() {
         data-aos="fade-up"
         className="text-black  body-font   bg-lightgray  lg:py-12"
       >
-        <div className=" md:container md:mx-auto  lg:rounded-lg text-left">
+        <div className=" md:container mb-12 md:mx-auto  lg:rounded-lg text-left">
           <div className="lg:w-full mx-auto flex flex-col lg:flex-col ">
             <div className="lg:w-full w-full lg:mr-9  mt-6 lg:mt-0 ">
               <div className="w-full flex gap-4 lg:justify-center ">

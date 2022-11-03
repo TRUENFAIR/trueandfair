@@ -234,6 +234,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <Focusarea />
       <section
         data-aos="fade-up"
         className="text-black  body-font   bg-lightgray  lg:py-12"
@@ -255,12 +256,12 @@ export default function Home() {
                       <p className="font-bah h-18 text-center font-semibold text-lg text-black">
                         {title}
                       </p>
-                      {/* <li
+                      <li
                         key={id}
-                        className="mt-4  text- font-bah lg:p-0 p-5 leading-loose text-black "
+                        className="mt-4  text- font-bah lg:p-0 p-5 text-justify leading-loose text-black "
                       >
                         {text}
-                      </li> */}
+                      </li>
                     </div>
                   );
                 })}
@@ -276,7 +277,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* <Focusarea /> */}
+     
 
       {/* <section
         data-aos="fade-up"

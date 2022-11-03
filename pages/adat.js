@@ -88,7 +88,7 @@ function Adat() {
 
       <section className=" pb-10 text-zinc-900 bg-coustom1" id="capabilities">
         <div className="md:container  mx-auto">
-          <div className="grid lg:grid-cols-2 grid-cols-1 md:gap-x-20 gap-4 md:pt- pt-4">
+          <div className="grid lg:grid-cols-2 mb-10 grid-cols-1 md:gap-x-20 gap-4 md:pt- pt-4">
             <div
               className="w-full block h-[10px] md:h-[80px] lg:col-span-2  col-span-1 "
               id="ProductOverview"
@@ -243,7 +243,7 @@ and at the time of archival
                 </div>
               </div>
 
-              <p className="prose  font-bah lg:mb-0 mb-5 pt-8">
+              <p className="prose  font-bah lg:mb-0 mt-8 mb-5 pt-8">
                 <Link href="/contact">
                   <a className="active:text-red underline   font-bah font-bold hover:text-orange decoration-blue text-blue">
                     Get in touch
