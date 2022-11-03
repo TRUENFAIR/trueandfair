@@ -276,9 +276,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <Focusarea />
+      {/* <Focusarea /> */}
 
-      <section
+      {/* <section
         data-aos="fade-up"
         className="text-black  body-font   lg:py-12"
         style={{
@@ -328,7 +328,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 }
