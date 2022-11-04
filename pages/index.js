@@ -53,17 +53,17 @@ export default function Home() {
     {
       id: 1,
       title: "Increased stakeholder expectations  ",
-      text: "NFRA has concluded in this AQRR that the appointment of BSR as the statutory auditors of IFIN was ab initio illegal ....",
+      text: "NFRA has concluded in this AQRR that the appointment of BSR as the statutory auditors of IFIN was ab initio illegal and void, & the release said.....",
     },
     {
       id: 2,
       title: "The expectation of joint audits ",
-      text: "Corporates that need joint audits and their current sole auditors will expect the other audit firm to meet audit quality......",
+      text: "Corporates that need joint audits and their current sole auditors will expect the other audit firm to meet audit quality expectations and carry the ......",
     },
     {
       id: 3,
       title: "Unify a divergent practice ",
-      text: "Most of the audit firms in India are highly diverse, with fragmented professional practices. True and Fair aims to build.......",
+      text: "Most of the audit firms in India are highly diverse, with fragmented professional practices. True and Fair aims to build capacity and enhance the .......",
     },
   ];
   const whyworkwithus = [
