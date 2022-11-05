@@ -15,8 +15,6 @@ export default function Events() {
     setButtonIndex(x);
   };
 
-
-
   const discover = [
     {
       name: "World Congress of Accountants 2022",
@@ -25,108 +23,55 @@ export default function Events() {
       desc: "From Ashtanga to Vinyasa, make mindful movement a daily ritual.",
       blogsdata: [
         {
-          name: "",
+          name: "Introduction to True and Fair Professionals Network",
           desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum cupiditate possimus dolore voluptatibus similique optioducimus provident,",
-          imgs: "/yogatv/1.jpg",
+          imgs: "/events/first.png",
           vidoes: (
             <iframe
               width="100%"
               height="100%"
-              src=""
+              src="https://www.youtube.com/embed/5vtQLqjcokI"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen="allowfullscreen"
+              allowFullScreen
             ></iframe>
           ),
         },
-        {
-          name: "loremipsum",
-          desc: " ",
-          imgs: "/yogatv/2.jpg",
-          vidoes: (
-            <iframe
-              width="100%"
-              height="100%"
-              src=""
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen="allowfullscreen"
-            ></iframe>
-          ),
-        },
-        {
-          name: "loremipsum",
-          desc: " similique optioducimus provident, ",
-          imgs: "/yogatv/3.jpg",
-          vidoes: (
-            <iframe
-              width="100%"
-              height="100%"
-              src=""
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen="allowfullscreen"
-            ></iframe>
-          ),
-        },
+        // {
+        //   name: "loremipsum",
+        //   desc: " ",
+        //   imgs: "/yogatv/2.jpg",
+        //   vidoes: (
+        //     <iframe
+        //       width="100%"
+        //       height="100%"
+        //       src=""
+        //       title="YouTube video player"
+        //       frameBorder="0"
+        //       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        //       allowFullScreen="allowfullscreen"
+        //     ></iframe>
+        //   ),
+        // },
+        // {
+        //   name: "loremipsum",
+        //   desc: " similique optioducimus provident, ",
+        //   imgs: "/yogatv/3.jpg",
+        //   vidoes: (
+        //     <iframe
+        //       width="100%"
+        //       height="100%"
+        //       src=""
+        //       title="YouTube video player"
+        //       frameBorder="0"
+        //       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        //       allowFullScreen="allowfullscreen"
+        //     ></iframe>
+        //   ),
+        // },
       ],
       blogsdatafull: [],
-    },
-   
-      
-    
-  ];
-  const yogatv = [
-    {
-      name: "",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum cupiditate possimus dolore voluptatibus similique optioducimus provident,",
-      imgs: "/yogatv/1.jpg",
-      vidoes: (
-        <iframe
-          width="100%"
-          height="100%"
-          src=""
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen="allowfullscreen"
-        ></iframe>
-      ),
-    },
-    {
-      name: "loremipsum",
-      desc: " ",
-      imgs: "/yogatv/2.jpg",
-      vidoes: (
-        <iframe
-          width="100%"
-          height="100%"
-          src=""
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen="allowfullscreen"
-        ></iframe>
-      ),
-    },
-    {
-      name: "loremipsum",
-      desc: " similique optioducimus provident, ",
-      imgs: "/yogatv/3.jpg",
-      vidoes: (
-        <iframe
-          width="100%"
-          height="100%"
-          src=""
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen="allowfullscreen"
-        ></iframe>
-      ),
     },
   ];
 
@@ -134,35 +79,33 @@ export default function Events() {
     <>
       <section className="md:container mx-auto">
         <div className="py-5  md:py-16">
-        <section className="bg-white ">
-          <p className="text-3xl font-bah  title-font text-black text-center mb-2">
-          
-          </p>
-          <div className="md:container flex justify-center md:mx-auto">
-            <ul className="grid grid-flow-col gap-4 w-full md:w-1/2 mt-5 text-center  text-black  rounded-full p-1">
-              {discover.map(({ name }, index) => {
-                return (
-                  <li
-                    key={index}
-                    onClick={() => {
-                      buttonClick(index);
-                    }}
-                  >
-                    <p
-                      className={`${
-                        index === buttonIndex
-                          ? " text-blue text-2xl font-bold font-bah border-blue border-b-4"
-                          : ""
-                      } flex justify-center text-xl  font-bah  title-font text-black   mb-4 hover:cursor-pointer`}
+          <section className="bg-white ">
+            <p className="text-3xl font-bah  title-font text-black text-center mb-2"></p>
+            <div className="md:container flex justify-center md:mx-auto">
+              <ul className="grid grid-flow-col gap-4 w-full md:w-1/2 mt-5 text-center  text-black  rounded-full p-1">
+                {discover.map(({ name }, index) => {
+                  return (
+                    <li
+                      key={index}
+                      onClick={() => {
+                        buttonClick(index);
+                      }}
                     >
-                      {name}
-                    </p>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-        </section>
+                      <p
+                        className={`${
+                          index === buttonIndex
+                            ? " text-blue text-2xl font-bold font-bah border-blue border-b-4"
+                            : ""
+                        } flex justify-center text-xl  font-bah  title-font text-black   mb-4 hover:cursor-pointer`}
+                      >
+                        {name}
+                      </p>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          </section>
           {/* <p className="text-black text-xl font-bah text-center p-8">
             "Sed ut perspiciatis unde omnis iste natus error sit iste voluptatem
             accusantium doloremque rem aperiam, ipsa eaque quae. Sed ut
@@ -170,32 +113,34 @@ export default function Events() {
           </p> */}
 
           <div className="grid gap-6 mt-8 row-gap-5 mb-8 lg:grid-cols-3 sm:row-gap-6 sm:grid-cols-2">
-            {yogatv.map(({ name, imgs, desc, vidoes }, index) => {
-              return (
-                <div
-                  key={index}
-                  onClick={() => loadclick(vidoes)}
-                  href="/"
-                  aria-label="View Item"
-                >
-                  <div className="relative rounded shadow-lg  hover:shadow-2xl">
-                    <img
-                      className="object-cover w-full h-56 md:h-64 xl:h-80"
-                      src={imgs}
-                      alt=""
-                    />
-                    <div className="absolute top-[30%] left-[40%] animate-pulse duration-100 ">
-                      <FaPlay color="slate" size={80} />
-                    </div>
-                    <div className="absolute inset-x-0 bottom-0 px-6 py-4 bg-black bg-opacity-75">
-                      <p className="text-sm font-medium font-bah tracking-wide text-white">
-                      WCOA(World Congress of Accountants 2022)
-                      </p>
+            {discover[buttonIndex].blogsdata.map(
+              ({ name, imgs, desc, vidoes }, index) => {
+                return (
+                  <div
+                    key={index}
+                    onClick={() => loadclick(vidoes)}
+                    href="/"
+                    aria-label="View Item"
+                  >
+                    <div className="relative rounded shadow-lg  hover:shadow-2xl">
+                      <img
+                        className="object-cover w-full h-56 md:h-64 xl:h-80"
+                        src={imgs}
+                        alt=""
+                      />
+                      <div className="absolute top-[30%] left-[40%] animate-pulse duration-100 ">
+                        <FaPlay color="slate" size={80} />
+                      </div>
+                      <div className="absolute inset-x-0 bottom-0 px-6 py-4 bg-black bg-opacity-75">
+                        <p className="text-sm font-medium font-bah tracking-wide text-white">
+                          {name}
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              );
-            })}
+                );
+              }
+            )}
           </div>
           {videoss && (
             <div

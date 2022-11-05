@@ -13,23 +13,21 @@ export default function Fixediv({ clicked }) {
           </div>
           <a
             className="mx-1.5 text-black transition-colors duration-300 transform hover:text-blue-500"
-            href=""
+            href="https://twitter.com/TrueAndFairPro"
             rel="noopener noreferrer"
-            // target="_blank"
+            target="_blank"
           >
-             <img src="/icons/twitter.gif" className="w-8 h-8" alt="" />
+            <img src="/icons/twitter.gif" className="w-8 h-8" alt="" />
           </a>
 
           <a
             className="mx-1.5 text-black transition-colors duration-300 transform hover:text-blue-500"
-            href=""
+            href="https://www.linkedin.com/company/true-and-fair-professionals-network/"
             rel="noopener noreferrer"
-            // target="_blank"
+            target="_blank"
           >
             <img src="/icons/linkidin.gif" className="w-8 h-8" alt="" />
           </a>
-
-          
 
           <a
             className="mx-1.5 text-black mb-2 transition-colors duration-300 transform hover:text-blue-500"

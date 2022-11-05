@@ -84,8 +84,7 @@ export default function Layout({ children }) {
     {
       name: "Events",
       path: "/event",
-      sub: [
-        { name: "WCOA", path: "/event#WCOA" },]
+      sub: [{ name: "WCOA", path: "/event#WCOA" }],
     },
 
     {
@@ -321,16 +320,16 @@ export default function Layout({ children }) {
             <div className="md:mt-0 mt-5 grid-cols-3 gap-2 flex justify-center lg:inline-grid  ">
               <a
                 className="hover:scale-105 transition-all"
-                href=""
-                // target="_blank"
+                href="https://www.linkedin.com/company/true-and-fair-professionals-network/"
+                target="_blank"
                 rel="noreferrer"
               >
                 <img src="/icons/linkidin.gif" className="w-8 h-8" alt="" />
               </a>
               <a
                 className="hover:scale-105 transition-all"
-                href=""
-                // target="_blank"
+                href="https://twitter.com/TrueAndFairPro"
+                target="_blank"
                 rel="noreferrer"
               >
                 <img src="/icons/twitter.gif" className="w-8 h-8" alt="" />
