@@ -224,38 +224,31 @@ export default function Home() {
       </section>
       <section
         data-aos="fade-up"
-        className="text-black  body-font   lg:py-12"
-        style={{
-          backgroundImage: `url(${"/about/abt2.png"})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }}
+        className="text-black bg-lightgray body-font   lg:py-12"
+        // style={{
+        //   backgroundImage: `url(${"/about/abt2.png"})`,
+        //   backgroundSize: "cover",
+        //   backgroundPosition: "center",
+        //   backgroundRepeat: "no-repeat",
+        // }}
       >
-        <div className=" md:container md:mx-auto  lg:rounded-lg text-left">
-          <div className="lg:w-full mx-auto lg:h-52 flex flex-col lg:flex-col ">
+        <div className=" md:container md:mx-auto   lg:rounded-lg text-left">
+          <div className="lg:w-full mx-auto lg:h-[450px] flex flex-col lg:flex-col ">
             <div className="lg:w-full w-full lg:mr-9  mt-6 lg:mt-0 ">
-              <div className="w-full flex gap-4 lg:justify-center ">
-                <h1 className="w-full text-center  text-3xl font-bah  title-font text-white   mb-4 ">
+             
+            </div>
+            <div className="mt-10  mb-13 flex justify-center  gap-16  flex-col md:flex-row">
+              
+              <div className="w-full md:w-1/2">
+              <div className="w-full flex  lg:justify-center ">
+                <h1 className="w-full text-left  text-3xl font-bah  title-font text-black   mb-4 ">
                   Our Vision And Mission
                 </h1>
               </div>
-            </div>
-            <div className="mt-10">
-              <ul className="grid lg:grid-cols-1 grid-cols-1 lg:gap-10">
-                {missvis.map(({ text, id, title }, index) => {
-                  return (
-                    <div key={index}>
-                      <li
-                        key={id}
-                        className="mt-4 text-lg text-justify font-bah lg:p-0 p-12 leading-relaxed text-white "
-                      >
-                        {text}
-                      </li>
-                    </div>
-                  );
-                })}
-              </ul>
+                <p className="font-bah text-justify leading-loose">Our overarching vision is to be recognised as the STANDARD SETTER in the financial reporting ecosystem regarding quality of audits undertaken and performed.</p><p className="font-bah leading-loose mt-4 text-justify"> To achieve our vision, our mission is to build capacity and enhance the professional capability and quality of audits performed by audit firms.</p></div>
+              <div className="w-1/2 mb-13"> <div className="md:block hidden"><iframe width="700" height="315"  src="https://www.youtube.com/embed/5vtQLqjcokI?autoplay=1" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe></div></div>
+             <div className="md:hidden block"> <iframe width="380" height="315" src="https://www.youtube.com/embed/5vtQLqjcokI" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe></div>
+            
             </div>
             {/* <div className="flex justify-center">
               <Link href="/adat">
