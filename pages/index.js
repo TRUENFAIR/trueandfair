@@ -14,7 +14,6 @@ import Fixediv from "../components/fixediv";
 import Focusareaslide from "../components/focusareaslide";
 import Focusarea from "../components/focusarea";
 
-
 const rightIcon = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -101,7 +100,6 @@ export default function Home() {
       text: "Our overarching vision is to be recognised as the STANDARD SETTER in the financial reporting ecosystem regarding quality of audits undertaken and performed. To achieve our vision, our mission is to build capacity and enhance the professional capability and quality of audits performed by audit firms.",
     },
   ];
-
 
   const offerings = [
     {
@@ -233,22 +231,53 @@ export default function Home() {
         // }}
       >
         <div className=" md:container md:mx-auto   lg:rounded-lg text-left">
-          <div className="lg:w-full mx-auto lg:h-[450px] flex flex-col lg:flex-col ">
-            <div className="lg:w-full w-full lg:mr-9  mt-6 lg:mt-0 ">
-             
-            </div>
-            <div className="mt-10  mb-13 flex justify-center  gap-16  flex-col md:flex-row">
-              
-              <div className="w-full md:w-1/2">
-              <div className="w-full flex  lg:justify-center ">
-                <h1 className="w-full text-left  text-3xl font-bah  title-font text-black   mb-4 ">
-                  Our Vision And Mission
-                </h1>
+          <div className="lg:w-full mb-7 mx-auto lg:h-[400px] flex flex-col lg:flex-col ">
+            <div className="lg:w-full w-full lg:mr-9  mt-6 lg:mt-0 "></div>
+            <div className="mt-10  mb-13 flex justify-center  gap-16  flex-col lg:flex-row">
+              <div className="w-full lg:w-1/2">
+                <div className="w-full flex  lg:justify-center ">
+                  <h1 className="w-full text-left  text-3xl font-bah  title-font text-black   mb-4 ">
+                    Our Vision And Mission
+                  </h1>
+                </div>
+                <p className="font-bah text-justify p-1 text-lg leading-loose">
+                  Our overarching vision is to be recognised as the STANDARD
+                  SETTER in the financial reporting ecosystem regarding quality
+                  of audits undertaken and performed.
+                </p>
+                <p className="font-bah leading-loose mt-4 p-1 text-lg text-justify">
+                  {" "}
+                  To achieve our vision, our mission is to build capacity and
+                  enhance the professional capability and quality of audits
+                  performed by audit firms.
+                </p>
               </div>
-                <p className="font-bah text-justify leading-loose">Our overarching vision is to be recognised as the STANDARD SETTER in the financial reporting ecosystem regarding quality of audits undertaken and performed.</p><p className="font-bah leading-loose mt-4 text-justify"> To achieve our vision, our mission is to build capacity and enhance the professional capability and quality of audits performed by audit firms.</p></div>
-              <div className="w-1/2 mb-13"> <div className="md:block hidden"><iframe width="700" height="315"  src="https://www.youtube.com/embed/5vtQLqjcokI?autoplay=1" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe></div></div>
-             <div className="md:hidden block"> <iframe width="380" height="315" src="https://www.youtube.com/embed/5vtQLqjcokI" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe></div>
-            
+              <div className="w-1/2 mb-13">
+                {" "}
+                <div className="lg:block hidden">
+                  <iframe
+                    width="760"
+                    height="350"
+                    src="https://www.youtube.com/embed/5vtQLqjcokI?autoplay=1"
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              </div>
+              <div className="lg:hidden flex justify-center">
+                {" "}
+                <iframe
+                  width="400"
+                  height="315"
+                  src="https://www.youtube.com/embed/5vtQLqjcokI"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
             </div>
             {/* <div className="flex justify-center">
               <Link href="/adat">
@@ -264,73 +293,68 @@ export default function Home() {
       <section className="md:pt-14 md:pb-10 text-zinc-90 bg-white">
         <div className="lg:container mb-9 p-4 mx-auto">
           <div className="flex gap-4 justify-center mb-10">
-            
             <h1 className=" text-3xl font-bah  title-font text-black   mb-4">
-            Our Services
+              Our Services
             </h1>
-          
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-4 lg:gap-12 gap-4 pt-4 lg:pt-8">
             {offerings.map(({ name1, name2, images, id, links }) => {
-              if(id===2){
-                return(
+              if (id === 2) {
+                return (
                   <Link key={id} href={links}>
-                <div className="w-auto relative">
-                  <div className="relative w-full lg:h-96 h-72 flex justify-start items-end shadow-sm ease-in duration-150 hover:scale-[1.02] transition-all cursor-pointer">
-                    <Image
-                      layout="fill"
-                      alt=""
-                      objectFit="cover"
-                      src={images}
-                    />
-                    <div className="w-full h-1/2 absolute bottom-0 left-0 right-0 from-transparent bg-gradient-to-b to-black opacity-60"></div>
+                    <div className="w-auto relative">
+                      <div className="relative w-full lg:h-96 h-72 flex justify-start items-end shadow-sm ease-in duration-150 hover:scale-[1.02] transition-all cursor-pointer">
+                        <Image
+                          layout="fill"
+                          alt=""
+                          objectFit="cover"
+                          src={images}
+                        />
+                        <div className="w-full h-1/2 absolute bottom-0 left-0 right-0 from-transparent bg-gradient-to-b to-black opacity-60"></div>
 
-                    <div className="flex items-center justify-between z-40 w-full p-4 ">
-                      <h1 className="text-xl tracking-wide drop-shadow-md font-bah    text-white z-10 w-full">
-                        {name1} <br /> {name2}
-                      </h1>
-                      <div className="mb-4">
-                      {rightIcon }
-
+                        <div className="flex items-center justify-between z-40 w-full p-4 ">
+                          <h1 className="text-xl tracking-wide drop-shadow-md font-bah    text-white z-10 w-full">
+                            {name1} <br /> {name2}
+                          </h1>
+                          <div className="mb-4">{rightIcon}</div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-              </Link>
-                )
-              }else{
-                return(
+                  </Link>
+                );
+              } else {
+                return (
                   <Link key={id} href={links}>
-                <div className="w-auto relative">
-                  <div className="relative w-full lg:h-96 h-72 flex justify-start items-end shadow-sm ease-in duration-150 hover:scale-[1.02] transition-all cursor-pointer">
-                    <Image
-                      layout="fill"
-                      alt=""
-                      objectFit="cover"
-                      src={images}
-                    />
-                    <div className="w-full h-1/2 absolute bottom-0 left-0 right-0 from-transparent bg-gradient-to-b to-black opacity-60"></div>
+                    <div className="w-auto relative">
+                      <div className="relative w-full lg:h-96 h-72 flex justify-start items-end shadow-sm ease-in duration-150 hover:scale-[1.02] transition-all cursor-pointer">
+                        <Image
+                          layout="fill"
+                          alt=""
+                          objectFit="cover"
+                          src={images}
+                        />
+                        <div className="w-full h-1/2 absolute bottom-0 left-0 right-0 from-transparent bg-gradient-to-b to-black opacity-60"></div>
 
-                    <div className="flex items-center justify-between mb-4 z-40 w-full p-4 ">
-                      <h1 className="text-xl font-bah tracking-wide drop-shadow-md   text-white z-10 w-full">
-                        {name1} <br /> {name2}
-                      </h1>
-                      {rightIcon }
+                        <div className="flex items-center justify-between mb-4 z-40 w-full p-4 ">
+                          <h1 className="text-xl font-bah tracking-wide drop-shadow-md   text-white z-10 w-full">
+                            {name1} <br /> {name2}
+                          </h1>
+                          {rightIcon}
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
-              </Link>
-                )
+                  </Link>
+                );
               }
-            }
-              
-            )}
+            })}
           </div>
         </div>
       </section>
-     
 
-      <section data-aos="fade-up" className="text-black  bg-lightgray body-font    lg:py-12">
+      <section
+        data-aos="fade-up"
+        className="text-black  bg-lightgray body-font    lg:py-12"
+      >
         <div className=" md:container md:mx-auto  lg:rounded-lg text-left">
           <div className="lg:w-full mx-auto flex flex-col lg:flex-col ">
             <div className="lg:w-full w-full lg:mr-9  mt-6 lg:mt-0 ">
