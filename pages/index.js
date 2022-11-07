@@ -14,6 +14,7 @@ import Fixediv from "../components/fixediv";
 import Focusareaslide from "../components/focusareaslide";
 import Focusarea from "../components/focusarea";
 
+
 const rightIcon = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -98,6 +99,38 @@ export default function Home() {
       id: 1,
       title: " OUR VISION AND MISSION",
       text: "Our overarching vision is to be recognised as the STANDARD SETTER in the financial reporting ecosystem regarding quality of audits undertaken and performed. To achieve our vision, our mission is to build capacity and enhance the professional capability and quality of audits performed by audit firms.",
+    },
+  ];
+
+
+  const offerings = [
+    {
+      id: 1,
+      name1: " To Auditing Firms",
+      name2: "",
+      images: "/servadat/auditcomp.png",
+      links: "/services#AuditingFirms",
+    },
+    {
+      id: 2,
+      name1: " Practical Training & Development",
+      name2: "",
+      images: "/servadat/proftraining.png",
+      links: "/services#CharteredAccount",
+    },
+    {
+      id: 3,
+      name1: " To Corporates",
+      name2: "",
+      images: "/servadat/corporates.png",
+      links: "/services#Corporations",
+    },
+    {
+      id: 4,
+      name1: "  To Regulators ",
+      name2: "",
+      images: "/servadat/regulators.png",
+      links: "/services#Regulators",
     },
   ];
   return (
@@ -234,11 +267,76 @@ export default function Home() {
           </div>
         </div>
       </section>
-      
-      <section
-        data-aos="fade-up"
-        className="text-black  body-font    lg:py-12"
-      >
+
+      <section className="md:pt-14 md:pb-10 text-zinc-90 bg-white">
+        <div className="lg:container p-4 mx-auto">
+          <div className="flex gap-4 justify-center mb-10">
+            
+            <h1 className=" text-3xl font-bah  title-font text-black   mb-4">
+            Our Services
+            </h1>
+          
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-4 lg:gap-12 gap-4 pt-4 lg:pt-8">
+            {offerings.map(({ name1, name2, images, id, links }) => {
+              if(id===2){
+                return(
+                  <Link key={id} href={links}>
+                <div className="w-auto relative">
+                  <div className="relative w-full lg:h-96 h-72 flex justify-start items-end shadow-sm ease-in duration-150 hover:scale-[1.02] transition-all cursor-pointer">
+                    <Image
+                      layout="fill"
+                      alt=""
+                      objectFit="cover"
+                      src={images}
+                    />
+                    <div className="w-full h-1/2 absolute bottom-0 left-0 right-0 from-transparent bg-gradient-to-b to-black opacity-60"></div>
+
+                    <div className="flex items-center justify-between z-40 w-full p-4 ">
+                      <h1 className="text-2xl tracking-wide drop-shadow-md   text-white z-10 w-full">
+                        {name1} <br /> {name2}
+                      </h1>
+                      <div className="mb-4">
+                      {rightIcon }
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+                )
+              }else{
+                return(
+                  <Link key={id} href={links}>
+                <div className="w-auto relative">
+                  <div className="relative w-full lg:h-96 h-72 flex justify-start items-end shadow-sm ease-in duration-150 hover:scale-[1.02] transition-all cursor-pointer">
+                    <Image
+                      layout="fill"
+                      alt=""
+                      objectFit="cover"
+                      src={images}
+                    />
+                    <div className="w-full h-1/2 absolute bottom-0 left-0 right-0 from-transparent bg-gradient-to-b to-black opacity-60"></div>
+
+                    <div className="flex items-center justify-between mb-4 z-40 w-full p-4 ">
+                      <h1 className="text-2xl tracking-wide drop-shadow-md   text-white z-10 w-full">
+                        {name1} <br /> {name2}
+                      </h1>
+                      {rightIcon }
+                    </div>
+                  </div>
+                </div>
+              </Link>
+                )
+              }
+            }
+              
+            )}
+          </div>
+        </div>
+      </section>
+
+      <section data-aos="fade-up" className="text-black  bg-lightgray body-font    lg:py-12">
         <div className=" md:container md:mx-auto  lg:rounded-lg text-left">
           <div className="lg:w-full mx-auto flex flex-col lg:flex-col ">
             <div className="lg:w-full w-full lg:mr-9  mt-6 lg:mt-0 ">
@@ -277,7 +375,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <Focusarea />
 
       {/* <section
         data-aos="fade-up"
