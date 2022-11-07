@@ -22,7 +22,13 @@ export default function Library() {
 
   const { asPath } = useRouter();
   useEffect(() => {
-    const hashes = ["'IllustrativeQualityStandards", "'IllustrativeAuditApproach", "'IllustrativePracticeAids&Guidance","RegulatoryDevelopments","ProfessionalStandards&Regulations"];
+    const hashes = [
+      "'IllustrativeQualityStandards",
+      "'IllustrativeAuditApproach",
+      "'IllustrativePracticeAids&Guidance",
+      "RegulatoryDevelopments",
+      "ProfessionalStandards&Regulations",
+    ];
     const whichButton = hashes.indexOf(asPath.split("#")[1]);
 
     setButtonIndex(whichButton === -1 ? 0 : whichButton);
@@ -51,159 +57,140 @@ export default function Library() {
       desc: "From Ashtanga to Vinyasa, make mindful movement a daily ritual.",
       blogsdata: [
         {
-         
           name: "Independence",
-          links:""
+          links: "",
         },
         // {
-         
+
         //   name: "Conflicts",
         //   links:""
         // },
         // {
-         
+
         //   name: "Client and Engagement acceptance",
         //   links:""
         // },
         // {
-         
+
         //   name: "Contracting Engagements",
         //   links:""
         // },
         // {
-         
+
         //   name: "Client confidentiality",
         //   links:""
         // },
         // {
-         
+
         //   name: "Client Exit / Resignation",
         //   links:""
         // },
         // {
-         
+
         //   name: "Anti-money laundering",
         //   links:""
         // },
         // {
-         
+
         //   name: "Anti-corruption",
         //   links:""
         // },
         // {
-         
+
         //   name: "NOCLAR",
         //   links:""
         // },
         // {
-         
+
         //   name: "Ethics and non-retaliation/ non-discrimination",
         //   links:""
         // },
         // {
-         
+
         //   name: "POSH",
         //   links:""
         // },
         // {
-         
+
         //   name: "Inclusivity",
         //   links:""
         // },
         // {
-         
+
         //   name: "Talent",
         //   links:""
         // },
         // {
-         
+
         //   name: "Audit proposals",
         //   links:""
         // },
         // {
-         
+
         //   name: "Audit approach",
         //   links:""
         // },
-        
-       
       ],
       blogsdatafull: [
-       
         {
-         
           name: "Assignment of partners and engagement teams",
-          link:""
+          link: "",
         },
         {
-         
           name: "Long association of partners and professionals",
-          links:""
+          links: "",
         },
         {
-         
           name: "Partner / manager and EQCR - time spend expectation",
-          links:""
+          links: "",
         },
         {
-         
           name: "Consultation",
-          links:""
+          links: "",
         },
         {
-         
           name: "EQCR",
-          link:""
+          link: "",
         },
         {
-         
           name: "Audit Documentation",
-          links:""
+          links: "",
         },
         {
-         
           name: "Archival",
-          links:""
+          links: "",
         },
         {
-         
           name: "Access to work papers",
-          link:""
+          link: "",
         },
         {
-         
           name: "Inspections - internal and external",
-          links:""
+          links: "",
         },
         {
-         
           name: "Annual self-certification",
-          links:""
+          links: "",
         },
         {
-         
           name: "Notifying regulatory events",
-          links:""
+          links: "",
         },
         {
-         
           name: "CPE and learning",
-          links:""
+          links: "",
         },
         {
-         
           name: "Using the work of external experts",
-          links:""
+          links: "",
         },
         {
-         
           name: "Remuneration of partners",
-          links:""
+          links: "",
         },
         {
-         
           name: "Succession planning",
-          links:""
+          links: "",
         },
       ],
     },
@@ -213,218 +200,215 @@ export default function Library() {
       desc: "From Ashtanga to Vinyasa, make mindful movement a daily ritual.",
       blogsdata: [
         {
-         
           name: "Purpose and Definition of Audit",
-          links:""
-        // }, {
-         
-        //   name: "Assess Engagement Risk",
-        //   links:""
-        // }, {
-         
-        //   name: "Client Acceptance and Continuance",
-        //   links:""
-        // }, {
-         
-        //   name: "Agreeing terms of the audit engagement",
-        //   links:""
-        // }, {
-         
-        //   name: "Understanding the entity and its environment",
-        //   links:""
-        // }, {
-         
-        //   name: "Enquiries regarding Fraud and Error",
-        //   links:""
-        // }, {
-         
-        //   name: "Preliminary Analytical Procedures",
-        //   links:""
-        // },
-        // {
-         
-        //   name: "Materiality ",
-        //   links:""
-        // },
-        // {
-         
-        //   name: "Risk assessment and ROMM’s",
-        //   links:""
-        // },
-        // {
-         
-        //   name: "Fraud Risk",
-        //   links:""
-        // },
-        // {
-         
-        //   name: "Identify material class of transactions",
-        //   links:""
-        // },
-        // {
-         
-        //   name: "Risk of Management Override of Controls",
-        //   links:""
-        // },
-        // {
-         
-        //   name: "Audit Planning Meeting and Discussions within the Engagement team along with EQCR and specialists",
-        //   links:""
-        // },
-        // {
-         
-        //   name: "Understanding the group and using the work of component auditors",
-        //   links:""
-        // },
-        // {
-         
-        //   name: "Joint Audits",
-        //   links:""
-        // },
+          links: "",
+          // }, {
+
+          //   name: "Assess Engagement Risk",
+          //   links:""
+          // }, {
+
+          //   name: "Client Acceptance and Continuance",
+          //   links:""
+          // }, {
+
+          //   name: "Agreeing terms of the audit engagement",
+          //   links:""
+          // }, {
+
+          //   name: "Understanding the entity and its environment",
+          //   links:""
+          // }, {
+
+          //   name: "Enquiries regarding Fraud and Error",
+          //   links:""
+          // }, {
+
+          //   name: "Preliminary Analytical Procedures",
+          //   links:""
+          // },
+          // {
+
+          //   name: "Materiality ",
+          //   links:""
+          // },
+          // {
+
+          //   name: "Risk assessment and ROMM’s",
+          //   links:""
+          // },
+          // {
+
+          //   name: "Fraud Risk",
+          //   links:""
+          // },
+          // {
+
+          //   name: "Identify material class of transactions",
+          //   links:""
+          // },
+          // {
+
+          //   name: "Risk of Management Override of Controls",
+          //   links:""
+          // },
+          // {
+
+          //   name: "Audit Planning Meeting and Discussions within the Engagement team along with EQCR and specialists",
+          //   links:""
+          // },
+          // {
+
+          //   name: "Understanding the group and using the work of component auditors",
+          //   links:""
+          // },
+          // {
+
+          //   name: "Joint Audits",
+          //   links:""
+          // },
         },
       ],
       blogsdatafull: [
         {
-         
           name: "Audit Strategy and Audit Plan",
-          links:""
+          links: "",
         },
         {
-         
           name: "Using the work of Internal Auditors",
-          links:""
-        }, {
-         
+          links: "",
+        },
+        {
           name: "Audit in the environment of service organisations",
-          links:""
-        }, {
-         
+          links: "",
+        },
+        {
           name: "Using the work of Specialists – internal and external",
-          links:""
-        }, {
-         
+          links: "",
+        },
+        {
           name: "Initial audit – test of opening balances",
-          links:""
-        }, {
-         
+          links: "",
+        },
+        {
           name: "Testing of IPE and IUC",
-          links:""
-        }, {
-         
+          links: "",
+        },
+        {
           name: "Testing controls – including IT environment and controls",
-          links:""
-        }, {
-         
+          links: "",
+        },
+        {
           name: "Substantive Procedures – Test Of Details, Substantive Analytical Procedures",
-          links:""
-        }, {
-         
+          links: "",
+        },
+        {
           name: "External confirmations",
-          links:""
-        }, {
-         
+          links: "",
+        },
+        {
           name: "Auditing accounting estimates",
-          links:""
-        }, {
-         
+          links: "",
+        },
+        {
           name: "Audit sampling",
-          links:""
-        }, {
-         
+          links: "",
+        },
+        {
           name: "Concluding Analytical Procedures",
-          links:""
-        }, {
-         
+          links: "",
+        },
+        {
           name: "Evaluation of litigations and claims",
-          links:""
-        }, {
-         
+          links: "",
+        },
+        {
           name: "Consideration of compliance with laws and regulations",
-          links:""
-        }, {
-         
+          links: "",
+        },
+        {
           name: "Error evaluation",
-          links:""
-        }, {
-         
+          links: "",
+        },
+        {
           name: "Subsequent events",
-          links:""
-        }, {
-         
+          links: "",
+        },
+        {
           name: "Written representations",
-          links:""
-        }, {
-         
+          links: "",
+        },
+        {
           name: "Consultations",
-          links:""
-        }, {
-         
+          links: "",
+        },
+        {
           name: "Going Concern",
-          links:""
-        }, {
-         
+          links: "",
+        },
+        {
           name: "EQCR",
-          links:""
-        }, {
-         
+          links: "",
+        },
+        {
           name: "Communication with Those Charged with Governance",
-          links:""
-        }, {
-         
+          links: "",
+        },
+        {
           name: "Audit Documentation",
-          links:""
-        }, {
-         
+          links: "",
+        },
+        {
           name: "Key Audit Matters",
-          links:""
-        }, {
-         
+          links: "",
+        },
+        {
           name: "Modified Opinion",
-          links:""
-        }, {
-         
+          links: "",
+        },
+        {
           name: "Emphasis of Matter and Other Matters",
-          links:""
-        }, {
-         
+          links: "",
+        },
+        {
           name: "Reading other information accompanying the Financial Statements",
-          links:""
-        }, {
-         
+          links: "",
+        },
+        {
           name: "Audit Report",
-          links:""
-        }, {
-         
+          links: "",
+        },
+        {
           name: "Speaking Audit Report",
-          links:""
-        }, {
-         
+          links: "",
+        },
+        {
           name: "Reporting under 143 (12)",
-          links:""
-        }, {
-         
+          links: "",
+        },
+        {
           name: "Assembly",
-          links:""
-        }, {
-         
+          links: "",
+        },
+        {
           name: "Tracking of changes from Audit Report Date to Archival Date (audit file)",
-          links:""
-        }, {
-         
+          links: "",
+        },
+        {
           name: "Archival and Retrieval",
-          links:""
-        }, {
-         
+          links: "",
+        },
+        {
           name: "Limited Review Engagements",
-          links:""
-        }, {
-         
+          links: "",
+        },
+        {
           name: "Tax Audits",
-          links:""
-        }, {
-         
+          links: "",
+        },
+        {
           name: "Certifications and reporting under other laws and regulations",
-          links:""
+          links: "",
         },
       ],
     },
@@ -434,77 +418,75 @@ export default function Library() {
       desc: "From Ashtanga to Vinyasa, make mindful movement a daily ritual.",
       blogsdata: [
         {
-         
           name: "Section 143(1)",
-          links:""
-        // }, 
-        }
+          links: "",
+          // },
+        },
       ],
       blogsdatafull: [
         {
-         
           name: "Guidance note on audit of account balances – all account balances",
-          links:""
-        },{
-         
+          links: "",
+        },
+        {
           name: "Auditing accounting estimates",
-          links:""
-        },{
-         
+          links: "",
+        },
+        {
           name: "Consideration of contradictory information",
-          links:""
-        },{
-         
+          links: "",
+        },
+        {
           name: "Guidance on audit of IPE and IUC",
-          links:""
-        },{
-         
+          links: "",
+        },
+        {
           name: "Guidance on identification of relevant IT applications",
-          links:""
-        },{
-         
+          links: "",
+        },
+        {
           name: "Guidance on use of external confirmation and alternate procedures",
-          links:""
-        },{
-         
+          links: "",
+        },
+        {
           name: "Guidance on physical verification of inventory",
-          links:""
-        },{
-         
+          links: "",
+        },
+        {
           name: "Guidance on legal confirmations",
-          links:""
-        },{
-         
+          links: "",
+        },
+        {
           name: "Guidance on documentation of data analytics",
-          links:""
-        },{
-         
+          links: "",
+        },
+        {
           name: "Guidance on archiving working drafts which are not part of the audit file",
-          links:""
-        },{
-         
+          links: "",
+        },
+        {
           name: "Guidance on discussions with TCWG",
-          links:""
-        },{
-         
+          links: "",
+        },
+        {
           name: "Guidance on discussions with Component Auditors and Joint Auditors",
-          links:""
-        },{
-         
+          links: "",
+        },
+        {
           name: "Guidance on enquiry with predecessor Auditors",
-          links:""
-        },{
-         
+          links: "",
+        },
+        {
           name: "Guidance on role of Engagement Partner",
-          links:""
-        },{
-         
+          links: "",
+        },
+        {
           name: "Guidance on matters requiring mandatory consultation",
-          links:""
-        },{
-         
+          links: "",
+        },
+        {
           name: "Guidance on responsibility of the engagement team and the role of external specialist",
-          links:""
+          links: "",
         },
       ],
     },
@@ -514,12 +496,12 @@ export default function Library() {
       img: "/discover/discover2.jpg",
       desc: "From Ashtanga to Vinyasa, make mindful movement a daily ritual.",
       blogsdata: [
-       
-       
+        {
+          name: "Guidance on matters requiring mandatory consultation",
+          links: "",
+        },
       ],
-      blogsdatafull: [
-        
-      ],
+      blogsdatafull: [],
     },
 
     {
@@ -527,15 +509,15 @@ export default function Library() {
       img: "/discover/discover2.jpg",
       desc: "From Ashtanga to Vinyasa, make mindful movement a daily ritual.",
       blogsdata: [
-        
+        {
+          name: "Guidance on matters requiring mandatory consultation",
+          links: "",
+        },
       ],
-      blogsdatafull: [
-        
-      ],
+      blogsdatafull: [],
     },
   ];
 
- 
   return (
     <>
       <section className="text-black md:container md:mx-auto  ">
@@ -543,7 +525,8 @@ export default function Library() {
           <ul className="grid gap-3 grid-cols-2 lg:grid-cols-5  mt-5 text-center  text-black bg-white rounded-full p-1">
             {discover.map(({ name }, index) => {
               return (
-                <li className="w-full "
+                <li
+                  className="w-full "
                   key={index}
                   onClick={() => {
                     buttonClick(index);
@@ -570,41 +553,32 @@ export default function Library() {
           <div className="grid gap-4 grid-cols-1 mb-10 lg:grid-cols-1 sm:max-w-sm sm:mx-auto lg:max-w-full">
             {discover[buttonIndex].blogsdata.map(
               ({ name, imgs, desc, small, title, ser, videos }, index) => {
-                if(buttonIndex ===0){
-                  return(
-                    <QualityStandards/>
-                  )
-                }
-                else if(buttonIndex === 1){
-                  return(
-                    <AuditPracticeManual/>
-                  )
-                }
-                else if(buttonIndex === 2){
-                  return(
-                  <PracticeAid/>
-                  )
-                }
+                if (buttonIndex === 0) {
+                  return <QualityStandards />;
+                } else if (buttonIndex === 1) {
+                  return <AuditPracticeManual />;
+                } else if (buttonIndex === 2) {
+                  return <PracticeAid />;
+                } else {
+                  return (
+                    <div className="font-bah text-xl font-bold" key={index}>Coming Soon</div>
+                    //   <div key={index} className="p-2 mt-8 transition-all  hover:scale-110 border rounded-lg shadow-lg  ">
 
-                return (
-                  <div key={index} className="p-2 mt-8 transition-all  hover:scale-110 border rounded-lg shadow-lg  ">
-                    
-                      <div className="w-full flex gap- flex-col">
-                        <h4 className="mb-2 font-semibold text-center"> {name}</h4>
-                       
-                        <div className="flex justify-center">
-                    <Link href="/library">
-                  <a className="active:text-red text-sm  font-bah font-bold underline hover:text-orange decoration-blue text-blue">
-                   Read More
-                  </a>
-                </Link>{" "}              
-                    </div>
-                      </div>
-                      
-                  
-                   
-                  </div>
-                );
+                    //       <div className="w-full flex gap- flex-col">
+                    //         <h4 className="mb-2 font-semibold text-center"> {name}</h4>
+
+                    //         <div className="flex justify-center">
+                    //     <Link href="/library">
+                    //   <a className="active:text-red text-sm  font-bah font-bold underline hover:text-orange decoration-blue text-blue">
+                    //    Read More
+                    //   </a>
+                    // </Link>{" "}
+                    //     </div>
+                    //       </div>
+
+                    //   </div>
+                  );
+                }
               }
             )}
           </div>
