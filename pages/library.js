@@ -8,6 +8,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
+import QualityStandards from "../components/QualityStandards";
+import AuditPracticeManual from "../components/AuditPracticeManual";
+import PracticeAid from "../components/practiceAid";
 
 export default function Library() {
   const [videoss, setVideoss] = useState(null);
@@ -19,7 +22,7 @@ export default function Library() {
 
   const { asPath } = useRouter();
   useEffect(() => {
-    const hashes = ["QualityStandards", "AuditApproach", "PracticeAids&Guidance","RegulatoryDevelopments","ProfessionalStandards&Regulations"];
+    const hashes = ["'IllustrativeQualityStandards", "'IllustrativeAuditApproach", "'IllustrativePracticeAids&Guidance","RegulatoryDevelopments","ProfessionalStandards&Regulations"];
     const whichButton = hashes.indexOf(asPath.split("#")[1]);
 
     setButtonIndex(whichButton === -1 ? 0 : whichButton);
@@ -43,7 +46,7 @@ export default function Library() {
   }, []);
   const discover = [
     {
-      name: "Quality Standards",
+      name: "Illustrative Quality Standards",
       img: "/discover/discover1.png",
       desc: "From Ashtanga to Vinyasa, make mindful movement a daily ritual.",
       blogsdata: [
@@ -52,76 +55,76 @@ export default function Library() {
           name: "Independence",
           links:""
         },
-        {
+        // {
          
-          name: "Conflicts",
-          links:""
-        },
-        {
+        //   name: "Conflicts",
+        //   links:""
+        // },
+        // {
          
-          name: "Client and Engagement acceptance",
-          links:""
-        },
-        {
+        //   name: "Client and Engagement acceptance",
+        //   links:""
+        // },
+        // {
          
-          name: "Contracting Engagements",
-          links:""
-        },
-        {
+        //   name: "Contracting Engagements",
+        //   links:""
+        // },
+        // {
          
-          name: "Client confidentiality",
-          links:""
-        },
-        {
+        //   name: "Client confidentiality",
+        //   links:""
+        // },
+        // {
          
-          name: "Client Exit / Resignation",
-          links:""
-        },
-        {
+        //   name: "Client Exit / Resignation",
+        //   links:""
+        // },
+        // {
          
-          name: "Anti-money laundering",
-          links:""
-        },
-        {
+        //   name: "Anti-money laundering",
+        //   links:""
+        // },
+        // {
          
-          name: "Anti-corruption",
-          links:""
-        },
-        {
+        //   name: "Anti-corruption",
+        //   links:""
+        // },
+        // {
          
-          name: "NOCLAR",
-          links:""
-        },
-        {
+        //   name: "NOCLAR",
+        //   links:""
+        // },
+        // {
          
-          name: "Ethics and non-retaliation/ non-discrimination",
-          links:""
-        },
-        {
+        //   name: "Ethics and non-retaliation/ non-discrimination",
+        //   links:""
+        // },
+        // {
          
-          name: "POSH",
-          links:""
-        },
-        {
+        //   name: "POSH",
+        //   links:""
+        // },
+        // {
          
-          name: "Inclusivity",
-          links:""
-        },
-        {
+        //   name: "Inclusivity",
+        //   links:""
+        // },
+        // {
          
-          name: "Talent",
-          links:""
-        },
-        {
+        //   name: "Talent",
+        //   links:""
+        // },
+        // {
          
-          name: "Audit proposals",
-          links:""
-        },
-        {
+        //   name: "Audit proposals",
+        //   links:""
+        // },
+        // {
          
-          name: "Audit approach",
-          links:""
-        },
+        //   name: "Audit approach",
+        //   links:""
+        // },
         
        
       ],
@@ -205,7 +208,7 @@ export default function Library() {
       ],
     },
     {
-      name: "Audit Approach",
+      name: "Illustrative Audit Practice Manual",
       img: "/discover/discover1.png",
       desc: "From Ashtanga to Vinyasa, make mindful movement a daily ritual.",
       blogsdata: [
@@ -213,72 +216,72 @@ export default function Library() {
          
           name: "Purpose and Definition of Audit",
           links:""
-        }, {
+        // }, {
          
-          name: "Assess Engagement Risk",
-          links:""
-        }, {
+        //   name: "Assess Engagement Risk",
+        //   links:""
+        // }, {
          
-          name: "Client Acceptance and Continuance",
-          links:""
-        }, {
+        //   name: "Client Acceptance and Continuance",
+        //   links:""
+        // }, {
          
-          name: "Agreeing terms of the audit engagement",
-          links:""
-        }, {
+        //   name: "Agreeing terms of the audit engagement",
+        //   links:""
+        // }, {
          
-          name: "Understanding the entity and its environment",
-          links:""
-        }, {
+        //   name: "Understanding the entity and its environment",
+        //   links:""
+        // }, {
          
-          name: "Enquiries regarding Fraud and Error",
-          links:""
-        }, {
+        //   name: "Enquiries regarding Fraud and Error",
+        //   links:""
+        // }, {
          
-          name: "Preliminary Analytical Procedures",
-          links:""
+        //   name: "Preliminary Analytical Procedures",
+        //   links:""
+        // },
+        // {
+         
+        //   name: "Materiality ",
+        //   links:""
+        // },
+        // {
+         
+        //   name: "Risk assessment and ROMM’s",
+        //   links:""
+        // },
+        // {
+         
+        //   name: "Fraud Risk",
+        //   links:""
+        // },
+        // {
+         
+        //   name: "Identify material class of transactions",
+        //   links:""
+        // },
+        // {
+         
+        //   name: "Risk of Management Override of Controls",
+        //   links:""
+        // },
+        // {
+         
+        //   name: "Audit Planning Meeting and Discussions within the Engagement team along with EQCR and specialists",
+        //   links:""
+        // },
+        // {
+         
+        //   name: "Understanding the group and using the work of component auditors",
+        //   links:""
+        // },
+        // {
+         
+        //   name: "Joint Audits",
+        //   links:""
+        // },
         },
-        {
-         
-          name: "Materiality ",
-          links:""
-        },
-        {
-         
-          name: "Risk assessment and ROMM’s",
-          links:""
-        },
-        {
-         
-          name: "Fraud Risk",
-          links:""
-        },
-        {
-         
-          name: "Identify material class of transactions",
-          links:""
-        },
-        {
-         
-          name: "Risk of Management Override of Controls",
-          links:""
-        },
-        {
-         
-          name: "Audit Planning Meeting and Discussions within the Engagement team along with EQCR and specialists",
-          links:""
-        },
-        {
-         
-          name: "Understanding the group and using the work of component auditors",
-          links:""
-        },
-        {
-         
-          name: "Joint Audits",
-          links:""
-        },
-       
       ],
       blogsdatafull: [
         {
@@ -426,7 +429,7 @@ export default function Library() {
       ],
     },
     {
-      name: "Practice Aids & Guidance",
+      name: "Illustrative Practice Aids & Guidance",
       img: "/discover/discover1.png",
       desc: "From Ashtanga to Vinyasa, make mindful movement a daily ritual.",
       blogsdata: [
@@ -434,64 +437,8 @@ export default function Library() {
          
           name: "Section 143(1)",
           links:""
-        }, {
-         
-          name: "Section 143(3)",
-          links:""
-        },
-        {
-         
-          name: "Companies Auditors Rules",
-          links:""
-        },{
-         
-          name: "CARO",
-          links:""
-        },{
-         
-          name: "Guidance on evaluating Design of Control",
-          links:""
-        },{
-         
-          name: "Guidance on Fraud  ",
-          links:""
-        },{
-         
-          name: "Guidance on ROMM",
-          links:""
-        },{
-         
-          name: "Guidance on Management Override of Controls",
-          links:""
-        },{
-         
-          name: "Guidance on Group Audits and Joint Audits",
-          links:""
-        },{
-         
-          name: "Guidance on Initial Audit Engagements",
-          links:""
-        },{
-         
-          name: "Guidance on providing access to workpapers",
-          links:""
-        },{
-         
-          name: "Indemnities and hold harmless",
-          links:""
-        },{
-         
-          name: "Regulatory events",
-          links:""
-        },{
-         
-          name: "Going Concern",
-          links:""
-        },{
-         
-          name: "Analytical Procedures – evaluating source data",
-          links:""
-        },
+        // }, 
+        }
       ],
       blogsdatafull: [
         {
@@ -593,7 +540,7 @@ export default function Library() {
     <>
       <section className="text-black md:container md:mx-auto  ">
         <div className="mt-16">
-          <ul className="grid gap-1 grid-cols-2 lg:grid-cols-5  mt-5 text-center  text-black bg-white rounded-full p-1">
+          <ul className="grid gap-3 grid-cols-2 lg:grid-cols-5  mt-5 text-center  text-black bg-white rounded-full p-1">
             {discover.map(({ name }, index) => {
               return (
                 <li className="w-full "
@@ -620,9 +567,25 @@ export default function Library() {
 
       <section className="text-black md:container md:mx-auto">
         <div className="">
-          <div className="grid gap-4 grid-cols-2  lg:grid-cols-5 sm:max-w-sm sm:mx-auto lg:max-w-full">
+          <div className="grid gap-4 grid-cols-1 mb-10 lg:grid-cols-1 sm:max-w-sm sm:mx-auto lg:max-w-full">
             {discover[buttonIndex].blogsdata.map(
               ({ name, imgs, desc, small, title, ser, videos }, index) => {
+                if(buttonIndex ===0){
+                  return(
+                    <QualityStandards/>
+                  )
+                }
+                else if(buttonIndex === 1){
+                  return(
+                    <AuditPracticeManual/>
+                  )
+                }
+                else if(buttonIndex === 2){
+                  return(
+                  <PracticeAid/>
+                  )
+                }
+
                 return (
                   <div key={index} className="p-2 mt-8 transition-all  hover:scale-110 border rounded-lg shadow-lg  ">
                     
@@ -646,7 +609,7 @@ export default function Library() {
             )}
           </div>
         </div>
-        {loadmore && (
+        {/* {loadmore && (
           <div className="w-full flex mb-5  justify-center">
             <button
               onClick={() => (loadclick(), setLoadmore(null))}
@@ -655,9 +618,9 @@ export default function Library() {
               LOAD MORE
             </button>
           </div>
-        )}
+        )} */}
       </section>
-      {
+      {/* {
         <div
           className={`${fullblog ? "py-16  md:container md:mx-auto" : "mb-5 "}`}
         >
@@ -691,8 +654,8 @@ export default function Library() {
               )}
           </div>
         </div>
-      }
-      {videoss && (
+      } */}
+      {/* {videoss && (
         <div
           className={`fixed flex justify-center items-center bg-opacity-80  z-50 top-0   left-0 w-screen h-screen bg-black`}
         >
@@ -721,7 +684,7 @@ export default function Library() {
             SHOW LESS
           </button>
         </div>
-      )}
+      )} */}
 
       {/* <section className="md:container mx-auto">
         <div className="py-5  md:py-16">

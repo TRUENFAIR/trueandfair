@@ -31,7 +31,7 @@ export default function Layout({ children }) {
         { name: "About True and Fair", path: "/about#abttf" },
 
         { name: "Meet the Team", path: "/about#meettheteam" },
-        { name: "Why True and Fair", path: "/about#WhyTrueandFair" },
+        { name: "Focus Areas", path: "/about#focusarea" },
       ],
     },
 
@@ -57,18 +57,20 @@ export default function Layout({ children }) {
         { name: "Product Overview", path: "/adat#ProductOverview" },
 
         { name: "Technology ", path: "/adat#Technology" },
-        { name: "Advantages", path: "/adat#Advantages" },
+        { name: "ADAT Advantage", path: "/adat#Advantages" },
+        { name: "Illustrative Index", path: "/adat#indexofadat" },
+        
       ],
     },
     {
       name: " Library",
       path: "/library",
       sub: [
-        { name: "Quality Standards", path: "/library#QualityStandards" },
-        { name: "Audit Approach", path: "/library#AuditApproach" },
+        { name: "Illustrative Quality Standards", path: "/library#'IllustrativeQualityStandards" },
+        { name: "Illustrative Audit Practice Manual", path: "/library#'IllustrativeAuditApproach" },
         {
-          name: "Practice Aids & Guidance",
-          path: "/library#PracticeAids&Guidance",
+          name: "Illustrative Practice Aids & Guidance",
+          path: "/library#'IllustrativePracticeAids&Guidance",
         },
         {
           name: "Regulatory Developments",
@@ -82,9 +84,9 @@ export default function Layout({ children }) {
     },
 
     {
-      name: "Events",
-      path: "/event",
-      sub: [{ name: "WCOA", path: "/event#WCOA" }],
+      name: "Resources",
+      path: "/resources",
+      sub: [{ name: "Videos", path: "/resources#Videos" },{ name: "Blogs", path: "/resources#Blogs" },{ name: "News", path: "/resources#News" }],
     },
 
     {

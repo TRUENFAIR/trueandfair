@@ -3,7 +3,7 @@ import React from "react";
 export default function Focusarea() {
   return (
     <>
-    <section className="bg-lightgray">
+    <section className="">
       <section className="md:container md:mx-auto py-11 w-full  h-fit  lg:py-16">
         <h1 className="text-3xl font-bah  text-center title-font text-black   mb-8">
           Focus Areas

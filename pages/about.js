@@ -457,14 +457,15 @@ export default function About() {
 
         
         <div
-          className="w-full md:block hidden h-[60px] lg:col-span-2  col-span-1 "
-          id="WhyTrueandFair"
+          className="w-full md:block hidden h-[20px] lg:col-span-2  col-span-1 "
+          id="focusarea"
         ></div>
         <section
         data-aos="fade-up"
-        className="text-black  body-font   bg-lightgray  lg:py-12"
+        className="text-black  body-font   bg-lightgray  lg:py-8"
       >
-        <div className=" md:container mb-12 md:mx-auto  lg:rounded-lg text-left">
+        <Focusarea/>
+        {/* <div className=" md:container mb-12 md:mx-auto  lg:rounded-lg text-left">
           <div className="lg:w-full mx-auto flex flex-col lg:flex-col ">
             <div className="lg:w-full w-full lg:mr-9  mt-6 lg:mt-0 ">
               <div className="w-full flex gap-4 lg:justify-center ">
@@ -492,15 +493,9 @@ export default function About() {
                 })}
               </ul>
             </div>
-            {/* <div className="flex justify-center">
-              <Link href="/adat">
-                <button className="mt-8 font-bah   border-2 border-white text-black font-bold text-xs hover:text-blue hover:bg-white p-3 rounded-lg transition-all">
-                  READ MORE
-                </button>
-              </Link>
-            </div> */}
+           
           </div>
-        </div>
+        </div> */}
       </section>
       
       

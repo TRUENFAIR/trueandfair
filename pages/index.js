@@ -54,17 +54,17 @@ export default function Home() {
     {
       id: 1,
       title: "Increased stakeholder expectations  ",
-      text: "NFRA has concluded in this AQRR that the appointment of BSR as the statutory auditors of IFIN was ab initio illegal and void, & the release said.....",
+      text: "NFRA has issued multiple Audit Quality Review Reports and has reported Audit Quality failures. The consequential implication of these reports has been monetary penalties and banning the auditor from audit practice.",
     },
     {
       id: 2,
       title: "The expectation of joint audits ",
-      text: "Corporates that need joint audits and their current sole auditors will expect the other audit firm to meet audit quality expectations and carry the ......",
+      text: "Corporates that need joint audits and their current sole auditors will expect the other audit firm to meet audit quality expectations and carry the necessary expertise to perform large audits. Not withstanding whether joint audits are mandatory or not, the policies and guidance provided by True and Fair are aimed at enhancing the quality of audits by audit firms. The audit quality policies and procedures that will be laid out by True and Fair and the audit guidance and the Audit Documentation and Archival Tool (ADAT) that is being developed by True and Fair is scalable for large audit requirements.",
     },
     {
       id: 3,
       title: "Unify a divergent practice ",
-      text: "Most of the audit firms in India are highly diverse, with fragmented professional practices. True and Fair aims to build capacity and enhance the .......",
+      text: "Most of the audit firms in India are highly diverse, with fragmented professional practices. True and Fair aims to build capacity and enhance the capabilities of audit firms by providing a common platform for audit quality, best practices and policies, technical guidance, documentation tools and access to audit specialists, so that the audit firms can network and collaborate for their collective success and growth, delivering high quality audit services.",
     },
   ];
   const whyworkwithus = [
@@ -113,8 +113,8 @@ export default function Home() {
     },
     {
       id: 2,
-      name1: " Practical Training & Development",
-      name2: "",
+      name1: " Practical Training ",
+      name2: "& Development",
       images: "/servadat/proftraining.png",
       links: "/services#CharteredAccount",
     },
@@ -269,7 +269,7 @@ export default function Home() {
       </section>
 
       <section className="md:pt-14 md:pb-10 text-zinc-90 bg-white">
-        <div className="lg:container p-4 mx-auto">
+        <div className="lg:container mb-9 p-4 mx-auto">
           <div className="flex gap-4 justify-center mb-10">
             
             <h1 className=" text-3xl font-bah  title-font text-black   mb-4">
@@ -293,7 +293,7 @@ export default function Home() {
                     <div className="w-full h-1/2 absolute bottom-0 left-0 right-0 from-transparent bg-gradient-to-b to-black opacity-60"></div>
 
                     <div className="flex items-center justify-between z-40 w-full p-4 ">
-                      <h1 className="text-2xl tracking-wide drop-shadow-md   text-white z-10 w-full">
+                      <h1 className="text-xl tracking-wide drop-shadow-md font-bah    text-white z-10 w-full">
                         {name1} <br /> {name2}
                       </h1>
                       <div className="mb-4">
@@ -319,7 +319,7 @@ export default function Home() {
                     <div className="w-full h-1/2 absolute bottom-0 left-0 right-0 from-transparent bg-gradient-to-b to-black opacity-60"></div>
 
                     <div className="flex items-center justify-between mb-4 z-40 w-full p-4 ">
-                      <h1 className="text-2xl tracking-wide drop-shadow-md   text-white z-10 w-full">
+                      <h1 className="text-xl font-bah tracking-wide drop-shadow-md   text-white z-10 w-full">
                         {name1} <br /> {name2}
                       </h1>
                       {rightIcon }
@@ -335,6 +335,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+     
 
       <section data-aos="fade-up" className="text-black  bg-lightgray body-font    lg:py-12">
         <div className=" md:container md:mx-auto  lg:rounded-lg text-left">
@@ -365,13 +366,13 @@ export default function Home() {
                 })}
               </ul>
             </div>
-            <div className="flex mt-7 mb-5 md:mb-0 justify-center">
+            {/* <div className="flex mt-7 mb-5 md:mb-0 justify-center">
               <Link href="/about#WhyTrueandFair">
                 <button className="mt-4 font-bah   border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
                   READ MORE
                 </button>
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

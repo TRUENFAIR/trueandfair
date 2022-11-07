@@ -135,7 +135,7 @@ function Adat() {
                 layout="fill"
                 className="absolute h-full w-full object-cover"
                 alt=""
-                src="/servadat/prodoverview.png"
+                src="/servadat/prodoverview1.png"
               />
             </div>
 
@@ -155,7 +155,7 @@ function Adat() {
                 layout="fill"
                 className="absolute h-full w-full object-cover"
                 alt=""
-                src="/servadat/techno.png"
+                src="/servadat/techno1.png"
               />
             </div>
             <div data-aos="fade-up" data-aos-once="true" className="w-auto">
@@ -196,11 +196,17 @@ function Adat() {
               className="w-full block h-[10px] md:h-[80px]   lg:col-span-2  col-span-1 "
               id="Advantages"
             ></div>
+            <div
+              className="w-full block h-fit md:h-fit  lg:col-span-2  col-span-1 "
+              
+            >
+               <div className="text-3xl w-full text-center  font-bah text title-font text-black   ">
+               ADAT Advantage
+              </div>
+            </div>
 
             <div data-aos="fade-up" data-aos-once="true" className="w-auto">
-              <h2 className="text-3xl font-bah  title-font text-black   mb-4">
-                The ADAT Advantage
-              </h2>
+              
               <div className="w-auto mt-16">
                 <div className="flex gap-1 mt-4 text-black flex-row">
                   <span className="w-fit ">✔️</span>{" "}
@@ -252,6 +258,11 @@ and at the time of archival
                 to know more.
               </p>
             </div>
+            
+            
+            
+            
+            
             <div
               data-aos="fade-down"
               data-aos-once="true"
@@ -296,6 +307,209 @@ audit
               `}
                 </p>
               </div>
+            </div>
+
+           
+           
+           
+           
+           
+           
+           
+           
+            <div
+              className="w-full block h-[10px] md:h-[80px]   lg:col-span-2  col-span-1 "
+              id="indexofadat"
+            ></div>
+            <div
+              className="w-full block h-fit md:h-fit  lg:col-span-2  col-span-1 "
+              
+            >
+               <div className="text-3xl w-full text-center  font-bah text title-font text-black   ">
+              Illustrative Index 
+              </div>
+            </div>
+            <div data-aos="fade-up" data-aos-once="true" className="w-auto">
+             
+              <div className="w-auto mt-16">
+              <div>
+                <p className="font-bah text-lg font-semibold text-black">Section No : Name of Document</p>
+              </div>
+                <div className="flex gap-1 mt-4 text-black flex-row">
+                  <span className="w-fit font-bah">10000 :</span>{" "}
+                  <p className="prose text-justify text-black font-bah ">
+                    {`Client Acceptance / Continuance
+              `}
+                  </p>
+                </div>
+                <div className="flex gap-1  text-black flex-row">
+                  <span className="w-fit font-bah">11000 :</span>{" "}
+                  <p className="prose text-justify  text-black font-bah ">
+                    {`Understanding the entity, its business and the environment
+              `}
+                  </p>
+                </div>{" "}
+                <div className="flex gap-1  text-black flex-row">
+                  <span className="w-fit font-bah">11200 :</span>{" "}
+                  <p className="prose text-justify  text-black font-bah ">
+                    {`Understanding internal controls
+              `}
+                  </p>
+                </div>
+                <div className="flex gap-1  text-black flex-row">
+                  <span className="w-fit font-bah">11300 :</span>{" "}
+                  <p className="prose text-justify text-black font-bah ">
+                    {`Assessing risk of fraud
+              `}
+                  </p>
+                </div>
+                <div className="flex gap-1  text-black flex-row">
+                  <span className="w-fit font-bah">11500 :</span>{" "}
+                  <p className="prose text-justify text-black font-bah ">
+                    {`Key entity information relevant to the audit
+              `}
+                  </p>
+                </div>
+                <div className="flex gap-1  text-black flex-row">
+                  <span className="w-fit font-bah">12000 :</span>{" "}
+                  <p className="prose text-justify text-black font-bah ">
+                    {`Planning Materiality
+              `}
+                  </p>
+                </div>
+                <div className="flex gap-1  text-black flex-row">
+                  <span className="w-fit font-bah">12100 :</span>{" "}
+                  <p className="prose text-justify text-black font-bah ">
+                    {`Determine material classes of transactions and disclosures
+              `}
+                  </p>
+                </div>
+                <div className="flex gap-1  text-black flex-row">
+                  <span className="w-fit font-bah">14100 :</span>{" "}
+                  <p className="prose text-justify text-black font-bah ">
+                    {`Audit Plan by Account
+              `}
+                  </p>
+                </div>
+                <div className="flex gap-1  text-black flex-row">
+                  <span className="w-fit font-bah">15000 :</span>{" "}
+                  <p className="prose text-justify text-black font-bah ">
+                    {`Audit administration
+              `}
+                  </p>
+                </div>
+                <div className="flex gap-1  text-black flex-row">
+                  <span className="w-fit font-bah">20000 :</span>{" "}
+                  <p className="prose text-justify text-black font-bah ">
+                    {`Testing design of control (including conclusion on adequacy of design)
+              `}
+                  </p>
+                </div>
+                <div className="flex gap-1  text-black flex-row">
+                  <span className="w-fit font-bah">20100 :</span>{" "}
+                  <p className="prose text-justify text-black font-bah ">
+                    {`Testing Information Technology Controls
+              `}
+                  </p>
+                </div>
+              </div>
+
+              <p className="prose  font-bah lg:mb-0 mt-8 mb-5 pt-8">
+                <Link href="/contact">
+                  <a className="active:text-red underline   font-bah font-bold hover:text-orange decoration-blue text-blue">
+                    Get in touch
+                  </a>
+                </Link>{" "}
+                to know more.
+              </p>
+            </div>
+            <div
+              data-aos="fade-down"
+              data-aos-once="true"
+              className="w-auto h-auto  lg:h-auto relative"
+            >
+               <div className="md:mt-16 mb-4">
+                <p className="font-bah text-lg font-semibold text-black">Section No : Name of Document</p>
+              </div>
+              <div className="flex gap-1  text-black flex-row">
+                  <span className="w-fit font-bah">20200 :</span>{" "}
+                  <p className="prose text-justify text-black font-bah ">
+                    {`Testing controls over information produced by entity
+              `}
+                  </p>
+                </div>
+                <div className="flex gap-1  text-black flex-row">
+                  <span className="w-fit font-bah">20300 :</span>{" "}
+                  <p className="prose text-justify text-black font-bah ">
+                    {`Testing information used in control
+              `}
+                  </p>
+                </div>
+                <div className="flex gap-1  text-black flex-row">
+                  <span className="w-fit font-bah">21000 :</span>{" "}
+                  <p className="prose text-justify text-black font-bah ">
+                    {`Testing operating effectiveness (OE) of controls
+              `}
+                  </p>
+                </div>
+                <div className="flex gap-1  text-black flex-row">
+                  <span className="w-fit font-bah">25000 :</span>{" "}
+                  <p className="prose text-justify text-black font-bah ">
+                    {`Trial Balance
+              `}
+                  </p>
+                </div>
+                <div className="flex gap-1  text-black flex-row">
+                  <span className="w-fit font-bah">30000 :</span>{" "}
+                  <p className="prose text-justify text-black font-bah ">
+                    {`Substantive testing
+              `}
+                  </p>
+                </div>
+                <div className="flex gap-1  text-black flex-row">
+                  <span className="w-fit font-bah">40100 :</span>{" "}
+                  <p className="prose text-justify text-black font-bah ">
+                    {`Compliance with Ind AS – Checklists
+              `}
+                  </p>
+                </div>
+                <div className="flex gap-1  text-black flex-row">
+                  <span className="w-fit font-bah">50100 :</span>{" "}
+                  <p className="prose text-justify text-black font-bah ">
+                    {`Compliance with Standards on Auditing – Checklists
+              `}
+                  </p>
+                </div>
+                <div className="flex gap-1  text-black flex-row">
+                  <span className="w-fit font-bah">50400 :</span>{" "}
+                  <p className="prose text-justify text-black font-bah ">
+                    {`Audit summary memorandum
+              `}
+                  </p>
+                </div>
+                <div className="flex gap-1  text-black flex-row">
+                  <span className="w-fit font-bah">50600 :</span>{" "}
+                  <p className="prose text-justify text-black font-bah ">
+                    {`EQCR
+              `}
+                  </p>
+                </div>
+                <div className="flex gap-1  text-black flex-row">
+                  <span className="w-fit font-bah">50000 :</span>{" "}
+                  <p className="prose text-justify text-black font-bah ">
+                    {`Audit Reporting
+              `}
+                  </p>
+                </div>
+                <div className="flex gap-1  text-black flex-row">
+                  <span className="w-fit font-bah">51000 :</span>{" "}
+                  <p className="prose text-justify text-black font-bah ">
+                    {`Consolidated related documents
+              `}
+                  </p>
+                </div>
+              
+              
             </div>
 
             {/* <div
