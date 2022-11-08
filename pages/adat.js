@@ -135,7 +135,7 @@ function Adat() {
                 layout="fill"
                 className="absolute h-full w-full object-cover"
                 alt=""
-                src="/servadat/prodoverview1.png"
+                src="/servadat/prodoverview.png"
               />
             </div>
 
