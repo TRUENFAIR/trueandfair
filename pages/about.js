@@ -72,31 +72,31 @@ export default function About() {
       blogsdata: [
         {
           name: "Archana Ashok",
-          image: "/team/Archana.png",
+          image: "/team/Archana.jpg",
           role: "",
           description: "",
         },
         {
           name: "Shristi Sarayan",
-          image: "/team/sriti.png",
+          image: "/team/srishti.jpg",
           role: "",
           description: "",
         },
         {
           name: "Kirti Kumar Kotian",
-          image: "/team/kirti.png",
+          image: "/team/kirti.jpg",
           role: "",
           description: "",
         },
         {
           name: "Rakesh Jain",
-          image: "/team/rakesh.png",
+          image: "/team/rakesh.jpg",
           role: "",
           description: "",
         },
         {
           name: "Krishna R P",
-          image: "/team/krishna.png",
+          image: "/team/krishna.jpg",
           role: "",
           description: "",
         },
