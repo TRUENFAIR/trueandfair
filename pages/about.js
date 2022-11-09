@@ -71,7 +71,7 @@ export default function About() {
       blogsdata: [
         {
           name: "Archana Ashok",
-          image: "/team/Archana.jpg",
+          image: "/team/archana.jpg",
           role: "",
           description: "",
         },
