@@ -25,8 +25,7 @@ export default function About() {
   const whytf = [
     {
       id: 1,
-      title:
-        "Increased stakeholder expectations  ",
+      title: "Increased stakeholder expectations  ",
       text: "NFRA has concluded in this AQRR that the appointment of BSR as the statutory auditors of IFIN was ab initio illegal and void, & the release said. Further, NFRA found that the IT processes/platform used by BSR have deficiencies that are systemic and structural in nature.",
     },
     {
@@ -183,7 +182,7 @@ export default function About() {
               </p>
             </div>
           </div>
-        </section>{" "}
+        </section>
         <div
           className="w-full md:block hidden h-[60px] lg:col-span-2  col-span-1 "
           id="abttf"
@@ -204,14 +203,12 @@ export default function About() {
               technical expertise. We have the skills and scale to serve audit
               firms (both established and formative), upcoming chartered
               accountants, Regulators, and corporates - while remaining agile
-              and personal in our approach. True and Fair is one-of-a-kind firm and
-              aspires to be the benchmark STANDARD SETTER in the auditing
+              and personal in our approach. True and Fair is one-of-a-kind firm
+              and aspires to be the benchmark STANDARD SETTER in the auditing
               ecosystem.
             </p>
           </div>
         </section>
-
-
 
         <div
           className="w-full bg-white block h-[10px] md:h-[80px] lg:col-span-2  col-span-1 "
@@ -255,7 +252,7 @@ export default function About() {
             >
               {discover.map(({ para }, index) => {
                 return (
-                  <p key={index}  className=" text-justify font-bah">
+                  <p key={index} className=" text-justify font-bah">
                     {para}
                   </p>
                 );
@@ -270,19 +267,11 @@ export default function About() {
                 ({ para, para2, para3, para4 }, index) => {
                   return (
                     <div key={index}>
-                      <p className="font-bah text-justify">
-                        {para} 
-                      </p>
-                      
-                      <p className="font-bah mt-4 text-justify">
-                         {para2} 
-                      </p>
-                      <p className="font-bah mt-1 text-justify">
-                         {para3} 
-                      </p>
-                      <p className="font-bah mt-4 text-justify">
-                      {para4}
-                      </p>
+                      <p className="font-bah text-justify">{para}</p>
+
+                      <p className="font-bah mt-4 text-justify">{para2}</p>
+                      <p className="font-bah mt-1 text-justify">{para3}</p>
+                      <p className="font-bah mt-4 text-justify">{para4}</p>
                     </div>
                   );
                 }
@@ -446,26 +435,16 @@ export default function About() {
           </div>
         </section>
 
-
-
-
-
-
-
-
-
-
-        
         <div
           className="w-full md:block hidden h-[20px] lg:col-span-2  col-span-1 "
           id="focusarea"
         ></div>
         <section
-        data-aos="fade-up"
-        className="text-black  body-font   bg-lightgray  lg:py-8"
-      >
-        <Focusarea/>
-        {/* <div className=" md:container mb-12 md:mx-auto  lg:rounded-lg text-left">
+          data-aos="fade-up"
+          className="text-black  body-font   bg-lightgray  lg:py-8"
+        >
+          <Focusarea />
+          {/* <div className=" md:container mb-12 md:mx-auto  lg:rounded-lg text-left">
           <div className="lg:w-full mx-auto flex flex-col lg:flex-col ">
             <div className="lg:w-full w-full lg:mr-9  mt-6 lg:mt-0 ">
               <div className="w-full flex gap-4 lg:justify-center ">
@@ -496,10 +475,7 @@ export default function About() {
            
           </div>
         </div> */}
-      </section>
-      
-      
-       
+        </section>
       </section>
     </>
   );
