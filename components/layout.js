@@ -238,7 +238,7 @@ export default function Layout({ children }) {
               <a className="flex flex-col justify-start items-center pl-6 lg:pl-0">
                 <div className=" bg-white">
                   <img
-                    src="/footericon.png"
+                    src="/footer.png"
                     alt="logo"
                     className="w-[165px] object-cover h-[165px]"
                   />
