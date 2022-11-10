@@ -38,7 +38,7 @@ export default function AuditPracticeManual() {
           </div>
         </div>
         <div
-          data-aos="fade-down"
+          data-aos="fade-up"
           data-aos-once="true"
           className="w-auto h-auto  lg:h-auto relative"
         >
