@@ -3,7 +3,7 @@ import React from "react";
 export default function QualityStandards() {
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-4 md:gap-10">
+      <div data-aos="fade-up" data-aos-once="true" className="grid grid-cols-1 md:grid-cols-4 md:gap-10">
         <div className="w-auto md:mt-16">
           <div>
             <p className="font-bah text-lg  font-semibold text-black">

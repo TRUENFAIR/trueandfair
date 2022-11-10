@@ -238,7 +238,7 @@ export default function Layout({ children }) {
               <a className="flex flex-col justify-start items-center pl-6 lg:pl-0">
                 <div className=" bg-white">
                   <img
-                    src="/homeicontwo/footer.png"
+                    src="/footericon.png"
                     alt="logo"
                     className="w-[165px] object-cover h-[165px]"
                   />
@@ -252,7 +252,7 @@ export default function Layout({ children }) {
             </Link>
           </div>
 
-          <div className="text-sm p-4 lg:p-0 pl-6 text-black font-bah text-left">
+          <div className="text-sm p-4 lg:p-0 pl-6  text-black font-bah text-left">
             <p className="font-semibold">Office</p>
             <p>Akshaya Redstone,</p>
             <p>Whitefield Hosakote Main Road,</p>
