@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import InputController from "../components/InputController";
 import Select from "react-select";
 import makeAnimated from "react-select/animated";
-import InputselectContoller from "../components/inputselectController";
+import InputCheckController from "../components/inputcheckController";
 export default function Contact() {
   const animatedComponents = makeAnimated();
 
@@ -49,8 +49,7 @@ export default function Contact() {
     watch("location") &&
     watch("NameofPersontobecontacted") &&
     watch("ContactNumber") &&
-    watch("EmailID") &&
-    watch("intrestedInNetworking");
+    watch("EmailID");
 
   const submit = handleSubmit(async (data) => {
     const {
@@ -285,7 +284,7 @@ export default function Contact() {
                       </span>
                       <div className="grid grid-cols-1 md:grid-cols-2  gap-3 mt-5">
                         <div>
-                          <InputController
+                          <InputCheckController
                             control={control}
                             name="Auditqualitypolicies"
                             type="checkbox"
@@ -297,7 +296,7 @@ export default function Contact() {
                             //   },
                             // }}
                           />
-                          <InputController
+                          <InputCheckController
                             control={control}
                             name="Auditpracticetechnicalguidance"
                             type="checkbox"
@@ -309,7 +308,7 @@ export default function Contact() {
                             //   },
                             // }}
                           />
-                          <InputController
+                          <InputCheckController
                             control={control}
                             name="DocandArchivalTool"
                             type="checkbox"
@@ -321,7 +320,7 @@ export default function Contact() {
                             //   },
                             // }}
                           />
-                          <InputController
+                          <InputCheckController
                             control={control}
                             name="Auditqualitymonitoring"
                             type="checkbox"
@@ -335,7 +334,7 @@ export default function Contact() {
                           />
                         </div>
                         <div>
-                          <InputController
+                          <InputCheckController
                             control={control}
                             name="Practiceprotection"
                             type="checkbox"
@@ -347,7 +346,7 @@ export default function Contact() {
                             //   },
                             // }}
                           />
-                          <InputController
+                          <InputCheckController
                             control={control}
                             name="Traininganddevelopment"
                             type="checkbox"
@@ -359,7 +358,7 @@ export default function Contact() {
                             //   },
                             // }}
                           />
-                          <InputController
+                          <InputCheckController
                             control={control}
                             name="Alltheabove"
                             type="checkbox"
@@ -421,7 +420,31 @@ export default function Contact() {
                       </p>
                     </div>
                   </div>
-                  <div className="flex gap-3 justify-center my-12">
+                  <div className="mt-5 flex flex-row">
+                    <p className="  text-justify  font-bah text-black">
+                     
+                      Interested in Networking :
+                    </p>
+                    <p className="ml-2">
+                      <InputCheckController
+                        control={control}
+                        name="intrestedInNetworking"
+                        type="radio"
+                        label="Yes"
+                        value="Yes"
+                      />
+                    </p>
+                    <p className="ml-5">
+                      <InputCheckController
+                        control={control}
+                        name="intrestedInNetworking"
+                        type="radio"
+                        label="No"
+                        value="No"
+                      />
+                    </p>
+                  </div>
+                  {/* <div className="flex gap-3 justify-center my-12">
                     <p className="prose text-center mt-2 text-black font-bah">
                       INTERESTED IN NETWORKING:{" "}
                     </p>
@@ -446,7 +469,7 @@ export default function Contact() {
                     >
                       NO
                     </button>
-                  </div>
+                  </div> */}
 
                   <div className="flex justify-center">
                     {message ? (
