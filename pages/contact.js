@@ -47,55 +47,29 @@ export default function Contact() {
     watch("name") &&
     watch("YearofFormation") &&
     watch("location") &&
-    watch("partners") &&
-    watch("noofCazeroToThree") &&
-    watch("noofCathreeToFive") &&
-    watch("noofCafiveToTen") &&
-    watch("noofCamoreThanTen") &&
-    watch("otherSkillSets") &&
-    watch("officeSkillReside") &&
-    watch("noofProffzeroToThree") &&
-    watch("noofProffthreeToFive") &&
-    watch("noofProfffiveToTen") &&
-    watch("noofProffmoreThanTen") &&
-    watch("completedProceedings") &&
-    watch("othercredential") &&
-    watch("eligibleprofessionals1") &&
-    watch("eligibleprofessionals2") &&
-    watch("eligibleprofessionals3") &&
-    watch("eligibleprofessionals4") &&
-    watch("eligibleprofessionals5") &&
-    watch("eligibleprofessionals6") &&
-    watch("intrestedInNetworking") &&
-    selectedOption;
- 
+    watch("NameofPersontobecontacted") &&
+    watch("ContactNumber") &&
+    watch("EmailID") &&
+    watch("intrestedInNetworking");
+
   const submit = handleSubmit(async (data) => {
     const {
       name,
       YearofFormation,
       location,
-      partners,
-      noofCazeroToThree,
-      noofCathreeToFive,
-      noofCafiveToTen,
-      noofCamoreThanTen,
-      otherSkillSets,
-      officeSkillReside,
-      noofProffzeroToThree,
-      noofProffthreeToFive,
-      noofProfffiveToTen,
-      noofProffmoreThanTen,
-      completedProceedings,
-      othercredential,
-      eligibleprofessionals1,
-      eligibleprofessionals2,
-      eligibleprofessionals3,
-      eligibleprofessionals4,
-      eligibleprofessionals5,
-      eligibleprofessionals6,
+      NameofPersontobecontacted,
+      ContactNumber,
+      EmailID,
+      Auditqualitypolicies,
+      Auditpracticetechnicalguidance,
+      DocandArchivalTool,
+      Auditqualitymonitoring,
+      Practiceprotection,
+      Traininganddevelopment,
+      Alltheabove,
       intrestedInNetworking,
     } = data;
-    console.log(selectedOption)
+
     try {
       const response = await fetch(
         process.env.NEXT_PUBLIC_CONTACT_LAMBDA_URL,
@@ -108,27 +82,17 @@ export default function Contact() {
             name,
             YearofFormation,
             location,
-            partners,
-            noofCazeroToThree,
-            noofCathreeToFive,
-            noofCafiveToTen,
-            noofCamoreThanTen,
-            otherSkillSets,
-            officeSkillReside,
-            noofProffzeroToThree,
-            noofProffthreeToFive,
-            noofProfffiveToTen,
-            noofProffmoreThanTen,
-            completedProceedings,
-            othercredential,
-            eligibleprofessionals1,
-            eligibleprofessionals2,
-            eligibleprofessionals3,
-            eligibleprofessionals4,
-            eligibleprofessionals5,
-            eligibleprofessionals6,
+            NameofPersontobecontacted,
+            ContactNumber,
+            EmailID,
+            Auditqualitypolicies,
+            Auditpracticetechnicalguidance,
+            DocandArchivalTool,
+            Auditqualitymonitoring,
+            Practiceprotection,
+            Traininganddevelopment,
+            Alltheabove,
             intrestedInNetworking,
-            selectedOption,
           }),
         }
       );
@@ -139,17 +103,17 @@ export default function Contact() {
           name,
           YearofFormation: "",
           location: "",
-          partners: "",
-          noofCazeroToThree: "",
-          noofCathreeToFive: "",
-          noofCafiveToTen: "",
-          noofCamoreThanTen: "",
-          otherSkillSets: "",
-          officeSkillReside: "",
-          noofProffzeroToThree: "",
-          noofProffthreeToFive: "",
-          noofProfffiveToTen: "",
-          noofProffmoreThanTen: "",
+          NameofPersontobecontacted: "",
+          ContactNumber: "",
+          EmailID: "",
+
+          Auditqualitypolicies: "",
+          Auditpracticetechnicalguidance: "",
+          DocandArchivalTool: "",
+          Auditqualitymonitoring: "",
+          Practiceprotection: "",
+          Traininganddevelopment: "",
+          Alltheabove: "",
           completedProceedings: "",
           othercredential: "",
           eligibleprofessionals1: "",
@@ -187,7 +151,7 @@ export default function Contact() {
           <h1 className="text-4xl text-center font-bah tracking-wide  text-green-900">
             Expression of Interest
           </h1>
-          <div className=" ">
+          {/* <div className=" ">
             <p className="leading-loose mt-6  text-justify  font-bah text-black ">
               {" "}
               If you unequivocally subscribe to and endorse the below without
@@ -211,524 +175,301 @@ export default function Contact() {
               technology, and tools to promote audit quality, efficiency, and
               effectiveness of audits.
             </p>
-          </div>
+          </div> */}
 
-          {disableText && (
-            <div className="flex gap-3 justify-center mt-12">
-              <p className="prose text-center mt-2 text-black font-bah">
-                Interested in building on quality consistent with the above? :{" "}
-              </p>
-
-              <button
-                onClick={enableforms}
-                className="md:w-[150px] font-bah  border-2 border-blue text-blue font-bold text-base hover:text-white hover:bg-blue p-1 rounded-lg "
-              >
-                YES
-              </button>
-            </div>
-          )}
-          {enableForm && (
-            <div className="  items-start  rounded pt-8 ">
-              <div className=" w-full">
-                <div className="md:pl-0 md:pt-0 pt-12">
-                  <h2 className="text-2xl text-center my-10 font-bah">
-                    Kindly fill out the below form
-                  </h2>
-                  <div className="mt-8">
-                    <div className="grid grid-cols-1 md:grid-cols-1 gap-6">
-                      <div className="border grid grid-cols-2 gap-2">
-                        <div className=" ">
-                          <InputController
-                            control={control}
-                            name="name"
-                            type="text"
-                            label="Name"
-                            rules={{
-                              required: {
-                                value: true,
-                                message: "This field is required",
-                              },
-                            }}
-                          />
-                        </div>
-                        <div className="">
-                          <InputController
-                            control={control}
-                            name="YearofFormation"
-                            type="text"
-                            label="Year of formation"
-                            rules={{
-                              required: {
-                                value: true,
-                                message: "This field is required",
-                              },
-                            }}
-                          />
-                        </div>
-                      </div>
-
-                      <InputController
-                        control={control}
-                        name="location"
-                        type="text"
-                        label="Location of the head office and branch locations (if any)"
-                        rules={{
-                          required: {
-                            value: true,
-                            message: "This field is required",
-                          },
-                        }}
-                      />
-                      <InputController
-                        control={control}
-                        name="partners"
-                        type="text"
-                        label="Number of partners along with names, membership number and professional
-                            experience (post qualification experience) of each partner"
-                        rules={{
-                          required: {
-                            value: true,
-                            message: "This field is required",
-                          },
-                        }}
-                      />
-
-                      <div className="">
-                        <span className="text-black font-bah">
-                          Number of qualified CAs (other than partners) with
-                          experience under the following categories:
-                        </span>
-                        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-4">
-                          <InputController
-                            control={control}
-                            name="noofCazeroToThree"
-                            type="number"
-                            label="0-3 years"
-                            rules={{
-                              required: {
-                                value: true,
-                                message: "This field is required",
-                              },
-                            }}
-                          />
-                          <InputController
-                            control={control}
-                            name="noofCathreeToFive"
-                            type="number"
-                            label="3-5 years"
-                            rules={{
-                              required: {
-                                value: true,
-                                message: "This field is required",
-                              },
-                            }}
-                          />
-                          <InputController
-                            control={control}
-                            name="noofCafiveToTen"
-                            type="number"
-                            label="5-10 years"
-                            rules={{
-                              required: {
-                                value: true,
-                                message: "This field is required",
-                              },
-                            }}
-                          />
-                          <InputController
-                            control={control}
-                            name="noofCamoreThanTen"
-                            type="number"
-                            label="More than 10 years"
-                            rules={{
-                              required: {
-                                value: true,
-                                message: "This field is required",
-                              },
-                            }}
-                          />
-                        </div>
-                      </div>
-
-                      <div className=" grid grid-cols-1 gap-2">
-                        <InputController
-                          control={control}
-                          name="otherSkillSets"
-                          type="text"
-                          label="Other skill sets within the firm (e.g Internal Audit / Controls, Tax, Information
-                            Technology Audit, Valuation, Forensic, etc.)"
-                          rules={{
-                            required: {
-                              value: true,
-                              message: "This field is required",
-                            },
-                          }}
-                        />
-
-                        <InputController
-                          control={control}
-                          name="officeSkillReside"
-                          type="text"
-                          className="mt-7"
-                          label=" In which office do these skill sets reside?"
-                          rules={{
-                            required: {
-                              value: true,
-                              message: "This field is required",
-                            },
-                          }}
-                        />
-                      </div>
-
-                      <div className="">
-                        <span className="text-black font-bah">
-                          Number of other eligible professionals (other than
-                          partners) with experience under the following
-                          categories together with the nature of their
-                          qualification:
-                        </span>
-                        <div className="grid grid-cols-1 md:grid-cols-4  gap-3 mt-5">
-                          <InputController
-                            control={control}
-                            name="noofProffzeroToThree"
-                            type="number"
-                            label="0-3 years"
-                            rules={{
-                              required: {
-                                value: true,
-                                message: "This field is required",
-                              },
-                            }}
-                          />
-                          <InputController
-                            control={control}
-                            name="noofProffthreeToFive"
-                            type="number"
-                            label="3-5 years"
-                            rules={{
-                              required: {
-                                value: true,
-                                message: "This field is required",
-                              },
-                            }}
-                          />
-                          <InputController
-                            control={control}
-                            name="noofProfffiveToTen"
-                            type="number"
-                            label="5-10 years"
-                            rules={{
-                              required: {
-                                value: true,
-                                message: "This field is required",
-                              },
-                            }}
-                          />
-                          <InputController
-                            control={control}
-                            name="noofProffmoreThanTen"
-                            type="number"
-                            label="More than 10 years"
-                            rules={{
-                              required: {
-                                value: true,
-                                message: "This field is required",
-                              },
-                            }}
-                          />
-                        </div>
-                      </div>
-
-                      <div className="grid grid-cols-2 gap-16 mt-4">
-                        <label className=" py-">
-                          <div>
-                            <span className="text-black font-bah">
-                              Industry experience in audit:
-                            </span>
-
-                            {/* note!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */}
-                            {/* this field comes as a array in selectedOption */}
-                            <Select
-                              className="mt-7"
-                              closeMenuOnSelect={false}
-                              components={animatedComponents}
-                              isMulti
-                              options={options}
-                              onChange={setSelectedOption}
-                            />
-                            <label
-                              className={`text-red-600   text-xs  ${
-                                selectedOption?.length < 1
-                                  ? "visible"
-                                  : "invisible"
-                              }`}
-                            >
-                              This field required
-                            </label>
-                            {/* <InputselectContoller
-                             control={control}
-                             type={Select}
-                             rules={{
-                              required: {
-                                value: true,
-                                message: "This field is required",
-                              },
-                            }}
-                             options={options}
-                            /> */}
-                          </div>
-
-                          {/* <span className="text-black font-bah">
-                            Industry experience in audit:
-                          </span>
-                          <select
-                          multiple
-                          size="10"
-                            className=" block w-full font-bah mt-6 rounded-sm border-zinc-200 focus:border-green-700 focus:ring focus:ring-blue focus:ring-opacity-50"
-                            {...register("Industryexperience", {
-                              required: true,
-                            })}
-                          >
-                            <option className="hidden"></option>
-                            <option>Agriculture</option>
-                            <option>Airlines</option>
-                            <option>Automotive</option>
-                            <option>Banking</option>
-                            <option>Electricity</option>
-                            <option>Financial Services</option>
-                            <option>FMCG</option>
-                            <option>Healthcare</option>
-                            <option>ITES / BPO / KPO</option>
-                            <option>Insurance</option>
-                            <option>Information Technology</option>
-                            <option>Manufacturing</option>
-                            <option>Real Estate</option>
-                            <option>Retail</option>
-                            <option>Telecom</option>
-                            <option>Travel and Hospitality</option>
-                            <option>Others</option>
-                          </select> */}
-                        </label>
-                        <label className="block">
-                          <span className="text-black font-bah">
-                            Any other credentials that are relevant to
-                            assessment of the firm from a quality or market
-                            standing perspective.
-                          </span>
-                          <input
-                            type="text"
-                            className="mt-1 font-bah block w-full rounded-sm border-zinc-200 focus:border-green-700 focus:ring focus:ring-blue focus:ring-opacity-50"
-                            placeholder=""
-                            {...register("othercredential", {
-                              required: true,
-                            })}
-                          />
-                          <label
-                            className={`text-red-600   text-xs  ${
-                              errors.othercredential ? "visible" : "invisible"
-                            }`}
-                          >
-                            This field required
-                          </label>
-                        </label>
-                      </div>
-                      <InputController
-                        control={control}
-                        name="completedProceedings"
-                        type="text"
-                        label=" Details on any proceedings ongoing against the firm
-                            or its partners and completed proceedings in the
-                            last five years."
-                        rules={{
-                          required: {
-                            value: true,
-                            message: "This field is required",
-                          },
-                        }}
-                      />
-
-                      <div className="">
-                        <span className="text-black  font-bah">
-                          Number of other eligible professionals (other than
-                          partners) with experience under the following
-                          categories together with the nature of their
-                          qualification:
-                        </span>
-                        <div className="grid grid-cols-1 md:grid-cols-2  gap-2 mt-4">
-                          <InputController
-                            control={control}
-                            name="eligibleprofessionals1"
-                            type="text"
-                            label="An exhaustive suite of policies, technical
-                          guidance, ADAT and a monitoring mechanism to
-                          assess compliance with policies, guidance and
-                          standards"
-                            rules={{
-                              required: {
-                                value: true,
-                                message: "This field is required",
-                              },
-                            }}
-                          />
-                          <InputController
-                            control={control}
-                            name="eligibleprofessionals2"
-                            type="text"
-                            label=" An exhaustive suite of policies, technical
-                          guidance, ADAT without monitoring mechanism
-              "
-                            className="2xl:mt-6"
-                            rules={{
-                              required: {
-                                value: true,
-                                message: "This field is required",
-                              },
-                            }}
-                          />
-                          <InputController
-                            control={control}
-                            name="eligibleprofessionals3"
-                            type="text"
-                            label=" Technical guidance and/or ADAT
-              "
-                            className=""
-                            rules={{
-                              required: {
-                                value: true,
-                                message: "This field is required",
-                              },
-                            }}
-                          />
-
-                          <InputController
-                            control={control}
-                            name="eligibleprofessionals4"
-                            type="text"
-                            label="  Access only to ADAT
-              "
-                            className=""
-                            rules={{
-                              required: {
-                                value: true,
-                                message: "This field is required",
-                              },
-                            }}
-                          />
-                          <InputController
-                            control={control}
-                            name="eligibleprofessionals5"
-                            type="text"
-                            label="Practice protection: Helping you in external
-                          inspections
-              "
-                            className=""
-                            rules={{
-                              required: {
-                                value: true,
-                                message: "This field is required",
-                              },
-                            }}
-                          />
-
-                          <InputController
-                            control={control}
-                            name="eligibleprofessionals6"
-                            type="text"
-                            label="Training and development"
-                            className=""
-                            rules={{
-                              required: {
-                                value: true,
-                                message: "This field is required",
-                              },
-                            }}
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div className="">
+          <div className="  items-start  rounded pt-8 ">
+            <div className=" w-full">
+              <div className="md:pl-0 md:pt-0 pt-12">
+                <h2 className="text-xl text-center my-10 font-bah">
+                  Welcome To True and Fair Professionals Network. Please provide
+                  us with the following details to take forward your Expression
+                  of Interest.
+                </h2>
+                <div className="mt-8">
+                  <div className="grid grid-cols-1 md:grid-cols-1 gap-6">
+                    <div className="border grid grid-cols-2 gap-2">
                       <div className=" ">
-                        <p className="leading-loose mt-6  text-justify  font-bah text-black ">
-                          {" "}
-                          Interested in being part of a network of CA firms
-                          sharing similar philosophy about audits and audit
-                          quality? If so, consider the following:
-                          <span className="font-bold">{` 1 ) `}</span>
-                          Willingness to be part of and comply with the policies
-                          and procedures of a network of chartered accountant
-                          firms (“Network”) conceived by True and Fair
-                          Professionals Network ;
-                          <span className="font-bold">{` 2 ) `}</span>Look
-                          beyond power, position / designation, and authority
-                          and commit to working as an equal stakeholder in
-                          matters of quality and related aspects as practiced by
-                          the Network ;
-                          <span className="font-bold">{` 3 ) `}</span>Intent to
-                          work collaboratively and cohesively with other audit
-                          firms within the Network for the collective growth of
-                          the Network ;
-                          <span className="font-bold">{` 4 ) `}</span>Accept
-                          that the audit practice will be subject to monitoring,
-                          development, improvement, remedial actions by True and
-                          Fair Professionals Network ;
-                          <span className="font-bold">{` 5 ) `}</span>Invest in
-                          people, technology, and tools to promote audit
-                          quality, efficiency, and effectiveness of audits of
-                          the firm and the Network. Network for the collective
-                          growth of the Network;
-                        </p>
+                        <InputController
+                          control={control}
+                          name="name"
+                          type="text"
+                          label="Name of the firm"
+                          rules={{
+                            required: {
+                              value: true,
+                              message: "This field is required",
+                            },
+                          }}
+                        />
+                      </div>
+                      <div className="">
+                        <InputController
+                          control={control}
+                          name="YearofFormation"
+                          type="number"
+                          label="Year of formation"
+                          rules={{
+                            required: {
+                              value: true,
+                              message: "This field is required",
+                            },
+                          }}
+                        />
                       </div>
                     </div>
-                    <div className="flex gap-3 justify-center my-12">
-                      <p className="prose text-center mt-2 text-black font-bah">
-                        INTERESTED IN NETWORKING:{" "}
+
+                    <InputController
+                      control={control}
+                      name="location"
+                      type="text"
+                      label="Location of the head office and branch locations (if any)"
+                      rules={{
+                        required: {
+                          value: true,
+                          message: "This field is required",
+                        },
+                      }}
+                    />
+
+                    <div className="">
+                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+                        <InputController
+                          control={control}
+                          name="NameofPersontobecontacted"
+                          type="text"
+                          label="Name of Person to be contacted"
+                          rules={{
+                            required: {
+                              value: true,
+                              message: "This field is required",
+                            },
+                          }}
+                        />
+                        <InputController
+                          control={control}
+                          name="ContactNumber"
+                          type="number"
+                          label="Contact Number"
+                          rules={{
+                            required: {
+                              value: true,
+                              message: "This field is required",
+                            },
+                          }}
+                        />
+                        <InputController
+                          control={control}
+                          name="EmailID"
+                          type="email"
+                          label="Email ID"
+                          rules={{
+                            required: {
+                              value: true,
+                              message: "This field is required",
+                            },
+                            pattern: {
+                              value:
+                                /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
+                              message: "Enter a valid Email",
+                            },
+                          }}
+                        />
+                      </div>
+                    </div>
+
+                    <div className="">
+                      <span className="text-black font-bah">
+                        Which of the following would be of Interest to you as a
+                        service offering of True and Fair? (Tick all those that
+                        are preferred)
+                      </span>
+                      <div className="grid grid-cols-1 md:grid-cols-2  gap-3 mt-5">
+                        <div>
+                          <InputController
+                            control={control}
+                            name="Auditqualitypolicies"
+                            type="checkbox"
+                            label="Audit quality policies"
+                            // rules={{
+                            //   required: {
+                            //     value: true,
+                            //     message: "This field is required",
+                            //   },
+                            // }}
+                          />
+                          <InputController
+                            control={control}
+                            name="Auditpracticetechnicalguidance"
+                            type="checkbox"
+                            label="Audit practice technical guidance"
+                            // rules={{
+                            //   required: {
+                            //     value: true,
+                            //     message: "This field is required",
+                            //   },
+                            // }}
+                          />
+                          <InputController
+                            control={control}
+                            name="DocandArchivalTool"
+                            type="checkbox"
+                            label="Audit Documentation and Archival Tool"
+                            // rules={{
+                            //   required: {
+                            //     value: true,
+                            //     message: "This field is required",
+                            //   },
+                            // }}
+                          />
+                          <InputController
+                            control={control}
+                            name="Auditqualitymonitoring"
+                            type="checkbox"
+                            label="Audit quality monitoring"
+                            // rules={{
+                            //   required: {
+                            //     value: true,
+                            //     message: "This field is required",
+                            //   },
+                            // }}
+                          />
+                        </div>
+                        <div>
+                          <InputController
+                            control={control}
+                            name="Practiceprotection"
+                            type="checkbox"
+                            label="Practice protection : Helping you in external inspections"
+                            // rules={{
+                            //   required: {
+                            //     value: true,
+                            //     message: "This field is required",
+                            //   },
+                            // }}
+                          />
+                          <InputController
+                            control={control}
+                            name="Traininganddevelopment"
+                            type="checkbox"
+                            label="Training and development"
+                            // rules={{
+                            //   required: {
+                            //     value: true,
+                            //     message: "This field is required",
+                            //   },
+                            // }}
+                          />
+                          <InputController
+                            control={control}
+                            name="Alltheabove"
+                            type="checkbox"
+                            label="All the above leveraging on the brand of Audit and Quality being created
+                            by True and Fair"
+                            // rules={{
+                            //   required: {
+                            //     value: true,
+                            //     message: "This field is required",
+                            //   },
+                            // }}
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="">
+                    <div className=" ">
+                      <p className="leading-loose mt-6  text-justify  font-bah text-black ">
+                        {" "}
+                        Interested in being part of a network of CA firms
+                        sharing similar philosophy about audits and audit
+                        quality? If so, consider the following: (Minimum
+                        expectation from CA firms to be part of a Network of CA
+                        Firms conceived by True and Fair Professionals Network)
                       </p>
-
-                      <button
-                        onClick={() => setValue("intrestedInNetworking", "yes")}
-                        className={` md:w-[150px] font-bah  border-2 border-blue  font-bold text-base hover:text-white hover:bg-blue p-1 rounded-lg ${
-                          intrestedInNetworking === "yes"
-                            ? "bg-blue text-white"
-                            : ""
-                        } `}
-                      >
-                        YES
-                      </button>
-                      <button
-                        onClick={() => setValue("intrestedInNetworking", "no")}
-                        className={` md:w-[150px] font-bah   border-2 border-blue  font-bold text-base hover:text-white hover:bg-blue p-1 rounded-lg ${
-                          intrestedInNetworking === "no"
-                            ? "bg-blue text-white"
-                            : ""
-                        } `}
-                      >
-                        NO
-                      </button>
+                      <p className="leading-loose mt-1  text-justify  font-bah text-black ">
+                        {" "}
+                        <span className="font-bold">{` 1 ) `}</span>
+                        Willingness to be part of and comply with the policies
+                        and procedures of a network of chartered accountant
+                        firms (“Network”) conceived by True and Fair
+                        Professionals Network;
+                      </p>
+                      <p className="leading-loose mt-1  text-justify  font-bah text-black ">
+                        <span className="font-bold">{` 2 ) `}</span>Look beyond
+                        power, position / designation, and authority and commit
+                        to working as an equal stakeholder in matters of quality
+                        and related aspects as practiced by the Network;
+                      </p>
+                      <p className="leading-loose mt-1  text-justify  font-bah text-black ">
+                        <span className="font-bold">{` 3 ) `}</span>Intent to
+                        work collaboratively and cohesively with other audit
+                        firms within the Network for the collective growth of
+                        the Network;
+                      </p>
+                      <p className="leading-loose mt-1  text-justify  font-bah text-black ">
+                        <span className="font-bold">{` 4 ) `}</span>Accept that
+                        the audit practice will be subject to monitoring,
+                        development, improvement, remedial actions by True and
+                        Fair Professionals Network;
+                      </p>
+                      <p className="leading-loose mt-1  text-justify  font-bah text-black ">
+                        <span className="font-bold">{` 5 ) `}</span>Invest in
+                        people, technology, and tools to promote audit quality,
+                        efficiency, and effectiveness of audits of the firm and
+                        the Network. Network for the collective growth of the
+                        Network.
+                      </p>
                     </div>
+                  </div>
+                  <div className="flex gap-3 justify-center my-12">
+                    <p className="prose text-center mt-2 text-black font-bah">
+                      INTERESTED IN NETWORKING:{" "}
+                    </p>
 
-                    <div className="flex justify-center">
-                      {message ? (
-                        <p className="text-green text-md font-semibold pt-6 ">
-                          {`Your message is sent. We'll get back to you at the earliest`}
-                        </p>
-                      ) : (
-                        <button
-                          onClick={submit}
-                          disabled={!isButtonVisble}
-                          // className="mt-8 font-bah h-[50px] w-[100px] border-2 border-black text-black font-bold text-xs hover:text-white hover:border-0 hover:bg-blue p-3 rounded-lg transition-all"
-                          className={`w-32 mt-6 bg-orange border-2 border-blue  font-bold text-base hover:text-white hover:bg-blue p-3 rounded-lg text-black  transition-all ${
-                            isButtonVisble ? "opacity-100" : "opacity-50 "
-                          }`}
-                        >
-                          SEND
-                        </button>
-                      )}
-                    </div>
+                    <button
+                      onClick={() => setValue("intrestedInNetworking", "yes")}
+                      className={` md:w-[150px] font-bah  border-2 border-blue  font-bold text-base hover:text-white hover:bg-blue p-1 rounded-lg ${
+                        intrestedInNetworking === "yes"
+                          ? "bg-blue text-white"
+                          : ""
+                      } `}
+                    >
+                      YES
+                    </button>
+                    <button
+                      onClick={() => setValue("intrestedInNetworking", "no")}
+                      className={` md:w-[150px] font-bah   border-2 border-blue  font-bold text-base hover:text-white hover:bg-blue p-1 rounded-lg ${
+                        intrestedInNetworking === "no"
+                          ? "bg-blue text-white"
+                          : ""
+                      } `}
+                    >
+                      NO
+                    </button>
+                  </div>
+
+                  <div className="flex justify-center">
+                    {message ? (
+                      <p className="text-green text-md font-semibold pt-6 ">
+                        {`Your message is sent. We'll get back to you at the earliest`}
+                      </p>
+                    ) : (
+                      <button
+                        onClick={submit}
+                        disabled={!isButtonVisble}
+                        // className="mt-8 font-bah h-[50px] w-[100px] border-2 border-black text-black font-bold text-xs hover:text-white hover:border-0 hover:bg-blue p-3 rounded-lg transition-all"
+                        className={`w-32 mt-6 bg-orange border-2 border-blue  font-bold text-base hover:text-white hover:bg-blue p-3 rounded-lg text-black  transition-all ${
+                          isButtonVisble ? "opacity-100" : "opacity-50 "
+                        }`}
+                      >
+                        SEND
+                      </button>
+                    )}
                   </div>
                 </div>
               </div>
             </div>
-          )}
+          </div>
         </div>
       </section>
 
