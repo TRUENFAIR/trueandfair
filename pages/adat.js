@@ -129,7 +129,7 @@ function Adat() {
             <div
               data-aos="fade-down"
               data-aos-once="true"
-              className="w-auto h-48 lg:h-auto relative"
+              className="w-auto h-96 lg:h-auto relative"
             >
               <Image
                 layout="fill"
@@ -149,7 +149,7 @@ function Adat() {
             <div
               data-aos="fade-down"
               data-aos-once="true"
-              className="w-auto h-48 lg:h-auto relative"
+              className="w-auto h-96 lg:h-auto relative"
             >
               <Image
                 layout="fill"
