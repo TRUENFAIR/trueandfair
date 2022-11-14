@@ -43,13 +43,23 @@ export default function Contact() {
   const [selectedOption, setSelectedOption] = useState([]);
 
   const intrestedInNetworking = watch("intrestedInNetworking");
+  const x =
+    watch("Auditqualitypolicies") ||
+    watch("Auditpracticetechnicalguidance") ||
+    watch("DocandArchivalTool") ||
+    watch("Auditqualitymonitoring") ||
+    watch("Practiceprotection") ||
+    watch("Traininganddevelopment") ||
+    watch("Alltheabove");
+  const yesno = watch("intrestedInNetworking");
   const isButtonVisble =
     watch("name") &&
     watch("YearofFormation") &&
     watch("location") &&
     watch("NameofPersontobecontacted") &&
     watch("ContactNumber") &&
-    watch("EmailID");
+    watch("EmailID") &&
+    x && yesno
 
   const submit = handleSubmit(async (data) => {
     const {
@@ -105,7 +115,6 @@ export default function Contact() {
           NameofPersontobecontacted: "",
           ContactNumber: "",
           EmailID: "",
-
           Auditqualitypolicies: "",
           Auditpracticetechnicalguidance: "",
           DocandArchivalTool: "",
@@ -179,7 +188,7 @@ export default function Contact() {
           <div className="  items-start  rounded pt-8 ">
             <div className=" w-full">
               <div className="md:pl-0 md:pt-0 pt-12">
-                <h2 className="text-xl text-center my-10 font-bah">
+                <h2 className="text- text-center my-10 font-bah">
                   Welcome To True and Fair Professionals Network. Please provide
                   us with the following details to take forward your Expression
                   of Interest.
@@ -375,6 +384,9 @@ export default function Contact() {
                       </div>
                     </div>
                   </div>
+                  <h2 className=" mt-10   text-4xl text-center font-bah tracking-wide  text-green-900">
+                Networking
+              </h2>
                   <div className="">
                     <div className=" ">
                       <p className="leading-loose mt-6  text-justify  font-bah text-black ">
@@ -383,9 +395,9 @@ export default function Contact() {
                         sharing similar philosophy about audits and audit
                         quality? If so, consider the following: (Minimum
                         expectation from CA firms to be part of a Network of CA
-                        Firms conceived by True and Fair Professionals Network)
+                        Firms conceived by True and Fair Professionals Network).
                       </p>
-                      <p className="leading-loose mt-1  text-justify  font-bah text-black ">
+                      <p className="leading-loose mt-4  text-justify  font-bah text-black ">
                         {" "}
                         <span className="font-bold">{` 1 ) `}</span>
                         Willingness to be part of and comply with the policies
@@ -422,7 +434,6 @@ export default function Contact() {
                   </div>
                   <div className="mt-5 flex flex-row">
                     <p className="  text-justify  font-bah text-black">
-                     
                       Interested in Networking :
                     </p>
                     <p className="ml-2">

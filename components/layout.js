@@ -298,8 +298,8 @@ export default function Layout({ children }) {
               <a>Resources</a>
             </Link> */}
 
-            <Link href="/event">
-              <a> Events</a>
+            <Link href="/resources">
+              <a> Resources</a>
             </Link>
 
             <Link href="/contact">
