@@ -135,7 +135,7 @@ function Adat() {
                 layout="fill"
                 className="absolute h-full w-full object-cover"
                 alt=""
-                src="/servadat/prodoverview.png"
+                src="/servadat/prod.jpg"
               />
             </div>
 
@@ -155,7 +155,7 @@ function Adat() {
                 layout="fill"
                 className="absolute h-full w-full object-cover"
                 alt=""
-                src="/servadat/techno.png"
+                src="/servadat/tech.jpg"
               />
             </div>
             <div data-aos="fade-up" data-aos-once="true" className="w-auto">

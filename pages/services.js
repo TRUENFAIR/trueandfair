@@ -121,7 +121,7 @@ matters.
               <div className="flex gap-1  text-black flex-row">
                 <p className="prose mt-2 text-justify text-black font-bah ">
                   <span className="text-justify text-black font-bah font-semibold">
-                    Enabling Network of CA firms
+                    Enabling Network of CA firms -
                   </span>
                   {` True and Fair believes that it can enable the audit firms.
               `}
