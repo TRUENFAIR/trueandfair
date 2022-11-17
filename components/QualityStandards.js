@@ -3,7 +3,11 @@ import React from "react";
 export default function QualityStandards() {
   return (
     <>
-      <div data-aos="fade-up" data-aos-once="true" className="grid grid-cols-1 md:grid-cols-4 md:gap-10">
+      <div
+        data-aos="fade-up"
+        data-aos-once="true"
+        className="grid grid-cols-1 md:grid-cols-4 md:gap-10"
+      >
         <div className="w-auto md:mt-16">
           <div>
             <p className="font-bah text-lg  font-semibold text-black">
@@ -28,14 +32,7 @@ audit firm
               Acceptance & Continuance
             </p>
           </div>
-          <div className="flex gap-1 mt-4 text-black flex-row">
-            <span className="w-fit font-bah">✔️</span>{" "}
-            <p className="prose text-justify text-black font-bah ">
-              {`Client Acceptance / Continuance
-              `}
-            </p>
-          </div>
-          <div className="flex gap-1  text-black flex-row">
+          <div className="flex gap-1 mt-4  text-black flex-row">
             <span className="w-fit font-bah">✔️</span>{" "}
             <p className="prose text-justify  text-black font-bah ">
               {`Integrity of
@@ -246,39 +243,6 @@ laundering
             <p className="prose text-justify  text-black font-bah ">
               {`NOCLAR/
 POSH
-              `}
-            </p>
-          </div>
-        </div>
-
-        <div className="w-auto ">
-          <div>
-            <p className="font-bah text-lg font-semibold text-black">
-              Acceptance & Continuance
-            </p>
-          </div>
-          <div className="flex gap-1 mt-4 text-black flex-row">
-            <span className="w-fit font-bah">✔️</span>{" "}
-            <p className="prose text-justify text-black font-bah ">
-              {`Client Acceptance / Continuance
-              `}
-            </p>
-          </div>
-          <div className="flex gap-1  text-black flex-row">
-            <span className="w-fit font-bah">✔️</span>{" "}
-            <p className="prose text-justify  text-black font-bah ">
-              {`Integrity of
-client
-              `}
-            </p>
-          </div>{" "}
-          <div className="flex gap-1  text-black flex-row">
-            <span className="w-fit font-bah">✔️</span>{" "}
-            <p className="prose text-justify  text-black font-bah ">
-              {`Competency
-& capabilities
-to perform
-audit
               `}
             </p>
           </div>

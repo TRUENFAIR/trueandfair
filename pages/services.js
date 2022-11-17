@@ -118,6 +118,43 @@ matters.
               `}
                 </p>
               </div>
+              <div className="flex gap-1  text-black flex-row">
+                <p className="prose mt-2 text-justify text-black font-bah ">
+                  <span className="text-justify text-black font-bah font-semibold">
+                    Enabling Network of CA firms
+                  </span>
+                  {` True and Fair believes that it can enable the audit firms.
+              `}
+                </p>
+              </div>
+              <div className="flex gap-1  text-black flex-row">
+                <span className="w-fit ">✔️</span>{" "}
+                <p className="prose text-justify text-black font-bah ">
+                  {`to create a platform to connect, collaborate and form network(s)
+              `}
+                </p>
+              </div>
+              <div className="flex gap-1  text-black flex-row">
+                <span className="w-fit ">✔️</span>{" "}
+                <p className="prose text-justify text-black font-bah ">
+                  {`to strengthen and enhance their capacity, capability and quality and
+              `}
+                </p>
+              </div>
+              <div className="flex gap-1  text-black flex-row">
+                <span className="w-fit ">✔️</span>{" "}
+                <p className="prose text-justify text-black font-bah ">
+                  {`to have common policies and practices, audit tools and technology and common shared values leading to a common culture
+              `}
+                </p>
+              </div>
+               <div className="flex gap-1  text-black flex-row">
+                <p className="prose mt-2 text-justify text-black font-bah ">
+                  
+                  {`Such network of CA firms can work with the guidance and advice of True and Fair in performing audits and also leverage on the brand of True and Fair as it evolves.
+              `}
+                </p>
+              </div>
               <p className="prose  font-bah lg:mb-0 mb-5 pt-8">
                 <Link href="/contact">
                   <a className="active:text-red underline   font-bah font-bold hover:text-orange decoration-blue text-blue">

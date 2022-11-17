@@ -329,84 +329,84 @@ audit
               Illustrative Index 
               </div>
             </div>
-            <div data-aos="fade-up" data-aos-once="true" className="w-auto">
-             
+            {/* <div data-aos="fade-up" data-aos-once="true" className="w-auto"> */}
+{/*              
               <div className="w-auto mt-16">
               <div>
                 <p className="font-bah text-lg font-semibold text-black">Section No : Name of Document</p>
               </div>
                 <div className="flex gap-1 mt-4 text-black flex-row">
-                  <span className="w-fit font-bah">10000 :</span>{" "}
+                  <span className="w-fit font-bah">10000  :</span>{" "}
                   <p className="prose text-justify text-black font-bah ">
                     {`Client Acceptance / Continuance
               `}
                   </p>
                 </div>
                 <div className="flex gap-1  text-black flex-row">
-                  <span className="w-fit font-bah">11000 :</span>{" "}
+                  <span className="w-fit font-bah">11000  :</span>{" "}
                   <p className="prose text-justify  text-black font-bah ">
                     {`Understanding the entity, its business and the environment
               `}
                   </p>
                 </div>{" "}
                 <div className="flex gap-1  text-black flex-row">
-                  <span className="w-fit font-bah">11200 :</span>{" "}
+                  <span className="w-fit font-bah">11200  :</span>{" "}
                   <p className="prose text-justify  text-black font-bah ">
                     {`Understanding internal controls
               `}
                   </p>
                 </div>
                 <div className="flex gap-1  text-black flex-row">
-                  <span className="w-fit font-bah">11300 :</span>{" "}
+                  <span className="w-fit font-bah">11300  :</span>{" "}
                   <p className="prose text-justify text-black font-bah ">
                     {`Assessing risk of fraud
               `}
                   </p>
                 </div>
                 <div className="flex gap-1  text-black flex-row">
-                  <span className="w-fit font-bah">11500 :</span>{" "}
+                  <span className="w-fit font-bah">11500  :</span>{" "}
                   <p className="prose text-justify text-black font-bah ">
                     {`Key entity information relevant to the audit
               `}
                   </p>
                 </div>
                 <div className="flex gap-1  text-black flex-row">
-                  <span className="w-fit font-bah">12000 :</span>{" "}
+                  <span className="w-fit font-bah">12000  :</span>{" "}
                   <p className="prose text-justify text-black font-bah ">
                     {`Planning Materiality
               `}
                   </p>
                 </div>
                 <div className="flex gap-1  text-black flex-row">
-                  <span className="w-fit font-bah">12100 :</span>{" "}
+                  <span className="w-fit font-bah">12100  :</span>{" "}
                   <p className="prose text-justify text-black font-bah ">
                     {`Determine material classes of transactions and disclosures
               `}
                   </p>
                 </div>
                 <div className="flex gap-1  text-black flex-row">
-                  <span className="w-fit font-bah">14100 :</span>{" "}
+                  <span className="w-fit font-bah">14100  :</span>{" "}
                   <p className="prose text-justify text-black font-bah ">
                     {`Audit Plan by Account
               `}
                   </p>
                 </div>
                 <div className="flex gap-1  text-black flex-row">
-                  <span className="w-fit font-bah">15000 :</span>{" "}
+                  <span className="w-fit font-bah">15000  :</span>{" "}
                   <p className="prose text-justify text-black font-bah ">
                     {`Audit administration
               `}
                   </p>
                 </div>
                 <div className="flex gap-1  text-black flex-row">
-                  <span className="w-fit font-bah">20000 :</span>{" "}
+                  <span className="w-fit font-bah">20000  :</span>{" "}
                   <p className="prose text-justify text-black font-bah ">
                     {`Testing design of control (including conclusion on adequacy of design)
               `}
                   </p>
                 </div>
                 <div className="flex gap-1  text-black flex-row">
-                  <span className="w-fit font-bah">20100 :</span>{" "}
+                  <span className="w-fit font-bah">20100  :</span>{" "}
                   <p className="prose text-justify text-black font-bah ">
                     {`Testing Information Technology Controls
               `}
@@ -422,8 +422,8 @@ audit
                 </Link>{" "}
                 to know more.
               </p>
-            </div>
-            <div
+            </div> */}
+            {/* <div
               data-aos="fade-down"
               data-aos-once="true"
               className="w-auto h-auto  lg:h-auto relative"
@@ -432,70 +432,70 @@ audit
                 <p className="font-bah text-lg font-semibold text-black">Section No : Name of Document</p>
               </div>
               <div className="flex gap-1  text-black flex-row">
-                  <span className="w-fit font-bah">20200 :</span>{" "}
+                  <span className="w-fit font-bah">20200  :</span>{" "}
                   <p className="prose text-justify text-black font-bah ">
                     {`Testing controls over information produced by entity
               `}
                   </p>
                 </div>
                 <div className="flex gap-1  text-black flex-row">
-                  <span className="w-fit font-bah">20300 :</span>{" "}
+                  <span className="w-fit font-bah">20300  :</span>{" "}
                   <p className="prose text-justify text-black font-bah ">
                     {`Testing information used in control
               `}
                   </p>
                 </div>
                 <div className="flex gap-1  text-black flex-row">
-                  <span className="w-fit font-bah">21000 :</span>{" "}
+                  <span className="w-fit font-bah">21000  :</span>{" "}
                   <p className="prose text-justify text-black font-bah ">
                     {`Testing operating effectiveness (OE) of controls
               `}
                   </p>
                 </div>
                 <div className="flex gap-1  text-black flex-row">
-                  <span className="w-fit font-bah">25000 :</span>{" "}
+                  <span className="w-fit font-bah">25000  :</span>{" "}
                   <p className="prose text-justify text-black font-bah ">
                     {`Trial Balance
               `}
                   </p>
                 </div>
                 <div className="flex gap-1  text-black flex-row">
-                  <span className="w-fit font-bah">30000 :</span>{" "}
+                  <span className="w-fit font-bah">30000  :</span>{" "}
                   <p className="prose text-justify text-black font-bah ">
                     {`Substantive testing
               `}
                   </p>
                 </div>
                 <div className="flex gap-1  text-black flex-row">
-                  <span className="w-fit font-bah">40100 :</span>{" "}
+                  <span className="w-fit font-bah">40100  :</span>{" "}
                   <p className="prose text-justify text-black font-bah ">
                     {`Compliance with Ind AS – Checklists
               `}
                   </p>
                 </div>
                 <div className="flex gap-1  text-black flex-row">
-                  <span className="w-fit font-bah">50100 :</span>{" "}
+                  <span className="w-fit font-bah">50100  :</span>{" "}
                   <p className="prose text-justify text-black font-bah ">
                     {`Compliance with Standards on Auditing – Checklists
               `}
                   </p>
                 </div>
                 <div className="flex gap-1  text-black flex-row">
-                  <span className="w-fit font-bah">50400 :</span>{" "}
+                  <span className="w-fit font-bah">50400  :</span>{" "}
                   <p className="prose text-justify text-black font-bah ">
                     {`Audit summary memorandum
               `}
                   </p>
                 </div>
                 <div className="flex gap-1  text-black flex-row">
-                  <span className="w-fit font-bah">50600 :</span>{" "}
+                  <span className="w-fit font-bah">50600  :</span>{" "}
                   <p className="prose text-justify text-black font-bah ">
                     {`EQCR
               `}
                   </p>
                 </div>
                 <div className="flex gap-1  text-black flex-row">
-                  <span className="w-fit font-bah">50000 :</span>{" "}
+                  <span className="w-fit font-bah">50000  :</span>{" "}
                   <p className="prose text-justify text-black font-bah ">
                     {`Audit Reporting
               `}
@@ -504,13 +504,280 @@ audit
                 <div className="flex gap-1  text-black flex-row">
                   <span className="w-fit font-bah">51000 :</span>{" "}
                   <p className="prose text-justify text-black font-bah ">
-                    {`Consolidated related documents
+                    {`  Consolidated related documents
               `}
                   </p>
                 </div>
               
               
-            </div>
+            </div> */}
+            <div className="flex flex-col mt-8">
+                <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
+                  <div className="py-2 inline-block min-w-full sm:px-6 lg:px-8">
+                    <div className="">
+                      <table  data-aos="fade-up" data-aos-once="true" className="min-w-full bg-">
+                        <thead className="border">
+                          <tr>
+                            <th
+                              scope="col"
+                              className="text-sm border border-black font-medium text-black px-6 py-4 text-left"
+                            >
+                              Section No
+                            </th>
+                            <th
+                              scope="col"
+                              className="text-sm border border-black font-medium text-black px-6 py-4 text-left"
+                            >
+                              Name of Document
+                            </th>
+                           
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr className="border-b ">
+                            <td className="px-6 py-4 border border-black whitespace-nowrap text-sm font-medium text-black">
+                            10000
+                            </td>
+                            <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
+                             
+                            Client Acceptance / Continuance
+                            </td>
+                           
+                          </tr>
+                          <tr className="bg- border-b">
+                            <td className="px-6 border border-black py-4 whitespace-nowrap text-sm font-medium text-black">
+                            11000 
+                            </td>
+                            <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
+                            Understanding the entity, its business and the environment
+                            </td>
+                            
+                          </tr>
+                          <tr className="bg- border-b">
+                            <td className="px-6 border border-black py-4 whitespace-nowrap text-sm font-medium text-black">
+                            11200
+                            </td>
+                            <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
+                            Understanding internal controls
+                            </td>
+                            
+                          </tr>
+                          <tr className="bg- border-b">
+                            <td className="px-6 border border-black py-4 whitespace-nowrap text-sm font-medium text-black">
+                            11300
+                            </td>
+                            <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
+                            Assessing risk of fraud
+                            </td>
+                            
+                          </tr>
+                          <tr className="bg- border-b">
+                            <td className="px-6 border border-black py-4 whitespace-nowrap text-sm font-medium text-black">
+                            11500
+                            </td>
+                            <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
+                            Key entity information relevant to the audit
+                            </td>
+                            
+                          </tr>
+                          <tr className="bg- border-b">
+                            <td className="px-6 border border-black py-4 whitespace-nowrap text-sm font-medium text-black">
+                            12000
+                            </td>
+                            <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
+                            Planning Materiality
+                            </td>
+                            
+                          </tr>
+                          <tr className="bg- border-b">
+                            <td className="px-6 border border-black py-4 whitespace-nowrap text-sm font-medium text-black">
+                            12100
+                            </td>
+                            <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
+                            Determine material classes of transactions and disclosures
+                            </td>
+                            
+                          </tr>
+                          <tr className="bg- border-b">
+                            <td className="px-6 border border-black py-4 whitespace-nowrap text-sm font-medium text-black">
+                            14100
+                            </td>
+                            <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
+                            Audit Plan by Account
+                            </td>
+                            
+                          </tr>
+                          <tr className="bg- border-b">
+                            <td className="px-6 border py-4 border-black whitespace-nowrap text-sm font-medium text-black">
+                            15000
+                            </td>
+                            <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
+                            Audit administration
+                            </td>
+                            
+                          </tr>
+                          <tr className="bg- border-b">
+                            <td className="px-6 border py-4 border-black whitespace-nowrap text-sm font-medium text-black">
+                            20000
+                            </td>
+                            <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
+                            Testing design of control (including conclusion on adequacy of design)
+                            </td>
+                            
+                          </tr>
+                          <tr className="bg- border-b">
+                            <td className="px-6 border py-4 border-black whitespace-nowrap text-sm font-medium text-black">
+                            20100
+                            </td>
+                            <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
+                            Testing Information Technology Controls
+                            </td>
+                            
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-col mt-8">
+                <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
+                  <div className="py-2 inline-block min-w-full sm:px-6 lg:px-8">
+                    <div className="">
+                      <table  data-aos="fade-up" data-aos-once="true" className="min-w-full bg-">
+                        <thead className="border">
+                          <tr>
+                            <th
+                              scope="col"
+                              className="text-sm border border-black font-medium text-black px-6 py-4 text-left"
+                            >
+                              Section No 
+                            </th>
+                            <th
+                              scope="col"
+                              className="text-sm border border-black font-medium text-black px-6 py-4 text-left"
+                            >
+                              Name of Document
+                            </th>
+                           
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr className="border-b ">
+                            <td className="px-6 py-4 border border-black whitespace-nowrap text-sm font-medium text-black">
+                            20200
+                            </td>
+                            <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
+                            Testing controls over information produced by entity
+                            </td>
+                           
+                          </tr>
+                          <tr className="bg- border-b">
+                            <td className="px-6 border  border-black py-4 whitespace-nowrap text-sm font-medium text-black">
+                            20300
+                            </td>
+                            <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
+                            Testing information used in control
+                            </td>
+                            
+                           
+                          </tr>
+                          <tr className="bg- border-b">
+                            <td className="px-6 border border-black py-4 whitespace-nowrap text-sm font-medium text-black">
+                            21000
+                            </td>
+                            <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
+                            Testing operating effectiveness (OE) of controls
+                            </td>
+                            
+                          </tr>
+                          <tr className="bg- border-b">
+                            <td className="px-6 border py-4 border-black whitespace-nowrap text-sm font-medium text-black">
+                            25000
+                            </td>
+                            <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
+                            Trial Balance
+                            </td>
+                           
+                          </tr>
+                          <tr className="bg- border-b">
+                            <td className="px-6 border py-4 border-black whitespace-nowrap text-sm font-medium text-black">
+                            30000
+                            </td>
+                            <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
+                            Substantive testing
+                            </td>
+                           
+                          </tr>
+                          <tr className="bg- border-b">
+                            <td className="px-6 border border-black py-4 whitespace-nowrap text-sm font-medium text-black">
+                            40100 
+                            </td>
+                            <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
+                            Compliance with Ind AS – Checklists
+                            </td>
+                           
+                          </tr>
+                          <tr className="bg- border-b">
+                            <td className="px-6 border border-black py-4 whitespace-nowrap text-sm font-medium text-black">
+                            50100
+                            </td>
+                            <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
+                            Compliance with Standards on Auditing – Checklists
+                            </td>
+                           
+                          </tr>
+                          <tr className="bg- border-b">
+                            <td className="px-6 border border-black py-4 whitespace-nowrap text-sm font-medium text-black">
+                            50400
+                            </td>
+                            <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
+                            Audit summary memorandum
+                            </td>
+                           
+                          </tr>
+                          <tr className="bg- border-b">
+                            <td className="px-6 border border-black py-4 whitespace-nowrap text-sm font-medium text-black">
+                            50600
+                            </td>
+                            <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
+                            EQCR
+                            </td>
+                           
+                          </tr>
+                          <tr className="bg- border-b">
+                            <td className="px-6 border border-black py-4 whitespace-nowrap text-sm font-medium text-black">
+                            50400
+                            </td>
+                            <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
+                            Audit summary memorandum
+                            </td>
+                           
+                          </tr>
+                          <tr className="bg- border-b">
+                            <td className="px-6 border border-black py-4 whitespace-nowrap text-sm font-medium text-black">
+                            50000
+                            </td>
+                            <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
+                            Audit Reporting
+                            </td>
+                           
+                          </tr>
+                          <tr className="bg- border-b">
+                            <td className="px-6 border border-black py-4 whitespace-nowrap text- font-medium text-black">
+                            51000 
+                            </td>
+                            <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
+                            Consolidated related documents
+                            </td>
+                           
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
             {/* <div
               className="w-full h-[100px] md:block hidden  lg:col-span-2  col-span-1 "

@@ -200,6 +200,21 @@ export default function Home() {
               Tool(s), access to experts, trainings, and insights on best
               practices in the financial reporting ecosystem.
             </p>
+
+            <p className="leading-loose  mt-4 text-justify  font-bah text-black ">
+              <span className="leading-loose text-lg    text-center  font-bah text-black font-semibold">
+                Provide common culture and platform to CA Firms to form Network
+                of CA Firms
+              </span>{" "}
+              - True and Fair believes that it can enable the audit firms to
+              create a platform to connect, collaborate and form network(s), to
+              strengthen and enhance their capacity, capability and quality, and
+              to have common policies and practices, audit tools and technology
+              and common shared values leading to a common culture. Such network
+              of CA firms can work with the guidance and advice of True and Fair
+              in performing audits and also leverage on the brand of True and
+              Fair as it evolves.
+            </p>
             <p className="leading-loose  mt-4 text-justify  font-bah text-black ">
               <span className="text-center leading-loose text-lg    font-bah text-black font-semibold">
                 What’s more?
