@@ -3,7 +3,7 @@ import Head from "next/head";
 import "../styles/globals.css";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import Link from "next/link";
+// import Link from "next/link";
 
 import Fixeddiv from "../components/fixediv";
 
@@ -46,12 +46,15 @@ function MyApp({ Component, pageProps }) {
   return (
     <Layout>
       <Head>
-        <title>{`True and Fair`}</title>
-        <meta
-          name="description"
-          content={`Official website of True And Fair`}
-        />
+        <title>True & Fair | Auditing, Financial reporting, Regulatory & Quality standards</title>
+        <meta name="description" content="Our overarching vision is to be recognised as the STANDARD SETTER in the financial reporting ecosystem regarding quality of audits undertaken and performed. To achieve our vision, our mission is to build capacity and enhance the professional capability and quality of audits performed by audit firms."/>
         <link rel="icon" href="/homeicon/tnf.png" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="True & Fair" />
+        <meta property="og:description" content="Our overarching vision is to be recognised as the STANDARD SETTER in the financial reporting ecosystem regarding quality of audits undertaken and performed. To achieve our vision, our mission is to build capacity and enhance the professional capability and quality of audits performed by audit firms"/>
+        <meta property="og:image" content="/footer.png" />
+        <meta property="og:url" content="https://www.trueandfair.pro/" />
+        <meta property="og:site_name" content="True & Fair" />
       </Head>
       <Component {...pageProps} />
       {soicalmedia && <Fixeddiv clicked={clicked} />}

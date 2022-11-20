@@ -1,5 +1,5 @@
 import React from "react";
-
+import Head from "next/head";
 import Image from "next/image";
 import { useState } from "react";
 import { FontAwesomeIcon, FaPlay } from "react-icons/fa";
@@ -520,6 +520,10 @@ export default function Library() {
 
   return (
     <>
+      <Head>
+        <title>True & Fair | Library</title>
+        <meta name="description" content="Illustrative Quality Standards, Illustrative Audit Practice Manual, Illustrative Practice Aids & Guidance, Regulatory Developments, Professional Standards & Regulations"/>
+      </Head>
       <section className="text-black md:container md:mx-auto  ">
         <div className="mt-16">
           <ul className="grid gap-3 grid-cols-2 lg:grid-cols-5  mt-5 text-center  text-black bg-white rounded-full p-1">

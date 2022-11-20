@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Head from "next/head";
 import Link from "next/link";
 import { useForm } from "react-hook-form";
 import InputController from "../components/InputController";
@@ -154,6 +155,10 @@ export default function Contact() {
 
   return (
     <>
+      <Head>
+        <title>True & Fair | Contact Us</title>
+        <meta name="description" content="True And Fair Professionals Network - Get in touch with us"/>
+      </Head>
       <section className="pt-12 pb-12 text-zinc-900 bg-lightgray">
         <div className="md:container p-4 mx-auto">
           <h1 className="text-4xl text-center font-bah tracking-wide  text-green-900">

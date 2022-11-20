@@ -2,17 +2,17 @@ import Image from "next/image";
 
 import Link from "next/link";
 
-import { TypeAnimation } from "react-type-animation";
+// import { TypeAnimation } from "react-type-animation";
 import Typewriter from "typewriter-effect";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
-import Libraryslide from "../components/libraryslide";
-import Resourceslide from "../components/resorceslide";
-import Abouthome from "../components/abouthome";
-import Fixediv from "../components/fixediv";
-import Focusareaslide from "../components/focusareaslide";
-import Focusarea from "../components/focusarea";
+// import Libraryslide from "../components/libraryslide";
+// import Resourceslide from "../components/resorceslide";
+// import Abouthome from "../components/abouthome";
+// import Fixediv from "../components/fixediv";
+// import Focusareaslide from "../components/focusareaslide";
+// import Focusarea from "../components/focusarea";
 
 const rightIcon = (
   <svg
@@ -171,7 +171,6 @@ export default function Home() {
             <p className="text-3xl font-bah  title-font text-black   mb-6">
               True and Fair Professionals Network
             </p>
-
             {/* <p className="leading-loose   text-justify  font-bah text-black ">
               True and Fair aims to enhance the audit quality of CA firms by
               providing is a digital platform containing professional standards,

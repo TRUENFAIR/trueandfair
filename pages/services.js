@@ -17,6 +17,10 @@ export default function Services() {
   }, []);
   return (
     <>
+      <Head>
+        <title>True & Fair | Services</title>
+        <meta name="description" content="We offer a wide range of services for audit firms to meet their business objectives with clarity and confidence. Any individual/ firm/ organisation which promotes a culture of quality is a potential stakeholder with True and Fair since they will be sharing a common objective of promoting audit quality"/>
+      </Head>
       <section>
         <div
           className="h-72 flex flex-col justify-end "

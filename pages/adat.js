@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import AOS from "aos";
@@ -64,6 +65,10 @@ function Adat() {
   ];
   return (
     <>
+      <Head>
+        <title>True & Fair | ADAT</title>
+        <meta name="description" content="The Audit Documentation and Archival Tool (ADAT) facilitates auditors to document their audit work securely ensuring compliance with auditing standards as set by Regulators and to meet their expectations for monitoring and inspection"/>
+      </Head>
       <section>
         <div
           className="h-72 flex flex-col justify-end "

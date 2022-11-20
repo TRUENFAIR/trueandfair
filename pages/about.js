@@ -161,6 +161,11 @@ export default function About() {
   ];
   return (
     <>
+      <Head>
+        <title>True & Fair | About Us</title>
+        <meta name="description" content="True and Fair is a start-up firm formed with a vision to enable capacity building and capability enhancement of audit firms. Founded by a team of seasoned CA professionals, we bring together a collective experience of more than 100 years in audits and accounting. Leveraging on our experience we have designed a set of policies and practices to help our clients benefit from our technical expertise. We have the skills and scale to serve audit firms (both established and formative), upcoming chartered accountants, Regulators, and corporates - while remaining agile and personal in our approach. True and Fair is one-of-a-kind firm and aspires to be the benchmark STANDARD SETTER in the auditing ecosystem."/>
+      </Head>
+      
       <section className="bg-lightgray">
         <section>
           <div
@@ -177,9 +182,9 @@ export default function About() {
               data-aos-once="true"
               className="h-[90px] w-1/2 flex justify-center  items-center font-bah text-2xl text-white bg-slate-800"
             >
-              <p className="text-3xl font-bah  title-font text-white">
+              <h1 className="text-3xl font-bah  title-font text-white">
                 About Us
-              </p>
+              </h1>
             </div>
           </div>
         </section>
@@ -215,9 +220,9 @@ export default function About() {
           id="meettheteam"
         ></div>
         <section className="bg-white ">
-          <p className="text-3xl font-bah  title-font text-black text-center mb-2">
+          <h2 className="text-3xl font-bah  title-font text-black text-center mb-2">
             Meet The Team
-          </p>
+          </h2>
           <div className="md:container flex justify-center md:mx-auto">
             <ul className="grid grid-flow-col gap-4 w-full md:w-1/2 mt-5 text-center  text-black  rounded-full p-1">
               {discover.map(({ name }, index) => {
@@ -243,7 +248,7 @@ export default function About() {
             </ul>
           </div>
         </section>
-        <section className="bg-white md:pt-1 md:pb-10 ">
+        <section className="bg-white md:pt-1 md:pb-10">
           <div className="md:container px-6 mb-10  md:mx-auto">
             <div
               className={`${

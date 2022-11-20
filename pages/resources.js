@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
@@ -119,6 +120,10 @@ export default function Resources() {
 
   return (
     <>
+      <Head>
+        <title>True & Fair | Resources</title>
+        <meta name="description" content="True And Fair Professionals Network - Vides, Blogs and News coming soon"/>
+      </Head>
       <section className="md:container mx-auto">
         <div className="py-5  md:py-10">
           <section className="bg-white ">
