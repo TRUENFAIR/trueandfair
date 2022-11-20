@@ -138,7 +138,7 @@ export default function Resources() {
                         buttonClick(index);
                       }}
                     >
-                      <p
+                      <h1
                         className={`${
                           index === buttonIndex
                             ? " text-blue text-2xl font-bold font-bah border-blue border-b-4"
@@ -146,7 +146,7 @@ export default function Resources() {
                         } flex justify-center text-xl  font-bah  title-font text-black   mb-4 hover:cursor-pointer`}
                       >
                         {name}
-                      </p>
+                      </h1>
                     </li>
                   );
                 })}

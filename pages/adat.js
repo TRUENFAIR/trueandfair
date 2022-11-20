@@ -84,9 +84,9 @@ function Adat() {
             data-aos-once="true"
             className="lg:h-[90px] h-[200px]  w-[80%] md:w-1/2 flex justify-center  items-center font-bah text-2xl text-white bg-slate-800"
           >
-            <p className=" text-3xl font-bah  title-font text-white">
+            <h1 className=" text-3xl font-bah  title-font text-white">
               ADAT®️(Audit Documentation and Archival Tool)
-            </p>
+            </h1>
           </div>
         </div>
       </section>

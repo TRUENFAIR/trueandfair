@@ -536,7 +536,7 @@ export default function Library() {
                     buttonClick(index);
                   }}
                 >
-                  <p
+                  <h1
                     className={`${
                       index === buttonIndex
                         ? " text-blue  text-xl font-bold font-bah border-blue border-b-4"
@@ -544,7 +544,7 @@ export default function Library() {
                     } flex justify-center text-xl font-bah  title-font text-black   mb-4 hover:cursor-pointer`}
                   >
                     {name}
-                  </p>
+                  </h1>
                 </li>
               );
             })}

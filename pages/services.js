@@ -36,9 +36,9 @@ export default function Services() {
             data-aos-once="true"
             className="h-[90px] w-1/2 flex justify-center  items-center font-bah text-2xl text-white bg-slate-800"
           >
-            <p className="text-3xl font-bah  title-font text-white ">
+            <h1 className="text-3xl font-bah  title-font text-white ">
               Our Services
-            </p>
+            </h1>
           </div>
         </div>
       </section>
