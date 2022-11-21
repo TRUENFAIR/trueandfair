@@ -180,7 +180,7 @@ export default function Blogs() {
       <section className="text-black bg-coustom1 body-font">
         <div className="container px-5 py-14 mx-auto">
           <div className="flex flex-col flex-wrap text-center w-full mb-20 ">
-            <h1 className="sm:text-3xl text-2xl  title-font mb-4 text-black">
+            <h1 className="sm:text-3xl text-2xl font-bah title-font mb-4 text-black">
               Events
             </h1>
           </div>
@@ -207,7 +207,7 @@ export default function Blogs() {
                     </h1>
                     {/* <p className="text-left">Source : {sorc}</p>
                     <p className="text-left">Author : {auth}</p> */}
-                    <p className="leading-relaxed mt-5 text-justify ">{desc}</p>
+                    <p className="leading-relaxed font-bah mt-5 text-justify ">{desc}</p>
                   </div>
                   <div className="flex justify-center mt-1 ">
                     <Link href={link}>

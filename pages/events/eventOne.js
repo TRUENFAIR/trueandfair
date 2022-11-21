@@ -25,12 +25,12 @@ export default function Life() {
     <>
       <section className="pt-12 pb-24 text-black bg-coustom1">
         <div className="md:container p-4 md:mx-auto">
-          <h1 className="text-4xl   text-bold  w-full  text-center   text-black">
+          <h1 className="text-4xl   text-bold  w-full  font-bah text-center   text-black">
             WCOA 2022{" "}
           </h1>
 
-          <p className="py-12 text-justify">
-            {`The 21st World Congress of Accountants 2022 scheduled to be held from November 18-21, 2022 at Jio World Centre, Mumbai, India. The World Congress, this time, would dwell upon the theme 'Building Trust Enabling Sustainability', keeping in mind the important role accountancy profession is playing as protector of public interest and how the profession can play an instrumental role to enable sustainable economies for the future. True and Fair is delighted to participate in this event with several prominent stakeholders from the accounting and auditing ecosystem worldwide. Visit`}{" "}
+          <p className="py-12 font-bah text-justify">
+            {`The 21st World Congress of Accountants 2022 is scheduled to be held from November 18-21, 2022 at Jio World Centre, Mumbai, India. The World Congress, this time, would dwell upon the theme 'Building Trust Enabling Sustainability', keeping in mind the important role accountancy profession is playing as protector of public interest and how the profession can play an instrumental role to enable sustainable economies for the future. True and Fair is delighted to participate in this event with several prominent stakeholders from the accounting and auditing ecosystem worldwide. Visit`}{" "}
             <a
               target="_blank"
               rel="noreferrer"
