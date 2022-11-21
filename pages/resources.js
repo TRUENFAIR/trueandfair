@@ -14,7 +14,7 @@ export default function Resources() {
   };
   const { asPath } = useRouter();
   useEffect(() => {
-    const hashes = ["Videos", "Blogs", "News",];
+    const hashes = ["Videos", "Blogs", "News"];
     const whichButton = hashes.indexOf(asPath.split("#")[1]);
 
     setButtonIndex(whichButton === -1 ? 0 : whichButton);
@@ -40,7 +40,87 @@ export default function Resources() {
             <iframe
               width="100%"
               height="100%"
-              src="https://www.youtube.com/embed/5vtQLqjcokI"
+              src="https://www.youtube.com/embed/PYFi8hMqbog"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          ),
+        },
+        {
+          name: "Training and Auditing Small Entities - Kirti and Rakesh",
+          desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum cupiditate possimus dolore voluptatibus similique optioducimus provident,",
+          imgs: "/events/2.jpg",
+          vidoes: (
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/yfQaD36bapU"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          ),
+        },
+        {
+          name: "Understand ADAT - the Audit Documentation and Archival Tool",
+          desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum cupiditate possimus dolore voluptatibus similique optioducimus provident,",
+          imgs: "/events/3.png",
+          vidoes: (
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/GcSk6ZZqOOY"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          ),
+        },
+        {
+          name: "Discussion with Partners at JAA & Associates",
+          desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum cupiditate possimus dolore voluptatibus similique optioducimus provident,",
+          imgs: "/events/4.png",
+          vidoes: (
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/cLq_HVwLpdE"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          ),
+        },
+        {
+          name: "Understanding needs to audit firms - with Guru & Jana",
+          desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum cupiditate possimus dolore voluptatibus similique optioducimus provident,",
+          imgs: "/events/5.png",
+          vidoes: (
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/s0ZYjH2V8eM"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          ),
+        },
+        {
+          name: "Meeting CA Parveen Kumar (National Head Assurance, M/s ASA & Associates LLP)",
+          desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum cupiditate possimus dolore voluptatibus similique optioducimus provident,",
+          imgs: "/events/6.png",
+          vidoes: (
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/UFX_OTigXPg"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -82,7 +162,136 @@ export default function Resources() {
         //   ),
         // },
       ],
-      blogsdatafull: [],
+      blogsdatafull: [
+        {
+          name: "CA Zubin Billimoria (Treasurer BCAS and Practicing CA) - thoughts on audit professionk",
+          desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum cupiditate possimus dolore voluptatibus similique optioducimus provident,",
+          imgs: "/events/7.png",
+          vidoes: (
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/490Ep8hQCT8"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          ),
+        },
+        {
+          name: "In discussion with Harinderjit Singh (Former Chairman of AASB, ICAI)",
+          desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum cupiditate possimus dolore voluptatibus similique optioducimus provident,",
+          imgs: "/events/8.png",
+          vidoes: (
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/tbe-iUZxQHY"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          ),
+        },
+        {
+          name: "Talk with CA Santhanakrishnan (Managing Partner, PKF Sridhar & Santhanam LLP)",
+          desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum cupiditate possimus dolore voluptatibus similique optioducimus provident,",
+          imgs: "/events/9.png",
+          vidoes: (
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/bCKb0v3RKQI"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          ),
+        },
+        {
+          name: "Dialogue with Mr. N. P. Sarda (Past President ICAI, and Former Chairman of Deloitte India)",
+          desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum cupiditate possimus dolore voluptatibus similique optioducimus provident,",
+          imgs: "/events/10.png",
+          vidoes: (
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/FEEZJaN-IAs"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          ),
+        },
+        {
+          name: "Meeting Dr. Ashok Haldia (Former Secretary of the ICAI)",
+          desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum cupiditate possimus dolore voluptatibus similique optioducimus provident,",
+          imgs: "/events/11.png",
+          vidoes: (
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/WI3QHvAU-r8"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          ),
+        },
+        {
+          name: "Discussion with M.P. Vijaykumar (Former Chairman of ASB of ICAI)",
+          desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum cupiditate possimus dolore voluptatibus similique optioducimus provident,",
+          imgs: "/events/12.png",
+          vidoes: (
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/RdcPWxG32C4"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          ),
+        },
+        {
+          name: "Insights on Quality Improvement - P.R. Ramesh",
+          desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum cupiditate possimus dolore voluptatibus similique optioducimus provident,",
+          imgs: "/events/13.png",
+          vidoes: (
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/jGJsItHigDg"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          ),
+        },
+        {
+          name: "Requirements of Auditors, approach and quality expectation- Y. H Malegam (Former Chairman - NACAS)",
+          desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum cupiditate possimus dolore voluptatibus similique optioducimus provident,",
+          imgs: "/events/14.png",
+          vidoes: (
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/qb7YdHMt48s"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          ),
+        },
+      ],
     },
     {
       name: "Blogs",
@@ -97,8 +306,8 @@ export default function Resources() {
           desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos a eveniet sequi similique expedita id obcaecati velit suscipit consequuntur excepturi repellendus iste illo blanditiis possimus fugit dol",
           imgs: "/pause/PAUSE3.PNG",
         },
-       
       ],
+      blogsdatafull: [],
     },
     {
       name: "News",
@@ -113,8 +322,8 @@ export default function Resources() {
           desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos a eveniet sequi similique expedita id obcaecati velit suscipit consequuntur excepturi repellendus iste illo blanditiis possimus fugit dol",
           imgs: "/pause/PAUSE3.PNG",
         },
-       
       ],
+      blogsdatafull: [],
     },
   ];
 
@@ -122,7 +331,10 @@ export default function Resources() {
     <>
       <Head>
         <title>True & Fair | Resources</title>
-        <meta name="description" content="True And Fair Professionals Network - Vides, Blogs and News coming soon"/>
+        <meta
+          name="description"
+          content="True And Fair Professionals Network - Vides, Blogs and News coming soon"
+        />
       </Head>
       <section className="md:container mx-auto">
         <div className="py-5  md:py-10">
@@ -162,79 +374,79 @@ export default function Resources() {
           <div className="grid gap-6 mt-8 row-gap-5 mb-8 lg:grid-cols-3 sm:row-gap-6 sm:grid-cols-2">
             {discover[buttonIndex].blogsdata.map(
               ({ name, imgs, desc, vidoes }, index) => {
-                if(buttonIndex === 0){
-                  return(
-                  <div
-                    key={index}
-                    onClick={() => loadclick(vidoes)}
-                    href="/"
-                    aria-label="View Item"
-                  >
-                    <div className="relative rounded shadow-lg  hover:shadow-2xl">
-                      <img
-                        className="object-cover w-full h-56 md:h-64 xl:h-80"
-                        src={imgs}
-                        alt=""
-                      />
-                      <div className="absolute top-[30%] left-[40%] animate-pulse duration-100 ">
-                        <FaPlay color="slate" size={80} />
-                      </div>
-                      <div className="absolute inset-x-0 bottom-0 px-6 py-4 bg-black bg-opacity-75">
-                        <p className="text-sm font-medium font-bah tracking-wide text-white">
-                          {name}
-                        </p>
+                if (buttonIndex === 0) {
+                  return (
+                    <div
+                      key={index}
+                      onClick={() => loadclick(vidoes)}
+                      href="/"
+                      aria-label="View Item"
+                    >
+                      <div className="relative rounded shadow-lg  hover:shadow-2xl">
+                        <img
+                          className="object-cover w-full h-56 md:h-64 xl:h-80"
+                          src={imgs}
+                          alt=""
+                        />
+                        <div className="absolute top-[30%] left-[40%] animate-pulse duration-100 ">
+                          <FaPlay color="slate" size={80} />
+                        </div>
+                        <div className="absolute inset-x-0 bottom-0 px-6 py-4 bg-black bg-opacity-75">
+                          <p className="text-sm font-medium font-bah tracking-wide text-white">
+                            {name}
+                          </p>
+                        </div>
                       </div>
                     </div>
-                  </div>)
-                }
-                else{
-                  return(
-            //         <div
-            //         key={index}
-            //         className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm"
-            //       >
-            //         <img
-            //           src="https://images.pexels.com/photos/2408666/pexels-photo-2408666.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
-            //           className="object-cover w-full h-64"
-            //           alt=""
-            //         />
-            //         <div className="p-2  border-t-0">
-            //           <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
-            //             <a
-            //               href=""
-            //               className="transition-colors duration-200 text-blue-gray-900 hover:text-deep-purple-accent-700"
-            //               aria-label="Category"
-            //               title="traveling"
-            //             >
-            //             {name}
-            //             </a>
-            //           </p>
-            //           <a
-            //             href=""
-            //             aria-label="Category"
-            //             title="Visit the East"
-            //             className="inline-block mb-3 font-bah text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700"
-            //           >
-            //             Title
-            //           </a>
-            //           <p className="mb-2 text-gray-700 font-bah">
-            //             Lorem ipsum dolor sit amet, consectetur adipisicing
-            //             elit. Dignissimos a eveniet sequi similique expedita id
-            //             obcaecati velit suscipit consequuntur excepturi
-            //             repellendus iste illo blanditiis possimus fugit
-            //             doloribus, numquam, maxime ratione!
-            //           </p>
-            //           <div className="flex justify-center">
-            // <Link href=" /reso/reso1">
-            //   <button className="mt-8 font-bah  bg-white border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
-            //     READ MORE
-            //   </button>
-            // </Link>
-            // </div>
-            //         </div>
-            //       </div>
-            <div className="text-2xl font-bah">Coming Soon</div>
-                  )
+                  );
+                } else {
+                  return (
+                    //         <div
+                    //         key={index}
+                    //         className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm"
+                    //       >
+                    //         <img
+                    //           src="https://images.pexels.com/photos/2408666/pexels-photo-2408666.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
+                    //           className="object-cover w-full h-64"
+                    //           alt=""
+                    //         />
+                    //         <div className="p-2  border-t-0">
+                    //           <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
+                    //             <a
+                    //               href=""
+                    //               className="transition-colors duration-200 text-blue-gray-900 hover:text-deep-purple-accent-700"
+                    //               aria-label="Category"
+                    //               title="traveling"
+                    //             >
+                    //             {name}
+                    //             </a>
+                    //           </p>
+                    //           <a
+                    //             href=""
+                    //             aria-label="Category"
+                    //             title="Visit the East"
+                    //             className="inline-block mb-3 font-bah text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700"
+                    //           >
+                    //             Title
+                    //           </a>
+                    //           <p className="mb-2 text-gray-700 font-bah">
+                    //             Lorem ipsum dolor sit amet, consectetur adipisicing
+                    //             elit. Dignissimos a eveniet sequi similique expedita id
+                    //             obcaecati velit suscipit consequuntur excepturi
+                    //             repellendus iste illo blanditiis possimus fugit
+                    //             doloribus, numquam, maxime ratione!
+                    //           </p>
+                    //           <div className="flex justify-center">
+                    // <Link href=" /reso/reso1">
+                    //   <button className="mt-8 font-bah  bg-white border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
+                    //     READ MORE
+                    //   </button>
+                    // </Link>
+                    // </div>
+                    //         </div>
+                    //       </div>
+                    <div className="text-2xl font-bah">Coming Soon</div>
+                  );
                 }
               }
             )}
@@ -261,13 +473,115 @@ export default function Resources() {
             </div>
           )}
 
-          <div className="text-center flex justify-center">
-            <button className="mt-8 font-bah   border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg">
-              Watch More
-            </button>
-          </div>
+          {loadmore && (
+            <div className="w-full flex mb-5  justify-center">
+              <button
+                onClick={() => (loadclick(), setLoadmore(null))}
+                className="mt-8 font-bah mb-5   border-2 border-blue text-blue font-bold text-xs cursor-pointer hover:text-white hover:bg-blue p-3 rounded-lg transition-all "
+              >
+                Load More
+              </button>
+            </div>
+          )}
         </div>
       </section>
+      {
+        <div
+          className={`${fullblog ? "py-16  md:container md:mx-auto" : "mb-5 "}`}
+        >
+          <div className="grid gap-8   lg:grid-cols-3 ">
+            {fullblog &&
+              discover[buttonIndex].blogsdatafull.map(
+                ({ name, imgs, desc, small, titles, ser, vidoes }, index) => {
+                  if (buttonIndex === 0) {
+                    return (
+                      <div
+                        key={index}
+                        onClick={() => loadclick(vidoes)}
+                        href="/"
+                        aria-label="View Item"
+                      >
+                        <div className="relative rounded shadow-lg  hover:shadow-2xl">
+                          <img
+                            className="object-cover w-full h-56 md:h-64 xl:h-80"
+                            src={imgs}
+                            alt=""
+                          />
+                          <div className="absolute top-[30%] left-[40%] animate-pulse duration-100 ">
+                            <FaPlay color="slate" size={80} />
+                          </div>
+                          <div className="absolute inset-x-0 bottom-0 px-6 py-4 bg-black bg-opacity-75">
+                            <p className="text-sm font-medium font-bah tracking-wide text-white">
+                              {name}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    );
+                  } else {
+                    return (
+                      //         <div
+                      //         key={index}
+                      //         className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm"
+                      //       >
+                      //         <img
+                      //           src="https://images.pexels.com/photos/2408666/pexels-photo-2408666.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
+                      //           className="object-cover w-full h-64"
+                      //           alt=""
+                      //         />
+                      //         <div className="p-2  border-t-0">
+                      //           <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
+                      //             <a
+                      //               href=""
+                      //               className="transition-colors duration-200 text-blue-gray-900 hover:text-deep-purple-accent-700"
+                      //               aria-label="Category"
+                      //               title="traveling"
+                      //             >
+                      //             {name}
+                      //             </a>
+                      //           </p>
+                      //           <a
+                      //             href=""
+                      //             aria-label="Category"
+                      //             title="Visit the East"
+                      //             className="inline-block mb-3 font-bah text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700"
+                      //           >
+                      //             Title
+                      //           </a>
+                      //           <p className="mb-2 text-gray-700 font-bah">
+                      //             Lorem ipsum dolor sit amet, consectetur adipisicing
+                      //             elit. Dignissimos a eveniet sequi similique expedita id
+                      //             obcaecati velit suscipit consequuntur excepturi
+                      //             repellendus iste illo blanditiis possimus fugit
+                      //             doloribus, numquam, maxime ratione!
+                      //           </p>
+                      //           <div className="flex justify-center">
+                      // <Link href=" /reso/reso1">
+                      //   <button className="mt-8 font-bah  bg-white border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
+                      //     READ MORE
+                      //   </button>
+                      // </Link>
+                      // </div>
+                      //         </div>
+                      //       </div>
+                      <div className="text-2xl font-bah">Coming Soon</div>
+                    );
+                  }
+                }
+              )}
+          </div>
+        </div>
+      }
+      {fullblog && (
+        <div className="w-full flex mt-5 justify-center">
+          <button
+            onClick={() => (setFullblog(null), setLoadmore(1))}
+            className="mt-5 mb-10 font-bah   border-2 border-blue text-blue font-bold text-xs cursor-pointer hover:text-white hover:bg-blue p-3 rounded-lg transition-all "
+          >
+            Show Less
+          </button>
+        </div>
+      )}
     </>
   );
 }

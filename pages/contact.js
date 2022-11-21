@@ -512,7 +512,7 @@ export default function Contact() {
         </div>
       </section>
 
-      <section className="w-full">
+      {/* <section className="w-full">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.2655063195148!2d77.76031461536525!3d13.018757017363006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae0e34f17ea821%3A0xf1900851d87b1ef7!2sAkshaya%20Redstone!5e0!3m2!1sen!2sin!4v1663655785820!5m2!1sen!2sin"
           width="100%"
@@ -521,7 +521,7 @@ export default function Contact() {
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
-      </section>
+      </section> */}
     </>
   );
 }

@@ -59,15 +59,20 @@ export default function Layout({ children }) {
         { name: "Technology ", path: "/adat#Technology" },
         { name: "ADAT Advantage", path: "/adat#Advantages" },
         { name: "Illustrative Index", path: "/adat#indexofadat" },
-        
       ],
     },
     {
       name: " Library",
       path: "/library",
       sub: [
-        { name: "Illustrative Quality Standards", path: "/library#'IllustrativeQualityStandards" },
-        { name: "Illustrative Audit Practice Manual", path: "/library#'IllustrativeAuditApproach" },
+        {
+          name: "Illustrative Quality Standards",
+          path: "/library#'IllustrativeQualityStandards",
+        },
+        {
+          name: "Illustrative Audit Practice Manual",
+          path: "/library#'IllustrativeAuditApproach",
+        },
         {
           name: "Illustrative Practice Aids & Guidance",
           path: "/library#'IllustrativePracticeAids&Guidance",
@@ -86,7 +91,15 @@ export default function Layout({ children }) {
     {
       name: "Resources",
       path: "/resources",
-      sub: [{ name: "Videos", path: "/resources#Videos" },{ name: "Blogs", path: "/resources#Blogs" },{ name: "News", path: "/resources#News" }],
+      sub: [
+        { name: "Videos", path: "/resources#Videos" },
+        { name: "Blogs", path: "/resources#Blogs" },
+        { name: "News", path: "/resources#News" },
+      ],
+    },
+    {
+      name: "Events",
+      path: "/events",
     },
 
     {
@@ -252,12 +265,19 @@ export default function Layout({ children }) {
             </Link>
           </div>
 
-          <div className="text-sm p-4 lg:p-0 pl-6  text-black font-bah text-left">
-            <p className="font-semibold">Office</p>
-            <p>Akshaya Redstone,</p>
-            <p>Whitefield Hosakote Main Road,</p>
-            <p>Kannamangala Post,</p>
-            <p>Bangalore 560067</p>
+          <div className="text-sm p-4 lg:p-0 pl-6  text-black font-bah text-center">
+            {/* <p className="font-semibold">CONTACT</p> */}
+
+            <p>
+              Bangalore : +91 98455 11510 / 98801 06771 / 98455 43032 / 96326
+              55907 / 95900 44686
+            </p>
+            <p>Mumbai : +91 9819417620 / 9987592300</p>
+            <p className="">Email : contact@trueandfair.pro</p>
+            {/* <p>+91 98801 06771</p>
+            <p>+91 98455 43032</p>
+            <p>+91 96326 55907</p>
+            <p>+91 95900 44686</p> */}
           </div>
           {/* <div className="text-sm p-4 lg:p-0 pl-6  text-left">
             <p className="font-semibold">SFJ Computers Consulting</p>
@@ -272,11 +292,21 @@ export default function Layout({ children }) {
               Fax : +971 43 425126
             </p>
           </div> */}
-          <div className="text-sm lg:p-0 font-bah  p-4 text-black text-center">
+          {/* <div className="text-sm lg:p-0 font-bah  p-4 text-black text-center">
             <p className="font-semibold">CONTACT</p>
 
-            <p className="">contact@trueandfair.pro</p>
-          </div>
+            
+          </div> */}
+          {/* <div className="text-sm lg:p-0 font-bah  p-4 text-black text-center">
+            <p className="font-semibold">CONTACT</p>
+
+            <p className="">Mumbai</p>
+            <p>
+              +91 9819417620,
+              <br /> +91 9987592300
+            </p>
+            <p className="">email : contact@trueandfair.pro</p>
+          </div> */}
 
           <div className="text-sm flex flex-col font-bah text-black  pl-6 lg:p-0   text-center ">
             <Link href="/about">
@@ -291,22 +321,24 @@ export default function Layout({ children }) {
           </div>
 
           <div className="text-sm flex flex-col font-bah text-black lg:p-0  text-center">
-            <Link href="/library">
-              <a>Library</a>
-            </Link>
             {/* <Link href="/resources">
               <a>Resources</a>
             </Link> */}
+            <Link href="/library">
+              <a>Library</a>
+            </Link>
 
             <Link href="/resources">
               <a> Resources</a>
             </Link>
-
-            <Link href="/contact">
-              <a>Contact </a>
+            <Link href="/events">
+              <a> Events</a>
             </Link>
           </div>
           <div className="text-sm flex flex-col font-bah text-black lg:p-0  text-center">
+            <Link href="/contact">
+              <a>Contact </a>
+            </Link>
             <Link href="">
               <a>Privacy Policy</a>
             </Link>

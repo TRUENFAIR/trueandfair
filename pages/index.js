@@ -272,12 +272,13 @@ export default function Home() {
                   <iframe
                     width="760"
                     height="350"
-                    src="https://www.youtube.com/embed/5vtQLqjcokI"
+                    src="https://www.youtube.com/embed/PYFi8hMqbog"
                     title="YouTube video player"
                     frameBorder="0"
-                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                   ></iframe>
+                 
                 </div>
               </div>
               <div className="lg:hidden flex justify-center">
@@ -285,12 +286,13 @@ export default function Home() {
                 <iframe
                   width="400"
                   height="315"
-                  src="https://www.youtube.com/embed/5vtQLqjcokI"
+                  src="https://www.youtube.com/embed/PYFi8hMqbog"
                   title="YouTube video player"
                   frameBorder="0"
                   allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 ></iframe>
+                
               </div>
             </div>
             {/* <div className="flex justify-center">
