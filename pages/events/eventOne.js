@@ -30,8 +30,8 @@ export default function Life() {
           </h1>
 
           <p className="py-12 font-bah text-justify">
-            {`The 21st World Congress of Accountants 2022 is scheduled to be held from November 18-21, 2022 at Jio World Centre, Mumbai, India. The World Congress, this time, would dwell upon the theme 'Building Trust Enabling Sustainability', keeping in mind the important role accountancy profession is playing as protector of public interest and how the profession can play an instrumental role to enable sustainable economies for the future. True and Fair is delighted to participate in this event with several prominent stakeholders from the accounting and auditing ecosystem worldwide. Visit`}{" "}
-            <a
+            {`The 21st World Congress of Accountants 2022 is scheduled to be held from November 18-21, 2022 at Jio World Centre, Mumbai, India. The World Congress, this time, would dwell upon the theme 'Building Trust Enabling Sustainability', keeping in mind the important role accountancy profession is playing as protector of public interest and how the profession can play an instrumental role to enable sustainable economies for the future. True and Fair is delighted to participate in this event with several prominent stakeholders from the accounting and auditing ecosystem worldwide.`}{" "}
+            {/* <a
               target="_blank"
               rel="noreferrer"
               href="https://unicornevents.online/tandf/"
@@ -41,7 +41,7 @@ export default function Life() {
                 https://unicornevents.online/tandf/
               </span>
             </a>{" "}
-            to know more.
+            to know more. */}
           </p>
           {/* <ul className='list-disc list-inside p-6'>
             <li>Quality Control Laboratory including fully operational Microbiology Lab for testing of raw materials, in-process checks for semi-finished products, finished products & packaging materials.</li>
