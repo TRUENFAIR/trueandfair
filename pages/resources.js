@@ -426,7 +426,7 @@ export default function Resources() {
                             alt=""
                             objectFit="cover"
                             src={image}
-                            className="brightness-50"
+                            className=""
                           />
                           <div className="w-full h-1/2 absolute bottom-0 left-0 right-0 from-transparent bg-gradient-to-b to-black opacity-60"></div>
 

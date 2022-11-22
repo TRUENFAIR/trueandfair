@@ -231,7 +231,7 @@ maturity
             same should meet the criteria of having been maintained in a
             permanent audit file.
           </p>
-          <p className="leading-loose   text-justify font-semibold font-bah text-black ">
+          <p className="leading-loose   text-justify font-bold mb-4 mt-4  font-bah text-black ">
             5. Contents of the current audit file
           </p>
           <p className="leading-loose   text-justify  font-bah text-black ">
