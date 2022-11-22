@@ -211,8 +211,7 @@ observations
           <div className="flex gap-1  text-black flex-row">
             <span className="w-fit font-bah">✔️</span>{" "}
             <p className="prose text-justify  text-black font-bah ">
-              {`Communicati
-on in the
+              {`Communication in the
 audit firm
               `}
             </p>

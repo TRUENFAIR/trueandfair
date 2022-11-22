@@ -197,7 +197,7 @@ export default function Resources() {
           ),
         },
         {
-          name: "CA Zubin Billimoria (Treasurer BCAS and Practicing CA) - thoughts on audit professionk",
+          name: "CA Zubin Billimoria (Treasurer BCAS and Practicing CA) - thoughts on audit profession",
           desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum cupiditate possimus dolore voluptatibus similique optioducimus provident,",
           imgs: "/events/7.png",
           vidoes: (
