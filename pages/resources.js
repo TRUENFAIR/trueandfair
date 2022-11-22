@@ -24,6 +24,20 @@ export default function Resources() {
   const buttonClick = (x) => {
     setButtonIndex(x);
   };
+  const rightIcon = (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="h-12 w-12 text-white"
+      viewBox="0 0 20 20"
+      fill="currentColor"
+    >
+      <path
+        fillRule="evenodd"
+        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
+        clipRule="evenodd"
+      />
+    </svg>
+  );
 
   const discover = [
     {
@@ -302,11 +316,11 @@ export default function Resources() {
       desc: "From Ashtanga to Vinyasa, make mindful movement a daily ritual.",
       blogsdata: [
         {
-          ser: "/blogs/blog1",
-          name: "title",
+          link: "/blog/blogOne",
+          name: "Audit Quality Maturity Model (AQMM) – The way forward",
           small: "title",
           desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos a eveniet sequi similique expedita id obcaecati velit suscipit consequuntur excepturi repellendus iste illo blanditiis possimus fugit dol",
-          imgs: "/pause/PAUSE3.PNG",
+          image: "/audoc/audoc.PNG",
         },
       ],
       blogsdatafull: [],
@@ -318,7 +332,7 @@ export default function Resources() {
       desc: "From Ashtanga to Vinyasa, make mindful movement a daily ritual.",
       blogsdata: [
         {
-          ser: "/blogs/blog1",
+          ser: "/blogs/blogOne",
           name: "Case Studies",
           small: "title",
           desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos a eveniet sequi similique expedita id obcaecati velit suscipit consequuntur excepturi repellendus iste illo blanditiis possimus fugit dol",
@@ -375,7 +389,7 @@ export default function Resources() {
 
           <div className="grid gap-6 mt-8 row-gap-5 mb-8 lg:grid-cols-3 sm:row-gap-6 sm:grid-cols-2">
             {discover[buttonIndex].blogsdata.map(
-              ({ name, imgs, desc, vidoes }, index) => {
+              ({ name, imgs, desc, vidoes,link,image,id }, index) => {
                 if (buttonIndex === 0) {
                   return (
                     <div
@@ -401,7 +415,33 @@ export default function Resources() {
                       </div>
                     </div>
                   );
-                } else {
+                }
+                else if(buttonIndex===1){
+                  return(
+                    <Link key={id} href={link}>
+                      <div className="w-auto relative">
+                        <div className=" w-full lg:h-96 h-72 flex justify-start items-end shadow-sm ease-in duration-150 hover:scale-[1.02] transition-all cursor-pointer">
+                          <Image
+                            layout="fill"
+                            alt=""
+                            objectFit="cover"
+                            src={image}
+                            className="brightness-50"
+                          />
+                          <div className="w-full h-1/2 absolute bottom-0 left-0 right-0 from-transparent bg-gradient-to-b to-black opacity-60"></div>
+
+                          <div className="flex items-center  justify-between z-40 w-full p-4 mb-10 ">
+                            <h1 className="text-2xl tracking-wide drop-shadow-md   text-white z-10 w-full">
+                              {name}
+                            </h1>
+                            {rightIcon}
+                          </div>
+                        </div>
+                      </div>
+                    </Link>
+                  )
+                }
+                else {
                   return (
                     //         <div
                     //         key={index}
