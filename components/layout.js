@@ -351,7 +351,7 @@ export default function Layout({ children }) {
             <p className="font-semibold md:mt-0 mt-5 text-sm pb-2 font-bah  text-black text-center md:text-center">
               FIND US ON
             </p>
-            <div className="md:mt-0 mt-5 grid-cols-3 gap-2 flex justify-center lg:inline-grid  ">
+            <div className="md:mt-0 mt-5 grid-cols-2 gap-2 flex justify-center lg:inline-grid  ">
               <a
                 className="hover:scale-105 transition-all"
                 href="https://www.linkedin.com/company/true-and-fair-professionals-network/"
@@ -376,6 +376,14 @@ export default function Layout({ children }) {
                 rel="noreferrer"
               >
                 <img src="/icons/instagram.gif" className="w-8 h-8" alt="" />
+              </a>
+              <a
+                className="hover:scale-105 transition-all"
+                href="http://youtube.com/@trueandfairprofessionals"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src="/icons/youtube.gif" className="w-8 h-8" alt="" />
               </a>
             </div>
           </div>

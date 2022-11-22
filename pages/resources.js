@@ -49,14 +49,14 @@ export default function Resources() {
           ),
         },
         {
-          name: "Training and Auditing Small Entities - Kirti and Rakesh",
+          name: "Requirements of Auditors, approach and quality expectation- Y. H Malegam (Former Chairman - NACAS)",
           desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum cupiditate possimus dolore voluptatibus similique optioducimus provident,",
-          imgs: "/events/2.jpg",
+          imgs: "/events/14.png",
           vidoes: (
             <iframe
               width="100%"
               height="100%"
-              src="https://www.youtube.com/embed/yfQaD36bapU"
+              src="https://www.youtube.com/embed/qb7YdHMt48s"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -65,14 +65,14 @@ export default function Resources() {
           ),
         },
         {
-          name: "Understand ADAT - the Audit Documentation and Archival Tool",
+          name: "Insights on Quality Improvement - P.R. Ramesh",
           desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum cupiditate possimus dolore voluptatibus similique optioducimus provident,",
-          imgs: "/events/3.png",
+          imgs: "/events/13.png",
           vidoes: (
             <iframe
               width="100%"
               height="100%"
-              src="https://www.youtube.com/embed/GcSk6ZZqOOY"
+              src="https://www.youtube.com/embed/jGJsItHigDg"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -80,54 +80,7 @@ export default function Resources() {
             ></iframe>
           ),
         },
-        {
-          name: "Discussion with Partners at JAA & Associates",
-          desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum cupiditate possimus dolore voluptatibus similique optioducimus provident,",
-          imgs: "/events/4.png",
-          vidoes: (
-            <iframe
-              width="100%"
-              height="100%"
-              src="https://www.youtube.com/embed/cLq_HVwLpdE"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          ),
-        },
-        {
-          name: "Understanding needs to audit firms - with Guru & Jana",
-          desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum cupiditate possimus dolore voluptatibus similique optioducimus provident,",
-          imgs: "/events/5.png",
-          vidoes: (
-            <iframe
-              width="100%"
-              height="100%"
-              src="https://www.youtube.com/embed/s0ZYjH2V8eM"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          ),
-        },
-        {
-          name: "Meeting CA Parveen Kumar (National Head Assurance, M/s ASA & Associates LLP)",
-          desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum cupiditate possimus dolore voluptatibus similique optioducimus provident,",
-          imgs: "/events/6.png",
-          vidoes: (
-            <iframe
-              width="100%"
-              height="100%"
-              src="https://www.youtube.com/embed/UFX_OTigXPg"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          ),
-        },
+       
 
         // {
         //   name: "loremipsum",
@@ -163,54 +116,6 @@ export default function Resources() {
         // },
       ],
       blogsdatafull: [
-        {
-          name: "CA Zubin Billimoria (Treasurer BCAS and Practicing CA) - thoughts on audit professionk",
-          desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum cupiditate possimus dolore voluptatibus similique optioducimus provident,",
-          imgs: "/events/7.png",
-          vidoes: (
-            <iframe
-              width="100%"
-              height="100%"
-              src="https://www.youtube.com/embed/490Ep8hQCT8"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          ),
-        },
-        {
-          name: "In discussion with Harinderjit Singh (Former Chairman of AASB, ICAI)",
-          desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum cupiditate possimus dolore voluptatibus similique optioducimus provident,",
-          imgs: "/events/8.png",
-          vidoes: (
-            <iframe
-              width="100%"
-              height="100%"
-              src="https://www.youtube.com/embed/tbe-iUZxQHY"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          ),
-        },
-        {
-          name: "Talk with CA Santhanakrishnan (Managing Partner, PKF Sridhar & Santhanam LLP)",
-          desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum cupiditate possimus dolore voluptatibus similique optioducimus provident,",
-          imgs: "/events/9.png",
-          vidoes: (
-            <iframe
-              width="100%"
-              height="100%"
-              src="https://www.youtube.com/embed/bCKb0v3RKQI"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          ),
-        },
         {
           name: "Dialogue with Mr. N. P. Sarda (Past President ICAI, and Former Chairman of Deloitte India)",
           desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum cupiditate possimus dolore voluptatibus similique optioducimus provident,",
@@ -260,14 +165,14 @@ export default function Resources() {
           ),
         },
         {
-          name: "Insights on Quality Improvement - P.R. Ramesh",
+          name: "In discussion with Harinderjit Singh (Former Chairman of AASB, ICAI)",
           desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum cupiditate possimus dolore voluptatibus similique optioducimus provident,",
-          imgs: "/events/13.png",
+          imgs: "/events/8.png",
           vidoes: (
             <iframe
               width="100%"
               height="100%"
-              src="https://www.youtube.com/embed/jGJsItHigDg"
+              src="https://www.youtube.com/embed/tbe-iUZxQHY"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -276,14 +181,111 @@ export default function Resources() {
           ),
         },
         {
-          name: "Requirements of Auditors, approach and quality expectation- Y. H Malegam (Former Chairman - NACAS)",
+          name: "Talk with CA Santhanakrishnan (Managing Partner, PKF Sridhar & Santhanam LLP)",
           desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum cupiditate possimus dolore voluptatibus similique optioducimus provident,",
-          imgs: "/events/14.png",
+          imgs: "/events/9.png",
           vidoes: (
             <iframe
               width="100%"
               height="100%"
-              src="https://www.youtube.com/embed/qb7YdHMt48s"
+              src="https://www.youtube.com/embed/bCKb0v3RKQI"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          ),
+        },
+        {
+          name: "CA Zubin Billimoria (Treasurer BCAS and Practicing CA) - thoughts on audit professionk",
+          desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum cupiditate possimus dolore voluptatibus similique optioducimus provident,",
+          imgs: "/events/7.png",
+          vidoes: (
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/490Ep8hQCT8"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          ),
+        },
+        {
+          name: "Meeting CA Parveen Kumar (National Head Assurance, M/s ASA & Associates LLP)",
+          desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum cupiditate possimus dolore voluptatibus similique optioducimus provident,",
+          imgs: "/events/6.png",
+          vidoes: (
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/UFX_OTigXPg"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          ),
+        },
+        {
+          name: "Discussion with Partners at JAA & Associates",
+          desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum cupiditate possimus dolore voluptatibus similique optioducimus provident,",
+          imgs: "/events/4.png",
+          vidoes: (
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/cLq_HVwLpdE"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          ),
+        },
+        {
+          name: "Understand ADAT - the Audit Documentation and Archival Tool",
+          desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum cupiditate possimus dolore voluptatibus similique optioducimus provident,",
+          imgs: "/events/3.png",
+          vidoes: (
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/GcSk6ZZqOOY"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          ),
+        },
+        {
+          name: "Training and Auditing Small Entities - Kirti and Rakesh",
+          desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum cupiditate possimus dolore voluptatibus similique optioducimus provident,",
+          imgs: "/events/2.jpg",
+          vidoes: (
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/yfQaD36bapU"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          ),
+        },
+
+        {
+          name: "Understanding needs to audit firms - with Guru & Jana",
+          desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum cupiditate possimus dolore voluptatibus similique optioducimus provident,",
+          imgs: "/events/5.png",
+          vidoes: (
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/s0ZYjH2V8eM"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

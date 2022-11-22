@@ -73,7 +73,7 @@ function Adat() {
         <div
           className="h-72 flex flex-col justify-end "
           style={{
-            backgroundImage: "url('/about/abt1.png')",
+            backgroundImage: "url('/about/abt2.jpg')",
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",

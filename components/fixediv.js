@@ -37,6 +37,14 @@ export default function Fixediv({ clicked }) {
           >
             <img src="/icons/instagram.gif" className="w-8 h-8" alt="" />
           </a>
+          <a
+            className="mx-1.5 text-black mb-2 transition-colors duration-300 transform hover:text-blue-500 hover:scale-105 transition-all"
+            href="http://youtube.com/@trueandfairprofessionals"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src="/icons/youtube.gif" className="w-8 h-8" alt="" />
+          </a>
         </div>
       </div>
     </>
