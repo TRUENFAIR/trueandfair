@@ -6,7 +6,7 @@ export default function Blogs() {
     {
       id: 1,
       name: " WCOA 2022",
-      logo: "/fac/f7.jpg",
+      logo: "/fac/f18.jpg",
       desc: "The 21st World Congress of Accountants 2022 scheduled to be held from November 18-21, 2022 at Jio World Centre, Mumbai, India. The World Congress, this time, would dwell upon the theme 'Building Trust Enabling Sustainability.... ",
       link: "/events/eventOne",
       auth: "Gorden haff",

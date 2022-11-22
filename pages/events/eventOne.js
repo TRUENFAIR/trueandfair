@@ -4,8 +4,8 @@ export default function Life() {
   const stuff = [
     { image: "/fac/f1.jpg", text: "Caption" },
     { image: "/fac/f2.jpg", text: "Caption" },
-    { image: "/fac/f3.jpg", text: "Caption" },
-    { image: "/fac/f4.jpg", text: "Caption" },
+    { image: "/fac/f3.jpeg", text: "Caption" },
+    { image: "/fac/f4.jpeg", text: "Caption" },
     { image: "/fac/f5.jpg", text: "Caption" },
     { image: "/fac/f6.jpg", text: "Caption" },
     { image: "/fac/f7.jpg", text: "Caption" },
@@ -14,11 +14,31 @@ export default function Life() {
     { image: "/fac/f10.jpg", text: "Caption" },
     { image: "/fac/f11.jpg", text: "Caption" },
     { image: "/fac/f12.jpg", text: "Caption" },
-
+    { image: "/fac/f13.jpg", text: "Caption" },
     { image: "/fac/f14.jpg", text: "Caption" },
     { image: "/fac/f15.jpg", text: "Caption" },
     { image: "/fac/f16.jpg", text: "Caption" },
-    // { image: "/fac/f13.jpg", text: "Caption" },
+    { image: "/fac/f17.jpg", text: "Caption" },
+    { image: "/fac/f18.jpg", text: "Caption" },
+    { image: "/fac/f19.jpg", text: "Caption" },
+    { image: "/fac/f20.jpg", text: "Caption" },
+    { image: "/fac/f21.jpg", text: "Caption" },
+    { image: "/fac/f22.jpg", text: "Caption" },
+
+    { image: "/fac/f23.jpg", text: "Caption" },
+    { image: "/fac/f24.jpg", text: "Caption" },
+    { image: "/fac/f25.jpg", text: "Caption" },
+
+    { image: "/fac/f26.jpg", text: "Caption" },
+    { image: "/fac/f27.jpg", text: "Caption" },
+    { image: "/fac/f28.jpg", text: "Caption" },
+    { image: "/fac/f29.jpg", text: "Caption" },
+    { image: "/fac/f30.jpg", text: "Caption" },
+
+    { image: "/fac/f31.jpg", text: "Caption" },
+    { image: "/fac/f32.jpg", text: "Caption" },
+    { image: "/fac/f33.jpg", text: "Caption" },
+    { image: "/fac/f34.jpg", text: "Caption" },
   ];
 
   return (
