@@ -320,7 +320,7 @@ export default function Resources() {
           name: "Audit Quality Maturity Model (AQMM) – The way forward",
           small: "title",
           desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos a eveniet sequi similique expedita id obcaecati velit suscipit consequuntur excepturi repellendus iste illo blanditiis possimus fugit dol",
-          image: "/audoc/audoc.PNG",
+          image: "/homeicontwo/hmicon.jpg",
         },
       ],
       blogsdatafull: [],
