@@ -201,7 +201,7 @@ export default function Contact() {
 
                 <div className=" text-center  mb-10 font-bah">
                 You may also fill this google form and we will get back to you.  <a
-                className="hover:scale-105 text-blue transition-all"
+                className=" active:text-red  font-bah font-bold underline hover:text-orange decoration-blue text-blue"
                 href="https://forms.gle/SKyXWMNChKS6wHWd6"
                 target="_blank"
                 rel="noreferrer"

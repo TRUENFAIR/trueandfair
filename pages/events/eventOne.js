@@ -33,7 +33,7 @@ export default function Life() {
     // { image: "/fac/f26.jpg", text: "Caption" },
     // { image: "/fac/f27.jpg", text: "Caption" },
     { image: "/fac/f28.jpg", text: "Caption" },
-    { image: "/fac/f29.jpg", text: "Caption" },
+    // { image: "/fac/f29.jpg", text: "Caption" },
     // { image: "/fac/f30.jpg", text: "Caption" },
 
     { image: "/fac/f31.jpg", text: "Caption" },
