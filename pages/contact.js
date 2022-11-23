@@ -193,11 +193,23 @@ export default function Contact() {
           <div className="  items-start  rounded pt-8 ">
             <div className=" w-full">
               <div className="md:pl-0 md:pt-0 pt-12">
-                <h2 className="text- text-center my-10 font-bah">
+                <h2 className="text- text-center mb-4 font-bah">
                   Welcome To True and Fair Professionals Network. Please provide
                   us with the following details to take forward your Expression
                   of Interest.
                 </h2>
+
+                <div className=" text-center  mb-10 font-bah">
+                You may also fill this google form and we will get back to you.  <a
+                className="hover:scale-105 text-blue transition-all"
+                href="https://forms.gle/SKyXWMNChKS6wHWd6"
+                target="_blank"
+                rel="noreferrer"
+              >
+               Click here to submit.
+              </a> 
+                </div>
+                
                 <div className="mt-8">
                   <div className="grid grid-cols-1 md:grid-cols-1 gap-6">
                     <div className="border grid grid-cols-2 gap-2">
