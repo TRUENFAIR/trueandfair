@@ -2,10 +2,11 @@ import Image from "next/image";
 
 export default function Life() {
   const stuff = [
+    { name: "video", image: "" },
     { image: "/fac/f1.jpg", text: "Caption" },
     { image: "/fac/f18.jpg", text: "Caption" },
     // { image: "/fac/f2.jpg", text: "Caption" },
- 
+
     { image: "/fac/f4.jpeg", text: "Caption" },
     { image: "/fac/f5.jpg", text: "Caption" },
     { image: "/fac/f6.jpg", text: "Caption" },
@@ -18,9 +19,9 @@ export default function Life() {
     // { image: "/fac/f13.jpg", text: "Caption" },
     { image: "/fac/f14.jpg", text: "Caption" },
     // { image: "/fac/f15.jpg", text: "Caption" },
-   
+
     { image: "/fac/f17.jpg", text: "Caption" },
-   
+
     { image: "/fac/f19.jpg", text: "Caption" },
     { image: "/fac/f20.jpg", text: "Caption" },
     { image: "/fac/f21.jpg", text: "Caption" },
@@ -41,7 +42,7 @@ export default function Life() {
     { image: "/fac/f36.jpg", text: "Caption" },
     { image: "/fac/f37.jpg", text: "Caption" },
     { image: "/fac/f38.jpg", text: "Caption" },
-  
+
     // { image: "/fac/f34.jpg", text: "Caption" },
   ];
 
@@ -73,22 +74,43 @@ export default function Life() {
           </ul> */}
 
           <div className="grid md:grid-cols-3 items-center grid-cols-1 md:gap-4 gap-4 pt-6">
-            {stuff.map(({ image, text }, index) => (
-              <div
-                key={index}
-                className="flex flex-col justify-center items-start rounded-sm"
-              >
-                <div className="w-full h-96 md:w-full md:h-80 bg-zinc-100 shadow-sm relative">
-                  <Image
-                    layout="fill"
-                    alt=""
-                    src={image}
-                    className="absolute inset-0 object-cover"
-                  />
-                </div>
-                {/* <p className="prose-sm pt-4 text-zinc-700 leading-6">{text}</p> */}
-              </div>
-            ))}
+            {stuff.map(({ image, name, text }, index) => {
+              if (name === "video") {
+                return (
+                  <div
+                    key={index}
+                    className="w-full h-96 md:w-full md:h-80 bg-zinc-100 shadow-sm "
+                  >
+                    <iframe
+                      width="100%"
+                      height="100%"
+                      src="https://www.youtube.com/embed/IVln9Bg4U_k"
+                      title="YouTube video player"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    ></iframe>
+                  </div>
+                );
+              } else {
+                return (
+                  <div
+                    key={index}
+                    className="flex flex-col justify-center items-start rounded-sm"
+                  >
+                    <div className="w-full h-96 md:w-full md:h-80 bg-zinc-100 shadow-sm relative">
+                      <Image
+                        layout="fill"
+                        alt=""
+                        src={image}
+                        className="absolute inset-0 object-cover"
+                      />
+                    </div>
+                    {/* <p className="prose-sm pt-4 text-zinc-700 leading-6">{text}</p> */}
+                  </div>
+                );
+              }
+            })}
           </div>
         </div>
       </section>
