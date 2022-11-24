@@ -94,7 +94,6 @@ export default function Resources() {
             ></iframe>
           ),
         },
-       
 
         // {
         //   name: "loremipsum",
@@ -307,6 +306,22 @@ export default function Resources() {
             ></iframe>
           ),
         },
+        {
+          name: "Vision, Mission and Way Forward Plan of TRUE AND FAIR PROFESSIONALS NETWORK by V. Balaji",
+          desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum cupiditate possimus dolore voluptatibus similique optioducimus provident,",
+          imgs: "/events/15.jpg",
+          vidoes: (
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/IVln9Bg4U_k"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          ),
+        },
       ],
     },
     {
@@ -389,7 +404,7 @@ export default function Resources() {
 
           <div className="grid gap-6 mt-8 row-gap-5 mb-8 lg:grid-cols-3 sm:row-gap-6 sm:grid-cols-2">
             {discover[buttonIndex].blogsdata.map(
-              ({ name, imgs, desc, vidoes,link,image,id }, index) => {
+              ({ name, imgs, desc, vidoes, link, image, id }, index) => {
                 if (buttonIndex === 0) {
                   return (
                     <div
@@ -415,9 +430,8 @@ export default function Resources() {
                       </div>
                     </div>
                   );
-                }
-                else if(buttonIndex===1){
-                  return(
+                } else if (buttonIndex === 1) {
+                  return (
                     <Link key={id} href={link}>
                       <div className="w-auto relative">
                         <div className=" w-full lg:h-96 h-72 flex justify-start items-end shadow-sm ease-in duration-150 hover:scale-[1.02] transition-all cursor-pointer">
@@ -439,9 +453,8 @@ export default function Resources() {
                         </div>
                       </div>
                     </Link>
-                  )
-                }
-                else {
+                  );
+                } else {
                   return (
                     //         <div
                     //         key={index}

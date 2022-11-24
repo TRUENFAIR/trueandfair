@@ -220,7 +220,7 @@ export default function About() {
               accountants, Regulators, and corporates - while remaining agile
               and personal in our approach. True and Fair is one-of-a-kind firm
               and aspires to be the benchmark STANDARD SETTER in the auditing
-              ecosystem.
+              ecosystem, regarding quality of audits undertaken and performed.
             </p>
           </div>
         </section>

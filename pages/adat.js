@@ -134,11 +134,11 @@ function Adat() {
             <div
               data-aos="fade-down"
               data-aos-once="true"
-              className="w-auto h-96 lg:h-auto relative"
+              className="w-full h-[400px] lg:h-auto relative"
             >
               <Image
                 layout="fill"
-                className="absolute h-full w-full object-cover"
+                className="absolute h-full w-full object-contain"
                 alt=""
                 src="/servadat/prod.jpg"
               />
@@ -154,11 +154,11 @@ function Adat() {
             <div
               data-aos="fade-down"
               data-aos-once="true"
-              className="w-auto h-96 lg:h-auto relative"
+              className="w-full h-96 lg:h-full mt-6 relative"
             >
               <Image
                 layout="fill"
-                className="absolute h-full w-full object-cover"
+                className="absolute h-full w-full md:object-cover lg:object-contain"
                 alt=""
                 src="/servadat/tech.jpg"
               />
@@ -206,7 +206,7 @@ function Adat() {
               
             >
                <div className="text-3xl w-full text-center  font-bah text title-font text-black   ">
-               ADAT Advantage
+               ADAT Advantages
               </div>
             </div>
 
@@ -273,7 +273,7 @@ and at the time of archival
               data-aos-once="true"
               className="w-auto h-auto  lg:h-auto relative"
             >
-              <div className="flex gap-1 md:mt-24 text-black flex-row">
+              <div className="flex gap-1 md:mt-16 text-black flex-row">
                 <span className="w-fit ">✔️</span>{" "}
                 <p className="prose text-justify text-black font-bah ">
                   {`A file check feature to check the quality and completeness of work papers before

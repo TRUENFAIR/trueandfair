@@ -269,7 +269,7 @@ export default function Layout({ children }) {
             {/* <p className="font-semibold">CONTACT</p> */}
 
             <p>
-              Bangalore : +91 98455 11510 / 98801 06771 / 98455 43032 / 96326
+              Bengaluru : +91 98455 11510 / 98801 06771 / 98455 43032 / 96326
               55907 / 95900 44686
             </p>
             <p>Mumbai : +91 9819417620 / 9987592300</p>
