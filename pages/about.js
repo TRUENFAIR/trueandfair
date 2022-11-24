@@ -102,7 +102,7 @@ export default function About() {
         {
           name: "Krishna R P",
           image: "/team/krishna.jpg",
-          linkd:"",
+          linkd:"https://www.linkedin.com/in/krishna-r-p-0abab6205/",
           role: "",
           description: "",
         },

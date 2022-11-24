@@ -60,13 +60,19 @@ export default function Contact() {
     watch("NameofPersontobecontacted") &&
     watch("ContactNumber") &&
     watch("EmailID") &&
-    x && yesno
+    watch("NumberofPartners") &&
+    watch("addinfo") &&
+    x &&
+    yesno;
 
   const submit = handleSubmit(async (data) => {
     const {
       name,
       YearofFormation,
       location,
+      NumberofPartners,
+      addinfo,
+
       NameofPersontobecontacted,
       ContactNumber,
       EmailID,
@@ -92,6 +98,9 @@ export default function Contact() {
             name,
             YearofFormation,
             location,
+            NumberofPartners,
+            addinfo,
+
             NameofPersontobecontacted,
             ContactNumber,
             EmailID,
@@ -113,6 +122,8 @@ export default function Contact() {
           name,
           YearofFormation: "",
           location: "",
+          NumberofPartners: "",
+          addinfo: "",
           NameofPersontobecontacted: "",
           ContactNumber: "",
           EmailID: "",
@@ -157,7 +168,10 @@ export default function Contact() {
     <>
       <Head>
         <title>True & Fair | Contact Us</title>
-        <meta name="description" content="True And Fair Professionals Network - Get in touch with us"/>
+        <meta
+          name="description"
+          content="True And Fair Professionals Network - Get in touch with us"
+        />
       </Head>
       <section className="pt-12 pb-12 text-zinc-900 bg-lightgray">
         <div className="md:container p-4 mx-auto">
@@ -200,16 +214,18 @@ export default function Contact() {
                 </h2>
 
                 <div className=" text-center  mb-10 font-bah">
-                You may also fill this google form and we will get back to you.  <a
-                className=" active:text-red  font-bah font-bold underline hover:text-orange decoration-blue text-blue"
-                href="https://forms.gle/SKyXWMNChKS6wHWd6"
-                target="_blank"
-                rel="noreferrer"
-              >
-               Click here to submit.
-              </a> 
+                  You may also fill this google form and we will get back to
+                  you.{" "}
+                  <a
+                    className=" active:text-red  font-bah font-bold underline hover:text-orange decoration-blue text-blue"
+                    href="https://forms.gle/SKyXWMNChKS6wHWd6"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Click here to submit.
+                  </a>
                 </div>
-                
+
                 <div className="mt-8">
                   <div className="grid grid-cols-1 md:grid-cols-1 gap-6">
                     <div className="border grid grid-cols-2 gap-2">
@@ -242,20 +258,35 @@ export default function Contact() {
                         />
                       </div>
                     </div>
+                    <div className="border grid grid-cols-2 gap-2">
+                      <InputController
+                        control={control}
+                        name="location"
+                        type="text"
+                        label="Location of the head office and branch locations (if any)"
+                        rules={{
+                          required: {
+                            value: true,
+                            message: "This field is required",
+                          },
+                        }}
+                      />
 
-                    <InputController
-                      control={control}
-                      name="location"
-                      type="text"
-                      label="Location of the head office and branch locations (if any)"
-                      rules={{
-                        required: {
-                          value: true,
-                          message: "This field is required",
-                        },
-                      }}
-                    />
-
+                      <div className="">
+                        <InputController
+                          control={control}
+                          name="NumberofPartners"
+                          type="number"
+                          label="No. of partners"
+                          rules={{
+                            required: {
+                              value: true,
+                              message: "This field is required",
+                            },
+                          }}
+                        />
+                      </div>
+                    </div>
                     <div className="">
                       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
                         <InputController
@@ -401,9 +432,23 @@ export default function Contact() {
                       </div>
                     </div>
                   </div>
+                  <div className="grid mt-5 w-full grid-cols-1">
+                    <InputController
+                      control={control}
+                      name="addinfo"
+                      type="text"
+                      label="Enter additional info (if any)"
+                      rules={{
+                        required: {
+                          value: true,
+                          message: "This field is required",
+                        },
+                      }}
+                    />
+                  </div>
                   <h2 className=" mt-10   text-4xl text-center font-bah tracking-wide  text-green-900">
-                Networking
-              </h2>
+                    Networking
+                  </h2>
                   <div className="">
                     <div className=" ">
                       <p className="leading-loose mt-6  text-justify  font-bah text-black ">
