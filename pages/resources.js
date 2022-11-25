@@ -352,9 +352,9 @@ export default function Resources() {
           name: "Use Third Party Validation to Check Fraud: Buch to Auditors",
           small: "title",
           desc: "Securities and Exchange Board of India (Sebi) chairperson Madhabi Puri Buch on Thursday nudged auditors to use .....",
-          image: "/news/lap.PNG",
+          image: "/news/lap.png",
           sorc: "The Economics Times",
-          auth: "ET Bureau",
+          auth: "ET Bureau,",
           date: "Nov 25, 2022",
         },
       ],
@@ -466,9 +466,9 @@ export default function Resources() {
                   return (
                     <div
                       key={id}
-                      className="w-fit shadow-md bg-white flex flex-col lg:flex-1 py-4 justify-between bg-opacity-75 px-8   rounded-lg overflow-hidden text-center relative"
+                      className="w-fit shadow-md bg-white flex flex-col lg:flex-1 py-4 justify-between bg-opacity-75 px-4   rounded-lg overflow-hidden text-center relative"
                     >
-                      <div className="">
+                      
                         <div className=" w-full transition duration-150 ease-out hover:ease-in hover:opacity-50">
                           <Image
                             className=" flex-shrink-0 object-cover xl:w-[100%] xl:h-[34rem]"
@@ -482,24 +482,25 @@ export default function Resources() {
                         <h1 className="title-font sm:text-xl text-xl text-center font-semibold  text-gray-900 mb-3">
                           {name}
                         </h1>
-                        <p className="mb-1 text-left font-semibold">
+                        <p className="mb-1 text-sm text-left font-semibold">
                           Source : <span className="font-bah">{sorc}</span>
                         </p>
-                        <p className="mb-1 text-left font-semibold">
+                        <div className="flex flex-row gap-4"><p className="mb-1 text-sm text-left font-semibold">
                           Author : <span className="font-bah">{auth}</span>
                         </p>
-                        <p className="mb-1 text-left font-semibold">
+                        <p className="mb-1 text-sm text-left font-semibold">
                           Date : <span className="font-bah">{date}</span>
-                        </p>
+                        </p></div>
+                        
                         {/* <p className="text-left">Source : {sorc}</p>
                     <p className="text-left">Author : {auth}</p> */}
-                        <p className="leading-relaxed font-bah mt-5 text-justify ">
+                        <p className="leading-relaxed font-bah mt-2 text-justify ">
                           {desc}
                         </p>
-                      </div>
+                      
                       <div className="flex justify-center  ">
                         <a target="_blank" rel="noreferrer" href={link}>
-                          <p className="mt-8 font-bah   border-2 border-blue text-blue font-bold text-xs cursor-pointer hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
+                          <p className="mt-8 font-bah   border-2 border-blue text-blue font-bold text- cursor-pointer hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
                             Read More
                           </p>
                         </a>

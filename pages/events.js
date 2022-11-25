@@ -193,13 +193,12 @@ export default function Blogs() {
                 >
                   <div>
                     <div className=" w-full transition duration-150 ease-out hover:ease-in hover:opacity-50">
-                      <Image
-                        className=" flex-shrink-0 object-cover xl:w-[100%] xl:h-[34rem]"
+                      <img
+                        className=" flex-shrink-0 object-cover "
                         src={logo}
-                        width={400}
-                        height={300}
+                        
                         alt=""
-                      ></Image>
+                      ></img>
                     </div>
 
                     <h1 className="title-font sm:text-2xl text-xl text-center font-semibold  text-gray-900 mb-3">
