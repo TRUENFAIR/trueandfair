@@ -348,7 +348,7 @@ export default function Resources() {
       blogsdata: [
         {
           ser: "/blogs/blogOne",
-          link: "https://economictimes.indiatimes.com/et-mkts/use-third-party-validation-to-check-fraud-buch-to-auditors/articleshow/95750014.cms?utm_source=whatsapp_pwa&utm_medium=social&utm_campaign=socialsharebuttons&from=mdr",
+          link: "https://economictimes.indiatimes.com/et-mkts/use-third-party-validation-to-check-fraud-buch-to-auditors/articleshow/95750014.cms",
           name: "Use Third Party Validation to Check Fraud: Buch to Auditors",
           small: "title",
           desc: "Securities and Exchange Board of India (Sebi) chairperson Madhabi Puri Buch on Thursday nudged auditors to use .....",
@@ -500,7 +500,7 @@ export default function Resources() {
                       
                       <div className="flex justify-center  ">
                         <a target="_blank" rel="noreferrer" href={link}>
-                          <p className="mt-8 font-bah   border-2 border-blue text-blue font-bold text- cursor-pointer hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
+                          <p className="mt-8 font-bah mb-5   border-2 border-blue text-blue font-bold text-xs cursor-pointer hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
                             Read More
                           </p>
                         </a>
