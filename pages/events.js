@@ -177,7 +177,7 @@ export default function Blogs() {
 
   return (
     <>
-      <section className="text-black bg-coustom1 body-font">
+      <section className="text-black bg-lightgray body-font">
         <div className="container px-5 py-14 mx-auto">
           <div className="flex flex-col flex-wrap text-center w-full mb-20 ">
             <h1 className="sm:text-3xl text-2xl font-bah title-font mb-4 text-black">
@@ -189,7 +189,7 @@ export default function Blogs() {
               return (
                 <div
                   key={id}
-                  className="w-fit shadow-sm flex flex-col lg:flex-1 py-4 justify-between bg-opacity-75 px-8   rounded-lg overflow-hidden text-center relative"
+                  className="w-fit shadow-sm flex flex-col lg:flex-1 py-4 bg-white justify-between bg-opacity-75 px-8   rounded-lg overflow-hidden text-center relative"
                 >
                   <div>
                     <div className=" w-full transition duration-150 ease-out hover:ease-in hover:opacity-50">

@@ -438,6 +438,7 @@ export default function Contact() {
                       name="addinfo"
                       type="text"
                       label="Enter additional info (if any)"
+                      className="h-[70px]"
                       rules={{
                         required: {
                           value: true,

@@ -6,7 +6,7 @@ export default function QualityStandards() {
       <div
         data-aos="fade-up"
         data-aos-once="true"
-        className="grid grid-cols-1 md:grid-cols-4 md:gap-10"
+        className="grid grid-cols-1 mb-10 md:grid-cols-4 md:gap-10"
       >
         <div className="w-auto md:mt-16">
           <div>

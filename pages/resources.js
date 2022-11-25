@@ -348,10 +348,14 @@ export default function Resources() {
       blogsdata: [
         {
           ser: "/blogs/blogOne",
-          name: "Case Studies",
+          link: "https://economictimes.indiatimes.com/et-mkts/use-third-party-validation-to-check-fraud-buch-to-auditors/articleshow/95750014.cms?utm_source=whatsapp_pwa&utm_medium=social&utm_campaign=socialsharebuttons&from=mdr",
+          name: "Use Third Party Validation to Check Fraud: Buch to Auditors",
           small: "title",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos a eveniet sequi similique expedita id obcaecati velit suscipit consequuntur excepturi repellendus iste illo blanditiis possimus fugit dol",
-          imgs: "/pause/PAUSE3.PNG",
+          desc: "Securities and Exchange Board of India (Sebi) chairperson Madhabi Puri Buch on Thursday nudged auditors to use .....",
+          image: "/news/lap.PNG",
+          sorc: "The Economics Times",
+          auth: "ET Bureau",
+          date: "Nov 25, 2022",
         },
       ],
       blogsdatafull: [],
@@ -359,17 +363,18 @@ export default function Resources() {
   ];
 
   return (
-    <>
+    <section className="bg-lightgray">
       <Head>
         <title>True & Fair | Resources</title>
         <meta
           name="description"
-          content="True And Fair Professionals Network - Vides, Blogs and News coming soon"
+          content="True And Fair Professionals Network - Vides, Blogs and News "
         />
       </Head>
-      <section className="md:container mx-auto">
-        <div className="py-5  md:py-10">
-          <section className="bg-white ">
+
+      <section className="">
+        <div className="md:container py-20 mx-auto">
+          <section className="bg-lightgray">
             <p className="text-3xl font-bah  title-font text-black text-center mb-2"></p>
             <div className="md:container flex justify-center md:mx-auto">
               <ul className="grid grid-flow-col gap-4 w-full md:w-1/2 mt-5 text-center  text-black  rounded-full p-1">
@@ -404,7 +409,10 @@ export default function Resources() {
 
           <div className="grid gap-6 mt-8 row-gap-5 mb-8 lg:grid-cols-3 sm:row-gap-6 sm:grid-cols-2">
             {discover[buttonIndex].blogsdata.map(
-              ({ name, imgs, desc, vidoes, link, image, id }, index) => {
+              (
+                { name, imgs, desc, vidoes, link, image, id, sorc, auth, date },
+                index
+              ) => {
                 if (buttonIndex === 0) {
                   return (
                     <div
@@ -445,7 +453,7 @@ export default function Resources() {
                           <div className="w-full h-1/2 absolute bottom-0 left-0 right-0 from-transparent bg-gradient-to-b to-black opacity-60"></div>
 
                           <div className="flex items-center  justify-between z-40 w-full p-4 mb-10 ">
-                            <h1 className="text-2xl tracking-wide drop-shadow-md   text-white z-10 w-full">
+                            <h1 className="text-xl    text-white z-10 w-full">
                               {name}
                             </h1>
                             {rightIcon}
@@ -456,51 +464,47 @@ export default function Resources() {
                   );
                 } else {
                   return (
-                    //         <div
-                    //         key={index}
-                    //         className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm"
-                    //       >
-                    //         <img
-                    //           src="https://images.pexels.com/photos/2408666/pexels-photo-2408666.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
-                    //           className="object-cover w-full h-64"
-                    //           alt=""
-                    //         />
-                    //         <div className="p-2  border-t-0">
-                    //           <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
-                    //             <a
-                    //               href=""
-                    //               className="transition-colors duration-200 text-blue-gray-900 hover:text-deep-purple-accent-700"
-                    //               aria-label="Category"
-                    //               title="traveling"
-                    //             >
-                    //             {name}
-                    //             </a>
-                    //           </p>
-                    //           <a
-                    //             href=""
-                    //             aria-label="Category"
-                    //             title="Visit the East"
-                    //             className="inline-block mb-3 font-bah text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700"
-                    //           >
-                    //             Title
-                    //           </a>
-                    //           <p className="mb-2 text-gray-700 font-bah">
-                    //             Lorem ipsum dolor sit amet, consectetur adipisicing
-                    //             elit. Dignissimos a eveniet sequi similique expedita id
-                    //             obcaecati velit suscipit consequuntur excepturi
-                    //             repellendus iste illo blanditiis possimus fugit
-                    //             doloribus, numquam, maxime ratione!
-                    //           </p>
-                    //           <div className="flex justify-center">
-                    // <Link href=" /reso/reso1">
-                    //   <button className="mt-8 font-bah  bg-white border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
-                    //     READ MORE
-                    //   </button>
-                    // </Link>
-                    // </div>
-                    //         </div>
-                    //       </div>
-                    <div className="text-2xl font-bah">Coming Soon</div>
+                    <div
+                      key={id}
+                      className="w-fit shadow-md bg-white flex flex-col lg:flex-1 py-4 justify-between bg-opacity-75 px-8   rounded-lg overflow-hidden text-center relative"
+                    >
+                      <div className="">
+                        <div className=" w-full transition duration-150 ease-out hover:ease-in hover:opacity-50">
+                          <Image
+                            className=" flex-shrink-0 object-cover xl:w-[100%] xl:h-[34rem]"
+                            src={image}
+                            width={400}
+                            height={300}
+                            alt=""
+                          ></Image>
+                        </div>
+
+                        <h1 className="title-font sm:text-xl text-xl text-center font-semibold  text-gray-900 mb-3">
+                          {name}
+                        </h1>
+                        <p className="mb-1 text-left font-semibold">
+                          Source : <span className="font-bah">{sorc}</span>
+                        </p>
+                        <p className="mb-1 text-left font-semibold">
+                          Author : <span className="font-bah">{auth}</span>
+                        </p>
+                        <p className="mb-1 text-left font-semibold">
+                          Date : <span className="font-bah">{date}</span>
+                        </p>
+                        {/* <p className="text-left">Source : {sorc}</p>
+                    <p className="text-left">Author : {auth}</p> */}
+                        <p className="leading-relaxed font-bah mt-5 text-justify ">
+                          {desc}
+                        </p>
+                      </div>
+                      <div className="flex justify-center  ">
+                        <a target="_blank" rel="noreferrer" href={link}>
+                          <p className="mt-8 font-bah   border-2 border-blue text-blue font-bold text-xs cursor-pointer hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
+                            Read More
+                          </p>
+                        </a>
+                      </div>
+                    </div>
                   );
                 }
               }
@@ -513,7 +517,7 @@ export default function Resources() {
               <div
                 className={` "border w-full lg:w-fit lg:h-[90%]  h-full   flex flex-row lg:flex-col justify-center items-center bg-gray bg-opacity-100"`}
               >
-                <div className="lg:w-full bg-opacity-0 h-fit    bg-white flex flex-col  overflow-auto w-full">
+                <div className="lg:w-full bg-opacity-0 h-fit    bg-coustom1 flex flex-col  overflow-auto w-full">
                   <div
                     onClick={() => loadclick(null)}
                     className=" hover:cursor-pointer text-xl text-white text-end font-extrabold  animate-bounce  w-full"
@@ -539,104 +543,104 @@ export default function Resources() {
             </div>
           )}
         </div>
-      </section>
-      {
-        <div
-          className={`${fullblog ? "py-16  md:container md:mx-auto" : "mb-5 "}`}
-        >
-          <div className="grid gap-8   lg:grid-cols-3 ">
-            {fullblog &&
-              discover[buttonIndex].blogsdatafull.map(
-                ({ name, imgs, desc, small, titles, ser, vidoes }, index) => {
-                  if (buttonIndex === 0) {
-                    return (
-                      <div
-                        key={index}
-                        onClick={() => loadclick(vidoes)}
-                        href="/"
-                        aria-label="View Item"
-                      >
-                        <div className="relative rounded shadow-lg  hover:shadow-2xl">
-                          <img
-                            className="object-cover w-full h-56 md:h-64 xl:h-80"
-                            src={imgs}
-                            alt=""
-                          />
-                          <div className="absolute top-[30%] left-[40%] animate-pulse duration-100 ">
-                            <FaPlay color="slate" size={80} />
-                          </div>
-                          <div className="absolute inset-x-0 bottom-0 px-6 py-4 bg-black bg-opacity-75">
-                            <p className="text-sm font-medium font-bah tracking-wide text-white">
-                              {name}
-                            </p>
+        {
+          <div
+            className={`${fullblog ? "  md:container md:mx-auto" : " "}`}
+          >
+            <div className="grid gap-8   lg:grid-cols-3 ">
+              {fullblog &&
+                discover[buttonIndex].blogsdatafull.map(
+                  ({ name, imgs, desc, small, titles, ser, vidoes }, index) => {
+                    if (buttonIndex === 0) {
+                      return (
+                        <div
+                          key={index}
+                          onClick={() => loadclick(vidoes)}
+                          href="/"
+                          aria-label="View Item"
+                        >
+                          <div className="relative rounded shadow-lg  hover:shadow-2xl">
+                            <img
+                              className="object-cover w-full h-56 md:h-64 xl:h-80"
+                              src={imgs}
+                              alt=""
+                            />
+                            <div className="absolute top-[30%] left-[40%] animate-pulse duration-100 ">
+                              <FaPlay color="slate" size={80} />
+                            </div>
+                            <div className="absolute inset-x-0 bottom-0 px-6 py-4 bg-black bg-opacity-75">
+                              <p className="text-sm font-medium font-bah tracking-wide text-white">
+                                {name}
+                              </p>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    );
-                  } else {
-                    return (
-                      //         <div
-                      //         key={index}
-                      //         className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm"
-                      //       >
-                      //         <img
-                      //           src="https://images.pexels.com/photos/2408666/pexels-photo-2408666.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
-                      //           className="object-cover w-full h-64"
-                      //           alt=""
-                      //         />
-                      //         <div className="p-2  border-t-0">
-                      //           <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
-                      //             <a
-                      //               href=""
-                      //               className="transition-colors duration-200 text-blue-gray-900 hover:text-deep-purple-accent-700"
-                      //               aria-label="Category"
-                      //               title="traveling"
-                      //             >
-                      //             {name}
-                      //             </a>
-                      //           </p>
-                      //           <a
-                      //             href=""
-                      //             aria-label="Category"
-                      //             title="Visit the East"
-                      //             className="inline-block mb-3 font-bah text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700"
-                      //           >
-                      //             Title
-                      //           </a>
-                      //           <p className="mb-2 text-gray-700 font-bah">
-                      //             Lorem ipsum dolor sit amet, consectetur adipisicing
-                      //             elit. Dignissimos a eveniet sequi similique expedita id
-                      //             obcaecati velit suscipit consequuntur excepturi
-                      //             repellendus iste illo blanditiis possimus fugit
-                      //             doloribus, numquam, maxime ratione!
-                      //           </p>
-                      //           <div className="flex justify-center">
-                      // <Link href=" /reso/reso1">
-                      //   <button className="mt-8 font-bah  bg-white border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
-                      //     READ MORE
-                      //   </button>
-                      // </Link>
-                      // </div>
-                      //         </div>
-                      //       </div>
-                      <div className="text-2xl font-bah">Coming Soon</div>
-                    );
+                      );
+                    } else {
+                      return (
+                        //         <div
+                        //         key={index}
+                        //         className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm"
+                        //       >
+                        //         <img
+                        //           src="https://images.pexels.com/photos/2408666/pexels-photo-2408666.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
+                        //           className="object-cover w-full h-64"
+                        //           alt=""
+                        //         />
+                        //         <div className="p-2  border-t-0">
+                        //           <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
+                        //             <a
+                        //               href=""
+                        //               className="transition-colors duration-200 text-blue-gray-900 hover:text-deep-purple-accent-700"
+                        //               aria-label="Category"
+                        //               title="traveling"
+                        //             >
+                        //             {name}
+                        //             </a>
+                        //           </p>
+                        //           <a
+                        //             href=""
+                        //             aria-label="Category"
+                        //             title="Visit the East"
+                        //             className="inline-block mb-3 font-bah text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700"
+                        //           >
+                        //             Title
+                        //           </a>
+                        //           <p className="mb-2 text-gray-700 font-bah">
+                        //             Lorem ipsum dolor sit amet, consectetur adipisicing
+                        //             elit. Dignissimos a eveniet sequi similique expedita id
+                        //             obcaecati velit suscipit consequuntur excepturi
+                        //             repellendus iste illo blanditiis possimus fugit
+                        //             doloribus, numquam, maxime ratione!
+                        //           </p>
+                        //           <div className="flex justify-center">
+                        // <Link href=" /reso/reso1">
+                        //   <button className="mt-8 font-bah  bg-white border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
+                        //     READ MORE
+                        //   </button>
+                        // </Link>
+                        // </div>
+                        //         </div>
+                        //       </div>
+                        <div className="text-2xl font-bah">Coming Soon</div>
+                      );
+                    }
                   }
-                }
-              )}
+                )}
+            </div>
           </div>
-        </div>
-      }
-      {fullblog && (
-        <div className="w-full flex mt-5 justify-center">
-          <button
-            onClick={() => (setFullblog(null), setLoadmore(1))}
-            className="mt-5 mb-10 font-bah   border-2 border-blue text-blue font-bold text-xs cursor-pointer hover:text-white hover:bg-blue p-3 rounded-lg transition-all "
-          >
-            Show Less
-          </button>
-        </div>
-      )}
-    </>
+        }
+        {fullblog && (
+          <div className="w-full flex mt-5 justify-center">
+            <button
+              onClick={() => (setFullblog(null), setLoadmore(1))}
+              className="mt-5 mb-10 font-bah   border-2 border-blue text-blue font-bold text-xs cursor-pointer hover:text-white hover:bg-blue p-3 rounded-lg transition-all "
+            >
+              Show Less
+            </button>
+          </div>
+        )}
+      </section>
+    </section>
   );
 }

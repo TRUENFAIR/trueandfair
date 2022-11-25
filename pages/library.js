@@ -519,86 +519,93 @@ export default function Library() {
   ];
 
   return (
-    <>
-      <Head>
-        <title>True & Fair | Library</title>
-        <meta name="description" content="Illustrative Quality Standards, Illustrative Audit Practice Manual, Illustrative Practice Aids & Guidance, Regulatory Developments, Professional Standards & Regulations"/>
-      </Head>
-      <section className="text-black md:container md:mx-auto  ">
-        <div className="mt-16">
-          <ul className="grid gap-3 grid-cols-2 lg:grid-cols-5  mt-5 text-center  text-black bg-white rounded-full p-1">
-            {discover.map(({ name }, index) => {
-              return (
-                <li
-                  className="w-full "
-                  key={index}
-                  onClick={() => {
-                    buttonClick(index);
-                  }}
-                >
-                  <h1
-                    className={`${
-                      index === buttonIndex
-                        ? " text-blue  text-xl font-bold font-bah border-blue border-b-4"
-                        : "bg-white"
-                    } flex justify-center text-xl font-bah  title-font text-black   mb-4 hover:cursor-pointer`}
+    <section className="bg-lightgray">
+      
+        <section className="text-black ">
+          <Head>
+            <title>True & Fair | Library</title>
+            <meta
+              name="description"
+              content="Illustrative Quality Standards, Illustrative Audit Practice Manual, Illustrative Practice Aids & Guidance, Regulatory Developments, Professional Standards & Regulations"
+            />
+          </Head>
+
+          <div className=" md:container md:mx-auto">
+            <ul className="grid gap-3  grid-cols-2 lg:grid-cols-5   text-center  text-black  rounded-full p-1">
+              {discover.map(({ name }, index) => {
+                return (
+                  <li
+                    className="w-full mt-10 "
+                    key={index}
+                    onClick={() => {
+                      buttonClick(index);
+                    }}
                   >
-                    {name}
-                  </h1>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-      </section>
-
-      <section className="text-black md:container md:mx-auto">
-        <div className="">
-          <div className="grid gap-4 grid-cols-1 mb-10 lg:grid-cols-1 sm:max-w-sm sm:mx-auto lg:max-w-full">
-            {discover[buttonIndex].blogsdata.map(
-              ({ name, imgs, desc, small, title, ser, videos }, index) => {
-                if (buttonIndex === 0) {
-                  return <QualityStandards />;
-                } else if (buttonIndex === 1) {
-                  return <AuditPracticeManual />;
-                } else if (buttonIndex === 2) {
-                  return <PracticeAid />;
-                } else {
-                  return (
-                    <div className="font-bah text-xl font-bold" key={index}>Coming Soon</div>
-                    //   <div key={index} className="p-2 mt-8 transition-all  hover:scale-110 border rounded-lg shadow-lg  ">
-
-                    //       <div className="w-full flex gap- flex-col">
-                    //         <h4 className="mb-2 font-semibold text-center"> {name}</h4>
-
-                    //         <div className="flex justify-center">
-                    //     <Link href="/library">
-                    //   <a className="active:text-red text-sm  font-bah font-bold underline hover:text-orange decoration-blue text-blue">
-                    //    Read More
-                    //   </a>
-                    // </Link>{" "}
-                    //     </div>
-                    //       </div>
-
-                    //   </div>
-                  );
-                }
-              }
-            )}
+                    <h1
+                      className={`${
+                        index === buttonIndex
+                          ? " text-blue  text-xl font-bold font-bah border-blue border-b-4"
+                          : ""
+                      } flex justify-center text-xl font-bah  title-font text-black   mb-4 hover:cursor-pointer`}
+                    >
+                      {name}
+                    </h1>
+                  </li>
+                );
+              })}
+            </ul>
           </div>
-        </div>
-        {/* {loadmore && (
+        </section>
+
+        <section className="text-black md:container md:mx-auto">
+          <div className="">
+            <div className="grid gap-4 grid-cols-1 lg:grid-cols-1 sm:max-w-sm sm:mx-auto lg:max-w-full">
+              {discover[buttonIndex].blogsdata.map(
+                ({ name, imgs, desc, small, title, ser, videos }, index) => {
+                  if (buttonIndex === 0) {
+                    return <QualityStandards />;
+                  } else if (buttonIndex === 1) {
+                    return <AuditPracticeManual />;
+                  } else if (buttonIndex === 2) {
+                    return <PracticeAid />;
+                  } else {
+                    return (
+                      <div className="font-bah text-xl h-[600px] text-center mt-5 font-bold" key={index}>
+                        Coming Soon
+                      </div>
+                      //   <div key={index} className="p-2 mt-8 transition-all  hover:scale-110 border rounded-lg shadow-lg  ">
+
+                      //       <div className="w-full flex gap- flex-col">
+                      //         <h4 className="mb-2 font-semibold text-center"> {name}</h4>
+
+                      //         <div className="flex justify-center">
+                      //     <Link href="/library">
+                      //   <a className="active:text-red text-sm  font-bah font-bold underline hover:text-orange decoration-blue text-blue">
+                      //    Read More
+                      //   </a>
+                      // </Link>{" "}
+                      //     </div>
+                      //       </div>
+
+                      //   </div>
+                    );
+                  }
+                }
+              )}
+            </div>
+          </div>
+          {/* {loadmore && (
           <div className="w-full flex mb-5  justify-center">
             <button
               onClick={() => (loadclick(), setLoadmore(null))}
-              className="mt-8 font-bah  bg-white border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg transition-all"
+              className="mt-8 font-bah   border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg transition-all"
             >
               LOAD MORE
             </button>
           </div>
         )} */}
-      </section>
-      {/* {
+        </section>
+        {/* {
         <div
           className={`${fullblog ? "py-16  md:container md:mx-auto" : "mb-5 "}`}
         >
@@ -633,14 +640,14 @@ export default function Library() {
           </div>
         </div>
       } */}
-      {/* {videoss && (
+        {/* {videoss && (
         <div
           className={`fixed flex justify-center items-center bg-opacity-80  z-50 top-0   left-0 w-screen h-screen bg-black`}
         >
           <div
             className={` "border w-full lg:w-fit lg:h-[90%]  h-full   flex flex-row lg:flex-col justify-center items-center bg-gray bg-opacity-100"`}
           >
-            <div className="lg:w-full bg-opacity-0 h-fit    bg-white flex flex-col  overflow-auto w-full">
+            <div className="lg:w-full bg-opacity-0 h-fit     flex flex-col  overflow-auto w-full">
               <div
                 onClick={() => videoclick(null)}
                 className=" hover:cursor-pointer text-xl text-white text-end font-extrabold  animate-bounce  w-full"
@@ -657,14 +664,14 @@ export default function Library() {
         <div className="w-full flex m-5 justify-center">
           <button
             onClick={() => (setFullblog(null), setLoadmore(1))}
-            className="mt-8 font-bah  bg-white border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg transition-all "
+            className="mt-8 font-bah   border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg transition-all "
           >
             SHOW LESS
           </button>
         </div>
       )} */}
 
-      {/* <section className="md:container mx-auto">
+        {/* <section className="md:container mx-auto">
         <div className="py-5  md:py-16">
           <p className="text-center text-2xl tracking-widest mb-10 font-bah font-extrabold">
             Videos
@@ -705,7 +712,7 @@ export default function Library() {
               <div
                 className={` "border w-full lg:w-fit lg:h-[90%]  h-full   flex flex-row lg:flex-col justify-center items-center bg-gray bg-opacity-100"`}
               >
-                <div className="lg:w-full bg-opacity-0 h-fit    bg-white flex flex-col  overflow-auto w-full">
+                <div className="lg:w-full bg-opacity-0 h-fit     flex flex-col  overflow-auto w-full">
                   <div
                     onClick={() => videoclick(null)}
                     className=" hover:cursor-pointer text-xl text-white text-end font-extrabold  animate-bounce  w-full"
@@ -719,12 +726,13 @@ export default function Library() {
           )}
 
           <div className="text-center flex justify-center">
-            <button className="px-6 font-bah py-2 font-medium tracking-wide text-black bg-white border-2 border-black hover:bg-black hover:border-white mb-5     rounded-md  hover:text-white ">
+            <button className="px-6 font-bah py-2 font-medium tracking-wide text-black  border-2 border-black hover:bg-black hover:border-white mb-5     rounded-md  hover:text-white ">
               Watch More
             </button>
           </div>
         </div>
       </section> */}
-    </>
+      </section>
+    
   );
 }

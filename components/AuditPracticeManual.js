@@ -2,7 +2,7 @@ import React from "react";
 
 export default function AuditPracticeManual() {
   return <>
-  <div className="flex  gap-10 my-14">
+  <div className="flex lg:mb-44 gap-10 my-14">
         <div data-aos="fade-up" data-aos-once="true" className="w-auto">
           <div className="w-auto mt-5">
             <div className="flex gap-1 mt-4 text-black flex-row">
