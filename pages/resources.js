@@ -331,13 +331,6 @@ export default function Resources() {
       desc: "From Ashtanga to Vinyasa, make mindful movement a daily ritual.",
       blogsdata: [
         {
-          link: "/blog/blogOne",
-          name: "Audit Quality Maturity Model (AQMM) – The way forward",
-          small: "title",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos a eveniet sequi similique expedita id obcaecati velit suscipit consequuntur excepturi repellendus iste illo blanditiis possimus fugit dol",
-          image: "/homeicontwo/hmicon.jpg",
-        },
-        {
           link: "/blog/blogTwo",
           name: "A Dream leading to a Vision",
           small: "title",
@@ -346,11 +339,19 @@ export default function Resources() {
         },
         {
           link: "/blog/blogThree",
-          name: "True and Fair's policy enhancement in audit performance and auditor,s reporting",
+          name: "True and Fair's policy enhancement in audit performance and auditor's reporting",
           small: "title",
           desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos a eveniet sequi similique expedita id obcaecati velit suscipit consequuntur excepturi repellendus iste illo blanditiis possimus fugit dol",
           image: "/blog/2.jpg",
         },
+        {
+          link: "/blog/blogOne",
+          name: "Audit Quality Maturity Model (AQMM) – The way forward",
+          small: "title",
+          desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos a eveniet sequi similique expedita id obcaecati velit suscipit consequuntur excepturi repellendus iste illo blanditiis possimus fugit dol",
+          image: "/homeicontwo/hmicon.jpg",
+        },
+        
       ],
       blogsdatafull: [],
     },

@@ -96,197 +96,132 @@ maturity
             </div>
           </div> */}
           <p className="leading-loose mt-4   text-justify  font-bah text-black ">
+            {" "}
             Alongside, I realised most firms may not have the necessary skill
             set for Information Technology (IT) audits, forensic and valuation
             audit support - all of which are critical to perform high quality
+            audits. And in this endeavour to strengthen the ecosystem of
+            auditors I have reached out to IT audit firms, forensic auditors and
+            valuation specialists socialising my idea. I am delighted to share
+            that I’ve received a positive response from several of them aligned
+            with an interest to be part of this journey envisioned by True and
+            Fair. I am confident that I will be able to make available these
+            skill sets to chartered accountant firms as they perform their
             audits.
           </p>
           <p className="leading-loose mt-4   text-justify  font-bah text-black ">
-            And in this endeavour to strengthen the ecosystem of auditors I have
-            reached out to IT audit firms, forensic auditors and valuation
-            specialists socialising my idea. I am delighted to share that I’ve
-            received a positive response from several of them aligned with an
-            interest to be part of this journey envisioned by True and Fair. I
-            am confident that I will be able to make available these skill sets
-            to chartered accountant firms as they perform their audits.
-          </p>
-          <p className="leading-loose mt-4   text-justify  font-bah text-black ">
+            {" "}
             The timing to launch True and Fair is also right. With increased
             regulatory scrutiny on auditors, greater expectation from auditors,
             and more stringent governance, a firm like ours can help auditors
-            and audit firms to carry out their tasks seamlessly.
+            and audit firms to carry out their tasks seamlessly. The
+            announcement of mandatory applicability of AQMM, enhancements made
+            to the peer review process by the Institute, QRB process, and other
+            systemic changes are all focussed on audit quality and chartered
+            accountant firms may need the assistance from a firm like True and
+            Fair which is focussed on audit quality. We also anticipate a
+            regulatory change viz-a-viz joint audits. Our services can provide
+            chartered accountant firms with good quality policies and practices
+            in such an environment.
           </p>
-          <p className="leading-loose mt-4   text-justify  font-bah text-black ">
-            The announcement of mandatory applicability of AQMM, enhancements
-            made to the peer review process by the Institute, QRB process, and
-            other systemic changes are all focussed on audit quality and
-            chartered accountant firms may need the assistance from a firm like
-            True and Fair which is focussed on audit quality..
-          </p>
-          <p className="leading-loose  mt-4  text-justify  font-bah text-black ">
-            We also anticipate a regulatory change viz-a-viz joint audits. Our
-            services can provide chartered accountant firms with good quality
-            policies and practices in such an environment.
-          </p>
+          <p className="leading-loose  mt-4  text-justify  font-bah text-black "></p>
           <p className="leading-loose mt-4   text-justify  font-bah text-black ">
             With the above in mind, True and Fair has conceived a suite of
             service offerings for chartered accountant firms.
           </p>
-
-          <div data-aos="fade-up" data-aos-once="true" className=" mt-4 ">
-            <p className="leading-loose mt-5  text-justify  font-bah text-black ">
-              In Phase 1 of our launch we will offer the following services:
-            </p>
-            <div className="w-auto mt-2">
-              <div className="flex gap-1 mt-4 text-black flex-row">
-                <span className="w-fit ">✔️</span>{" "}
-                <p className="prose text-justify text-black font-bah ">
-                  {`Quality policies: i) Basic or those that comply with standards on auditing ii)Enhanced
-              `}
-                </p>
-              </div>
-              <div className="flex gap-1 mt-4 text-black flex-row">
-                <span className="w-fit ">✔️</span>{" "}
-                <p className="prose text-justify  text-black font-bah ">
-                  {`Technical guidance on matters of audit and accounting importance
-              `}
-                </p>
-              </div>{" "}
-              <div className="flex gap-1 mt-4 text-black flex-row">
-                <span className="w-fit ">✔️</span>{" "}
-                <p className="prose text-justify  text-black font-bah ">
-                  {`Audit Documentation and Archival Tool (ADAT)
-              `}
-                </p>
-              </div>
-              <div className="flex gap-1 mt-4 text-black flex-row">
-                <span className="w-fit ">✔️</span>{" "}
-                <p className="prose text-justify text-black font-bah ">
-                  {`Monitoring of compliance with the quality policies, technical guidance and application of
-ADAT tool in the audit
-              `}
-                </p>
-              </div>
-              <div className="flex gap-1 mt-4 text-black flex-row">
-                <span className="w-fit ">✔️</span>{" "}
-                <p className="prose text-justify text-black font-bah ">
-                  {`Training
-              `}
-                </p>
-              </div>
-              <div className="flex gap-1 mt-4 text-black flex-row">
-                <span className="w-fit ">✔️</span>{" "}
-                <p className="prose text-justify text-black font-bah ">
-                  {`Practice protection: Guiding chartered accountant firms in external inspections
-              `}
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <p className="leading-loose mt-4  text-justify  font-bah text-black ">
+          <p className="leading-loose mt-5  text-justify  font-bah text-black ">
+            In Phase 1 of our launch we will offer the following services:
+          </p>
+          <p className="leading-loose   text-justify  font-bah text-black ">
+            <span className="w-fit ">✔️</span>{ `Quality policies: i) Basic or
+            those that comply with standards on auditing ii)Enhanced technical
+            guidance on matters of audit and accounting importance`}
+          </p>
+          <p className="leading-loose   text-justify  font-bah text-black ">
+            <span className="w-fit ">✔️</span> Audit Documentation and Archival Tool (ADAT)
+          </p>
+          <p className="leading-loose   text-justify  font-bah text-black ">
+            <span className="w-fit ">✔️</span> Monitoring of compliance with the
+            quality policies, technical guidance and application of ADAT tool in
+            the audit
+          </p>
+          <p className="leading-loose   text-justify  font-bah text-black ">
+            <span className="w-fit ">✔️</span> Training
+          </p>
+          <p className="leading-loose   text-justify  font-bah text-black ">
+            <span className="w-fit ">✔️</span> Practice protection: Guiding
+            chartered accountant firms in external inspections
+          </p>
+          <p className="leading-loose  text-justify  font-bah text-black ">
             At True and Fair we can also enable performance of engagement
             quality control reviews for audit firms in compliance with the
             professional standards.
           </p>
-          <p className="leading-loose  mt-4   text-justify  font-bah text-black ">
+          <p className="leading-loose    text-justify  font-bah text-black ">
             As we evolve and grow as a firm, we will offer the following
             services to various entities we work with:
           </p>
-
-          <div data-aos="fade-up" data-aos-once="true" className="w-auto">
-            <p className="leading-loose mt-5 font-bold  text-justify  font-bah text-black ">
+          <p className="leading-loose mt-5 font-bold  text-justify  font-bah text-black ">
               1. Audit firms
             </p>
-            <div className="w-auto mt-2">
-              <div className="flex gap-1 mt-4 text-black flex-row">
-                <span className="w-fit ">✔️</span>{" "}
-                <p className="prose text-justify text-black font-bah ">
-                  {`Quality policies: i) Basic or those that comply with standards on auditing ii)Enhanced
-              `}
-                </p>
-              </div>
-              <div className="flex gap-1 mt-4 text-black flex-row">
-                <span className="w-fit ">✔️</span>{" "}
-                <p className="prose text-justify  text-black font-bah ">
-                  {`Operations management: client and engagement risk assessment, conflict
-checks, creation of engagement projects
-              `}
-                </p>
-              </div>{" "}
-              <div className="flex gap-1 mt-4 text-black flex-row">
-                <span className="w-fit ">✔️</span>{" "}
-                <p className="prose text-justify  text-black font-bah ">
-                  {`Industry specific audit file templates (planned for FY' 23-24)
-              `}
-                </p>
-              </div>{" "}
-              <div className="flex gap-1 mt-4 text-black flex-row">
-                <span className="w-fit ">✔️</span>{" "}
-                <p className="prose text-justify text-black font-bah ">
-                  {`Talent management: Time and expense tracking, scheduling, integration with
-ADAT (planned for FY’ 23-24)
-              `}
-                </p>
-              </div>
-              <div className="flex gap-1 mt-4 text-black flex-row">
-                <span className="w-fit ">✔️</span>{" "}
-                <p className="prose text-justify text-black font-bah ">
-                  {`Improved automation in ADAT based on user feedback (planned for FY’ 24-25)
-              `}
-                </p>
-              </div>
-              <div className="flex gap-1 mt-4 text-black flex-row">
-                <span className="w-fit ">✔️</span>{" "}
-                <p className="prose text-justify text-black font-bah ">
-                  {`Investment in data analytics (planned for FY’ 23-24)
-              `}
-                </p>
-              </div>
-              <div className="flex gap-1 mt-4 text-black flex-row">
-                <span className="w-fit ">✔️</span>{" "}
-                <p className="prose text-justify text-black font-bah ">
-                  {`Investment in artificial intelligence (planned for FY’ 25-26)
-              `}
-                </p>
-              </div>
-            </div>
-          </div>
-
+          <p className="leading-loose   text-justify  font-bah text-black ">
+            <span className="w-fit ">✔️</span>{`Quality policies: i) Basic or those that comply with standards on auditing`}
+          </p>{" "}
+          <p className="leading-loose   text-justify  font-bah text-black ">
+            <span className="w-fit ">✔️</span> Enhanced operations management, client and engagement risk assessment, conflict checks, creation of engagement projects
+          </p>
+          <p className="leading-loose   text-justify  font-bah text-black ">
+            <span className="w-fit ">✔️</span> {`Industry specific audit file templates (planned for FY' 23-24)`}
+          </p>
+          <p className="leading-loose   text-justify  font-bah text-black ">
+            <span className="w-fit ">✔️</span> Talent management: Time and expense tracking, scheduling, integration with ADAT (planned for FY’ 23-24)
+          </p>
+          <p className="leading-loose   text-justify  font-bah text-black ">
+            <span className="w-fit ">✔️</span>Improved automation in ADAT based on user feedback (planned for FY’ 24-25)
+          </p>
+          <p className="leading-loose   text-justify  font-bah text-black ">
+            <span className="w-fit ">✔️</span> Investment in data analytics (planned for FY’ 23-24)
+          </p>
+          <p className="leading-loose    text-justify  font-bah text-black ">
+            <span className="w-fit ">✔️</span> Investment in artificial intelligence (planned for FY’ 25-26)
+          </p>
+          
+           
+          
           <div data-aos="fade-up" data-aos-once="true" className="w-auto">
             <p className="leading-loose mt-5 font-bold text-justify  font-bah text-black ">
               2. Corporates
             </p>
             <div className="w-auto mt-2">
-              <div className="flex gap-1 mt-4 text-black flex-row">
+              <div className="flex gap-1  text-black flex-row">
                 <span className="w-fit ">✔️</span>{" "}
                 <p className="prose text-justify  text-black font-bah ">
                   {`Advice on complex accounting and financial reporting matters
               `}
                 </p>
               </div>{" "}
-              <div className="flex gap-1 mt-4 text-black flex-row">
+              <div className="flex gap-1  text-black flex-row">
                 <span className="w-fit ">✔️</span>{" "}
                 <p className="prose text-justify  text-black font-bah ">
                   {`Environmental, Societal, and Governance (ESG) policies and governance
               `}
                 </p>
               </div>
-              <div className="flex gap-1 mt-4 text-black flex-row">
+              <div className="flex gap-1  text-black flex-row">
                 <span className="w-fit ">✔️</span>{" "}
                 <p className="prose text-justify text-black font-bah ">
                   {`Advice on internal financial controls and risk management practices
               `}
                 </p>
               </div>
-              <div className="flex gap-1 mt-4 text-black flex-row">
+              <div className="flex gap-1  text-black flex-row">
                 <span className="w-fit ">✔️</span>{" "}
                 <p className="prose text-justify text-black font-bah ">
                   {`Advice on governance matters
               `}
                 </p>
               </div>
-              <div className="flex gap-1 mt-4 text-black flex-row">
+              <div className="flex gap-1  text-black flex-row">
                 <span className="w-fit ">✔️</span>{" "}
                 <p className="prose text-justify text-black font-bah ">
                   {`Engaging with auditors
@@ -295,7 +230,6 @@ ADAT (planned for FY’ 23-24)
               </div>
             </div>
           </div>
-
           <div data-aos="fade-up" data-aos-once="true" className="w-auto">
             <p className="leading-loose mt-5 font-bold  text-justify  font-bah text-black ">
               3. Regulators
@@ -309,7 +243,7 @@ ADAT (planned for FY’ 23-24)
                 </p>
               </div>{" "}
               <p className="prose text-justify ml-8 text-black font-bah ">
-                {`⮚ standard setting and updating standards/ regulations
+                {`⮚ Standard setting and updating standards/ regulations
               `}
               </p>
               <p className="prose text-justify ml-8 text-black font-bah ">
@@ -322,7 +256,6 @@ ADAT (planned for FY’ 23-24)
               </p>
             </div>
           </div>
-
           <p className="leading-loose mt-4   text-justify  font-bah text-black ">
             Our overarching vision is to be recognised as the STANDARD SETTER in
             the financial reporting ecosystem with regard to quality of audits
@@ -330,12 +263,10 @@ ADAT (planned for FY’ 23-24)
             build capacity and enhance the professional capability of audit
             firms.
           </p>
-
           <p className="leading-loose mt-4 mb-8  text-justify  font-bah text-black ">
             We look forward to an exciting and fulfilling journey with chartered
             accountant firms where quality of audits is paramount to success.
           </p>
-
           {/* <p className="leading-loose   text-justify  font-bah text-black "></p>
           <p className="leading-loose   text-justify  font-bah text-black "></p>
           <p className="leading-loose   text-justify  font-bah text-black "></p>

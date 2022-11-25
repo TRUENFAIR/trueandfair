@@ -27,7 +27,7 @@ function BlogThree() {
           </div>
         </section>
         <div className="md:container md:p-0 p-5 md:mx-auto">
-          {/* <p className="leading-loose font-bold  text-left mt-14  font-bah text-black ">
+          <p className="leading-loose font-bold  text-left mt-14  font-bah text-black ">
             V. Balaji
           </p>
           <p className="leading-loose font-bold  text-left   font-bah text-black ">
@@ -35,7 +35,7 @@ function BlogThree() {
           </p>
           <p className="leading-loose font-bold  text-left mb-6 font-bah text-black ">
             True and Fair Professionals Network
-          </p> */}
+          </p>
           <p className="leading-loose mt-8  text-justify  font-bah text-black ">
             I am deeply passionate about audits and the quality of audits
             therein. As outlined earlier True and Fair has developed two sets of
@@ -273,9 +273,10 @@ maturity
             hosted on the cloud.
           </p>
           <p className="leading-loose mb-12  text-justify  font-bah text-black ">
-            We will provide an exhaustive library of technical guidance,
-            practice aids, standard formats relating to audit which will be
-            hosted on the cloud.
+          True and Fair plans to launch the service offerings for Phase 1 by March 2023 so that audit firms
+have adequate time to use it before any requirements for joint audits kick in. We are confident
+that our services will enable audit firms to make a compelling and competitive pitch for
+themselves in the audit universe.
           </p>
           {/* <p className="leading-loose   text-justify  font-bah text-black "></p>
           <p className="leading-loose   text-justify  font-bah text-black "></p>
