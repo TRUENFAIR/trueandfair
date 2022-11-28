@@ -368,7 +368,7 @@ export default function Resources() {
           desc: "Securities and Exchange Board of India (Sebi) chairperson Madhabi Puri Buch on Thursday nudged auditors to use .....",
           image: "/news/lap.png",
           sorc: "The Economics Times",
-          auth: "ET Bureau,",
+          auth: "ET Bureau",
           date: "Nov 25, 2022",
         },
         {
@@ -558,28 +558,26 @@ export default function Resources() {
                       <h1 className="title-font sm:text-xl text-xl text-center font-semibold  text-gray-900 mb-3">
                         {name}
                       </h1>
-                      <p className="mb-1 text-sm  p-1 text-left font-semibold">
+                      <p className="mb-1 text-sm text-center p-1  font-semibold">
                         Source : <span className="font-bah">{sorc}</span>
                       </p>
-                      <div className="flex   flex-row gap-4">
+                      <div className="flex justify-center  flex-row gap-4">
                         <p className="mb-1 text-sm text-left font-semibold">
-                          Author : <span className="font-bah">{auth}</span>
+                          By <span className="font-bah">{auth}</span>, {date}
                         </p>
-                        <p className="mb-1  text-sm text-left font-semibold">
-                          Date : <span className="font-bah">{date}</span>
-                        </p>
+                        
                       </div>
 
                       {/* <p className="text-left">Source : {sorc}</p>
                     <p className="text-left">Author : {auth}</p> */}
-                      <p className="leading-relaxed p-1 font-bah mt-2 text-justify ">
+                      {/* <p className="leading-relaxed p-1 font-bah mt-2 text-justify ">
                         {desc}
-                      </p>
+                      </p> */}
 
                       <div className="flex justify-center  ">
                         <a target="_blank" rel="noreferrer" href={link}>
                           <p className="mt-8 font-bah mb-5   border-2 border-blue text-blue font-bold text-xs cursor-pointer hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
-                            Read More
+                          READ MORE
                           </p>
                         </a>
                       </div>
@@ -617,7 +615,7 @@ export default function Resources() {
                 onClick={() => (loadclick(), setLoadmore(null))}
                 className="mt-8 font-bah mb-5   border-2 border-blue text-blue font-bold text-xs cursor-pointer hover:text-white hover:bg-blue p-3 rounded-lg transition-all "
               >
-                Load More
+                LOAD MORE
               </button>
             </div>
           )}
@@ -631,6 +629,7 @@ export default function Resources() {
                     {
                       name,
                       image,
+                      imgs,
                       desc,
                       small,
                       sorc,
@@ -688,28 +687,26 @@ export default function Resources() {
                           <h1 className="title-font sm:text-xl text-xl text-center font-semibold  text-gray-900 mb-3">
                             {name}
                           </h1>
-                          <p className="mb-1 text-sm  p-1 text-left font-semibold">
+                          <p className="mb-1 text-sm text-center p-1 font-semibold">
                             Source : <span className="font-bah">{sorc}</span>
                           </p>
-                          <div className="flex   flex-row gap-4">
+                          <div className="flex justify-center  flex-row gap-4">
                             <p className="mb-1 text-sm text-left font-semibold">
-                              Author : <span className="font-bah">{auth}</span>
+                              By <span className="font-bah">{auth}</span>, {date}
                             </p>
-                            <p className="mb-1  text-sm text-left font-semibold">
-                              Date : <span className="font-bah">{date}</span>
-                            </p>
+                         
                           </div>
 
                           {/* <p className="text-left">Source : {sorc}</p>
                       <p className="text-left">Author : {auth}</p> */}
-                          <p className="leading-relaxed p-1 font-bah mt-2 text-justify ">
+                          {/* <p className="leading-relaxed p-1 font-bah mt-2 text-justify ">
                             {desc}
-                          </p>
+                          </p> */}
 
                           <div className="flex justify-center  ">
                             <a target="_blank" rel="noreferrer" href={link}>
                               <p className="mt-8 font-bah mb-5   border-2 border-blue text-blue font-bold text-xs cursor-pointer hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
-                                Read More
+                              READ MORE
                               </p>
                             </a>
                           </div>
@@ -727,7 +724,7 @@ export default function Resources() {
               onClick={() => (setFullblog(null), setLoadmore(1))}
               className="mt-5 mb-10 font-bah   border-2 border-blue text-blue font-bold text-xs cursor-pointer hover:text-white hover:bg-blue p-3 rounded-lg transition-all "
             >
-              Show Less
+             SHOW LESS
             </button>
           </div>
         )}

@@ -8,7 +8,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 // import Libraryslide from "../components/libraryslide";
-// import Resourceslide from "../components/resorceslide";
+import Resourceslide from "../components/resorceslide";
 // import Abouthome from "../components/abouthome";
 // import Fixediv from "../components/fixediv";
 // import Focusareaslide from "../components/focusareaslide";
@@ -384,7 +384,7 @@ export default function Home() {
               <ul className="grid lg:grid-cols-3 grid-cols-1 lg:gap-12">
                 {whytf.map(({ text, id, title }, index) => {
                   return (
-                    <div key={index}>
+                    <div className="hover:bg-white p-5 ease-in duration-150 hover:scale-[1.02] transition-all shadow-lg" key={index}>
                       <p className="font-bah h-18 text-center font-semibold text-lg text-black">
                         {title}
                       </p>
@@ -461,6 +461,7 @@ export default function Home() {
           </div>
         </div>
       </section> */}
+      <Resourceslide/>
     </main>
   );
 }

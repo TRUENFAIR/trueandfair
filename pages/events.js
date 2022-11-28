@@ -211,7 +211,7 @@ export default function Blogs() {
                   <div className="flex justify-center mt-1 ">
                     <Link href={link}>
                       <p className="mt-8 font-bah   border-2 border-blue text-blue font-bold text-xs cursor-pointer hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
-                        Read More
+                      READ MORE
                       </p>
                     </Link>
                   </div>
