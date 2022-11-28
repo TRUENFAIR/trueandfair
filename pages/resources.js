@@ -374,7 +374,7 @@ export default function Resources() {
         {
           ser: "/blogs/blogOne",
           link: "https://www.livemint.com/politics/policy/nfra-may-get-more-teeth-to-act-against-audit-lapses-11650309324804.html",
-          name: "Use Third Party Validation to Check Fraud: Buch to Auditors",
+          name: "NFRA may get more teeth to act against audit lapses",
           small: "title",
           desc: "NEW DELHI : The National Financial Reporting Authority (NFRA) will get more powers to act against auditors and ......",
           image: "/news/news2.jpg",
@@ -393,8 +393,6 @@ export default function Resources() {
           auth: "JOE MATHEW",
           date: "Nov 18, 2022",
         },
-      ],
-      blogsdatafull: [
         {
           ser: "/blogs/blogOne",
           link: "https://www.business-standard.com/article/companies/nfra-issues-audit-quality-inspection-guidelines-122111101597_1.html",
@@ -406,10 +404,13 @@ export default function Resources() {
           auth: "Ruchika Chitravanshi",
           date: "November 11, 2022",
         },
+      ],
+      blogsdatafull: [
+       
         {
           ser: "/blogs/blogOne",
           link: "https://cfo.economictimes.indiatimes.com/news/joint-audit-may-not-necessarily-enhance-audit-quality-divided-responsibility-is-also-divided-accountability-pr-ramesh/92167102",
-          name: "Joint audit may not necessarily enhance audit quality, divided responsibility is ..",
+          name: "Audit needs to become thinking audit again",
           small: "title",
           desc: "CA PR Ramesh, Ex Deloitte India Chairman and country’s top voice in the audit fraternity, said that the idea.......",
           image: "/news/news5.jpg",
@@ -477,7 +478,13 @@ export default function Resources() {
             perspiciatis unde omnis iste."
           </p> */}
 
-          <div className="grid gap-6 mt-8 row-gap-5 mb-8 lg:grid-cols-3 sm:row-gap-6 sm:grid-cols-2">
+          <div
+            className={
+              buttonIndex === 2
+                ? "grid gap-6 mt-8 row-gap-5 mb-8 lg:grid-cols-4 sm:row-gap-6 sm:grid-cols-2"
+                : "grid gap-6 mt-8 row-gap-5 mb-8 lg:grid-cols-3 sm:row-gap-6 sm:grid-cols-2"
+            }
+          >
             {discover[buttonIndex].blogsdata.map(
               (
                 { name, imgs, desc, vidoes, link, image, id, sorc, auth, date },
@@ -617,7 +624,7 @@ export default function Resources() {
         </div>
         {
           <div className={`${fullblog ? "  md:container md:mx-auto" : " "}`}>
-            <div className="grid gap-8   lg:grid-cols-3 ">
+            <div className={buttonIndex === 2? "grid gap-8   lg:grid-cols-4":"grid gap-8   lg:grid-cols-3 "}>
               {fullblog &&
                 discover[buttonIndex].blogsdatafull.map(
                   (
