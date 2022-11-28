@@ -543,7 +543,7 @@ export default function Resources() {
                   return (
                     <div
                       key={id}
-                      className="w-fit shadow-md bg-white flex flex-col lg:flex-1 py-4 justify-between bg-opacity-75 px-4   rounded-lg overflow-hidden text-center relative"
+                      className="w-fit shadow-md gap-0  bg-white flex flex-col lg:flex-1 py-4  bg-opacity-75 px-4   rounded-lg overflow-hidden text-center relative"
                     >
                       <div className=" w-full transition duration-150 ease-out hover:ease-in hover:opacity-50">
                         <Image
@@ -558,15 +558,15 @@ export default function Resources() {
                       <h1 className="title-font sm:text-xl text-xl text-center font-semibold  text-gray-900 mb-3">
                         {name}
                       </h1>
-                      <p className="mb-1 text-sm text-center p-1  font-semibold">
+                      <p className=" text-sm text-left  font-semibold">
                         Source : <span className="font-bah">{sorc}</span>
                       </p>
-                      <div className="flex justify-center  flex-row gap-4">
-                        <p className="mb-1 text-sm text-left font-semibold">
+                      
+                        <p className=" text-sm text-left font-semibold">
                           By <span className="font-bah">{auth}</span>, {date}
                         </p>
                         
-                      </div>
+                      
 
                       {/* <p className="text-left">Source : {sorc}</p>
                     <p className="text-left">Author : {auth}</p> */}
@@ -672,7 +672,7 @@ export default function Resources() {
                       return (
                         <div
                           key={index}
-                          className="w-fit shadow-md bg-white flex flex-col lg:flex-1 py-4 justify-between bg-opacity-75 px-4   rounded-lg overflow-hidden text-center relative"
+                          className="w-fit shadow-md gap-0 bg-white flex flex-col lg:flex-1 py-4  bg-opacity-75 px-4   rounded-lg overflow-hidden text-center relative"
                         >
                           <div className=" w-full transition duration-150 ease-out hover:ease-in hover:opacity-50">
                             <Image
@@ -684,14 +684,14 @@ export default function Resources() {
                             ></Image>
                           </div>
 
-                          <h1 className="title-font sm:text-xl text-xl text-center font-semibold  text-gray-900 mb-3">
+                          <h1 className="title-font sm:text-xl text-xl text-center font-semibold  text-gray-900 ">
                             {name}
                           </h1>
-                          <p className="mb-1 text-sm text-center p-1 font-semibold">
+                          <p className=" text-sm text-left font-semibold">
                             Source : <span className="font-bah">{sorc}</span>
                           </p>
-                          <div className="flex justify-center  flex-row gap-4">
-                            <p className="mb-1 text-sm text-left font-semibold">
+                          <div className="flex   flex-row ">
+                            <p className=" text-sm text-left font-semibold">
                               By <span className="font-bah">{auth}</span>, {date}
                             </p>
                          

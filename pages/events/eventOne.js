@@ -24,11 +24,11 @@ export default function Life() {
 
     { image: "/fac/f11.jpg", text: "True and Fair Professional Networks- The Team " },
     { image: "/fac/f12.jpg", text: "True and Fair Professional Networks- The Team @ WCOA 2022" },
-    { image: "/fac/f13.jpg", text: "True and Fair Professional Networks- The Team 1" },
+    { image: "/fac/f13.jpeg", text: "True and Fair Professional Networks- The Team 1" },
 
-    { image: "/fac/f14.jpg", text: "True and Fair Professional Networks- The Team all set for WCOA 2022" },
+    { image: "/fac/f14.jpeg", text: "True and Fair Professional Networks- The Team all set for WCOA 2022" },
 
-    { image: "/fac/f15.jpg", text: "True and Fair Professionals Network Stall in WCOA 2022 " },
+    { image: "/fac/f15.jpeg", text: "True and Fair Professionals Network Stall in WCOA 2022 " },
 
     // { image: "/fac/f16.jpg", text: "True and Fair Professionals Network Stall in WCOA 2022 " },
     // { image: "/fac/f17.jpg", text: "True and Fair Professionals Network Stall in WCOA 2022" },

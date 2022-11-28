@@ -175,7 +175,7 @@ export default function Resourceslide() {
                 spaceBetween: 20,
                 Autoplay: true,
                 loop: true,
-                speed: 800,
+                speed: 1500,
 
                 pagination: {},
               },
@@ -222,7 +222,7 @@ export default function Resourceslide() {
                               <div className="flex justify-center">
                                 <Link href="/resources">
                                   <button className="mt-8 font-bah   border-2 border-white text-white font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg ">
-                                    WATCH VIDEOS
+                                    WATCH VIDEO
                                   </button>
                                 </Link>
                               </div>
@@ -281,7 +281,7 @@ export default function Resourceslide() {
                               {name}
                             </h1>
                             <div className="flex justify-center">
-                              <Link href="/resources">
+                              <Link href="/resources#Blogs">
                                 <button className="mt-10 font-bah   border-2 border-white text-white font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg ">
                                   READ MORE
                                 </button>
@@ -337,17 +337,17 @@ export default function Resourceslide() {
                         <h1 className="title-font sm:text-base text-xl text-center font-semibold  text-gray-900 mb-3">
                           {name}
                         </h1>
-                        <p className="mb-1 text-sm  p-1 text-left font-semibold">
+                        <p className=" text-sm   text-left font-semibold">
                           Source : <span className="font-bah">{sorc}</span>
                         </p>
                         <div className="flex   flex-row gap-4">
-                          <p className="mb-1 text-sm text-left font-semibold">
+                          <p className=" text-sm text-left font-semibold">
                             By <span className="font-bah">{auth}</span> {date}
                           </p>
                         </div>
 
                         <div className="flex justify-center">
-                          <Link href="/resources">
+                          <Link href="/resources#News">
                             <button className="mt-2 font-bah   border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg ">
                               READ MORE
                             </button>
