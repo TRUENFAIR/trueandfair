@@ -3,47 +3,40 @@ import Image from "next/image";
 export default function Life() {
   const stuff = [
     { name: "video", image: "" },
-    { image: "/fac/f1.jpg", text: "Caption" },
-    { image: "/fac/f18.jpg", text: "Caption" },
-    // { image: "/fac/f2.jpg", text: "Caption" },
+    {
+      image: "/fac/f1.jpg",
+      text: "CA Hasmukh Shah, Founder and Managing Partner- Hasmukh Shah & Co LLP, connecting with True and Fair Professionals Network team",
+    },
+    { image: "/fac/f2.jpg", text: "Deepak Parekh, Chairman- HDFC and Independent Director & P.R. Ramesh- Former Chairman - Deloitte India and independent Director, visits True and Fair Stall at WCOA 2022 and express their support to the idea" },
 
-    { image: "/fac/f4.jpeg", text: "Caption" },
-    { image: "/fac/f5.jpg", text: "Caption" },
-    { image: "/fac/f6.jpg", text: "Caption" },
-    { image: "/fac/f7.jpg", text: "Caption" },
-    // { image: "/fac/f8.jpg", text: "Caption" },
-    { image: "/fac/f9.jpg", text: "Caption" },
-    // { image: "/fac/f10.jpg", text: "Caption" },
-    // { image: "/fac/f11.jpg", text: "Caption" },
-    { image: "/fac/f12.jpg", text: "Caption" },
-    // { image: "/fac/f13.jpg", text: "Caption" },
-    { image: "/fac/f14.jpg", text: "Caption" },
-    // { image: "/fac/f15.jpg", text: "Caption" },
+    { image: "/fac/f3.jpeg", text: "Deputy Chief Minister of Maharashtra Devendra Fadnavis addressing the crowd" },
+    { image: "/fac/f4.jpeg", text: "ICAI Editorial team visits True and Fair Professionals Network team and stall at WCOA 2022" },
+    { image: "/fac/f5.jpeg", text: "IFAC outgoing President Alan Johnson understanding our services " },
+    { image: "/fac/f6.jpeg", text: "IFAC outgoing President Alan Johnson understanding our services" },
 
-    { image: "/fac/f17.jpg", text: "Caption" },
+    { image: "/fac/f7.jpg", text: "IFAC outgoing President Alan Johnson visiting our Stall" },
 
-    { image: "/fac/f19.jpg", text: "Caption" },
-    { image: "/fac/f20.jpg", text: "Caption" },
-    { image: "/fac/f21.jpg", text: "Caption" },
-    // { image: "/fac/f22.jpg", text: "Caption" },
+    { image: "/fac/f8.jpeg", text: "Kirti Kotian and Rakesh Jain, Partners at True and Fair Professionals Network having discussion with prospective clients" },
 
-    // { image: "/fac/f23.jpg", text: "Caption" },
-    // { image: "/fac/f24.jpg", text: "Caption" },
-    // { image: "/fac/f25.jpg", text: "Caption" },
+    { image: "/fac/f9.jpg", text: "Shristi Sarayan, Partner- True and Fair Professionals Network discussing with prospective clientele" },
 
-    // { image: "/fac/f26.jpg", text: "Caption" },
-    // { image: "/fac/f27.jpg", text: "Caption" },
-    { image: "/fac/f28.jpg", text: "Caption" },
-    // { image: "/fac/f29.jpg", text: "Caption" },
-    // { image: "/fac/f30.jpg", text: "Caption" },
+    { image: "/fac/f10.jpg", text: "SIRC (ICAI Hyderabad) members discussing Vision, Mission and Services of True and Fair Professionals Network with V. Balaji, Founder and Managing Partner- True and Fair Professionals Network" },
 
-    { image: "/fac/f31.jpg", text: "Caption" },
-    // { image: "/fac/f32.jpg", text: "Caption" },
-    { image: "/fac/f36.jpg", text: "Caption" },
-    { image: "/fac/f37.jpg", text: "Caption" },
-    { image: "/fac/f38.jpg", text: "Caption" },
+    { image: "/fac/f11.jpg", text: "True and Fair Professional Networks- The Team " },
+    { image: "/fac/f12.jpg", text: "True and Fair Professional Networks- The Team @ WCOA 2022" },
+    { image: "/fac/f13.jpg", text: "True and Fair Professional Networks- The Team 1" },
 
-    // { image: "/fac/f34.jpg", text: "Caption" },
+    { image: "/fac/f14.jpg", text: "True and Fair Professional Networks- The Team all set for WCOA 2022" },
+
+    { image: "/fac/f15.jpg", text: "True and Fair Professionals Network Stall in WCOA 2022 " },
+
+    // { image: "/fac/f16.jpg", text: "True and Fair Professionals Network Stall in WCOA 2022 " },
+    // { image: "/fac/f17.jpg", text: "True and Fair Professionals Network Stall in WCOA 2022" },
+    { image: "/fac/f18.jpg", text: "V. Balaji sharing his views as part of Panel Discussion at WCOA 2022" },
+    { image: "/fac/f19.jpg", text: "V. Balaji, Founder and Managing Partner- True and Fair Professionals Network shares dias with N. Venkataraman- CEO- Deloitte India, Sanjeev Krishnan- Chairman- PWC India and Subodh Agarwal- Past President- ICAI and" },
+    { image: "/fac/f20.jpg", text: "V.Balaji, Founder & Managing Partner, True and Fair Professionals Network explains about the vision and mission of the Firm to Deepak Parekh, Chairman- HDFC and Independent Director" },
+    // { image: "/fac/f38.jpg", text: "Caption" },
+    // { image: "/fac/f38.jpg", text: "Caption" },
   ];
 
   return (
@@ -79,7 +72,7 @@ export default function Life() {
                 return (
                   <div
                     key={index}
-                    className="w-full h-96 md:w-full md:h-80 bg-zinc-100 shadow-sm "
+                    className="w-full h-96 md:w-full md:h-[400px] bg-zinc-100 shadow-sm "
                   >
                     <iframe
                       width="100%"
@@ -96,17 +89,18 @@ export default function Life() {
                 return (
                   <div
                     key={index}
-                    className="flex flex-col justify-center items-start rounded-sm"
+                    className="w-full  overflow-hidden bg-white rounded-lg shadow-lg"
                   >
-                    <div className="w-full h-96 md:w-full md:h-80 bg-zinc-100 shadow-sm relative">
-                      <Image
-                        layout="fill"
-                        alt=""
-                        src={image}
-                        className="absolute inset-0 object-cover"
-                      />
+                    <img
+                      className="object-cover w-full h-64"
+                      src={image}
+                      alt="avatar"
+                    />
+
+                    <div className="h-fit min-h-[100px] mt-4 text-center">
+                      <p className="font-bah text-sm text-justify lg:p-3">{text}</p>
+                     
                     </div>
-                    {/* <p className="prose-sm pt-4 text-zinc-700 leading-6">{text}</p> */}
                   </div>
                 );
               }

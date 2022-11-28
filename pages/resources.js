@@ -351,7 +351,6 @@ export default function Resources() {
           desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos a eveniet sequi similique expedita id obcaecati velit suscipit consequuntur excepturi repellendus iste illo blanditiis possimus fugit dol",
           image: "/homeicontwo/hmicon.jpg",
         },
-        
       ],
       blogsdatafull: [],
     },
@@ -372,8 +371,64 @@ export default function Resources() {
           auth: "ET Bureau,",
           date: "Nov 25, 2022",
         },
+        {
+          ser: "/blogs/blogOne",
+          link: "https://www.livemint.com/politics/policy/nfra-may-get-more-teeth-to-act-against-audit-lapses-11650309324804.html",
+          name: "Use Third Party Validation to Check Fraud: Buch to Auditors",
+          small: "title",
+          desc: "NEW DELHI : The National Financial Reporting Authority (NFRA) will get more powers to act against auditors and ......",
+          image: "/news/news2.jpg",
+          sorc: "Live Mint",
+          auth: "Gireesh Chandra Prasad",
+          date: "April 19, 2022",
+        },
+        {
+          ser: "/blogs/blogOne",
+          link: "https://www.fortuneindia.com/macro/independence-of-cas-key-to-trust-and-integrity-of-financial-statements-fm-sitharaman/110447",
+          name: "Independence of CAs key to trust and integrity of financial statements: FM Sitharaman",
+          small: "title",
+          desc: "Independence of chartered accountants (CA) is key to the trust and integrity of financial statements,............",
+          image: "/news/news3.jpg",
+          sorc: "Fortune India",
+          auth: "JOE MATHEW",
+          date: "Nov 18, 2022",
+        },
       ],
-      blogsdatafull: [],
+      blogsdatafull: [
+        {
+          ser: "/blogs/blogOne",
+          link: "https://www.business-standard.com/article/companies/nfra-issues-audit-quality-inspection-guidelines-122111101597_1.html",
+          name: "NFRA issues inspection guidelines to improve quality control at audit firms",
+          small: "title",
+          desc: "The National Financial Reporting Authority (NFRA) has issued guidelines to inspect select audit firms to.........",
+          image: "/news/news4.jpg",
+          sorc: "Business Standard",
+          auth: "Ruchika Chitravanshi",
+          date: "November 11, 2022",
+        },
+        {
+          ser: "/blogs/blogOne",
+          link: "https://cfo.economictimes.indiatimes.com/news/joint-audit-may-not-necessarily-enhance-audit-quality-divided-responsibility-is-also-divided-accountability-pr-ramesh/92167102",
+          name: "Joint audit may not necessarily enhance audit quality, divided responsibility is ..",
+          small: "title",
+          desc: "CA PR Ramesh, Ex Deloitte India Chairman and country’s top voice in the audit fraternity, said that the idea.......",
+          image: "/news/news5.jpg",
+          sorc: "Cfo.com",
+          auth: "Mannu Arora",
+          date: "June 13, 2022",
+        },
+        {
+          ser: "/blogs/blogOne",
+          link: "https://www.thehindubusinessline.com/companies/ca-institute-bats-for-introduction-of-joint-audits-in-line-with-company-law-committee-recommendation/article65457421.ece",
+          name: "ICAI bats for introduction of joint audits in line with Company Law Committee recommendation",
+          small: "title",
+          desc: "Corporates, especially listed companies and the large unlisted ones, may soon have to gear up to follow the .........",
+          image: "/news/news6.jpg",
+          sorc: "Cfo.com",
+          auth: "K.R. SRIVATS",
+          date: "May 24, 2022",
+        },
+      ],
     },
   ];
 
@@ -483,36 +538,37 @@ export default function Resources() {
                       key={id}
                       className="w-fit shadow-md bg-white flex flex-col lg:flex-1 py-4 justify-between bg-opacity-75 px-4   rounded-lg overflow-hidden text-center relative"
                     >
-                      
-                        <div className=" w-full transition duration-150 ease-out hover:ease-in hover:opacity-50">
-                          <Image
-                            className=" flex-shrink-0 object-cover xl:w-[100%] xl:h-[34rem]"
-                            src={image}
-                            width={400}
-                            height={300}
-                            alt=""
-                          ></Image>
-                        </div>
+                      <div className=" w-full transition duration-150 ease-out hover:ease-in hover:opacity-50">
+                        <Image
+                          className=" flex-shrink-0 object-cover xl:w-[100%] xl:h-[34rem]"
+                          src={image}
+                          width={400}
+                          height={300}
+                          alt=""
+                        ></Image>
+                      </div>
 
-                        <h1 className="title-font sm:text-xl text-xl text-center font-semibold  text-gray-900 mb-3">
-                          {name}
-                        </h1>
+                      <h1 className="title-font sm:text-xl text-xl text-center font-semibold  text-gray-900 mb-3">
+                        {name}
+                      </h1>
+                      <p className="mb-1 text-sm  p-1 text-left font-semibold">
+                        Source : <span className="font-bah">{sorc}</span>
+                      </p>
+                      <div className="flex   flex-row gap-4">
                         <p className="mb-1 text-sm text-left font-semibold">
-                          Source : <span className="font-bah">{sorc}</span>
-                        </p>
-                        <div className="flex flex-row gap-4"><p className="mb-1 text-sm text-left font-semibold">
                           Author : <span className="font-bah">{auth}</span>
                         </p>
-                        <p className="mb-1 text-sm text-left font-semibold">
+                        <p className="mb-1  text-sm text-left font-semibold">
                           Date : <span className="font-bah">{date}</span>
-                        </p></div>
-                        
-                        {/* <p className="text-left">Source : {sorc}</p>
-                    <p className="text-left">Author : {auth}</p> */}
-                        <p className="leading-relaxed font-bah mt-2 text-justify ">
-                          {desc}
                         </p>
-                      
+                      </div>
+
+                      {/* <p className="text-left">Source : {sorc}</p>
+                    <p className="text-left">Author : {auth}</p> */}
+                      <p className="leading-relaxed p-1 font-bah mt-2 text-justify ">
+                        {desc}
+                      </p>
+
                       <div className="flex justify-center  ">
                         <a target="_blank" rel="noreferrer" href={link}>
                           <p className="mt-8 font-bah mb-5   border-2 border-blue text-blue font-bold text-xs cursor-pointer hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
@@ -560,13 +616,27 @@ export default function Resources() {
           )}
         </div>
         {
-          <div
-            className={`${fullblog ? "  md:container md:mx-auto" : " "}`}
-          >
+          <div className={`${fullblog ? "  md:container md:mx-auto" : " "}`}>
             <div className="grid gap-8   lg:grid-cols-3 ">
               {fullblog &&
                 discover[buttonIndex].blogsdatafull.map(
-                  ({ name, imgs, desc, small, titles, ser, vidoes }, index) => {
+                  (
+                    {
+                      name,
+                      image,
+                      desc,
+                      small,
+                      sorc,
+                      titles,
+                      auth,
+                      date,
+                      id,
+                      link,
+                      ser,
+                      vidoes,
+                    },
+                    index
+                  ) => {
                     if (buttonIndex === 0) {
                       return (
                         <div
@@ -594,51 +664,49 @@ export default function Resources() {
                       );
                     } else {
                       return (
-                        //         <div
-                        //         key={index}
-                        //         className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm"
-                        //       >
-                        //         <img
-                        //           src="https://images.pexels.com/photos/2408666/pexels-photo-2408666.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
-                        //           className="object-cover w-full h-64"
-                        //           alt=""
-                        //         />
-                        //         <div className="p-2  border-t-0">
-                        //           <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
-                        //             <a
-                        //               href=""
-                        //               className="transition-colors duration-200 text-blue-gray-900 hover:text-deep-purple-accent-700"
-                        //               aria-label="Category"
-                        //               title="traveling"
-                        //             >
-                        //             {name}
-                        //             </a>
-                        //           </p>
-                        //           <a
-                        //             href=""
-                        //             aria-label="Category"
-                        //             title="Visit the East"
-                        //             className="inline-block mb-3 font-bah text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700"
-                        //           >
-                        //             Title
-                        //           </a>
-                        //           <p className="mb-2 text-gray-700 font-bah">
-                        //             Lorem ipsum dolor sit amet, consectetur adipisicing
-                        //             elit. Dignissimos a eveniet sequi similique expedita id
-                        //             obcaecati velit suscipit consequuntur excepturi
-                        //             repellendus iste illo blanditiis possimus fugit
-                        //             doloribus, numquam, maxime ratione!
-                        //           </p>
-                        //           <div className="flex justify-center">
-                        // <Link href=" /reso/reso1">
-                        //   <button className="mt-8 font-bah  bg-white border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
-                        //     READ MORE
-                        //   </button>
-                        // </Link>
-                        // </div>
-                        //         </div>
-                        //       </div>
-                        <div className="text-2xl font-bah">Coming Soon</div>
+                        <div
+                          key={index}
+                          className="w-fit shadow-md bg-white flex flex-col lg:flex-1 py-4 justify-between bg-opacity-75 px-4   rounded-lg overflow-hidden text-center relative"
+                        >
+                          <div className=" w-full transition duration-150 ease-out hover:ease-in hover:opacity-50">
+                            <Image
+                              className=" flex-shrink-0 object-cover xl:w-[100%] xl:h-[34rem]"
+                              src={image}
+                              width={400}
+                              height={300}
+                              alt=""
+                            ></Image>
+                          </div>
+
+                          <h1 className="title-font sm:text-xl text-xl text-center font-semibold  text-gray-900 mb-3">
+                            {name}
+                          </h1>
+                          <p className="mb-1 text-sm  p-1 text-left font-semibold">
+                            Source : <span className="font-bah">{sorc}</span>
+                          </p>
+                          <div className="flex   flex-row gap-4">
+                            <p className="mb-1 text-sm text-left font-semibold">
+                              Author : <span className="font-bah">{auth}</span>
+                            </p>
+                            <p className="mb-1  text-sm text-left font-semibold">
+                              Date : <span className="font-bah">{date}</span>
+                            </p>
+                          </div>
+
+                          {/* <p className="text-left">Source : {sorc}</p>
+                      <p className="text-left">Author : {auth}</p> */}
+                          <p className="leading-relaxed p-1 font-bah mt-2 text-justify ">
+                            {desc}
+                          </p>
+
+                          <div className="flex justify-center  ">
+                            <a target="_blank" rel="noreferrer" href={link}>
+                              <p className="mt-8 font-bah mb-5   border-2 border-blue text-blue font-bold text-xs cursor-pointer hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
+                                Read More
+                              </p>
+                            </a>
+                          </div>
+                        </div>
                       );
                     }
                   }
