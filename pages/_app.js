@@ -3,6 +3,7 @@ import Head from "next/head";
 import "../styles/globals.css";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
+import Script from "next/script";
 // import Link from "next/link";
 
 import Fixeddiv from "../components/fixediv";
@@ -56,6 +57,17 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:url" content="https://www.trueandfair.pro/" />
         <meta property="og:site_name" content="True & Fair" />
       </Head>
+      <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-7LTDSM3QDE" />
+      <Script strategy="afterInteractive" id="google-analytics">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+  
+          gtag('config', 'G-7LTDSM3QDE');
+        `}
+      </Script>
+
       <Component {...pageProps} />
       {soicalmedia && <Fixeddiv clicked={clicked} />}
     </Layout>
