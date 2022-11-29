@@ -57,7 +57,7 @@ export default function Layout({ children }) {
         { name: "Product Overview", path: "/adat#ProductOverview" },
 
         { name: "Technology ", path: "/adat#Technology" },
-        { name: "ADAT Advantage", path: "/adat#Advantages" },
+        { name: "ADAT Advantages", path: "/adat#Advantages" },
         { name: "Illustrative Index", path: "/adat#indexofadat" },
       ],
     },
