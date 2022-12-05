@@ -695,7 +695,7 @@ export default function Resources() {
                             ></Image>
                           </div>
 
-                          <h1 className="title-font sm:text-xl text-xl text-center font-semibold  text-gray-900 ">
+                          <h1 className="title-font sm:text-xl text-xl text-center font-semibold  text-gray-900 mb-3 ">
                             {name}
                           </h1>
                           <p className=" text-sm text-left font-semibold">
