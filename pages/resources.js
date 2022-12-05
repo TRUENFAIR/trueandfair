@@ -429,6 +429,17 @@ export default function Resources() {
           auth: "K.R. SRIVATS",
           date: "May 24, 2022",
         },
+        {
+          ser: "/blogs/blogOne",
+          link: "https://www.thehindubusinessline.com/news/nfra-begins-inspections-of-five-audit-firms/article66214893.ece",
+          name: "NFRA begins inspections of five audit firms",
+          small: "title",
+          desc: "The National Financial Reporting Authority (NFRA), the country’s sole independent audit regulator, has  .........",
+          image: "/news/news7.jpeg",
+          sorc: "Businessline",
+          auth: "BL Mumbi Bureau",
+          date: "December 02, 2022",
+        },
       ],
     },
   ];
