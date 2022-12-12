@@ -12,6 +12,15 @@ export default function Blogs() {
       auth: "Gorden haff",
       sorc: "enterprisersproject.com",
     },
+    {
+      id: 2,
+      name: " WIRC Aurangabad",
+      logo: "/fac/fac/f1.jpeg",
+      desc: "The Aurangabad Branch of The Institute of Chartered Accountants of India, hosted the NATIONAL CONFERENCE for CA members on 3rd & 4th December 2022. True and Fair was delighted to participate in this event with several prominent .........",
+      link: "/events/eventTwo",
+      auth: "Gorden haff",
+      sorc: "enterprisersproject.com",
+    },
     // {
     //   id: 2,
     //   name: "Hiring Trend in IT Industry",
