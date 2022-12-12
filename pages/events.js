@@ -193,7 +193,7 @@ export default function Blogs() {
               Events
             </h1>
           </div>
-          <div className="flex lg:grid md:grid md:grid-cols-3 lg:grid-cols-3 flex-wrap gap-1 ">
+          <div className="flex lg:grid md:grid md:grid-cols-3 lg:grid-cols-3 flex-wrap gap-3 ">
             {blog.map(({ name, logo, id, desc, link, auth, sorc }) => {
               return (
                 <div
@@ -203,7 +203,7 @@ export default function Blogs() {
                   <div>
                     <div className=" w-full transition duration-150 ease-out hover:ease-in hover:opacity-50">
                       <img
-                        className=" flex-shrink-0 object-cover "
+                        className=" flex-shrink-0 w-full md:h-[200px] object-cover "
                         src={logo}
                         
                         alt=""
