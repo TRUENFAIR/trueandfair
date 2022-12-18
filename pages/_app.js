@@ -7,6 +7,7 @@ import Script from "next/script";
 // import Link from "next/link";
 
 import Fixeddiv from "../components/fixediv";
+import FixText from "../components/fixtext";
 
 function MyApp({ Component, pageProps }) {
   const route = useRouter();
@@ -16,10 +17,23 @@ function MyApp({ Component, pageProps }) {
 
     return () => clearTimeout(timeId);
   }, []);
-  
-  
+  useEffect(() => {
+    let timeId = null;
+    timeId = setTimeout(() => setSocialmediaTwo(true), 2000);
+
+    return () => clearTimeout(timeId);
+  }, []);
+
+  useEffect(() => {
+    let timeId = null;
+    timeId = setTimeout(() => setSocialmediaTwo(false), 10000);
+
+    return () => clearTimeout(timeId);
+  }, []);
+
   const [soicalmedia, setSocialmedia] = useState(false);
-  
+  const [soicalmediaTwo, setSocialmediaTwo] = useState(false);
+
   // useEffect(() => {
   //   let timeId = null;
 
@@ -43,21 +57,36 @@ function MyApp({ Component, pageProps }) {
   const clicked = () => {
     setSocialmedia(false);
   };
+  const clickedTwo = () => {
+    setSocialmediaTwo(false);
+  };
 
   return (
     <Layout>
       <Head>
-        <title>True & Fair | Auditing, Financial reporting, Regulatory & Quality standards</title>
-        <meta name="description" content="Our overarching vision is to be recognised as the STANDARD SETTER in the financial reporting ecosystem regarding quality of audits undertaken and performed. To achieve our vision, our mission is to build capacity and enhance the professional capability and quality of audits performed by audit firms."/>
+        <title>
+          True & Fair | Auditing, Financial reporting, Regulatory & Quality
+          standards
+        </title>
+        <meta
+          name="description"
+          content="Our overarching vision is to be recognised as the STANDARD SETTER in the financial reporting ecosystem regarding quality of audits undertaken and performed. To achieve our vision, our mission is to build capacity and enhance the professional capability and quality of audits performed by audit firms."
+        />
         <link rel="icon" href="/homeicon/tnf.png" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="True & Fair" />
-        <meta property="og:description" content="Our overarching vision is to be recognised as the STANDARD SETTER in the financial reporting ecosystem regarding quality of audits undertaken and performed. To achieve our vision, our mission is to build capacity and enhance the professional capability and quality of audits performed by audit firms"/>
+        <meta
+          property="og:description"
+          content="Our overarching vision is to be recognised as the STANDARD SETTER in the financial reporting ecosystem regarding quality of audits undertaken and performed. To achieve our vision, our mission is to build capacity and enhance the professional capability and quality of audits performed by audit firms"
+        />
         <meta property="og:image" content="/footer.png" />
         <meta property="og:url" content="https://www.trueandfair.pro/" />
         <meta property="og:site_name" content="True & Fair" />
       </Head>
-      <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-7LTDSM3QDE" />
+      <Script
+        strategy="afterInteractive"
+        src="https://www.googletagmanager.com/gtag/js?id=G-7LTDSM3QDE"
+      />
       <Script strategy="afterInteractive" id="google-analytics">
         {`
           window.dataLayer = window.dataLayer || [];
@@ -70,6 +99,7 @@ function MyApp({ Component, pageProps }) {
 
       <Component {...pageProps} />
       {soicalmedia && <Fixeddiv clicked={clicked} />}
+      {soicalmediaTwo && <FixText clickedTwo={clickedTwo} />}
     </Layout>
   );
 }
