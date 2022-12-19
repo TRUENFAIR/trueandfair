@@ -49,7 +49,7 @@ export default function About() {
         {
           name: "Balaji V",
           image: "/team/balaji.jpg",
-          linkd:"https://www.linkedin.com/in/balaji-v-8501707",
+          linkd: "https://www.linkedin.com/in/balaji-v-8501707",
           role: "Founder and Managing Partner",
           description:
             "Balaji V. brings over 28 years’ experience in financial accounting and auditing, working across various industries, including, agriculture, automobile, healthcare, information  technology, information technology enabled services, manufacturing, real estate, retail and infrastructure. Over the course of his professional career, he has held leadership positions in one of  India’s largest audit firms in roles spanning Audit Inspections, Audit Risk, Audit Quality  and Regulatory.  Balaji has been a member of the Audit and Assurance Standards Board, the Expert Advisory Committee and the Ind AS Transition Facilitation Group of the Institute of Chartered Accountants of India (ICAI). He has also been a member of various study groups constituted by the ICAI to evaluate and address issues considered for amendments by the ICAI. Balaji has co-authored various publications of the ICAI including the ‘Guidance Note on Audit of Internal Financial Controls over Financial Reporting’ and the ‘Guidance Note on  Reporting on Fraud’ under sections 143(3)(i) and 143(12), respectively, of the Companies Act, 2013; ‘Technical Guidance on Reporting under Rule 11(e) and 11(f) of the Companies (Audit and Auditors) Rules’; among others.",
@@ -58,7 +58,7 @@ export default function About() {
           name: "Brindasri K",
           image: "/team/brindasri.jpg",
           role: "Partner",
-          linkd:"https://www.linkedin.com/in/brindasri-krishnamurthy-3a7a77a9",
+          linkd: "https://www.linkedin.com/in/brindasri-krishnamurthy-3a7a77a9",
           description:
             "Brindasri K. comes with over 27 years of professional experience in the information technology services sector and has worked with India’s largest IT company. Her area of expertise includes sales and delivery in the banking and financial services industry, professional services and life sciences. Brindasri has also worked with one of the largest multinational audit firms where her role involved automating operations.",
         },
@@ -74,35 +74,35 @@ export default function About() {
         {
           name: "Archana Ashok",
           image: "/team/archana.jpg",
-          linkd:"https://www.linkedin.com/in/archana-ashok-7769a017",
+          linkd: "https://www.linkedin.com/in/archana-ashok-7769a017",
           role: "",
           description: "",
         },
         {
           name: "Shristi Sarayan",
           image: "/team/srishti.jpg",
-          linkd:"https://www.linkedin.com/in/shristi-sarayan-43831257",
+          linkd: "https://www.linkedin.com/in/shristi-sarayan-43831257",
           role: "",
           description: "",
         },
         {
           name: "Kirti Kumar Kotian",
           image: "/team/kirti.jpg",
-          linkd:"http://www.linkedin.com/in/kirti-kumar-kotian",
+          linkd: "http://www.linkedin.com/in/kirti-kumar-kotian",
           role: "",
           description: "",
         },
         {
           name: "Rakesh Jain",
           image: "/team/rakesh.jpg",
-          linkd:"https://www.linkedin.com/in/rakesh-jain-a731641b",
+          linkd: "https://www.linkedin.com/in/rakesh-jain-a731641b",
           role: "",
           description: "",
         },
         {
           name: "Krishna R P",
           image: "/team/krishna.jpg",
-          linkd:"https://www.linkedin.com/in/krishna-r-p-0abab6205/",
+          linkd: "https://www.linkedin.com/in/krishna-r-p-0abab6205/",
           role: "",
           description: "",
         },
@@ -210,9 +210,13 @@ export default function About() {
             <p className="leading-loose   text-justify  font-bah text-black ">
               {" "}
               True and Fair is a start-up firm formed with a vision to enable
-              capacity building and capability enhancement of audit firms.
-              Founded by a team of seasoned CA professionals, we bring together
-              a collective experience of more than 100 years in audits and
+              capacity building and capability enhancement of audit
+              firms.Self-funded firm promoted by a group of Chartered
+              Accountants who are extremely passionate about audit quality. True
+              and Fair is an independent firm both financially and operationally
+              and are not sponsored or guided by or affiliated with any other
+              firm, be it in India or internationally. we bring together a
+              collective experience of more than 100 years in audits and
               accounting. Leveraging on our experience we have designed a set of
               policies and practices to help our clients benefit from our
               technical expertise. We have the skills and scale to serve audit
@@ -317,7 +321,7 @@ export default function About() {
                     point1sub2,
                     point1sub3,
                     point1sub5,
-                    linkd
+                    linkd,
                   },
                   index
                 ) => {
@@ -431,9 +435,8 @@ export default function About() {
                           />
                         </div>
                         <div className="mt-8  w-full flex justify-center gap-4 text-xl font-bah   text-black  font-bold ">
-                         <p className="font-bah  font-bold mt-2"> {name}</p>
+                          <p className="font-bah  font-bold mt-2"> {name}</p>
                           <span className="hover:scale-105 transition-all">
-                           
                             <a
                               className="hover:scale-105 transition-all"
                               href={linkd}
