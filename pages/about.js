@@ -210,12 +210,12 @@ export default function About() {
             <p className="leading-loose   text-justify  font-bah text-black ">
               {" "}
               True and Fair is a start-up firm formed with a vision to enable
-              capacity building and capability enhancement of audit
-              firms.Self-funded firm promoted by a group of Chartered
+              capacity building and capability enhancement of audit firms. We
+              are a self-funded firm promoted by a group of Chartered
               Accountants who are extremely passionate about audit quality. True
               and Fair is an independent firm both financially and operationally
               and are not sponsored or guided by or affiliated with any other
-              firm, be it in India or internationally. we bring together a
+              firm, be it in India or internationally. We bring together a
               collective experience of more than 100 years in audits and
               accounting. Leveraging on our experience we have designed a set of
               policies and practices to help our clients benefit from our
