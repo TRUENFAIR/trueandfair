@@ -440,6 +440,17 @@ export default function Resources() {
           auth: "BL Mumbi Bureau",
           date: "December 02, 2022",
         },
+        {
+          ser: "/blogs/blogOne",
+          link: "https://www.thehindubusinessline.com/economy/ca-institute-open-to-allow-uk-canadian-professionals-provide-audit-services-in-india/article66274711.ece",
+          name: "On reciprocity. CA Institute open to allow UK, Canadian professionals provide audit services in India  ",
+          small: "title",
+          desc: "The National Financial Reporting Authority (NFRA), the country’s sole independent audit regulator, has  .........",
+          image: "/news/news10.jpg",
+          sorc: "Businessline",
+          auth: "KR SRIVATS",
+          date: "December 17, 2022",
+        },
       ],
     },
   ];
