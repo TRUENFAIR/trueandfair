@@ -360,52 +360,6 @@ export default function Resources() {
       img: "/discover/discover2.jpg",
       desc: "From Ashtanga to Vinyasa, make mindful movement a daily ritual.",
       blogsdata: [
-        {
-          ser: "/blogs/blogOne",
-          link: "https://economictimes.indiatimes.com/et-mkts/use-third-party-validation-to-check-fraud-buch-to-auditors/articleshow/95750014.cms",
-          name: "Use Third Party Validation to Check Fraud: Buch to Auditors",
-          small: "title",
-          desc: "Securities and Exchange Board of India (Sebi) chairperson Madhabi Puri Buch on Thursday nudged auditors to use .....",
-          image: "/news/lap.png",
-          sorc: "The Economics Times",
-          auth: "ET Bureau",
-          date: "Nov 25, 2022",
-        },
-        {
-          ser: "/blogs/blogOne",
-          link: "https://www.livemint.com/politics/policy/nfra-may-get-more-teeth-to-act-against-audit-lapses-11650309324804.html",
-          name: "NFRA may get more teeth to act against audit lapses",
-          small: "title",
-          desc: "NEW DELHI : The National Financial Reporting Authority (NFRA) will get more powers to act against auditors and ......",
-          image: "/news/news2.jpg",
-          sorc: "Live Mint",
-          auth: "Gireesh Chandra Prasad",
-          date: "April 19, 2022",
-        },
-        {
-          ser: "/blogs/blogOne",
-          link: "https://www.fortuneindia.com/macro/independence-of-cas-key-to-trust-and-integrity-of-financial-statements-fm-sitharaman/110447",
-          name: "Independence of CAs key to trust and integrity of financial statements: FM Sitharaman",
-          small: "title",
-          desc: "Independence of chartered accountants (CA) is key to the trust and integrity of financial statements,............",
-          image: "/news/news3.jpg",
-          sorc: "Fortune India",
-          auth: "JOE MATHEW",
-          date: "Nov 18, 2022",
-        },
-        {
-          ser: "/blogs/blogOne",
-          link: "https://www.business-standard.com/article/companies/nfra-issues-audit-quality-inspection-guidelines-122111101597_1.html",
-          name: "NFRA issues inspection guidelines to improve quality control at audit firms",
-          small: "title",
-          desc: "The National Financial Reporting Authority (NFRA) has issued guidelines to inspect select audit firms to.........",
-          image: "/news/news4.jpg",
-          sorc: "Business Standard",
-          auth: "Ruchika Chitravanshi",
-          date: "November 11, 2022",
-        },
-      ],
-      blogsdatafull: [
        
         {
           ser: "/blogs/blogOne",
@@ -450,6 +404,52 @@ export default function Resources() {
           sorc: "Businessline",
           auth: "KR SRIVATS",
           date: "December 17, 2022",
+        },
+      ],
+      blogsdatafull: [
+        {
+          ser: "/blogs/blogOne",
+          link: "https://economictimes.indiatimes.com/et-mkts/use-third-party-validation-to-check-fraud-buch-to-auditors/articleshow/95750014.cms",
+          name: "Use Third Party Validation to Check Fraud: Buch to Auditors",
+          small: "title",
+          desc: "Securities and Exchange Board of India (Sebi) chairperson Madhabi Puri Buch on Thursday nudged auditors to use .....",
+          image: "/news/lap.png",
+          sorc: "The Economics Times",
+          auth: "ET Bureau",
+          date: "Nov 25, 2022",
+        },
+        {
+          ser: "/blogs/blogOne",
+          link: "https://www.livemint.com/politics/policy/nfra-may-get-more-teeth-to-act-against-audit-lapses-11650309324804.html",
+          name: "NFRA may get more teeth to act against audit lapses",
+          small: "title",
+          desc: "NEW DELHI : The National Financial Reporting Authority (NFRA) will get more powers to act against auditors and ......",
+          image: "/news/news2.jpg",
+          sorc: "Live Mint",
+          auth: "Gireesh Chandra Prasad",
+          date: "April 19, 2022",
+        },
+        {
+          ser: "/blogs/blogOne",
+          link: "https://www.fortuneindia.com/macro/independence-of-cas-key-to-trust-and-integrity-of-financial-statements-fm-sitharaman/110447",
+          name: "Independence of CAs key to trust and integrity of financial statements: FM Sitharaman",
+          small: "title",
+          desc: "Independence of chartered accountants (CA) is key to the trust and integrity of financial statements,............",
+          image: "/news/news3.jpg",
+          sorc: "Fortune India",
+          auth: "JOE MATHEW",
+          date: "Nov 18, 2022",
+        },
+        {
+          ser: "/blogs/blogOne",
+          link: "https://www.business-standard.com/article/companies/nfra-issues-audit-quality-inspection-guidelines-122111101597_1.html",
+          name: "NFRA issues inspection guidelines to improve quality control at audit firms",
+          small: "title",
+          desc: "The National Financial Reporting Authority (NFRA) has issued guidelines to inspect select audit firms to.........",
+          image: "/news/news4.jpg",
+          sorc: "Business Standard",
+          auth: "Ruchika Chitravanshi",
+          date: "November 11, 2022",
         },
       ],
     },
@@ -583,12 +583,10 @@ export default function Resources() {
                       <p className=" text-sm text-left  font-semibold">
                         Source : <span className="font-bah">{sorc}</span>
                       </p>
-                      
-                        <p className=" text-sm text-left font-semibold">
-                          By <span className="font-bah">{auth}</span>, {date}
-                        </p>
-                        
-                      
+
+                      <p className=" text-sm text-left font-semibold">
+                        By <span className="font-bah">{auth}</span>, {date}
+                      </p>
 
                       {/* <p className="text-left">Source : {sorc}</p>
                     <p className="text-left">Author : {auth}</p> */}
@@ -599,7 +597,7 @@ export default function Resources() {
                       <div className="flex justify-center  ">
                         <a target="_blank" rel="noreferrer" href={link}>
                           <p className="mt-8 font-bah mb-5   border-2 border-blue text-blue font-bold text-xs cursor-pointer hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
-                          READ MORE
+                            READ MORE
                           </p>
                         </a>
                       </div>
@@ -644,7 +642,13 @@ export default function Resources() {
         </div>
         {
           <div className={`${fullblog ? "  md:container md:mx-auto" : " "}`}>
-            <div className={buttonIndex === 2? "grid gap-8   lg:grid-cols-4":"grid gap-8   lg:grid-cols-3 "}>
+            <div
+              className={
+                buttonIndex === 2
+                  ? "grid gap-8   lg:grid-cols-4"
+                  : "grid gap-8   lg:grid-cols-3 "
+              }
+            >
               {fullblog &&
                 discover[buttonIndex].blogsdatafull.map(
                   (
@@ -714,9 +718,9 @@ export default function Resources() {
                           </p>
                           <div className="flex   flex-row ">
                             <p className=" text-sm text-left font-semibold">
-                              By <span className="font-bah">{auth}</span>, {date}
+                              By <span className="font-bah">{auth}</span>,{" "}
+                              {date}
                             </p>
-                         
                           </div>
 
                           {/* <p className="text-left">Source : {sorc}</p>
@@ -728,7 +732,7 @@ export default function Resources() {
                           <div className="flex justify-center  ">
                             <a target="_blank" rel="noreferrer" href={link}>
                               <p className="mt-8 font-bah mb-5   border-2 border-blue text-blue font-bold text-xs cursor-pointer hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
-                              READ MORE
+                                READ MORE
                               </p>
                             </a>
                           </div>
@@ -746,7 +750,7 @@ export default function Resources() {
               onClick={() => (setFullblog(null), setLoadmore(1))}
               className="mt-5 mb-10 font-bah   border-2 border-blue text-blue font-bold text-xs cursor-pointer hover:text-white hover:bg-blue p-3 rounded-lg transition-all "
             >
-             SHOW LESS
+              SHOW LESS
             </button>
           </div>
         )}
