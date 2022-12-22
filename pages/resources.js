@@ -441,7 +441,7 @@ export default function Resources() {
           image: "/news/news2.jpg",
           sorc: "Live Mint",
           auth: "Gireesh Chandra Prasad",
-          date: "April 19, 2022",
+          date: "April 19,2022",
         },
         {
           ser: "/blogs/blogOne",
