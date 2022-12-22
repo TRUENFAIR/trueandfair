@@ -384,7 +384,7 @@ export default function Home() {
               <ul className="grid lg:grid-cols-3 grid-cols-1 lg:gap-12">
                 {whytf.map(({ text, id, title }, index) => {
                   return (
-                    <div className=" p-5 ease-in duration-150 hover:scale-[1.02] transition-all shadow-lg" key={index}>
+                    <div  key={id} className=" p-5 ease-in duration-150 hover:scale-[1.02] transition-all shadow-lg" key={index}>
                       <p className="font-bah h-18 text-center font-semibold text-lg text-black">
                         {title}
                       </p>
