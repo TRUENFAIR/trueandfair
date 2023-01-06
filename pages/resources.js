@@ -352,7 +352,15 @@ export default function Resources() {
           image: "/homeicontwo/hmicon.jpg",
         },
       ],
-      blogsdatafull: [],
+      blogsdatafull: [
+        {
+          link: "/blog/blogFour",
+          name: "Frequently Asked Questions (FAQs) on Amendment to Rule 3 of Companies (Accounts) Rules, 2014",
+          small: "title",
+          desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos a eveniet sequi similique expedita id obcaecati velit suscipit consequuntur excepturi repellendus iste illo blanditiis possimus fugit dol",
+          image: "/servadat/regulators.png",
+        },
+      ],
     },
     {
       name: "News",
@@ -393,7 +401,7 @@ export default function Resources() {
           auth: "K.R. SRIVATS",
           date: "May 24, 2022",
         },
-       
+
         {
           ser: "/blogs/blogOne",
           link: "https://cfo.economictimes.indiatimes.com/news/joint-audit-may-not-necessarily-enhance-audit-quality-divided-responsibility-is-also-divided-accountability-pr-ramesh/92167102",
@@ -405,9 +413,6 @@ export default function Resources() {
           auth: "Mannu Arora",
           date: "June 13, 2022",
         },
-       
-       
-       
       ],
       blogsdatafull: [
         {
@@ -454,9 +459,6 @@ export default function Resources() {
           auth: "ET Bureau",
           date: "Nov 25, 2022",
         },
-      
-       
-       
       ],
     },
   ];
@@ -699,6 +701,30 @@ export default function Resources() {
                             </div>
                           </div>
                         </div>
+                      );
+                    } else if (buttonIndex === 1) {
+                      return (
+                        <Link key={id} href={link}>
+                          <div className="w-auto relative">
+                            <div className=" w-full lg:h-96 h-72 flex justify-start items-end shadow-sm ease-in duration-150 hover:scale-[1.02] transition-all cursor-pointer">
+                              <Image
+                                layout="fill"
+                                alt=""
+                                objectFit="cover"
+                                src={image}
+                                className=""
+                              />
+                              <div className="w-full h-1/2 absolute bottom-0 left-0 right-0 from-transparent bg-gradient-to-b to-black opacity-60"></div>
+
+                              <div className="flex items-center  justify-between z-40 w-full p-4 mb-10 ">
+                                <h1 className="text-xl  font-bold  text-white z-10 w-full">
+                                  {name}
+                                </h1>
+                                {rightIcon}
+                              </div>
+                            </div>
+                          </div>
+                        </Link>
                       );
                     } else {
                       return (
