@@ -28,10 +28,10 @@ function BlogFour() {
         </section>
         <div className="md:container md:p-0 p-5 md:mx-auto">
           <p className="leading-loose font-bold  text-left mt-14  font-bah text-black ">
-            V. Balaji
+            Shristi Sarayan
           </p>
           <p className="leading-loose font-bold  text-left   font-bah text-black ">
-            Founder and Managing Partner
+            Partner
           </p>
           <p className="leading-loose font-bold  text-left mb-6 font-bah text-black ">
             True and Fair Professionals Network
