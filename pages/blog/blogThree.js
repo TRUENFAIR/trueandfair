@@ -19,7 +19,7 @@ function BlogThree() {
               data-aos-once="true"
               className="h-[100px] w-[80%] flex justify-center  items-center font-bah text-2xl text-white bg-slate-800"
             >
-              <h1 className="text-3xl font-bah  title-font text-white">
+              <h1 className="text-3xl  font-bah  title-font text-white">
                 True and Fair&#39;s policy enhancement in audit performance and
                 auditor&#39;s reporting
               </h1>

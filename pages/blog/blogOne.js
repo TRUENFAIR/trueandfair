@@ -17,9 +17,9 @@ function BlogOne() {
             <div
               data-aos="fade-left"
               data-aos-once="true"
-              className="h-[100px] w-1/2 flex justify-center  items-center font-bah text-2xl text-white bg-slate-800"
+              className="h-[100px] w-[60%] flex  items-center font-bah text-2xl text-white bg-slate-800"
             >
-              <h1 className="text-3xl font-bah  title-font text-white">
+              <h1 className="text-3xl font-bah  md:ml-28 title-font text-white">
                 Audit Quality Maturity Model (AQMM) – The way forward
               </h1>
             </div>
@@ -216,7 +216,7 @@ maturity
             the SQC manual.
           </p>
           <p className="leading-loose font-bold mb-4 mt-4  text-justify  font-bah text-black ">
-            4. Standardised working papers 
+            4. Standardised working papers
           </p>
           <p className="leading-loose   text-justify  font-bah text-black ">
             The IG considers a permanent audit file to be part of the

@@ -17,9 +17,9 @@ function BlogFour() {
             <div
               data-aos="fade-left"
               data-aos-once="true"
-              className="h-[100px] w-[80%] flex justify-center  items-center font-bah text-2xl text-white bg-slate-800"
+              className="h-[100px] w-[80%] flex   items-center font-bah text-2xl text-white bg-slate-800"
             >
-              <h1 className="text-3xl font-bah p-10 title-font text-white">
+              <h1 className="text-3xl md:ml-14 font-bah p-10 title-font text-white">
                 Frequently Asked Questions (FAQs) on Amendment to Rule 3 of
                 Companies (Accounts) Rules, 2014
               </h1>
