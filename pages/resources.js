@@ -370,6 +370,17 @@ export default function Resources() {
       blogsdata: [
         {
           ser: "/blogs/blogOne",
+          link: "https://timesofindia.indiatimes.com/business/india-business/auditors-regulator-seeks-e-locker-for-audit-docus/articleshow/96897256.cms",
+          name: "Auditors’ regulator seeks e-locker for audit docus  ",
+          small: "title",
+          desc: "NEW DELHI: After DigiLocker for individuals, the National FiFinancial Reporting Authority (NFRA) is look ...........",
+          image: "/news/news11.jpg",
+          sorc: "THE TIMES OF INDIA",
+          auth: "SIDHARTHA",
+          date: "January 11, 2023",
+        },
+        {
+          ser: "/blogs/blogOne",
           link: "https://www.thehindubusinessline.com/economy/ca-institute-open-to-allow-uk-canadian-professionals-provide-audit-services-in-india/article66274711.ece",
           name: "On reciprocity. CA Institute open to allow UK, Canadian professionals provide audit services in India  ",
           small: "title",
@@ -401,7 +412,8 @@ export default function Resources() {
           auth: "K.R. SRIVATS",
           date: "May 24, 2022",
         },
-
+      ],
+      blogsdatafull: [
         {
           ser: "/blogs/blogOne",
           link: "https://cfo.economictimes.indiatimes.com/news/joint-audit-may-not-necessarily-enhance-audit-quality-divided-responsibility-is-also-divided-accountability-pr-ramesh/92167102",
@@ -413,8 +425,6 @@ export default function Resources() {
           auth: "Mannu Arora",
           date: "June 13, 2022",
         },
-      ],
-      blogsdatafull: [
         {
           ser: "/blogs/blogOne",
           link: "https://www.business-standard.com/article/companies/nfra-issues-audit-quality-inspection-guidelines-122111101597_1.html",
