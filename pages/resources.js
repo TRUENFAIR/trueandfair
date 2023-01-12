@@ -370,6 +370,17 @@ export default function Resources() {
       blogsdata: [
         {
           ser: "/blogs/blogOne",
+          link: "https://studycafe.in/roc-levies-penalty-on-auditors-for-non-reporting-of-non-compliance-in-audit-report-191275.html",
+          name: "ROC LEVIES PENALTY ON AUDITORS FOR NON-REPORTING OF NON-COMPLIANCE IN AUDIT REPORT",
+          small: "title",
+          desc: "As per Section 129(1) of the Companies Act 2013, the Financial Statements shall give true and fair view of the s ...........",
+          image: "/news/news12.png",
+          sorc: "Study Cafe",
+          auth: "REETU",
+          date: "January 11, 2023",
+        },
+        {
+          ser: "/blogs/blogOne",
           link: "https://timesofindia.indiatimes.com/business/india-business/auditors-regulator-seeks-e-locker-for-audit-docus/articleshow/96897256.cms",
           name: "Auditors’ regulator seeks e-locker for audit docus  ",
           small: "title",
@@ -401,6 +412,9 @@ export default function Resources() {
           auth: "BL Mumbi Bureau",
           date: "December 02, 2022",
         },
+       
+      ],
+      blogsdatafull: [
         {
           ser: "/blogs/blogOne",
           link: "https://www.thehindubusinessline.com/companies/ca-institute-bats-for-introduction-of-joint-audits-in-line-with-company-law-committee-recommendation/article65457421.ece",
@@ -412,8 +426,6 @@ export default function Resources() {
           auth: "K.R. SRIVATS",
           date: "May 24, 2022",
         },
-      ],
-      blogsdatafull: [
         {
           ser: "/blogs/blogOne",
           link: "https://cfo.economictimes.indiatimes.com/news/joint-audit-may-not-necessarily-enhance-audit-quality-divided-responsibility-is-also-divided-accountability-pr-ramesh/92167102",
