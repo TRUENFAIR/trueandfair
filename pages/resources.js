@@ -371,7 +371,7 @@ export default function Resources() {
         {
           ser: "/blogs/blogOne",
           link: "https://studycafe.in/roc-levies-penalty-on-auditors-for-non-reporting-of-non-compliance-in-audit-report-191275.html",
-          name: "ROC LEVIES PENALTY ON AUDITORS FOR NON-REPORTING OF NON-COMPLIANCE IN AUDIT REPORT",
+          name: "Roc Levies Penalty On Auditors For Non-Rerporting Of Non-Compliance In Audit Report",
           small: "title",
           desc: "As per Section 129(1) of the Companies Act 2013, the Financial Statements shall give true and fair view of the s ...........",
           image: "/news/news12.png",
@@ -412,7 +412,6 @@ export default function Resources() {
           auth: "BL Mumbi Bureau",
           date: "December 02, 2022",
         },
-       
       ],
       blogsdatafull: [
         {
