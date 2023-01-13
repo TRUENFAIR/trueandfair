@@ -370,6 +370,17 @@ export default function Resources() {
       blogsdata: [
         {
           ser: "/blogs/blogOne",
+          link: "https://www.financialexpress.com/industry/mandatory-joint-audit-to-start-with-big-firms/2946495/",
+          name: "Mandatory joint audit to start with big firms",
+          small: "title",
+          desc: "As per Section 129(1) of the Companies Act 2013, the Financial Statements shall give true and fair view of the s ...........",
+          image: "/news/news13.png",
+          sorc: "Financial Express",
+          auth: "SURABHI",
+          date: "January 13, 2023",
+        },
+        {
+          ser: "/blogs/blogOne",
           link: "https://studycafe.in/roc-levies-penalty-on-auditors-for-non-reporting-of-non-compliance-in-audit-report-191275.html",
           name: "Roc Levies Penalty On Auditors For Non-Rerporting Of Non-Compliance In Audit Report",
           small: "title",
@@ -401,6 +412,9 @@ export default function Resources() {
           auth: "KR SRIVATS",
           date: "December 17, 2022",
         },
+      
+      ],
+      blogsdatafull: [
         {
           ser: "/blogs/blogOne",
           link: "https://www.thehindubusinessline.com/news/nfra-begins-inspections-of-five-audit-firms/article66214893.ece",
@@ -412,8 +426,6 @@ export default function Resources() {
           auth: "BL Mumbi Bureau",
           date: "December 02, 2022",
         },
-      ],
-      blogsdatafull: [
         {
           ser: "/blogs/blogOne",
           link: "https://www.thehindubusinessline.com/companies/ca-institute-bats-for-introduction-of-joint-audits-in-line-with-company-law-committee-recommendation/article65457421.ece",
