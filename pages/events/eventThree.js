@@ -11,7 +11,7 @@ export default function EventTwo() {
       src: "https://www.youtube.com/embed/zSZ3K6CVE1o",
     },
     {
-      image: "/fac/fac2/f1.jpg",
+      image: "/fac/fac2/f1.JPG",
       text: "ASSOCHAM 5th Annual Conference for Ind AS in New Delhi",
     },
     {
