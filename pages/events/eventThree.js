@@ -20,52 +20,52 @@ export default function EventTwo() {
     },
 
     {
-      image: "/fac/fac2/f3.jpg",
+      image: "/fac/fac2/f3.JPG",
       text: "True and Fair Partner's chat with Abhishek Rara, Partner with Price Waterhouse LLP",
     },
     {
-      image: "/fac/fac2/f4.jpg",
+      image: "/fac/fac2/f4.JPG",
       text: "True and Fair Partners enjoying good time in the ASSOCHAM Event",
     },
     {
-      image: "/fac/fac2/f5.jpg",
+      image: "/fac/fac2/f5.JPG",
       text: "True and Fair stall eminent people visiting to understand and ask about our services",
     },
     {
-      image: "/fac/fac2/f6.jpg",
+      image: "/fac/fac2/f6.JPG",
       text: "True and Fair stall eminent people visiting to understand our services",
     },
 
     {
-      image: "/fac/fac2/f7.jpg",
+      image: "/fac/fac2/f7.JPG",
       text: "V Balaji Managing Partner been part of Guest Speaker on the dice for the ASSOCHAM event",
     },
 
     {
-      image: "/fac/fac2/f8.jpg",
+      image: "/fac/fac2/f8.JPG",
       text: "V Balaji Managing Partner giving session on Related Party in the Event",
     },
 
     {
-      image: "/fac/fac2/f9.jpg",
+      image: "/fac/fac2/f9.JPG",
       text: "V Balaji Managing Partner on the dice with Dr. Haldia, Chairman ASSOCHAM Task Force on Accounting Standards",
     },
 
     {
-      image: "/fac/fac2/f10.jpg",
+      image: "/fac/fac2/f10.JPG",
       text: "V Balaji our Managng Partner giving inaugarating speech in the ASSOCHAM event",
     },
 
     {
-      image: "/fac/fac2/f11.jpg",
+      image: "/fac/fac2/f11.JPG",
       text: "V Balaji with Dr. Haldia, Chairman ASSOCHAM Task Force on Accounting Standards and CA. Vidyadhar Kulkarni ex. Technical Directorate of ICAI",
     },
     {
-      image: "/fac/fac2/f12.jpg",
+      image: "/fac/fac2/f12.JPG",
       text: "V. Balaji Managing Partner been part of Guest Speaker on the dice for the ASSOCHAM event.",
     },
     {
-      image: "/fac/fac2/f13.jpg",
+      image: "/fac/fac2/f13.JPG",
       text: "V. Balaji Managing Partner giving session on Related Party in the Event",
     },
     // { image: "/fac/f38.jpg", text: "Caption" },
