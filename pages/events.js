@@ -23,7 +23,7 @@ export default function Blogs() {
     },
     {
       id: 3,
-      name: " ASSOCHAM",
+      name: " ASSOCHAM IND AS",
       logo: "/fac/fac2/f1.JPG",
       desc: "ASSOCHAM has organized the 5th National Conference cum Masterclass on “Indian Accounting Standards: Recent Developments, Evolving Global Trends, Challenges and Way Forward” scheduled on January 20, 2023. .........",
       link: "/events/eventThree",
