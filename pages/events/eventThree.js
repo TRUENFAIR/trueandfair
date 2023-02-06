@@ -62,7 +62,7 @@ export default function EventTwo() {
     },
     {
       image: "/fac/fac2/f12.jpg",
-      text: "V. Balaji Managing Partner been part of Guest Speaker on the dice for the ASSOCHAM event",
+      text: "V. Balaji Managing Partner been part of Guest Speaker on the dice for the ASSOCHAM event.",
     },
     {
       image: "/fac/fac2/f13.jpg",
