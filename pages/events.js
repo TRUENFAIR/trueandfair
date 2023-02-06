@@ -21,6 +21,15 @@ export default function Blogs() {
       auth: "Gorden haff",
       sorc: "enterprisersproject.com",
     },
+    {
+      id: 3,
+      name: " ASSOCHAM",
+      logo: "/fac/fac2/f1.jpg",
+      desc: "ASSOCHAM has organized the 5th National Conference cum Masterclass on “Indian Accounting Standards: Recent Developments, Evolving Global Trends, Challenges and Way Forward” scheduled on January 20, 2023. .........",
+      link: "/events/eventThree",
+      auth: "Gorden haff",
+      sorc: "enterprisersproject.com",
+    },
     // {
     //   id: 2,
     //   name: "Hiring Trend in IT Industry",
@@ -205,7 +214,6 @@ export default function Blogs() {
                       <img
                         className=" flex-shrink-0 w-full md:h-[200px] object-cover "
                         src={logo}
-                        
                         alt=""
                       ></img>
                     </div>
@@ -215,12 +223,14 @@ export default function Blogs() {
                     </h1>
                     {/* <p className="text-left">Source : {sorc}</p>
                     <p className="text-left">Author : {auth}</p> */}
-                    <p className="leading-relaxed font-bah mt-5 text-justify ">{desc}</p>
+                    <p className="leading-relaxed font-bah mt-5 text-justify ">
+                      {desc}
+                    </p>
                   </div>
                   <div className="flex justify-center mt-1 ">
                     <Link href={link}>
                       <p className="mt-8 font-bah   border-2 border-blue text-blue font-bold text-xs cursor-pointer hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
-                      READ MORE
+                        READ MORE
                       </p>
                     </Link>
                   </div>
