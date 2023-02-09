@@ -7,7 +7,7 @@ export default function Blogs() {
     {
       id: 4,
       name: " Webinar - Facilitating Formation of CA Firm Networks",
-      logo: "/fac/fac3/f1.JPG",
+      logo: "/fac/fac3/f1.jpg",
       desc: "",
       link: "/events/eventFour",
       auth: "Gorden haff",

@@ -4,7 +4,7 @@ export default function EventFour() {
   const stuff = [
     
     {
-      image: "/fac/fac3/f1.JPG",
+      image: "/fac/fac3/f1.jpg",
       text: "Webinar - Facilitating Formation of CA Firm Networks",
     },
     // {
