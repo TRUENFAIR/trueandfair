@@ -28,7 +28,7 @@ export default function Fixediv2({ clickedThree }) {
           <div className="flex mb-2 justify-center">
             <button
               onClick={clickedThree}
-              className="   text-black border-2 border-black hover:bg-blue  hover:text-white rounded-lg px-4 py-2 font-bah"
+              className=" mt-1 mb-1     font-bold text-xs cursor-pointer    transition-all   text-black border-2 border-black hover:bg-blue  hover:text-white rounded-lg px-2 py-2 font-bah"
             >
               <Link href={"/events/eventFour"}>VIEW DETAILS</Link>
             </button>
