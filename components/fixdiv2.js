@@ -9,9 +9,7 @@ export default function Fixediv2({ clickedThree }) {
         </div> */}
 
         <div className="flex flex-col gap-2  p-1 rounded-lg shadow mt-5 w-fit bg-white  ">
-          <div className=" absolute mt-[-30px] animate-bounce duration-300 transform rounded-full bg-red-700">
-            <img src="/icons/cat.gif" className="" alt="" />
-          </div>
+          
           <div onClick={clickedThree} className="bg-white">
             <p className="text-center cursor-pointer font-extrabold">x</p>
           </div>
