@@ -3,7 +3,7 @@ import React from "react";
 export default function Fixediv({ clicked }) {
   return (
     <>
-      <div className="flex fixed right-0 top-[40%] md:top-[15%]  z-50  flex-col">
+      <div className="flex fixed right-0 top-[30%] md:top-[15%]  z-50  flex-col">
         {/* <div className="bg-white">
             <p>close</p>
         </div> */}
