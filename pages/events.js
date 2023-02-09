@@ -8,7 +8,7 @@ export default function Blogs() {
       id: 4,
       name: " Webinar - Facilitating Formation of CA Firm Networks",
       logo: "/fac/fac3/f1.jpg",
-      desc: "",
+      desc: "The objective of this webinar is to bring together CA firms who have expressed interest for networking. True & Fair would facilitate the discussion on proposed business and operating model, leadership structure, roadmap.....",
       link: "/events/eventFour",
       auth: "Gorden haff",
       sorc: "enterprisersproject.com",
