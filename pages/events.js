@@ -3,12 +3,22 @@ import Link from "next/link";
 
 export default function Blogs() {
   const blog = [
+    
     {
-      id: 1,
-      name: " WCOA 2022",
-      logo: "/fac/f18.jpg",
-      desc: "The 21st World Congress of Accountants 2022 scheduled to be held from November 18-21, 2022 at Jio World Centre, Mumbai, India. The World Congress, this time, would dwell upon the theme 'Building Trust Enabling Sustainability.... ",
-      link: "/events/eventOne",
+      id: 4,
+      name: " Webinar - Facilitating Formation of CA Firm Networks",
+      logo: "/fac/fac3/f1.JPG",
+      desc: "",
+      link: "/events/eventFour",
+      auth: "Gorden haff",
+      sorc: "enterprisersproject.com",
+    },
+    {
+      id: 3,
+      name: " ASSOCHAM IND AS",
+      logo: "/fac/fac2/f1.JPG",
+      desc: "ASSOCHAM has organized the 5th National Conference cum Masterclass on “Indian Accounting Standards: Recent Developments, Evolving Global Trends, Challenges and Way Forward” scheduled on January 20, 2023. .........",
+      link: "/events/eventThree",
       auth: "Gorden haff",
       sorc: "enterprisersproject.com",
     },
@@ -22,14 +32,15 @@ export default function Blogs() {
       sorc: "enterprisersproject.com",
     },
     {
-      id: 3,
-      name: " ASSOCHAM IND AS",
-      logo: "/fac/fac2/f1.JPG",
-      desc: "ASSOCHAM has organized the 5th National Conference cum Masterclass on “Indian Accounting Standards: Recent Developments, Evolving Global Trends, Challenges and Way Forward” scheduled on January 20, 2023. .........",
-      link: "/events/eventThree",
+      id: 1,
+      name: " WCOA 2022",
+      logo: "/fac/f18.jpg",
+      desc: "The 21st World Congress of Accountants 2022 scheduled to be held from November 18-21, 2022 at Jio World Centre, Mumbai, India. The World Congress, this time, would dwell upon the theme 'Building Trust Enabling Sustainability.... ",
+      link: "/events/eventOne",
       auth: "Gorden haff",
       sorc: "enterprisersproject.com",
     },
+
     // {
     //   id: 2,
     //   name: "Hiring Trend in IT Industry",
@@ -218,7 +229,7 @@ export default function Blogs() {
                       ></img>
                     </div>
 
-                    <h1 className="title-font sm:text-2xl text-xl text-center font-semibold  text-gray-900 mb-3">
+                    <h1 className="title-font mt-4 sm:text-2xl text-xl text-center font-semibold  text-gray-900 mb-3">
                       {name}
                     </h1>
                     {/* <p className="text-left">Source : {sorc}</p>

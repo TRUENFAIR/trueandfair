@@ -67,7 +67,10 @@ function Adat() {
     <>
       <Head>
         <title>True & Fair | ADAT</title>
-        <meta name="description" content="The Audit Documentation and Archival Tool (ADAT) facilitates auditors to document their audit work securely ensuring compliance with auditing standards as set by Regulators and to meet their expectations for monitoring and inspection"/>
+        <meta
+          name="description"
+          content="The Audit Documentation and Archival Tool (ADAT) facilitates auditors to document their audit work securely ensuring compliance with auditing standards as set by Regulators and to meet their expectations for monitoring and inspection"
+        />
       </Head>
       <section>
         <div
@@ -144,8 +147,6 @@ function Adat() {
               />
             </div>
 
-          
-
             <div
               className="w-full block h-[10px] md:h-[80px] lg:col-span-2  col-span-1 "
               id="Technology"
@@ -201,17 +202,13 @@ function Adat() {
               className="w-full block h-[10px] md:h-[80px]   lg:col-span-2  col-span-1 "
               id="Advantages"
             ></div>
-            <div
-              className="w-full block h-fit md:h-fit  lg:col-span-2  col-span-1 "
-              
-            >
-               <div className="text-3xl w-full text-center  font-bah text title-font text-black   ">
-               ADAT Advantages
+            <div className="w-full block h-fit md:h-fit  lg:col-span-2  col-span-1 ">
+              <div className="text-3xl w-full text-center  font-bah text title-font text-black   ">
+                ADAT Advantages
               </div>
             </div>
 
             <div data-aos="fade-up" data-aos-once="true" className="w-auto">
-              
               <div className="w-auto mt-16">
                 <div className="flex gap-1 mt-4 text-black flex-row">
                   <span className="w-fit ">✔️</span>{" "}
@@ -263,11 +260,7 @@ and at the time of archival
                 to know more.
               </p>
             </div>
-            
-            
-            
-            
-            
+
             <div
               data-aos="fade-down"
               data-aos-once="true"
@@ -314,28 +307,17 @@ audit
               </div>
             </div>
 
-           
-           
-           
-           
-           
-           
-           
-           
             <div
               className="w-full block h-[10px] md:h-[80px]   lg:col-span-2  col-span-1 "
               id="indexofadat"
             ></div>
-            <div
-              className="w-full block h-fit md:h-fit  lg:col-span-2  col-span-1 "
-              
-            >
-               <div className="text-3xl w-full text-center  font-bah text title-font text-black   ">
-              Illustrative Index 
+            <div className="w-full block h-fit md:h-fit  lg:col-span-2  col-span-1 ">
+              <div className="text-3xl w-full text-center  font-bah text title-font text-black   ">
+                Illustrative Index
               </div>
             </div>
             {/* <div data-aos="fade-up" data-aos-once="true" className="w-auto"> */}
-{/*              
+            {/*              
               <div className="w-auto mt-16">
               <div>
                 <p className="font-bah text-lg font-semibold text-black">Section No : Name of Document</p>
@@ -517,272 +499,256 @@ audit
               
             </div> */}
             <div className="flex flex-col mt-8">
-                <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
-                  <div className="py-2 inline-block min-w-full sm:px-6 lg:px-8">
-                    <div className="">
-                      <table  data-aos="fade-up" data-aos-once="true" className="min-w-full bg-">
-                        <thead className="border">
-                          <tr>
-                            <th
-                              scope="col"
-                              className="text-sm border border-black font-medium text-black px-6 py-4 text-left"
-                            >
-                              Section No
-                            </th>
-                            <th
-                              scope="col"
-                              className="text-sm border border-black font-medium text-black px-6 py-4 text-left"
-                            >
-                              Name of Document
-                            </th>
-                           
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr className="border-b ">
-                            <td className="px-6 py-4 border border-black whitespace-nowrap text-sm font-medium text-black">
+              <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
+                <div className="py-2 inline-block min-w-full sm:px-6 lg:px-8">
+                  <div className="">
+                    <table
+                      data-aos="fade-up"
+                      data-aos-once="true"
+                      className="min-w-full bg-"
+                    >
+                      <thead className="border">
+                        <tr>
+                          {/* <th
+                            scope="col"
+                            className="text-sm border border-black font-medium text-black px-6 py-4 text-left"
+                          >
+                            Section No
+                          </th> */}
+                          <th
+                            scope="col"
+                            className="text-sm border border-black font-medium text-black px-6 py-4 text-left"
+                          >
+                            Name of Document
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr className="border-b ">
+                          {/* <td className="px-6 py-4 border border-black whitespace-nowrap text-sm font-medium text-black">
                             10000
-                            </td>
-                            <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
-                             
+                          </td> */}
+                          <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
                             Client Acceptance / Continuance
-                            </td>
-                           
-                          </tr>
-                          <tr className="bg- border-b">
-                            <td className="px-6 border border-black py-4 whitespace-nowrap text-sm font-medium text-black">
-                            11000 
-                            </td>
-                            <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
-                            Understanding the entity, its business and the environment
-                            </td>
-                            
-                          </tr>
-                          <tr className="bg- border-b">
-                            <td className="px-6 border border-black py-4 whitespace-nowrap text-sm font-medium text-black">
+                          </td>
+                        </tr>
+                        <tr className="bg- border-b">
+                          {/* <td className="px-6 border border-black py-4 whitespace-nowrap text-sm font-medium text-black">
+                            11000
+                          </td> */}
+                          <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
+                            Understanding the entity, its business and the
+                            environment
+                          </td>
+                        </tr>
+                        <tr className="bg- border-b">
+                          {/* <td className="px-6 border border-black py-4 whitespace-nowrap text-sm font-medium text-black">
                             11200
-                            </td>
-                            <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
+                          </td> */}
+                          <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
                             Understanding internal controls
-                            </td>
-                            
-                          </tr>
-                          <tr className="bg- border-b">
-                            <td className="px-6 border border-black py-4 whitespace-nowrap text-sm font-medium text-black">
+                          </td>
+                        </tr>
+                        <tr className="bg- border-b">
+                          {/* <td className="px-6 border border-black py-4 whitespace-nowrap text-sm font-medium text-black">
                             11300
-                            </td>
-                            <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
+                          </td> */}
+                          <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
                             Assessing risk of fraud
-                            </td>
-                            
-                          </tr>
-                          <tr className="bg- border-b">
-                            <td className="px-6 border border-black py-4 whitespace-nowrap text-sm font-medium text-black">
+                          </td>
+                        </tr>
+                        <tr className="bg- border-b">
+                          {/* <td className="px-6 border border-black py-4 whitespace-nowrap text-sm font-medium text-black">
                             11500
-                            </td>
-                            <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
+                          </td> */}
+                          <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
                             Key entity information relevant to the audit
-                            </td>
-                            
-                          </tr>
-                          <tr className="bg- border-b">
-                            <td className="px-6 border border-black py-4 whitespace-nowrap text-sm font-medium text-black">
+                          </td>
+                        </tr>
+                        <tr className="bg- border-b">
+                          {/* <td className="px-6 border border-black py-4 whitespace-nowrap text-sm font-medium text-black">
                             12000
-                            </td>
-                            <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
+                          </td> */}
+                          <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
                             Planning Materiality
-                            </td>
-                            
-                          </tr>
-                          <tr className="bg- border-b">
-                            <td className="px-6 border border-black py-4 whitespace-nowrap text-sm font-medium text-black">
+                          </td>
+                        </tr>
+                        <tr className="bg- border-b">
+                          {/* <td className="px-6 border border-black py-4 whitespace-nowrap text-sm font-medium text-black">
                             12100
-                            </td>
-                            <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
-                            Determine material classes of transactions and disclosures
-                            </td>
-                            
-                          </tr>
-                          <tr className="bg- border-b">
-                            <td className="px-6 border border-black py-4 whitespace-nowrap text-sm font-medium text-black">
+                          </td> */}
+                          <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
+                            Determine material classes of transactions and
+                            disclosures
+                          </td>
+                        </tr>
+                        <tr className="bg- border-b">
+                          {/* <td className="px-6 border border-black py-4 whitespace-nowrap text-sm font-medium text-black">
                             14100
-                            </td>
-                            <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
+                          </td> */}
+                          <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
                             Audit Plan by Account
-                            </td>
-                            
-                          </tr>
-                          <tr className="bg- border-b">
-                            <td className="px-6 border py-4 border-black whitespace-nowrap text-sm font-medium text-black">
+                          </td>
+                        </tr>
+                        <tr className="bg- border-b">
+                          {/* <td className="px-6 border py-4 border-black whitespace-nowrap text-sm font-medium text-black">
                             15000
-                            </td>
-                            <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
+                          </td> */}
+                          <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
                             Audit administration
-                            </td>
-                            
-                          </tr>
-                          <tr className="bg- border-b">
-                            <td className="px-6 border py-4 border-black whitespace-nowrap text-sm font-medium text-black">
+                          </td>
+                        </tr>
+                        <tr className="bg- border-b">
+                          {/* <td className="px-6 border py-4 border-black whitespace-nowrap text-sm font-medium text-black">
                             20000
-                            </td>
-                            <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
-                            Testing design of control (including conclusion on adequacy of design)
-                            </td>
-                            
-                          </tr>
-                          <tr className="bg- border-b">
-                            <td className="px-6 border py-4 border-black whitespace-nowrap text-sm font-medium text-black">
+                          </td> */}
+                          <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
+                            Testing design of control (including conclusion on
+                            adequacy of design)
+                          </td>
+                        </tr>
+                        <tr className="bg- border-b">
+                          {/* <td className="px-6 border py-4 border-black whitespace-nowrap text-sm font-medium text-black">
                             20100
-                            </td>
-                            <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
+                          </td> */}
+                          <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
                             Testing Information Technology Controls
-                            </td>
-                            
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col mt-8">
-                <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
-                  <div className="py-2 inline-block min-w-full sm:px-6 lg:px-8">
-                    <div className="">
-                      <table  data-aos="fade-up" data-aos-once="true" className="min-w-full bg-">
-                        <thead className="border">
-                          <tr>
-                            <th
-                              scope="col"
-                              className="text-sm border border-black font-medium text-black px-6 py-4 text-left"
-                            >
-                              Section No 
-                            </th>
-                            <th
-                              scope="col"
-                              className="text-sm border border-black font-medium text-black px-6 py-4 text-left"
-                            >
-                              Name of Document
-                            </th>
-                           
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr className="border-b ">
-                            <td className="px-6 py-4 border border-black whitespace-nowrap text-sm font-medium text-black">
+            </div>
+            <div className="flex flex-col mt-8">
+              <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
+                <div className="py-2 inline-block min-w-full sm:px-6 lg:px-8">
+                  <div className="">
+                    <table
+                      data-aos="fade-up"
+                      data-aos-once="true"
+                      className="min-w-full bg-"
+                    >
+                      <thead className="border">
+                        <tr>
+                          {/* <th
+                            scope="col"
+                            className="text-sm border border-black font-medium text-black px-6 py-4 text-left"
+                          >
+                            Section No
+                          </th> */}
+                          <th
+                            scope="col"
+                            className="text-sm border border-black font-medium text-black px-6 py-4 text-left"
+                          >
+                            Name of Document
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr className="border-b ">
+                          {/* <td className="px-6 py-4 border border-black whitespace-nowrap text-sm font-medium text-black">
                             20200
-                            </td>
-                            <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
+                          </td> */}
+                          <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
                             Testing controls over information produced by entity
-                            </td>
-                           
-                          </tr>
-                          <tr className="bg- border-b">
-                            <td className="px-6 border  border-black py-4 whitespace-nowrap text-sm font-medium text-black">
+                          </td>
+                        </tr>
+                        <tr className="bg- border-b">
+                          {/* <td className="px-6 border  border-black py-4 whitespace-nowrap text-sm font-medium text-black">
                             20300
-                            </td>
-                            <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
+                          </td> */}
+                          <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
                             Testing information used in control
-                            </td>
-                            
-                           
-                          </tr>
-                          <tr className="bg- border-b">
-                            <td className="px-6 border border-black py-4 whitespace-nowrap text-sm font-medium text-black">
+                          </td>
+                        </tr>
+                        <tr className="bg- border-b">
+                          {/* <td className="px-6 border border-black py-4 whitespace-nowrap text-sm font-medium text-black">
                             21000
-                            </td>
-                            <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
+                          </td> */}
+                          <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
                             Testing operating effectiveness (OE) of controls
-                            </td>
-                            
-                          </tr>
-                          <tr className="bg- border-b">
-                            <td className="px-6 border py-4 border-black whitespace-nowrap text-sm font-medium text-black">
+                          </td>
+                        </tr>
+                        <tr className="bg- border-b">
+                          {/* <td className="px-6 border py-4 border-black whitespace-nowrap text-sm font-medium text-black">
                             25000
-                            </td>
-                            <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
+                          </td> */}
+                          <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
                             Trial Balance
-                            </td>
-                           
-                          </tr>
-                          <tr className="bg- border-b">
-                            <td className="px-6 border py-4 border-black whitespace-nowrap text-sm font-medium text-black">
+                          </td>
+                        </tr>
+                        <tr className="bg- border-b">
+                          {/* <td className="px-6 border py-4 border-black whitespace-nowrap text-sm font-medium text-black">
                             30000
-                            </td>
-                            <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
+                          </td> */}
+                          <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
                             Substantive testing
-                            </td>
-                           
-                          </tr>
-                          <tr className="bg- border-b">
-                            <td className="px-6 border border-black py-4 whitespace-nowrap text-sm font-medium text-black">
-                            40100 
-                            </td>
-                            <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
+                          </td>
+                        </tr>
+                        <tr className="bg- border-b">
+                          {/* <td className="px-6 border border-black py-4 whitespace-nowrap text-sm font-medium text-black">
+                            40100
+                          </td> */}
+                          <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
                             Compliance with Ind AS – Checklists
-                            </td>
-                           
-                          </tr>
-                          <tr className="bg- border-b">
-                            <td className="px-6 border border-black py-4 whitespace-nowrap text-sm font-medium text-black">
+                          </td>
+                        </tr>
+                        <tr className="bg- border-b">
+                          {/* <td className="px-6 border border-black py-4 whitespace-nowrap text-sm font-medium text-black">
                             50100
-                            </td>
-                            <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
+                          </td> */}
+                          <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
                             Compliance with Standards on Auditing – Checklists
-                            </td>
-                           
-                          </tr>
-                          <tr className="bg- border-b">
-                            <td className="px-6 border border-black py-4 whitespace-nowrap text-sm font-medium text-black">
+                          </td>
+                        </tr>
+                        <tr className="bg- border-b">
+                          {/* <td className="px-6 border border-black py-4 whitespace-nowrap text-sm font-medium text-black">
                             50400
-                            </td>
-                            <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
+                          </td> */}
+                          <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
                             Audit summary memorandum
-                            </td>
-                           
-                          </tr>
-                          <tr className="bg- border-b">
-                            <td className="px-6 border border-black py-4 whitespace-nowrap text-sm font-medium text-black">
+                          </td>
+                        </tr>
+                        <tr className="bg- border-b">
+                          {/* <td className="px-6 border border-black py-4 whitespace-nowrap text-sm font-medium text-black">
                             50600
-                            </td>
-                            <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
+                          </td> */}
+                          <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
                             EQCR
-                            </td>
-                           
-                          </tr>
-                          <tr className="bg- border-b">
-                            <td className="px-6 border border-black py-4 whitespace-nowrap text-sm font-medium text-black">
+                          </td>
+                        </tr>
+                        <tr className="bg- border-b">
+                          {/* <td className="px-6 border border-black py-4 whitespace-nowrap text-sm font-medium text-black">
                             50400
-                            </td>
-                            <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
+                          </td> */}
+                          <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
                             Audit summary memorandum
-                            </td>
-                           
-                          </tr>
-                          <tr className="bg- border-b">
-                            <td className="px-6 border border-black py-4 whitespace-nowrap text-sm font-medium text-black">
+                          </td>
+                        </tr>
+                        <tr className="bg- border-b">
+                          {/* <td className="px-6 border border-black py-4 whitespace-nowrap text-sm font-medium text-black">
                             50000
-                            </td>
-                            <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
+                          </td> */}
+                          <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
                             Audit Reporting
-                            </td>
-                           
-                          </tr>
-                          <tr className="bg- border-b">
-                            <td className="px-6 border border-black py-4 whitespace-nowrap text- font-medium text-black">
-                            51000 
-                            </td>
-                            <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
+                          </td>
+                        </tr>
+                        <tr className="bg- border-b">
+                          {/* <td className="px-6 border border-black py-4 whitespace-nowrap text- font-medium text-black">
+                            51000
+                          </td> */}
+                          <td className="text-sm border border-black text-black  px-6 py-4 whitespace-nowrap">
                             Consolidated related documents
-                            </td>
-                           
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </div>
+            </div>
 
             {/* <div
               className="w-full h-[100px] md:block hidden  lg:col-span-2  col-span-1 "
