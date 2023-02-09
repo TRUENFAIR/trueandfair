@@ -73,7 +73,7 @@ export default function EventFour() {
           </h1>
 
           <p className="py-12 font-bah text-justify">
-            {/* {`ASSOCHAM has organized the 5th National Conference cum Masterclass on “Indian Accounting Standards: Recent Developments, Evolving Global Trends, Challenges and Way Forward” scheduled on January 20, 2023. The conference and masterclass was deliberated by eminent accounting practitioners and experts drawn from the government, regulators, professional institutions, directors on board of corporates, chartered accountants, company secretaries, CFOs, legal heads, compliance heads, among others.`}{" "} */}
+         {`The objective of this webinar is to bring together CA firms who have expressed interest for networking. True & Fair would facilitate the discussion on proposed business and operating model, leadership structure, roadmap and timelines for forming the networks. The event will be held on 18 Feb 2023, 10 am to 1 pm. For more details and registration formalities, kindly reach out to contact@trueandfair.pro.`}
             {/* <a
               target="_blank"
               rel="noreferrer"
