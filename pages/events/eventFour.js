@@ -4,7 +4,7 @@ export default function EventFour() {
   const stuff = [
     
     {
-      image: "/fac/fac3/f1.jpg",
+      image: "/fac/fac3/f2.jpg",
       text: "Webinar - Facilitating Formation of CA Firm Networks",
     },
     // {
@@ -117,7 +117,7 @@ export default function EventFour() {
                     className="w-full  overflow-hidden bg-white rounded-lg shadow-lg"
                   >
                     <img
-                      className="object-cover w-full h-64"
+                      className="object-cover w-full min-h-64"
                       src={image}
                       alt="avatar"
                     />
