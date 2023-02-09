@@ -322,6 +322,38 @@ export default function Resources() {
             ></iframe>
           ),
         },
+        {
+          name: "Inaugural Speech at Assocham 5th National Conference",
+          desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum cupiditate possimus dolore voluptatibus similique optioducimus provident,",
+          imgs: "/fac/fac2/f8.JPG",
+          vidoes: (
+            <iframe
+                      width="100%"
+                      height="100%"
+                      src="https://www.youtube.com/embed/k6BEH0MTiTk"
+                      title="YouTube video player"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    ></iframe>
+          ),
+        },
+        {
+          name: "Views on Related Party Transactions at Assocham 5th National Conference on Ind AS",
+          desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum cupiditate possimus dolore voluptatibus similique optioducimus provident,",
+          imgs: "/fac/fac2/f10.JPG",
+          vidoes: (
+            <iframe
+                      width="100%"
+                      height="100%"
+                      src="https://www.youtube.com/embed/zSZ3K6CVE1o"
+                      title="YouTube video player"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    ></iframe>
+          ),
+        },
       ],
     },
     {

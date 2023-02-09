@@ -5,7 +5,7 @@ export default function EventFour() {
     
     {
       image: "/fac/fac3/f2.jpg",
-      text: "Webinar - Facilitating Formation of CA Firm Networks",
+      text: "Webinar invite - Facilitating Formation of CA Firm Networks",
     },
     // {
     //   image: "/fac/fac2/f2.jpeg",
