@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Fixediv2({ clickedThree }) {
   return (
     <>
-      <div className="flex fixed right-0   bottom-0 md:top-[70%]  z-50  flex-col">
+      <div className="flex fixed right-0   bottom-0 md:top-[65%]  z-50  flex-col">
         {/* <div className="bg-white">
             <p>close</p>
         </div> */}
@@ -21,11 +21,11 @@ export default function Fixediv2({ clickedThree }) {
             </p>
           </div>
           <div className="flex flex-col justify-center">
-            <p className="font-bah text-xs text-center mt-1   pb-2">
+            <p className="font-bah text-xs text-center mt-1 pt-4 pb-2">
               Facilitating Formation of <br /> CA Firm Networks
             </p>{" "}
-            <p className="font-bah text-xs text-center mt-1  p-2">
-              Webinar - Audit Documentation & <br /> Archival Tool
+            <p className="font-bah text-xs text-center mt-1 py-4 px-5">
+              Webinar - Audit <br /> Documentation & Archival Tool
             </p>
           </div>
           <div className="flex mb-2 justify-center">
