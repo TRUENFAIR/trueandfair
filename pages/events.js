@@ -3,7 +3,15 @@ import Link from "next/link";
 
 export default function Blogs() {
   const blog = [
-    
+    {
+      id: 5,
+      name: " Webinar - Audit Documentation & Archival Tool",
+      logo: "/fac/fac4/f1.jpg",
+      desc: "The Audit Documentation and Archival Tool (ADAT) facilitates auditors to document their audit work securely ensuring compliance with auditing standards as set by Regulators and to meet their expectations for monitoring and inspection.....",
+      link: "/events/eventFive",
+      auth: "Gorden haff",
+      sorc: "enterprisersproject.com",
+    },
     {
       id: 4,
       name: " Webinar - Facilitating Formation of CA Firm Networks",
