@@ -17,7 +17,7 @@ export default function Fixediv2({ clickedThree }) {
           </div>
           <div className="flex justify-center">
             <p className=" mt-1 font-bah font-bold text-lg px-3  text-center">
-              Upcoming Webinar
+              Upcoming Webinars
             </p>
           </div>
           <div className="flex flex-col justify-center">
