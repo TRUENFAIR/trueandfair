@@ -28,8 +28,7 @@ export default function fac() {
   ];
   return (
     <>
-
-<section>
+      <section>
         <div
           className="h-72 flex flex-col justify-end "
           style={{
@@ -44,9 +43,7 @@ export default function fac() {
             data-aos-once="true"
             className="lg:h-[90px] h-[200px]  w-[80%] md:w-1/2 flex justify-center  items-center font-bah text-2xl text-white bg-slate-800"
           >
-            <div className=" text-3xl font-bah  title-font text-white">
-             FAQ 
-            </div>
+            <div className=" text-3xl font-bah  title-font text-white">FAQ</div>
           </div>
         </div>
       </section>
@@ -59,7 +56,9 @@ export default function fac() {
           }
         />
         <OurBrand3
-          title={"3. Will ADAT carry any tools for sampling including analytics?"}
+          title={
+            "3. Will ADAT carry any tools for sampling including analytics?"
+          }
         />
         <OurBrand4 title={"4. Will ADAT be available on mobile?"} />
         <OurBrand5 title={"5. When do you expect to launch ADAT?"} />
