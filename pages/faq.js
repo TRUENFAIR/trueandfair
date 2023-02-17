@@ -28,6 +28,29 @@ export default function fac() {
   ];
   return (
     <>
+
+<section>
+        <div
+          className="h-72 flex flex-col justify-end "
+          style={{
+            backgroundImage: "url('/about/abt2.jpg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
+          <div
+            data-aos="fade-down"
+            data-aos-once="true"
+            className="lg:h-[90px] h-[200px]  w-[80%] md:w-1/2 flex justify-center  items-center font-bah text-2xl text-white bg-slate-800"
+          >
+            <h1 className=" text-3xl font-bah  title-font text-white">
+             FAQ
+            </h1>
+          </div>
+        </div>
+      </section>
+
       <div className="md:container pt-4 pb-5 flex flex-col gap-5  md:mx-auto">
         <OurBrand title={"1. Why should I use ADAT?"} />
         <OurBrand2
