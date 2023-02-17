@@ -44,9 +44,9 @@ export default function fac() {
             data-aos-once="true"
             className="lg:h-[90px] h-[200px]  w-[80%] md:w-1/2 flex justify-center  items-center font-bah text-2xl text-white bg-slate-800"
           >
-            <h1 className=" text-3xl font-bah  title-font text-white">
-             FAQ
-            </h1>
+            <div className=" text-3xl font-bah  title-font text-white">
+             FAQ 
+            </div>
           </div>
         </div>
       </section>
