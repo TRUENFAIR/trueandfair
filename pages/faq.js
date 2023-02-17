@@ -43,10 +43,27 @@ export default function fac() {
             data-aos-once="true"
             className="lg:h-[90px] h-[200px]  w-[80%] md:w-1/2 flex justify-center  items-center font-bah text-2xl text-white bg-slate-800"
           >
-            <div className=" text-3xl font-bah  title-font text-white">FAQ</div>
+            <div className=" text-3xl font-bah  title-font text-white">Frequently Asked Questions</div>
           </div>
         </div>
       </section>
+
+      {/* <div>
+        <details>
+          <summary>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil,
+            iusto!
+          </summary>
+          <div className="">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, eius
+            eos rerum saepe velit delectus ipsam nesciunt id enim iusto
+            molestias tempora error sapiente perferendis obcaecati ipsa, natus
+            nobis? Magni porro, tempora neque incidunt tempore possimus
+            distinctio vel eius consequuntur rem ab voluptas ex ipsam hic eaque
+            doloremque quos modi!
+          </div>
+        </details>
+      </div> */}
 
       <div className="md:container pt-4 pb-5 flex flex-col gap-5  md:mx-auto">
         <OurBrand title={"1. Why should I use ADAT?"} />

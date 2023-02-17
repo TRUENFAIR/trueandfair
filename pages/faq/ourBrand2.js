@@ -27,18 +27,18 @@ function OurBrand2({ id, title, desc }) {
               </p>
 
               <div className="flex gap-4">
-                <div className="w-[2%] md:pl-5">✔️</div>
+                <div className="w-[2%] md:pl-5">-</div>
                 <div>
                   <p>
                     Retain the audit files in the ADAT tool by paying a yearly
                     maintenance fees per audit file which will allow audit firms
-                    to access the stored audit file
+                    to access the stored audit file. Or
                   </p>
                 </div>
               </div>
-              <p className="font-bold text-center">Or</p>
+             
               <div className="flex gap-4">
-                <div className="w-[2%] md:pl-5">✔️</div>
+                <div className="w-[2%] md:pl-5">-</div>
                 <div>
                   <p>
                     True and Fair will provide the readable version of all the
