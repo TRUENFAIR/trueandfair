@@ -3,7 +3,7 @@ import OurBrand from "./faq/ourBrand";
 import OurBrand2 from "./faq/ourBrand2";
 import OurBrand3 from "./faq/ourBrand3";
 import OurBrand4 from "./faq/ourBrand4";
-import OurBrand5 from "./faq/ourBrand5";
+
 import OurBrand6 from "./faq/ourBrand6";
 import OurBrand7 from "./faq/ourBrand7";
 import OurBrandCommon from "./faq/OurBrandsommon";
@@ -30,7 +30,7 @@ export default function fac() {
     <>
       <section>
         <div
-          className="h-72 flex flex-col justify-end "
+          className="h-72  flex flex-col justify-end "
           style={{
             backgroundImage: "url('/about/abt2.jpg')",
             backgroundSize: "cover",
@@ -41,29 +41,14 @@ export default function fac() {
           <div
             data-aos="fade-down"
             data-aos-once="true"
-            className="lg:h-[90px] h-[200px]  w-[80%] md:w-1/2 flex justify-center  items-center font-bah text-2xl text-white bg-slate-800"
+            className="lg:h-[90px] h-[100px]  w-fit md:w-1/2 flex justify-center  items-center font-bah text-2xl text-white bg-slate-800"
           >
-            <div className=" text-3xl font-bah  title-font text-white">Frequently Asked Questions</div>
+            <div className=" md:text-3xl  md:p-0 p-4 font-bah  title-font text-white">
+              Frequently Asked Questions
+            </div>
           </div>
         </div>
       </section>
-
-      {/* <div>
-        <details>
-          <summary>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil,
-            iusto!
-          </summary>
-          <div className="">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, eius
-            eos rerum saepe velit delectus ipsam nesciunt id enim iusto
-            molestias tempora error sapiente perferendis obcaecati ipsa, natus
-            nobis? Magni porro, tempora neque incidunt tempore possimus
-            distinctio vel eius consequuntur rem ab voluptas ex ipsam hic eaque
-            doloremque quos modi!
-          </div>
-        </details>
-      </div> */}
 
       <div className="md:container pt-4 pb-5 flex flex-col gap-5  md:mx-auto">
         <OurBrand title={"1. Why should I use ADAT?"} />
@@ -78,7 +63,12 @@ export default function fac() {
           }
         />
         <OurBrand4 title={"4. Will ADAT be available on mobile?"} />
-        <OurBrand5 title={"5. When do you expect to launch ADAT?"} />
+        <OurBrandCommon
+          title={"5. When do you expect to launch ADAT?"}
+          desc={
+            "  True and Fair is expecting ADAT to be launched by July 2023."
+          }
+        />
         <OurBrand6
           title={
             "6. What standard formats and templates of communications and reports willbe included within ADAT (e.g. Engagement Letter, Confirmations, AuditReport, etc.)"

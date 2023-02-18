@@ -1,15 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { BsPlusLg } from "react-icons/bs";
 import { BiMinus } from "react-icons/bi";
 
 function OurBrand6({ id, title, desc }) {
+  const [openCloseaction, setOpenCloseaction] = useState(false);
+  const clickopen = () => {
+    setOpenCloseaction((prev) => !prev);
+  };
   return (
     <>
-      <div key={id} className="  flex   flex-col">
-        <div className="border  shadow-sm w-full  rounded flex  p-4 h-full justify-between">
+      <details key={id} className="  flex   flex-col">
+        <summary
+          onClick={clickopen}
+          className="border  shadow-sm w-full  rounded flex  p-4 h-full justify-between"
+        >
           <span className="text-black font-bold ">{title}</span>
-          <div></div>
-        </div>
+          {openCloseaction ? <BiMinus /> : <BsPlusLg />}
+        </summary>
         <div>
           <section>
             <div className="w-full font-bah border-l border-r p-5">
@@ -252,7 +259,7 @@ function OurBrand6({ id, title, desc }) {
             </div>
           </section>
         </div>
-      </div>
+      </details>
     </>
   );
 }
