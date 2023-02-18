@@ -11,7 +11,10 @@ function OurBrandCommon({ id, title, desc, desc2 }) {
   return (
     <>
       <details key={id} className="  flex   flex-col">
-        <summary className="border  shadow-sm w-full  rounded flex  p-4 h-full justify-between">
+        <summary
+          onClick={clickopen}
+          className="border  shadow-sm w-full  rounded flex  p-4 h-full justify-between"
+        >
           <span className="text-black font-bold ">{title}</span>
           {openCloseaction ? <BiMinus /> : <BsPlusLg />}
         </summary>
