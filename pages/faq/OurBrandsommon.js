@@ -16,7 +16,9 @@ function OurBrandCommon({ id, title, desc, desc2 }) {
           className="border  shadow-sm w-full  rounded flex  p-4 h-full justify-between"
         >
           <span className="text-black font-bold ">{title}</span>
-          {openCloseaction ? <BiMinus /> : <BsPlusLg />}
+          <div className="w-[20%] flex  justify-end md:mt-4">
+            {openCloseaction ? <BiMinus size={15} /> : <BsPlusLg size={15} />}
+          </div>
         </summary>
         <div>
           <section>
