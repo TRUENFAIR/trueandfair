@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }) {
   const route = useRouter();
   const [soicalmedia, setSocialmedia] = useState(false);
   const [soicalmediaTwo, setSocialmediaTwo] = useState(false);
-  const [soicalmediaThree, setSocialmediaThree] = useState(false);
+  // const [soicalmediaThree, setSocialmediaThree] = useState(false);
   useEffect(() => {
     let timeId = null;
     timeId = setTimeout(() => setSocialmedia(true), 5000);
@@ -34,12 +34,12 @@ function MyApp({ Component, pageProps }) {
 
     return () => clearTimeout(timeId);
   }, []);
-  useEffect(() => {
-    let timeId = null;
-    timeId = setTimeout(() => setSocialmediaThree(true), 2000);
+  // useEffect(() => {
+  //   let timeId = null;
+  //   timeId = setTimeout(() => setSocialmediaThree(true), 2000);
 
-    return () => clearTimeout(timeId);
-  }, []);
+  //   return () => clearTimeout(timeId);
+  // }, []);
 
   // useEffect(() => {
   //   let timeId = null;
@@ -67,9 +67,9 @@ function MyApp({ Component, pageProps }) {
   const clickedTwo = () => {
     setSocialmediaTwo(false);
   };
-  const clickedThree = () => {
-    setSocialmediaThree(false);
-  };
+  // const clickedThree = () => {
+  //   setSocialmediaThree(false);
+  // };
 
   return (
     <Layout>
@@ -110,7 +110,7 @@ function MyApp({ Component, pageProps }) {
       <Component {...pageProps} />
       {soicalmedia && <Fixeddiv clicked={clicked} />}
       {soicalmediaTwo && <FixText clickedTwo={clickedTwo} />}
-      {soicalmediaThree && <Fixediv2 clickedThree={clickedThree} />}
+      {/* {soicalmediaThree && <Fixediv2 clickedThree={clickedThree} />} */}
     </Layout>
   );
 }
