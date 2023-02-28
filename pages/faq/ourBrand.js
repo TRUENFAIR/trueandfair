@@ -1,23 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import { BsPlusLg } from "react-icons/bs";
 import { BiMinus } from "react-icons/bi";
+
 function CoursesCard({ id, title, desc }) {
+  const [openCloseaction, setOpenCloseaction] = useState(false);
+  const clickopen = () => {
+    setOpenCloseaction((prev) => !prev);
+  };
   return (
     <>
-      <div key={id} className="  flex   flex-col">
-        <div className="border  shadow-sm w-full  rounded flex  p-4 h-full justify-between">
-          <span className="text-black font-bold ">{title}</span>
-          <div></div>
-        </div>
+      <details key={id} className="  flex   flex-col">
+        <summary
+          onClick={clickopen}
+          className="border  shadow-sm w-full  rounded flex  p-4 h-full justify-between"
+        >
+          <p className="text-black font-bold w-full">{title}</p>{" "}
+          <div className="w-[20%] flex  justify-end md:mt-4">
+            {openCloseaction ? <BiMinus size={15} /> : <BsPlusLg size={15} />}
+          </div>
+        </summary>
         <div>
           <section>
             <div className="w-full border-l border-r font-bah">
-              <p className="leading-relaxed p-5 text-xl o text-justify p-1 ">
+              <p className=" p-1 mt-4 mb-2 md:pl-5 ">
                 ADAT is a one stop solution for :
               </p>
 
               <div className="flex gap-4">
-                <div className="w-[2%] md:pl-5">✔️</div>
+                <div className="w-[2%] md:pl-5">-</div>
                 <div>
                   <p>
                     A secured digitisation of the audit file with ease of use
@@ -26,7 +36,7 @@ function CoursesCard({ id, title, desc }) {
               </div>
 
               <div className="flex gap-4">
-                <div className="w-[2%] md:pl-5">✔️</div>
+                <div className="w-[2%] md:pl-5">-</div>
                 <div>
                   <p>
                     An audit file which is scalable to the size and complexities
@@ -36,7 +46,7 @@ function CoursesCard({ id, title, desc }) {
               </div>
 
               <div className="flex gap-4">
-                <div className="w-[2%] md:pl-5">✔️</div>
+                <div className="w-[2%] md:pl-5">-</div>
                 <div>
                   <p>
                     An audit file which is compliant with the risk and control
@@ -47,7 +57,7 @@ function CoursesCard({ id, title, desc }) {
               </div>
 
               <div className="flex gap-4">
-                <div className="w-[2%] md:pl-5">✔️</div>
+                <div className="w-[2%] md:pl-5">-</div>
                 <div>
                   <p>
                     Documenting the audit work electronically in a secured
@@ -64,14 +74,14 @@ function CoursesCard({ id, title, desc }) {
               </p>
 
               <div className="flex gap-4">
-                <div className="w-[2%] md:pl-5">✔️</div>
+                <div className="w-[2%] md:pl-5">-</div>
                 <div>
                   <p>Robust audit firm, audit engagement and team onboarding</p>
                 </div>
               </div>
 
               <div className="flex gap-4">
-                <div className="w-[2%] md:pl-5">✔️</div>
+                <div className="w-[2%] md:pl-5">-</div>
                 <div>
                   <p>
                     Secure environment to the clients of the audit firm to share
@@ -81,7 +91,7 @@ function CoursesCard({ id, title, desc }) {
               </div>
 
               <div className="flex gap-4">
-                <div className="w-[2%] md:pl-5">✔️</div>
+                <div className="w-[2%] md:pl-5">-</div>
                 <div>
                   <p>
                     Audit file can be accessed only by the Authorised Personnel
@@ -91,21 +101,21 @@ function CoursesCard({ id, title, desc }) {
               </div>
 
               <div className="flex gap-4">
-                <div className="w-[2%] md:pl-5">✔️</div>
+                <div className="w-[2%] md:pl-5">-</div>
                 <div>
                   <p>Joint audit related discussion templates</p>
                 </div>
               </div>
 
               <div className="flex gap-4">
-                <div className="w-[2%] md:pl-5">✔️</div>
+                <div className="w-[2%] md:pl-5">-</div>
                 <div>
                   <p>Consolidation related templates</p>
                 </div>
               </div>
 
               <div className="flex gap-4">
-                <div className="w-[2%] md:pl-5">✔️</div>
+                <div className="w-[2%] md:pl-5">-</div>
                 <div>
                   <p>
                     Detailed questionnaire for Understanding the Entity,
@@ -115,7 +125,7 @@ function CoursesCard({ id, title, desc }) {
               </div>
 
               <div className="flex gap-4">
-                <div className="w-[2%] md:pl-5">✔️</div>
+                <div className="w-[2%] md:pl-5">-</div>
                 <div>
                   <p>
                     Exhaustive library of risks, controls, procedures (including
@@ -125,21 +135,21 @@ function CoursesCard({ id, title, desc }) {
               </div>
 
               <div className="flex gap-4">
-                <div className="w-[2%] md:pl-5">✔️</div>
+                <div className="w-[2%] md:pl-5">-</div>
                 <div>
                   <p>Fraud risk questionnaire and assessments</p>
                 </div>
               </div>
 
               <div className="flex gap-4">
-                <div className="w-[2%] md:pl-5">✔️</div>
+                <div className="w-[2%] md:pl-5">-</div>
                 <div>
                   <p>Focused Related Party and Going Concern risk assessment</p>
                 </div>
               </div>
 
               <div className="flex gap-4">
-                <div className="w-[2%] md:pl-5">✔️</div>
+                <div className="w-[2%] md:pl-5">-</div>
                 <div>
                   <p>
                     Checklist on Accounting Standard - disclosures, Standards on
@@ -149,7 +159,7 @@ function CoursesCard({ id, title, desc }) {
               </div>
 
               <div className="flex gap-4">
-                <div className="w-[2%] md:pl-5">✔️</div>
+                <div className="w-[2%] md:pl-5">-</div>
                 <div>
                   <p>
                     Trial Balance import feature with mapping to Schedule III
@@ -160,7 +170,7 @@ function CoursesCard({ id, title, desc }) {
               </div>
 
               <div className="flex gap-4">
-                <div className="w-[2%] md:pl-5">✔️</div>
+                <div className="w-[2%] md:pl-5">-</div>
                 <div>
                   <p>
                     Engagement quality control review (EQCR) related templates
@@ -169,7 +179,7 @@ function CoursesCard({ id, title, desc }) {
               </div>
 
               <div className="flex gap-4">
-                <div className="w-[2%] md:pl-5">✔️</div>
+                <div className="w-[2%] md:pl-5">-</div>
                 <div>
                   <p>
                     Tracking Workpaper changes post audit report date till
@@ -179,7 +189,7 @@ function CoursesCard({ id, title, desc }) {
               </div>
 
               <div className="flex gap-4">
-                <div className="w-[2%] md:pl-5">✔️</div>
+                <div className="w-[2%] md:pl-5">-</div>
                 <div>
                   <p>
                     Archival of audit file - ensure the integrity of the Audit
@@ -189,14 +199,14 @@ function CoursesCard({ id, title, desc }) {
               </div>
 
               <div className="flex gap-4">
-                <div className="w-[2%] md:pl-5">✔️</div>
+                <div className="w-[2%] md:pl-5">-</div>
                 <div>
                   <p>Permanent audit file checklist</p>
                 </div>
               </div>
 
               <div className="flex gap-4">
-                <div className="w-[2%] md:pl-5">✔️</div>
+                <div className="w-[2%] md:pl-5">-</div>
                 <div>
                   <p>
                     Dashboards to partners and managers on the status of their
@@ -206,7 +216,7 @@ function CoursesCard({ id, title, desc }) {
               </div>
 
               <div className="flex gap-4">
-                <div className="w-[2%] md:pl-5">✔️</div>
+                <div className="w-[2%] md:pl-5">-</div>
                 <div>
                   <p>And many more</p>
                 </div>
@@ -214,7 +224,7 @@ function CoursesCard({ id, title, desc }) {
             </div>
           </section>
         </div>
-      </div>
+      </details>
     </>
   );
 }

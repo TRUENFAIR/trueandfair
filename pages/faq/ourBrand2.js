@@ -1,15 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import { BsPlusLg } from "react-icons/bs";
 import { BiMinus } from "react-icons/bi";
 
 function OurBrand2({ id, title, desc }) {
+  const [openCloseaction, setOpenCloseaction] = useState(false);
+  const clickopen = () => {
+    setOpenCloseaction((prev) => !prev);
+  };
   return (
     <>
-      <div key={id} className="  flex   flex-col">
-        <div className="border  shadow-sm w-full  rounded flex  p-4 h-full justify-between">
+      <details key={id} className="  flex   flex-col">
+        <summary
+          onClick={clickopen}
+          className="border  shadow-sm w-full  rounded flex  p-4 h-full justify-between"
+        >
           <span className="text-black font-bold ">{title}</span>
-          <div></div>
-        </div>
+          <div className="w-[20%] flex  justify-end md:mt-4">
+            {openCloseaction ? <BiMinus size={15} /> : <BsPlusLg size={15} />}
+          </div>
+        </summary>
         <div>
           <section>
             <div className="w-full border-l border-r p-4 font-bah">
@@ -27,18 +36,18 @@ function OurBrand2({ id, title, desc }) {
               </p>
 
               <div className="flex gap-4">
-                <div className="w-[2%] md:pl-5">✔️</div>
+                <div className="w-[2%] md:pl-5">-</div>
                 <div>
                   <p>
                     Retain the audit files in the ADAT tool by paying a yearly
                     maintenance fees per audit file which will allow audit firms
-                    to access the stored audit file
+                    to access the stored audit file. Or
                   </p>
                 </div>
               </div>
-              <p className="font-bold text-center">Or</p>
+
               <div className="flex gap-4">
-                <div className="w-[2%] md:pl-5">✔️</div>
+                <div className="w-[2%] md:pl-5">-</div>
                 <div>
                   <p>
                     True and Fair will provide the readable version of all the
@@ -50,7 +59,7 @@ function OurBrand2({ id, title, desc }) {
             </div>
           </section>
         </div>
-      </div>
+      </details>
     </>
   );
 }
