@@ -98,6 +98,10 @@ export default function Layout({ children }) {
       ],
     },
     {
+      name: "Discussions",
+      path: "https://forum.trueandfair.pro",
+    },
+    {
       name: "Events",
       path: "/events",
     },
@@ -140,36 +144,72 @@ export default function Layout({ children }) {
             </div>
 
             <nav className="text-sm uppercase  font-bah tracking-tight hidden  lg:flex justify-end flex-1 lg:mr-8">
-              {menu.map(({ name, path, sub }, index) => (
-                <div key={index} className="group relative inline-flex ">
-                  <Link href={path}>
-                    <a
-                      className={`${
-                        pathname === path &&
-                        "underline decoration-blue  decoration-2 font-extrabold underline-offset-4 "
-                      } hover:font-bold mx-3  2xl:mx-4 font-bah transition-all`}
-                    >
-                      {name}
-                    </a>
-                  </Link>
+              {menu.map(({ name, path, sub }, index) => {
+                if (name === "Discussions") {
+                  return (
+                    <div key={index} className="group relative inline-flex ">
+                      <a
+                        href="https://forum.trueandfair.pro"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        className={`${
+                          pathname === path &&
+                          "underline decoration-blue  decoration-2 font-extrabold underline-offset-4 "
+                        } hover:font-bold mx-3  2xl:mx-4 font-bah transition-all`}
+                      >
+                        {name}
+                      </a>
 
-                  {sub && (
-                    <div className="bg-transparent w-auto font-bah absolute top-4 left-0 flex-col z-50 rounded-sm invisible group-hover:visible transition-all">
-                      <div className="pt-4 w-auto">
-                        <div className="w-full shadow-md">
-                          {sub.map(({ name, path }, index) => (
-                            <Link key={index} href={path}>
-                              <a className="w-56 hover:font-bold   bg-white inline-flex p-2 normal-case text-sm whitespace-nowrap border-b border-t border-zinc-100 hover:bg-">
-                                {name}
-                              </a>
-                            </Link>
-                          ))}
+                      {sub && (
+                        <div className="bg-transparent w-auto font-bah absolute top-4 left-0 flex-col z-50 rounded-sm invisible group-hover:visible transition-all">
+                          <div className="pt-4 w-auto">
+                            <div className="w-full shadow-md">
+                              {sub.map(({ name, path }, index) => (
+                                <Link key={index} href={path}>
+                                  <a className="w-56 hover:font-bold   bg-white inline-flex p-2 normal-case text-sm whitespace-nowrap border-b border-t border-zinc-100 hover:bg-">
+                                    {name}
+                                  </a>
+                                </Link>
+                              ))}
+                            </div>
+                          </div>
                         </div>
-                      </div>
+                      )}
                     </div>
-                  )}
-                </div>
-              ))}
+                  );
+                } else {
+                  return (
+                    <div key={index} className="group relative inline-flex ">
+                      <Link href={path}>
+                        <a
+                          className={`${
+                            pathname === path &&
+                            "underline decoration-blue  decoration-2 font-extrabold underline-offset-4 "
+                          } hover:font-bold mx-3  2xl:mx-4 font-bah transition-all`}
+                        >
+                          {name}
+                        </a>
+                      </Link>
+
+                      {sub && (
+                        <div className="bg-transparent w-auto font-bah absolute top-4 left-0 flex-col z-50 rounded-sm invisible group-hover:visible transition-all">
+                          <div className="pt-4 w-auto">
+                            <div className="w-full shadow-md">
+                              {sub.map(({ name, path }, index) => (
+                                <Link key={index} href={path}>
+                                  <a className="w-56 hover:font-bold   bg-white inline-flex p-2 normal-case text-sm whitespace-nowrap border-b border-t border-zinc-100 hover:bg-">
+                                    {name}
+                                  </a>
+                                </Link>
+                              ))}
+                            </div>
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  );
+                }
+              })}
             </nav>
 
             <nav className=" lg:hidden mr-2 p-2 relative group  flex justify-end ">
@@ -318,19 +358,26 @@ export default function Layout({ children }) {
             <Link href="/adat">
               <a>ADAT</a>
             </Link>
+            <Link href="/library">
+              <a>Library</a>
+            </Link>
           </div>
 
           <div className="text-sm flex flex-col font-bah text-black lg:p-0  text-center">
             {/* <Link href="/resources">
               <a>Resources</a>
             </Link> */}
-            <Link href="/library">
-              <a>Library</a>
-            </Link>
 
             <Link href="/resources">
               <a> Resources</a>
             </Link>
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://forum.trueandfair.pro"
+            >
+              <p>Discussions</p>
+            </a>
             <Link href="/events">
               <a> Events</a>
             </Link>
