@@ -4,6 +4,15 @@ import Link from "next/link";
 export default function Blogs() {
   const blog = [
     {
+      id: 6,
+      name: " Webinar - Audit Quality Maturity Model (AQMM)",
+      logo: "/fac/fac4/f1.jpg",
+      desc: "Audit Quality Maturity Model (AQMM) issued by ICAI is applicable from April 1, 2023 to CA Firms performing audits of listed entities,banks and insurance companies. Please join our webinar to understand the AQMM and the requirements and factors to be considered for implementation of the AQMM within the CA Firms......",
+      link: "/events/eventsix",
+      auth: "Gorden haff",
+      sorc: "enterprisersproject.com",
+    },
+    {
       id: 5,
       name: " Webinar - Audit Documentation & Archival Tool",
       logo: "/fac/fac4/f1.jpg",
