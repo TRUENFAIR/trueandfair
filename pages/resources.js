@@ -363,6 +363,14 @@ export default function Resources() {
       desc: "From Ashtanga to Vinyasa, make mindful movement a daily ritual.",
       blogsdata: [
         {
+          link: "/blog/blogFive",
+          name: "Audit Quality Maturity Model (AQMM)",
+          small: "title",
+          desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos a eveniet sequi similique expedita id obcaecati velit suscipit consequuntur excepturi repellendus iste illo blanditiis possimus fugit dol",
+          image: "/homeicontwo/hmicon.jpg",
+        },
+        
+        {
           link: "/blog/blogTwo",
           name: "A Dream leading to a Vision",
           small: "title",
@@ -376,6 +384,9 @@ export default function Resources() {
           desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos a eveniet sequi similique expedita id obcaecati velit suscipit consequuntur excepturi repellendus iste illo blanditiis possimus fugit dol",
           image: "/blog/2.jpg",
         },
+       
+      ],
+      blogsdatafull: [
         {
           link: "/blog/blogOne",
           name: "Audit Quality Maturity Model (AQMM) – The way forward",
@@ -383,8 +394,6 @@ export default function Resources() {
           desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos a eveniet sequi similique expedita id obcaecati velit suscipit consequuntur excepturi repellendus iste illo blanditiis possimus fugit dol",
           image: "/homeicontwo/hmicon.jpg",
         },
-      ],
-      blogsdatafull: [
         {
           link: "/blog/blogFour",
           name: "Frequently Asked Questions (FAQs) on Amendment to Rule 3 of Companies (Accounts) Rules, 2014",

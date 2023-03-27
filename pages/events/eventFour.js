@@ -73,7 +73,7 @@ export default function EventFour() {
           </h1>
 
           <p className="py-12 font-bah text-justify">
-         {`The objective of this webinar is to bring together CA firms who have expressed interest for networking. True & Fair would facilitate the discussion on proposed business and operating model, leadership structure, roadmap and timelines for forming the networks. The event will be held on 18 Feb 2023, 10 am to 1 pm. For more details and registration formalities, kindly reach out to contact@trueandfair.pro.`}
+         {`The objective of this webinar is to bring together CA firms who have expressed interest for networking. True & Fair would facilitate the discussion on proposed business and operating model, leadership structure, roadmap and timelines for forming the networks. The webinar was held on 18 Feb 2023, 10 am to 1 pm. For more details, kindly reach out to contact@trueandfair.pro.`}
             {/* <a
               target="_blank"
               rel="noreferrer"

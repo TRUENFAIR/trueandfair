@@ -30,7 +30,7 @@ function MyApp({ Component, pageProps }) {
 
   useEffect(() => {
     let timeId = null;
-    timeId = setTimeout(() => setSocialmediaTwo(false), 40000);
+    timeId = setTimeout(() => setSocialmediaTwo(false), 19000);
 
     return () => clearTimeout(timeId);
   }, []);
