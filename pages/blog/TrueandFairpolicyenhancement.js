@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-function BlogThree() {
+function TrueandFairpolicyenhancement() {
   return (
     <>
       <section className="bg-whit">
@@ -297,4 +297,4 @@ themselves in the audit universe.
     </>
   );
 }
-export default BlogThree;
+export default TrueandFairpolicyenhancement;
