@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function EventTwo() {
+export default function WIRC() {
   const stuff = [
     {
       image: "/fac/fac/f1.jpeg",

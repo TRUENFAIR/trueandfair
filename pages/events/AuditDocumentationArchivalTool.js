@@ -1,8 +1,7 @@
 import Image from "next/image";
 
-export default function EventFive() {
+export default function AuditDocumentationArchivalTool() {
   const stuff = [
-    
     {
       image: "/fac/fac4/f2.jpg",
       text: "Webinar - Audit Documentation & Archival Tool",
@@ -69,11 +68,11 @@ export default function EventFive() {
       <section className="pt-12 pb-24 text-black bg-coustom1">
         <div className="md:container p-4 md:mx-auto">
           <h1 className="text-2xl md:text-4xl   text-bold  w-full  font-bah text-center   text-black">
-          Webinar - Audit Documentation & Archival Tool
+            Webinar - Audit Documentation & Archival Tool
           </h1>
 
           <p className="py-12 font-bah text-justify">
-         {`The Audit Documentation and Archival Tool (ADAT) facilitates auditors to document their audit work securely ensuring compliance with auditing standards as set by Regulators and to meet their expectations for monitoring and inspection. ADAT comprises work paper templates, an exhaustive library of risks linked to possible audit responses, reference audit programs, checklists, and more - all of which can be customised to the specific auditing needs. Webinar was conducted on on 18th Feb, 2023, 3 pm - 6 pm to understand more with a repeat session conducted on 25th Feb, 2023, 10 am - 1 pm. For more details, kindly reach out to contact@trueandfair.pro.`}
+            {`The Audit Documentation and Archival Tool (ADAT) facilitates auditors to document their audit work securely ensuring compliance with auditing standards as set by Regulators and to meet their expectations for monitoring and inspection. ADAT comprises work paper templates, an exhaustive library of risks linked to possible audit responses, reference audit programs, checklists, and more - all of which can be customised to the specific auditing needs. Webinar was conducted on on 18th Feb, 2023, 3 pm - 6 pm to understand more with a repeat session conducted on 25th Feb, 2023, 10 am - 1 pm. For more details, kindly reach out to contact@trueandfair.pro.`}
             {/* <a
               target="_blank"
               rel="noreferrer"

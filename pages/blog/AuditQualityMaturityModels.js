@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-function BlogOne() {
+function AuditQualityMaturityModels() {
   return (
     <>
       <section className="bg-whit">
@@ -415,4 +415,4 @@ maturity
     </>
   );
 }
-export default BlogOne;
+export default AuditQualityMaturityModels;

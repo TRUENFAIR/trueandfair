@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function EventSix() {
+export default function AuditQualityMaturityModel() {
   const stuff = [
     {
       image: "/fac/fac5/f1.jpg",
