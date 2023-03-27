@@ -3,179 +3,179 @@ import Link from "next/link";
 function BlogFive() {
   const stuff = [
     {
-      image: "/fac/fac6/slide01.jpg",
+      image: "/fac/fac6/slide01.JPG",
       text: "Webinar - Audit Quality Maturity Model (AQMM)",
     },
     {
-      image: "/fac/fac6/slide02.jpg",
+      image: "/fac/fac6/slide02.JPG",
       text: "Webinar - Audit Quality Maturity Model (AQMM)",
     },
     {
-      image: "/fac/fac6/slide03.jpg",
+      image: "/fac/fac6/slide03.JPG",
       text: "Webinar - Audit Quality Maturity Model (AQMM)",
     },
     {
-      image: "/fac/fac6/slide04.jpg",
+      image: "/fac/fac6/slide04.JPG",
       text: "Webinar - Audit Quality Maturity Model (AQMM)",
     },
     {
-      image: "/fac/fac6/slide05.jpg",
+      image: "/fac/fac6/slide05.JPG",
       text: "Webinar - Audit Quality Maturity Model (AQMM)",
     },
     {
-      image: "/fac/fac6/slide06.jpg",
+      image: "/fac/fac6/slide06.JPG",
       text: "Webinar - Audit Quality Maturity Model (AQMM)",
     },
     {
-      image: "/fac/fac6/slide07.jpg",
+      image: "/fac/fac6/slide07.JPG",
       text: "Webinar - Audit Quality Maturity Model (AQMM)",
     },
     {
-      image: "/fac/fac6/slide08.jpg",
+      image: "/fac/fac6/slide08.JPG",
       text: "Webinar - Audit Quality Maturity Model (AQMM)",
     },
     {
-      image: "/fac/fac6/slide09.jpg",
+      image: "/fac/fac6/slide09.JPG",
       text: "Webinar - Audit Quality Maturity Model (AQMM)",
     },
     {
-      image: "/fac/fac6/slide10.jpg",
+      image: "/fac/fac6/slide10.JPG",
       text: "Webinar - Audit Quality Maturity Model (AQMM)",
     },
     {
-      image: "/fac/fac6/slide11.jpg",
+      image: "/fac/fac6/slide11.JPG",
       text: "Webinar - Audit Quality Maturity Model (AQMM)",
     },
     {
-      image: "/fac/fac6/slide12.jpg",
+      image: "/fac/fac6/slide12.JPG",
       text: "Webinar - Audit Quality Maturity Model (AQMM)",
     },
     {
-      image: "/fac/fac6/slide13.jpg",
+      image: "/fac/fac6/slide13.JPG",
       text: "Webinar - Audit Quality Maturity Model (AQMM)",
     },
     {
-      image: "/fac/fac6/slide14.jpg",
+      image: "/fac/fac6/slide14.JPG",
       text: "Webinar - Audit Quality Maturity Model (AQMM)",
     },
     {
-      image: "/fac/fac6/slide15.jpg",
+      image: "/fac/fac6/slide15.JPG",
       text: "Webinar - Audit Quality Maturity Model (AQMM)",
     },
     {
-      image: "/fac/fac6/slide16.jpg",
+      image: "/fac/fac6/slide16.JPG",
       text: "Webinar - Audit Quality Maturity Model (AQMM)",
     },
     {
-      image: "/fac/fac6/slide17.jpg",
+      image: "/fac/fac6/slide17.JPG",
       text: "Webinar - Audit Quality Maturity Model (AQMM)",
     },
     {
-      image: "/fac/fac6/slide18.jpg",
+      image: "/fac/fac6/slide18.JPG",
       text: "Webinar - Audit Quality Maturity Model (AQMM)",
     },
     {
-      image: "/fac/fac6/slide19.jpg",
+      image: "/fac/fac6/slide19.JPG",
       text: "Webinar - Audit Quality Maturity Model (AQMM)",
     },
     {
-      image: "/fac/fac6/slide20.jpg",
+      image: "/fac/fac6/slide20.JPG",
       text: "Webinar - Audit Quality Maturity Model (AQMM)",
     },
     {
-      image: "/fac/fac6/slide21.jpg",
+      image: "/fac/fac6/slide21.JPG",
       text: "Webinar - Audit Quality Maturity Model (AQMM)",
     },
     {
-      image: "/fac/fac6/slide22.jpg",
+      image: "/fac/fac6/slide22.JPG",
       text: "Webinar - Audit Quality Maturity Model (AQMM)",
     },
     {
-      image: "/fac/fac6/slide23.jpg",
+      image: "/fac/fac6/slide23.JPG",
       text: "Webinar - Audit Quality Maturity Model (AQMM)",
     },
     {
-      image: "/fac/fac6/slide24.jpg",
+      image: "/fac/fac6/slide24.JPG",
       text: "Webinar - Audit Quality Maturity Model (AQMM)",
     },
     {
-      image: "/fac/fac6/slide25.jpg",
+      image: "/fac/fac6/slide25.JPG",
       text: "Webinar - Audit Quality Maturity Model (AQMM)",
     },
     {
-      image: "/fac/fac6/slide26.jpg",
+      image: "/fac/fac6/slide26.JPG",
       text: "Webinar - Audit Quality Maturity Model (AQMM)",
     },
     {
-      image: "/fac/fac6/slide27.jpg",
+      image: "/fac/fac6/slide27.JPG",
       text: "Webinar - Audit Quality Maturity Model (AQMM)",
     },
     {
-      image: "/fac/fac6/slide28.jpg",
+      image: "/fac/fac6/slide28.JPG",
       text: "Webinar - Audit Quality Maturity Model (AQMM)",
     },
     {
-      image: "/fac/fac6/slide29.jpg",
+      image: "/fac/fac6/slide29.JPG",
       text: "Webinar - Audit Quality Maturity Model (AQMM)",
     },
     {
-      image: "/fac/fac6/slide30.jpg",
+      image: "/fac/fac6/slide30.JPG",
       text: "Webinar - Audit Quality Maturity Model (AQMM)",
     },
     {
-      image: "/fac/fac6/slide31.jpg",
+      image: "/fac/fac6/slide31.JPG",
       text: "Webinar - Audit Quality Maturity Model (AQMM)",
     },
     {
-      image: "/fac/fac6/slide32.jpg",
+      image: "/fac/fac6/slide32.JPG",
       text: "Webinar - Audit Quality Maturity Model (AQMM)",
     },
     {
-      image: "/fac/fac6/slide33.jpg",
+      image: "/fac/fac6/slide33.JPG",
       text: "Webinar - Audit Quality Maturity Model (AQMM)",
     },
     {
-      image: "/fac/fac6/slide34.jpg",
+      image: "/fac/fac6/slide34.JPG",
       text: "Webinar - Audit Quality Maturity Model (AQMM)",
     },
     {
-      image: "/fac/fac6/slide35.jpg",
+      image: "/fac/fac6/slide35.JPG",
       text: "Webinar - Audit Quality Maturity Model (AQMM)",
     },
     {
-      image: "/fac/fac6/slide36.jpg",
+      image: "/fac/fac6/slide36.JPG",
       text: "Webinar - Audit Quality Maturity Model (AQMM)",
     },
     {
-      image: "/fac/fac6/slide37.jpg",
+      image: "/fac/fac6/slide37.JPG",
       text: "Webinar - Audit Quality Maturity Model (AQMM)",
     },
     {
-      image: "/fac/fac6/slide38.jpg",
+      image: "/fac/fac6/slide38.JPG",
       text: "Webinar - Audit Quality Maturity Model (AQMM)",
     },
     {
-      image: "/fac/fac6/slide39.jpg",
+      image: "/fac/fac6/slide39.JPG",
       text: "Webinar - Audit Quality Maturity Model (AQMM)",
     },
     {
-      image: "/fac/fac6/slide40.jpg",
+      image: "/fac/fac6/slide40.JPG",
       text: "Webinar - Audit Quality Maturity Model (AQMM)",
     },
     {
-      image: "/fac/fac6/slide41.jpg",
+      image: "/fac/fac6/slide41.JPG",
       text: "Webinar - Audit Quality Maturity Model (AQMM)",
     },
     {
-      image: "/fac/fac6/slide42.jpg",
+      image: "/fac/fac6/slide42.JPG",
       text: "Webinar - Audit Quality Maturity Model (AQMM)",
     },
     {
-      image: "/fac/fac6/slide43.jpg",
+      image: "/fac/fac6/slide43.JPG",
       text: "Webinar - Audit Quality Maturity Model (AQMM)",
     },
     {
-      image: "/fac/fac6/slide44.jpg",
+      image: "/fac/fac6/slide44.JPG",
       text: "Webinar - Audit Quality Maturity Model (AQMM)",
     },
   ];
