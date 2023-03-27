@@ -73,7 +73,7 @@ export default function EventFive() {
           </h1>
 
           <p className="py-12 font-bah text-justify">
-         {`The Audit Documentation and Archival Tool (ADAT) facilitates auditors to document their audit work securely ensuring compliance with auditing standards as set by Regulators and to meet their expectations for monitoring and inspection. ADAT comprises work paper templates, an exhaustive library of risks linked to possible audit responses, reference audit programs, checklists, and more - all of which can be customised to the specific auditing needs. Join us on 18th Feb, 2023, 3 pm - 6 pm to understand more. Repeat session on 25th Feb, 2023, 10 am -1 pm. Webinar link will be published shortly.`}
+         {`The Audit Documentation and Archival Tool (ADAT) facilitates auditors to document their audit work securely ensuring compliance with auditing standards as set by Regulators and to meet their expectations for monitoring and inspection. ADAT comprises work paper templates, an exhaustive library of risks linked to possible audit responses, reference audit programs, checklists, and more - all of which can be customised to the specific auditing needs. Webinar was conducted on on 18th Feb, 2023, 3 pm - 6 pm to understand more with a repeat session conducted on 25th Feb, 2023, 10 am - 1 pm. For more details, kindly reach out to contact@trueandfair.pro.`}
             {/* <a
               target="_blank"
               rel="noreferrer"

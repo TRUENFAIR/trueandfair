@@ -6,6 +6,7 @@ export default function EventSix() {
       image: "/fac/fac5/f1.jpg",
       text: "Webinar - Audit Quality Maturity Model (AQMM)",
     },
+
     // {
     //   image: "/fac/fac2/f2.jpeg",
     //   text: "Balaji, V.  - Our Managing Partner inaugurating ASSOCHAM with CA (Dr.) Ashok Haldia - Chairman ASSOCHAM Task Force on Accounting Standards, Ajay Bhushan Prasad Pandey - Chairman NFRA and other prominent personalities",
@@ -72,7 +73,7 @@ export default function EventSix() {
           </h1>
 
           <p className="py-12 font-bah text-justify">
-            {`Audit Quality Maturity Model (AQMM) issued by ICAI is applicable from April 1, 2023 to CA Firms performing audits of listed entities, banks and insurance companies. Please join our webinar to understand the AQMM and the requirements and factors to be considered for implementation of the AQMM within the CA Firms.`}
+            {`Audit Quality Maturity Model (AQMM) issued by ICAI is applicable from April 1, 2023 to CA Firms performing audits of listed entities, banks and insurance companies. A webinar was conducted on March 25, 2023 to understand the AQMM and the requirements and factors to be considered for implementation of the AQMM within the CA Firms.`}
             {/* <a
               target="_blank"
               rel="noreferrer"
@@ -121,11 +122,11 @@ export default function EventSix() {
                       alt="avatar"
                     />
 
-                    <div className="h-fit min-h-[100px] mt-4 text-center">
+                    {/* <div className="h-fit min-h-[100px] mt-4 text-center">
                       <p className="font-bah text-sm text-justify lg:p-3">
                         {text}
                       </p>
-                    </div>
+                    </div> */}
                   </div>
                 );
               }
