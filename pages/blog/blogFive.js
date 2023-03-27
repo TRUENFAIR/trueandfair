@@ -3,7 +3,7 @@ import Link from "next/link";
 function BlogFive() {
   const stuff = [
     {
-      image: "/fac/fac6/slide01.JPG",
+      image: "/fac/fac6/slide01.png",
       text: "Webinar - Audit Quality Maturity Model (AQMM)",
     },
     {
