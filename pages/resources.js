@@ -63,14 +63,14 @@ export default function Resources() {
           ),
         },
         {
-          name: "Requirements of Auditors, approach and quality expectation- Y. H Malegam (Former Chairman - NACAS)",
+          name: "AQMM AUDIT QUALITY MATURITY MODEL (AQMM) VERSION 1.0 ISSUED BY THE ICAI",
           desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum cupiditate possimus dolore voluptatibus similique optioducimus provident,",
-          imgs: "/events/14.png",
+          imgs: "/fac/fac6/Slide01.JPG",
           vidoes: (
             <iframe
               width="100%"
               height="100%"
-              src="https://www.youtube.com/embed/qb7YdHMt48s"
+              src="https://www.youtube.com/embed/HQ7oCWFYrA0"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -79,14 +79,14 @@ export default function Resources() {
           ),
         },
         {
-          name: "Insights on Quality Improvement - P.R. Ramesh",
+          name: "Requirements of Auditors, approach and quality expectation- Y. H Malegam (Former Chairman - NACAS)",
           desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum cupiditate possimus dolore voluptatibus similique optioducimus provident,",
-          imgs: "/events/13.png",
+          imgs: "/events/14.png",
           vidoes: (
             <iframe
               width="100%"
               height="100%"
-              src="https://www.youtube.com/embed/jGJsItHigDg"
+              src="https://www.youtube.com/embed/qb7YdHMt48s"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -129,6 +129,22 @@ export default function Resources() {
         // },
       ],
       blogsdatafull: [
+        {
+          name: "Insights on Quality Improvement - P.R. Ramesh",
+          desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum cupiditate possimus dolore voluptatibus similique optioducimus provident,",
+          imgs: "/events/13.png",
+          vidoes: (
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/jGJsItHigDg"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          ),
+        },
         {
           name: "Dialogue with Mr. N. P. Sarda (Past President ICAI, and Former Chairman of Deloitte India)",
           desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum cupiditate possimus dolore voluptatibus similique optioducimus provident,",
@@ -328,14 +344,14 @@ export default function Resources() {
           imgs: "/fac/fac2/f8.JPG",
           vidoes: (
             <iframe
-                      width="100%"
-                      height="100%"
-                      src="https://www.youtube.com/embed/k6BEH0MTiTk"
-                      title="YouTube video player"
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                    ></iframe>
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/k6BEH0MTiTk"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           ),
         },
         {
@@ -344,14 +360,14 @@ export default function Resources() {
           imgs: "/fac/fac2/f10.JPG",
           vidoes: (
             <iframe
-                      width="100%"
-                      height="100%"
-                      src="https://www.youtube.com/embed/zSZ3K6CVE1o"
-                      title="YouTube video player"
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                    ></iframe>
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/zSZ3K6CVE1o"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           ),
         },
       ],
@@ -369,7 +385,7 @@ export default function Resources() {
           desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos a eveniet sequi similique expedita id obcaecati velit suscipit consequuntur excepturi repellendus iste illo blanditiis possimus fugit dol",
           image: "/homeicontwo/hmicon.jpg",
         },
-        
+
         {
           link: "/blog/DreamleadingtoaVision",
           name: "A Dream leading to a Vision",
@@ -384,7 +400,6 @@ export default function Resources() {
           desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos a eveniet sequi similique expedita id obcaecati velit suscipit consequuntur excepturi repellendus iste illo blanditiis possimus fugit dol",
           image: "/blog/2.jpg",
         },
-       
       ],
       blogsdatafull: [
         {
@@ -453,7 +468,6 @@ export default function Resources() {
           auth: "KR SRIVATS",
           date: "December 17, 2022",
         },
-      
       ],
       blogsdatafull: [
         {
