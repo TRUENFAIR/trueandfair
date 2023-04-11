@@ -26,7 +26,7 @@ const Alpa = () => {
               <p>Partner</p>
             </div>
             <div className="">
-              <img src="/team/alpa.jpg" className="w-[100%] " alt="" />
+              <img src="/team/alpa.JPG" className="w-[100%] " alt="" />
             </div>
           </div>
           <div className="">
