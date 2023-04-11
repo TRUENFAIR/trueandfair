@@ -6,7 +6,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 import Focusarea from "../components/focusarea";
-
+import { FcNext } from "react-icons/fc";
 export default function About() {
   const [buttonIndex, setButtonIndex] = useState(0);
   const buttonClick = (x) => {
@@ -51,6 +51,7 @@ export default function About() {
           image: "/team/balaji.jpg",
           linkd: "https://www.linkedin.com/in/balaji-v-8501707",
           role: "Founder and Managing Partner",
+          email: "vbalaji@trueandfair.pro",
           description:
             "Balaji V. brings over 28 years’ experience in financial accounting and auditing, working across various industries, including, agriculture, automobile, healthcare, information  technology, information technology enabled services, manufacturing, real estate, retail and infrastructure. Over the course of his professional career, he has held leadership positions in one of  India’s largest audit firms in roles spanning Audit Inspections, Audit Risk, Audit Quality  and Regulatory.  Balaji has been a member of the Audit and Assurance Standards Board, the Expert Advisory Committee and the Ind AS Transition Facilitation Group of the Institute of Chartered Accountants of India (ICAI). He has also been a member of various study groups constituted by the ICAI to evaluate and address issues considered for amendments by the ICAI. Balaji has co-authored various publications of the ICAI including the ‘Guidance Note on Audit of Internal Financial Controls over Financial Reporting’ and the ‘Guidance Note on  Reporting on Fraud’ under sections 143(3)(i) and 143(12), respectively, of the Companies Act, 2013; ‘Technical Guidance on Reporting under Rule 11(e) and 11(f) of the Companies (Audit and Auditors) Rules’; among others.",
         },
@@ -72,39 +73,95 @@ export default function About() {
       desc: "From Ashtanga to Vinyasa, make mindful movement a daily ritual.",
       blogsdata: [
         {
+          category: "partners",
+          name: "Alpa Sheth",
+          image: "/team/alpa.jpg",
+          linkd: "https://www.linkedin.com/in/alpa-chitalia-sheth-106536268/",
+          role: "",
+          description: "",
+          email: "alpa@trueandfair.pro",
+          detailsLink: "/partners/alpa",
+        },
+        {
+          category: "partners",
+          name: "Jaideep S Trasi",
+          image: "/team/jaideep.png",
+          linkd: "https://www.linkedin.com/in/jaideep-t-383a81b/",
+          role: "",
+          description: "",
+          email: "jtrasi@trueandfair.pro",
+          detailsLink: "/partners/jaideep",
+        },
+        {
+          category: "partners",
           name: "Archana Ashok",
           image: "/team/archana.jpg",
           linkd: "https://www.linkedin.com/in/archana-ashok-7769a017",
           role: "",
           description: "",
+          email: "archana@trueandfair.pro",
+          detailsLink: "/partners/Archana",
         },
         {
-          name: "Shristi Sarayan",
-          image: "/team/srishti.jpg",
-          linkd: "https://www.linkedin.com/in/shristi-sarayan-43831257",
+          category: "partners",
+          name: "Ashish Shivahare",
+          image: "/team/Ashish.jpg",
+          linkd: "https://www.linkedin.com/in/ashish-shivahare-6780088/",
           role: "",
           description: "",
+          email: "ashish@trueandfair.pro",
+          detailsLink: "/partners/ashish",
         },
         {
+          category: "partners",
+          name: "Jyoti A Agarwal",
+          image: "/team/jyothitwo.png",
+          linkd: "https://www.linkedin.com/in/jyoti-agarwal-83a0477/",
+          role: "",
+          description: "",
+          email: "jyotiaagarwal@trueandfair.pro",
+          detailsLink: "/partners/jyothi",
+        },
+        {
+          category: "partners",
           name: "Kirti Kumar Kotian",
           image: "/team/kirti.jpg",
           linkd: "http://www.linkedin.com/in/kirti-kumar-kotian",
           role: "",
           description: "",
+          email: "kkotian@trueandfair.pro",
+          detailsLink: "/partners/kirti",
         },
         {
+          category: "partners",
           name: "Rakesh Jain",
           image: "/team/rakesh.jpg",
           linkd: "https://www.linkedin.com/in/rakesh-jain-a731641b",
           role: "",
           description: "",
+          email: "rakeshjain@trueandfair.pro",
+          detailsLink: "/partners/rakesh",
         },
+
         {
+          category: "partners",
           name: "Krishna R P",
           image: "/team/krishna.jpg",
           linkd: "https://www.linkedin.com/in/krishna-r-p-0abab6205/",
           role: "",
           description: "",
+          email: "krishnarp@trueandfair.pro",
+          detailsLink: "/partners/krishna",
+        },
+        {
+          category: "partners",
+          name: "Shristi Sarayan",
+          image: "/team/srishti.jpg",
+          linkd: "https://www.linkedin.com/in/shristi-sarayan-43831257",
+          role: "",
+          description: "",
+          email: "shristisarayan@trueandfair.pro",
+          detailsLink: "/partners/shristi",
         },
       ],
       blogsdatafull: [],
@@ -322,6 +379,9 @@ export default function About() {
                     point1sub3,
                     point1sub5,
                     linkd,
+                    category,
+                    email,
+                    detailsLink,
                   },
                   index
                 ) => {
@@ -414,6 +474,59 @@ export default function About() {
                           className="flex gap-1 mt-4 text-black flex-row"
                         >
                           <p className="prose  text-black font-bah ">{}</p>
+                        </div>
+                      </div>
+                    );
+                  }
+                  //partner category list
+                  if (category === "partners") {
+                    return (
+                      <div
+                        key={index}
+                        data-aos="fade-up"
+                        data-aos-once="true"
+                        className="flex flex-col items-center p-5"
+                      >
+                        <div className="relative lg:w-[250px] lg:h-[250px]  md:w-[200px] md:h-[200px] w-[200px]  h-[200px]  rounded-full">
+                          <Image
+                            className="rounded-full"
+                            alt="profle"
+                            src={image}
+                            objectFit="cover"
+                            layout="fill"
+                          />
+                        </div>
+
+                        <div className="mt-8   w-[80%]  ease-in-out rounded-md    w-full flex flex-col items-center justify-center gap-0 text-xl font-bah    font-bold ">
+                          <div className="flex">
+                            {" "}
+                            <p className="font-bah  font-bold mt-2"> {name}</p>
+                            <span className="hover:scale-105  transition-all">
+                              <a
+                                className="hover:scale-110 transition-all"
+                                href={linkd}
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                <img
+                                  src="/icons/link.png"
+                                  className="w-10 h-10"
+                                  alt=""
+                                />
+                              </a>
+                            </span>
+                          </div>
+                          <h1 className="md:w-[255px] h-[2px]  bg-blue mb-3"></h1>
+                          <Link href={detailsLink}>
+                            <div className="flex   justify-center gap-2">
+                              <p className="text-sm ">{email}</p>{" "}
+                              <div className="transform  text-4xl  font-extrabold transition-transform hover:cursor-pointer duration-300 hover:scale-125">
+                                {/* <FcNext size={35} width={50} className="" color={"white"} /> */}
+                                <img src="/icons/forward.png" alt="" />
+                              </div>
+                            </div>
+                          </Link>
+                          <div className="flex w-full ml-20 justify-center"></div>
                         </div>
                       </div>
                     );
