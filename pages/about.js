@@ -75,7 +75,7 @@ export default function About() {
         {
           category: "partners",
           name: "Alpa Sheth",
-          image: "/team/alpa.jpg",
+          image: "/team/alpa.JPG",
           linkd: "https://www.linkedin.com/in/alpa-chitalia-sheth-106536268/",
           role: "",
           description: "",
