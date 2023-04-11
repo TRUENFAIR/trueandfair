@@ -321,7 +321,7 @@ export default function Resourceslide() {
                   ) => {
                     return (
                       <div
-                        key={id}
+                        key={index}
                         className="w-fit shadow-md bg-white flex flex-col lg:flex-1 py-4 justify-between bg-opacity-75 px-4   rounded-lg overflow-hidden text-center relative"
                       >
                         <div className=" w-full transition duration-150 ease-out hover:ease-in hover:opacity-50">
