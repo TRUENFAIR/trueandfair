@@ -68,7 +68,7 @@ export default function About() {
     },
     {
       name: "Partners",
-      para: "The activities of True and Fair are supported by a team of five (and growing) young and energetic professionals with over 10 years of work experience each in auditing, accounting and advisory and have served a diverse set of industries. Each member has held senior professional positions in one of India’s largest audit firms including positions in the firm’s technical, quality and learning teams.",
+      para: "The activities of True and Fair are supported by a team of nine (and growing) young and energetic professionals have individual experiences ranging from 10 to 25 years, aggregating to more than 100 years of experience in auditing, accounting and advisory and have served a diverse set of industries. Each member has held senior professional positions, including as Partners and Directors, in one of India’s largest audit firms including participating in the firm’s technical, quality and learning teams.",
       img: "/discover/discover1.png",
       desc: "From Ashtanga to Vinyasa, make mindful movement a daily ritual.",
       blogsdata: [
