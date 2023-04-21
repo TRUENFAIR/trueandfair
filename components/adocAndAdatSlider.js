@@ -55,7 +55,7 @@ export default function adocAndAdatSlider() {
             <SwiperSlide>
               <div>
                 <p className="text-center text-3xl font-bah  title-font text-white   mb-4">
-                 (ADOC) Audit Documentation Content 
+                  (ADOC) Audit Documentation Content
                 </p>
               </div>
               <div className="    lg:rounded-lg text-left">
@@ -77,7 +77,7 @@ export default function adocAndAdatSlider() {
                         of the Financial Statements including reporting.
                       </p>
                       <div>
-                        <div className="flex pt-4 justify-center md:justify-left">
+                        <div className="flex pt-2  md:justify-left">
                           <Link href="/adoc">
                             <button className="mt-10 font-bah   border-2 border-white text-white font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg ">
                               READ MORE
@@ -151,7 +151,7 @@ export default function adocAndAdatSlider() {
                         the specific auditing needs.
                       </p>
                       <div>
-                        <div className="flex pt-4 justify-center md:justify-left">
+                        <div className="flex pt-4  md:justify-left">
                           <Link href="/adat">
                             <button className="mt-10 font-bah   border-2 border-white text-white font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg ">
                               READ MORE
