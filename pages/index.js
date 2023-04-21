@@ -13,6 +13,7 @@ import Resourceslide from "../components/resorceslide";
 // import Fixediv from "../components/fixediv";
 // import Focusareaslide from "../components/focusareaslide";
 // import Focusarea from "../components/focusarea";
+import AdocAndAdatSlider from "../components/adocAndAdatSlider";
 
 const rightIcon = (
   <svg
@@ -165,7 +166,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-lightgray body-font pt-14 pb-4">
+      <section className="bg-white body-font pt-14 pb-4">
         <div className="md:container px-5 md:mx-auto">
           <div className="xl:w-full lg:w-full  w-full mx-auto text-center">
             <p className="text-3xl font-bah  title-font text-black   mb-6">
@@ -236,7 +237,7 @@ export default function Home() {
       </section>
       <section
         data-aos="fade-up"
-        className="text-black bg-white body-font   lg:py-12"
+        className="text-black bg-lightgray body-font   lg:py-12"
         // style={{
         //   backgroundImage: `url(${"/about/abt2.png"})`,
         //   backgroundSize: "cover",
@@ -278,7 +279,6 @@ export default function Home() {
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                   ></iframe>
-                 
                 </div>
               </div>
               <div className="lg:hidden flex justify-center">
@@ -292,7 +292,6 @@ export default function Home() {
                   allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 ></iframe>
-                
               </div>
             </div>
             {/* <div className="flex justify-center">
@@ -306,7 +305,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="md:pt-14 md:pb-10 text-zinc-90 bg-lightgray">
+      <section className="md:pt-14 md:pb-10 text-zinc-90 bg-white">
         <div className="lg:container mb-9 p-4 mx-auto">
           <div className="flex gap-4 justify-center mb-10">
             <h1 className=" text-3xl font-bah  title-font text-black   mb-4">
@@ -366,7 +365,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+      <section>
+        <AdocAndAdatSlider />
+      </section>
       <section
         data-aos="fade-up"
         className="text-black  bg-white body-font    lg:py-12"
@@ -384,14 +385,14 @@ export default function Home() {
               <ul className="grid lg:grid-cols-3 grid-cols-1 lg:gap-12">
                 {whytf.map(({ text, id, title }, index) => {
                   return (
-                    <div   className=" p-5 ease-in duration-150 hover:scale-[1.02] transition-all shadow-lg" key={index}>
+                    <div
+                      className=" p-5 ease-in duration-150 hover:scale-[1.02] transition-all shadow-lg"
+                      key={index}
+                    >
                       <p className="font-bah h-18 text-center font-semibold text-lg text-black">
                         {title}
                       </p>
-                      <li
-                       
-                        className="mt-4  text- font-bah lg:p-0 p-5 text-justify leading-loose text-black "
-                      >
+                      <li className="mt-4  text- font-bah lg:p-0 p-5 text-justify leading-loose text-black ">
                         {text}
                       </li>
                     </div>
@@ -461,7 +462,7 @@ export default function Home() {
           </div>
         </div>
       </section> */}
-      <Resourceslide/>
+      <Resourceslide />
     </main>
   );
 }
