@@ -54,11 +54,24 @@ export default function Layout({ children }) {
       path: "/adat",
 
       sub: [
-        { name: "Product Overview", path: "/adat#ProductOverview" },
+        { name: "Product Overview", path: "/adoc#ProductOverview" },
 
         { name: "Technology ", path: "/adat#Technology" },
         { name: "ADAT Advantages", path: "/adat#Advantages" },
         { name: "Illustrative Index", path: "/adat#indexofadat" },
+      ],
+    },
+    {
+      name: "ADOC",
+      path: "/adoc",
+
+      sub: [
+        { name: "Overview", path: "/adoc#Overview" },
+
+        { name: "Advantages ", path: "/adoc#Advantages" },
+        { name: "Salient Features ", path: "/adoc#Features" },
+        { name: "Security and Confidentiality", path: "/adoc#Security" },
+        { name: "Pricing", path: "/adoc#Pricing" },
       ],
     },
     {
@@ -359,8 +372,8 @@ export default function Layout({ children }) {
             <Link href="/adat">
               <a>ADAT</a>
             </Link>
-            <Link href="/library">
-              <a>Library</a>
+            <Link href="/adoc">
+              <a>ADOC</a>
             </Link>
           </div>
 
@@ -368,7 +381,9 @@ export default function Layout({ children }) {
             {/* <Link href="/resources">
               <a>Resources</a>
             </Link> */}
-
+            <Link href="/library">
+              <a>Library</a>
+            </Link>
             <Link href="/resources">
               <a> Resources</a>
             </Link>
