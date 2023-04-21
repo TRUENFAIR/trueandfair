@@ -12,7 +12,7 @@ export default function adocAndAdatSlider() {
       <section
         className="bg-lightgray text-white"
         style={{
-          backgroundImage: `url(${"/adoc/bgslider2.jpg"})`,
+          backgroundImage: `url(${"/adoc/bgslider2flip.jpg"})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -55,7 +55,7 @@ export default function adocAndAdatSlider() {
             <SwiperSlide>
               <div>
                 <p className="text-center text-3xl font-bah  title-font text-white   mb-4">
-                  Audit Documentation Content (ADOC)
+                 (ADOC) Audit Documentation Content 
                 </p>
               </div>
               <div className="    lg:rounded-lg text-left">
@@ -130,7 +130,7 @@ export default function adocAndAdatSlider() {
             <SwiperSlide>
               <div>
                 <p className="text-center text-3xl font-bah  title-font text-white mb-4">
-                  ADAT®️(Audit Documentation and Archival Tool)
+                  ADAT®️ (Audit Documentation and Archival Tool)
                 </p>
               </div>
               <div className="    lg:rounded-lg text-left">
