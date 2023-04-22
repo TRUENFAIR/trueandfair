@@ -426,6 +426,17 @@ export default function Resources() {
       blogsdata: [
         {
           ser: "/blogs/blogOne",
+          link: "https://economictimes.indiatimes.com/industry/services/consultancy-/-audit/auditors-not-expected-to-look-at-every-single-invoice-transaction-icai-president/articleshow/99646956.cms?from=mdr",
+          name: "Peer review of larger unlisted companies must from July: ICAI President",
+          small: "title",
+          desc: "The Institute of Chartered Accountants of India (ICAI) will make the ‘peer review’ mechanism mandatory for even unlisted  ...........",
+          image: "/news/news14.png",
+          sorc: "The Economics Times",
+          auth: "PTI",
+          date: "April 21, 2023",
+        },
+        {
+          ser: "/blogs/blogOne",
           link: "https://www.financialexpress.com/industry/mandatory-joint-audit-to-start-with-big-firms/2946495/",
           name: "Mandatory joint audit to start with big firms",
           small: "title",
@@ -457,6 +468,9 @@ export default function Resources() {
           auth: "SIDHARTHA",
           date: "January 11, 2023",
         },
+        
+      ],
+      blogsdatafull: [
         {
           ser: "/blogs/blogOne",
           link: "https://www.thehindubusinessline.com/economy/ca-institute-open-to-allow-uk-canadian-professionals-provide-audit-services-in-india/article66274711.ece",
@@ -468,8 +482,6 @@ export default function Resources() {
           auth: "KR SRIVATS",
           date: "December 17, 2022",
         },
-      ],
-      blogsdatafull: [
         {
           ser: "/blogs/blogOne",
           link: "https://www.thehindubusinessline.com/news/nfra-begins-inspections-of-five-audit-firms/article66214893.ece",
