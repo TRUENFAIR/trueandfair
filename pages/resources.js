@@ -468,17 +468,6 @@ export default function Resources() {
           auth: "REETU",
           date: "January 11, 2023",
         },
-        {
-          ser: "/blogs/blogOne",
-          link: "https://timesofindia.indiatimes.com/business/india-business/auditors-regulator-seeks-e-locker-for-audit-docus/articleshow/96897256.cms",
-          name: "Auditors’ regulator seeks e-locker for audit docus  ",
-          small: "title",
-          desc: "NEW DELHI: After DigiLocker for individuals, the National FiFinancial Reporting Authority (NFRA) is look ...........",
-          image: "/news/news11.jpg",
-          sorc: "THE TIMES OF INDIA",
-          auth: "SIDHARTHA",
-          date: "January 11, 2023",
-        },
       ],
       blogsdatafull: [
         {
