@@ -426,6 +426,17 @@ export default function Resources() {
       blogsdata: [
         {
           ser: "/blogs/blogOne",
+          link: "https://www.financialexpress.com/industry/eligibility-standards-may-be-prescribed-govt-mulls-size-threshold-for-auditors-of-large-firms/3062816/",
+          name: "Eligibility standards may be prescribed: Govt mulls size threshold for auditors of large firms",
+          small: "title",
+          desc: "",
+          image: "/news/news15.jpg",
+          sorc: "The Financial Express",
+          auth: "Surabhi",
+          date: "April 26, 2023",
+        },
+        {
+          ser: "/blogs/blogOne",
           link: "https://economictimes.indiatimes.com/industry/services/consultancy-/-audit/auditors-not-expected-to-look-at-every-single-invoice-transaction-icai-president/articleshow/99646956.cms?from=mdr",
           name: "Peer review of larger unlisted companies must from July: ICAI President",
           small: "title",
@@ -468,9 +479,19 @@ export default function Resources() {
           auth: "SIDHARTHA",
           date: "January 11, 2023",
         },
-        
       ],
       blogsdatafull: [
+        {
+          ser: "/blogs/blogOne",
+          link: "https://timesofindia.indiatimes.com/business/india-business/auditors-regulator-seeks-e-locker-for-audit-docus/articleshow/96897256.cms",
+          name: "Auditors’ regulator seeks e-locker for audit docus  ",
+          small: "title",
+          desc: "NEW DELHI: After DigiLocker for individuals, the National FiFinancial Reporting Authority (NFRA) is look ...........",
+          image: "/news/news11.jpg",
+          sorc: "THE TIMES OF INDIA",
+          auth: "SIDHARTHA",
+          date: "January 11, 2023",
+        },
         {
           ser: "/blogs/blogOne",
           link: "https://www.thehindubusinessline.com/economy/ca-institute-open-to-allow-uk-canadian-professionals-provide-audit-services-in-india/article66274711.ece",
