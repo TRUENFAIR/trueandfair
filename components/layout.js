@@ -54,7 +54,7 @@ export default function Layout({ children }) {
       path: "/adat",
 
       sub: [
-        { name: "Product Overview", path: "/adoc#ProductOverview" },
+        { name: "Product Overview", path: "/adat#ProductOverview" },
 
         { name: "Technology ", path: "/adat#Technology" },
         { name: "ADAT Advantages", path: "/adat#Advantages" },

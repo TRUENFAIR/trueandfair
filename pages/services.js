@@ -19,7 +19,10 @@ export default function Services() {
     <>
       <Head>
         <title>True & Fair | Services</title>
-        <meta name="description" content="We offer a wide range of services for audit firms to meet their business objectives with clarity and confidence. Any individual/ firm/ organisation which promotes a culture of quality is a potential stakeholder with True and Fair since they will be sharing a common objective of promoting audit quality"/>
+        <meta
+          name="description"
+          content="We offer a wide range of services for audit firms to meet their business objectives with clarity and confidence. Any individual/ firm/ organisation which promotes a culture of quality is a potential stakeholder with True and Fair since they will be sharing a common objective of promoting audit quality"
+        />
       </Head>
       <section>
         <div
@@ -71,49 +74,202 @@ export default function Services() {
               <div className="flex gap-1 mt-4 text-black flex-row">
                 <span className="w-fit ">✔️</span>{" "}
                 <p className="prose text-justify text-black font-bah ">
-                  {`An exhaustive suite of audit quality policies, procedures, technical guidance,
-ADAT and an audit quality monitoring mechanism
+                  {`Policy on System of Quality Control / System of Quality Management
+
               `}
                 </p>
               </div>
               <div className="flex gap-1  text-black flex-row">
                 <span className="w-fit ">✔️</span>{" "}
                 <p className="prose text-justify text-black font-bah ">
-                  {`An exhaustive suite of audit quality policies, procedures, technical guidance, and
-ADAT without any audit quality monitoring mechanism
+                  {`Audit Practice Manual and Technical Guidance
+
               `}
                 </p>
               </div>
               <div className="flex gap-1  text-black flex-row">
                 <span className="w-fit ">✔️</span>{" "}
                 <p className="prose text-justify text-black font-bah ">
-                  {`Technical guidance and/or ADAT
+                  {`Audit Documentation and Archival Tool (ADAT)
               `}
                 </p>
               </div>
               <div className="flex gap-1  text-black flex-row">
                 <span className="w-fit ">✔️</span>{" "}
                 <p className="prose text-justify text-black font-bah ">
-                  {`ADAT with or without monitoring
+                  {`Audit Documentation Content (ADOC)
+
               `}
                 </p>
               </div>
               <div className="flex gap-1  text-black flex-row">
                 <span className="w-fit ">✔️</span>{" "}
                 <p className="prose text-justify text-black font-bah ">
-                  {`Practice protection: Helping you in external inspection processes including
-responding to queries raised / findings / reports
+                  {`Audit Quality Monitoring Services
+
               `}
                 </p>
               </div>{" "}
               <div className="flex gap-1  text-black flex-row">
                 <span className="w-fit ">✔️</span>{" "}
                 <p className="prose text-justify text-black font-bah ">
-                  {`Training and development
+                  {`Onboarding Specialists/ Experts to support audit firms
+
               `}
                 </p>
               </div>
               <div className="flex gap-1  text-black flex-row">
+                <span className="w-fit ">✔️</span>{" "}
+                <p className="prose text-justify text-black font-bah ">
+                  {`Training and development
+
+              `}
+                </p>
+              </div>
+            </div>
+
+            <div
+              data-aos="fade-up"
+              data-aos-once="true"
+              className="w-auto h-48 lg:h-[600px] md:mt-16 relative"
+            >
+              <Image
+                layout="fill"
+                className="absolute h-[700px] w-full object-cover"
+                alt=""
+                src="/servadat/auditcomp.png"
+              />
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-once="true"
+              className="mt-4 h-[300px] md:h-[600px] md:mt-14  relative"
+            >
+              <Image
+                layout="fill"
+                className="absolute h-full w-full object-cover"
+                alt=""
+                src="/servadat/newimg.jpg"
+              />
+            </div>
+            <div data-aos="fade-up" data-aos-once="true" className="">
+              <div className="flex gap-1 md:mt-8 text-black flex-row">
+                <p className="prose mt-2 text-justify text-black font-bah ">
+                  {`"Quality Lead" Program wherein we will take the role of the Firm's Quality Leader for a specific period as agreed with the Firm, to help them establish a Quality Policy with an Audit Methodology and would additionally involve providing guidance on development and implementation of policies and practices with regard to:
+
+              `}
+                </p>
+              </div>
+              <br />
+              <div className="flex gap-1  text-black flex-row">
+                <span className="w-fit ">✔️</span>{" "}
+                <p className="prose text-justify text-black font-bah ">
+                  {`To create a platform to connect, collaborate and form network(s)
+              `}
+                </p>
+              </div>
+              <div className="flex gap-1  text-black flex-row">
+                <span className="w-fit ">✔️</span>{" "}
+                <p className="prose text-justify text-black font-bah ">
+                  {`Leadership composition and responsibilities 
+
+              `}
+                </p>
+              </div>
+              <div className="flex gap-1  text-black flex-row">
+                <span className="w-fit ">✔️</span>{" "}
+                <p className="prose text-justify text-black font-bah ">
+                  {`Ethics and Independence 
+
+              `}
+                </p>
+              </div>
+              <div className="flex gap-1  text-black flex-row">
+                <span className="w-fit ">✔️</span>{" "}
+                <p className="prose  text-justify text-black font-bah ">
+                  {`Promotion and Appraisals for Talent Management
+              `}
+                </p>
+              </div>
+              <div className="flex gap-1  text-black flex-row">
+                <span className="w-fit ">✔️</span>{" "}
+                <p className="prose  text-justify text-black font-bah ">
+                  {`Client and Engagement Acceptance Process
+
+              `}
+                </p>
+              </div>
+              <div className="flex gap-1  text-black flex-row">
+                <span className="w-fit mt-1">✔️</span>{" "}
+                <p className="prose  text-justify text-black font-bah ">
+                  {`Independence and Conflict Evaluation and Management
+
+              `}
+                </p>
+              </div>
+              <div className="flex gap-1  text-black flex-row">
+                <span className="w-fit mt-1">✔️</span>{" "}
+                <p className="prose  text-justify text-black font-bah ">
+                  {`Engagement Performance (including consultations, EQCR, Archival etc.)
+
+              `}
+                </p>
+              </div>
+              <div className="flex gap-1  text-black flex-row">
+                <span className="w-fit mt-1 ">✔️</span>{" "}
+                <p className="prose  text-justify text-black font-bah ">
+                  {`Setting up Engagement Monitoring Process
+
+              `}
+                </p>
+              </div>
+              <div className="flex gap-1  text-black flex-row">
+                <span className="w-fit mt-1">✔️</span>{" "}
+                <p className="prose  text-justify text-black font-bah ">
+                  {`Evaluation of AQMM (v1) compliance status and plan
+
+              `}
+                </p>
+              </div>
+              <div className="flex gap-1  text-black flex-row">
+                <span className="w-fit mt-1">✔️</span>{" "}
+                <p className="prose  text-justify text-black font-bah ">
+                  {`Establishing a Training Plan / Calendar and Follow up monitoring on status 
+
+
+              `}
+                </p>
+              </div>
+              <div className="flex gap-1  text-black flex-row">
+                <span className="w-fit mt-1 ">✔️</span>{" "}
+                <p className="prose  text-justify text-black font-bah ">
+                  {`Managing on going communications within the Firm, etc.
+
+
+              `}
+                </p>
+              </div>
+              <div className="flex gap-1  text-black flex-row">
+                <span className="w-fit mt-1">✔️</span>{" "}
+                <p className="prose  text-justify text-black font-bah ">
+                  {`Policy for audit documentation
+
+
+              `}
+                </p>
+              </div>
+              <div className="flex gap-1  text-black flex-row">
+                <span className="w-fit m">✔️</span>{" "}
+                <p className="prose  text-justify text-black font-bah ">
+                  {`Embarking on the journey of ISQM 1 and ISQM 2
+
+
+              `}
+                </p>
+              </div>
+            </div>
+            <div className="w-auto">
+              <div className="flex gap-1 md:mt-12 text-black flex-row">
                 <p className="prose mt-2 text-justify text-black font-bah ">
                   {`We will also enable the audit firms to work with other CA firms to obtain Engagement
 Quality Control Reviews as required/permissible under the professional standards or
@@ -122,6 +278,7 @@ matters.
               `}
                 </p>
               </div>
+              <br />
               <div className="flex gap-1  text-black flex-row">
                 <p className="prose mt-2 text-justify text-black font-bah ">
                   <span className="text-justify text-black font-bah font-semibold">
@@ -134,34 +291,33 @@ matters.
               <div className="flex gap-1  text-black flex-row">
                 <span className="w-fit ">✔️</span>{" "}
                 <p className="prose text-justify text-black font-bah ">
-                  {`to create a platform to connect, collaborate and form network(s)
+                  {`To create a platform to connect, collaborate and form network(s)
               `}
                 </p>
               </div>
               <div className="flex gap-1  text-black flex-row">
                 <span className="w-fit ">✔️</span>{" "}
                 <p className="prose text-justify text-black font-bah ">
-                  {`to strengthen and enhance their capacity, capability and quality and
+                  {`To strengthen and enhance their capacity, capability and quality and
               `}
                 </p>
               </div>
               <div className="flex gap-1  text-black flex-row">
                 <span className="w-fit ">✔️</span>{" "}
                 <p className="prose text-justify text-black font-bah ">
-                  {`to have common policies and practices, audit tools and technology and common shared values leading to a common culture
+                  {`To have common policies and practices, audit tools and technology and common shared values leading to a common culture
               `}
                 </p>
               </div>
-               <div className="flex gap-1  text-black flex-row">
+              <div className="flex gap-1  text-black flex-row">
                 <p className="prose mt-2 text-justify text-black font-bah ">
-                  
-                  {`Such network of CA firms can work with the guidance and advice of True and Fair in performing audits and also leverage on the brand of True and Fair as it evolves.
+                  {`Such network of CA firms can work with the guidance and advice of True and Fair in performing audits and  leverage on the brand of True and Fair as it evolves.
               `}
                 </p>
               </div>
               <p className="prose  font-bah lg:mb-0 mb-5 pt-8">
                 <Link href="/contact">
-                  <a className="active:text-red underline   font-bah font-bold hover:text-orange decoration-blue text-blue">
+                  <a className="active:text-red  font-bah font-bold underline hover:text-orange decoration-blue text-blue">
                     Get in touch
                   </a>
                 </Link>{" "}
@@ -172,7 +328,7 @@ matters.
             <div
               data-aos="fade-up"
               data-aos-once="true"
-              className="w-auto h-48 lg:h-[700px] md:mt-16 relative"
+              className="w-auto h-48 lg:h-[500px] md:mt-16 relative"
             >
               <Image
                 layout="fill"
@@ -181,7 +337,6 @@ matters.
                 src="/servadat/auditcomp.png"
               />
             </div>
-
             <div
               className="w-full font-bah block h-[10px] md:h-[80px] lg:col-span-2  col-span-1 "
               id="CharteredAccount"
@@ -203,12 +358,17 @@ matters.
                 Practical Training & Development
               </h2>
               <p className="prose text-black text-justify font-bah pt-8">
-                We will support aspiring and qualified Chartered Accountants and
-                other eligible professionals with classroom training to set you
-                up for employment in audit firms. Our curriculum is designed
-                with industry specific real life case studies that will help you
-                hit the ground running as you embark on your professional
-                journey as an auditor.
+                We provide real life case studies and practical training to the
+                representatives of the CA firms on technical aspects and
+                practical matters in performance of the statutory audit which
+                will cover the entire life cycle of the audit right from the
+                planning, execution to conclusion and specific items of
+                importance in audit. We will support aspiring and qualified
+                Chartered Accountants and other eligible professionals with
+                classroom training to set you up for employment in audit firms.
+                Our curriculum is designed with industry specific real life case
+                studies that will help you hit the ground running as you embark
+                on your professional journey as an auditor.
               </p>
 
               <p className="prose  font-bah lg:mb-0 mb-5 pt-8">
@@ -225,6 +385,7 @@ matters.
               className="w-full block h-[10px] md:h-[80px] lg:col-span-2  col-span-1 "
               id="Corporations"
             ></div>
+            
             <div className="w-auto">
               <h2 className="text-3xl font-bah  title-font text-black   mb-4">
                 To Corporates
@@ -322,7 +483,6 @@ policies
                 to know more.
               </p>
             </div>
-
             <div
               data-aos="fade-up"
               data-aos-once="true"
@@ -335,12 +495,11 @@ policies
                 src="/servadat/corporates.png"
               />
             </div>
-
             <div
               className="w-full font-bah block h-[10px] md:h-[80px] lg:col-span-2  col-span-1 "
               id="Regulators"
             ></div>
-            <div
+<div
               data-aos="fade-up"
               data-aos-once="true"
               className="w-auto mt-5 h-48 lg:h-auto relative"
@@ -352,7 +511,6 @@ policies
                 src="/servadat/regulators.png"
               />
             </div>
-
             <div data-aos="fade-up" data-aos-once="true" className="w-auto">
               <h2 className="text-3xl font-bah  title-font text-black   mb-4">
                 To Regulators
@@ -412,6 +570,7 @@ including amendments or enhancements or withdrawal of the Standards
                 to know more.
               </p>
             </div>
+            
 
             {/* <div
               className="w-full md:block hidden  h-[100px] lg:col-span-2  col-span-1 "

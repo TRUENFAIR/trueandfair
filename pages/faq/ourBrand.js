@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { BsPlusLg } from "react-icons/bs";
 import { BiMinus } from "react-icons/bi";
 
-function CoursesCard({ id, title, desc }) {
+function OurBrand({ id, title, desc }) {
   const [openCloseaction, setOpenCloseaction] = useState(false);
   const clickopen = () => {
     setOpenCloseaction((prev) => !prev);
@@ -23,7 +23,7 @@ function CoursesCard({ id, title, desc }) {
           <section>
             <div className="w-full border-l border-r font-bah">
               <p className=" p-1 mt-4 mb-2 md:pl-5 ">
-                ADAT is a one stop solution for :
+                ADAT is a one stop solution for:
               </p>
 
               <div className="flex gap-4">
@@ -49,9 +49,9 @@ function CoursesCard({ id, title, desc }) {
                 <div className="w-[2%] md:pl-5">-</div>
                 <div>
                   <p>
-                    An audit file which is compliant with the risk and control
-                    based audit approach as required under the Standards of
-                    Auditing
+                    An audit file which is compliant with the risk and
+                    control-based audit approach as required under the Standards
+                    of Auditing
                   </p>
                 </div>
               </div>
@@ -228,4 +228,4 @@ function CoursesCard({ id, title, desc }) {
     </>
   );
 }
-export default CoursesCard;
+export default OurBrand;

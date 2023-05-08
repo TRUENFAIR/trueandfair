@@ -59,7 +59,7 @@ export default function Home() {
     {
       id: 2,
       title: "The expectation of joint audits ",
-      text: "Corporates that need joint audits and their current sole auditors will expect the other audit firm to meet audit quality expectations and carry the necessary expertise to perform large audits. Not withstanding whether joint audits are mandatory or not, the policies and guidance provided by True and Fair are aimed at enhancing the quality of audits by audit firms. The audit quality policies and procedures that will be laid out by True and Fair and the audit guidance and the Audit Documentation and Archival Tool (ADAT) that is being developed by True and Fair is scalable for large audit requirements.",
+      text: "Corporates that need joint audits and their current sole auditors will expect the other audit firm to meet audit quality expectations and carry the necessary expertise to perform large audits. Notwithstanding whether joint audits are mandatory or not, the policies and guidance provided by True and Fair are aimed at enhancing the quality of audits by audit firms. The audit quality policies and procedures that will be laid out by True and Fair and the audit guidance and the Audit Documentation and Archival Tool (ADAT)/ Audit Documentation Content (ADOC) that is being developed/ developed by True and Fair is scalable for large audit requirements.",
     },
     {
       id: 3,
@@ -192,13 +192,20 @@ export default function Home() {
                 Strengthen the performance of auditors in the financial
                 reporting ecosystem.
               </span>{" "}
-              We will work with audit firms to enable them to deliver high
-              quality financial audits. Our well-developed and robust audit
-              quality policies, procedures, guidance and tools will help
-              auditors improve the quality of their professional services. Our
-              service offering also include Audit Documentation and Archival
-              Tool(s), access to experts, trainings, and insights on best
-              practices in the financial reporting ecosystem.
+              {`
+              We work with audit firms to enable them to deliver high quality
+              financial audits. Our well-developed and robust audit quality
+              policies, procedures, guidance and tools will help auditors
+              improve the quality of their professional services. Our service
+              offering also include Audit Documentation and Archival Tool
+              [ADAT], Audit Documentation Content [ADOC] access to experts,
+              trainings, and insights on best practices in the financial
+              reporting ecosystem. "Quality Lead" Program wherein we will take
+              the role of the Firm's Quality Leader for a specific period as
+              agreed with the Firm, to help them establish a Quality Policy with
+              an Audit Methodology and would additionally involve providing
+              guidance on development and implementation of policies and
+              practices.`}
             </p>
 
             <p className="leading-loose  mt-4 text-justify  font-bah text-black ">
@@ -206,20 +213,22 @@ export default function Home() {
                 Provide common culture and platform to CA Firms to form Network
                 of CA Firms
               </span>{" "}
-              - True and Fair believes that it can enable the audit firms to
-              create a platform to connect, collaborate and form network(s), to
+              – True and Fair believes in enabling the audit firms to create a
+              platform to connect, collaborate and form network(s), to
               strengthen and enhance their capacity, capability and quality, and
               to have common policies and practices, audit tools and technology
               and common shared values leading to a common culture. Such network
               of CA firms can work with the guidance and advice of True and Fair
-              in performing audits and also leverage on the brand of True and
+              in performing audits and leverage on the brand of True and
               Fair as it evolves.
             </p>
             <p className="leading-loose  mt-4 text-justify  font-bah text-black ">
               <span className="text-center leading-loose text-lg    font-bah text-black font-semibold">
                 What’s more?
               </span>{" "}
-              We will provide real life case studies and practical training to
+              We provide real life case studies and practical training to the
+              representatives of the CA firms on technical aspects and practical
+              matters in performance of the statutory audit and we will provide
               aspiring and qualified Chartered Accountants (CA) and other
               eligible professionals who intend to make a career in financial
               auditing. We will provide advice to corporates on complex
@@ -256,9 +265,9 @@ export default function Home() {
                   </h1>
                 </div>
                 <p className="font-bah text-justify p-1 text-lg leading-loose">
-                  Our overarching vision is to be recognised as the STANDARD
-                  SETTER in the financial reporting ecosystem regarding quality
-                  of audits undertaken and performed.
+                  Our overarching vision is to be recognised as the benchmark
+                  STANDARD SETTER in the financial reporting ecosystem regarding
+                  quality of audits undertaken and performed.
                 </p>
                 <p className="font-bah leading-loose mt-4 p-1 text-lg text-justify">
                   {" "}

@@ -48,10 +48,12 @@ export default function Contact() {
     watch("Auditqualitypolicies") ||
     watch("Auditpracticetechnicalguidance") ||
     watch("DocandArchivalTool") ||
+    watch("AuditDocumentationContent") ||
     watch("Auditqualitymonitoring") ||
     watch("Practiceprotection") ||
     watch("Traininganddevelopment") ||
     watch("Alltheabove");
+  watch("QualityLead");
   const yesno = watch("intrestedInNetworking");
   const isButtonVisble =
     watch("name") &&
@@ -72,13 +74,14 @@ export default function Contact() {
       location,
       NumberofPartners,
       addinfo,
-
       NameofPersontobecontacted,
       ContactNumber,
       EmailID,
       Auditqualitypolicies,
       Auditpracticetechnicalguidance,
       DocandArchivalTool,
+      AuditDocumentationContent,
+      QualityLead,
       Auditqualitymonitoring,
       Practiceprotection,
       Traininganddevelopment,
@@ -100,13 +103,14 @@ export default function Contact() {
             location,
             NumberofPartners,
             addinfo,
-
             NameofPersontobecontacted,
             ContactNumber,
             EmailID,
             Auditqualitypolicies,
             Auditpracticetechnicalguidance,
             DocandArchivalTool,
+            QualityLead,
+            AuditDocumentationContent,
             Auditqualitymonitoring,
             Practiceprotection,
             Traininganddevelopment,
@@ -130,8 +134,10 @@ export default function Contact() {
           Auditqualitypolicies: "",
           Auditpracticetechnicalguidance: "",
           DocandArchivalTool: "",
+          AuditDocumentationContent: "",
           Auditqualitymonitoring: "",
           Practiceprotection: "",
+          QualityLead: "",
           Traininganddevelopment: "",
           Alltheabove: "",
           completedProceedings: "",
@@ -178,32 +184,7 @@ export default function Contact() {
           <h1 className="text-4xl text-center font-bah tracking-wide  text-green-900">
             Expression of Interest
           </h1>
-          {/* <div className=" ">
-            <p className="leading-loose mt-6  text-justify  font-bah text-black ">
-              {" "}
-              If you unequivocally subscribe to and endorse the below without
-              any qualms or conditions, you can be one of the firms to be
-              guided, mentored, and monitored by True and Fair Professionals
-              Network. Our commitment to you is that our audit quality policies,
-              procedures, guidance, and tools will redefine the method in which
-              audits are conducted in the future!;{" "}
-              <span className="font-bold">{` 1 ) `}</span>Uncompromisingly
-              focused on quality, integrity, and ethics ;
-              <span className="font-bold">{` 2 ) `}</span>Adopt and follow audit
-              policies, procedures and guidelines provided by True and Fair
-              Professionals Network ;
-              <span className="font-bold">{` 3 ) `}</span>Implement audit
-              documentation in the Audit Documentation and Archival Tool (ADAT)
-              developed by True and Fair Professionals Network ;
-              <span className="font-bold">{` 4 ) `}</span>Subscribe to the
-              principles of Diversity and Inclusion (D&amp;I) and Fairness when
-              hiring, retaining, promoting, and engaging with talent. ;
-              <span className="font-bold">{` 5 ) `}</span>Invest in people,
-              technology, and tools to promote audit quality, efficiency, and
-              effectiveness of audits.
-            </p>
-          </div> */}
-
+          =
           <div className="  items-start  rounded pt-8 ">
             <div className=" w-full">
               <div className="md:pl-0 md:pt-0 pt-12">
@@ -365,11 +346,24 @@ export default function Contact() {
                             //   },
                             // }}
                           />
+
                           <InputCheckController
                             control={control}
                             name="DocandArchivalTool"
                             type="checkbox"
                             label="Audit Documentation and Archival Tool"
+                            // rules={{
+                            //   required: {
+                            //     value: true,
+                            //     message: "This field is required",
+                            //   },
+                            // }}
+                          />
+                          <InputCheckController
+                            control={control}
+                            name="AuditDocumentationContent"
+                            type="checkbox"
+                            label="Audit Documentation Content"
                             // rules={{
                             //   required: {
                             //     value: true,
@@ -395,7 +389,7 @@ export default function Contact() {
                             control={control}
                             name="Practiceprotection"
                             type="checkbox"
-                            label="Practice protection : Helping you in external inspections"
+                            label="Practice protection: Helping you in external inspections"
                             // rules={{
                             //   required: {
                             //     value: true,
@@ -414,6 +408,12 @@ export default function Contact() {
                             //     message: "This field is required",
                             //   },
                             // }}
+                          />
+                          <InputCheckController
+                            control={control}
+                            name="QualityLead"
+                            type="checkbox"
+                            label="Quality Lead"
                           />
                           <InputCheckController
                             control={control}
@@ -462,32 +462,32 @@ export default function Contact() {
                       </p>
                       <p className="leading-loose mt-4  text-justify  font-bah text-black ">
                         {" "}
-                        <span className="font-bold">{` 1 ) `}</span>
+                        <span className="font-bold">{` 1) `}</span>
                         Willingness to be part of and comply with the policies
                         and procedures of a network of chartered accountant
                         firms (“Network”) conceived by True and Fair
                         Professionals Network;
                       </p>
                       <p className="leading-loose mt-1  text-justify  font-bah text-black ">
-                        <span className="font-bold">{` 2 ) `}</span>Look beyond
+                        <span className="font-bold">{` 2) `}</span>Look beyond
                         power, position / designation, and authority and commit
                         to working as an equal stakeholder in matters of quality
                         and related aspects as practiced by the Network;
                       </p>
                       <p className="leading-loose mt-1  text-justify  font-bah text-black ">
-                        <span className="font-bold">{` 3 ) `}</span>Intent to
+                        <span className="font-bold">{` 3) `}</span>Intent to
                         work collaboratively and cohesively with other audit
                         firms within the Network for the collective growth of
                         the Network;
                       </p>
                       <p className="leading-loose mt-1  text-justify  font-bah text-black ">
-                        <span className="font-bold">{` 4 ) `}</span>Accept that
+                        <span className="font-bold">{` 4) `}</span>Accept that
                         the audit practice will be subject to monitoring,
                         development, improvement, remedial actions by True and
                         Fair Professionals Network;
                       </p>
                       <p className="leading-loose mt-1  text-justify  font-bah text-black ">
-                        <span className="font-bold">{` 5 ) `}</span>Invest in
+                        <span className="font-bold">{` 5) `}</span>Invest in
                         people, technology, and tools to promote audit quality,
                         efficiency, and effectiveness of audits of the firm and
                         the Network. Network for the collective growth of the
@@ -497,7 +497,7 @@ export default function Contact() {
                   </div>
                   <div className="mt-5 flex flex-row">
                     <p className="  text-justify  font-bah text-black">
-                      Interested in Networking :
+                      Interested in Networking:
                     </p>
                     <p className="ml-2">
                       <InputCheckController
