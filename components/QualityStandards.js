@@ -86,7 +86,7 @@ confidentiality
             <span className="w-fit font-bah">✔️</span>{" "}
             <p className="prose text-justify text-black font-bah ">
               {`Professional
-behavior
+behaviour
               `}
             </p>
           </div>

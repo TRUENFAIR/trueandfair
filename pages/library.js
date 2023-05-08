@@ -54,82 +54,13 @@ export default function Library() {
     {
       name: "Illustrative Quality Standards",
       img: "/discover/discover1.png",
-      desc: "From Ashtanga to Vinyasa, make mindful movement a daily ritual.",
+      
       blogsdata: [
         {
           name: "Independence",
           links: "",
         },
-        // {
-
-        //   name: "Conflicts",
-        //   links:""
-        // },
-        // {
-
-        //   name: "Client and Engagement acceptance",
-        //   links:""
-        // },
-        // {
-
-        //   name: "Contracting Engagements",
-        //   links:""
-        // },
-        // {
-
-        //   name: "Client confidentiality",
-        //   links:""
-        // },
-        // {
-
-        //   name: "Client Exit / Resignation",
-        //   links:""
-        // },
-        // {
-
-        //   name: "Anti-money laundering",
-        //   links:""
-        // },
-        // {
-
-        //   name: "Anti-corruption",
-        //   links:""
-        // },
-        // {
-
-        //   name: "NOCLAR",
-        //   links:""
-        // },
-        // {
-
-        //   name: "Ethics and non-retaliation/ non-discrimination",
-        //   links:""
-        // },
-        // {
-
-        //   name: "POSH",
-        //   links:""
-        // },
-        // {
-
-        //   name: "Inclusivity",
-        //   links:""
-        // },
-        // {
-
-        //   name: "Talent",
-        //   links:""
-        // },
-        // {
-
-        //   name: "Audit proposals",
-        //   links:""
-        // },
-        // {
-
-        //   name: "Audit approach",
-        //   links:""
-        // },
+        
       ],
       blogsdatafull: [
         {
