@@ -273,7 +273,7 @@ export default function About() {
               and Fair is an independent firm both financially and operationally
               and are not sponsored or guided by or affiliated with any other
               firm, be it in India or internationally. We bring together a
-              collective experience of more than 200 years in audit and
+              collective experience of more than 175 years in audit and
               accounting. Leveraging on our experience we have designed a set of
               policies and practices to help our clients benefit from our
               technical expertise. We have the skills and scale to serve audit
