@@ -9,11 +9,36 @@ import Script from "next/script";
 import Fixeddiv from "../components/fixediv";
 import FixText from "../components/fixtext";
 import Fixediv2 from "../components/fixdiv2";
+import Chat from "../components/chat";
 
 function MyApp({ Component, pageProps }) {
   const route = useRouter();
   const [soicalmedia, setSocialmedia] = useState(false);
   const [soicalmediaTwo, setSocialmediaTwo] = useState(false);
+  const [chatIconVisible, setChatIconVisible] = useState(false);
+  const clickedThree = () => {
+    setChatIconVisible(false);
+  };
+  useEffect(() => {
+    const currentTime = new Date();
+    const currentHour = currentTime.getHours();
+    const currentDay = currentTime.getDay(); // Sunday: 0, Monday: 1, ..., Saturday: 6
+
+    if (
+      currentDay >= 1 && // Monday
+      currentDay <= 5 && // Friday
+      currentHour >= 10 &&
+      currentHour < 18
+    ) {
+      const timeout = setTimeout(() => {
+        setChatIconVisible(true);
+      }, 4000);
+
+      return () => clearTimeout(timeout);
+    } else {
+      setChatIconVisible(false);
+    }
+  }, []);
   // const [soicalmediaThree, setSocialmediaThree] = useState(false);
   useEffect(() => {
     let timeId = null;
@@ -110,6 +135,7 @@ function MyApp({ Component, pageProps }) {
       <Component {...pageProps} />
       {soicalmedia && <Fixeddiv clicked={clicked} />}
       {soicalmediaTwo && <FixText clickedTwo={clickedTwo} />}
+      {chatIconVisible && <Chat clickedThree={clickedThree} />}
       {/* {soicalmediaThree && <Fixediv2 clickedThree={clickedThree} />} */}
     </Layout>
   );
