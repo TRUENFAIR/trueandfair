@@ -33,31 +33,6 @@ const rightIcon = (
 );
 
 export default function Home() {
-  const [chatIconVisible, setChatIconVisible] = useState(false);
-  const clickedThree = () => {
-    setChatIconVisible(false);
-  };
-  useEffect(() => {
-    const currentTime = new Date();
-    const currentHour = currentTime.getHours();
-    const currentDay = currentTime.getDay(); // Sunday: 0, Monday: 1, ..., Saturday: 6
-
-    if (
-      currentDay >= 1 && // Monday
-      currentDay <= 5 && // Friday
-      currentHour >= 10 &&
-      currentHour < 18
-    ) {
-      const timeout = setTimeout(() => {
-        setChatIconVisible(true);
-      }, 4000);
-
-      return () => clearTimeout(timeout);
-    } else {
-      setChatIconVisible(false);
-    }
-  }, []);
-
   useEffect(() => {
     AOS.init({
       once: true,
@@ -154,8 +129,6 @@ export default function Home() {
   ];
   return (
     <main>
-      {chatIconVisible && <Chat clickedThree={clickedThree} />}
-
       <section
         className=" lg:h-[800px]   "
         style={{
