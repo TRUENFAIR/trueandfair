@@ -14,6 +14,8 @@ import Resourceslide from "../components/resorceslide";
 // import Focusareaslide from "../components/focusareaslide";
 // import Focusarea from "../components/focusarea";
 import AdocAndAdatSlider from "../components/adocAndAdatSlider";
+import Fixediv2 from "../components/fixdiv2";
+import Chat from "../components/chat";
 
 const rightIcon = (
   <svg
@@ -31,13 +33,6 @@ const rightIcon = (
 );
 
 export default function Home() {
-  // const [showModal, setShowModal] = useState(false);
-  // useEffect(() => {
-  //   const timeId = setTimeout(() => setShowModal(true), 8000);
-
-  //   return () => clearTimeout(timeId);
-  // }, []);
-
   useEffect(() => {
     AOS.init({
       once: true,
@@ -172,21 +167,6 @@ export default function Home() {
             <p className="text-3xl font-bah  title-font text-black   mb-6">
               True and Fair Professionals Network
             </p>
-            {/* <p className="leading-loose   text-justify  font-bah text-black ">
-              True and Fair aims to enhance the audit quality of CA firms by
-              providing is a digital platform containing professional standards,
-              audit best practices and guidances, an audit documentation and
-              archival tool, collaboration platform with the audit clients of
-              audit firm for sharing information on a secure basis and also for
-              the auditors to carry out the analysis of the audit client
-              information in a secure environment. A majority of the audit firms
-              are highly diverse, with fragmented professional practices. True
-              and Fair aims to bridge this gap by providing a common platform
-              for quality, best practices, ethical standards, technical
-              guidance, documentation tools and access to audit specialists, so
-              that the CA firms can network and collaborate for their collective
-              success and growth, delivering world class audit services.
-            </p> */}
             <p className="leading-loose   text-justify  font-bah text-black ">
               <span className="leading-loose text-lg    text-center  font-bah text-black font-semibold">
                 Strengthen the performance of auditors in the financial
