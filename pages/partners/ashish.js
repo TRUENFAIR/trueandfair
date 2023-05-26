@@ -23,7 +23,7 @@ const Ashish = () => {
           <div className="w-full md:w-[120%]  ">
             <div className="flex mb-4 flex-col justify-center">
               <p className="font-semibold text-xl">Ashish Shivahare</p>
-              <p>Partner</p>
+              <p>Lead - IT Audit, Internal Controls & Governance</p>
             </div>
             <div className="">
               <img src="/team/Ashish.jpg" className="w-[100%] " alt="" />
@@ -68,21 +68,21 @@ const Ashish = () => {
               `}
                 </p>
               </div>
-              <div className="flex gap-1 mt-4 text-black flex-row">
+              <div className="flex gap-1  text-black flex-row">
                 <span className="w-fit ">✔️</span>{" "}
                 <p className="prose  text-black font-bah ">
                   {`Master of Commerce (M.Com), Nagpur University
               `}
                 </p>
               </div>
-              <div className="flex gap-1 mt-4 text-black flex-row">
+              <div className="flex gap-1  text-black flex-row">
                 <span className="w-fit ">✔️</span>{" "}
                 <p className="prose  text-black font-bah ">
                   {`Certified Information System Auditor (CISA)
               `}
                 </p>
               </div>
-              <div className="flex gap-1 mt-4 text-black flex-row">
+              <div className="flex gap-1 text-black flex-row">
                 <span className="w-fit ">✔️</span>{" "}
                 <p className="prose  text-black font-bah ">
                   {`Government Diploma in Cooperative Accounting (GDCA)

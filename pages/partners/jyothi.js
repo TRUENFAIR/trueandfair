@@ -23,7 +23,7 @@ const Archana = () => {
           <div className="w-full md:w-[50%]  ">
             <div className="flex mb-4 flex-col justify-center">
               <p className="font-semibold text-xl">Jyoti A Agarwal</p>
-              <p>Partner</p>
+              <p>Lead - SQC and ISQM</p>
             </div>
             <div className="">
               <img src="/team/jyothitwo.png" className="w-[100%] " alt="" />
@@ -73,7 +73,7 @@ const Archana = () => {
               `}
                 </p>
               </div>
-              <div className="flex gap-1 mt-4 text-black flex-row">
+              <div className="flex gap-1  text-black flex-row">
                 <span className="w-fit ">✔️</span>{" "}
                 <p className="prose  text-black font-bah ">
                   {`Bachelor of Commerce (BCom), Mumbai University

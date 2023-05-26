@@ -22,7 +22,7 @@ const Archana = () => {
           <div className="w-full md:w-[50%]  ">
             <div className="flex mb-4 flex-col justify-center">
               <p className="font-semibold text-xl">Archana Ashok</p>
-              <p>Partner</p>
+              <p> Lead - Audit Methodology, Technical Guidance</p>
             </div>
             <div className="">
               <img src="/team/archana.jpg" className="w-[100%] " alt="" />
@@ -61,14 +61,14 @@ const Archana = () => {
               `}
                 </p>
               </div>
-              <div className="flex gap-1 mt-4 text-black flex-row">
+              <div className="flex gap-1  text-black flex-row">
                 <span className="w-fit ">✔️</span>{" "}
                 <p className="prose  text-black font-bah ">
                   {`Dip IFRS, Institute of Chartered Accountants of India
               `}
                 </p>
               </div>
-              <div className="flex gap-1 mt-4 text-black flex-row">
+              <div className="flex gap-1  text-black flex-row">
                 <span className="w-fit ">✔️</span>{" "}
                 <p className="prose  text-black font-bah ">
                   {`Bachelor of Commerce (B.Com), Bengaluru University
