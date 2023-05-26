@@ -10,7 +10,7 @@ const Kirthi = () => {
   return (
     <>
       <div className="md:container md:mx-auto mb-10 mt-10 ">
-      <button
+        <button
           onClick={handleBack}
           className="w-fit flex   text-white  rounded-md"
         >
@@ -23,7 +23,7 @@ const Kirthi = () => {
           <div className="w-full md:w-[80%]  ">
             <div className="flex mb-4 flex-col justify-center">
               <p className="font-semibold text-xl">Kirti Kumar Kotian</p>
-              <p>Partner</p>
+              <p>Lead - ADAT</p>
             </div>
             <div className="">
               <img src="/team/kirti.jpg" className="w-[100%] " alt="" />
@@ -74,14 +74,14 @@ const Kirthi = () => {
           `}
                 </p>
               </div>
-              <div className="flex gap-1 mt-4 text-black flex-row">
+              <div className="flex gap-1  text-black flex-row">
                 <span className="w-fit ">✔️</span>{" "}
                 <p className="prose  text-black font-bah ">
                   {`Master of Commerce (M.Com), Mumbai University
           `}
                 </p>
               </div>
-              <div className="flex gap-1 mt-4 text-black flex-row">
+              <div className="flex gap-1  text-black flex-row">
                 <span className="w-fit ">✔️</span>{" "}
                 <p className="prose  text-black font-bah ">
                   {`Government Diploma in Cooperative Accounting (GDCA)

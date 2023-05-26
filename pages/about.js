@@ -40,41 +40,71 @@ export default function About() {
     },
   ];
   const discover = [
-    {
-      name: "Leadership",
-      img: "/discover/discover1.png",
-      para: "",
-      desc: "From Ashtanga to Vinyasa, make mindful movement a daily ritual.",
-      blogsdata: [
-        {
-          name: "Balaji V",
-          image: "/team/balaji.jpg",
-          linkd: "https://www.linkedin.com/in/balaji-v-8501707",
-          role: "Founder and Managing Partner",
-          email: "vbalaji@trueandfair.pro",
-          description:
-            "Balaji V. brings over 28 years’ experience in financial accounting and auditing, working across various industries, including, agriculture, automobile, healthcare, information  technology, information technology enabled services, manufacturing, real estate, retail and infrastructure. Over the course of his professional career, he has held leadership positions in one of  India’s largest audit firms in roles spanning Audit Inspections, Audit Risk, Audit Quality  and Regulatory.  Balaji has been a member of the Audit and Assurance Standards Board, the Expert Advisory Committee and the Ind AS Transition Facilitation Group of the Institute of Chartered Accountants of India (ICAI). He has also been a member of various study groups constituted by the ICAI to evaluate and address issues considered for amendments by the ICAI. Balaji has co-authored various publications of the ICAI including the ‘Guidance Note on Audit of Internal Financial Controls over Financial Reporting’ and the ‘Guidance Note on  Reporting on Fraud’ under sections 143(3)(i) and 143(12), respectively, of the Companies Act, 2013; ‘Technical Guidance on Reporting under Rule 11(e) and 11(f) of the Companies (Audit and Auditors) Rules’; among others.",
-        },
-        {
-          name: "Brindasri K",
-          image: "/team/brindasri.jpg",
-          role: "Partner",
-          linkd: "https://www.linkedin.com/in/brindasri-krishnamurthy-3a7a77a9",
-          description:
-            "Brindasri K. comes with over 27 years of professional experience in the information technology services sector and has worked with India’s largest IT company. Her area of expertise includes sales and delivery in the banking and financial services industry, professional services and life sciences. Brindasri has also worked with one of the largest multinational audit firms where her role involved automating operations.",
-        },
-      ],
-      blogsdatafull: [],
-    },
+    // {
+    //   name: "Leadership",
+    //   img: "/discover/discover1.png",
+    //   para: "",
+    //   desc: "From Ashtanga to Vinyasa, make mindful movement a daily ritual.",
+    //   blogsdata: [
+    //     {
+    //       category: "partners",
+    //       name: "Balaji V",
+    //       image: "/team/balaji.jpg",
+    //       linkd: "https://www.linkedin.com/in/balaji-v-8501707",
+    //       role: "Founder and Managing Partner",
+    //       email: "vbalaji@trueandfair.pro",
+    //       detailsLink: "/partners/alpa",
+    //       description:
+    //         "Balaji V. brings over 28 years’ experience in financial accounting and auditing, working across various industries, including, agriculture, automobile, healthcare, information  technology, information technology enabled services, manufacturing, real estate, retail and infrastructure. Over the course of his professional career, he has held leadership positions in one of  India’s largest audit firms in roles spanning Audit Inspections, Audit Risk, Audit Quality  and Regulatory.  Balaji has been a member of the Audit and Assurance Standards Board, the Expert Advisory Committee and the Ind AS Transition Facilitation Group of the Institute of Chartered Accountants of India (ICAI). He has also been a member of various study groups constituted by the ICAI to evaluate and address issues considered for amendments by the ICAI. Balaji has co-authored various publications of the ICAI including the ‘Guidance Note on Audit of Internal Financial Controls over Financial Reporting’ and the ‘Guidance Note on  Reporting on Fraud’ under sections 143(3)(i) and 143(12), respectively, of the Companies Act, 2013; ‘Technical Guidance on Reporting under Rule 11(e) and 11(f) of the Companies (Audit and Auditors) Rules’; among others.",
+    //     },
+    //     {
+    //       category: "partners",
+    //       name: "Brindasri K",
+    //       image: "/team/brindasri.jpg",
+    //       role: "Partner",
+    //       linkd: "https://www.linkedin.com/in/brindasri-krishnamurthy-3a7a77a9",
+    //       detailsLink: "/partners/alpa",
+    //       description:
+    //         "Brindasri K. comes with over 27 years of professional experience in the information technology services sector and has worked with India’s largest IT company. Her area of expertise includes sales and delivery in the banking and financial services industry, professional services and life sciences. Brindasri has also worked with one of the largest multinational audit firms where her role involved automating operations.",
+    //     },
+    //   ],
+    //   blogsdatafull: [],
+    // },
     {
       name: "Partners",
-      para: "The activities of True and Fair are supported by a team of  eight (and growing) young and energetic professionals have individual experiences ranging from 10 to 25 years, aggregating to more than 100 years of experience in auditing, accounting and advisory and have served a diverse set of industries. Each member has held senior professional positions, including as Partners and Directors, in one of India’s largest audit firms including participating in the firm’s technical, quality and learning teams.",
+      para: "The services offered by True and Fair will be provided by a team of nine (and growing) experienced, young and energetic chartered accountants having individual experiences ranging from 10 to 28 years, with a cumulative experience of more than 175 years in auditing, accounting and advisory and having served a diverse set of industries. Each member has held senior professional positions, some including as Partners and Executive Directors, in one of India’s largest audit firms including participating in that firm’s technical, quality and learning teams.",
       img: "/discover/discover1.png",
       desc: "From Ashtanga to Vinyasa, make mindful movement a daily ritual.",
       blogsdata: [
         {
           category: "partners",
+          designation: " Managing Partner and CEO",
+          name: "Balaji V",
+          image: "/team/balaji.jpg",
+          linkd: "https://www.linkedin.com/in/balaji-v-8501707",
+          role: "Founder and Managing Partner",
+          email: "vbalaji@trueandfair.pro",
+          detailsLink: "/partners/balaji",
+          description:
+            "Balaji V. brings over 28 years’ experience in financial accounting and auditing, working across various industries, including, agriculture, automobile, healthcare, information  technology, information technology enabled services, manufacturing, real estate, retail and infrastructure. Over the course of his professional career, he has held leadership positions in one of  India’s largest audit firms in roles spanning Audit Inspections, Audit Risk, Audit Quality  and Regulatory.  Balaji has been a member of the Audit and Assurance Standards Board, the Expert Advisory Committee and the Ind AS Transition Facilitation Group of the Institute of Chartered Accountants of India (ICAI). He has also been a member of various study groups constituted by the ICAI to evaluate and address issues considered for amendments by the ICAI. Balaji has co-authored various publications of the ICAI including the ‘Guidance Note on Audit of Internal Financial Controls over Financial Reporting’ and the ‘Guidance Note on  Reporting on Fraud’ under sections 143(3)(i) and 143(12), respectively, of the Companies Act, 2013; ‘Technical Guidance on Reporting under Rule 11(e) and 11(f) of the Companies (Audit and Auditors) Rules’; among others.",
+        },
+        {
+          category: "partners",
+          name: "Brindasri K",
+          designation: " Lead - Technology Initiatives",
+          image: "/team/brindasri.jpg",
+          role: "Partner",
+          linkd: "https://www.linkedin.com/in/brindasri-krishnamurthy-3a7a77a9",
+          email: "brindasrik@trueandfair.pro",
+          detailsLink: "/partners/Brindasri",
+          description:
+            "Brindasri K. comes with over 27 years of professional experience in the information technology services sector and has worked with India’s largest IT company. Her area of expertise includes sales and delivery in the banking and financial services industry, professional services and life sciences. Brindasri has also worked with one of the largest multinational audit firms where her role involved automating operations.",
+        },
+
+        {
+          category: "partners",
           name: "Alpa Sheth",
+          designation: "Lead - Monitoring and EQCR",
           image: "/team/alpa.JPG",
           linkd: "https://www.linkedin.com/in/alpa-chitalia-sheth-106536268/",
           role: "",
@@ -85,6 +115,7 @@ export default function About() {
         {
           category: "partners",
           name: "Jaideep S Trasi",
+          designation: "Lead - Training",
           image: "/team/jaideep.png",
           linkd: "https://www.linkedin.com/in/jaideep-t-383a81b/",
           role: "",
@@ -95,6 +126,7 @@ export default function About() {
         {
           category: "partners",
           name: "Archana Ashok",
+          designation: "Lead - Audit Methodology, Technical Guidance",
           image: "/team/archana.jpg",
           linkd: "https://www.linkedin.com/in/archana-ashok-7769a017",
           role: "",
@@ -105,6 +137,7 @@ export default function About() {
         {
           category: "partners",
           name: "Ashish Shivahare",
+          designation: "Lead - IT Audit, Internal Controls & Governance",
           image: "/team/Ashish.jpg",
           linkd: "https://www.linkedin.com/in/ashish-shivahare-6780088/",
           role: "",
@@ -115,6 +148,7 @@ export default function About() {
         {
           category: "partners",
           name: "Jyoti A Agarwal",
+          designation: "  Lead - SQC and ISQM",
           image: "/team/jyothitwo.png",
           linkd: "https://www.linkedin.com/in/jyoti-agarwal-83a0477/",
           role: "",
@@ -125,6 +159,7 @@ export default function About() {
         {
           category: "partners",
           name: "Kirti Kumar Kotian",
+          designation: " Lead - ADAT",
           image: "/team/kirti.jpg",
           linkd: "http://www.linkedin.com/in/kirti-kumar-kotian",
           role: "",
@@ -135,6 +170,7 @@ export default function About() {
         {
           category: "partners",
           name: "Rakesh Jain",
+          designation: "Lead - Audit Firm Liaison",
           image: "/team/rakesh.jpg",
           linkd: "https://www.linkedin.com/in/rakesh-jain-a731641b",
           role: "",
@@ -143,22 +179,14 @@ export default function About() {
           detailsLink: "/partners/rakesh",
         },
 
-        // {
-        //   category: "partners",
-        //   name: "Krishna R P",
-        //   image: "/team/krishna.jpg",
-        //   linkd: "https://www.linkedin.com/in/krishna-r-p-0abab6205/",
-        //   role: "",
-        //   description: "",
-        //   email: "krishnarp@trueandfair.pro",
-        //   detailsLink: "/partners/krishna",
-        // },
         {
           category: "partners",
           name: "Shristi Sarayan",
           image: "/team/srishti.jpg",
           linkd: "https://www.linkedin.com/in/shristi-sarayan-43831257",
           role: "",
+          designation: "Lead - Data Analytics",
+
           description: "",
           email: "shristisarayan@trueandfair.pro",
           detailsLink: "/partners/shristi",
@@ -264,7 +292,7 @@ export default function About() {
             About True and Fair
           </h2>
           <div className=" mb-12">
-            <p className="leading-loose   text-justify  font-bah text-black ">
+            <p className="leading-loose md:p-0 p-4  text-justify  font-bah text-black ">
               {" "}
               True and Fair is a start-up firm formed with a vision to enable
               capacity building and capability enhancement of audit firms. We
@@ -291,7 +319,7 @@ export default function About() {
           id="meettheteam"
         ></div>
         <section className="bg-white ">
-          <h2 className="text-3xl font-bah  title-font text-black text-center mb-2">
+          <h2 className="text-3xl font-bah  title-font text-black text-center pt-10 md:pt-0 mb-2">
             Meet The Team
           </h2>
           <div className="md:container flex justify-center md:mx-auto">
@@ -323,7 +351,7 @@ export default function About() {
           <div className="md:container px-6 mb-10  md:mx-auto">
             <div
               className={`${
-                buttonIndex === 1 ? "block font-bah mt-8" : "hidden"
+                buttonIndex === 0 ? "block font-bah md:mt-8" : "hidden"
               }`}
             >
               {discover.map(({ para }, index) => {
@@ -336,14 +364,14 @@ export default function About() {
             </div>
             <div
               className={`${
-                buttonIndex === 2 ? "block font-bah mt-8" : "hidden"
+                buttonIndex === 1 ? "block font-bah md:mt-8" : " hidden"
               }`}
             >
               {discover[buttonIndex].blogsdata.map(
                 ({ para, para2, para3, para4 }, index) => {
                   return (
                     <div key={index}>
-                      <p className="font-bah text-justify">{para}</p>
+                      <p className="font-bah   text-justify">{para}</p>
 
                       <p className="font-bah mt-4 text-justify">{para2}</p>
                       <p className="font-bah mt-1 text-justify">{para3}</p>
@@ -355,9 +383,9 @@ export default function About() {
             </div>
             <div
               className={`${
-                buttonIndex === 0 || buttonIndex === 2
-                  ? "grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-2"
-                  : "grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-3"
+                buttonIndex === 1
+                  ? "grid grid-cols-1 gap-8 md:mt-8  xl:mt-16 md:grid-cols-2 xl:grid-cols-2"
+                  : "grid grid-cols-1 gap-8 md:mt-8  xl:mt-16 md:grid-cols-2  xl:grid-cols-3"
               }`}
             >
               {discover[buttonIndex].blogsdata.map(
@@ -382,13 +410,14 @@ export default function About() {
                     category,
                     email,
                     detailsLink,
+                    designation,
                   },
                   index
                 ) => {
-                  if (buttonIndex === 2) {
+                  if (buttonIndex === 1) {
                     return (
                       <div>
-                        <p className="text-left text-xl font-semibold font-bah">
+                        <p className="text-left  text-xl font-semibold font-bah">
                           {name}
                         </p>
                         <div
@@ -487,7 +516,7 @@ export default function About() {
                         data-aos-once="true"
                         className="flex flex-col items-center p-5"
                       >
-                        <div className="relative lg:w-[250px] lg:h-[250px]  md:w-[200px] md:h-[200px] w-[200px]  h-[200px]  rounded-full">
+                        <div className="relative  lg:w-[250px] lg:h-[250px]  md:w-[200px] md:h-[200px] w-[200px]  h-[200px]  rounded-full">
                           <Image
                             className="rounded-full"
                             alt="profle"
@@ -497,7 +526,7 @@ export default function About() {
                           />
                         </div>
 
-                        <div className="mt-8   w-[80%]  ease-in-out rounded-md    w-full flex flex-col items-center justify-center gap-0 text-xl font-bah    font-bold ">
+                        <div className="mt-8   w-[90%]  ease-in-out rounded-md    w-full flex flex-col items-center justify-center gap-0 text-xl font-bah    font-bold ">
                           <div className="flex">
                             {" "}
                             <p className="font-bah  font-bold mt-2"> {name}</p>
@@ -516,6 +545,7 @@ export default function About() {
                               </a>
                             </span>
                           </div>
+                          <div className="text-sm py-2">{designation}</div>
                           <h1 className="md:w-[255px] h-[2px]  bg-blue mb-3"></h1>
                           <Link href={detailsLink}>
                             <div className="flex   justify-center gap-2">
@@ -538,7 +568,7 @@ export default function About() {
                         data-aos-once="true"
                         className="flex flex-col items-center p-5"
                       >
-                        <div className="relative lg:w-[250px] lg:h-[250px]  md:w-[200px] md:h-[200px] w-[200px]  h-[200px]  rounded-full">
+                        <div className="relative  lg:w-[250px] lg:h-[250px]  md:w-[200px] md:h-[200px] w-[200px]  h-[200px]  rounded-full">
                           <Image
                             className="rounded-full"
                             alt="profle"
