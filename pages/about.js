@@ -71,7 +71,7 @@ export default function About() {
     //   blogsdatafull: [],
     // },
     {
-      name: "Partners",
+      name: "Team",
       para: "The services offered by True and Fair will be provided by a team of nine (and growing) experienced, young and energetic chartered accountants having individual experiences ranging from 10 to 28 years, with a cumulative experience of more than 175 years in auditing, accounting and advisory and having served a diverse set of industries. Each member has held senior professional positions, some including as Partners and Executive Directors, in one of India’s largest audit firms including participating in that firm’s technical, quality and learning teams.",
       img: "/discover/discover1.png",
       desc: "From Ashtanga to Vinyasa, make mindful movement a daily ritual.",
