@@ -128,7 +128,24 @@ export default function Resources() {
         //   ),
         // },
       ],
+
       blogsdatafull: [
+        {
+          name: "ADOC Launch Event - 1st July 2023",
+          desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum cupiditate possimus dolore voluptatibus similique optioducimus provident,",
+          imgs: "/events/17.png",
+          vidoes: (
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/lLg_QFl8ZHU"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          ),
+        },
         {
           name: "Insights on Quality Improvement - P.R. Ramesh",
           desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum cupiditate possimus dolore voluptatibus similique optioducimus provident,",
