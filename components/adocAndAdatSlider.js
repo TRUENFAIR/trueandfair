@@ -89,16 +89,17 @@ export default function adocAndAdatSlider() {
                     <div className="w-1/2 mb-13">
                       {" "}
                       <div className="lg:block hidden">
-                        {/* <iframe
+                        <iframe
                           width={"100%"}
                           height="350"
-                          src="https://www.youtube.com/embed/PYFi8hMqbog"
+                          src="https://www.youtube.com/embed/jJsW2-C2xqM"
                           title="YouTube video player"
                           frameBorder="0"
                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                           allowFullScreen
-                        ></iframe> */}
-                        <img src="/adoc/adochome.png" alt="" />
+                        ></iframe>
+
+                        {/* <img src="/adoc/adochome.png" alt="" /> */}
                       </div>
                     </div>
                     <div className="lg:hidden flex justify-center">

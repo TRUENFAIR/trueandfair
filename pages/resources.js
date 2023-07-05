@@ -131,6 +131,22 @@ export default function Resources() {
 
       blogsdatafull: [
         {
+          name: "ADOC - an audit documentation tool- of the profession, by the profession for the profession",
+          desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum cupiditate possimus dolore voluptatibus similique optioducimus provident,",
+          imgs: "/events/18.png",
+          vidoes: (
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/jJsW2-C2xqM"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          ),
+        },
+        {
           name: "ADOC Launch Event - 1st July 2023",
           desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum cupiditate possimus dolore voluptatibus similique optioducimus provident,",
           imgs: "/events/17.png",
