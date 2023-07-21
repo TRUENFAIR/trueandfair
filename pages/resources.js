@@ -94,39 +94,6 @@ export default function Resources() {
             ></iframe>
           ),
         },
-
-        // {
-        //   name: "loremipsum",
-        //   desc: " ",
-        //   imgs: "/yogatv/2.jpg",
-        //   vidoes: (
-        //     <iframe
-        //       width="100%"
-        //       height="100%"
-        //       src=""
-        //       title="YouTube video player"
-        //       frameBorder="0"
-        //       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        //       allowFullScreen="allowfullscreen"
-        //     ></iframe>
-        //   ),
-        // },
-        // {
-        //   name: "loremipsum",
-        //   desc: " similique optioducimus provident, ",
-        //   imgs: "/yogatv/3.jpg",
-        //   vidoes: (
-        //     <iframe
-        //       width="100%"
-        //       height="100%"
-        //       src=""
-        //       title="YouTube video player"
-        //       frameBorder="0"
-        //       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        //       allowFullScreen="allowfullscreen"
-        //     ></iframe>
-        //   ),
-        // },
       ],
 
       blogsdatafull: [
@@ -459,6 +426,17 @@ export default function Resources() {
       blogsdata: [
         {
           ser: "/blogs/blogOne",
+          link: "https://cfo.economictimes.indiatimes.com/news/tax-legal-accounting/auditors-are-not-expected-to-find-frauds-but-they-must-follow-processes-nfra-chair/102012389",
+          name: "Auditors are not expected to find frauds but they must follow processes: NFRA Chair",
+          small: "title",
+          desc: "Auditors aren’t expected to detect frauds, but they must follow the due processe .. ",
+          image: "/news/person.png",
+          sorc: "etCfo",
+          auth: "Mannu Arora",
+          date: "July 21,2023",
+        },
+        {
+          ser: "/blogs/blogOne",
           link: "https://www.financialexpress.com/industry/eligibility-standards-may-be-prescribed-govt-mulls-size-threshold-for-auditors-of-large-firms/3062816/",
           name: "Eligibility standards may be prescribed: Govt mulls size threshold for auditors of large firms",
           small: "title",
@@ -490,6 +468,8 @@ export default function Resources() {
           auth: "SURABHI",
           date: "January 13, 2023",
         },
+      ],
+      blogsdatafull: [
         {
           ser: "/blogs/blogOne",
           link: "https://studycafe.in/roc-levies-penalty-on-auditors-for-non-reporting-of-non-compliance-in-audit-report-191275.html",
@@ -501,8 +481,6 @@ export default function Resources() {
           auth: "REETU",
           date: "January 11, 2023",
         },
-      ],
-      blogsdatafull: [
         {
           ser: "/blogs/blogOne",
           link: "https://timesofindia.indiatimes.com/business/india-business/auditors-regulator-seeks-e-locker-for-audit-docus/articleshow/96897256.cms",
