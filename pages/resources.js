@@ -426,6 +426,17 @@ export default function Resources() {
       blogsdata: [
         {
           ser: "/blogs/blogOne",
+          link: "https://www.taxscan.in/experienced-auditors-committee-to-ensure-high-quality-audits-remunerated-suitably-says-nfra-chairperson-dr-ajay-bhushan-pandey/302650/",
+          name: "Experienced Auditor's Committee to Ensure High Quality Audits; Remunerated Suitably:",
+          small: "title",
+          desc: "Auditors aren’t expected to detect frauds, but they must follow the due processe .. ",
+          image: "/news/news16.jpg",
+          sorc: "etCfo",
+          auth: "Navasree",
+          date: "July 22,2023",
+        },
+        {
+          ser: "/blogs/blogOne",
           link: "https://cfo.economictimes.indiatimes.com/news/tax-legal-accounting/auditors-are-not-expected-to-find-frauds-but-they-must-follow-processes-nfra-chair/102012389",
           name: "Auditors are not expected to find frauds but they must follow processes: NFRA Chair",
           small: "title",
@@ -457,6 +468,8 @@ export default function Resources() {
           auth: "PTI",
           date: "April 21, 2023",
         },
+      ],
+      blogsdatafull: [
         {
           ser: "/blogs/blogOne",
           link: "https://www.financialexpress.com/industry/mandatory-joint-audit-to-start-with-big-firms/2946495/",
@@ -468,8 +481,6 @@ export default function Resources() {
           auth: "SURABHI",
           date: "January 13, 2023",
         },
-      ],
-      blogsdatafull: [
         {
           ser: "/blogs/blogOne",
           link: "https://studycafe.in/roc-levies-penalty-on-auditors-for-non-reporting-of-non-compliance-in-audit-report-191275.html",
@@ -706,16 +717,18 @@ export default function Resources() {
                         ></Image>
                       </div>
 
-                      <h1 className="title-font sm:text-xl text-xl text-center font-semibold  text-gray-900 mb-3">
+                      <h1 className="title-font sm:text-xl text-xl text-center font-semibold  min-h-[150px] text-gray-900 mb-3">
                         {name}
                       </h1>
-                      <p className=" text-sm text-left  font-semibold">
-                        Source : <span className="font-bah">{sorc}</span>
-                      </p>
+                      <div className="flex flex-col ">
+                        <p className=" text-sm text-left  font-semibold">
+                          Source : <span className="font-bah">{sorc}</span>
+                        </p>
 
-                      <p className=" text-sm text-left font-semibold">
-                        By <span className="font-bah">{auth}</span>, {date}
-                      </p>
+                        <p className=" text-sm text-left font-semibold">
+                          By <span className="font-bah">{auth}</span>, {date}
+                        </p>
+                      </div>
 
                       {/* <p className="text-left">Source : {sorc}</p>
                     <p className="text-left">Author : {auth}</p> */}
@@ -863,17 +876,19 @@ export default function Resources() {
                             ></Image>
                           </div>
 
-                          <h1 className="title-font sm:text-xl text-xl text-center font-semibold  text-gray-900 mb-3 ">
+                          <h1 className="title-font sm:text-xl text-xl min-h-[150px] text-center font-semibold  text-gray-900 mb-3 ">
                             {name}
                           </h1>
-                          <p className=" text-sm text-left font-semibold">
-                            Source : <span className="font-bah">{sorc}</span>
-                          </p>
-                          <div className="flex   flex-row ">
+                          <div className="flex flex-col ">
                             <p className=" text-sm text-left font-semibold">
-                              By <span className="font-bah">{auth}</span>,{" "}
-                              {date}
+                              Source : <span className="font-bah">{sorc}</span>
                             </p>
+                            <div className="flex min-h-[30px]  flex-row ">
+                              <p className=" text-sm text-left font-semibold">
+                                By <span className="font-bah">{auth}</span>,{" "}
+                                {date}
+                              </p>
+                            </div>
                           </div>
 
                           {/* <p className="text-left">Source : {sorc}</p>
