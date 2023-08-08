@@ -426,6 +426,17 @@ export default function Resources() {
       blogsdata: [
         {
           ser: "/blogs/blogOne",
+          link: "https://cfo.economictimes.indiatimes.com/news/tax-legal-accounting/nfra-chief-stresses-on-audit-documentation/102517195",
+          name: "NFRA chief stresses on audit documentation",
+          small: "title",
+          desc: "Amid instances of auditing lapses at companies and the regulator taking action against.... ",
+          image: "/news/18.png",
+          sorc: "cfo.com",
+          auth: "cfo.com",
+          date: "Aug 08,2023",
+        },
+        {
+          ser: "/blogs/blogOne",
           link: "https://www.taxscan.in/experienced-auditors-committee-to-ensure-high-quality-audits-remunerated-suitably-says-nfra-chairperson-dr-ajay-bhushan-pandey/302650/",
           name: "Experienced Auditor's Committee to Ensure High Quality Audits; Remunerated Suitably:",
           small: "title",
@@ -457,6 +468,8 @@ export default function Resources() {
           auth: "Surabhi",
           date: "April 26, 2023",
         },
+      ],
+      blogsdatafull: [
         {
           ser: "/blogs/blogOne",
           link: "https://economictimes.indiatimes.com/industry/services/consultancy-/-audit/auditors-not-expected-to-look-at-every-single-invoice-transaction-icai-president/articleshow/99646956.cms?from=mdr",
@@ -468,8 +481,6 @@ export default function Resources() {
           auth: "PTI",
           date: "April 21, 2023",
         },
-      ],
-      blogsdatafull: [
         {
           ser: "/blogs/blogOne",
           link: "https://www.financialexpress.com/industry/mandatory-joint-audit-to-start-with-big-firms/2946495/",
