@@ -10,6 +10,7 @@ import Fixeddiv from "../components/fixediv";
 import FixText from "../components/fixtext";
 import Fixediv2 from "../components/fixdiv2";
 import Chat from "../components/chat";
+import FixedFooterBar from "../components/fixedfootbar";
 
 function MyApp({ Component, pageProps }) {
   const route = useRouter();
@@ -38,6 +39,27 @@ function MyApp({ Component, pageProps }) {
     } else {
       setChatIconVisible(false);
     }
+  }, []);
+  const [showFixedFooter, setShowFixedFooter] = useState(false);
+  useEffect(() => {
+    function handleScroll() {
+      const scrollPosition = window.scrollY;
+      const halfScreenHeight = window.innerHeight / 4.9;
+
+      if (scrollPosition >= halfScreenHeight) {
+        setShowFixedFooter(true);
+      } else {
+        setShowFixedFooter(false);
+      }
+    }
+
+    // Add the event listener when the component mounts
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
   // const [soicalmediaThree, setSocialmediaThree] = useState(false);
   useEffect(() => {
@@ -133,9 +155,19 @@ function MyApp({ Component, pageProps }) {
       </Script>
 
       <Component {...pageProps} />
+
+      {showFixedFooter && (
+        <div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.1, ease: "easeIn" }}
+        >
+          <FixedFooterBar />
+        </div>
+      )}
       {soicalmedia && <Fixeddiv clicked={clicked} />}
-      {soicalmediaTwo && <FixText clickedTwo={clickedTwo} />}
-      {chatIconVisible && <Chat clickedThree={clickedThree} />}
+      {/* {soicalmediaTwo && <FixText clickedTwo={clickedTwo} />} */}
+      {/* {chatIconVisible && <Chat clickedThree={clickedThree} />} */}
       {/* {soicalmediaThree && <Fixediv2 clickedThree={clickedThree} />} */}
     </Layout>
   );

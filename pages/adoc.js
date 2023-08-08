@@ -414,7 +414,7 @@ function Adoc() {
                 layout="fill"
                 className="absolute h-full w-full object-contain"
                 alt=""
-                src="/servadat/prod.jpg"
+                src="/adoc/adoc1.png"
               />
             </div>
           </div>
