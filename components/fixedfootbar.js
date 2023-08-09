@@ -53,7 +53,7 @@ export default function FixedFooterBar() {
               className="cursor-pointer flex gap-2 items-cente"
             >
               <FaElementor size={30} />
-              Request a Demo
+              Request ADOC Demo
             </div>{" "}
           </div>
         </div>
