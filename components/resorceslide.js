@@ -320,40 +320,34 @@ export default function Resourceslide() {
                     index
                   ) => {
                     return (
-                      <div
-                        key={index}
-                        className="w-fit shadow-md bg-white flex flex-col lg:flex-1 py-4 justify-between bg-opacity-75 px-4   rounded-lg overflow-hidden text-center relative"
-                      >
-                        <div className=" w-full transition duration-150 ease-out hover:ease-in hover:opacity-50">
-                          <Image
-                            className=" flex-shrink-0 object-cover xl:w-[100%] xl:h-[34rem]"
-                            src={image}
-                            width={400}
-                            height={220}
-                            alt=""
-                          ></Image>
-                        </div>
+                      <Link key={index} href="/resources#News">
+                        <div
+                          key={index}
+                          className="w-fit shadow-md hover:cursor-pointer bg-white flex flex-col lg:flex-1 py-4 justify-between bg-opacity-75 px-4   rounded-lg overflow-hidden text-center relative"
+                        >
+                          <div className=" w-full transition duration-150 ease-out hover:ease-in hover:opacity-50">
+                            <Image
+                              className=" flex-shrink-0 object-cover xl:w-[100%] xl:h-[34rem]"
+                              src={image}
+                              width={400}
+                              height={220}
+                              alt=""
+                            ></Image>
+                          </div>
 
-                        <h1 className="title-font sm:text-base text-xl text-center font-semibold  text-gray-900 mb-3">
-                          {name}
-                        </h1>
-                        <p className=" text-sm   text-left font-semibold">
-                          Source : <span className="font-bah">{sorc}</span>
-                        </p>
-                        <div className="flex   flex-row gap-4">
-                          <p className=" text-sm text-left font-semibold">
-                            By <span className="font-bah">{auth}</span> {date}
+                          <h1 className="title-font sm:text-base  text-xl text-left font-semibold  text-gray-900 mb-3">
+                            {name}
+                          </h1>
+                          <p className=" text-sm   text-left font-semibold">
+                            Source : <span className="font-bah">{sorc}</span>
                           </p>
+                          <div className="flex   flex-row gap-4">
+                            <p className=" text-sm text-left font-semibold">
+                              By <span className="font-bah">{auth}</span> {date}
+                            </p>
+                          </div>
                         </div>
-
-                        <div className="flex justify-center">
-                          <Link href="/resources#News">
-                            <button className="mt-2 font-bah   border-2 border-blue text-blue font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg ">
-                              READ MORE
-                            </button>
-                          </Link>
-                        </div>
-                      </div>
+                      </Link>
                     );
                   }
                 )}
