@@ -714,47 +714,41 @@ export default function Resources() {
                   );
                 } else {
                   return (
-                    <div
-                      key={id}
-                      className="w-fit shadow-md gap-0  bg-white flex flex-col lg:flex-1 py-4  bg-opacity-75 px-4   rounded-lg overflow-hidden text-center relative"
-                    >
-                      <div className=" w-full transition duration-150 ease-out hover:ease-in hover:opacity-50">
-                        <Image
-                          className=" flex-shrink-0 object-cover xl:w-[100%] xl:h-[34rem]"
-                          src={image}
-                          width={400}
-                          height={300}
-                          alt=""
-                        ></Image>
-                      </div>
+                    <a target="_blank" rel="noreferrer" href={link}>
+                      <div
+                        key={id}
+                        className="w-fit shadow-md gap-0 md:min-h-[450px]  bg-white flex flex-col lg:flex-1 py-4  bg-opacity-75 px-4   rounded-lg overflow-hidden text-center relative"
+                      >
+                        <div className=" w-full transition duration-150 ease-out hover:ease-in hover:opacity-50">
+                          <Image
+                            className=" flex-shrink-0 object-cover xl:w-[100%] xl:h-[34rem]"
+                            src={image}
+                            width={400}
+                            height={300}
+                            alt=""
+                          ></Image>
+                        </div>
 
-                      <h1 className="title-font sm:text-xl text-xl text-center font-semibold  min-h-[150px] text-gray-900 mb-3">
-                        {name}
-                      </h1>
-                      <div className="flex flex-col ">
-                        <p className=" text-sm text-left  font-semibold">
-                          Source : <span className="font-bah">{sorc}</span>
-                        </p>
+                        <h1 className="title-font sm:text-lg text-xl text-left font-semibold  min-h-[100px] text-gray-900 mb-3">
+                          {name}
+                        </h1>
+                        <div className="flex flex-col ">
+                          <p className=" text-sm text-left  font-semibold">
+                            Source : <span className="font-bah">{sorc}</span>
+                          </p>
 
-                        <p className=" text-sm text-left font-semibold">
-                          By <span className="font-bah">{auth}</span>, {date}
-                        </p>
-                      </div>
+                          <p className=" text-sm text-left font-semibold">
+                            By <span className="font-bah">{auth}</span>, {date}
+                          </p>
+                        </div>
 
-                      {/* <p className="text-left">Source : {sorc}</p>
+                        {/* <p className="text-left">Source : {sorc}</p>
                     <p className="text-left">Author : {auth}</p> */}
-                      {/* <p className="leading-relaxed p-1 font-bah mt-2 text-justify ">
+                        {/* <p className="leading-relaxed p-1 font-bah mt-2 text-justify ">
                         {desc}
                       </p> */}
-
-                      <div className="flex justify-center  ">
-                        <a target="_blank" rel="noreferrer" href={link}>
-                          <p className="mt-8 font-bah mb-5   border-2 border-blue text-blue font-bold text-xs cursor-pointer hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
-                            READ MORE
-                          </p>
-                        </a>
                       </div>
-                    </div>
+                    </a>
                   );
                 }
               }
@@ -873,49 +867,44 @@ export default function Resources() {
                       );
                     } else {
                       return (
-                        <div
-                          key={index}
-                          className="w-fit shadow-md gap-0 bg-white flex flex-col lg:flex-1 py-4  bg-opacity-75 px-4   rounded-lg overflow-hidden text-center relative"
-                        >
-                          <div className=" w-full transition duration-150 ease-out hover:ease-in hover:opacity-50">
-                            <Image
-                              className=" flex-shrink-0 object-cover xl:w-[100%] xl:h-[34rem]"
-                              src={image}
-                              width={400}
-                              height={300}
-                              alt=""
-                            ></Image>
-                          </div>
-
-                          <h1 className="title-font sm:text-xl text-xl min-h-[150px] text-center font-semibold  text-gray-900 mb-3 ">
-                            {name}
-                          </h1>
-                          <div className="flex flex-col ">
-                            <p className=" text-sm text-left font-semibold">
-                              Source : <span className="font-bah">{sorc}</span>
-                            </p>
-                            <div className="flex min-h-[30px]  flex-row ">
-                              <p className=" text-sm text-left font-semibold">
-                                By <span className="font-bah">{auth}</span>,{" "}
-                                {date}
-                              </p>
+                        <a target="_blank" rel="noreferrer" href={link}>
+                          <div
+                            key={index}
+                            className="w-fit shadow-md gap-0 md:min-h-[450px] bg-white flex flex-col lg:flex-1 py-4  bg-opacity-75 px-4   rounded-lg overflow-hidden text-center relative"
+                          >
+                            <div className=" w-full transition duration-150 ease-out hover:ease-in hover:opacity-50">
+                              <Image
+                                className=" flex-shrink-0 object-cover xl:w-[100%] xl:h-[34rem]"
+                                src={image}
+                                width={400}
+                                height={300}
+                                alt=""
+                              ></Image>
                             </div>
-                          </div>
 
-                          {/* <p className="text-left">Source : {sorc}</p>
+                            <h1 className="title-font sm:text-lg text-left text-xl min-h-[100px]  font-semibold  text-gray-900 mb-3 ">
+                              {name}
+                            </h1>
+                            <div className="flex flex-col ">
+                              <p className=" text-sm text-left font-semibold">
+                                Source :{" "}
+                                <span className="font-bah">{sorc}</span>
+                              </p>
+                              <div className="flex min-h-[30px]  flex-row ">
+                                <p className=" text-sm text-left font-semibold">
+                                  By <span className="font-bah">{auth}</span>,{" "}
+                                  {date}
+                                </p>
+                              </div>
+                            </div>
+
+                            {/* <p className="text-left">Source : {sorc}</p>
                       <p className="text-left">Author : {auth}</p> */}
-                          {/* <p className="leading-relaxed p-1 font-bah mt-2 text-justify ">
+                            {/* <p className="leading-relaxed p-1 font-bah mt-2 text-justify ">
                             {desc}
                           </p> */}
-
-                          <div className="flex justify-center  ">
-                            <a target="_blank" rel="noreferrer" href={link}>
-                              <p className="mt-8 font-bah mb-5   border-2 border-blue text-blue font-bold text-xs cursor-pointer hover:text-white hover:bg-blue p-3 rounded-lg transition-all">
-                                READ MORE
-                              </p>
-                            </a>
                           </div>
-                        </div>
+                        </a>
                       );
                     }
                   }
