@@ -238,7 +238,11 @@ const DropAQueryForm = () => {
             label=""
           />
         </div>{" "}
-        <p className="font-semibold">I also want free access to ADOC</p>
+        <div>
+          <p className="font-semibold">
+            I would also like to have <br /> free access to ADOC
+          </p>
+        </div>
       </div>
 
       <div className="w-full flex flex-col pb-6 justify-center items-center">
