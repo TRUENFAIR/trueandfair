@@ -231,7 +231,7 @@ const DropAQueryForm = () => {
       </div>
       <div className="flex  items-center pb-2 justify-center">
         <div className="flex gap-3">
-          <InputCheckController
+          <InputCheckBoxDrop
             control={control}
             name="FreeAccessofADOC"
             type="checkbox"

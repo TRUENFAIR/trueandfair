@@ -1,7 +1,7 @@
 import React from "react";
 import { Controller } from "react-hook-form";
 
-export default function InputCheckBoxDrop({
+export default function InputCheckController({
   name,
   label,
   type,
@@ -17,10 +17,10 @@ export default function InputCheckBoxDrop({
       name={name}
       value={value}
       render={({ field, fieldState }) => (
-        <div className={` flex flex-row gap-2 p-1`}>
+        <div className={`${className} flex flex-row gap-2 p-1`}>
           <input
             onChange={field.onChange}
-            className={`${className} rounded-sm  focus:border-green-700 focus:ring focus:ring-blue focus:ring-opacity-50`}
+            className={` rounded-sm border-black focus:border-green-700 focus:ring focus:ring-blue focus:ring-opacity-50`}
             type={type}
             name={field.name}
             value={value}

@@ -8,7 +8,7 @@ export default function InputCheckController({
   control,
   rules,
   className,
-  value
+  value,
 }) {
   return (
     <Controller
