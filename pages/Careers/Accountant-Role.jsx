@@ -376,7 +376,7 @@ function BusinessAnalyst() {
 
               <div className="relative">
                 <label htmlFor="name" className="text-sm leading-7 text-black">
-                  Name
+                  Name *
                 </label>
                 <input
                   type="text"
@@ -397,7 +397,7 @@ function BusinessAnalyst() {
               </div>
               <div className="relative ">
                 <label htmlFor="email" className="text-sm leading-7 text-black">
-                  Email
+                  Email *
                 </label>
                 <input
                   type="email"
@@ -422,7 +422,7 @@ function BusinessAnalyst() {
                   htmlFor="mobile"
                   className="text-sm leading-7 text-black"
                 >
-                  Mobile
+                  Mobile *
                 </label>
                 <input
                   type="text"
@@ -461,7 +461,7 @@ function BusinessAnalyst() {
                   htmlFor="qualification"
                   className="text-sm leading-7 text-black"
                 >
-                  Qualification
+                  Qualification *
                 </label>
                 <input
                   type="text"
@@ -482,11 +482,11 @@ function BusinessAnalyst() {
                   htmlFor="experience"
                   className="text-sm leading-7 text-black"
                 >
-                  Experience (Years)
+                  Experience (Years) *
                 </label>
                 <input
                   type="text"
-                  {...register("experience", { required: false })}
+                  {...register("experience", { required: true })}
                   className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-white border rounded outline-none border-blue focus:border-blue focus:ring-2 focus:ring-blue"
                 />
                 <label
@@ -516,7 +516,7 @@ function BusinessAnalyst() {
                   htmlFor="location"
                   className="text-sm leading-7 text-black"
                 >
-                  Location
+                  Location *
                 </label>
                 <input
                   type="text"
@@ -544,7 +544,7 @@ function BusinessAnalyst() {
 
                 <textarea
                   className="w-full px-3 py-1 text-base leading-6 text-gray-700 transition-colors duration-200 ease-in-out bg-white border rounded outline-none resize-none border-blue focus:border-blue focus:ring-2 focus:ring-blue h-11"
-                  {...register("Linkedin", { required: true })}
+                  {...register("Linkedin", { required: false })}
                 ></textarea>
                 <label
                   className={`text-red-600   text-xs py-1 ${
