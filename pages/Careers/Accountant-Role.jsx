@@ -482,7 +482,7 @@ function BusinessAnalyst() {
                   htmlFor="experience"
                   className="text-sm leading-7 text-black"
                 >
-                  Experience( if applicable)
+                  Experience (Years)
                 </label>
                 <input
                   type="text"
