@@ -118,6 +118,10 @@ export default function Layout({ children }) {
       name: "Events",
       path: "/events",
     },
+    {
+      name: "Careers",
+      path: "/Careers",
+    },
     { name: " FAQs", path: "/faq" },
     {
       name: "Contact",
@@ -402,6 +406,9 @@ export default function Layout({ children }) {
             </Link>
           </div>
           <div className="text-sm flex flex-col font-bah text-black lg:p-0  text-center">
+            <Link href="/Careers">
+              <a>Careers</a>
+            </Link>
             <Link href="/contact">
               <a>Contact </a>
             </Link>
