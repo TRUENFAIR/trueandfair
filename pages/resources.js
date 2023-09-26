@@ -426,6 +426,29 @@ export default function Resources() {
       blogsdata: [
         {
           ser: "/blogs/blogOne",
+          link: "https://cfo.economictimes.indiatimes.com/news/large-unlisted-companies-may-be-regulated/103946484",
+          name: "Large unlisted companies may be regulated",
+          small: "title",
+          desc: "",
+          image: "/news/21.png",
+          sorc: "ETCFO",
+          auth: "Banikinkar Pattanayak",
+          date: "Sep 26, 2023",
+        },
+        {
+          ser: "/blogs/blogOne",
+          link: "https://cfo.economictimes.indiatimes.com/news/tax-legal-accounting/nfra-says-biggest-focus-is-to-ensure-that-auditors-do-their-job-properly/103928260",
+          name: "NFRA says biggest focus is to ensure that auditors do their job properly",
+          small: "title",
+          desc: "",
+          image: "/news/news20.png",
+          sorc: "ETCFO",
+          auth: "Mannu Arora & Vartika Rawat",
+          date: "Sep 23, 2023",
+        },
+
+        {
+          ser: "/blogs/blogOne",
           link: "https://cfo.economictimes.indiatimes.com/news/tax-legal-accounting/nfra-chief-stresses-on-audit-documentation/102517195",
           name: "NFRA chief stresses on audit documentation",
           small: "title",
@@ -446,6 +469,8 @@ export default function Resources() {
           auth: "Navasree",
           date: "July 22,2023",
         },
+      ],
+      blogsdatafull: [
         {
           ser: "/blogs/blogOne",
           link: "https://cfo.economictimes.indiatimes.com/news/tax-legal-accounting/auditors-are-not-expected-to-find-frauds-but-they-must-follow-processes-nfra-chair/102012389",
@@ -468,8 +493,6 @@ export default function Resources() {
           auth: "Surabhi",
           date: "April 26, 2023",
         },
-      ],
-      blogsdatafull: [
         {
           ser: "/blogs/blogOne",
           link: "https://economictimes.indiatimes.com/industry/services/consultancy-/-audit/auditors-not-expected-to-look-at-every-single-invoice-transaction-icai-president/articleshow/99646956.cms?from=mdr",
