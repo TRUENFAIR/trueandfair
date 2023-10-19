@@ -426,6 +426,17 @@ export default function Resources() {
       blogsdata: [
         {
           ser: "/blogs/blogOne",
+          link: "https://cfo.economictimes.indiatimes.com/news/leadership/audit-committees-independent-directors-should-ask-questions-to-auditors-and-cfos-nfra-chair/104511650",
+          name: "Audit committees, independent directors should ask questions to auditors and CFOs•. NFRA Chair",
+          small: "title",
+          desc: "",
+          image: "/news/22.png",
+          sorc: "ETCFO",
+          auth: "Mannu Arora",
+          date: "Oct 19, 2023",
+        },
+        {
+          ser: "/blogs/blogOne",
           link: "https://cfo.economictimes.indiatimes.com/news/large-unlisted-companies-may-be-regulated/103946484",
           name: "Large unlisted companies may be regulated",
           small: "title",
@@ -458,6 +469,8 @@ export default function Resources() {
           auth: "cfo.com",
           date: "Aug 08,2023",
         },
+      ],
+      blogsdatafull: [
         {
           ser: "/blogs/blogOne",
           link: "https://www.taxscan.in/experienced-auditors-committee-to-ensure-high-quality-audits-remunerated-suitably-says-nfra-chairperson-dr-ajay-bhushan-pandey/302650/",
@@ -469,8 +482,6 @@ export default function Resources() {
           auth: "Navasree",
           date: "July 22,2023",
         },
-      ],
-      blogsdatafull: [
         {
           ser: "/blogs/blogOne",
           link: "https://cfo.economictimes.indiatimes.com/news/tax-legal-accounting/auditors-are-not-expected-to-find-frauds-but-they-must-follow-processes-nfra-chair/102012389",
