@@ -416,7 +416,7 @@ export default function Layout({ children }) {
               <a>Privacy Policy</a>
             </Link>
             <Link href="/TermsofUse">
-              <a>Terms and Conditions</a>
+              <a>Terms of Use</a>
             </Link>
           </div>
 

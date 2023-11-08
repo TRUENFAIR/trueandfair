@@ -19,7 +19,7 @@ export default function PrivacyPolicy() {
               data-aos-once="true"
               className="h-[100px] w-full md:w-1/2 flex  items-center font-bah text-2xl text-white bg-slate-800"
             >
-              <h1 className="text-3xl font-bah md:ml-20  title-font text-white">
+              <h1 className="text-3xl md:pl-0 pl-5 font-bah md:ml-20  title-font text-white">
                 Privacy Policy
               </h1>
             </div>
