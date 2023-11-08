@@ -133,12 +133,14 @@ maturity
             In Phase 1 of our launch we will offer the following services:
           </p>
           <p className="leading-loose   text-justify  font-bah text-black ">
-            <span className="w-fit ">✔️</span>{ `Quality policies: i) Basic or
+            <span className="w-fit ">✔️</span>
+            {`Quality policies: i) Basic or
             those that comply with standards on auditing ii)Enhanced technical
             guidance on matters of audit and accounting importance`}
           </p>
           <p className="leading-loose   text-justify  font-bah text-black ">
-            <span className="w-fit ">✔️</span> Audit Documentation and Archival Tool (ADAT)
+            <span className="w-fit ">✔️</span> Audit Documentation and Archival
+            Tool (ADAT)
           </p>
           <p className="leading-loose   text-justify  font-bah text-black ">
             <span className="w-fit ">✔️</span> Monitoring of compliance with the
@@ -162,32 +164,38 @@ maturity
             services to various entities we work with:
           </p>
           <p className="leading-loose mt-5 font-bold  text-justify  font-bah text-black ">
-              1. Audit firms
-            </p>
+            1. Audit firms
+          </p>
           <p className="leading-loose   text-justify  font-bah text-black ">
-            <span className="w-fit ">✔️</span>{`Quality policies: i) Basic or those that comply with standards on auditing`}
+            <span className="w-fit ">✔️</span>
+            {`Quality policies: i) Basic or those that comply with standards on auditing`}
           </p>{" "}
           <p className="leading-loose   text-justify  font-bah text-black ">
-            <span className="w-fit ">✔️</span> Enhanced operations management, client and engagement risk assessment, conflict checks, creation of engagement projects
+            <span className="w-fit ">✔️</span> Enhanced operations management,
+            client and engagement risk assessment, conflict checks, creation of
+            engagement projects
           </p>
           <p className="leading-loose   text-justify  font-bah text-black ">
-            <span className="w-fit ">✔️</span> {`Industry specific audit file templates (planned for FY' 23-24)`}
+            <span className="w-fit ">✔️</span>{" "}
+            {`Industry specific audit file templates (planned for FY' 23-24)`}
           </p>
           <p className="leading-loose   text-justify  font-bah text-black ">
-            <span className="w-fit ">✔️</span> Talent management: Time and expense tracking, scheduling, integration with ADAT (planned for FY’ 23-24)
+            <span className="w-fit ">✔️</span> Talent management: Time and
+            expense tracking, scheduling, integration with ADAT (planned for FY’
+            23-24)
           </p>
           <p className="leading-loose   text-justify  font-bah text-black ">
-            <span className="w-fit ">✔️</span>Improved automation in ADAT based on user feedback (planned for FY’ 24-25)
+            <span className="w-fit ">✔️</span>Improved automation in ADAT based
+            on user feedback (planned for FY’ 24-25)
           </p>
           <p className="leading-loose   text-justify  font-bah text-black ">
-            <span className="w-fit ">✔️</span> Investment in data analytics (planned for FY’ 23-24)
+            <span className="w-fit ">✔️</span> Investment in data analytics
+            (planned for FY’ 23-24)
           </p>
           <p className="leading-loose    text-justify  font-bah text-black ">
-            <span className="w-fit ">✔️</span> Investment in artificial intelligence (planned for FY’ 25-26)
+            <span className="w-fit ">✔️</span> Investment in artificial
+            intelligence (planned for FY’ 25-26)
           </p>
-          
-           
-          
           <div data-aos="fade-up" data-aos-once="true" className="w-auto">
             <p className="leading-loose mt-5 font-bold text-justify  font-bah text-black ">
               2. Corporates

@@ -412,10 +412,10 @@ export default function Layout({ children }) {
             <Link href="/contact">
               <a>Contact </a>
             </Link>
-            <Link href="">
+            <Link href="/PrivacyPolicy">
               <a>Privacy Policy</a>
             </Link>
-            <Link href="">
+            <Link href="/TermsofUse">
               <a>Terms and Conditions</a>
             </Link>
           </div>
