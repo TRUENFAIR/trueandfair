@@ -426,6 +426,17 @@ export default function Resources() {
       blogsdata: [
         {
           ser: "/blogs/blogOne",
+          link: "https://economictimes.indiatimes.com/industry/services/consultancy-/-audit/nfra-plans-annual-auditor-checks/articleshow/106650238.cms?from=mdr",
+          name: "NFRA plans annual auditor checks",
+          small: "title",
+          desc: "",
+          image: "/news/23.png",
+          sorc: "EcoN0M1c TIMES",
+          auth: "Banikinkar Pattanayak",
+          date: "Jan 09, 2024,",
+        },
+        {
+          ser: "/blogs/blogOne",
           link: "https://cfo.economictimes.indiatimes.com/news/leadership/audit-committees-independent-directors-should-ask-questions-to-auditors-and-cfos-nfra-chair/104511650",
           name: "Audit committees, independent directors should ask questions to auditors and CFOs•. NFRA Chair",
           small: "title",
@@ -457,7 +468,8 @@ export default function Resources() {
           auth: "Mannu Arora & Vartika Rawat",
           date: "Sep 23, 2023",
         },
-
+      ],
+      blogsdatafull: [
         {
           ser: "/blogs/blogOne",
           link: "https://cfo.economictimes.indiatimes.com/news/tax-legal-accounting/nfra-chief-stresses-on-audit-documentation/102517195",
@@ -469,8 +481,6 @@ export default function Resources() {
           auth: "cfo.com",
           date: "Aug 08,2023",
         },
-      ],
-      blogsdatafull: [
         {
           ser: "/blogs/blogOne",
           link: "https://www.taxscan.in/experienced-auditors-committee-to-ensure-high-quality-audits-remunerated-suitably-says-nfra-chairperson-dr-ajay-bhushan-pandey/302650/",
