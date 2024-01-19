@@ -24,7 +24,7 @@ export default function FixedFooterBar() {
   };
   return (
     <>
-      <div className="fixednav bg-blue fixed inset-x-0 bottom-[env(safe-area-inset-bottom)] text-white  w-full z-[1000] h-14 py-2">
+      <div className="fixednav bg-blue fixed inset-x-0 bottom-[env(safe-area-inset-bottom)] text-white font-bah  w-full z-[1000] h-14 py-2">
         <div className="flex h-full py-4 justify-center md:justify-between  md:px-12 items-center">
           <div className="md:flex justify-center items-center  w-[100%]  hidden">
             <div className="text-sm flex justify-center   w-full">

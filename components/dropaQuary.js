@@ -88,10 +88,10 @@ const DropAQueryForm = () => {
 
   return (
     <div>
-      <div className="flex   px-5  mt-4 flex-col">
+      <div className="flex font-bah  px-5  mt-4 flex-col">
         <input
           type="text"
-          className=" block text-base placeholder:font-semibold   w-full lg:h-[35px] placeholder:text-sm  px-2 border-2 border-gray     focus:ring focus:ring-blue focus:ring-opacity-50"
+          className=" block text-base placeholder:font-semibold font-bah  w-full lg:h-[35px] placeholder:text-sm  px-2 border-2 border-gray     focus:ring focus:ring-blue focus:ring-opacity-50"
           placeholder="Your Name*"
           {...register("name", {
             required: true,
@@ -111,7 +111,7 @@ const DropAQueryForm = () => {
       <div className="flex   px-5   flex-col">
         <input
           type="text"
-          className=" block text-base  placeholder:font-semibold  w-full lg:h-[35px] placeholder:text-sm  px-2 border-2 border-gray     focus:ring focus:ring-blue focus:ring-opacity-50"
+          className=" block text-base  placeholder:font-semibold font-bah  w-full lg:h-[35px] placeholder:text-sm  px-2 border-2 border-gray     focus:ring focus:ring-blue focus:ring-opacity-50"
           placeholder="Your Designation*"
           {...register("Designation", {
             required: true,
@@ -131,7 +131,7 @@ const DropAQueryForm = () => {
       <div className="flex  px-5   flex-col">
         <input
           type="text"
-          className=" block text-base  placeholder:font-semibold  w-full lg:h-[35px] placeholder:text-sm  px-2 border-2 border-gray     focus:ring focus:ring-blue focus:ring-opacity-50"
+          className=" block text-base  placeholder:font-semibold font-bah w-full lg:h-[35px] placeholder:text-sm  px-2 border-2 border-gray     focus:ring focus:ring-blue focus:ring-opacity-50"
           placeholder="Firm name*"
           {...register("Firm", {
             required: true,
@@ -150,7 +150,7 @@ const DropAQueryForm = () => {
       <div className="flex px-5 flex-col">
         <input
           type="text"
-          className="block  w-full lg:h-[35px] placeholder:text-sm  placeholder:font-medium  px-2 border-2 border-gray      focus:ring focus:ring-blue focus:ring-opacity-50"
+          className="block  w-full lg:h-[35px] placeholder:text-sm  placeholder:font-medium  px-2 border-2 border-gray    font-bah  focus:ring focus:ring-blue focus:ring-opacity-50"
           placeholder="Your Email*"
           {...register("email", {
             required: true,
@@ -171,7 +171,7 @@ const DropAQueryForm = () => {
         <div className="flex gap-4">
           <input
             type="number"
-            className=" block  w-full lg:h-[35px] placeholder:text-sm  placeholder:font-medium  px-2 border-2 border-gray      focus:ring focus:ring-blue focus:ring-opacity-50"
+            className=" block  w-full lg:h-[35px] placeholder:text-sm font-bah placeholder:font-medium  px-2 border-2 border-gray      focus:ring focus:ring-blue focus:ring-opacity-50"
             placeholder="Your Mobile Number*"
             {...register("phone", {
               required: true,
@@ -182,7 +182,7 @@ const DropAQueryForm = () => {
         </div>
 
         <label
-          className={`text-red-600   text-xs py-1 ${
+          className={`text-red-600 font-bah  text-xs py-1 ${
             errors.phone ? "visible" : "invisible"
           }`}
         >
@@ -195,7 +195,7 @@ const DropAQueryForm = () => {
       <div className="flex px-5 flex-col">
         <input
           type="text"
-          className="block  w-full lg:h-[35px] placeholder:text-sm  placeholder:font-medium  px-2 border-2 border-gray      focus:ring focus:ring-blue focus:ring-opacity-50"
+          className="block  w-full lg:h-[35px] placeholder:text-sm font-bah  placeholder:font-medium  px-2 border-2 border-gray      focus:ring focus:ring-blue focus:ring-opacity-50"
           placeholder="Your Location*"
           {...register("location", {
             required: true,
@@ -203,7 +203,7 @@ const DropAQueryForm = () => {
         />
 
         <label
-          className={`text-red-600   text-xs py-1 ${
+          className={`text-red-600 font-bah  text-xs py-1 ${
             errors.location ? "visible" : "invisible"
           }`}
         >
@@ -214,7 +214,7 @@ const DropAQueryForm = () => {
       <div className="flex px-5 flex-col">
         <input
           type="text"
-          className="block  w-full lg:h-[50px] placeholder:text-sm  px-2 border-2 b placeholder:font-semibold   focus:ring focus:ring-blue focus:ring-opacity-50"
+          className="block  w-full lg:h-[50px] placeholder:text-sm font-bah  font-bah px-2 border-2 b placeholder:font-semibold   focus:ring focus:ring-blue focus:ring-opacity-50"
           placeholder="Your Message*"
           {...register("message", {
             required: true,
@@ -222,7 +222,7 @@ const DropAQueryForm = () => {
         />
 
         <label
-          className={`text-red-600   text-xs py-1 ${
+          className={`text-red-600 font-bah  text-xs py-1 ${
             errors.message ? "visible" : "invisible"
           }`}
         >
@@ -239,14 +239,14 @@ const DropAQueryForm = () => {
           />
         </div>{" "}
         <div>
-          <p className="font-semibold">
+          <p className="font-semibold font-bah">
             I would also like to have <br /> free access to ADOC
           </p>
         </div>
       </div>
 
       <div className="w-full flex flex-col pb-6 justify-center items-center">
-        <div className="text-green text-center text-sm">
+        <div className="text-green text-center  font-bah text-sm">
           {messageSent
             ? "Your message is sent. We'll get back to you at the earliest."
             : ""}
