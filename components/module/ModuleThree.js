@@ -33,7 +33,7 @@ const ModuleThree = () => {
                         </th>
                         <th className="border-2 border-slate-300 px-4 text-left py-2 w-[20%]">
                           {" "}
-                          Propose d hours
+                          Proposed hours
                         </th>
                       </tr>
                     </thead>
@@ -68,12 +68,13 @@ const ModuleThree = () => {
                 <p className="text-center font-semibold ">
                   <span>
                     For further details, please contact Rakesh Jain{" "}
-                    <span>{`(+919987592300)`}</span>
+                    <span className="text-blue"> {`(+919987592300)`}</span>
                   </span>
-                  <span>
+                  <span className="">
                     {" "}
-                    / Jaideep Trasi <span>{`(+91 98454 71208)`}</span> or write
-                    to <span className=""> contact@trueandfair.pro.</span>
+                    / Jaideep Trasi{" "}
+                    <span className="text-blue">{`(+91 98454 71208)`}</span> or
+                    write to <span className="text-blue"> contact@trueandfair.pro.</span>
                   </span>
                   <br />
                 </p>
