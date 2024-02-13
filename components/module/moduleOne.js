@@ -252,7 +252,7 @@ const ModuleOne = () => {
                 <p className="text-center font-semibold ">
                   <span>
                     For further details, please contact Rakesh Jain{" "}
-                    <span className="text-blue">{`(+919987592300)`}</span>
+                    <span className="text-blue">{`(+91 9987592300)`}</span>
                   </span>
                   <span>
                     {" "}

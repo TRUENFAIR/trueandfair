@@ -68,13 +68,14 @@ const ModuleThree = () => {
                 <p className="text-center font-semibold ">
                   <span>
                     For further details, please contact Rakesh Jain{" "}
-                    <span className="text-blue"> {`(+919987592300)`}</span>
+                    <span className="text-blue"> {`(+91 9987592300)`}</span>
                   </span>
                   <span className="">
                     {" "}
                     / Jaideep Trasi{" "}
                     <span className="text-blue">{`(+91 98454 71208)`}</span> or
-                    write to <span className="text-blue"> contact@trueandfair.pro.</span>
+                    write to{" "}
+                    <span className="text-blue"> contact@trueandfair.pro.</span>
                   </span>
                   <br />
                 </p>
