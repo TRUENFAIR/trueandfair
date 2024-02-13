@@ -74,6 +74,11 @@ export default function Layout({ children }) {
         { name: "Pricing", path: "/adoc#Pricing" },
       ],
     },
+
+    {
+      name: "Training",
+      path: "/training",
+    },
     {
       name: " Library",
       path: "/library",
@@ -378,6 +383,9 @@ export default function Layout({ children }) {
             </Link>
             <Link href="/adoc">
               <a>ADOC</a>
+            </Link>
+            <Link href="/training">
+              <a>Training</a>
             </Link>
           </div>
 
