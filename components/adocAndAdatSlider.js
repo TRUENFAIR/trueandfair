@@ -199,6 +199,75 @@ export default function adocAndAdatSlider() {
                 </div>
               </div>
             </SwiperSlide>
+
+            <SwiperSlide>
+              <div>
+                <p className="text-center text-3xl font-bah  title-font text-white mb-4">
+                  Training
+                </p>
+              </div>
+              <div className="    lg:rounded-lg text-left">
+                <div className="lg:w-full mb-7 mx-auto md:h-auto 2xl:h-[600px] flex flex-col lg:flex-col ">
+                  <div className="lg:w-full w-full lg:mr-9  mt-6 lg:mt-0 "></div>
+                  <div className="mt-10  mb-13 flex justify-center  gap-16  flex-col lg:flex-row">
+                    <div className="w-full lg:w-1/2">
+                      <div className="w-full flex  lg:justify-center "></div>
+                      <p className="font-bah text-justify p-1 text-lg leading-loose">
+                        A key requirement for various Firms under the AQMM v.1
+                        issued by ICAI is to have regular training programs on
+                        general and specific topics for all staff members
+                        (including Partners). In order to assist the Firm’s in
+                        their learning and development efforts in line with
+                        their policies and practices as well as compliance with
+                        the AQMM requirements, we at True and Fair Professionals
+                        Network bring to you In-Tuition, a focused in-classroom
+                        or virtual or hybrid training program with various plans
+                        to assist small to large sized firms, to provide
+                        training to new hires (articles or paid assistants),
+                        experienced hires (audit senior or manager) and
+                        engagement leaders (Partner/ Director) on various audit
+                        related topics.
+                      </p>
+                      <div>
+                        <div className="flex pt-  md:justify-left">
+                          <Link href="/training">
+                            <button className="mt-10 font-bah   border-2 border-white text-white font-bold text-xs hover:text-white hover:bg-blue p-3 rounded-lg ">
+                              READ MORE
+                            </button>
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="md:w-1/2 md:p-0 p-2 mb-13">
+                      {" "}
+                      <div className="">
+                        {/* <iframe
+                          width={"100%"}
+                          height="350"
+                          src="https://www.youtube.com/embed/PYFi8hMqbog"
+                          title="YouTube video player"
+                          frameBorder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                        ></iframe> */}
+                        <img
+                          src="/servadat/proftraining.png"
+                          className="2xl:h-[530px] object-cover"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  {/* <div className="flex justify-center">
+    <Link href="/adat">
+      <button className="mt-8 font-bah   border-2 border-white text-white font-bold text-xs hover:text-blue hover:bg-white p-3 rounded-lg transition-all">
+        READ MORE
+      </button>
+    </Link>
+  </div> */}
+                </div>
+              </div>
+            </SwiperSlide>
           </Swiper>
         </div>
       </section>
