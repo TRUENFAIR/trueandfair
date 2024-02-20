@@ -10,7 +10,7 @@ const Alpa = () => {
   return (
     <>
       <div className="md:container md:mx-auto mb-10 mt-10 ">
-      <button
+        <button
           onClick={handleBack}
           className="w-fit flex   text-white  rounded-md"
         >
@@ -23,7 +23,7 @@ const Alpa = () => {
           <div className="w-full md:w-[120%]  ">
             <div className="flex mb-4 flex-col justify-center">
               <p className="font-semibold text-xl">Alpa Sheth</p>
-              <p> Lead - Monitoring and EQCR  </p>
+              <p> Lead - Monitoring and EQCR </p>
             </div>
             <div className="">
               <img src="/team/alpa.JPG" className="w-[100%] " alt="" />
@@ -36,7 +36,7 @@ const Alpa = () => {
                   Alpa comes with over 25 years of professional experience
                   working in in one of India’s largest audit firms, part of the
                   Big 4, in various roles, including that of an Executive
-                  Partner. She was a full-time member for more than 10 years in
+                  Director. She was a full-time member for more than 10 years in
                   the Quality Team of this Firm. Alpa has led the function of
                   Engagement Quality Control Review (EQCR) having implemented
                   the EQCR process in the Firm, including its alignment with the
