@@ -98,6 +98,38 @@ export default function Resources() {
 
       blogsdatafull: [
         {
+          name: "Webinar On Overview of SA 230 & Audit Strategy and Audit Plan Documentation on 30-Jan-2024",
+          desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum cupiditate possimus dolore voluptatibus similique optioducimus provident,",
+          imgs: "/events/20.png",
+          vidoes: (
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/q8YDsrZuRWE?si=cxsn6ELZJdVn_aG7"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          ),
+        },
+        {
+          name: "Webinar On Risk of Material Misstatement Test of Controls and Substantive Tests",
+          desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum cupiditate possimus dolore voluptatibus similique optioducimus provident,",
+          imgs: "/events/19.png",
+          vidoes: (
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/1ObpBKuAMXQ?si=Vq4LQZeE5r3Lsgxe"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          ),
+        },
+        {
           name: "ADOC - an audit documentation tool- of the profession, by the profession for the profession",
           desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum cupiditate possimus dolore voluptatibus similique optioducimus provident,",
           imgs: "/events/18.png",
