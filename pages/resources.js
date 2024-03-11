@@ -458,6 +458,17 @@ export default function Resources() {
       blogsdata: [
         {
           ser: "/blogs/blogOne",
+          link: "https://www.moneylife.in/article/nfra-to-nudge-audit-committees-to-step-up/73634.html",
+          name: "NFRA To Nudge Audit Committees To Step Up?",
+          small: "title",
+          desc: "",
+          image: "/news/24.png",
+          sorc: "Money Life",
+          auth: "Ranganathan V",
+          date: "07 March 2024",
+        },
+        {
+          ser: "/blogs/blogOne",
           link: "https://economictimes.indiatimes.com/industry/services/consultancy-/-audit/nfra-plans-annual-auditor-checks/articleshow/106650238.cms?from=mdr",
           name: "NFRA plans annual auditor checks",
           small: "title",
@@ -489,6 +500,8 @@ export default function Resources() {
           auth: "Banikinkar Pattanayak",
           date: "Sep 26, 2023",
         },
+      ],
+      blogsdatafull: [
         {
           ser: "/blogs/blogOne",
           link: "https://cfo.economictimes.indiatimes.com/news/tax-legal-accounting/nfra-says-biggest-focus-is-to-ensure-that-auditors-do-their-job-properly/103928260",
@@ -500,8 +513,6 @@ export default function Resources() {
           auth: "Mannu Arora & Vartika Rawat",
           date: "Sep 23, 2023",
         },
-      ],
-      blogsdatafull: [
         {
           ser: "/blogs/blogOne",
           link: "https://cfo.economictimes.indiatimes.com/news/tax-legal-accounting/nfra-chief-stresses-on-audit-documentation/102517195",
