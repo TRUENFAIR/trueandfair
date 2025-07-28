@@ -23,7 +23,7 @@ const Jaideep = () => {
           <div className="w-full md:w-[100%]  ">
             <div className="flex mb-4 flex-col justify-center">
               <p className="font-semibold text-xl">Jaideep S Trasi</p>
-              <p>Lead - Training</p>
+              <p>Lead - Training and Data Analytics</p>
             </div>
             <div className="">
               <img src="/team/jaideepseat.png" className="w-[100%] " alt="" />

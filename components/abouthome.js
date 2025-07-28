@@ -36,27 +36,27 @@ export default function AboutHome() {
     },
   ];
   const blog1 = [
-    {
-      name: "Archana Ashok",
-      image: "/team/Archana.png",
-      role: "Founder & Managing Director",
-      description:
-        "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
-    },
-    {
-      name: "Shristi Sarayan",
-      image: "/team/sriti.png",
-      role: "Founder & Managing Director",
-      description:
-        "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
-    },
-    {
-      name: "Kirti Kumar Kotian",
-      image: "/team/kirti.png",
-      role: "Founder & Managing Director",
-      description:
-        "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
-    },
+    // {
+    //   name: "Archana Ashok",
+    //   image: "/team/Archana.png",
+    //   role: "Founder & Managing Director",
+    //   description:
+    //     "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
+    // },
+    // {
+    //   name: "Shristi Sarayan",
+    //   image: "/team/sriti.png",
+    //   role: "Founder & Managing Director",
+    //   description:
+    //     "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
+    // },
+    // {
+    //   name: "Kirti Kumar Kotian",
+    //   image: "/team/kirti.png",
+    //   role: "Founder & Managing Director",
+    //   description:
+    //     "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
+    // },
     {
       name: "Rakesh Jain",
       image: "/team/rakesh.png",
